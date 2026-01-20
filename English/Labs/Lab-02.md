@@ -154,7 +154,7 @@ create a Lakehouse. We will do this next.
 
 4. Select **Create**
     
-    ![](../media/Lab-02/image18.png)
+    ![](../media/Lab-02/2.png)
 
     Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse explorer interface. On the top left, next to the Fabric name in the header, you will have the Lakehouse icon. The workspace icon on the left navigation will reflect that it now contains an item.
 

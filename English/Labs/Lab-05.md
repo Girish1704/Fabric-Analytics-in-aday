@@ -458,7 +458,7 @@ Yes.
 
 7. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
 
-8. In the **Name** field, select **varIsSucces.** This is the variable whose value we are going to set.
+8. In the **Name** field, select **varIsSuccess.** This is the variable whose value we are going to set.
 
 9. In the **Value** field, select the **text box**. Select **Add dynamic content** link.
 

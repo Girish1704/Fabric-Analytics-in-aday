@@ -169,7 +169,7 @@ Let's create a new report using a blank canvas.
 
 5. Highlight **Sales Report** and set **Font** to **Segoe UI** and **font size** to **14.**
 
-6. With the **text box selected**, in the Format text box pane on the right, **expand Effects**.
+6. With the **text box selected**, in the Format text box pane on the right, expand **Effects**.
 
 7. Use **Background** slider to set it to **Off**.
 

@@ -146,7 +146,7 @@ The connection is established, and you can view the data in the preview panel. F
 
 2. In the upper left corner, select **Save & run (2)**. Once you see the notification that a refresh has been started you can close out of the dataflow **(3)**
 
-    ![](../media/Lab-04/image17.png)
+    ![](../media/Lab-04/2.png)
 
     >**Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to finish running.
 

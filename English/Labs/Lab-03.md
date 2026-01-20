@@ -511,6 +511,8 @@ give this method a try.
 
     ![](../media/Lab-03/image47.png)
 
+    >**Note:** If you're unable to find the Advanced Editor, you can access it under **Home -\> Query -\> Advanced Editor**.
+
 22. At the **end of line 2 add a comma** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner)**,**
 
 23. Click **Enter** to start a new line.
