@@ -247,7 +247,7 @@ couple of minutes understanding the report and move to the next steps.
 
     * **Snowflake Username:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    * **Snowflake Password:** <inject key="SnowFlake Username" enableCopy="false" />
+    * **Snowflake Password:** <inject key="SnowFlake Password" enableCopy="false" />
 
       >**Note:** If you experience any issues connecting to Snowflake with the credentials above, please use the backup credentials provided below.
 
