@@ -230,7 +230,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     - Snowflake Username: <inject key="SnowFlake Username" enableCopy="false" />
 
-    - Snowflake Password: <inject key="SnowFlake Username" enableCopy="false" />
+    - Snowflake Password: <inject key="SnowFlake Password" enableCopy="false" />
 
     >**Note**: If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
 
