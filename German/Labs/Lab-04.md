@@ -1,5 +1,6 @@
 # Microsoft Fabric Fabric Analyst in a Day-Übung 4
-# Inhalt 
+
+# Inhalt
 - Einführung	
 - Dataflow Gen2	
     - Aufgabe 1: SharePoint-Abfragen in Dataflow kopieren	
@@ -49,7 +50,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 ## Aufgabe 1: SharePoint-Abfragen in Dataflow kopieren
 
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich
-    **FAIAD _ <username > (1),** den Sie in Übung 2, Aufgabe 8 erstellt
+    **FAIAD_<username > (1),** den Sie in Übung 2, Aufgabe 8 erstellt
     haben.
 
 2. Wählen Sie die Option + **Neues Element (2)** in der oberen linken
@@ -60,12 +61,12 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     ![](../media/Lab-04/image6.png)
 
-Behalten Sie den Standardnamen bei, und stellen Sie sicher, dass
-„Git-Integration aktivieren" aktiviert ist. Wählen Sie dann
-**Erstellen**. Sie werden zur **Dataflow-Seite** weitergeleitet. Die
-Dataflow Gen2-Schnittstelle ähnelt der von Power Query in Power BI
-Desktop. Wir können Abfragen von Power BI Desktop nach Dataflow Gen2
-kopieren. Lassen Sie uns dies ausprobieren.
+    Behalten Sie den Standardnamen bei, und stellen Sie sicher, dass
+    „Git-Integration aktivieren" aktiviert ist. Wählen Sie dann
+    **Erstellen**. Sie werden zur **Dataflow-Seite** weitergeleitet. Die
+    Dataflow Gen2-Schnittstelle ähnelt der von Power Query in Power BI
+    Desktop. Wir können Abfragen von Power BI Desktop nach Dataflow Gen2
+    kopieren. Lassen Sie uns dies ausprobieren.
 
 4. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop
     Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
@@ -91,18 +92,19 @@ kopieren. Lassen Sie uns dies ausprobieren.
 
     ![](../media/Lab-04/image8.png)
 
-**Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
-Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den
-Schieberegler, um das **VM Native Clipboard** **zu aktivieren**. Wählen
-Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben,
-können Sie diese Option deaktivieren.
+    **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
+    Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den
+    Schieberegler, um das **VM Native Clipboard** **zu aktivieren**. Wählen
+    Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben,
+    können Sie diese Option deaktivieren.
 
     ![](../media/Lab-04/image9.png)
 
-Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für
-SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung
-angezeigt, in der Sie aufgefordert werden, eine Verbindung zu
-konfigurieren. 
+    Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für
+    SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung
+    angezeigt, in der Sie aufgefordert werden, eine Verbindung zu
+    konfigurieren.
+
     ![](../media/Lab-04/image10.png)
 
 ## Aufgabe 2: Verbindung zu SharePoint erstellen
@@ -119,8 +121,7 @@ konfigurieren.
 
 4. Wählen Sie **Verbinden** aus.
 
-> **Hinweis**: Sie werden mit Ihren Anmeldeinformationen angemeldet. Sie
-> werden von denen auf dem Screenshot unten abweichen.
+    > **Hinweis**: Sie werden mit Ihren Anmeldeinformationen angemeldet. Sie werden von denen auf dem Screenshot unten abweichen.
 
     ![](../media/Lab-04/image12.png)
 
@@ -166,10 +167,10 @@ Lakehouse erfasst werden.
     Sie sicher, dass „**Automatische Einstellungen verwenden**"
     **aktiviert** ist.
 
-**Hinweis:** Sie können die automatischen Einstellungen deaktivieren und
-haben die Möglichkeit, die Aktualisierungsmethode und die Schemaoptionen
-festzulegen. Vergewissern Sie sich nach der Erkundung, dass
-„**Automatische Einstellungen verwenden**" **aktiviert** ist.
+    **Hinweis:** Sie können die automatischen Einstellungen deaktivieren und
+    haben die Möglichkeit, die Aktualisierungsmethode und die Schemaoptionen
+    festzulegen. Vergewissern Sie sich nach der Erkundung, dass
+    „**Automatische Einstellungen verwenden**" **aktiviert** ist.
 
 10. Wählen Sie **Einstellungen speichern** aus.
 
@@ -187,9 +188,9 @@ festzulegen. Vergewissern Sie sich nach der Erkundung, dass
 
     ![](../media/Lab-04/image17.png)
 
-**Hinweis:** Sie werden zum **Arbeitsbereich FAIAD _ <Benutzername >**
-weitergeleitet. Es kann einige Momente dauern, bis die Ausführung des
-Dataflows abgeschlossen ist.
+    **Hinweis:** Sie werden zum **Arbeitsbereich FAIAD _ <Benutzername >**
+    weitergeleitet. Es kann einige Momente dauern, bis die Ausführung des
+    Dataflows abgeschlossen ist.
 
 3. Wir arbeiten mit **Dataflow 1**. Benennen wir ihn um, bevor wir
     fortfahren. Klicken Sie auf die **Auslassungspunkte ( ...)** neben
@@ -210,7 +211,7 @@ Dataflows abgeschlossen ist.
 
     ![](../media/Lab-04/image19.png)
 
-Sie werden zum Arbeitsbereich **FAIAD _ <username >** weitergeleitet.
+    Sie werden zum Arbeitsbereich **FAIAD _ <username >** weitergeleitet.
 
 7. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren.
 
@@ -220,12 +221,11 @@ Sie werden zum Arbeitsbereich **FAIAD _ <username >** weitergeleitet.
 9. Beachten Sie, dass die Tabelle **People** jetzt im Lakehouse
     verfügbar ist.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](../media/Lab-04/image20.png)
+    ![](../media/Lab-04/image20.png)
 
-**Hinweis:** Wenn die neu erstellten Tabellen nicht angezeigt werden,
-wählen Sie die Auslassungspunkte neben „Tabellen" und „Aktualisieren"
-aus, um die Tabellen zu aktualisieren.
+    **Hinweis:** Wenn die neu erstellten Tabellen nicht angezeigt werden,
+    wählen Sie die Auslassungspunkte neben „Tabellen" und „Aktualisieren"
+    aus, um die Tabellen zu aktualisieren.
 
 ## Aufgabe 5: Snowflake-Abfragen in Dataflow kopieren
 
@@ -240,13 +240,13 @@ aus, um die Tabellen zu aktualisieren.
 
     ![](../media/Lab-04/image21.png)
 
-Behalten Sie den Standardnamen bei, und stellen Sie sicher, dass
-„Git-Integration aktivieren" aktiviert ist. Wählen Sie anschließend
-**Erstellen** aus. Wenn Sie die Meldung „Ein Dataflow mit diesem Namen
-ist bereits vorhanden" erhalten, und ändern Sie den Namen in **Dataflow
-2**. Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie
-Dataflow nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in
-Dataflow.
+    Behalten Sie den Standardnamen bei, und stellen Sie sicher, dass
+    „Git-Integration aktivieren" aktiviert ist. Wählen Sie anschließend
+    **Erstellen** aus. Wenn Sie die Meldung „Ein Dataflow mit diesem Namen
+    ist bereits vorhanden" erhalten, und ändern Sie den Namen in **Dataflow
+    2**. Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie
+    Dataflow nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in
+    Dataflow.
 
 4. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop
     Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
@@ -281,11 +281,11 @@ Dataflow.
     derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken
     Sie zum Einfügen bitte Cmd+V.
 
-**Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
-**Auslassungspunkte (...)** oben rechts auf dem Bildschirm aus.
-Verwenden Sie den Schieberegler, um **das VM Native Clipboard zu
-aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen
-eingefügt haben, können Sie diese Option deaktivieren.
+    **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
+    **Auslassungspunkte (...)** oben rechts auf dem Bildschirm aus.
+    Verwenden Sie den Schieberegler, um **das VM Native Clipboard zu
+    aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen
+    eingefügt haben, können Sie diese Option deaktivieren.
 
     ![](../media/Lab-04/image23.png)
 
@@ -311,38 +311,37 @@ werden, eine Verbindung zu konfigurieren.
     Anmeldeinformationen, um alle Tabellen unter Snowflake mit Snowflake
     zu verbinden, und wählen Sie dann **Verbinden**.
 
-- Snowflake-Benutzername: TE_SNOWFLAKE1
+    - Snowflake-Benutzername: TE_SNOWFLAKE1
 
-- Snowflake-Kennwort: 8UpfRpExVDXv2AC1
+    - Snowflake-Kennwort: 8UpfRpExVDXv2AC1
 
-**Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu
-Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben,
-verwenden Sie bitte die die nachfolgenden Anmeldeinformationen.
+    **Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu
+    Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben,
+    verwenden Sie bitte die die nachfolgenden Anmeldeinformationen.
 
-- **Snowflake-Benutzername:** SNOWFLAKE_BACKUP
+    - **Snowflake-Benutzername:** SNOWFLAKE_BACKUP
 
-- **Snowflake-Kennwort:** 8UpfRpExVDXv2AC1
+    - **Snowflake-Kennwort:** 8UpfRpExVDXv2AC1
 
 5. Wählen Sie **Verbinden** aus.
 
     ![](../media/Lab-04/image25.png)
 
-Die Verbindung wird hergestellt, und Sie können die Daten im
-Vorschaubereich ansehen. Wenn Sie möchten, sehen Sie sich die
-angewandten Schritte der Abfragen an. Grundsätzlich enthält die
-Suppliers-Abfrage Lieferanteninformationen und „SupplierCategories", wie
-der Name schon sagt, alle Lieferantenkategorien. Diese beiden Tabellen
-werden zusammengeführt, um die Dimension „Supplier" mit den
-erforderlichen Spalten zu erstellen. Auf ähnliche Weise wird „PO Line
-Items" mit „PO" zusammengeführt, um den Fakt „PO" zu erstellen. Nun
-müssen die Daten von „Supplier" und „PO" im Lakehouse erfasst werden.
+    Die Verbindung wird hergestellt, und Sie können die Daten im
+    Vorschaubereich ansehen. Wenn Sie möchten, sehen Sie sich die
+    angewandten Schritte der Abfragen an. Grundsätzlich enthält die
+    Suppliers-Abfrage Lieferanteninformationen und „SupplierCategories", wie
+    der Name schon sagt, alle Lieferantenkategorien. Diese beiden Tabellen
+    werden zusammengeführt, um die Dimension „Supplier" mit den
+    erforderlichen Spalten zu erstellen. Auf ähnliche Weise wird „PO Line
+    Items" mit „PO" zusammengeführt, um den Fakt „PO" zu erstellen. Nun
+    müssen die Daten von „Supplier" und „PO" im Lakehouse erfasst werden.
 
 ## Aufgabe 7: Datenziel für die Abfragen „Supplier" und „PO" konfigurieren
 
 1. Wählen Sie die Abfrage **Supplier (1)** aus.
 
-2. Klicken Sie im Menüband auf **Start (2)  > Datenziel hinzufügen (3)
-    - > Lakehouse (4)**.
+2. Klicken Sie im Menüband auf **Start (2)  > Datenziel hinzufügen (3) - > Lakehouse (4)**.
 
     ![](../media/Lab-04/image26.png)
 
@@ -404,8 +403,8 @@ müssen die Daten von „Supplier" und „PO" im Lakehouse erfasst werden.
 
     ![](../media/Lab-04/image32.png)
 
-Sie werden zum Arbeitsbereich **FAIAD _ <username > weitergeleitet**. Es
-kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
+    Sie werden zum Arbeitsbereich **FAIAD _ <username > weitergeleitet**. Es
+    kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
 
 5. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren.
 
@@ -417,11 +416,11 @@ kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
 
     ![](../media/Lab-04/image33.png)
 
-**Hinweis:** Wenn die neu erstellten Tabellen nicht angezeigt werden,
-wählen Sie die Auslassungspunkte neben „Tabellen" und „Aktualisieren"
-aus, um die Tabellen zu aktualisieren.
+    **Hinweis:** Wenn die neu erstellten Tabellen nicht angezeigt werden,
+    wählen Sie die Auslassungspunkte neben „Tabellen" und „Aktualisieren"
+    aus, um die Tabellen zu aktualisieren.
 
-Nun erstellen wir eine Verknüpfung, um Daten aus Dataverse zu erfassen.
+    Nun erstellen wir eine Verknüpfung, um Daten aus Dataverse zu erfassen.
 
 # Verknüpfung zum internen Lakehouse
 
@@ -431,7 +430,7 @@ Sie sollten sich im Lakehouse **lh_FAIAD** befinden. Stellen Sie sicher,
 dass Sie sich in der Lakehouse-Ansicht (nicht im SQL-Analyseendpunkt)
 befinden.
 
-    ![](../media/Lab-04/image34.png)
+![](../media/Lab-04/image34.png)
 
 1. Wählen Sie im Bereich **Explorer** die **Auslassungspunkte** neben
     **Tables** aus.
@@ -443,8 +442,8 @@ befinden.
 3. Das Dialogfeld „Neue Verknüpfung" wird geöffnet. Wählen Sie unter
     **Externe Quellen** die Option **Dataverse** aus.
 
-**Hinweis:** In der vorherigen Übung haben wir ähnliche Schritte zum
-Erstellen einer Verknüpfung zu Azure Data Lake Storage Gen2 ausgeführt.
+    **Hinweis:** In der vorherigen Übung haben wir ähnliche Schritte zum
+    Erstellen einer Verknüpfung zu Azure Data Lake Storage Gen2 ausgeführt.
 
     ![](../media/Lab-04/image36.png)
 
@@ -468,22 +467,22 @@ Erstellen einer Verknüpfung zu Azure Data Lake Storage Gen2 ausgeführt.
 8. Wählen Sie im Dialogfeld „Verbindungseinstellungen" die Option
     **Weiter** aus.
 
-Sie werden zu einem Dialogfeld weitergeleitet, in dem Sie den anderen
-Bucket/das andere Verzeichnis aus Dataverse auswählen können. Beachten
-Sie, dass viele verschiedene Buckets zur Verfügung stehen. Wir können
-den/die Buckets auswählen, die wir benötigen, und den in Übung 3
-beschriebenen Prozess befolgen (die Visual-Abfrage verwenden, um Daten
-zu transformieren und Ansichten zu erstellen). Wir können auch mit
-Dataflow Gen2 eine Verbindung zu SharePoint herstellen, wie zuvor in
-dieser Übung.
+    Sie werden zu einem Dialogfeld weitergeleitet, in dem Sie den anderen
+    Bucket/das andere Verzeichnis aus Dataverse auswählen können. Beachten
+    Sie, dass viele verschiedene Buckets zur Verfügung stehen. Wir können
+    den/die Buckets auswählen, die wir benötigen, und den in Übung 3
+    beschriebenen Prozess befolgen (die Visual-Abfrage verwenden, um Daten
+    zu transformieren und Ansichten zu erstellen). Wir können auch mit
+    Dataflow Gen2 eine Verbindung zu SharePoint herstellen, wie zuvor in
+    dieser Übung.
 
-In unseren Szenario hat das IT-Team bereits eine Verknüpfung zu
-Dataverse erstellt und die erforderlichen Datentransformationen
-angewendet, die diese in der Power BI Desktop-Datei spiegeln. Sie haben
-diese Daten in das Lakehouse im Arbeitsbereich „Administrator" erfasst
-und uns Zugriff auf die Tabelle(n) gewährt. Da unser IT-Team die ganze
-harte Arbeit erledigt hat, können wir im Arbeitsbereich „Administrator"
-eine Verknüpfung zu diesem Lakehouse erstellen.
+    In unseren Szenario hat das IT-Team bereits eine Verknüpfung zu
+    Dataverse erstellt und die erforderlichen Datentransformationen
+    angewendet, die diese in der Power BI Desktop-Datei spiegeln. Sie haben
+    diese Daten in das Lakehouse im Arbeitsbereich „Administrator" erfasst
+    und uns Zugriff auf die Tabelle(n) gewährt. Da unser IT-Team die ganze
+    harte Arbeit erledigt hat, können wir im Arbeitsbereich „Administrator"
+    eine Verknüpfung zu diesem Lakehouse erstellen.
 
 9. Wählen Sie im Dialogfeld „Neue Verknüpfung" die Option **Abbrechen**
     aus, um zum Lakehouse zurückzukehren.
@@ -497,8 +496,7 @@ eine Verknüpfung zu diesem Lakehouse erstellen.
 
 2. Wählen Sie **Neue Verknüpfung** aus.
 
-    ![](../media/Lab-04/image35.png){width="4.710199037620297in"
-height="3.482612642169729in"}
+    ![](../media/Lab-04/image35.png)
 
 3. Das Dialogfeld „Neue Verknüpfung" wird geöffnet. Wählen Sie die
     Option **Microsoft OneLake** unter „Interne Quellen" aus.
@@ -534,12 +532,12 @@ height="3.482612642169729in"}
 
     ![](../media/Lab-04/image44.png)
 
-Wir haben erfolgreich eine Verknüpfung zu einem anderen Lakehouse
-erstellt.
+    Wir haben erfolgreich eine Verknüpfung zu einem anderen Lakehouse
+    erstellt.
 
-Nun sind alle erforderlichen Daten in unserem Lakehouse erfasst. In der
-nächsten Übung planen wir eine Aktualisierung unseres
-SharePoint-Dataflows.
+    Nun sind alle erforderlichen Daten in unserem Lakehouse erfasst. In der
+    nächsten Übung planen wir eine Aktualisierung unseres
+    SharePoint-Dataflows.
 
 # Referenzen
 
