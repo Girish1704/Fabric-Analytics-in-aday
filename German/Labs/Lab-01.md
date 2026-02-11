@@ -112,7 +112,7 @@ verstehen.
     **E-Mail-Adresse** des Dialogfelds ein, und wählen Sie **Weiter**
     aus.
 
-    - E-Mail-Adresse/Benutzername:
+    - E-Mail-Adresse/Benutzername: <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-01/image7.png)
 
@@ -120,14 +120,14 @@ verstehen.
     Anmeldebildschirm. Hier geben Sie die folgende E-Mail-Adresse bzw.
     den folgenden Benutzernamen ein und klicken dann auf **Weiter**.
 
-    - E-Mail-Adresse/Benutzername:
+    - E-Mail-Adresse/Benutzername: <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-01/image8.png)
 
 4. Geben Sie nun den folgenden **befristeten Zugriffspass** ein, und
     klicken Sie auf **Anmelden**.
 
-    - Befristeter Zugriffspass:
+    - Befristeter Zugriffspass: <inject key="AzureAdUserPassword"></inject>
 
       ![](../media/Lab-01/image9.png)
 
