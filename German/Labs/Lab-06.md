@@ -34,8 +34,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
     **FAIAD _ <username >**, den Sie in Übung 2, Aufgabe 8, erstellt
     haben.
 
-2. Sie können bei Bedarf den **Aufgabenfluss minimieren**, um die
-    vollständige Liste der Elemente anzuzeigen.
+2. Sie können bei Bedarf den **Aufgabenfluss minimieren**, um die vollständige Liste der Elemente anzuzeigen.
 
 3. Sie sehen drei Elemente, die mit lh_FAIAD -- Lakehouse, dem
     Semantikmodell und dem SQL-Endpunkt zusammenhängen. In einer
@@ -49,22 +48,22 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     ![](../media/Lab-06/image5.png)
 
-Wenn Sie sich die Daten vor der Erstellung eines Datenmodells genauer
-ansehen möchten, können Sie dies mit SQL tun. Für die Verwendung von SQL
-sind zwei Optionen verfügbar. Option eins ist die Visual-Abfrage, die
-wir in der vorherigen Übung verwendet haben. Option zwei ist das
-Schreiben von T-SQL-Code. Dies ist eine entwicklungsfreundliche Option.
-Untersuchen wir dies genauer.
+    Wenn Sie sich die Daten vor der Erstellung eines Datenmodells genauer
+    ansehen möchten, können Sie dies mit SQL tun. Für die Verwendung von SQL
+    sind zwei Optionen verfügbar. Option eins ist die Visual-Abfrage, die
+    wir in der vorherigen Übung verwendet haben. Option zwei ist das
+    Schreiben von T-SQL-Code. Dies ist eine entwicklungsfreundliche Option.
+    Untersuchen wir dies genauer.
 
-Angenommen, Sie möchten mithilfe von SQL schnell die von einem
-Lieferanten verkauften Einheiten ermitteln.
+    Angenommen, Sie möchten mithilfe von SQL schnell die von einem
+    Lieferanten verkauften Einheiten ermitteln.
 
-Beachten Sie im linken Bereich von Lakehouse, dem SQL-Analyseendpunkt,
-dass die Tabellen angezeigt werden. Wenn Sie diese erweitern, sehen Sie
-die Spalten der Tabelle. Außerdem lassen sich SQL-Ansichten, Funktionen
-und gespeicherten Prozeduren erstellen. Wenn Sie bereits Erfahrung mit
-SQL haben, probieren Sie diese Optionen gerne aus. Schreiben wir nun
-eine einfache SQL-Abfrage.
+    Beachten Sie im linken Bereich von Lakehouse, dem SQL-Analyseendpunkt,
+    dass die Tabellen angezeigt werden. Wenn Sie diese erweitern, sehen Sie
+    die Spalten der Tabelle. Außerdem lassen sich SQL-Ansichten, Funktionen
+    und gespeicherten Prozeduren erstellen. Wenn Sie bereits Erfahrung mit
+    SQL haben, probieren Sie diese Optionen gerne aus. Schreiben wir nun
+    eine einfache SQL-Abfrage.
 
 4. Klicken Sie im **oberen Menü** auf **Neue SQL-Abfrage** oder in der
     Bildschirmmitte auf **Neue SQL-Abfrage**. Die Ansicht „SQL-Abfrage"
@@ -77,15 +76,13 @@ eine einfache SQL-Abfrage.
     Supplierenname ermittelt. Dazu wird die Tabelle „Sales" mit den
     Tabellen „Product" und „Supplier" verknüpft.
 
-[SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
-
-[FROM dbo.Sales s]{.mark}
-
-[JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
-
-[JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
-
-[GROUP BY su.SupplierName]{.mark}
+   ```
+   SELECT su.SupplierName, SUM(Quantity) as Units
+   FROM dbo.Sales s
+   JOIN dbo.Product p on p.StockItemID = s.StockItemID
+   JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+   GROUP BY su.SupplierName
+   ```
 
 6. Klicken Sie im SQL-Editor-Menü auf **Ausführen**, um die Ergebnisse
     anzuzeigen.
@@ -100,8 +97,7 @@ eine einfache SQL-Abfrage.
     anzuzeigen, die an Sie freigegeben wurden. Öffnen Sie dazu den
     Ordner **Freigegebene Abfragen**.
 
-> **Hinweis:** Visual-Abfragen, die Sie in früheren Übungen erstellt
-> haben, sind auch im Ordner „Meine Abfragen" verfügbar.
+    > **Hinweis:** Visual-Abfragen, die Sie in früheren Übungen erstellt haben, sind auch im Ordner „Meine Abfragen" verfügbar.
 
     ![](../media/Lab-06/image7.png)
 
@@ -115,35 +111,29 @@ eine einfache SQL-Abfrage.
 
     ![](../media/Lab-06/image8.png)
 
-3. Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet. Wählen
-    Sie **Weiter** aus.
+3. Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet. Wählen Sie **Weiter** aus.
 
-Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet und ähnelt der
-Power BI Desktop-Berichtsansicht. Es umfasst alle in der Power BI
-Desktop-Berichtsansicht verfügbaren Funktionen. Sie können die Seite
-formatieren, verschiedene Visuals auswählen, Visuals formatieren, Filter
-hinzufügen usw. Wir werden uns in diesem Kurs nicht mit diesen Optionen
-beschäftigen.
+    Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet und ähnelt der
+    Power BI Desktop-Berichtsansicht. Es umfasst alle in der Power BI
+    Desktop-Berichtsansicht verfügbaren Funktionen. Sie können die Seite
+    formatieren, verschiedene Visuals auswählen, Visuals formatieren, Filter
+    hinzufügen usw. Wir werden uns in diesem Kurs nicht mit diesen Optionen
+    beschäftigen.
 
-4. Erweitern Sie den Bereich **Daten**, und erweitern Sie **SQL query
-    1**.
+4. Erweitern Sie den Bereich **Daten**, und erweitern Sie **SQL query 1**.
 
-5. Wählen Sie die Felder **Supplier_Name** und **Units** aus. Das
-    Tabellenvisual wird erstellt.
+5. Wählen Sie die Felder **Supplier_Name** und **Units** aus. Das Tabellenvisual wird erstellt.
 
     ![](../media/Lab-06/image9.png)
 
 6. Ändern Sie unter **Visualisierungen** den Visualtyp durch Auswahl
     des **gestapelten Säulendiagramms**.
 
-7. Wählen Sie unten rechts auf dem Bildschirm die Option **Als Bericht
-    speichern** aus.
+7. Wählen Sie unten rechts auf dem Bildschirm die Option **Als Bericht speichern** aus.
 
     ![](../media/Lab-06/image10.png)
 
-8. Das Dialogfeld „Bericht speichern" wird geöffnet. Geben Sie im
-    Textfeld **Namen für Bericht eingeben** den Text **Units by
-    Supplier** ein.
+8. Das Dialogfeld „Bericht speichern" wird geöffnet. Geben Sie im Textfeld **Namen für Bericht eingeben** den Text **Units by Supplier** ein.
 
 9. Überprüfen Sie, dass der Zielarbeitsbereich Ihrem
     Fabric-Arbeitsbereich **FAIAD _ <Benutzername >** entspricht.
@@ -198,16 +188,15 @@ Sie werden zum Bildschirm „SQL-Abfrage" weitergeleitet.
 
     ![](../media/Lab-06/image14.png)
 
-Sie werden zum neuen semantischen Modell mit den ausgewählten Tabellen
-geleitet. Sie können die Tabellen bei Bedarf **Neu anordnen**. Beachten
-Sie, dass einige der Tabellen (Geo, Reseller, Sales und Product) oben
-rechts in der Tabelle ein Warnzeichen aufweisen. Dies liegt daran, dass
-es sich hierbei um Ansichten handelt. Alle mit Feldern aus diesen
-Ansichten erstellten Visuals befinden sich im Direct Query- und nicht im
-Direct Lake-Modus.
+    Sie werden zum neuen semantischen Modell mit den ausgewählten Tabellen
+    geleitet. Sie können die Tabellen bei Bedarf **Neu anordnen**. Beachten
+    Sie, dass einige der Tabellen (Geo, Reseller, Sales und Product) oben
+    rechts in der Tabelle ein Warnzeichen aufweisen. Dies liegt daran, dass
+    es sich hierbei um Ansichten handelt. Alle mit Feldern aus diesen
+    Ansichten erstellten Visuals befinden sich im Direct Query- und nicht im
+    Direct Lake-Modus.
 
-**Hinweis:** Der Direct Lake-Modus ist schneller als der Direct
-Query-Modus.
+    **Hinweis:** Der Direct Lake-Modus ist schneller als der Direct Query-Modus.
 
 ## Aufgabe 4: Beziehungen erstellen
 
@@ -275,23 +264,17 @@ lassen Sie uns zur richtigen Stelle gehen.
 
     ![](../media/Lab-06/image21.png)
 
-17. Erstellen Sie eine analog eine **Viele-zu-Eins-Beziehung** zwischen
-    den Tabellen **Sales** und **Product**. Wählen Sie in der Tabelle
-    **Sales** den Eintrag **StockItemID** und in der Tabelle **Product**
-    den Eintrag **StockItemID** aus.
+17. Erstellen Sie eine analog eine **Viele-zu-Eins-Beziehung** zwischen den Tabellen **Sales** und **Product**. Wählen Sie in der Tabelle **Sales** den Eintrag **StockItemID** und in der Tabelle **Product** den Eintrag **StockItemID** aus.
 
-**Hinweis:** Alle unsere Aktualisierungen werden automatisch
-gespeichert.
+    **Hinweis:** Alle unsere Aktualisierungen werden automatisch gespeichert.
 
-**Überprüfen Sie:** Das Modell muss die drei Beziehungen zwischen den
-Tabellen „Sales" und „Reseller", „Sales" und „Date" sowie „Sales" und
-„Product" aufweisen, wie im folgenden Screenshot gezeigt:
+    **Überprüfen Sie:** Das Modell muss die drei Beziehungen zwischen den Tabellen „Sales" und „Reseller", „Sales" und „Date" sowie „Sales" und „Product" aufweisen, wie im folgenden Screenshot gezeigt:
 
     ![](../media/Lab-06/image22.png)
 
-Aus Zeitgründen können wir nicht alle Beziehungen erstellen. Sofern Zeit
-verbleibt, können Sie den fakultativen Abschnitt am Ende der Übung
-durcharbeiten. Darin werden die restlichen Beziehungen erstellt.
+    Aus Zeitgründen können wir nicht alle Beziehungen erstellen. Sofern Zeit
+    verbleibt, können Sie den fakultativen Abschnitt am Ende der Übung
+    durcharbeiten. Darin werden die restlichen Beziehungen erstellt.
 
 ## Aufgabe 5: Measures erstellen
 
@@ -376,13 +359,13 @@ Sales-Dashboards benötigt werden.
 
     ![](../media/Lab-06/image26.png)
 
-Auch hier können wir aus Zeitgründen nicht alle Kennzahlen erstellen.
-Sofern Zeit verbleibt, können Sie den fakultativen Abschnitt am Ende der
-Übung durcharbeiten. Darin werden die restlichen Measures erstellt.
+    Auch hier können wir aus Zeitgründen nicht alle Kennzahlen erstellen.
+    Sofern Zeit verbleibt, können Sie den fakultativen Abschnitt am Ende der
+    Übung durcharbeiten. Darin werden die restlichen Measures erstellt.
 
-Wir haben ein semantisches Modell erstellt, und der nächste Schritt
-besteht darin, einen Bericht zu erstellen. Dies erfolgt in der nächsten
-Übung.
+    Wir haben ein semantisches Modell erstellt, und der nächste Schritt
+    besteht darin, einen Bericht zu erstellen. Dies erfolgt in der nächsten
+    Übung.
 
 ## Aufgabe 6: Fakultativer Abschnitt -- Beziehungen erstellen
 
@@ -462,8 +445,8 @@ Ergänzen wir die restlichen Beziehungen.
 
 25. Wählen Sie **Speichern** aus.
 
-**Prüfpunkt:** „Beziehungen verwalten" sollte so wie im Screenshot unten
-aussehen.
+    **Prüfpunkt:** „Beziehungen verwalten" sollte so wie im Screenshot unten
+    aussehen.
 
     ![](../media/Lab-06/image31.png)
 
@@ -484,8 +467,8 @@ aussehen.
 29. Wählen Sie **Schließen** aus, um das Dialogfeld „Beziehungen
     verwalten" zu schließen. Nun sind alle Beziehungen erstellt.
 
-**Überprüfen Sie:** Das Modell sollte so wie im Screenshot unten
-aussehen.
+    **Überprüfen Sie:** Das Modell sollte so wie im Screenshot unten
+    aussehen.
 
     ![](../media/Lab-06/image32.png)
 
@@ -516,14 +499,12 @@ Ergänzen wir die restlichen Measures.
 8. Fügen Sie auf gleiche Weise die folgenden Measures hinzu:
 
     a. In der Tabelle **Sales** ist **GM = SUM('Sales' [LineProfit ])**
-        formatiert als **Währung mit 0 Dezimalstellen**.
+    formatiert als **Währung mit 0 Dezimalstellen**.
 
     b. In der Tabelle **Sales**, **GM% = DIVIDE( [GM ],  [Sales ])**
-        formatiert als **Prozentsatz mit 0 Dezimalstellen**.
+    formatiert als **Prozentsatz mit 0 Dezimalstellen**.
 
-    c. In der Tabelle **Customer, No of Customers =
-        COUNTROWS(Customer)** formatiert als **Ganze Zahl mit
-        aktiviertem Tausendertrennzeichen**.
+    c. In der Tabelle **Customer, No of Customers = COUNTROWS(Customer)** formatiert als **Ganze Zahl mit aktiviertem Tausendertrennzeichen**.
 
 # Referenzen
 
