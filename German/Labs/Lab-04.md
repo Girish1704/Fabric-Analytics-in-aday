@@ -46,7 +46,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 # Dataflow Gen2
 
-### Aufgabe 1: SharePoint-Abfragen in Dataflow kopieren
+## Aufgabe 1: SharePoint-Abfragen in Dataflow kopieren
 
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich
     **FAIAD _ <username > (1),** den Sie in Übung 2, Aufgabe 8 erstellt
@@ -105,7 +105,7 @@ angezeigt, in der Sie aufgefordert werden, eine Verbindung zu
 konfigurieren. 
     ![](../media/Lab-04/image10.png)
 
-### Aufgabe 2: Verbindung zu SharePoint erstellen
+## Aufgabe 2: Verbindung zu SharePoint erstellen
 
 1. Wählen Sie **Verbindung konfigurieren** aus.
 
@@ -124,7 +124,7 @@ konfigurieren.
 
     ![](../media/Lab-04/image12.png)
 
-### Aufgabe 3: Datenziel für die Abfrage „People" konfigurieren
+## Aufgabe 3: Datenziel für die Abfrage „People" konfigurieren
 
 Die Verbindung wird hergestellt, und Sie können die Daten im
 Vorschaubereich ansehen. Wenn Sie möchten, sehen Sie sich die
@@ -175,7 +175,7 @@ festzulegen. Vergewissern Sie sich nach der Erkundung, dass
 
     ![](../media/Lab-04/image16.png)
 
-### Aufgabe 4: SharePoint-Dataflow veröffentlichen und umbenennen
+## Aufgabe 4: SharePoint-Dataflow veröffentlichen und umbenennen
 
 1. Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie,
     dass **unten rechts** das Datenziel auf **Lakehouse (1)** festgelegt
@@ -227,7 +227,7 @@ incorrect.](../media/Lab-04/image20.png)
 wählen Sie die Auslassungspunkte neben „Tabellen" und „Aktualisieren"
 aus, um die Tabellen zu aktualisieren.
 
-### Aufgabe 5: Snowflake-Abfragen in Dataflow kopieren
+## Aufgabe 5: Snowflake-Abfragen in Dataflow kopieren
 
 1. Wir navigieren zurück zum Fabric-Arbeitsbereich
     **FAIAD _ <username > (1)**.
@@ -289,7 +289,7 @@ eingefügt haben, können Sie diese Option deaktivieren.
 
     ![](../media/Lab-04/image23.png)
 
-### Aufgabe 6: Verbindung zu Snowflake erstellen
+## Aufgabe 6: Verbindung zu Snowflake erstellen
 
 Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der
 Bereich „Abfragen" jetzt links ist. Weil für Snowflake keine Verbindung
@@ -337,7 +337,7 @@ erforderlichen Spalten zu erstellen. Auf ähnliche Weise wird „PO Line
 Items" mit „PO" zusammengeführt, um den Fakt „PO" zu erstellen. Nun
 müssen die Daten von „Supplier" und „PO" im Lakehouse erfasst werden.
 
-### Aufgabe 7: Datenziel für die Abfragen „Supplier" und „PO" konfigurieren
+## Aufgabe 7: Datenziel für die Abfragen „Supplier" und „PO" konfigurieren
 
 1. Wählen Sie die Abfrage **Supplier (1)** aus.
 
@@ -387,7 +387,7 @@ müssen die Daten von „Supplier" und „PO" im Lakehouse erfasst werden.
 
     ![](../media/Lab-04/image30.png)
 
-### Aufgabe 8: Snowflake-Dataflow umbenennen und veröffentlichen
+## Aufgabe 8: Snowflake-Dataflow umbenennen und veröffentlichen
 
 1. Wählen Sie oben im Bildschirm den **Pfeil neben Dataflow 2 (Name
     ggf. anders)** aus.
@@ -425,7 +425,7 @@ Nun erstellen wir eine Verknüpfung, um Daten aus Dataverse zu erfassen.
 
 # Verknüpfung zum internen Lakehouse
 
-### Aufgabe 9: Eine Verknüpfung zu Dataverse erstellen
+## Aufgabe 9: Eine Verknüpfung zu Dataverse erstellen
 
 Sie sollten sich im Lakehouse **lh_FAIAD** befinden. Stellen Sie sicher,
 dass Sie sich in der Lakehouse-Ansicht (nicht im SQL-Analyseendpunkt)
@@ -490,7 +490,7 @@ eine Verknüpfung zu diesem Lakehouse erstellen.
 
     ![](../media/Lab-04/image39.png)
 
-### Aufgabe 10: Eine Verknüpfung zu einem Lakehouse erstellen
+## Aufgabe 10: Eine Verknüpfung zu einem Lakehouse erstellen
 
 1. Wählen Sie im Bereich **Explorer** die **Auslassungspunkte** neben
     **Tables** aus.
@@ -547,14 +547,14 @@ Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten
 Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie
 in der Hilfe (?) Links zu praktischen Informationen.
 
-    ![](../media/Lab-04/image45.png)
+![](../media/Lab-01/image28.png)
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit
 Microsoft Fabric.
 
-- Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von
-  Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden Sie
-  im Blogbeitrag.
+- Die vollständige Ankündigung der allgemeinen Verfügbarkeit von
+  [Microsoft Fabric finden Sie im
+  Blogbeitrag](https://aka.ms/Fabric-Hero-Blog-Ignite23).
 
 - Fabric bei einer [interaktiven
   Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
@@ -562,10 +562,10 @@ Microsoft Fabric.
 - Zur [kostenlosen Testversion von Microsoft
   Fabric](https://aka.ms/try-fabric) anmelden
 
-- [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric)
+- [Die Microsoft Fabric-Webseite](https://aka.ms/microsoft-fabric)
   besuchen
 
-- Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue
+- Mit [Modulen von Fabric Learning](https://aka.ms/learn-fabric) neue
   Qualifikationen erwerben
 
 - [Technische Dokumentation zu Fabric](https://aka.ms/fabric-docs) lesen
@@ -573,23 +573,24 @@ Microsoft Fabric.
 - [Kostenloses E-Book zum Einstieg in
   Fabric](https://aka.ms/fabric-get-started-ebook) lesen
 
-- Mitglied der [Fabric-Community](https://aka.ms/fabric-community)
+- Mitglied der [Fabric Community](https://aka.ms/fabric-community)
   werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen
   auszutauschen
 
-Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
+Lesen Sie die Blogs, in denen die Fabric-Funktionen ausführlich
+beschrieben werden:
 
 - [Blog zum Data Factory-Funktionsbereich in
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+  Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Blog zum Data Engineering-Funktionsbereich von Synapse in
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
 - [Blog zum Data Science-Funktionsbereich von Synapse in
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
 - [Blog zum Data Warehousing-Funktionsbereich von Synapse in
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+  Fabric ](https://aka.ms/Fabric-DW-Blog)
 
 - [Blog zum Real-Time Analytics-Funktionsbereich von Synapse in
   Fabric](https://aka.ms/Fabric-RTA-Blog)
@@ -597,7 +598,7 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog mit Ankündigungen zu Power BI](https://aka.ms/Fabric-PBI-Blog)
 
 - [Blog zum Data Activator-Funktionsbereich in
-  Fabric](https://aka.ms/Fabric-DA-Blog) 
+  Fabric](https://aka.ms/Fabric-DA-Blog)
 
 - [Blog zu Verwaltung und Governance in
   Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
@@ -607,67 +608,66 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog zur Dataverse- und Microsoft
   Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
->
-> Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
-> folgenden Bedingungen zu:
->
-> Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
-> von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
-> erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
-> verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
-> und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
-> andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
-> Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
-> verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
-> vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
-> oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
->
-> DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
-> DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
-> WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
->
-> DIESE DEMO/ÜBUNG STELLT BESTIMMTE
-> SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
-> POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
-> UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
-> BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
-> DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
-> FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
-> ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
-> ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
-> BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
-> PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
->
-> **FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
-> und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
-> gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
-> für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
-> gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
-> Patentrechte ab, die erforderlich sind, damit deren Produkte,
-> Technologien und Dienste bestimmte Teile einer Software oder eines
-> Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
-> oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
-> kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
-> Microsoft Drittparteien eine Lizenz für seine Software oder
-> Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
-> Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
->
-> DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
-> GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
-> AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
-> GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
-> ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
-> DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
-> ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
-> DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
-> BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
-> FÜR EINEN BESTIMMTEN ZWECK.
->
-> **HAFTUNGSAUSSCHLUSS**
->
-> Diese Demo/Übung enthält nur einen Teil der neuen Features und
-> Verbesserungen in Microsoft Power BI. Einige Features können sich
-> unter Umständen in zukünftigen Versionen des Produkts ändern. In
-> dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
-> über alle neuen Features.
+© 2026 Microsoft Corporation. Alle Rechte vorbehalten.
+
+Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
+folgenden Bedingungen zu:
+
+Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
+von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
+erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
+verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
+und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
+andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
+Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
+verbreiten, zu übertragen, anzuzeigen, auszuführen, zu vervielfältigen,
+zu veröffentlichen, zu lizenzieren, zu transferieren oder zu verkaufen
+oder aus ihr abgeleitete Werke zu erstellen.
+
+DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
+DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
+WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
+
+DIESE DEMO/ÜBUNG STELLT BESTIMMTE SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES
+UND FUNKTIONEN, EINSCHLIESSLICH POTENZIELLER NEUER FEATURES UND
+KONZEPTE, IN EINER SIMULIERTEN UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER
+INSTALLATION FÜR DEN OBEN BESCHRIEBENEN ZWECK BEREIT. DIE
+TECHNOLOGIE/KONZEPTE IN DIESER DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT
+DAS VOLLSTÄNDIGE FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE
+NICHT WIE DIE ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR
+AUCH KEINE ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE
+ERFAHRUNG BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
+PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
+
+**FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
+gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
+für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
+gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
+Patentrechte ab, die erforderlich sind, damit deren Produkte,
+Technologien und Dienste bestimmte Teile einer Software oder eines
+Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
+oder eine Verbindung zu dieser/diesem herstellen können. Sie geben kein
+Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen Microsoft
+Drittparteien eine Lizenz für seine Software oder Dokumentation gewähren
+muss, weil wir Ihr Feedback in diese aufnehmen. Diese Rechte bestehen
+nach Ablauf dieser Vereinbarung fort.
+
+DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
+GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
+AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
+GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK,
+DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN DRITTER.
+MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI ANSPRÜCHE
+IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS DER
+VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
+BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
+FÜR EINEN BESTIMMTEN ZWECK.
+
+**HAFTUNGSAUSSCHLUSS**
+
+Diese Demo/Übung enthält nur einen Teil der neuen Features und
+Verbesserungen in Microsoft Power BI. Einige Features können sich unter
+Umständen in zukünftigen Versionen des Produkts ändern. In dieser
+Demo/Übung erhalten Sie Informationen über einige, aber nicht über alle
+neuen Features.

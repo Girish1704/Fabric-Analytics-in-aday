@@ -57,7 +57,7 @@ Inhalt dieser Übung:
 
 # Dataflow Gen2
 
-### Aufgabe 1: Geplante Aktualisierung für den Lieferanten-Dataflow konfigurieren
+## Aufgabe 1: Geplante Aktualisierung für den Lieferanten-Dataflow konfigurieren
 
 Beginnen wir damit, eine geplante Aktualisierung des
 Lieferanten-Dataflows zu konfigurieren.
@@ -177,7 +177,7 @@ Problem zu beheben.
 
 # Pipeline
 
-### Aufgabe 2: Pipeline erstellen
+## Aufgabe 2: Pipeline erstellen
 
 1. Wir navigieren zurück zum Fabric-Arbeitsbereich,
     **FAIAD_<Benutzername>**, indem wir den Arbeitsbereich im linken
@@ -230,7 +230,7 @@ durchführen, auch in JSON geschrieben werden kann.
 
     ![](../media/Lab-05/image21.png)
 
-### Aufgabe 3: Einfache Pipeline erstellen
+## Aufgabe 3: Einfache Pipeline erstellen
 
 Beginnen wir mit der Erstellung der Pipeline. Wir benötigen eine
 Aktivität, um den Dataflow zu aktualisieren. Lassen Sie uns nach einer
@@ -306,7 +306,7 @@ zur Festlegung des Dataflows auf eine geplante Aktualisierung bietet
 - Die Pipeline bietet die Möglichkeit, andere Aufgaben auszuführen und
   den Dataflow zu aktualisieren.
 
-### Aufgabe 4: Neue Pipeline erstellen
+## Aufgabe 4: Neue Pipeline erstellen
 
 Fügen wir unserem Szenario etwas mehr Komplexität hinzu. Wir haben
 festgestellt, dass, wenn die Daten nicht um 9:00 Uhr morgens verfügbar
@@ -330,7 +330,7 @@ neuen Pipeline erreicht werden kann.
 
     ![](../media/Lab-05/image26.png)
 
-### Aufgabe 5: Until-Aktivität erstellen
+## Aufgabe 5: Until-Aktivität erstellen
 
 1. Sie werden zum Bildschirm „Pipeline" weitergeleitet. Wählen Sie im
     Menü die Option **Aktivitäten** aus.
@@ -347,7 +347,7 @@ erfolgreich ist oder drei Versuche durchgeführt wurden.
 
     ![](../media/Lab-05/image27.png)
 
-### Aufgabe 6: Variablen erstellen
+## Aufgabe 6: Variablen erstellen
 
 1. Wir müssen Variablen für die Iteration und Festlegung des Status
     festlegen. Wählen Sie den **leeren Bereich** im Bereich für
@@ -401,7 +401,7 @@ kein Leerzeichen vorhanden ist.
 
     ![](../media/Lab-05/image29.png)
 
-### Aufgabe 7: Until-Aktivität konfigurieren
+## Aufgabe 7: Until-Aktivität konfigurieren
 
 1. Wählen Sie die **Bis**-Aktivität aus.
 
@@ -539,7 +539,7 @@ variables('varSuccess')))**
 
     ![](../media/Lab-05/image38.png)
 
-### Aufgabe 8: Dataflow-Aktivität konfigurieren
+## Aufgabe 8: Dataflow-Aktivität konfigurieren
 
 1. Sie werden zum Designbildschirm weitergeleitet. Wählen Sie bei
     ausgewählter **Bis-Aktivität** im **unteren Bereich** die Option
@@ -575,7 +575,7 @@ variables('varSuccess')))**
 
     ![](../media/Lab-05/image41.png)
 
-### Aufgabe 9: Erste Aktivität „Variable festlegen" konfigurieren
+## Aufgabe 9: Erste Aktivität „Variable festlegen" konfigurieren
 
 Wir haben die Dataflow-Aktivität wie zuvor in der Übung konfiguriert.
 Nun fügen wir neue Logik hinzu. Wenn die Dataflow-Aktualisierung
@@ -663,7 +663,7 @@ Variable festlegen. Das bedeutet, dass wir die Zählervariable
 hinzufügen (varCounter = varCounter + 1). Daher nutzen wir die Variable
 „varTempCounter".
 
-### Aufgabe 10: Zweite Aktivität „Variable festlegen" konfigurieren
+## Aufgabe 10: Zweite Aktivität „Variable festlegen" konfigurieren
 
 1. Wählen Sie im oberen Menü **Aktivitäten -> Variable festlegen**
     aus. Die Aktivität „Variable festlegen" wird dem Designcanvas
@@ -710,7 +710,7 @@ Variablen „varCounter" plus eins (varTempCounter = varCounter + 1) fest.
 Nun müssen wir den Wert der Variablen „varCounter" auf den Wert
 „varTempCounter" festlegen.
 
-### Aufgabe 11: Dritte Aktivität „Variable festlegen" konfigurieren
+## Aufgabe 11: Dritte Aktivität „Variable festlegen" konfigurieren
 
 1. Wählen Sie im oberen Menü **Aktivitäten -> Variable festlegen**
     aus. Die Aktivität „Variable festlegen" wird dem Designcanvas
@@ -758,7 +758,7 @@ auf den Wert der Variablen „varTempCounter" (varCounter =
 varTempCounter) fest. Am Ende jeder Iteration haben sowohl varCounter
 als auch varTempCounter denselben Wert.
 
-### Aufgabe 12: Wait-Aktivität konfigurieren
+## Aufgabe 12: Wait-Aktivität konfigurieren
 
 Als nächstes müssen wir 5 Minuten/300 Sekunden warten, wenn die
 Dataflow-Aktualisierung beim ersten Mal fehlschlägt, bevor wir es erneut
@@ -856,7 +856,7 @@ aussehen.
 
     ![](../media/Lab-05/image53.png)
 
-### Aufgabe 13: Geplante Aktualisierung für die Pipeline konfigurieren
+## Aufgabe 13: Geplante Aktualisierung für die Pipeline konfigurieren
 
 1. Wir können die Pipeline testen, indem wir **Start -> Ausführen**
     auswählen.
@@ -917,14 +917,14 @@ Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten
 Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie
 in der Hilfe (?) Links zu praktischen Informationen.
 
-    ![](../media/Lab-05/image56.png)
+![](../media/Lab-01/image28.png)
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit
 Microsoft Fabric.
 
-- Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von
-  Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
-  finden Sie im Blogbeitrag.
+- Die vollständige Ankündigung der allgemeinen Verfügbarkeit von
+  [Microsoft Fabric finden Sie im
+  Blogbeitrag](https://aka.ms/Fabric-Hero-Blog-Ignite23).
 
 - Fabric bei einer [interaktiven
   Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
@@ -932,10 +932,10 @@ Microsoft Fabric.
 - Zur [kostenlosen Testversion von Microsoft
   Fabric](https://aka.ms/try-fabric) anmelden
 
-- [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric)
+- [Die Microsoft Fabric-Webseite](https://aka.ms/microsoft-fabric)
   besuchen
 
-- Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue
+- Mit [Modulen von Fabric Learning](https://aka.ms/learn-fabric) neue
   Qualifikationen erwerben
 
 - [Technische Dokumentation zu Fabric](https://aka.ms/fabric-docs) lesen
@@ -943,23 +943,24 @@ Microsoft Fabric.
 - [Kostenloses E-Book zum Einstieg in
   Fabric](https://aka.ms/fabric-get-started-ebook) lesen
 
-- Mitglied der [Fabric-Community](https://aka.ms/fabric-community)
-  werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen
+- Mitglied der [Fabric Community](https://aka.ms/fabric-community)
+  werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen
   auszutauschen
 
-Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
+Lesen Sie die Blogs, in denen die Fabric-Funktionen ausführlich
+beschrieben werden:
 
 - [Blog zum Data Factory-Funktionsbereich in
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+  Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Blog zum Data Engineering-Funktionsbereich von Synapse in
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
 - [Blog zum Data Science-Funktionsbereich von Synapse in
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
 - [Blog zum Data Warehousing-Funktionsbereich von Synapse in
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+  Fabric ](https://aka.ms/Fabric-DW-Blog)
 
 - [Blog zum Real-Time Analytics-Funktionsbereich von Synapse in
   Fabric](https://aka.ms/Fabric-RTA-Blog)
@@ -967,7 +968,7 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog mit Ankündigungen zu Power BI](https://aka.ms/Fabric-PBI-Blog)
 
 - [Blog zum Data Activator-Funktionsbereich in
-  Fabric](https://aka.ms/Fabric-DA-Blog) 
+  Fabric](https://aka.ms/Fabric-DA-Blog)
 
 - [Blog zu Verwaltung und Governance in
   Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
@@ -977,67 +978,66 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog zur Dataverse- und Microsoft
   Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
->
-> Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
-> folgenden Bedingungen zu:
->
-> Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
-> von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
-> erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
-> verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
-> und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
-> andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
-> Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
-> verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
-> vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
-> oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
->
-> DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
-> DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
-> WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
->
-> DIESE DEMO/ÜBUNG STELLT BESTIMMTE
-> SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
-> POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
-> UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
-> BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
-> DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
-> FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
-> ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
-> ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
-> BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
-> PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
->
-> **FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen
-> und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
-> gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
-> für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
-> gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
-> Patentrechte ab, die erforderlich sind, damit deren Produkte,
-> Technologien und Dienste bestimmte Teile einer Software oder eines
-> Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
-> oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
-> kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
-> Microsoft Drittparteien eine Lizenz für seine Software oder
-> Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
-> Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
->
-> DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
-> GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
-> AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
-> GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
-> ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
-> DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
-> ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
-> DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
-> BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
-> FÜR EINEN BESTIMMTEN ZWECK.
->
-> **HAFTUNGSAUSSCHLUSS**
->
-> Diese Demo/Übung enthält nur einen Teil der neuen Features und
-> Verbesserungen in Microsoft Power BI. Einige Features können sich
-> unter Umständen in zukünftigen Versionen des Produkts ändern. In
-> dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
-> über alle neuen Features.
+© 2026 Microsoft Corporation. Alle Rechte vorbehalten.
+
+Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
+folgenden Bedingungen zu:
+
+Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
+von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
+erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
+verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
+und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
+andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
+Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
+verbreiten, zu übertragen, anzuzeigen, auszuführen, zu vervielfältigen,
+zu veröffentlichen, zu lizenzieren, zu transferieren oder zu verkaufen
+oder aus ihr abgeleitete Werke zu erstellen.
+
+DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
+DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
+WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
+
+DIESE DEMO/ÜBUNG STELLT BESTIMMTE SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES
+UND FUNKTIONEN, EINSCHLIESSLICH POTENZIELLER NEUER FEATURES UND
+KONZEPTE, IN EINER SIMULIERTEN UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER
+INSTALLATION FÜR DEN OBEN BESCHRIEBENEN ZWECK BEREIT. DIE
+TECHNOLOGIE/KONZEPTE IN DIESER DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT
+DAS VOLLSTÄNDIGE FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE
+NICHT WIE DIE ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR
+AUCH KEINE ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE
+ERFAHRUNG BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
+PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
+
+**FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
+gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
+für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
+gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
+Patentrechte ab, die erforderlich sind, damit deren Produkte,
+Technologien und Dienste bestimmte Teile einer Software oder eines
+Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
+oder eine Verbindung zu dieser/diesem herstellen können. Sie geben kein
+Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen Microsoft
+Drittparteien eine Lizenz für seine Software oder Dokumentation gewähren
+muss, weil wir Ihr Feedback in diese aufnehmen. Diese Rechte bestehen
+nach Ablauf dieser Vereinbarung fort.
+
+DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
+GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
+AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
+GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK,
+DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN DRITTER.
+MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI ANSPRÜCHE
+IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS DER
+VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
+BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
+FÜR EINEN BESTIMMTEN ZWECK.
+
+**HAFTUNGSAUSSCHLUSS**
+
+Diese Demo/Übung enthält nur einen Teil der neuen Features und
+Verbesserungen in Microsoft Power BI. Einige Features können sich unter
+Umständen in zukünftigen Versionen des Produkts ändern. In dieser
+Demo/Übung erhalten Sie Informationen über einige, aber nicht über alle
+neuen Features.

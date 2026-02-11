@@ -37,7 +37,7 @@ Inhalt dieser Übung:
 
 # Power BI
 
-### Aufgabe 1: Bericht automatisch erstellen
+## Aufgabe 1: Bericht automatisch erstellen
 
 Verwenden wir zunächst die Option „Bericht automatisch erstellen". Und
 später in der Übung werden wir den Bericht, den wir in Power BI haben,
@@ -138,7 +138,7 @@ und Kennzahlen (Übung 6) übersprungen haben.
 
     ![](../media/Lab-07/image13.png)
 
-### Aufgabe 2: Hintergrund für einen neuen Bericht konfigurieren
+## Aufgabe 2: Hintergrund für einen neuen Bericht konfigurieren
 
 Lassen Sie uns einen neuen Bericht mit einer leeren Canvas erstellen.
 
@@ -199,7 +199,7 @@ wir nicht alle Visuals erstellen.
 
     ![](../media/Lab-07/image18.png)
 
-### Aufgabe 3: Dem Bericht eine Kopfzeile hinzufügen
+## Aufgabe 3: Dem Bericht eine Kopfzeile hinzufügen
 
 1. Wir fügen nun die Kopfzeile am oberen Rand hinzu. Wählen Sie im
     **Menü** die Option **Textfeld** aus.
@@ -225,7 +225,7 @@ wir nicht alle Visuals erstellen.
 
     ![](../media/Lab-07/image19.png)
 
-### Aufgabe 4: Dem Bericht KPIs hinzufügen
+## Aufgabe 4: Dem Bericht KPIs hinzufügen
 
 1. Fügen wir nun Verkauf-KPI hinzu. Wählen Sie den **Leerraum** im
     Canvas aus, um den Fokus vom Textfeld zu entfernen.
@@ -302,7 +302,7 @@ wir nicht alle Visuals erstellen.
 
     ![](../media/Lab-07/image25.png)
 
-### Aufgabe 5: Dem Bericht ein Liniendiagramm hinzufügen
+## Aufgabe 5: Dem Bericht ein Liniendiagramm hinzufügen
 
 Lassen Sie uns ein Liniendiagramm erstellen, um Sales im Zeitverlauf
 nach Reseller Company zu visualisieren.
@@ -321,7 +321,7 @@ nach Reseller Company zu visualisieren.
 
     ![](../media/Lab-07/image26.png)
 
-### Aufgabe 6: Den Bericht speichern
+## Aufgabe 6: Den Bericht speichern
 
 Speichern wir den Bericht, bevor wir ihn verlassen, um Änderungen am
 Modell vorzunehmen.
@@ -341,7 +341,7 @@ Modell vorzunehmen.
 
     ![](../media/Lab-07/image27.png)
 
-### Aufgabe 7: Spalte „Year" in der Tabelle „Date" konfigurieren
+## Aufgabe 7: Spalte „Year" in der Tabelle „Date" konfigurieren
 
 1. Wählen Sie im **oberen Menü** die Option **Bearbeiten** aus, um zum
     Bearbeitungsmodus zurückzukehren.
@@ -386,7 +386,7 @@ Modell vorzunehmen.
 
     ![](../media/Lab-07/image30.png)
 
-### Aufgabe 8: Die Spalte „Month Name" in der Tabelle „Date" konfigurieren
+## Aufgabe 8: Die Spalte „Month Name" in der Tabelle „Date" konfigurieren
 
 1. Fügen wir diesem Diagramm „Monat" hinzu. Ziehen Sie das Feld
     **MonthNameShort** unter **Year** aus der Tabelle „Date" in die
@@ -429,7 +429,7 @@ dieses Problem beheben.
 
     ![](../media/Lab-07/image34.png)
 
-### Aufgabe 9: Liniendiagramm formatieren
+## Aufgabe 9: Liniendiagramm formatieren
 
 Beachten Sie, wie einfach es ist, das semantische Modell beim Erstellen
 der Berichte zu aktualisieren. Daraus ergibt sich eine nahtlose
@@ -489,7 +489,7 @@ Interaktion wie Power BI Desktop.
 Wie bereits erwähnt, werden wir nicht alle Visuals in dieser Übung
 erstellen. Sie können nach Belieben weitere Visuals erstellen.
 
-### Aufgabe 10: Power BI Desktop mit dem semantischen Modell verbinden
+## Aufgabe 10: Power BI Desktop mit dem semantischen Modell verbinden
 
 Sehen wir uns nun an, wie einfach es ist, Power BI Desktop mit dem
 semantischen Modell zu verbinden und Visuals zu erstellen.
@@ -577,7 +577,7 @@ möglicherweise ein Fehler vor, der sich jedoch leicht beheben lässt.
 20. Lassen Sie uns den Bericht speichern, indem wird im Menüband **Datei
     -> Speichern** auswählen.
 
-### Aufgabe 11: Neue Daten hinzufügen, um den Direct Lake-Modus zu simulieren
+## Aufgabe 11: Neue Daten hinzufügen, um den Direct Lake-Modus zu simulieren
 
 Normalerweise müssen wir im Import-Modus, sobald die Daten in der Quelle
 aktualisiert wurden, das Power BI-Modell aktualisieren, woraufhin die
@@ -1076,14 +1076,14 @@ Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten
 Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie
 in der Hilfe (?) Links zu praktischen Informationen.
 
-    ![](../media/Lab-07/image57.png)
+![](../media/Lab-01/image28.png)
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit
 Microsoft Fabric.
 
-- Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von
-  Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden Sie
-  im Blogbeitrag.
+- Die vollständige Ankündigung der allgemeinen Verfügbarkeit von
+  [Microsoft Fabric finden Sie im
+  Blogbeitrag](https://aka.ms/Fabric-Hero-Blog-Ignite23).
 
 - Fabric bei einer [interaktiven
   Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
@@ -1091,10 +1091,10 @@ Microsoft Fabric.
 - Zur [kostenlosen Testversion von Microsoft
   Fabric](https://aka.ms/try-fabric) anmelden
 
-- [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric)
+- [Die Microsoft Fabric-Webseite](https://aka.ms/microsoft-fabric)
   besuchen
 
-- Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue
+- Mit [Modulen von Fabric Learning](https://aka.ms/learn-fabric) neue
   Qualifikationen erwerben
 
 - [Technische Dokumentation zu Fabric](https://aka.ms/fabric-docs) lesen
@@ -1102,23 +1102,24 @@ Microsoft Fabric.
 - [Kostenloses E-Book zum Einstieg in
   Fabric](https://aka.ms/fabric-get-started-ebook) lesen
 
-- Mitglied der [Fabric-Community](https://aka.ms/fabric-community)
+- Mitglied der [Fabric Community](https://aka.ms/fabric-community)
   werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen
   auszutauschen
 
-Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
+Lesen Sie die Blogs, in denen die Fabric-Funktionen ausführlich
+beschrieben werden:
 
 - [Blog zum Data Factory-Funktionsbereich in
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+  Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Blog zum Data Engineering-Funktionsbereich von Synapse in
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
 - [Blog zum Data Science-Funktionsbereich von Synapse in
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
 - [Blog zum Data Warehousing-Funktionsbereich von Synapse in
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+  Fabric ](https://aka.ms/Fabric-DW-Blog)
 
 - [Blog zum Real-Time Analytics-Funktionsbereich von Synapse in
   Fabric](https://aka.ms/Fabric-RTA-Blog)
@@ -1126,7 +1127,7 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog mit Ankündigungen zu Power BI](https://aka.ms/Fabric-PBI-Blog)
 
 - [Blog zum Data Activator-Funktionsbereich in
-  Fabric](https://aka.ms/Fabric-DA-Blog) 
+  Fabric](https://aka.ms/Fabric-DA-Blog)
 
 - [Blog zu Verwaltung und Governance in
   Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
@@ -1136,67 +1137,66 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog zur Dataverse- und Microsoft
   Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
->
-> Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
-> folgenden Bedingungen zu:
->
-> Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
-> von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
-> erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
-> verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
-> und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
-> andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
-> Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
-> verbreiten, zu übertragen, anzuzeigen, auszuführen, zu
-> vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren
-> oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
->
-> DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
-> DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
-> WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
->
-> DIESE DEMO/ÜBUNG STELLT BESTIMMTE
-> SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH
-> POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN
-> UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN
-> BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER
-> DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE
-> FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE
-> ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE
-> ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG
-> BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
-> PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
->
-> **FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
-> und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
-> gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
-> für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
-> gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
-> Patentrechte ab, die erforderlich sind, damit deren Produkte,
-> Technologien und Dienste bestimmte Teile einer Software oder eines
-> Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
-> oder eine Verbindung zu dieser/diesem herstellen können. Sie geben
-> kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen
-> Microsoft Drittparteien eine Lizenz für seine Software oder
-> Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen.
-> Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
->
-> DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
-> GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
-> AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
-> GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN
-> ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN
-> DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI
-> ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS
-> DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
-> BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
-> FÜR EINEN BESTIMMTEN ZWECK.
->
-> **HAFTUNGSAUSSCHLUSS**
->
-> Diese Demo/Übung enthält nur einen Teil der neuen Features und
-> Verbesserungen in Microsoft Power BI. Einige Features können sich
-> unter Umständen in zukünftigen Versionen des Produkts ändern. In
-> dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht
-> über alle neuen Features.
+© 2026 Microsoft Corporation. Alle Rechte vorbehalten.
+
+Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den
+folgenden Bedingungen zu:
+
+Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird
+von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu
+erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur
+verwenden, um derartige Technologiefeatures und Funktionen zu bewerten
+und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für
+andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese
+Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu
+verbreiten, zu übertragen, anzuzeigen, auszuführen, zu vervielfältigen,
+zu veröffentlichen, zu lizenzieren, zu transferieren oder zu verkaufen
+oder aus ihr abgeleitete Werke zu erstellen.
+
+DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS
+DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE
+WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
+
+DIESE DEMO/ÜBUNG STELLT BESTIMMTE SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES
+UND FUNKTIONEN, EINSCHLIESSLICH POTENZIELLER NEUER FEATURES UND
+KONZEPTE, IN EINER SIMULIERTEN UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER
+INSTALLATION FÜR DEN OBEN BESCHRIEBENEN ZWECK BEREIT. DIE
+TECHNOLOGIE/KONZEPTE IN DIESER DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT
+DAS VOLLSTÄNDIGE FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE
+NICHT WIE DIE ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR
+AUCH KEINE ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE
+ERFAHRUNG BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER
+PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
+
+**FEEDBACK.** Wenn Sie Feedback zu den Technologiefeatures, Funktionen
+und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden,
+gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und
+für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und
+gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche
+Patentrechte ab, die erforderlich sind, damit deren Produkte,
+Technologien und Dienste bestimmte Teile einer Software oder eines
+Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden
+oder eine Verbindung zu dieser/diesem herstellen können. Sie geben kein
+Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen Microsoft
+Drittparteien eine Lizenz für seine Software oder Dokumentation gewähren
+muss, weil wir Ihr Feedback in diese aufnehmen. Diese Rechte bestehen
+nach Ablauf dieser Vereinbarung fort.
+
+DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND
+GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER
+AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND
+GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK,
+DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN DRITTER.
+MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI ANSPRÜCHE
+IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS DER
+VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW.
+BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN
+FÜR EINEN BESTIMMTEN ZWECK.
+
+**HAFTUNGSAUSSCHLUSS**
+
+Diese Demo/Übung enthält nur einen Teil der neuen Features und
+Verbesserungen in Microsoft Power BI. Einige Features können sich unter
+Umständen in zukünftigen Versionen des Produkts ändern. In dieser
+Demo/Übung erhalten Sie Informationen über einige, aber nicht über alle
+neuen Features.

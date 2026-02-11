@@ -1,6 +1,6 @@
 # Microsoft Fabric Fabric Analyst in a Day - Übung 1
 
-
+![](../media/Lab-01/main1.png)
 
 # Inhalt
 - Dokumentstruktur
@@ -99,7 +99,7 @@ Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in
 Power BI Desktop an, um die Transformationen und das Modell zu
 verstehen.
 
-### Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
+## Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
 
 1. Öffnen Sie in der Übungsumgebung auf dem **Desktop** im Ordner
     **Reports** die Datei **FAIAD.pbix.** Die Datei wird in Power BI
@@ -112,24 +112,24 @@ verstehen.
     **E-Mail-Adresse** des Dialogfelds ein, und wählen Sie **Weiter**
     aus.
 
-- E-Mail-Adresse/Benutzername:
+    - E-Mail-Adresse/Benutzername:
 
-    ![](../media/Lab-01/image7.png)
+      ![](../media/Lab-01/image7.png)
 
 3. Auf der Registerkarte „Bei Microsoft Azure anmelden" sehen Sie den
     Anmeldebildschirm. Hier geben Sie die folgende E-Mail-Adresse bzw.
     den folgenden Benutzernamen ein und klicken dann auf **Weiter**.
 
-- E-Mail-Adresse/Benutzername:
+    - E-Mail-Adresse/Benutzername:
 
-    ![](../media/Lab-01/image8.png)
+      ![](../media/Lab-01/image8.png)
 
 4. Geben Sie nun den folgenden **befristeten Zugriffspass** ein, und
     klicken Sie auf **Anmelden**.
 
-- Befristeter Zugriffspass:
+    - Befristeter Zugriffspass:
 
-    ![](../media/Lab-01/image9.png)
+      ![](../media/Lab-01/image9.png)
 
 5. Das Dialogfeld **Bei all Ihren Apps angemeldet bleiben** wird
     geöffnet. Klicken Sie auf **OK**.
@@ -141,7 +141,7 @@ verstehen.
 
 Nun wird Power BI Desktop geöffnet.
 
-### Aufgabe 2: Power BI Desktop-Bericht analysieren
+## Aufgabe 2: Power BI Desktop-Bericht analysieren
 
 Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert.
 Die KPIs stehen oben links auf der Seite. Die restlichen Visuals zeigen
@@ -217,23 +217,23 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
 
 10. Beachten Sie, dass es zwei Faktentabellen gibt: Sales und PO.
 
-a. Die Genauigkeit der Sales-Daten richtet sich nach Date, Reseller,
-Product und People. Date, Reseller, Product und People sind mit Sales in
-Zusammenhang gesetzt.
+    a. Die Genauigkeit der Sales-Daten richtet sich nach Date, Reseller,
+    Product und People. Date, Reseller, Product und People sind mit Sales in
+    Zusammenhang gesetzt.
 
-b. Die Genauigkeit von PO-Daten richtet sich nach Date, Product und
-People. Date, Product und People sind mit PO in Zusammenhang gesetzt.
+    b. Die Genauigkeit von PO-Daten richtet sich nach Date, Product und
+    People. Date, Product und People sind mit PO in Zusammenhang gesetzt.
 
-c. Wir haben Supplier-Daten nach Product. Supplier steht mit Product in
-Zusammenhang.
+    c. Wir haben Supplier-Daten nach Product. Supplier steht mit Product in
+    Zusammenhang.
 
-d. Wir haben Reseller-Standortdaten nach Geo. Geo steht in Zusammenhang
-mit Reseller.
+    d. Wir haben Reseller-Standortdaten nach Geo. Geo steht in Zusammenhang
+    mit Reseller.
 
-e. Wir haben Customer-Informationen nach Reseller. Customer steht in
-Zusammenhang mit Reseller.
+    e. Wir haben Customer-Informationen nach Reseller. Customer steht in
+    Zusammenhang mit Reseller.
 
-### Aufgabe 3: Power Query-Abfragen überprüfen
+## Aufgabe 3: Power Query-Abfragen überprüfen
 
 1. Beschäftigen wir uns in Power Query mit den Datenquellen. Wählen Sie
     im Menüband **Start > Daten transformieren** aus.
@@ -335,13 +335,13 @@ Zusammenhang mit Reseller.
 
     - **Snowflake-Kennwort:** 8UpfRpExVDXv2AC1
 
-*Hinweis: Wenn Sie Probleme beim Herstellen einer Verbindung zu
-Snowflake mit obigen Anmeldeinformationen haben, verwenden Sie bitte die
-die nachfolgenden Backup-Anmeldeinformationen.*
+    *Hinweis: Wenn Sie Probleme beim Herstellen einer Verbindung zu
+    Snowflake mit obigen Anmeldeinformationen haben, verwenden Sie bitte die
+    die nachfolgenden Backup-Anmeldeinformationen.*
 
-- **Snowflake-Benutzername:** SNOWFLAKE_BACKUP
+    - **Snowflake-Benutzername:** SNOWFLAKE_BACKUP
 
-- **Snowflake-Kennwort:** 8UpfRpExVDXv2AC1
+    - **Snowflake-Kennwort:** 8UpfRpExVDXv2AC1
 
 14. Beachten Sie, dass der Ordner **SnowflakeData** die Dimension
     „Supplier" und das Element „PO(Order / Spend)" enthält.
@@ -368,7 +368,7 @@ die nachfolgenden Backup-Anmeldeinformationen.*
 
     - **Kennwort:** Befindet sich auf der Registerkarte „Umgebung"
 
-    ![](../media/Lab-01/image26.png)
+      ![](../media/Lab-01/image26.png)
 
 17. Beachten Sie, dass der Ordner **SharepointData** die Dimension
     „People" enthält.
