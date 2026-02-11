@@ -751,6 +751,13 @@ nächsten Schritt erledigen.
 
     ![](../media/Lab-02/image33.png)
 
+1. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück
+    zu Workloads**. Auf diese Weise gelangen Sie zur
+    Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte
+    erkunden können.
+
+    ![](../media/Lab-02/image23.png)
+
 ## Aufgabe 10: Datenbanken-Funktionsbereich
 
 1. Klicken Sie auf der Seite **Workloads** auf **Databases**, um
@@ -945,4 +952,5 @@ Diese Demo/Übung enthält nur einen Teil der neuen Features und
 Verbesserungen in Microsoft Power BI. Einige Features können sich unter
 Umständen in zukünftigen Versionen des Produkts ändern. In dieser
 Demo/Übung erhalten Sie Informationen über einige, aber nicht über alle
+
 neuen Features.
