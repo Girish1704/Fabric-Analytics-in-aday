@@ -45,7 +45,7 @@ später in der Übung werden wir den Bericht, den wir in Power BI haben,
 neu erstellen.
 
 1. Navigieren wir nun zurück zum **Fabric-Arbeitsbereich**, den Sie in
-    Übung 2 erstellt haben, mit dem Namen **FAIAD_<username>**.
+    Übung 2 erstellt haben, mit dem Namen **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 2. Wählen Sie unten links das Symbol **Fabric-Funktionsbereichs-Auswahl** aus.
 
@@ -117,7 +117,7 @@ neu erstellen.
     was für „Bericht" steht.
 
 11. Stellen Sie sicher, dass der Bericht in Ihrem Arbeitsbereich
-    **FAIAD_<Benutzername>** gespeichert wird.
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** gespeichert wird.
 
 12. Wählen Sie **Speichern** aus.
 
@@ -143,7 +143,7 @@ neu erstellen.
 Lassen Sie uns einen neuen Bericht mit einer leeren Canvas erstellen.
 
 1. Wählen Sie im **linken Bereich** den Namen Ihres Arbeitsbereichs,
-    **FAIAD_<Benutzername>**, aus, um zum Arbeitsbereich zu gelangen.
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, aus, um zum Arbeitsbereich zu gelangen.
 
 2. Wählen Sie im oberen Menü **Neues Element -> Bericht** aus. Sie
     werden zur Seite „Erstellen Sie Ihren ersten Bericht"
@@ -334,7 +334,7 @@ Modell vorzunehmen.
     was für „Bericht" steht.
 
 3. Stellen Sie sicher, dass der Bericht im Arbeitsbereich
-    **FAIAD_<Benutzername>** gespeichert wird**.**
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** gespeichert wird**.**
 
 4. Wählen Sie **Speichern** aus. Beachten Sie, dass der Bericht
     gespeichert ist und Sie sich im Anzeigemodus befinden.
@@ -605,7 +605,7 @@ aktualisieren.
 2. Klicken Sie in der unteren rechten Ecke auf das **Fabric-Logo**, und
     wechseln Sie zur **Fabric-Ansicht**.
 
-3. Wählen Sie in der linken Menüleiste **FAIAD_<Benutzername>** aus,
+3. Wählen Sie in der linken Menüleiste **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** aus,
     um zur Startseite des Arbeitsbereichs zu wechseln.
 
 4. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren.
@@ -893,7 +893,7 @@ Wenn Sie bereit sind, die Übungsumgebung zu bereinigen, führen Sie die
 folgenden Schritte aus.
 
 1. Wählen Sie im linken Bereich den Arbeitsbereich
-    **FAIAD_<Benutzername>** aus, um zur Startseite des
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** aus, um zur Startseite des
     Arbeitsbereichs zu navigieren.
 
 2. Wählen Sie im oberen Menü **Arbeitsbereichseinstellungen** aus.

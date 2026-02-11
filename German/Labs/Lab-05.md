@@ -65,7 +65,7 @@ Beginnen wir damit, eine geplante Aktualisierung des
 Lieferanten-Dataflows zu konfigurieren.
 
 1. Wir navigieren zurück zum
-    Fabric-Arbeitsbereich, **FAIAD_<Benutzername>**,
+    Fabric-Arbeitsbereich, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**,
     indem wir den Arbeitsbereich im linken Bereich auswählen.
 
 2. Zum Maximieren des Bereichs mit der Liste der Artefakte wählen Sie
@@ -185,7 +185,7 @@ Problem zu beheben.
 ## Aufgabe 2: Pipeline erstellen
 
 1. Wir navigieren zurück zum Fabric-Arbeitsbereich,
-    **FAIAD_<Benutzername>**, indem wir den Arbeitsbereich im linken
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, indem wir den Arbeitsbereich im linken
     Bereich auswählen.
 
 2. Wählen Sie im oberen Menü **+ Neues Element (1) -> Pipeline (2)**
@@ -256,7 +256,7 @@ Aktivität suchen, die wir verwenden können.
     ![](../media/Lab-05/image22.png)
 
 3. Stellen Sie sicher, dass **Arbeitsbereich** auf Ihren
-    Fabric-Arbeitsbereich, **FAIAD_<Benutzername>**, festgelegt ist.
+    Fabric-Arbeitsbereich, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, festgelegt ist.
 
 4. Wählen Sie im **Dropdownmenü „Dataflow"** die Option
     **df_People_SharePoint** aus. Wenn diese Dataflow-Aktivität
@@ -321,7 +321,7 @@ ist. Wir möchten die Wiederholungen so planen, dass sie alle 5 und 15
 Minuten erfolgen. Sehen wir uns an, wie dies durch die Erstellung einer
 neuen Pipeline erreicht werden kann.
 
-1. Wählen Sie im linken Bereich **FAIAD_<Benutzername>** aus, um zur
+1. Wählen Sie im linken Bereich **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** aus, um zur
     Startseite des Arbeitsbereichs zu gelangen.
 
 2. Klicken Sie im oberen Menü auf **+Neues Element (1)** und im
@@ -573,7 +573,7 @@ neuen Pipeline erreicht werden kann.
 7. Wählen Sie im unteren Bereich die Option **Einstellungen** aus.
 
 8. Stellen Sie sicher, dass **Arbeitsbereich** auf Ihren
-    Arbeitsbereich, **FAIAD_<Benutzername>**, festgelegt ist.
+    Arbeitsbereich, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, festgelegt ist.
 
 9. Wählen Sie im **Dropdownmenü „Dataflow"** die Option
     **df_People_SharePoint** aus.
@@ -896,7 +896,7 @@ Wartezeit festzulegen.
     ![](../media/Lab-05/image55.png)
 
 11. Wählen Sie im linken Bereich Ihren Fabric-Arbeitsbereich
-    **FAIAD_<Benutzername>** aus, um zur Startseite des
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** aus, um zur Startseite des
     Arbeitsbereichs zu navigieren**.**
 
 **Hinweis:** Im Bildschirm „Zeitplan" ist keine Option verfügbar, um Sie

@@ -34,7 +34,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 ## Aufgabe 1: Daten mithilfe von SQL abfragen
 
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich
-    **FAIAD _ <username >**, den Sie in Übung 2, Aufgabe 8, erstellt
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, den Sie in Übung 2, Aufgabe 8, erstellt
     haben.
 
 2. Sie können bei Bedarf den **Aufgabenfluss minimieren**, um die vollständige Liste der Elemente anzuzeigen.
@@ -43,7 +43,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
     Semantikmodell und dem SQL-Endpunkt zusammenhängen. In einer
     früheren Übung haben wir uns mit Lakehouse beschäftigt und
     Visual-Abfragen mithilfe des SQL-Analyseendpunkts erstellt. Wählen
-    Sie die Option **FAIAD _ <Benutzername >** in der linken
+    Sie die Option **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** in der linken
     Navigationsleiste aus, und wählen Sie dann die Option
     **Analyse-Endpunkt lh_FAIAD SQL** aus, um diese Option weiter zu
     untersuchen. Sie werden zur **SQL-Ansicht** des Explorers
@@ -139,7 +139,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 8. Das Dialogfeld „Bericht speichern" wird geöffnet. Geben Sie im Textfeld **Namen für Bericht eingeben** den Text **Units by Supplier** ein.
 
 9. Überprüfen Sie, dass der Zielarbeitsbereich Ihrem
-    Fabric-Arbeitsbereich **FAIAD _ <Benutzername >** entspricht.
+    Fabric-Arbeitsbereich **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** entspricht.
 
 10. Wählen Sie **Speichern** aus.
 

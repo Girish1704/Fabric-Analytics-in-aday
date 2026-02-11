@@ -282,10 +282,9 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     eingeben. Die Anmeldeinformationen sind unten angegeben. Wenn Sie
     fertig sind, wählen Sie **Verbinden** aus.
 
-    - E-Mail/Benutzername: Befindet sich auf der Registerkarte
-      „Umgebung"
+    - E-Mail/Benutzername: <inject key="AzureAdUserEmail"></inject>
 
-    - Kennwort: Befindet sich auf der Registerkarte „Umgebung"
+    - Kennwort: <inject key="AzureAdUserPassword"></inject>
 
 9. Klicken Sie im Fenster „Abfragen" auf die Abfrage **ADLS Base
     Folder**. Sie müssen die Anmeldeinformationen erneut eingeben, wenn
@@ -298,7 +297,7 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     Signature (SAS)** aus, und geben Sie das unten angegebene
     **SAS-Token** ein. Wählen Sie dann **Verbinden** aus.
 
-    - **SAS-Token:** Befindet sich auf der Registerkarte „Umgebung"
+    - **SAS-Token:** <inject key="Sas token"></inject>
 
       ![](../media/Lab-01/image23.png)
 
@@ -331,9 +330,9 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     Anmeldeinformationen, um alle Tabellen unter Snowflake mit Snowflake
     zu verbinden, und wählen Sie dann „**Verbinden**".
 
-    - **Snowflake-Benutzername:** TE_SNOWFLAKE1
+    - **Snowflake-Benutzername:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Snowflake-Kennwort:** 8UpfRpExVDXv2AC1
+    - **Snowflake-Kennwort:** <inject key="SnowFlake Password" enableCopy="false" />
 
     *Hinweis: Wenn Sie Probleme beim Herstellen einer Verbindung zu
     Snowflake mit obigen Anmeldeinformationen haben, verwenden Sie bitte die
@@ -363,10 +362,9 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
     auf **Anmelden**. Geben Sie den unten angegebenen Benutzernamen und
     das Kennwort ein, und wählen Sie dann „Verbinden" aus.
 
-    - **E-Mail/Benutzername:** Befindet sich auf der Registerkarte
-      „Umgebung"
+    - **E-Mail/Benutzername:** <inject key="AzureAdUserEmail"></inject>
 
-    - **Kennwort:** Befindet sich auf der Registerkarte „Umgebung"
+    - **Kennwort:** <inject key="AzureAdUserPassword"></inject>
 
       ![](../media/Lab-01/image26.png)
 
