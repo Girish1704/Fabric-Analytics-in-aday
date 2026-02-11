@@ -1,16 +1,16 @@
 # Microsoft Fabric Fabric Analyst in a Day-Übung 6
  # Inhalt
-- Einführung	3
-- Lakehouse – Analysieren von Daten	3
-    - Aufgabe 1: Daten mithilfe von SQL abfragen	3
-    - Aufgabe 2: T-SQL-Ergebnis veranschaulichen	5
-- Lakehouse – Semantische Modellierung	7
-    - Aufgabe 3: Semantisches Modell erstellen	7
-    - Aufgabe 4: Beziehungen erstellen	8
-    - Aufgabe 5: Measures erstellen	12
-    - Aufgabe 6: Fakultativer Abschnitt – Beziehungen erstellen	15
-    - Aufgabe 7: Fakultativer Abschnitt – Measures erstellen	18
-- Referenzen	20
+- Einführung	
+- Lakehouse – Analysieren von Daten	
+    - Aufgabe 1: Daten mithilfe von SQL abfragen	
+    - Aufgabe 2: T-SQL-Ergebnis veranschaulichen	
+- Lakehouse – Semantische Modellierung	
+    - Aufgabe 3: Semantisches Modell erstellen	
+    - Aufgabe 4: Beziehungen erstellen	
+    - Aufgabe 5: Measures erstellen	
+    - Aufgabe 6: Fakultativer Abschnitt – Beziehungen erstellen	
+    - Aufgabe 7: Fakultativer Abschnitt – Measures erstellen	
+- Referenzen	
 
 # Einführung 
 
