@@ -1,4 +1,6 @@
-# Microsoft Fabric Fabric Analyst in a Day-Übung 5
+# Microsoft Fabric Fabric Analyst in a Day - Übung 5
+
+![](../media/Lab-05/main5.png)
 
 # Inhalt
 - Einführung	

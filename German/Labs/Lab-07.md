@@ -1,4 +1,6 @@
-# Microsoft Fabric Fabric Analyst in a Day-Übung 7
+# Microsoft Fabric Fabric Analyst in a Day - Übung 7
+
+![](../media/Lab-07/main7.png)
 
 # Inhalt
 - Einführung	

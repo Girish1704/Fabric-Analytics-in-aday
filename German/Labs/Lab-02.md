@@ -1,5 +1,7 @@
 # Microsoft Fabric Fabric Analyst in a Day - Übung 2
 
+![](../media/Lab-02/main2.png)
+
 # Inhalt	
 - Einführung	
 - Fabric-Lizenz	
