@@ -1,5 +1,6 @@
 # Microsoft Fabric Fabric Analyst in a Day-Laboratorio 3
 
+![](../media/Lab-03/main3.png)
 
 # Contenido 
 - Presentación	
@@ -181,7 +182,7 @@ Esto es como crear accesos directos en el escritorio de Windows.
 
     ![](../media/Lab-03/image12.png)
 
-El siguiente paso es transformar los datos, para que podamos crear un
+    El siguiente paso es transformar los datos, para que podamos crear un
 modelo semántico. Vamos a crear vistas para transformar los datos.
 
 # Transformar datos mediante una consulta visual
@@ -221,9 +222,9 @@ modelo semántico. Vamos a crear vistas para transformar los datos.
 
 4. Repita los mismos pasos para las tablas **States** y **Countries**.
 
-A continuación, necesitamos fusionar estas consultas. El editor de
-consultas visual viene con la opción de usar el Editor de Power Query.
-Usemos esto, ya que estamos familiarizados con ello debido a Power BI.
+    A continuación, necesitamos fusionar estas consultas. El editor de
+    consultas visual viene con la opción de usar el Editor de Power Query.
+    Usemos esto, ya que estamos familiarizados con ello debido a Power BI.
 
 5. **En el menú del editor de consultas visuales,** seleccione el icono
     **Abrir en menú emergente** (hacia la derecha). Se le llevará al
@@ -255,8 +256,8 @@ Usemos esto, ya que estamos familiarizados con ello debido a Power BI.
 
     ![](../media/Lab-03/image18.png)
 
-Observe que se ha creado una nueva consulta llamada **Merge**.
-Necesitamos algunas columnas de States.
+    Observe que se ha creado una nueva consulta llamada **Merge**.
+    Necesitamos algunas columnas de States.
 
 12. En la **vista Datos** (panel inferior), haga clic en la **doble
     flecha** al lado de la columna **States** (última columna a la
@@ -277,7 +278,7 @@ Necesitamos algunas columnas de States.
 
     ![](../media/Lab-03/image19.png)
 
-Necesitamos fusionar la consulta Countries ahora.
+    Necesitamos fusionar la consulta Countries ahora.
 
 15. Con la consulta de combinación seleccionada **(1),** seleccione
     Inicio **(2) -> Combinar (3) -> Menú desplegable Combinar
@@ -297,7 +298,7 @@ Necesitamos fusionar la consulta Countries ahora.
 
     ![](../media/Lab-03/image21.png)
 
-Necesitamos algunas columnas de Countries.
+    Necesitamos algunas columnas de Countries.
 
 20. En el panel **vista Datos** (panel inferior), haga clic en la
     **doble flecha** al lado de la columna **Countries**.
@@ -382,20 +383,20 @@ Necesitamos algunas columnas de Countries.
 
     ![](../media/Lab-03/image25.png)
 
-Se nos dirigirá al editor de consultas visuales. Guardemos ahora esta
-consulta como una vista.
+    Se nos dirigirá al editor de consultas visuales. Guardemos ahora esta
+    consulta como una vista.
 
-**Nota**: Todos los pasos que hemos realizado con el Editor de Power
-Query también se pueden llevar a cabo con el editor de consultas
-visuales.
+    **Nota**: Todos los pasos que hemos realizado con el Editor de Power
+    Query también se pueden llevar a cabo con el editor de consultas
+    visuales.
 
 30. En el menú del editor de consultas visuales, seleccione **Guardar
     como copia**.
 
     ![](../media/Lab-03/image26.png)
 
-Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta
-SQL está disponible. Si quiere comprobar el código SQL, puede revisarlo.
+    Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta
+    SQL está disponible. Si quiere comprobar el código SQL, puede revisarlo.
 
 31. Escriba **Geo** como **Nombre de la vista**.
 
@@ -403,7 +404,7 @@ SQL está disponible. Si quiere comprobar el código SQL, puede revisarlo.
 
     ![](../media/Lab-03/image27.png)
 
-Recibirá una alerta una vez que se guarde la vista.
+    Recibirá una alerta una vez que se guarde la vista.
 
 33. En el panel Explorador (izquierda), expanda **Views.** Tenemos la
     vista Geo recién creada.
@@ -442,8 +443,8 @@ mediante la consulta Visual sin abrir la opción de Power Query.
 
     ![](../media/Lab-03/image30.png)
 
-Se abre el cuadro de diálogo Combinar con Customers seleccionado como la
-tabla superior.
+    Se abre el cuadro de diálogo Combinar con Customers seleccionado como la
+    tabla superior.
 
 6. En la **Tabla derecha para combinación**, seleccione
     **BuyingGroups**.
@@ -468,8 +469,8 @@ tabla superior.
 
     ![](../media/Lab-03/image32.png)
 
-No necesitamos todas las columnas en nuestra tabla Customer. Seleccione
-solo aquellos que necesitamos.
+    No necesitamos todas las columnas en nuestra tabla Customer. Seleccione
+    solo aquellos que necesitamos.
 
 13. En el menú Consulta visual, seleccione **Administrar columnas ->
     Elegir columnas**.
@@ -517,8 +518,8 @@ solo aquellos que necesitamos.
 
     ![](../media/Lab-03/image35.png)
 
-Observe que la tabla Customer tiene todos los pasos documentados. Ahora
-guardemos esta vista.
+    Observe que la tabla Customer tiene todos los pasos documentados. Ahora
+    guardemos esta vista.
 
 18. Necesitamos guardar la consulta Customers, ya que tiene todos los
     pasos. Necesitamos habilitar la carga. Seleccione los **puntos
@@ -528,15 +529,15 @@ guardemos esta vista.
 
     ![](../media/Lab-03/image36.png)
 
-**Nota**: La casilla **Customer** debe tener un borde azul si se activa
-la opción Habilitar carga.
+    **Nota**: La casilla **Customer** debe tener un borde azul si se activa
+    la opción Habilitar carga.
 
 20. En el menú de consultas visuales, seleccione **Guardar como copia**.
 
     ![](../media/Lab-03/image37.png)
 
-Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta
-SQL está disponible. Puede revisarlo, si así lo desea.
+    Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta
+    SQL está disponible. Puede revisarlo, si así lo desea.
 
 21. Escriba **Reseller** como **Nombre de la vista**.
 
@@ -544,7 +545,7 @@ SQL está disponible. Puede revisarlo, si así lo desea.
 
     ![](../media/Lab-03/image38.png)
 
-Recibirá una alerta una vez que se guarde la vista.
+    Recibirá una alerta una vez que se guarde la vista.
 
 23. En el panel Explorador (izquierda), expanda **Views.** Tenemos la
     vista Reseller recién creada.
@@ -604,8 +605,8 @@ posible en la consulta visual. Vamos a probar este método.
 
     ![](../media/Lab-03/image43.png)
 
-Vamos a copiar el código de Power BI Desktop y pegarlo con el Editor
-avanzado.
+    Vamos a copiar el código de Power BI Desktop y pegarlo con el Editor
+    avanzado.
 
 12. Si aún no lo ha abierto, abra **FAIAD.pbix**, que se encuentra en la
     carpeta **Reports** en el escritorio de su entorno de laboratorio.
@@ -625,8 +626,8 @@ avanzado.
 
     ![](../media/Lab-03/image45.png)
 
-**Nota:** Si no encuentra el Editor avanzado, puede acceder a él
-en **Inicio -> Consulta -> Editor avanzado**.
+    **Nota:** Si no encuentra el Editor avanzado, puede acceder a él
+    en **Inicio -> Consulta -> Editor avanzado**.
 
 16. **Seleccione el código de la Línea 3** (#"Expanded Invoice" ...)
     hasta la última línea de código.
@@ -656,12 +657,12 @@ en **Inicio -> Consulta -> Editor avanzado**.
 24. Introduzca **Ctrl+V** en el teclado para pegar el código que Power
     BI Desktop ha copiado.
 
-**Nota**: Si está trabajando en el entorno de laboratorio, seleccione
-los **puntos suspensivos (...)** en la parte superior derecha de la
-pantalla. Utilice el control deslizante para **habilitar**
-**Portapapeles nativo de VM**. Seleccione De acuerdo en el cuadro de
-diálogo. Una vez que haya terminado de pegar las consultas, puede
-desactivar esta opción.
+    **Nota**: Si está trabajando en el entorno de laboratorio, seleccione
+    los **puntos suspensivos (...)** en la parte superior derecha de la
+    pantalla. Utilice el control deslizante para **habilitar**
+    **Portapapeles nativo de VM**. Seleccione De acuerdo en el cuadro de
+    diálogo. Una vez que haya terminado de pegar las consultas, puede
+    desactivar esta opción.
 
     ![](../media/Lab-03/image48.png)
 
@@ -715,7 +716,7 @@ desactivar esta opción.
 
     ![](../media/Lab-03/image52.png)
 
-Recibirá una alerta una vez que se guarde la vista.
+    Recibirá una alerta una vez que se guarde la vista.
 
 34. En el panel Explorador (izquierda), expanda **Views.** Tenemos la
     vista Sales recién creada.
@@ -777,8 +778,8 @@ Para avanzar en las cosas, copiaremos el código en el Editor avanzado.
 
     ![](../media/Lab-03/image59.png)
 
-**Nota:** Si no encuentra el Editor avanzado, puede acceder a él
-en **Inicio -> Consulta -> Editor avanzado**.
+    **Nota:** Si no encuentra el Editor avanzado, puede acceder a él
+    en **Inicio -> Consulta -> Editor avanzado**.
 
 12. **Seleccione todo el código** en el Editor avanzado y **elimínelo**.
 
@@ -831,13 +832,13 @@ en **Inicio -> Consulta -> Editor avanzado**.
 
     ![](../media/Lab-03/image63.png)
 
-Hemos transformado los datos del origen de datos ADLS Gen2. En este
-laboratorio, hemos aprendido a crear accesos directos y hemos explorado
-diversas opciones para usar vistas de consulta visual para transformar
-datos.
+    Hemos transformado los datos del origen de datos ADLS Gen2. En este
+    laboratorio, hemos aprendido a crear accesos directos y hemos explorado
+    diversas opciones para usar vistas de consulta visual para transformar
+    datos.
 
-En la siguiente práctica de laboratorio, aprenderemos a usar el flujo de
-datos Gen2 y a crear un acceso directo a otro almacén de lago de datos.
+    En la siguiente práctica de laboratorio, aprenderemos a usar el flujo de
+    datos Gen2 y a crear un acceso directo a otro almacén de lago de datos.
 
 # Referencias
 
