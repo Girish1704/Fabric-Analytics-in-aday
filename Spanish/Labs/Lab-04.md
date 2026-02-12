@@ -1,4 +1,5 @@
 # Microsoft Fabric Fabric Analyst in a Day-Laboratorio 4 
+![](../media/Lab-04/main4.png)
 # Contenido 
 - Presentación	
 - Flujo de datos Gen2	
@@ -60,12 +61,12 @@ Al final de este laboratorio, habrá aprendido:
 
     ![](../media/Lab-04/image6.png)
 
-Deje el nombre predeterminado y asegúrese de que la opción 'Habilitar
-integración de Git' está activada. A continuación, seleccione
-**Crear**. Se le dirigirá de vuelta a la **página del flujo de datos**.
-La interfaz Flujo de datos Gen2 es como Power Query en Power BI Desktop.
-Podemos copiar consultas desde el flujo de datos Gen2 de Power BI
-Desktop. Vamos a intentarlo.
+    Deje el nombre predeterminado y asegúrese de que la opción 'Habilitar
+    integración de Git' está activada. A continuación, seleccione
+    **Crear**. Se le dirigirá de vuelta a la **página del flujo de datos**.
+    La interfaz Flujo de datos Gen2 es como Power Query en Power BI Desktop.
+    Podemos copiar consultas desde el flujo de datos Gen2 de Power BI
+    Desktop. Vamos a intentarlo.
 
 4. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en
     la carpeta **Reports** del escritorio de su entorno de laboratorio.
@@ -91,17 +92,17 @@ Desktop. Vamos a intentarlo.
 
     ![](../media/Lab-04/image8.png)
 
-**Nota:** Si está trabajando en el entorno de laboratorio, seleccione
-los puntos suspensivos en la parte superior derecha de la pantalla.
-Utilice el control deslizante para **habilitar** **Portapapeles nativo
-de VM**. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya
-terminado de pegar las consultas, puede desactivar esta opción.
+    **Nota:** Si está trabajando en el entorno de laboratorio, seleccione
+    los puntos suspensivos en la parte superior derecha de la pantalla.
+    Utilice el control deslizante para **habilitar** **Portapapeles nativo
+    de VM**. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya
+    terminado de pegar las consultas, puede desactivar esta opción.
 
     ![P60#yIS1](../media/Lab-04/image9.png)
 
-Observe la consulta se ha pegado y está disponible en el panel
-izquierdo. Como no tenemos una conexión creada para SharePoint, verá un
-mensaje de advertencia que le solicitará que configure la conexión.
+    Observe la consulta se ha pegado y está disponible en el panel
+    izquierdo. Como no tenemos una conexión creada para SharePoint, verá un
+    mensaje de advertencia que le solicitará que configure la conexión.
 
     ![](../media/Lab-04/image10.png)
 
@@ -119,8 +120,8 @@ mensaje de advertencia que le solicitará que configure la conexión.
 
 4. Seleccione **Conectar**.
 
-**Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la
-captura de pantalla siguiente.
+    **Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la
+    captura de pantalla siguiente.
 
     ![P69#yIS1](../media/Lab-04/image12.png)
 
@@ -166,10 +167,10 @@ de lago de datos.
     Asegúrese de que la opción "**Usar configuración automática**" esté
     **habilitada**.
 
-**Nota:** Puede deshabilitar la configuración automática y observe que
-tiene opciones para establecer las opciones Método de actualización y
-Esquema. Cuando haya finalizado la exploración, asegúrese de que la
-opción "**Usar configuración automática**" esté **habilitada**.
+    **Nota:** Puede deshabilitar la configuración automática y observe que
+    tiene opciones para establecer las opciones Método de actualización y
+    Esquema. Cuando haya finalizado la exploración, asegúrese de que la
+    opción "**Usar configuración automática**" esté **habilitada**.
 
 10. Seleccione **Guardar configuración**.
 
@@ -187,9 +188,9 @@ opción "**Usar configuración automática**" esté **habilitada**.
 
     ![](../media/Lab-04/image17.png)
 
-**Nota:** Se le dirigirá de vuelta al área de trabajo
-**FAIAD_<username>**. Es posible que el flujo de datos tarde unos
-minutos en terminar de ejecutarse.
+    **Nota:** Se le dirigirá de vuelta al área de trabajo
+    **FAIAD_<username>**. Es posible que el flujo de datos tarde unos
+    minutos en terminar de ejecutarse.
 
 3. **Estamos trabajando con Dataflow 1.** Vamos a cambiarle el nombre
     antes de continuar. Haga clic en los **puntos suspensivos (...)**
@@ -208,7 +209,7 @@ minutos en terminar de ejecutarse.
 
     ![](../media/Lab-04/image19.png)
 
-Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**.
+    Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**.
 
 7. Seleccione **lh_FAIAD** para ir al almacén de lago de datos.
 
@@ -220,9 +221,9 @@ Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**.
 
     ![](../media/Lab-04/image20.png)
 
-**Nota:** Si no ve las tablas recién creadas, seleccione los puntos
-suspensivos junto a Tables y seleccionar Actualizar para actualizar las
-tablas.
+    **Nota:** Si no ve las tablas recién creadas, seleccione los puntos
+    suspensivos junto a Tables y seleccionar Actualizar para actualizar las
+    tablas.
 
 ### Tarea 5: Copiar consultas de Snowflake al flujo de datos
 
@@ -235,13 +236,13 @@ tablas.
 
     ![](../media/Lab-04/image21.png)
 
-Deje el nombre predeterminado y asegúrese de que la opción 'Habilitar
-integración de Git' está activada. A continuación, seleccione
-**crear**. Si recibe un mensaje que indica "Ya existe un flujo de datos
-con este nombre", cambie el nombre a **Dataflow 2**. Se le dirigirá a
-la **página Dataflow**. Ahora que estamos familiarizados con el flujo de
-datos, sigamos adelante y copiemos las consultas de Power BI Desktop en
-el flujo de datos.
+    Deje el nombre predeterminado y asegúrese de que la opción 'Habilitar
+    integración de Git' está activada. A continuación, seleccione
+    **crear**. Si recibe un mensaje que indica "Ya existe un flujo de datos
+    con este nombre", cambie el nombre a **Dataflow 2**. Se le dirigirá a
+    la **página Dataflow**. Ahora que estamos familiarizados con el flujo de
+    datos, sigamos adelante y copiemos las consultas de Power BI Desktop en
+    el flujo de datos.
 
 4. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en
     la carpeta **Reports** del escritorio de su entorno de laboratorio.
@@ -275,12 +276,12 @@ el flujo de datos.
     en Pegar no es compatible). Si está utilizando un dispositivo MAC,
     utilice Cmd+V para pegar.
 
-**Nota:** Si está trabajando en el entorno de laboratorio, seleccione
-los **puntos suspensivos (...)** en la parte superior derecha de la
-pantalla. Utilice el control deslizante para **habilitar**
-**Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de
-diálogo. Una vez que haya terminado de pegar las consultas, puede
-desactivar esta opción.
+    **Nota:** Si está trabajando en el entorno de laboratorio, seleccione
+    los **puntos suspensivos (...)** en la parte superior derecha de la
+    pantalla. Utilice el control deslizante para **habilitar**
+    **Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de
+    diálogo. Una vez que haya terminado de pegar las consultas, puede
+    desactivar esta opción.
 
     ![P124#yIS1](../media/Lab-04/image23.png)
 
@@ -310,9 +311,9 @@ configure la conexión.
 
 - Contraseña de Snowflake: 8UpfRpExVDXv2AC1
 
-**Nota:** Si tiene algún problema para conectarse a Snowflake con las
-credenciales de los detalles del entorno, utilice las credenciales que
-se proporcionan a continuación.
+    **Nota:** Si tiene algún problema para conectarse a Snowflake con las
+    credenciales de los detalles del entorno, utilice las credenciales que
+    se proporcionan a continuación.
 
 - **Nombre de usuario de Snowflake:** SNOWFLAKE_BACKUP
 
@@ -322,15 +323,15 @@ se proporcionan a continuación.
 
     ![](../media/Lab-04/image25.png)
 
-Se establece la conexión y puede ver los datos en el panel de versión
-preliminar. Siéntase libre de navegar por los pasos aplicados de las
-consultas. Básicamente, la consulta Suppliers tiene los detalles de los
-proveedores y SupplierCategories, como el nombre implica, esta tabla
-tiene todas las categorías de proveedores. Estas dos tablas se unen para
-crear la dimensión Supplier, con las columnas que necesitamos. De manera
-similar, tenemos PO Line Items combinada con pedidos de compra para
-crear el dato de PO. Ahora necesitamos incorporar los datos de Supplier
-y de PO en el almacén de lago de datos.
+    Se establece la conexión y puede ver los datos en el panel de versión
+    preliminar. Siéntase libre de navegar por los pasos aplicados de las
+    consultas. Básicamente, la consulta Suppliers tiene los detalles de los
+    proveedores y SupplierCategories, como el nombre implica, esta tabla
+    tiene todas las categorías de proveedores. Estas dos tablas se unen para
+    crear la dimensión Supplier, con las columnas que necesitamos. De manera
+    similar, tenemos PO Line Items combinada con pedidos de compra para
+    crear el dato de PO. Ahora necesitamos incorporar los datos de Supplier
+    y de PO en el almacén de lago de datos.
 
 ### Tarea 7: Configurar el destino de datos para las consultas de Supplier y PO
 
@@ -400,8 +401,8 @@ y de PO en el almacén de lago de datos.
 
     ![](../media/Lab-04/image32.png)
 
-Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**. Es
-posible que el flujo de datos tarde unos minutos en publicarse.
+    Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**. Es
+    posible que el flujo de datos tarde unos minutos en publicarse.
 
 5. Seleccione **lh_FAIAD** para ir al almacén de lago de datos.
 
@@ -413,9 +414,9 @@ posible que el flujo de datos tarde unos minutos en publicarse.
 
     ![](../media/Lab-04/image33.png)
 
-**Nota:** Si no ve las tablas recién creadas, seleccione los puntos
-suspensivos junto a Tables y seleccionar Actualizar para actualizar las
-tablas.
+    **Nota:** Si no ve las tablas recién creadas, seleccione los puntos
+    suspensivos junto a Tables y seleccionar Actualizar para actualizar las
+    tablas.
 
 Ahora creemos un acceso directo para traer datos de Dataverse.
 
@@ -427,7 +428,7 @@ Debe estar en el almacén de lago de datos **lh_FAIAD**. Asegúrese de
 estar en la vista del almacén de lago de datos (no en el punto de
 conexión de análisis SQL).
 
-    ![](../media/Lab-04/image34.png)
+![](../media/Lab-04/image34.png)
 
 1. En el panel del **Explorador** de la izquierda, seleccione los
     **puntos suspensivos** al lado de **Tables**.
@@ -439,8 +440,8 @@ conexión de análisis SQL).
 3. Se abre el cuadro de diálogo Nuevo acceso directo. En **Orígenes
     externos**, seleccione **Dataverse**.
 
-**Nota:** En la práctica de laboratorio anterior, seguimos pasos
-similares para crear un acceso directo a Azure Data Lake Storage Gen2.
+    **Nota:** En la práctica de laboratorio anterior, seguimos pasos
+    similares para crear un acceso directo a Azure Data Lake Storage Gen2.
 
     ![](../media/Lab-04/image36.png)
 
@@ -463,22 +464,22 @@ similares para crear un acceso directo a Azure Data Lake Storage Gen2.
 8. Seleccione **Siguiente** en el cuadro de diálogo Configuración de
     conexión.
 
-Se le dirigirá a un cuadro de diálogo de donde puede elegir el
-cubo/directorio diferente de Dataverse. Observe que hay una gran
-cantidad de cubos disponibles. Podríamos elegir los cubos que
-necesitamos y seguir el proceso del laboratorio 3 (usar la consulta
-visual para transformar datos y crear vistas). También podríamos usar el
-flujo de datos Gen2 como lo usamos anteriormente en este laboratorio
-para conectar SharePoint.
+    Se le dirigirá a un cuadro de diálogo de donde puede elegir el
+    cubo/directorio diferente de Dataverse. Observe que hay una gran
+    cantidad de cubos disponibles. Podríamos elegir los cubos que
+    necesitamos y seguir el proceso del laboratorio 3 (usar la consulta
+    visual para transformar datos y crear vistas). También podríamos usar el
+    flujo de datos Gen2 como lo usamos anteriormente en este laboratorio
+    para conectar SharePoint.
 
-En nuestro escenario, el equipo de TI ya ha establecido un vínculo a
-Dataverse y aplicado las transformaciones de datos necesarias,
-reflejándolas en el archivo de Power BI Desktop. Han ingerido estos
-datos al almacén de lago de datos en el área de trabajo de
-administración y nos han dado acceso a las tablas. Puesto que nuestro
-equipo informático ha hecho todo el trabajo duro, podemos crear un
-acceso directo a este almacén de lago de datos en el área de trabajo de
-administrador.
+    En nuestro escenario, el equipo de TI ya ha establecido un vínculo a
+    Dataverse y aplicado las transformaciones de datos necesarias,
+    reflejándolas en el archivo de Power BI Desktop. Han ingerido estos
+    datos al almacén de lago de datos en el área de trabajo de
+    administración y nos han dado acceso a las tablas. Puesto que nuestro
+    equipo informático ha hecho todo el trabajo duro, podemos crear un
+    acceso directo a este almacén de lago de datos en el área de trabajo de
+    administrador.
 
 9. Seleccione **Cancelar** en el cuadro de diálogo Nuevo acceso directo
     para volver al almacén de lago de datos.
@@ -528,12 +529,12 @@ administrador.
 
     ![](../media/Lab-04/image44.png)
 
-Hemos creado correctamente un acceso directo a otro almacén de lago de
-datos.
+    Hemos creado correctamente un acceso directo a otro almacén de lago de
+    datos.
 
-Ahora hemos ingerido todos los datos necesarios en nuestro almacén de
-lago de datos. En la próxima práctica de laboratorio, programaremos una
-actualización para nuestro flujo de datos de SharePoint.
+    Ahora hemos ingerido todos los datos necesarios en nuestro almacén de
+    lago de datos. En la próxima práctica de laboratorio, programaremos una
+    actualización para nuestro flujo de datos de SharePoint.
 
 # Referencias
 
