@@ -1,17 +1,18 @@
-# Microsoft Fabric Fabric Analyst in a Day-Laboratorio 6
+# Microsoft Fabric Fabric Analyst in a Day - Laboratorio 6
+
 ![](../media/Lab-06/main6.png)
 
 # Contenido
 - Presentación	
 - Almacén de lago de datos: análisis de datos	
-- Tarea 1: Consultar datos con SQL	
-- Tarea 2: visualizar el resultado de T-SQL	
+    - Tarea 1: Consultar datos con SQL	
+    - Tarea 2: visualizar el resultado de T-SQL	
 - Almacén de lago de datos: modelado semántico	
-- Tarea 3: Crear un modelo semántico	
-- Tarea 4: Crear relaciones	
-- Tarea 5: Crear medidas	
-- Tarea 6: Sección opcional: crear relaciones
-- Tarea 7: Sección opcional: crear medidas	
+    - Tarea 3: Crear un modelo semántico	
+    - Tarea 4: Crear relaciones	
+    - Tarea 5: Crear medidas	
+    - Tarea 6: Sección opcional: crear relaciones
+    - Tarea 7: Sección opcional: crear medidas	
 - Referencias	
 
 # Presentación 
@@ -30,7 +31,7 @@ Al final de este laboratorio, habrá aprendido:
 
 # Almacén de lago de datos: análisis de datos
 
-### Tarea 1: Consultar datos con SQL
+## Tarea 1: Consultar datos con SQL
 
 1. Volvamos al área de trabajo de Fabric, **FAIAD_<username>**, que
     creó en el Laboratorio 2, Tarea 8.
@@ -76,15 +77,13 @@ Al final de este laboratorio, habrá aprendido:
     proveedor. Para conseguirlo, se une la tabla Sales con las tablas
     Product y Supplier.
 
-    [SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
-
-    [FROM dbo.Sales s]{.mark}
-
-    [JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
-
-    [JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
-
-    [GROUP BY su.SupplierName]{.mark}
+   ```
+   SELECT su.SupplierName, SUM(Quantity) as Units
+   FROM dbo.Sales s
+   JOIN dbo.Product p on p.StockItemID = s.StockItemID
+   JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+   GROUP BY su.SupplierName
+   ```
 
 6. Haga clic en **Run** en el menú del editor de SQL para ver los
     resultados.
@@ -154,7 +153,7 @@ Al final de este laboratorio, habrá aprendido:
 
 # Almacén de lago de datos: modelado semántico
 
-### Tarea 3: Crear un modelo semántico
+## Tarea 3: Crear un modelo semántico
 
 1. En el menú de punto de conexión de análisis SQL, seleccione **Nuevo
     modelo semántico**.
@@ -205,7 +204,7 @@ Al final de este laboratorio, habrá aprendido:
 
     > **Nota:** El modo Direct Lake es más rápido que el modo Direct Query.
 
-### Tarea 4: Crear relaciones
+## Tarea 4: Crear relaciones
 
 Si no se encuentra actualmente dentro del modelo semántico recién
 creado, vayamos al lugar correcto.
@@ -285,7 +284,7 @@ creado, vayamos al lugar correcto.
     de laboratorio. La sección opcional recorre los pasos para crear las
     relaciones restantes.
 
-### Tarea 5: Crear medidas
+## Tarea 5: Crear medidas
 
 Agreguemos algunas medidas que necesitamos para crear el panel de Sales.
 
@@ -371,7 +370,7 @@ crear las medidas restantes.
 Hemos creado un modelo semántico, el siguiente paso es crear un informe.
 Lo haremos en el siguiente laboratorio.
 
-### Tarea 6: Sección opcional: crear relaciones
+## Tarea 6: Sección opcional: crear relaciones
 
 Agreguemos las relaciones restantes.
 
@@ -475,7 +474,7 @@ Agreguemos las relaciones restantes.
 
     ![](../media/Lab-06/image33.png)
 
-### Tarea 7: Sección opcional: crear medidas
+## Tarea 7: Sección opcional: crear medidas
 
 Agreguemos las medidas restantes.
 
@@ -501,14 +500,14 @@ Agreguemos las medidas restantes.
 8. Siga pasos similares para agregar las siguientes medidas:
 
     a. En la tabla **Sales , GM = SUM('Sales'[LineProfit])**
-        formateado como **Divisa con 0 decimales.**
+    formateado como **Divisa con 0 decimales.**
 
     b. En la tabla **Sales**, **GM% = DIVIDE([GM], [Sales])**
-        formateado como **Porcentaje con 0 decimales.**
+    formateado como **Porcentaje con 0 decimales.**
 
     c. En la tabla **Customer, No of Customers = COUNTROWS(Customer)**
-        formateado como **Número entero con separador de miles
-        activado.**
+    formateado como **Número entero con separador de miles
+    activado.**
 
 # Referencias
 

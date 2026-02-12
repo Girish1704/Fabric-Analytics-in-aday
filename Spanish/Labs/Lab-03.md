@@ -1,4 +1,4 @@
-# Microsoft Fabric Fabric Analyst in a Day-Laboratorio 3
+# Microsoft Fabric Fabric Analyst in a Day - Laboratorio 3
 
 ![](../media/Lab-03/main3.png)
 
@@ -11,8 +11,7 @@
     - Tarea 3: Crear una vista Reseller con consultas - visuales	
     - Tarea 4: Crear una vista Sales con consultas visuales	
     - Tarea 5: Crear una vista de producto con consultas visuales	
-- Referencias	
-
+- Referencias
 
 # Presentación 
 
@@ -56,7 +55,7 @@ Al final de este laboratorio, habrá aprendido sobre:
 
 # Acceso directo a ADLS Gen2
 
-### Tarea 1: Crear acceso directo
+## Tarea 1: Crear acceso directo
 
 Los accesos directos se utilizan para crear un vínculo a la ubicación de
 destino. Los accesos directos proporcionan acceso a los datos sin
@@ -187,7 +186,7 @@ modelo semántico. Vamos a crear vistas para transformar los datos.
 
 # Transformar datos mediante una consulta visual
 
-### Tarea 2: Crear una vista Geo con consultas visuales
+## Tarea 2: Crear una vista Geo con consultas visuales
 
 1. Podemos tener acceso al **almacén de lago de datos** mediante un
     punto de conexión SQL. Esto permite consultar los datos y crear
@@ -411,7 +410,7 @@ modelo semántico. Vamos a crear vistas para transformar los datos.
 
     ![](../media/Lab-03/image28.png)
 
-### Tarea 3: Crear una vista Reseller con consultas visuales
+## Tarea 3: Crear una vista Reseller con consultas visuales
 
 Vamos a crear la vista Reseller, que se crea al combinar la tabla
 Customers con la tabla BuyingGroups. Esta vez crearemos la vista
@@ -552,7 +551,7 @@ mediante la consulta Visual sin abrir la opción de Power Query.
 
     ![](../media/Lab-03/image39.png)
 
-### Tarea 4: Crear una vista Sales con consultas visuales
+## Tarea 4: Crear una vista Sales con consultas visuales
 
 Vamos a crear la vista Sales, que se crea combinando las tablas
 InvoiceLineItems e Invoices con la vista Reseller. Tenemos esta consulta
@@ -657,7 +656,7 @@ posible en la consulta visual. Vamos a probar este método.
 24. Introduzca **Ctrl+V** en el teclado para pegar el código que Power
     BI Desktop ha copiado.
 
-    **Nota**: Si está trabajando en el entorno de laboratorio, seleccione
+    >**Nota**: Si está trabajando en el entorno de laboratorio, seleccione
     los **puntos suspensivos (...)** en la parte superior derecha de la
     pantalla. Utilice el control deslizante para **habilitar**
     **Portapapeles nativo de VM**. Seleccione De acuerdo en el cuadro de
@@ -723,7 +722,7 @@ posible en la consulta visual. Vamos a probar este método.
 
     ![](../media/Lab-03/image53.png)
 
-### Tarea 5: Crear una vista de producto con consultas visuales
+## Tarea 5: Crear una vista de producto con consultas visuales
 
 Vamos a crear la vista Producto, que se crea mediante la combinación de
 las tablas **ProductItem**, **ProductItemGroup** y **ProductGroups**.

@@ -1,9 +1,11 @@
-# Microsoft Fabric Fabric Analyst in a Day-Laboratorio 5
+# Microsoft Fabric Fabric Analyst in a Day - Laboratorio 5
+
 ![](../media/Lab-05/main5.png)
+
 # Contenido
 - Presentación	
 - Flujo de datos de segunda generación	
-- Tarea 1: Configurar la actualización programada para el flujo de datos del proveedor	
+    - Tarea 1: Configurar la actualización programada para el flujo de datos del proveedor	
 - Canalización	
     - Tarea 2: Crear una canalización	
     - Tarea 3: Crear una canalización simple	
@@ -17,9 +19,7 @@
     - Tarea 11: Configurar la tercera actividad de Establecer variable	
     - Tarea 12: Configurar la actividad Esperar	
     - Tarea 13: Configurar la actualización programada para la canalización	
-- Referencias	
-
-
+- Referencias
 
 # Presentación 
 
@@ -61,7 +61,7 @@ Al final de este laboratorio, habrá aprendido:
 
 # Flujo de datos de segunda generación
 
-### Tarea 1: Configurar la actualización programada para el flujo de datos del proveedor
+## Tarea 1: Configurar la actualización programada para el flujo de datos del proveedor
 
 Comencemos configurando una actualización programada del flujo de datos
 del proveedor.
@@ -127,13 +127,16 @@ del proveedor.
 
 11. Verá que en el panel de **Configuración** que apareció tenemos tres
     opciones:
-    **Acerca de:** aquí podemos cambiar el nombre del flujo de datos y
+
+    - **Acerca de:** aquí podemos cambiar el nombre del flujo de datos y
     agregar una descripción. Además, podemos ver quién es el propietario
     del flujo de datos y la última vez que se modificó.
-    **Aprobación:** esto nos permite especificar si el flujo de datos
+    
+    - **Aprobación:** esto nos permite especificar si el flujo de datos
     llevará la etiqueta **Promocionado** o **Certificado** para que
     otros la vean.
-    **Programación:** aquí es donde podemos programar los flujos de
+    
+    - **Programación:** aquí es donde podemos programar los flujos de
     datos.
 
     ![](../media/Lab-05/image13.png)
@@ -178,7 +181,7 @@ incorrect.](../media/Lab-05/image14.png)
 
 # Canalización
 
-### Tarea 2: Crear una canalización
+## Tarea 2: Crear una canalización
 
 1. Volvamos al área de trabajo de Fabric, **FAIAD_<nombre de
     usuario>** seleccionando el área de trabajo en el panel izquierdo.
@@ -231,7 +234,7 @@ incorrect.](../media/Lab-05/image14.png)
 
     ![](../media/Lab-05/image21.png)
 
-### Tarea 3: Crear una canalización simple
+## Tarea 3: Crear una canalización simple
 
 Comencemos a crear la canalización. Necesitamos una actividad para
 actualizar el flujo de datos. Busquemos una actividad que podamos
@@ -246,7 +249,7 @@ utilizar.
     df_People_SharePoint.
     En el **panel inferior**, seleccione **Configuración**.
 
-    *Nota: Es posible que tenga que arrastrar el panel inferior hacia arriba
+    ***Nota:** Es posible que tenga que arrastrar el panel inferior hacia arriba
     para ver la configuración.*
 
     ![](../media/Lab-05/image22.png)
@@ -308,7 +311,7 @@ hicimos con el flujo de datos anterior):
 - La canalización brinda la capacidad de realizar otras tareas, así como
   de actualizar el flujo de datos.
 
-### Tarea 4: Crear una nueva canalización
+## Tarea 4: Crear una nueva canalización
 
 Agreguemos un poco más de complejidad a nuestro escenario. Hemos
 observado que si los datos no están disponibles a las 09:00, normalmente
@@ -331,7 +334,7 @@ mediante la creación de una nueva canalización.
 
     ![](../media/Lab-05/image26.png)
 
-### Tarea 5: Crear la actividad Until
+## Tarea 5: Crear la actividad Until
 
 1. Esto le llevará a la pantalla Canalización. En el menú, seleccione
     **Actividades**.
@@ -348,7 +351,7 @@ mediante la creación de una nueva canalización.
 
     ![](../media/Lab-05/image27.png)
 
-### Tarea 6: Crear variables
+## Tarea 6: Crear variables
 
 1. Necesitamos crear variables que se utilizarán para iterar y
     establecer el estado. Seleccione el **área en blanco** en el panel
@@ -385,25 +388,25 @@ mediante la creación de una nueva canalización.
 11. Siga los mismos pasos para agregar tres variables más:
 
     a. **varIsSuccess** de tipo **String** y valor predeterminado
-        **No**. Esta variable se utilizará para indicar si la
-        actualización del flujo de datos se llevó a cabo correctamente.
+    **No**. Esta variable se utilizará para indicar si la
+    actualización del flujo de datos se llevó a cabo correctamente.
 
     b. **varSuccess** de tipo **String** y valor predeterminado
-        **Yes**. Esta variable se utilizará para establecer el valor de
-        varIsSuccess si la actualización del flujo de datos se realiza
-        correctamente.
+    **Yes**. Esta variable se utilizará para establecer el valor de
+    varIsSuccess si la actualización del flujo de datos se realiza
+    correctamente.
 
     c. **varWaitTime** de tipo **Integer** y valor predeterminado
-        **60**. Esta variable se utilizará para establecer el tiempo de
-        espera si el flujo de datos falla.
-        (Ya sea cinco minutos/300 segundos o 15 minutos/900 segundos).
+    **60**. Esta variable se utilizará para establecer el tiempo de
+    espera si el flujo de datos falla.
+    (Ya sea cinco minutos/300 segundos o 15 minutos/900 segundos).
 
     **Nota:** Asegúrese de que no haya espacios antes o después del nombre
     de la variable.
 
     ![](../media/Lab-05/image29.png)
 
-### Tarea 7: Configurar la actividad Until
+## Tarea 7: Configurar la actividad Until
 
 1. Seleccione la actividad **Hasta**.
 
@@ -439,33 +442,33 @@ mediante la creación de una nueva canalización.
     un menú:
 
     a. **Parámetros**: valores que se pasan a la canalización. Por
-        ejemplo, el valor de una canalización pasada a otra
-        canalización. Estos valores se pueden usar en cualquier
-        expresión, pero no se pueden cambiar durante la ejecución de la
-        canalización.
+    ejemplo, el valor de una canalización pasada a otra
+    canalización. Estos valores se pueden usar en cualquier
+    expresión, pero no se pueden cambiar durante la ejecución de la
+    canalización.
 
     b. **Variables del sistema:** estas variables se pueden usar en
-        expresiones al definir entidades dentro de cualquiera de los
-        servicios. Por ejemplo, id. de la canalización, nombre
-        de la canalización, nombre del desencadenador, etc.
+    expresiones al definir entidades dentro de cualquiera de los
+    servicios. Por ejemplo, id. de la canalización, nombre
+    de la canalización, nombre del desencadenador, etc.
 
     c. **Parámetros de desencadenador:** parámetros que desencadenaron
-        la canalización. Por ejemplo, el nombre del archivo o la ruta de
-        acceso de la carpeta.
+    la canalización. Por ejemplo, el nombre del archivo o la ruta de
+    acceso de la carpeta.
 
     d. **Funciones:** puede llamar funciones dentro de expresiones. Las
-        funciones se clasifican en funciones de colección, conversión,
-        fecha, lógica, matemáticas y cadena. Por ejemplo, concat es una
-        función de cadena, add es una función matemática, etc.
+    funciones se clasifican en funciones de colección, conversión,
+    fecha, lógica, matemáticas y cadena. Por ejemplo, concat es una
+    función de cadena, add es una función matemática, etc.
 
     e. **Variables:** las variables de canalización son valores que se
-        pueden establecer y modificar durante la ejecución de una
-        canalización. A diferencia de los parámetros de canalización,
-        que se definen en el nivel de canalización y no se pueden
-        cambiar durante la ejecución de la misma, las variables de
-        canalización se pueden configurar y modificar dentro de una
-        canalización mediante una actividad Establecer variable. En
-        breve utilizaremos la actividad Establecer variable.
+    pueden establecer y modificar durante la ejecución de una
+    canalización. A diferencia de los parámetros de canalización,
+    que se definen en el nivel de canalización y no se pueden
+    cambiar durante la ejecución de la misma, las variables de
+    canalización se pueden configurar y modificar dentro de una
+    canalización mediante una actividad Establecer variable. En
+    breve utilizaremos la actividad Establecer variable.
 
     ![](../media/Lab-05/image32.png)
 
@@ -538,7 +541,7 @@ mediante la creación de una nueva canalización.
 
     ![](../media/Lab-05/image38.png)
 
-### Tarea 8: Configurar la actividad del flujo de datos
+## Tarea 8: Configurar la actividad del flujo de datos
 
 1. Volverá a la pantalla de diseño. Con **la actividad Hasta**
     seleccionada, en el **panel inferior**, seleccione **Actividades**.
@@ -573,7 +576,7 @@ mediante la creación de una nueva canalización.
 
     ![](../media/Lab-05/image41.png)
 
-### Tarea 9: Configurar la primera actividad de Establecer variable
+## Tarea 9: Configurar la primera actividad de Establecer variable
 
 Hemos configurado la actividad del flujo de datos como lo hicimos
 anteriormente en el laboratorio. Ahora agregaremos nueva lógica. Si la
@@ -600,16 +603,16 @@ el iterador es establecer el valor de la variable varIsSuccess en Sí.
     a la siguiente:
 
     a. El icono de la **flecha curva gris** se utiliza para omitir la
-        actividad.
+    actividad.
 
     b. El icono de la **marca de verificación verde** se utiliza en caso de
-        éxito de la actividad.
+    éxito de la actividad.
 
     c. El icono de la **marca roja con forma de x** se utiliza en caso de
-        fallo de la actividad.
+    fallo de la actividad.
 
     d. El icono de la **flecha recta azul** se utiliza al finalizar la
-        actividad.
+    actividad.
 
 
 
@@ -659,7 +662,7 @@ el iterador es establecer el valor de la variable varIsSuccess en Sí.
     contador varCounter si agregamos uno a su valor (varCounter =
     varCounter + 1). Entonces, utilizamos la variable varTempCounter.
 
-### Tarea 10: Configurar la segunda actividad de Establecer variable
+## Tarea 10: Configurar la segunda actividad de Establecer variable
 
 1. En el menú superior, seleccione **Actividades -> Establecer
     variable**. La actividad variable establecida se agrega al lienzo de
@@ -706,7 +709,7 @@ varCounter más uno (varTempCounter = varCounter + 1).
     Ahora necesitamos establecer el valor de la variable varCounter en el
     valor de varTempCounter.
 
-### Tarea 11: Configurar la tercera actividad de Establecer variable
+## Tarea 11: Configurar la tercera actividad de Establecer variable
 
 1. En el menú superior, seleccione **Actividades -> Establecer
     variable**. La actividad variable establecida se agrega al lienzo de
@@ -753,7 +756,7 @@ varCounter más uno (varTempCounter = varCounter + 1).
     final de cada iteración, tanto varCounter como varTempCounter tienen el
     mismo valor.
 
-### Tarea 12: Configurar la actividad Esperar
+## Tarea 12: Configurar la actividad Esperar
 
 A continuación, debemos esperar cinco minutos/300 segundos si la
 actualización del flujo de datos falla la primera vez antes de volver a
@@ -790,21 +793,16 @@ establecer el tiempo de espera.
 8. Se abre el cuadro de diálogo Generador de expresiones de
     canalización. Introducir
 
-    > **@if(**
-    >
-    > **greater(variables('varCounter'), 1),**
-    >
-    > **if(equals(variables('varCounter'), 2),**
-    >
-    > **mul(variables('varWaitTime'),15 ),**
-    >
-    > **mul(variables('varWaitTime'), 0)**
-    >
-    > **),**
-    >
-    > **mul(variables('varWaitTime'),5 )**
-    >
-    > **)**
+   ```
+   @if(
+       greater(variables('varCounter'), 1),
+       if(equals(variables('varCounter'), 2),
+           mul(variables('varWaitTime'),15 ),
+           mul(variables('varWaitTime'), 0)
+       ),
+       mul(variables('varWaitTime'),5 )
+   )
+   ```
 
     Siéntase libre de escribir esta expresión o use el menú para seleccionar
     las funciones o copiarla y pegarla.
@@ -850,7 +848,7 @@ establecer el tiempo de espera.
 
     ![](../media/Lab-05/image53.png)
 
-### Tarea 13: Configurar la actualización programada para la canalización
+## Tarea 13: Configurar la actualización programada para la canalización
 
 1. Podemos probar la canalización si seleccionamos **Inicio ->
     Ejecutar**.

@@ -1,4 +1,5 @@
-# Microsoft Fabric Fabric Analyst in a Day-Laboratorio 7
+# Microsoft Fabric Fabric Analyst in a Day - Laboratorio 7
+
 ![](../media/Lab-07/main7.png)
 
 # Contenido
@@ -38,7 +39,7 @@ Al final de este laboratorio, habrá aprendido:
 
 # Power BI
 
-### Tarea 1: Crear un informe de forma automática
+## Tarea 1: Crear un informe de forma automática
 
 Comencemos con la opción de creación automática de informes. Y, más
 adelante en el laboratorio, volveremos a crear el informe que tenemos en
@@ -74,14 +75,11 @@ Power BI.
     la página. Observe que tenemos varias opciones. **Seleccione
     sm_FAIAD**.
 
-    a. **sm_FAIAD:** este es el modelo semántico que hemos creado y que
-        queremos utilizar para crear el informe.
+    a. **sm_FAIAD:** este es el modelo semántico que hemos creado y que queremos utilizar para crear el informe.
 
-    b. **lh_FAIAD:** este es el almacén de lago de datos en el que
-        ingerimos todos los datos.
+    b. **lh_FAIAD:** este es el almacén de lago de datos en el que ingerimos todos los datos.
 
-    c. **Units by Supplier:** este es el conjunto de datos que creamos
-        con T-SQL.
+    c. **Units by Supplier:** este es el conjunto de datos que creamos con T-SQL.
 
 7. Haga clic en la flecha **junto al botón Crear informe de forma
     automática**. Observe que hay dos opciones: Crear informe de forma
@@ -133,7 +131,7 @@ Power BI.
 
     ![](../media/Lab-07/image13.png)
 
-### Tarea 2: Configurar el fondo para un nuevo informe
+## Tarea 2: Configurar el fondo para un nuevo informe
 
 Creemos un nuevo informe usando un lienzo en blanco.
 
@@ -194,7 +192,7 @@ Creemos un nuevo informe usando un lienzo en blanco.
 
     ![](../media/Lab-07/image18.png)
 
-### Tarea 3: Agregar un encabezado al informe
+## Tarea 3: Agregar un encabezado al informe
 
 1. Agreguemos el encabezado en el margen superior. En el **menú**,
     seleccione **Cuadro de texto**.
@@ -222,7 +220,7 @@ Creemos un nuevo informe usando un lienzo en blanco.
 
     ![](../media/Lab-07/image19.png)
 
-### Tarea 4: Agregar KPI al informe
+## Tarea 4: Agregar KPI al informe
 
 1. Agreguemos KPI de ventas. Seleccione el **espacio en blanco** en el
     lienzo para quitar el foco del cuadro de texto.
@@ -299,7 +297,7 @@ Creemos un nuevo informe usando un lienzo en blanco.
 
     ![](../media/Lab-07/image25.png)
 
-### Tarea 5: Agregar un gráfico de líneas al informe
+## Tarea 5: Agregar un gráfico de líneas al informe
 
 Creemos un gráfico de líneas para visualizar las ventas a lo largo del
 tiempo por empresa revendedora.
@@ -317,7 +315,7 @@ tiempo por empresa revendedora.
 
     ![](../media/Lab-07/image26.png)
 
-### Tarea 6: Guardar el informe
+## Tarea 6: Guardar el informe
 
 Guardemos el informe antes de salir de él para realizar cambios en el
 modelo.
@@ -337,7 +335,7 @@ modelo.
 
     ![](../media/Lab-07/image27.png)
 
-### Tarea 7: Configurar la columna Year en la tabla Date
+## Tarea 7: Configurar la columna Year en la tabla Date
 
 1. En el **menú superior**, seleccione **Editar** para volver al modo
     de edición.
@@ -377,7 +375,7 @@ modelo.
 
     ![](../media/Lab-07/image30.png)
 
-### Tarea 8: Configurar la columna Month Name en la tabla Date
+## Tarea 8: Configurar la columna Month Name en la tabla Date
 
 1. Agreguemos Mes a este gráfico. Desde la tabla Date, arrastre el
     campo **MonthNameShort** debajo de **Year** en el **eje X**. Observe
@@ -419,7 +417,7 @@ modelo.
 
     ![](../media/Lab-07/image34.png)
 
-### Tarea 9: Aplicar formato al gráfico de líneas
+## Tarea 9: Aplicar formato al gráfico de líneas
 
 Observe lo fácil que es actualizar el modelo semántico mientras se crean
 los informes. Esto proporciona una interacción fluida como Power BI
@@ -479,7 +477,7 @@ Desktop.
     en esta práctica de laboratorio. Siéntase libre de crear más objetos
     visuales si lo desea.
 
-### Tarea 10: Conectar Power BI Desktop al modelo semántico
+## Tarea 10: Conectar Power BI Desktop al modelo semántico
 
 Ahora, veamos lo fácil que es Conectar Power BI Desktop al modelo
 semántico y crear objetos visuales.
@@ -564,7 +562,7 @@ semántico y crear objetos visuales.
 20. Guardemos el informe: en la cinta de opciones, seleccione **Archivo
     -> Guardar**.
 
-### Tarea 11: Agregar nuevos datos para simular el modo Direct Lake
+## Tarea 11: Agregar nuevos datos para simular el modo Direct Lake
 
 Normalmente, en el modo Import, una vez que se actualizan los datos en
 el origen, necesitamos actualizar el modelo de Power BI y después se
@@ -660,7 +658,7 @@ Sales view.
     Se abre un nuevo panel de consulta SQL.
 
 21. **Copie** el siguiente código y **péguelo** en el panel de consulta
-    SQL**.**
+    SQL.
 
     ```
     ALTER VIEW [dbo].[Sales] AS (
@@ -815,7 +813,7 @@ Sales view.
     ![](../media/Lab-07/image53.png)
 
 23. Seleccione **rpt_Sales_Report** en la barra de menús izquierda para
-    volver al informe**.**
+    volver al informe.
 
 24. En el menú superior, seleccione el **icono Actualizar**. Observe
     ahora que en el gráfico de líneas hay datos para mayo de 2024.

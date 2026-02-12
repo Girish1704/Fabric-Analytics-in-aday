@@ -1,10 +1,10 @@
-# Microsoft Fabric Fabric Analyst in a Day-Laboratorio 1
+# Microsoft Fabric Fabric Analyst in a Day - Laboratorio 1
 
 ![](../media/Lab-01/main1.png)
 
 # Contenido	
-- Estructura del documento	
-- Escenario/planteamiento del problema	
+- Estructura del documento
+- Escenario/planteamiento del problema
 - Información general del informe de Power BI Desktop	
     - Tarea 1: Configurar Power BI Desktop en un entorno de laboratorio	
     - Tarea 2: Analizar el informe de Power BI Desktop	
@@ -94,7 +94,7 @@ abordaba sus desafíos.
 Antes de comenzar con Fabric, veamos el informe actual en Power BI
 Desktop para comprender las transformaciones y el modelo.
 
-### Tarea 1: Configurar Power BI Desktop en un entorno de laboratorio
+## Tarea 1: Configurar Power BI Desktop en un entorno de laboratorio
 
 1. Abra **FAIAD.pbix**, que se encuentra en la carpeta **Reports** en
     el **escritorio** de su entorno de laboratorio. El archivo se abrirá
@@ -107,8 +107,7 @@ Desktop para comprender las transformaciones y el modelo.
     el campo **Correo electrónico** del cuadro de diálogo, y seleccione
     **Continuar**.
 
-    - Correo electrónico/nombre de usuario:
-    <inject key="AzureAdUserEmail"></inject>
+    - Correo electrónico/nombre de usuario: <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-01/image7.png)
 
@@ -116,8 +115,7 @@ Desktop para comprender las transformaciones y el modelo.
     pantalla de inicio de sesión. Introduzca el siguiente correo
     electrónico/nombre de usuario y luego haga clic en **Siguiente**.
 
-    - Correo electrónico/nombre de usuario:
-      <inject key="AzureAdUserEmail"></inject>
+    - Correo electrónico/nombre de usuario: <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-01/image8.png)
 
@@ -138,7 +136,7 @@ Desktop para comprender las transformaciones y el modelo.
 
 Ahora se abrirá Power BI Desktop.
 
-### Tarea 2: Analizar el informe de Power BI Desktop
+## Tarea 2: Analizar el informe de Power BI Desktop
 
 El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran
 en la parte superior izquierda de la página. Los objetos visuales
@@ -230,7 +228,7 @@ avancemos a los siguientes pasos.
     e. Disponemos de información de Customer por Reseller. Customer se
     conecta con Reseller.
 
-### Tarea 3: Revisar consultas de Power Query
+## Tarea 3: Revisar consultas de Power Query
 
 1. Echemos un vistazo a Power Query para entender los orígenes de
     datos. En la cinta de opciones, seleccione **Inicio -> Transformar
@@ -283,6 +281,7 @@ avancemos a los siguientes pasos.
     - Correo electrónico/nombre de usuario: <inject key="AzureAdUserEmail"></inject>
 
     - Contraseña: <inject key="AzureAdUserPassword"></inject>
+
 9. Haga clic en la consulta **ADLS Base Folder** en la ventana
     Consultas. Al seleccionar esta consulta, tendrá que volver a
     escribir las credenciales. Haga clic en **Editar credenciales**.
@@ -294,7 +293,6 @@ avancemos a los siguientes pasos.
     proporciona a continuación. Después, seleccione **Conectar**.
 
     - **Token de SAS:** se encuentra en la pestaña Entorno.<inject key="Sas token"></inject>
-
 
       ![](../media/Lab-01/image23.png)
 
@@ -325,12 +323,11 @@ avancemos a los siguientes pasos.
     credenciales para conectar todas las tablas de Snowflake con
     Snowflake y luego seleccione **Conectar**.
 
-    - **Nombre de usuario de Snowflake:** TE_SNOWFLAKE1
-          <inject key="AzureAdUserEmail"></inject>
-    - **Contraseña de Snowflake:** 8UpfRpExVDXv2AC1
-         <inject key="AzureAdUserPassword"></inject>
+    - **Nombre de usuario de Snowflake:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    *Nota: Si tiene algún problema para conectarse a Snowflake con las
+    - **Contraseña de Snowflake:** <inject key="SnowFlake Password" enableCopy="false" />
+
+    >*Nota: Si tiene algún problema para conectarse a Snowflake con las
     credenciales anteriores, utilice las credenciales de copia de seguridad
     que se proporcionan a continuación.*
 
@@ -359,10 +356,9 @@ avancemos a los siguientes pasos.
     contraseña que se proporcionan a continuación
     y luego seleccione **Conectar**.
 
-    - **Correo electrónico/nombre de usuario:** se encuentra en la
-      pestaña Entorno.
+    - **Correo electrónico/nombre de usuario:** <inject key="AzureAdUserEmail"></inject>
 
-    - **Contraseña:** se encuentra en la pestaña Entorno.
+    - **Contraseña:** <inject key="AzureAdUserPassword"></inject>
 
       ![](../media/Lab-01/image26.png)
 
