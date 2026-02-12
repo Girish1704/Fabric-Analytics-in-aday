@@ -1,12 +1,12 @@
 # Microsoft Fabric Fabric Analyst in a Day-Laboratorio 1
 # Contenido	
-- Estructura del documento	3
-- Escenario/planteamiento del problema	3
-- Información general del informe de Power BI Desktop	4
-    - Tarea 1: Configurar Power BI Desktop en un entorno de laboratorio	4
-    - Tarea 2: Analizar el informe de Power BI Desktop	7
-    - Tarea 3: Revisar consultas de Power Query	11
-- Referencias	17
+- Estructura del documento	
+- Escenario/planteamiento del problema	
+- Información general del informe de Power BI Desktop	
+    - Tarea 1: Configurar Power BI Desktop en un entorno de laboratorio	
+    - Tarea 2: Analizar el informe de Power BI Desktop	
+    - Tarea 3: Revisar consultas de Power Query	
+- Referencias	
 
 
 
