@@ -1,4 +1,5 @@
 # Microsoft Fabric Fabric Analyst in a Day-Laboratorio 5
+![](../media/Lab-05/main5.png)
 # Contenido
 - Presentación	
 - Flujo de datos de segunda generación	
@@ -88,8 +89,8 @@ del proveedor.
 
     ![](../media/Lab-05/image8.png)
 
-**Nota:** Aparecerá una ventana o panel en el lado derecho que muestra
-una lista de actualizaciones.
+    **Nota:** Aparecerá una ventana o panel en el lado derecho que muestra
+    una lista de actualizaciones.
 
 6. Observará que hay una actualización singular que se ejecutó cuando
     seleccionamos la opción **Guardar y ejecutar** en el laboratorio
@@ -101,15 +102,15 @@ una lista de actualizaciones.
 
 7. Seleccione el vínculo **Hora de inicio**.
 
-**Nota:** La hora de inicio será diferente para usted.
+    **Nota:** La hora de inicio será diferente para usted.
 
     ![](../media/Lab-05/image10.png)
 
-Se abre la pantalla de detalles. Esto proporcionará detalles de la
-actualización. Enumera la hora de inicio, la hora de finalización y la
-duración. También enumera las tablas o actividades que se actualizaron.
-En caso de que haya un error, puede hacer clic en el nombre de la tabla
-o actividad para investigar más a fondo.
+    Se abre la pantalla de detalles. Esto proporcionará detalles de la
+    actualización. Enumera la hora de inicio, la hora de finalización y la
+    duración. También enumera las tablas o actividades que se actualizaron.
+    En caso de que haya un error, puede hacer clic en el nombre de la tabla
+    o actividad para investigar más a fondo.
 
     ![](../media/Lab-05/image11.png)
 
@@ -152,8 +153,8 @@ incorrect.](../media/Lab-05/image14.png)
 15. Para la propiedad **Time**, podemos especificar **12:00 AM (2)**, ya
     que queremos medianoche.
 
-**Nota:** Al hacer clic en el vínculo Agregar otro horario, puede
-agregar múltiples horas de actualización.
+    **Nota:** Al hacer clic en el vínculo Agregar otro horario, puede
+    agregar múltiples horas de actualización.
 
 16. También podemos especificar una **Fecha y hora de inicio (3)**, así
     como una **Fecha y hora de finalización (4).** Para este escenario,
@@ -170,10 +171,10 @@ agregar múltiples horas de actualización.
 
     ![](../media/Lab-05/image16.png)
 
-Como se ha mencionado anteriormente, necesitamos crear una lógica
-personalizada para gestionar el escenario donde el archivo de Empleado
-en SharePoint no se entrega a tiempo. Usemos una canalización para
-resolver esto.
+    Como se ha mencionado anteriormente, necesitamos crear una lógica
+    personalizada para gestionar el escenario donde el archivo de Empleado
+    en SharePoint no se entrega a tiempo. Usemos una canalización para
+    resolver esto.
 
 # Canalización
 
@@ -193,15 +194,15 @@ resolver esto.
 
     ![](../media/Lab-05/image18.png)
 
-Se le llevará a la **página de Canalización**. Si ha trabajado con Azure
-Data Factory, esta pantalla le resultará familiar. Hagamos una
-descripción general rápida del diseño.
+    Se le llevará a la **página de Canalización**. Si ha trabajado con Azure
+    Data Factory, esta pantalla le resultará familiar. Hagamos una
+    descripción general rápida del diseño.
 
-Está en la pantalla **Inicio**. Si observa el menú superior, encontrará
-opciones para agregar las actividades más utilizadas: validar, ejecutar
-una canalización y ver el historial de ejecución. Además, en el panel
-central, encontrará opciones rápidas para comenzar a crear la
-canalización.
+    Está en la pantalla **Inicio**. Si observa el menú superior, encontrará
+    opciones para agregar las actividades más utilizadas: validar, ejecutar
+    una canalización y ver el historial de ejecución. Además, en el panel
+    central, encontrará opciones rápidas para comenzar a crear la
+    canalización.
 
     ![](../media/Lab-05/image19.png)
 
@@ -223,10 +224,10 @@ canalización.
     para ver el código en formato JSON. También encontrará opciones para
     alinear las actividades de manera automática.
 
-**Nota:** Si tiene un fondo JSON,   al final de la práctica de
-laboratorio, no dude en seleccionar Ver código JSON. Aquí notará que
-toda la orquestación que está realizando mediante la vista de diseño
-también se puede escribir en JSON.
+    **Nota:** Si tiene un fondo JSON,   al final de la práctica de
+    laboratorio, no dude en seleccionar Ver código JSON. Aquí notará que
+    toda la orquestación que está realizando mediante la vista de diseño
+    también se puede escribir en JSON.
 
     ![](../media/Lab-05/image21.png)
 
@@ -245,8 +246,8 @@ utilizar.
     df_People_SharePoint.
     En el **panel inferior**, seleccione **Configuración**.
 
-*Nota: Es posible que tenga que arrastrar el panel inferior hacia arriba
-para ver la configuración.*
+    *Nota: Es posible que tenga que arrastrar el panel inferior hacia arriba
+    para ver la configuración.*
 
     ![](../media/Lab-05/image22.png)
 
@@ -257,9 +258,9 @@ para ver la configuración.*
     **df_People_SharePoint**. Cuando se ejecute esta actividad del flujo
     de datos, se actualizará **df_People_SharePoint.** Fácil, ¿verdad?
 
-En nuestro escenario, los datos de los empleados no se actualizan según
-lo programado. A veces hay un retraso. Veamos si podemos solucionar
-esto.
+    En nuestro escenario, los datos de los empleados no se actualizan según
+    lo programado. A veces hay un retraso. Veamos si podemos solucionar
+    esto.
 
     ![](../media/Lab-05/image23.png)
 
@@ -281,10 +282,10 @@ esto.
     **valor predeterminado** como está, lo que debería dar tiempo
     suficiente para que el flujo de datos se actualice.
 
-**Nota:** Dado que los datos no están disponibles en una programación,
-configuremos la actividad para que se vuelva a ejecutar cada 10 minutos,
-tres veces. Si también falla en el tercer intento, se informará de un
-error.
+    **Nota:** Dado que los datos no están disponibles en una programación,
+    configuremos la actividad para que se vuelva a ejecutar cada 10 minutos,
+    tres veces. Si también falla en el tercer intento, se informará de un
+    error.
 
 10. Establezca **Reintentar** en **3**.
 
@@ -339,11 +340,11 @@ mediante la creación de una nueva canalización.
 
 3. En la lista de actividades, haga clic en **Hasta**.
 
-**Hasta:** es una actividad que se utiliza para iterar hasta que se
-cumpla una condición.
+    **Hasta:** es una actividad que se utiliza para iterar hasta que se
+    cumpla una condición.
 
-En nuestro escenario, vamos a iterar y actualizar el flujo de datos
-hasta que tenga éxito o lo hayamos intentado tres veces.
+    En nuestro escenario, vamos a iterar y actualizar el flujo de datos
+    hasta que tenga éxito o lo hayamos intentado tres veces.
 
     ![](../media/Lab-05/image27.png)
 
@@ -365,9 +366,9 @@ hasta que tenga éxito o lo hayamos intentado tres veces.
 
 6. Introduzca un **Valor predeterminado** de **0**.
 
-**Nota:** Estamos añadiendo "var" en los nombres de las variables, por
-lo que es fácil encontrarlas
-y es un procedimiento recomendado.
+    **Nota:** Estamos añadiendo "var" en los nombres de las variables, por
+    lo que es fácil encontrarlas
+    y es un procedimiento recomendado.
 
     ![](../media/Lab-05/image28.png)
 
@@ -397,8 +398,8 @@ y es un procedimiento recomendado.
         espera si el flujo de datos falla.
         (Ya sea cinco minutos/300 segundos o 15 minutos/900 segundos).
 
-**Nota:** Asegúrese de que no haya espacios antes o después del nombre
-de la variable.
+    **Nota:** Asegúrese de que no haya espacios antes o después del nombre
+    de la variable.
 
     ![](../media/Lab-05/image29.png)
 
@@ -429,9 +430,9 @@ de la variable.
 
     ![](../media/Lab-05/image31.png)
 
-Necesitamos escribir una expresión que se ejecute hasta que el valor de
-**varCounter sea 3** o el valor de **varIsSuccess sea Sí.** (varCounter
-y varIsSuccess son las variables que acabamos de crear).
+    Necesitamos escribir una expresión que se ejecute hasta que el valor de
+    **varCounter sea 3** o el valor de **varIsSuccess sea Sí.** (varCounter
+    y varIsSuccess son las variables que acabamos de crear).
 
 8. Se abre el cuadro de diálogo **Generador de expresiones de
     canalización**. En la mitad inferior del cuadro de diálogo, tendrá
@@ -483,9 +484,9 @@ y varIsSuccess son las variables que acabamos de crear).
     **equals**. Observe que se agrega al cuadro de texto de expresión
     dinámica.
 
-**Nota:** Su función debería verse así **@or(equals())**. La función
-equals también toma dos parámetros. Comprobaremos si la variable
-varCounter es igual a 3.
+    **Nota:** Su función debería verse así **@or(equals())**. La función
+    equals también toma dos parámetros. Comprobaremos si la variable
+    varCounter es igual a 3.
 
     ![](../media/Lab-05/image34.png)
 
@@ -530,8 +531,8 @@ varCounter es igual a 3.
 
 23. Su expresión debería ser:
 
-**@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),
-variables('varSuccess')))**
+    **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),
+    variables('varSuccess')))**
 
 24. Seleccione **Aceptar**.
 
@@ -593,24 +594,24 @@ el iterador es establecer el valor de la variable varIsSuccess en Sí.
 4. En el campo **Descripción,** introduzca **"Set variable
     varIsSuccess to Yes"**.
 
-**Nota:** Pase el cursor por encima de **la actividad del flujo de
-datos**. A la derecha del cuadro de actividad hay cuatro iconos. Según
-el resultado de la actividad, se pueden utilizar para conectarse
-a la siguiente:
+    **Nota:** Pase el cursor por encima de **la actividad del flujo de
+    datos**. A la derecha del cuadro de actividad hay cuatro iconos. Según
+    el resultado de la actividad, se pueden utilizar para conectarse
+    a la siguiente:
 
-a. El icono de la **flecha curva gris** se utiliza para omitir la
-    actividad.
+    a. El icono de la **flecha curva gris** se utiliza para omitir la
+        actividad.
 
-b. El icono de la **marca de verificación verde** se utiliza en caso de
-    éxito de la actividad.
+    b. El icono de la **marca de verificación verde** se utiliza en caso de
+        éxito de la actividad.
 
-c. El icono de la **marca roja con forma de x** se utiliza en caso de
-    fallo de la actividad.
+    c. El icono de la **marca roja con forma de x** se utiliza en caso de
+        fallo de la actividad.
 
-d. El icono de la **flecha recta azul** se utiliza al finalizar la
-    actividad.
+    d. El icono de la **flecha recta azul** se utiliza al finalizar la
+        actividad.
 
-<!-- -->
+
 
 5. Haga clic en la **marca de verificación verde** desde la actividad
     del flujo de datos dfactivity_People_SharePoint y arrastre para
@@ -652,11 +653,11 @@ d. El icono de la **flecha recta azul** se utiliza al finalizar la
 
     ![](../media/Lab-05/image44.png)
 
-Ahora necesitamos configurar el contador si falla la actividad del flujo
-de datos. En una canalización, no podemos hacer referencia a una
-variable. Lo que significa que no podemos incrementar la variable de
-contador varCounter si agregamos uno a su valor (varCounter =
-varCounter + 1). Entonces, utilizamos la variable varTempCounter.
+    Ahora necesitamos configurar el contador si falla la actividad del flujo
+    de datos. En una canalización, no podemos hacer referencia a una
+    variable. Lo que significa que no podemos incrementar la variable de
+    contador varCounter si agregamos uno a su valor (varCounter =
+    varCounter + 1). Entonces, utilizamos la variable varTempCounter.
 
 ### Tarea 10: Configurar la segunda actividad de Establecer variable
 
@@ -695,15 +696,15 @@ varCounter + 1). Entonces, utilizamos la variable varTempCounter.
 10. Se abre el cuadro de diálogo Generador de expresiones de
     canalización. Introduzca **@add(variables('varCounter'),1)**
 
-**Nota:** Siéntase libre de escribir esta expresión, use el menú para
-seleccionar las funciones o copiarla y pegarla. Esta función establece
-el valor de la variable varTempCounter al valor de la variable
+    **Nota:** Siéntase libre de escribir esta expresión, use el menú para
+    seleccionar las funciones o copiarla y pegarla. Esta función establece
+    el valor de la variable varTempCounter al valor de la variable
 varCounter más uno (varTempCounter = varCounter + 1).
 
     ![](../media/Lab-05/image46.png)
 
-Ahora necesitamos establecer el valor de la variable varCounter en el
-valor de varTempCounter.
+    Ahora necesitamos establecer el valor de la variable varCounter en el
+    valor de varTempCounter.
 
 ### Tarea 11: Configurar la tercera actividad de Establecer variable
 
@@ -747,10 +748,10 @@ valor de varTempCounter.
 
     ![](../media/Lab-05/image48.png)
 
-**Nota:** Esta función establece el valor de la variable varCounter al
-valor de la variable varTempCounter (varCounter = varTempCounter). Al
-final de cada iteración, tanto varCounter como varTempCounter tienen el
-mismo valor.
+    **Nota:** Esta función establece el valor de la variable varCounter al
+    valor de la variable varTempCounter (varCounter = varTempCounter). Al
+    final de cada iteración, tanto varCounter como varTempCounter tienen el
+    mismo valor.
 
 ### Tarea 12: Configurar la actividad Esperar
 
@@ -789,51 +790,51 @@ establecer el tiempo de espera.
 8. Se abre el cuadro de diálogo Generador de expresiones de
     canalización. Introducir
 
-> **@if(**
->
-> **greater(variables('varCounter'), 1),**
->
-> **if(equals(variables('varCounter'), 2),**
->
-> **mul(variables('varWaitTime'),15 ),**
->
-> **mul(variables('varWaitTime'), 0)**
->
-> **),**
->
-> **mul(variables('varWaitTime'),5 )**
->
-> **)**
+    > **@if(**
+    >
+    > **greater(variables('varCounter'), 1),**
+    >
+    > **if(equals(variables('varCounter'), 2),**
+    >
+    > **mul(variables('varWaitTime'),15 ),**
+    >
+    > **mul(variables('varWaitTime'), 0)**
+    >
+    > **),**
+    >
+    > **mul(variables('varWaitTime'),5 )**
+    >
+    > **)**
 
-Siéntase libre de escribir esta expresión o use el menú para seleccionar
-las funciones o copiarla y pegarla.
+    Siéntase libre de escribir esta expresión o use el menú para seleccionar
+    las funciones o copiarla y pegarla.
 
     ![](../media/Lab-05/image50.png)
 
-Aquí usamos dos nuevas funciones:
+    Aquí usamos dos nuevas funciones:
 
-- **greater:** toma dos números como parámetros y compara cuál es mayor.
+    - **greater:** toma dos números como parámetros y compara cuál es mayor.
 
-- **mul:** esta es una función de multiplicación, necesita dos
-  parámetros para multiplicar.
+    - **mul:** esta es una función de multiplicación, necesita dos
+    parámetros para multiplicar.
 
-La expresión es una declaración if anidada. Está comprobando si el valor
-de la variable varCounter es mayor que 1.
+    La expresión es una declaración if anidada. Está comprobando si el valor
+    de la variable varCounter es mayor que 1.
 
-Si es true, comprueba si el valor de la variable varCounter es 2. Si es
-true, establece el tiempo de espera en varWaitTime multiplicado por 15.
-Recuerde, habíamos establecido el valor predeterminado de varWaitTime a
-60. Eso sería 60*15 = 900 segundos. Si el valor de la variable
-varCounter no es 2 (es mayor que 2, lo que significa que la
-actualización del flujo de datos ha fallado 3 veces, hemos terminado de
-iterar. No tenemos que esperar más), el tiempo de espera se establece en
-varWaitTime *0. O sea, 0. Si el valor de la variable varCounter es 1,
-entonces multiplicamos varWaitTime *5. Eso sería 60*5 = 300 segundos.
+    Si es true, comprueba si el valor de la variable varCounter es 2. Si es
+    true, establece el tiempo de espera en varWaitTime multiplicado por 15.
+    Recuerde, habíamos establecido el valor predeterminado de varWaitTime a
+    60. Eso sería 60*15 = 900 segundos. Si el valor de la variable
+    varCounter no es 2 (es mayor que 2, lo que significa que la
+    actualización del flujo de datos ha fallado 3 veces, hemos terminado de
+    iterar. No tenemos que esperar más), el tiempo de espera se establece en
+    varWaitTime *0. O sea, 0. Si el valor de la variable varCounter es 1,
+    entonces multiplicamos varWaitTime *5. Eso sería 60*5 = 300 segundos.
 
 9. Seleccione **Aceptar**.
 
-**Punto de control:** su iterador Hasta debería verse como la captura de
-pantalla siguiente.
+    **Punto de control:** su iterador Hasta debería verse como la captura de
+    pantalla siguiente.
 
     ![](../media/Lab-05/image51.png)
 
@@ -854,10 +855,10 @@ pantalla siguiente.
 1. Podemos probar la canalización si seleccionamos **Inicio ->
     Ejecutar**.
 
-**Nota:** Es posible que la actualización de la canalización de datos
-tarde unos minutos. Este es un entorno de capacitación, por lo que el
-archivo en SharePoint siempre está disponible. Por lo tanto, su
-canalización nunca fallará.
+    **Nota:** Es posible que la actualización de la canalización de datos
+    tarde unos minutos. Este es un entorno de capacitación, por lo que el
+    archivo en SharePoint siempre está disponible. Por lo tanto, su
+    canalización nunca fallará.
 
 2. Podemos configurar la canalización para que se ejecute según una
     programación. En el menú superior, seleccione **Inicio ->
@@ -878,10 +879,10 @@ canalización nunca fallará.
 
 8. Establezca su **Zona horaria**.
 
-**Nota:** dado que se trata de un entorno de laboratorio, puede
-configurar la zona horaria según su zona horaria preferida. En un
-escenario real, configurará la zona horaria según la ubicación de su
-origen de datos.
+    **Nota:** dado que se trata de un entorno de laboratorio, puede
+    configurar la zona horaria según su zona horaria preferida. En un
+    escenario real, configurará la zona horaria según la ubicación de su
+    origen de datos.
 
 9. Seleccione **Guardar**.
 
@@ -892,15 +893,15 @@ origen de datos.
 
 11. Seleccione el área de trabajo de Fabric **FAIAD_<username>** en el panel izquierdo para navegar al área de trabajo.
 
-**Nota:** En la pantalla Programación, no hay ninguna opción para
-notificar sobre el éxito o el error (como la programación de flujos de
-datos). La notificación se puede llevar a cabo mediante una actividad en
-la canalización. No lo haremos en este laboratorio, ya que es un entorno
-de laboratorio.
+    **Nota:** En la pantalla Programación, no hay ninguna opción para
+    notificar sobre el éxito o el error (como la programación de flujos de
+    datos). La notificación se puede llevar a cabo mediante una actividad en
+    la canalización. No lo haremos en este laboratorio, ya que es un entorno
+    de laboratorio.
 
-Hemos programado actualizaciones para los distintos orígenes de datos.
-Crearemos un modelo semántico con relaciones, medidas y otras
-operaciones de modelado en el próximo laboratorio.
+    Hemos programado actualizaciones para los distintos orígenes de datos.
+    Crearemos un modelo semántico con relaciones, medidas y otras
+    operaciones de modelado en el próximo laboratorio.
 
 # Referencias
 

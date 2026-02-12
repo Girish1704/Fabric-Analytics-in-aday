@@ -1,5 +1,6 @@
-# Microsoft Fabric Fabric Analyst in a Day 
-Laboratorio 7
+# Microsoft Fabric Fabric Analyst in a Day-Laboratorio 7
+![](../media/Lab-07/main7.png)
+
 # Contenido
 - Introducción	
 - Power BI	
@@ -96,14 +97,14 @@ Power BI.
 
     ![](../media/Lab-07/image11.png)
 
-**Punto de control:** tendrá un informe similar a la captura de pantalla
-siguiente. Hay algunos KPI y algunos objetos visuales de tendencias.
-Este es un buen comienzo si está analizando un nuevo modelo y necesita
-un impulso.
+    **Punto de control:** tendrá un informe similar a la captura de pantalla
+    siguiente. Hay algunos KPI y algunos objetos visuales de tendencias.
+    Este es un buen comienzo si está analizando un nuevo modelo y necesita
+    un impulso.
 
-**Nota:** Observe que en el menú superior tiene la opción de editar el
-informe o ver algunos de los datos como tablas. No dude en explorar
-estas opciones.
+    **Nota:** Observe que en el menú superior tiene la opción de editar el
+    informe o ver algunos de los datos como tablas. No dude en explorar
+    estas opciones.
 
 9. Guardemos este informe. En el menú superior, seleccione **Guardar**.
 
@@ -118,17 +119,17 @@ estas opciones.
 
     ![](../media/Lab-07/image12.png)
 
-**Nota:** El informe creado automáticamente puede verse diferente ya que
-se "creó automáticamente". También depende de las relaciones y medidas
-que creó en el laboratorio anterior (Laboratorio 6).
+    **Nota:** El informe creado automáticamente puede verse diferente ya que
+    se "creó automáticamente". También depende de las relaciones y medidas
+    que creó en el laboratorio anterior (Laboratorio 6).
 
-La captura de pantalla anterior muestra el aspecto que el informe creado
-automáticamente **puede** tener si ha creado todas las relaciones y
-medidas, incluidas las relaciones opcionales (Laboratorio 6).
+    La captura de pantalla anterior muestra el aspecto que el informe creado
+    automáticamente **puede** tener si ha creado todas las relaciones y
+    medidas, incluidas las relaciones opcionales (Laboratorio 6).
 
-La siguiente captura de pantalla es el aspecto que **puede** tener el
-informe creado automáticamente si omite la creación de las relaciones y
-medidas opcionales (Laboratorio 6).
+    La siguiente captura de pantalla es el aspecto que **puede** tener el
+    informe creado automáticamente si omite la creación de las relaciones y
+    medidas opcionales (Laboratorio 6).
 
     ![](../media/Lab-07/image13.png)
 
@@ -163,12 +164,12 @@ Creemos un nuevo informe usando un lienzo en blanco.
     carpeta **Reports** en el **escritorio** de su entorno de
     laboratorio.
 
-Vamos a utilizar este informe como referencia. Comenzaremos agregando el
-fondo del lienzo. Crearemos el encabezado del informe, agregaremos un
-par de KPI y crearemos el gráfico de líneas de Ventas a lo largo del
-tiempo. Por razones de tiempo y sabiendo que tiene experiencia en la
-creación de objetos visuales en Power BI Desktop, no crearemos todos los
-objetos visuales.
+    Vamos a utilizar este informe como referencia. Comenzaremos agregando el
+    fondo del lienzo. Crearemos el encabezado del informe, agregaremos un
+    par de KPI y crearemos el gráfico de líneas de Ventas a lo largo del
+    tiempo. Por razones de tiempo y sabiendo que tiene experiencia en la
+    creación de objetos visuales en Power BI Desktop, no crearemos todos los
+    objetos visuales.
 
     ![](../media/Lab-07/image17.png)
 
@@ -395,7 +396,7 @@ modelo.
 
     ![](../media/Lab-07/image31.png)
 
-**Nota:** Los meses están ordenados alfabéticamente. Vamos a arreglarlo.
+    **Nota:** Los meses están ordenados alfabéticamente. Vamos a arreglarlo.
 
     ![](../media/Lab-07/image32.png)
 
@@ -474,9 +475,9 @@ Desktop.
 17. Guardemos el informe: desde el menú, seleccione **Archivo ->
     Guardar**.
 
-Como se mencionó anteriormente, no crearemos todos los objetos visuales
-en esta práctica de laboratorio. Siéntase libre de crear más objetos
-visuales si lo desea.
+    Como se mencionó anteriormente, no crearemos todos los objetos visuales
+    en esta práctica de laboratorio. Siéntase libre de crear más objetos
+    visuales si lo desea.
 
 ### Tarea 10: Conectar Power BI Desktop al modelo semántico
 
@@ -529,12 +530,12 @@ semántico y crear objetos visuales.
 
     ![](../media/Lab-07/image43.png)
 
-Observe que es fácil copiar objetos visuales de un informe existente y
-pegarlos en un informe que se conecta al modelo semántico. Tenga en
-cuenta que los nombres de las tablas, columnas y medidas deben ser los
-mismos para que funcione la función de copiar y pegar. Si no son los
-mismos, es posible que tenga un error, pero esto se puede resolver
-fácilmente.
+    Observe que es fácil copiar objetos visuales de un informe existente y
+    pegarlos en un informe que se conecta al modelo semántico. Tenga en
+    cuenta que los nombres de las tablas, columnas y medidas deben ser los
+    mismos para que funcione la función de copiar y pegar. Si no son los
+    mismos, es posible que tenga un error, pero esto se puede resolver
+    fácilmente.
 
 13. Vaya a **FAIAD.pbix** y seleccione el gráfico de líneas de Ventas a
     lo largo del tiempo.
@@ -647,8 +648,8 @@ Sales view.
 
     ![](../media/Lab-07/image51.png)
 
-Observe que en el **Panel del explorador** de la izquierda tenemos ahora
-la tabla InvoicesMay. Ahora necesitamos actualizar Sales view.
+    Observe que en el **Panel del explorador** de la izquierda tenemos ahora
+    la tabla InvoicesMay. Ahora necesitamos actualizar Sales view.
 
 19. En la **parte superior derecha** de la pantalla, seleccione
     **Lakehouse -> Punto de conexión de análisis SQL**.
@@ -661,310 +662,155 @@ la tabla InvoicesMay. Ahora necesitamos actualizar Sales view.
 21. **Copie** el siguiente código y **péguelo** en el panel de consulta
     SQL**.**
 
-> [ALTER VIEW [dbo].[Sales] AS (]{.mark}
->
-> [select [$Outer].[InvoiceLineID] as [InvoiceLineID],]{.mark}
->
-> [[$Outer].[InvoiceID] as [InvoiceID],]{.mark}
->
-> [[$Outer].[StockItemID] as [StockItemID],]{.mark}
->
-> [[$Outer].[Quantity] as [Quantity],]{.mark}
->
-> [[$Outer].[UnitPrice] as [UnitPrice],]{.mark}
->
-> [[$Outer].[TaxRate] as [TaxRate],]{.mark}
->
-> [[$Outer].[TaxAmount] as [TaxAmount],]{.mark}
->
-> [[$Outer].[LineProfit] as [LineProfit],]{.mark}
->
-> [[$Outer].[ExtendedPrice] as [ExtendedPrice],]{.mark}
->
-> [[$Outer].[CustomerID] as [ResellerID],]{.mark}
->
-> [[$Outer].[SalespersonPersonID] as
-> [SalespersonPersonID],]{.mark}
->
-> [[$Outer].[InvoiceDate] as [InvoiceDate],]{.mark}
->
-> [[$Outer].[t0_0] as [Sales Amount]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select [_].[InvoiceLineID] as [InvoiceLineID],]{.mark}
->
-> [[_].[InvoiceID] as [InvoiceID],]{.mark}
->
-> [[_].[StockItemID] as [StockItemID],]{.mark}
->
-> [[_].[Quantity] as [Quantity],]{.mark}
->
-> [[_].[UnitPrice] as [UnitPrice],]{.mark}
->
-> [[_].[TaxRate] as [TaxRate],]{.mark}
->
-> [[_].[TaxAmount] as [TaxAmount],]{.mark}
->
-> [[_].[LineProfit] as [LineProfit],]{.mark}
->
-> [[_].[ExtendedPrice] as [ExtendedPrice],]{.mark}
->
-> [[_].[CustomerID] as [CustomerID],]{.mark}
->
-> [[_].[SalespersonPersonID] as [SalespersonPersonID],]{.mark}
->
-> [[_].[InvoiceDate] as [InvoiceDate],]{.mark}
->
-> [[_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select [$Outer].[InvoiceLineID],]{.mark}
->
-> [[$Outer].[InvoiceID],]{.mark}
->
-> [[$Outer].[StockItemID],]{.mark}
->
-> [[$Outer].[Quantity],]{.mark}
->
-> [[$Outer].[UnitPrice],]{.mark}
->
-> [[$Outer].[TaxRate],]{.mark}
->
-> [[$Outer].[TaxAmount],]{.mark}
->
-> [[$Outer].[LineProfit],]{.mark}
->
-> [[$Outer].[ExtendedPrice],]{.mark}
->
-> [[$Inner].[CustomerID],]{.mark}
->
-> [[$Inner].[SalespersonPersonID],]{.mark}
->
-> [[$Inner].[InvoiceDate]]{.mark}
->
-> [from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]]{.mark}
->
-> [inner join]{.mark}
->
-> [(]{.mark}
->
-> [select [_].[InvoiceID] as [InvoiceID2],]{.mark}
->
-> [[_].[CustomerID] as [CustomerID],]{.mark}
->
-> [[_].[BillToResellerID] as [BillToResellerID],]{.mark}
->
-> [[_].[OrderID] as [OrderID],]{.mark}
->
-> [[_].[DeliveryMethodID] as [DeliveryMethodID],]{.mark}
->
-> [[_].[ContactPersonID] as [ContactPersonID],]{.mark}
->
-> [[_].[AccountsPersonID] as [AccountsPersonID],]{.mark}
->
-> [[_].[SalespersonPersonID] as [SalespersonPersonID],]{.mark}
->
-> [[_].[PackedByPersonID] as [PackedByPersonID],]{.mark}
->
-> [[_].[InvoiceDate] as [InvoiceDate],]{.mark}
->
-> [[_].[CustomerPurchaseOrderNumber] as
-> [CustomerPurchaseOrderNumber],]{.mark}
->
-> [[_].[IsCreditNote] as [IsCreditNote],]{.mark}
->
-> [[_].[CreditNoteReason] as [CreditNoteReason],]{.mark}
->
-> [[_].[Comments] as [Comments],]{.mark}
->
-> [[_].[DeliveryInstructions] as [DeliveryInstructions],]{.mark}
->
-> [[_].[InternalComments] as [InternalComments],]{.mark}
->
-> [[_].[TotalDryItems] as [TotalDryItems],]{.mark}
->
-> [[_].[TotalChillerItems] as [TotalChillerItems],]{.mark}
->
-> [[_].[DeliveryRun] as [DeliveryRun],]{.mark}
->
-> [[_].[RunPosition] as [RunPosition],]{.mark}
->
-> [[_].[ReturnedDeliveryData] as [ReturnedDeliveryData],]{.mark}
->
-> [[_].[ConfirmedDeliveryTime] as
-> [ConfirmedDeliveryTime],]{.mark}
->
-> [[_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],]{.mark}
->
-> [[_].[LastEditedBy] as [LastEditedBy2],]{.mark}
->
-> [[_].[LastEditedWhen] as [LastEditedWhen2]]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select [$Table].[InvoiceID] as [InvoiceID],]{.mark}
->
-> [[$Table].[CustomerID] as [CustomerID],]{.mark}
->
-> [[$Table].[BillToResellerID] as [BillToResellerID],]{.mark}
->
-> [[$Table].[OrderID] as [OrderID],]{.mark}
->
-> [[$Table].[DeliveryMethodID] as [DeliveryMethodID],]{.mark}
->
-> [[$Table].[ContactPersonID] as [ContactPersonID],]{.mark}
->
-> [[$Table].[AccountsPersonID] as [AccountsPersonID],]{.mark}
->
-> [[$Table].[SalespersonPersonID] as
-> [SalespersonPersonID],]{.mark}
->
-> [[$Table].[PackedByPersonID] as [PackedByPersonID],]{.mark}
->
-> [[$Table].[InvoiceDate] as [InvoiceDate],]{.mark}
->
-> [[$Table].[CustomerPurchaseOrderNumber] as
-> [CustomerPurchaseOrderNumber],]{.mark}
->
-> [[$Table].[IsCreditNote] as [IsCreditNote],]{.mark}
->
-> [[$Table].[CreditNoteReason] as [CreditNoteReason],]{.mark}
->
-> [[$Table].[Comments] as [Comments],]{.mark}
->
-> [[$Table].[DeliveryInstructions] as
-> [DeliveryInstructions],]{.mark}
->
-> [[$Table].[InternalComments] as [InternalComments],]{.mark}
->
-> [[$Table].[TotalDryItems] as [TotalDryItems],]{.mark}
->
-> [[$Table].[TotalChillerItems] as [TotalChillerItems],]{.mark}
->
-> [[$Table].[DeliveryRun] as [DeliveryRun],]{.mark}
->
-> [[$Table].[RunPosition] as [RunPosition],]{.mark}
->
-> [[$Table].[ReturnedDeliveryData] as
-> [ReturnedDeliveryData],]{.mark}
->
-> [[$Table].[ConfirmedDeliveryTime] as
-> [ConfirmedDeliveryTime],]{.mark}
->
-> [[$Table].[ConfirmedReceivedBy] as
-> [ConfirmedReceivedBy],]{.mark}
->
-> [[$Table].[LastEditedBy] as [LastEditedBy],]{.mark}
->
-> [[$Table].[LastEditedWhen] as [LastEditedWhen]]{.mark}
->
-> [from [lh_FAIAD].[dbo].[Invoices] as [$Table]]{.mark}
->
-> [union all select [$Table].[InvoiceID] as [InvoiceID],]{.mark}
->
-> [[$Table].[CustomerID] as [CustomerID],]{.mark}
->
-> [[$Table].[BillToResellerID] as [BillToResellerID],]{.mark}
->
-> [[$Table].[OrderID] as [OrderID],]{.mark}
->
-> [[$Table].[DeliveryMethodID] as [DeliveryMethodID],]{.mark}
->
-> [[$Table].[ContactPersonID] as [ContactPersonID],]{.mark}
->
-> [[$Table].[AccountsPersonID] as [AccountsPersonID],]{.mark}
->
-> [[$Table].[SalespersonPersonID] as
-> [SalespersonPersonID],]{.mark}
->
-> [[$Table].[PackedByPersonID] as [PackedByPersonID],]{.mark}
->
-> [[$Table].[InvoiceDate] as [InvoiceDate],]{.mark}
->
-> [[$Table].[CustomerPurchaseOrderNumber] as
-> [CustomerPurchaseOrderNumber],]{.mark}
->
-> [[$Table].[IsCreditNote] as [IsCreditNote],]{.mark}
->
-> [[$Table].[CreditNoteReason] as [CreditNoteReason],]{.mark}
->
-> [[$Table].[Comments] as [Comments],]{.mark}
->
-> [[$Table].[DeliveryInstructions] as
-> [DeliveryInstructions],]{.mark}
->
-> [[$Table].[InternalComments] as [InternalComments],]{.mark}
->
-> [[$Table].[TotalDryItems] as [TotalDryItems],]{.mark}
->
-> [[$Table].[TotalChillerItems] as [TotalChillerItems],]{.mark}
->
-> [[$Table].[DeliveryRun] as [DeliveryRun],]{.mark}
->
-> [[$Table].[RunPosition] as [RunPosition],]{.mark}
->
-> [[$Table].[ReturnedDeliveryData] as
-> [ReturnedDeliveryData],]{.mark}
->
-> [[$Table].[ConfirmedDeliveryTime] as
-> [ConfirmedDeliveryTime],]{.mark}
->
-> [[$Table].[ConfirmedReceivedBy] as
-> [ConfirmedReceivedBy],]{.mark}
->
-> [[$Table].[LastEditedBy] as [LastEditedBy],]{.mark}
->
-> [[$Table].[LastEditedWhen] as [LastEditedWhen]]{.mark}
->
-> [from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]]{.mark}
->
-> [) as [_]]{.mark}
->
-> [) as [$Inner] on ([$Outer].[InvoiceID] =
-> [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and
-> [$Inner].[InvoiceID2] is null)]{.mark}
->
-> [) as [_]]{.mark}
->
-> [) as [$Outer]]{.mark}
->
-> [where exists]{.mark}
->
-> [(]{.mark}
->
-> [select 1]{.mark}
->
-> [from]{.mark}
->
-> [(]{.mark}
->
-> [select [ResellerID]]{.mark}
->
-> [from [lh_FAIAD].[dbo].[Reseller] as [$Table]]{.mark}
->
-> [) as [$Inner]]{.mark}
->
-> [where [$Outer].[CustomerID] = [$Inner].[ResellerID] or
-> [$Outer].[CustomerID] is null and [$Inner].[ResellerID] is
-> null]{.mark}
->
-> [)]{.mark}
->
-> [)]{.mark}
+    ```
+    ALTER VIEW [dbo].[Sales] AS (
+    select [$Outer].[InvoiceLineID] as [InvoiceLineID],
+        [$Outer].[InvoiceID] as [InvoiceID],
+        [$Outer].[StockItemID] as [StockItemID],
+        [$Outer].[Quantity] as [Quantity],
+        [$Outer].[UnitPrice] as [UnitPrice],
+        [$Outer].[TaxRate] as [TaxRate],
+        [$Outer].[TaxAmount] as [TaxAmount],
+        [$Outer].[LineProfit] as [LineProfit],
+        [$Outer].[ExtendedPrice] as [ExtendedPrice],
+        [$Outer].[CustomerID] as [ResellerID],
+        [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
+        [$Outer].[InvoiceDate] as [InvoiceDate],
+        [$Outer].[t0_0] as [Sales Amount]
+    from 
+    (
+        select [_].[InvoiceLineID] as [InvoiceLineID],
+            [_].[InvoiceID] as [InvoiceID],
+            [_].[StockItemID] as [StockItemID],
+            [_].[Quantity] as [Quantity],
+            [_].[UnitPrice] as [UnitPrice],
+            [_].[TaxRate] as [TaxRate],
+            [_].[TaxAmount] as [TaxAmount],
+            [_].[LineProfit] as [LineProfit],
+            [_].[ExtendedPrice] as [ExtendedPrice],
+            [_].[CustomerID] as [CustomerID],
+            [_].[SalespersonPersonID] as [SalespersonPersonID],
+            [_].[InvoiceDate] as [InvoiceDate],
+            [_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
+        from 
+        (
+            select [$Outer].[InvoiceLineID],
+                [$Outer].[InvoiceID],
+                [$Outer].[StockItemID],
+                [$Outer].[Quantity],
+                [$Outer].[UnitPrice],
+                [$Outer].[TaxRate],
+                [$Outer].[TaxAmount],
+                [$Outer].[LineProfit],
+                [$Outer].[ExtendedPrice],
+                [$Inner].[CustomerID],
+                [$Inner].[SalespersonPersonID],
+                [$Inner].[InvoiceDate]
+            from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
+            inner join 
+            (
+                select [_].[InvoiceID] as [InvoiceID2],
+                    [_].[CustomerID] as [CustomerID],
+                    [_].[BillToResellerID] as [BillToResellerID],
+                    [_].[OrderID] as [OrderID],
+                    [_].[DeliveryMethodID] as [DeliveryMethodID],
+                    [_].[ContactPersonID] as [ContactPersonID],
+                    [_].[AccountsPersonID] as [AccountsPersonID],
+                    [_].[SalespersonPersonID] as [SalespersonPersonID],
+                    [_].[PackedByPersonID] as [PackedByPersonID],
+                    [_].[InvoiceDate] as [InvoiceDate],
+                    [_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                    [_].[IsCreditNote] as [IsCreditNote],
+                    [_].[CreditNoteReason] as [CreditNoteReason],
+                    [_].[Comments] as [Comments],
+                    [_].[DeliveryInstructions] as [DeliveryInstructions],
+                    [_].[InternalComments] as [InternalComments],
+                    [_].[TotalDryItems] as [TotalDryItems],
+                    [_].[TotalChillerItems] as [TotalChillerItems],
+                    [_].[DeliveryRun] as [DeliveryRun],
+                    [_].[RunPosition] as [RunPosition],
+                    [_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                    [_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                    [_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                    [_].[LastEditedBy] as [LastEditedBy2],
+                    [_].[LastEditedWhen] as [LastEditedWhen2]
+                from 
+                (
+                    select [$Table].[InvoiceID] as [InvoiceID],
+                        [$Table].[CustomerID] as [CustomerID],
+                        [$Table].[BillToResellerID] as [BillToResellerID],
+                        [$Table].[OrderID] as [OrderID],
+                        [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                        [$Table].[ContactPersonID] as [ContactPersonID],
+                        [$Table].[AccountsPersonID] as [AccountsPersonID],
+                        [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                        [$Table].[PackedByPersonID] as [PackedByPersonID],
+                        [$Table].[InvoiceDate] as [InvoiceDate],
+                        [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                        [$Table].[IsCreditNote] as [IsCreditNote],
+                        [$Table].[CreditNoteReason] as [CreditNoteReason],
+                        [$Table].[Comments] as [Comments],
+                        [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                        [$Table].[InternalComments] as [InternalComments],
+                        [$Table].[TotalDryItems] as [TotalDryItems],
+                        [$Table].[TotalChillerItems] as [TotalChillerItems],
+                        [$Table].[DeliveryRun] as [DeliveryRun],
+                        [$Table].[RunPosition] as [RunPosition],
+                        [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                        [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                        [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                        [$Table].[LastEditedBy] as [LastEditedBy],
+                        [$Table].[LastEditedWhen] as [LastEditedWhen]
+                    from [lh_FAIAD].[dbo].[Invoices] as [$Table]
+                    union all select [$Table].[InvoiceID] as [InvoiceID],
+                        [$Table].[CustomerID] as [CustomerID],
+                        [$Table].[BillToResellerID] as [BillToResellerID],
+                        [$Table].[OrderID] as [OrderID],
+                        [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                        [$Table].[ContactPersonID] as [ContactPersonID],
+                        [$Table].[AccountsPersonID] as [AccountsPersonID],
+                        [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                        [$Table].[PackedByPersonID] as [PackedByPersonID],
+                        [$Table].[InvoiceDate] as [InvoiceDate],
+                        [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                        [$Table].[IsCreditNote] as [IsCreditNote],
+                        [$Table].[CreditNoteReason] as [CreditNoteReason],
+                        [$Table].[Comments] as [Comments],
+                        [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                        [$Table].[InternalComments] as [InternalComments],
+                        [$Table].[TotalDryItems] as [TotalDryItems],
+                        [$Table].[TotalChillerItems] as [TotalChillerItems],
+                        [$Table].[DeliveryRun] as [DeliveryRun],
+                        [$Table].[RunPosition] as [RunPosition],
+                        [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                        [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                        [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                        [$Table].[LastEditedBy] as [LastEditedBy],
+                        [$Table].[LastEditedWhen] as [LastEditedWhen]
+                    from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]
+                ) as [_]
+            ) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and [$Inner].[InvoiceID2] is null)
+        ) as [_]
+    ) as [$Outer]
+    where exists 
+    (
+        select 1
+        from 
+        (
+            select [ResellerID]
+            from [lh_FAIAD].[dbo].[Reseller] as [$Table]
+        ) as [$Inner]
+        where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and [$Inner].[ResellerID] is null
+    )
+    )
+    ```
+
 
 22. En el menú de consulta del objeto visual, seleccione **Ejecutar**
     para ejecutar el código.
 
-Una vez ejecutado el código, hemos actualizado la tabla Sales para que
-incluya los datos de mayo de 2024.
+    Una vez ejecutado el código, hemos actualizado la tabla Sales para que
+    incluya los datos de mayo de 2024.
 
     ![](../media/Lab-07/image53.png)
 
@@ -977,54 +823,54 @@ incluya los datos de mayo de 2024.
 
     ![](../media/Lab-07/image54.png)
 
-No tenemos que actualizar el modelo de datos ni informar cuando los
-datos cambian. Esta es la ventaja de Direct Lake y Direct query.
+    No tenemos que actualizar el modelo de datos ni informar cuando los
+    datos cambian. Esta es la ventaja de Direct Lake y Direct query.
 
-Revisemos los desafíos que se enumeran en el planteamiento del problema:
+    Revisemos los desafíos que se enumeran en el planteamiento del problema:
 
-- **Debe actualizar su conjunto de datos al menos tres veces al día para
-  adaptarse a los diferentes tiempos de actualización para los
-  diferentes orígenes de datos.**
+    - **Debe actualizar su conjunto de datos al menos tres veces al día para
+    adaptarse a los diferentes tiempos de actualización para los
+    diferentes orígenes de datos.**
 
-Resolvimos esto con Direct Lake. Cada flujo de datos individual se
-actualiza según su programación. No es necesario actualizar los
-conjuntos de datos y los informes.
+    Resolvimos esto con Direct Lake. Cada flujo de datos individual se
+    actualiza según su programación. No es necesario actualizar los
+    conjuntos de datos y los informes.
 
-- **Sus operaciones de actualización tardan mucho tiempo, ya que
-  necesita hacer una actualización completa cada vez para capturar
-  cualquier actualización que haya ocurrido en los sistemas de origen.**
+    - **Sus operaciones de actualización tardan mucho tiempo, ya que
+    necesita hacer una actualización completa cada vez para capturar
+    cualquier actualización que haya ocurrido en los sistemas de origen.**
 
-De nuevo, resolvimos esto con Direct Lake. Cada flujo de datos
-individual se actualiza según su programación. No es necesario
-actualizar los conjunto de datos y los informes, por lo que no tenemos
-que preocuparnos por la actualización completa.
+    De nuevo, resolvimos esto con Direct Lake. Cada flujo de datos
+    individual se actualiza según su programación. No es necesario
+    actualizar los conjunto de datos y los informes, por lo que no tenemos
+    que preocuparnos por la actualización completa.
 
-- **Cualquier error en cualquiera de los orígenes de datos de los que
-  extrae provocará que se interrumpa la actualización del conjunto de
-  datos. Muchas veces, el archivo del empleado no se carga a tiempo, lo
-  que provoca que se interrumpa la actualización del conjunto de
-  datos.**
+    - **Cualquier error en cualquiera de los orígenes de datos de los que
+    extrae provocará que se interrumpa la actualización del conjunto de
+    datos. Muchas veces, el archivo del empleado no se carga a tiempo, lo
+    que provoca que se interrumpa la actualización del conjunto de
+    datos.**
 
-Las canalizaciones ayudan a resolver este problema al ofrecer la
-capacidad de volver a intentar la actualización en caso de error y en
-diferentes intervalos.
+    Las canalizaciones ayudan a resolver este problema al ofrecer la
+    capacidad de volver a intentar la actualización en caso de error y en
+    diferentes intervalos.
 
-- **Se necesita mucho tiempo para hacer cambios en su modelo de datos,
-  ya que Power Query tarda mucho en actualizar sus versiones
-  preliminares, dado el gran tamaño de los datos y las transformaciones
-  complejas.**
+    - **Se necesita mucho tiempo para hacer cambios en su modelo de datos,
+    ya que Power Query tarda mucho en actualizar sus versiones
+    preliminares, dado el gran tamaño de los datos y las transformaciones
+    complejas.**
 
-Vimos que los flujos de datos y los almacenes de lago de datos son
-eficientes y es fácil realizar cambios en ellos. Normalmente, la versión
-preliminar en flujos de datos y almacenes de lago de datos no tarda
-mucho en cargarse.
+    Vimos que los flujos de datos y los almacenes de lago de datos son
+    eficientes y es fácil realizar cambios en ellos. Normalmente, la versión
+    preliminar en flujos de datos y almacenes de lago de datos no tarda
+    mucho en cargarse.
 
-- **Necesita que un PO con Windows use Power BI Desktop aunque el
-  estándar corporativo es Mac.**
+    - **Necesita que un PO con Windows use Power BI Desktop aunque el
+    estándar corporativo es Mac.**
 
-Microsoft Fabric es una oferta SaaS. Lo único que necesitamos es un
-explorador para acceder al servicio. No tenemos que instalar ningún
-software en nuestros escritorios.
+    Microsoft Fabric es una oferta SaaS. Lo único que necesitamos es un
+    explorador para acceder al servicio. No tenemos que instalar ningún
+    software en nuestros escritorios.
 
 # Limpieza del entorno de laboratorio
 
@@ -1048,7 +894,7 @@ siga los pasos a continuación.
 5. Se abrirá el cuadro de diálogo de eliminar área de trabajo.
     Seleccione **Eliminar**.
 
-Esto eliminará el área de trabajo y todos los elementos que contenía.
+    Esto eliminará el área de trabajo y todos los elementos que contenía.
 
     ![](../media/Lab-07/image56.png)
 

@@ -108,6 +108,7 @@ Desktop para comprender las transformaciones y el modelo.
     **Continuar**.
 
     - Correo electrónico/nombre de usuario:
+    <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-01/image7.png)
 
@@ -116,13 +117,14 @@ Desktop para comprender las transformaciones y el modelo.
     electrónico/nombre de usuario y luego haga clic en **Siguiente**.
 
     - Correo electrónico/nombre de usuario:
+      <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-01/image8.png)
 
 4. Ahora introduzca el siguiente **Pase de acceso temporal** y haga
     clic en **Iniciar sesión**.
 
-    - Pase de acceso temporal:
+    - Pase de acceso temporal: <inject key="AzureAdUserPassword"></inject>
 
       ![](../media/Lab-01/image9.png)
 
@@ -278,11 +280,9 @@ avancemos a los siguientes pasos.
     credenciales se proporcionan a **continuación**. Cuando termine,
     seleccione **Conectar**.
 
-    - Correo electrónico/nombre de usuario: se encuentra en la pestaña
-      Entorno.
+    - Correo electrónico/nombre de usuario: <inject key="AzureAdUserEmail"></inject>
 
-    - Contraseña: se encuentra en la pestaña Entorno.
-
+    - Contraseña: <inject key="AzureAdUserPassword"></inject>
 9. Haga clic en la consulta **ADLS Base Folder** en la ventana
     Consultas. Al seleccionar esta consulta, tendrá que volver a
     escribir las credenciales. Haga clic en **Editar credenciales**.
@@ -293,7 +293,8 @@ avancemos a los siguientes pasos.
     compartido** **(SAS)** e introduzca el **token de SAS** que se
     proporciona a continuación. Después, seleccione **Conectar**.
 
-    - **Token de SAS:** se encuentra en la pestaña Entorno.
+    - **Token de SAS:** se encuentra en la pestaña Entorno.<inject key="Sas token"></inject>
+
 
       ![](../media/Lab-01/image23.png)
 
@@ -325,8 +326,9 @@ avancemos a los siguientes pasos.
     Snowflake y luego seleccione **Conectar**.
 
     - **Nombre de usuario de Snowflake:** TE_SNOWFLAKE1
-
+          <inject key="AzureAdUserEmail"></inject>
     - **Contraseña de Snowflake:** 8UpfRpExVDXv2AC1
+         <inject key="AzureAdUserPassword"></inject>
 
     *Nota: Si tiene algún problema para conectarse a Snowflake con las
     credenciales anteriores, utilice las credenciales de copia de seguridad
@@ -368,9 +370,9 @@ avancemos a los siguientes pasos.
 
     ![](../media/Lab-01/image27.png)
 
-Ahora sabemos a qué nos enfrentamos. En los siguientes laboratorios,
-crearemos una consulta de Power Query similar mediante el flujo de datos
-Gen2 y haremos modelos mediante un Lakehouse.
+    Ahora sabemos a qué nos enfrentamos. En los siguientes laboratorios,
+    crearemos una consulta de Power Query similar mediante el flujo de datos
+    Gen2 y haremos modelos mediante un Lakehouse.
 
 # Referencias
 
