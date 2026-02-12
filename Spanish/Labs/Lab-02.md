@@ -1,5 +1,6 @@
 # Microsoft Fabric Fabric Analyst in a Day-Laboratorio 2
 # Contenido	
+ ![](../media/Lab-02/main2.png)
 - Presentación	
 - Licencia de Fabric	
     - Tarea 1: Habilitar una licencia de prueba de Microsoft Fabric	
@@ -41,10 +42,10 @@ Al final de este laboratorio, habrá aprendido:
 
     ![](../media/Lab-02/image6.png)
 
-***Nota:** Si está utilizando el entorno de laboratorio, es posible que
+    ***Nota:** Si está utilizando el entorno de laboratorio, es posible que
 inicie sesión automáticamente.*
 
-***Nota:** Si Fabric no se abre, vaya a http://app.fabric.microsoft.com/
+    ***Nota:** Si Fabric no se abre, vaya a http://app.fabric.microsoft.com/
 en el explorador.*
 
 2. Copie el nombre de usuario y péguelo en el campo Correo electrónico
@@ -91,7 +92,7 @@ trabajo que tenga una licencia de Fabric asignada. Configurémoslo.
 9. Se abre un cuadro de diálogo para actualizar a una prueba de
     Microsoft Fabric gratuita. Seleccione **Activar**.
 
-***Nota:** No cambie la región predeterminada. Manténgala tal y como
+    ***Nota:** No cambie la región predeterminada. Manténgala tal y como
 está.*
 
     ![](../media/Lab-02/image11.png)
@@ -127,7 +128,7 @@ está.*
 4. En el campo **Nombre**, introduzca FAIAD_UserID (que se encuentra en
     la pestaña Entorno).
 
-***Nota:** El nombre del área de trabajo debe ser único. Asegúrese de
+    ***Nota:** El nombre del área de trabajo debe ser único. Asegúrese de
 que aparezca una marca de verificación verde con "Este nombre está
 disponible" debajo del campo Nombre.*
 
@@ -168,10 +169,10 @@ lago de datos. Haremos esto a continuación.
 3. Aparecerá un cuadro de diálogo Nuevo lakehouse. Escriba **lh_FAIAD**
     en el cuadro de texto Nombre.
 
-***Nota:** lh aquí se refiere al Lakehouse. Vamos a anteponer lh para
+    ***Nota:** lh aquí se refiere al Lakehouse. Vamos a anteponer lh para
 que sea fácil de identificar y buscar.*
 
-***Nota:** La característica en vista previa de **Esquemas de almacén de
+    ***Nota:** La característica en vista previa de **Esquemas de almacén de
 lago de datos** es muy interesante y es algo que debe tener en cuenta.
 Dado que está en **Versión preliminar**, lo ignoraremos para que no haya
 un impacto negativo en la experiencia del laboratorio. Una vez que la
@@ -195,7 +196,7 @@ datos podría cargar datos en las tablas del almacén de lago de datos.
 Existen varias opciones disponibles. Le mostraremos algunas de las
 opciones en las siguientes prácticas de laboratorio.
 
-    ![](../media/Lab-02/image19.png)
+![](../media/Lab-02/image19.png)
 
 # Información general de las experiencias de Fabric
 
@@ -309,7 +310,7 @@ g)  **Crear sus primeras funciones de datos de usuario**: esta sección
     le ayuda a crear funciones de datos de usuario, que son útiles para
     administrar y transformar los datos del usuario.
 
-    ![](../media/Lab-02/image22.png)
+ ![](../media/Lab-02/image22.png)
 
 4. Haga clic en **Volver a las cargas de trabajo** en la esquina
     superior izquierda de la pantalla. Esta acción le llevará a la
@@ -388,7 +389,7 @@ f)  **Empiece a usar soluciones de datos de comercio minorista:**
     comience a implementar soluciones de datos de comercio minorista e
     impleméntelas en sus proyectos.
 
-    ![](../media/Lab-02/image25.png)
+![](../media/Lab-02/image25.png)
 
 3. Haga clic en Volver a las cargas de trabajo en la esquina superior
     izquierda de la pantalla. Esta acción le llevará a la página
@@ -496,14 +497,13 @@ h. **Comenzar con activador**: haga clic en el botón "Abrir" para
     comenzar con los conceptos de activador y comenzar a usar la
     herramienta de manera efectiva.
 
-    ![](../media/Lab-02/image27.png)
-
+![](../media/Lab-02/image27.png)
 3. Haga clic en Volver a las cargas de trabajo en la esquina superior
     izquierda de la pantalla. Esta acción le llevará a la página
     principal de cargas de trabajo, donde puede explorar otras
     herramientas o secciones.
 
-    ![](../media/Lab-02/image23.png)
+![](../media/Lab-02/image23.png)
 
 ### Tarea 7: Experiencia de Data Engineering
 
@@ -587,14 +587,13 @@ el botón "Abrir" para aprender a crear funciones de datos de usuario.
 j. **Crear su primera API para GraphQL**: haga clic en el botón "Abrir"
 para aprender a crear una API para GraphQL.
 
-    ![](../media/Lab-02/image29.png)
-
+![](../media/Lab-02/image29.png)
 3. Haga clic en **Volver a las cargas de trabajo** en la esquina
     superior izquierda de la pantalla. Esta acción le llevará a la
     página principal de cargas de trabajo, donde puede explorar otras
     herramientas o secciones.
 
-    ![](../media/Lab-02/image23.png)
+![](../media/Lab-02/image23.png)
 
 ### Tarea 8: Experiencia de Data Science
 
@@ -742,7 +741,7 @@ datos de ejemplo ya cargados.
 b. **Introducción al almacén**: haga clic en el botón "Abrir" para
 aprender a utilizar un almacén para analizar datos.
 
-    ![](../media/Lab-02/image33.png)
+![](../media/Lab-02/image33.png)
 
 ### Tarea 10: Experiencia de bases de datos
 
@@ -795,14 +794,13 @@ cómo trabajar con SQL Database.
 c. **Database templates**: revise una biblioteca de plantillas creadas
 previamente con diseños comunes de bases de datos.
 
-    ![](../media/Lab-02/image35.png)
-
+![](../media/Lab-02/image35.png)
 3. Haga clic en Volver a las cargas de trabajo en la esquina superior
     izquierda de la pantalla. Esta acción le llevará a la página
     principal de cargas de trabajo, donde puede explorar otras
     herramientas o secciones.
 
-    ![](../media/Lab-02/image23.png)
+![](../media/Lab-02/image23.png)
 
 En esta práctica de laboratorio, exploramos la interfaz de Fabric,
 creamos un área de trabajo de Fabric y un almacén de lago de datos. En
