@@ -890,8 +890,7 @@ origen de datos.
 
     ![](../media/Lab-05/image55.png)
 
-11. Seleccione el área de trabajo de Fabric **FAIAD_<username>** en
-    el panel izquierdo para navegar al área de trabajo**.**
+11. Seleccione el área de trabajo de Fabric **FAIAD_<username>** en el panel izquierdo para navegar al área de trabajo.
 
 **Nota:** En la pantalla Programación, no hay ninguna opción para
 notificar sobre el éxito o el error (como la programación de flujos de
@@ -909,14 +908,14 @@ Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave
 disponibles en Microsoft Fabric. En el menú del servicio, la sección
 Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
-    ![](../media/Lab-05/image56.png)
+![](../media/Lab-01/image28.png)
 
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando
 con Microsoft Fabric.
 
 - Vea la publicación del blog para leer el [anuncio de disponibilidad
-  general de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
-  completo.
+  general de Microsoft Fabric
+  completo](https://aka.ms/Fabric-Hero-Blog-Ignite23).
 
 - Explore Fabric a través de la [Visita
   guiada](https://aka.ms/Fabric-GuidedTour)
@@ -933,26 +932,26 @@ con Microsoft Fabric.
 - Explore la [documentación técnica de
   Fabric](https://aka.ms/fabric-docs)
 
-- Lea el [libro electrónico gratuito sobre cómo empezar a usar
+- Lea el libro [electrónico gratuito sobre cómo empezar a usar
   Fabric](https://aka.ms/fabric-get-started-ebook)
 
 - Únase a la [comunidad de Fabric](https://aka.ms/fabric-community) para
-  publicar sus preguntas, compartir sus comentarios y aprender de otros.
+  publicar sus preguntas, compartir sus comentarios y aprender de otros
 
 Obtenga más información en los blogs de anuncios de la experiencia
 Fabric:
 
 - [Experiencia de Data Factory en el blog de
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+  Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Experiencia de Synapse Data Engineering en el blog de
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
 - [Experiencia de Synapse Data Science en el blog de
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
 - [Experiencia de Synapse Data Warehousing en el blog de
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+  Fabric](https://aka.ms/Fabric-DW-Blog)
 
 - [Experiencia de Synapse Real-Time Analytics en el blog de
   Fabric](https://aka.ms/Fabric-RTA-Blog)
@@ -970,67 +969,67 @@ Fabric:
 - [Blog de integración de Dataverse y Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos los derechos reservados.
->
-> Al participar en esta demostración o laboratorio práctico, acepta las
-> siguientes condiciones:
->
-> Microsoft Corporation pone a su disposición la tecnología o
-> funcionalidad descrita en esta demostración/laboratorio práctico con
-> el fin de obtener comentarios por su parte y de facilitarle
-> una experiencia de aprendizaje. Esta demostración/laboratorio práctico
-> solo se puede usar para evaluar las características de tal tecnología
-> o funcionalidad y para proporcionar comentarios a Microsoft. No se
-> puede usar para ningún otro propósito. Ninguna parte de esta
-> demostración/laboratorio práctico se puede modificar, copiar,
-> distribuir, transmitir, mostrar, realizar, reproducir, publicar,
-> licenciar, transferir ni vender, ni tampoco crear trabajos derivados
-> de ella.
->
-> LA COPIA O REPRODUCCIÓN DE ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO
-> (O PARTE DE ELLA) EN CUALQUIER OTRO SERVIDOR O UBICACIÓN PARA SU
-> REPRODUCCIÓN O DISTRIBUCIÓN POSTERIOR QUEDA EXPRESAMENTE PROHIBIDA.
->
-> ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO PROPORCIONA CIERTAS FUNCIONES
-> Y CARACTERÍSTICAS DE PRODUCTOS O TECNOLOGÍAS DE SOFTWARE (INCLUIDOS
-> POSIBLES NUEVOS CONCEPTOS Y CARACTERÍSTICAS) EN UN ENTORNO SIMULADO
-> SIN INSTALACIÓN O CONFIGURACIÓN COMPLEJA PARA EL PROPÓSITO ARRIBA
-> DESCRITO. LA TECNOLOGÍA/CONCEPTOS DESCRITOS EN ESTA
-> DEMOSTRACIÓN/LABORATORIO PRÁCTICO NO REPRESENTAN LA FUNCIONALIDAD
-> COMPLETA DE LAS CARACTERÍSTICAS Y, EN ESTE SENTIDO, ES POSIBLE QUE NO
-> FUNCIONEN DEL MODO EN QUE LO HARÁN EN UNA VERSIÓN FINAL. ASIMISMO,
-> PUEDE QUE NO SE PUBLIQUE UNA VERSIÓN FINAL DE TALES CARACTERÍSTICAS O
-> CONCEPTOS. DE IGUAL MODO, SU EXPERIENCIA CON EL USO DE ESTAS
-> CARACTERÍSTICAS Y FUNCIONALIDADES EN UN ENTORNO FÍSICO PUEDE SER
-> DIFERENTE.
->
-> **COMENTARIOS.** Si envía comentarios a Microsoft sobre las
-> características, funcionalidades o conceptos de tecnología descritos
-> en esta demostración/laboratorio práctico, acepta otorgar a Microsoft,
-> sin cargo alguno, el derecho a usar, compartir y comercializar sus
-> comentarios de cualquier modo y para cualquier fin. También concederá
-> a terceros, sin cargo alguno, los derechos de patente necesarios para
-> que sus productos, tecnologías y servicios usen o interactúen
-> con cualquier parte específica de un software o servicio de Microsoft
-> que incluya los comentarios. No enviará comentarios que estén sujetos
-> a una licencia que obligue a Microsoft a conceder su software o
-> documentación bajo licencia a terceras partes porque incluyamos
-> sus comentarios en ellos. Estos derechos seguirán vigentes después del
-> vencimiento de este acuerdo.
->
-> MICROSOFT CORPORATION RENUNCIA POR LA PRESENTE A TODAS LAS GARANTÍAS Y
-> CONDICIONES RELATIVAS A LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO, INCLUIDA
-> CUALQUIER GARANTÍA Y CONDICIÓN DE COMERCIABILIDAD (YA SEA EXPRESA,
-> IMPLÍCITA O ESTATUTARIA), DE IDONEIDAD PARA UN FIN DETERMINADO, DE
-> TITULARIDAD Y DE AUSENCIA DE INFRACCIÓN. MICROSOFT NO DECLARA NI
-> GARANTIZA LA EXACTITUD DE LOS RESULTADOS, EL RESULTADO DERIVADO DE LA
-> REALIZACIÓN DE LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NI LA IDONEIDAD DE
-> LA INFORMACIÓN CONTENIDA EN ELLA CON NINGÚN PROPÓSITO.
->
-> **DECLINACIÓN DE RESPONSABILIDADES**
->
-> Esta demostración/laboratorio práctico contiene solo una parte de las
-> nuevas características y mejoras realizadas en Microsoft Power BI.
-> Puede que algunas de las características cambien en versiones futuras
-> del producto. En esta demostración/laboratorio práctico, conocerá
-> algunas de estas nuevas características, pero no todas.
+© 2026 Microsoft Corporation. Todos los derechos reservados.
+
+Al participar en esta demostración o laboratorio práctico, acepta las
+siguientes condiciones:
+
+Microsoft Corporation pone a su disposición la tecnología o
+funcionalidad descrita en esta demostración/laboratorio práctico con
+el fin de obtener comentarios por su parte y de facilitarle una
+experiencia de aprendizaje. Esta demostración/laboratorio práctico
+solo se puede usar para evaluar las características de tal tecnología
+o funcionalidad y para proporcionar comentarios a Microsoft. No se
+puede usar para ningún otro propósito. Ninguna parte de esta
+demostración/laboratorio práctico se puede modificar, copiar,
+distribuir, transmitir, mostrar, realizar, reproducir, publicar,
+licenciar, transferir ni vender, ni tampoco crear trabajos derivados
+de ella.
+
+LA COPIA O REPRODUCCIÓN DE ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO (O
+PARTE DE ELLA) EN CUALQUIER OTRO SERVIDOR O UBICACIÓN PARA SU
+REPRODUCCIÓN O DISTRIBUCIÓN POSTERIOR QUEDA EXPRESAMENTE PROHIBIDA.
+
+ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO PROPORCIONA CIERTAS FUNCIONES
+Y CARACTERÍSTICAS DE PRODUCTOS O TECNOLOGÍAS DE SOFTWARE (INCLUIDOS
+POSIBLES NUEVOS CONCEPTOS Y CARACTERÍSTICAS) EN UN ENTORNO SIMULADO
+SIN INSTALACIÓN O CONFIGURACIÓN COMPLEJA PARA EL PROPÓSITO ARRIBA
+DESCRITO. LA TECNOLOGÍA/CONCEPTOS DESCRITOS EN ESTA
+DEMOSTRACIÓN/LABORATORIO PRÁCTICO NO REPRESENTAN LA FUNCIONALIDAD
+COMPLETA DE LAS CARACTERÍSTICAS Y, EN ESTE SENTIDO, ES POSIBLE QUE NO
+FUNCIONEN DEL MODO EN QUE LO HARÁN EN UNA VERSIÓN FINAL. ASIMISMO,
+PUEDE QUE NO SE PUBLIQUE UNA VERSIÓN FINAL DE TALES CARACTERÍSTICAS O
+CONCEPTOS. DE IGUAL MODO, SU EXPERIENCIA CON EL USO DE ESTAS
+CARACTERÍSTICAS Y FUNCIONALIDADES EN UN ENTORNO FÍSICO PUEDE SER
+DIFERENTE.
+
+**COMENTARIOS.** Si envía comentarios a Microsoft sobre las
+características, funcionalidades o conceptos de tecnología descritos
+en esta demostración/laboratorio práctico, acepta otorgar a Microsoft,
+sin cargo alguno, el derecho a usar, compartir y comercializar sus
+comentarios de cualquier modo y para cualquier fin. También concederá
+a terceros, sin cargo alguno, los derechos de patente necesarios para
+que sus productos, tecnologías y servicios usen o interactúen con
+cualquier parte específica de un software o servicio de Microsoft que
+incluya los comentarios. No enviará comentarios que estén sujetos a
+una licencia que obligue a Microsoft a conceder su software o
+documentación bajo licencia a terceras partes porque incluyamos sus
+comentarios en ellos. Estos derechos seguirán vigentes después del
+vencimiento de este acuerdo.
+
+MICROSOFT CORPORATION RENUNCIA POR LA PRESENTE A TODAS LAS GARANTÍAS Y
+CONDICIONES RELATIVAS A LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO, INCLUIDA
+CUALQUIER GARANTÍA Y CONDICIÓN DE COMERCIABILIDAD (YA SEA EXPRESA,
+IMPLÍCITA O ESTATUTARIA), DE IDONEIDAD PARA UN FIN DETERMINADO, DE
+TITULARIDAD Y DE AUSENCIA DE INFRACCIÓN. MICROSOFT NO DECLARA NI
+GARANTIZA LA EXACTITUD DE LOS RESULTADOS, EL RESULTADO DERIVADO DE LA
+REALIZACIÓN DE LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NI LA IDONEIDAD DE
+LA INFORMACIÓN CONTENIDA EN ELLA CON NINGÚN PROPÓSITO.
+
+**DECLINACIÓN DE RESPONSABILIDADES**
+
+Esta demostración/laboratorio práctico contiene solo una parte de las
+nuevas características y mejoras realizadas en Microsoft Power BI.
+Puede que algunas de las características cambien en versiones futuras
+del producto. En esta demostración/laboratorio práctico, conocerá
+algunas de estas nuevas características, pero no todas.

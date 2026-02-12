@@ -1,4 +1,7 @@
 # Microsoft Fabric Fabric Analyst in a Day-Laboratorio 1
+
+![](../media/Lab-01/main1.png)
+
 # Contenido	
 - Estructura del documento	
 - Escenario/planteamiento del problema	
@@ -6,9 +9,7 @@
     - Tarea 1: Configurar Power BI Desktop en un entorno de laboratorio	
     - Tarea 2: Analizar el informe de Power BI Desktop	
     - Tarea 3: Revisar consultas de Power Query	
-- Referencias	
-
-
+- Referencias
 
 # Estructura del documento
 
@@ -106,24 +107,24 @@ Desktop para comprender las transformaciones y el modelo.
     el campo **Correo electrónico** del cuadro de diálogo, y seleccione
     **Continuar**.
 
-- Correo electrónico/nombre de usuario:
+    - Correo electrónico/nombre de usuario:
 
-    ![](../media/Lab-01/image7.png)
+      ![](../media/Lab-01/image7.png)
 
 3. En la pestaña de inicio de sesión de Microsoft Azure, verá la
     pantalla de inicio de sesión. Introduzca el siguiente correo
     electrónico/nombre de usuario y luego haga clic en **Siguiente**.
 
-- Correo electrónico/nombre de usuario:
+    - Correo electrónico/nombre de usuario:
 
-    ![](../media/Lab-01/image8.png)
+      ![](../media/Lab-01/image8.png)
 
 4. Ahora introduzca el siguiente **Pase de acceso temporal** y haga
     clic en **Iniciar sesión**.
 
-- Pase de acceso temporal:
+    - Pase de acceso temporal:
 
-    ![](../media/Lab-01/image9.png)
+      ![](../media/Lab-01/image9.png)
 
 5. Se abre el cuadro de diálogo **Sesión iniciada en todas las
     aplicaciones**. Seleccione **OK**.
@@ -142,7 +143,7 @@ en la parte superior izquierda de la página. Los objetos visuales
 restantes resaltan Sales a lo largo del tiempo, por territorio, grupo de
 productos y empresa revendedora.
 
-    ![](../media/Lab-01/image11.jpeg)
+![](../media/Lab-01/image11.jpeg)
 
 **Nota:** En esta formación, nos centraremos en la adquisición,
 transformación y modelado de datos mediante las herramientas disponibles
@@ -212,20 +213,20 @@ avancemos a los siguientes pasos.
 10. Observe que hay dos tablas de hechos, Sales y PO.
 
     a. La granularidad de Sales de ventas se organiza por Date,
-        Reseller, Product y People. Date, Reseller, Product y People se
-        conectan con Sales.
+    Reseller, Product y People. Date, Reseller, Product y People se
+    conectan con Sales.
 
     b. La granularidad de los datos de PO se organiza por Date, Product
-        y People. Date, Product y People se conectan con PO.
+    y People. Date, Product y People se conectan con PO.
 
     c. Disponemos de datos de Supplier por Product. Supplier se conecta
-        con Product.
+    con Product.
 
     d. Contamos con datos de ubicación de Reseller por Geo. Geo se
-        conecta con Reseller.
+    conecta con Reseller.
 
     e. Disponemos de información de Customer por Reseller. Customer se
-        conecta con Reseller.
+    conecta con Reseller.
 
 ### Tarea 3: Revisar consultas de Power Query
 
@@ -294,7 +295,7 @@ avancemos a los siguientes pasos.
 
     - **Token de SAS:** se encuentra en la pestaña Entorno.
 
-    ![](../media/Lab-01/image23.png)
+      ![](../media/Lab-01/image23.png)
 
 11. Observe que la carpeta **ADLSData** tiene varias dimensiones: Geo,
     Product, Reseller y Date. También tiene datos de Sales.
@@ -327,13 +328,13 @@ avancemos a los siguientes pasos.
 
     - **Contraseña de Snowflake:** 8UpfRpExVDXv2AC1
 
-*Nota: Si tiene algún problema para conectarse a Snowflake con las
-credenciales anteriores, utilice las credenciales de copia de seguridad
-que se proporcionan a continuación.*
+    *Nota: Si tiene algún problema para conectarse a Snowflake con las
+    credenciales anteriores, utilice las credenciales de copia de seguridad
+    que se proporcionan a continuación.*
 
-- **Nombre de usuario de Snowflake:** SNOWFLAKE_BACKUP
+    - **Nombre de usuario de Snowflake:** SNOWFLAKE_BACKUP
 
-- **Contraseña de Snowflake:** 8UpfRpExVDXv2AC1
+    - **Contraseña de Snowflake:** 8UpfRpExVDXv2AC1
 
 14. Observe que la carpeta **SnowflakeData** tiene la dimensión Supplier
     y los datos de PO (pedido/gasto).
@@ -361,7 +362,7 @@ que se proporcionan a continuación.*
 
     - **Contraseña:** se encuentra en la pestaña Entorno.
 
-    ![](../media/Lab-01/image26.png)
+      ![](../media/Lab-01/image26.png)
 
 17. Observe que la carpeta **SharepointData** tiene la dimensión People.
 
@@ -377,7 +378,7 @@ Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave
 disponibles en Microsoft Fabric. En el menú del servicio, la sección
 Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
-    ![](../media/Lab-01/image28.png)
+![](../media/Lab-01/image28.png)
 
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando
 con Microsoft Fabric.
@@ -438,67 +439,67 @@ Fabric:
 - [Blog de integración de Dataverse y Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos los derechos reservados.
->
-> Al participar en esta demostración o laboratorio práctico, acepta las
-> siguientes condiciones:
->
-> Microsoft Corporation pone a su disposición la tecnología o
-> funcionalidad descrita en esta demostración/laboratorio práctico con
-> el fin de obtener comentarios por su parte y de facilitarle una
-> experiencia de aprendizaje. Esta demostración/laboratorio práctico
-> solo se puede usar para evaluar las características de tal tecnología
-> o funcionalidad y para proporcionar comentarios a Microsoft. No se
-> puede usar para ningún otro propósito. Ninguna parte de esta
-> demostración/laboratorio práctico se puede modificar, copiar,
-> distribuir, transmitir, mostrar, realizar, reproducir, publicar,
-> licenciar, transferir ni vender, ni tampoco crear trabajos derivados
-> de ella.
->
-> LA COPIA O REPRODUCCIÓN DE ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO (O
-> PARTE DE ELLA) EN CUALQUIER OTRO SERVIDOR O UBICACIÓN PARA SU
-> REPRODUCCIÓN O DISTRIBUCIÓN POSTERIOR QUEDA EXPRESAMENTE PROHIBIDA.
->
-> ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO PROPORCIONA CIERTAS FUNCIONES
-> Y CARACTERÍSTICAS DE PRODUCTOS O TECNOLOGÍAS DE SOFTWARE (INCLUIDOS
-> POSIBLES NUEVOS CONCEPTOS Y CARACTERÍSTICAS) EN UN ENTORNO SIMULADO
-> SIN INSTALACIÓN O CONFIGURACIÓN COMPLEJA PARA EL PROPÓSITO ARRIBA
-> DESCRITO. LA TECNOLOGÍA/CONCEPTOS DESCRITOS EN ESTA
-> DEMOSTRACIÓN/LABORATORIO PRÁCTICO NO REPRESENTAN LA FUNCIONALIDAD
-> COMPLETA DE LAS CARACTERÍSTICAS Y, EN ESTE SENTIDO, ES POSIBLE QUE NO
-> FUNCIONEN DEL MODO EN QUE LO HARÁN EN UNA VERSIÓN FINAL. ASIMISMO,
-> PUEDE QUE NO SE PUBLIQUE UNA VERSIÓN FINAL DE TALES CARACTERÍSTICAS O
-> CONCEPTOS. DE IGUAL MODO, SU EXPERIENCIA CON EL USO DE ESTAS
-> CARACTERÍSTICAS Y FUNCIONALIDADES EN UN ENTORNO FÍSICO PUEDE SER
-> DIFERENTE.
->
-> **COMENTARIOS.** Si envía comentarios a Microsoft sobre las
-> características, funcionalidades o conceptos de tecnología descritos
-> en esta demostración/laboratorio práctico, acepta otorgar a Microsoft,
-> sin cargo alguno, el derecho a usar, compartir y comercializar sus
-> comentarios de cualquier modo y para cualquier fin. También concederá
-> a terceros, sin cargo alguno, los derechos de patente necesarios para
-> que sus productos, tecnologías y servicios usen o interactúen con
-> cualquier parte específica de un software o servicio de Microsoft que
-> incluya los comentarios. No enviará comentarios que estén sujetos a
-> una licencia que obligue a Microsoft a conceder su software o
-> documentación bajo licencia a terceras partes porque incluyamos sus
-> comentarios en ellos. Estos derechos seguirán vigentes después del
-> vencimiento de este acuerdo.
->
-> MICROSOFT CORPORATION RENUNCIA POR LA PRESENTE A TODAS LAS GARANTÍAS Y
-> CONDICIONES RELATIVAS A LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO, INCLUIDA
-> CUALQUIER GARANTÍA Y CONDICIÓN DE COMERCIABILIDAD (YA SEA EXPRESA,
-> IMPLÍCITA O ESTATUTARIA), DE IDONEIDAD PARA UN FIN DETERMINADO, DE
-> TITULARIDAD Y DE AUSENCIA DE INFRACCIÓN. MICROSOFT NO DECLARA NI
-> GARANTIZA LA EXACTITUD DE LOS RESULTADOS, EL RESULTADO DERIVADO DE LA
-> REALIZACIÓN DE LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NI LA IDONEIDAD DE
-> LA INFORMACIÓN CONTENIDA EN ELLA CON NINGÚN PROPÓSITO.
->
-> **DECLINACIÓN DE RESPONSABILIDADES**
->
-> Esta demostración/laboratorio práctico contiene solo una parte de las
-> nuevas características y mejoras realizadas en Microsoft Power BI.
-> Puede que algunas de las características cambien en versiones futuras
-> del producto. En esta demostración/laboratorio práctico, conocerá
-> algunas de estas nuevas características, pero no todas.
+© 2026 Microsoft Corporation. Todos los derechos reservados.
+
+Al participar en esta demostración o laboratorio práctico, acepta las
+siguientes condiciones:
+
+Microsoft Corporation pone a su disposición la tecnología o
+funcionalidad descrita en esta demostración/laboratorio práctico con
+el fin de obtener comentarios por su parte y de facilitarle una
+experiencia de aprendizaje. Esta demostración/laboratorio práctico
+solo se puede usar para evaluar las características de tal tecnología
+o funcionalidad y para proporcionar comentarios a Microsoft. No se
+puede usar para ningún otro propósito. Ninguna parte de esta
+demostración/laboratorio práctico se puede modificar, copiar,
+distribuir, transmitir, mostrar, realizar, reproducir, publicar,
+licenciar, transferir ni vender, ni tampoco crear trabajos derivados
+de ella.
+
+LA COPIA O REPRODUCCIÓN DE ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO (O
+PARTE DE ELLA) EN CUALQUIER OTRO SERVIDOR O UBICACIÓN PARA SU
+REPRODUCCIÓN O DISTRIBUCIÓN POSTERIOR QUEDA EXPRESAMENTE PROHIBIDA.
+
+ESTA DEMOSTRACIÓN/LABORATORIO PRÁCTICO PROPORCIONA CIERTAS FUNCIONES
+Y CARACTERÍSTICAS DE PRODUCTOS O TECNOLOGÍAS DE SOFTWARE (INCLUIDOS
+POSIBLES NUEVOS CONCEPTOS Y CARACTERÍSTICAS) EN UN ENTORNO SIMULADO
+SIN INSTALACIÓN O CONFIGURACIÓN COMPLEJA PARA EL PROPÓSITO ARRIBA
+DESCRITO. LA TECNOLOGÍA/CONCEPTOS DESCRITOS EN ESTA
+DEMOSTRACIÓN/LABORATORIO PRÁCTICO NO REPRESENTAN LA FUNCIONALIDAD
+COMPLETA DE LAS CARACTERÍSTICAS Y, EN ESTE SENTIDO, ES POSIBLE QUE NO
+FUNCIONEN DEL MODO EN QUE LO HARÁN EN UNA VERSIÓN FINAL. ASIMISMO,
+PUEDE QUE NO SE PUBLIQUE UNA VERSIÓN FINAL DE TALES CARACTERÍSTICAS O
+CONCEPTOS. DE IGUAL MODO, SU EXPERIENCIA CON EL USO DE ESTAS
+CARACTERÍSTICAS Y FUNCIONALIDADES EN UN ENTORNO FÍSICO PUEDE SER
+DIFERENTE.
+
+**COMENTARIOS.** Si envía comentarios a Microsoft sobre las
+características, funcionalidades o conceptos de tecnología descritos
+en esta demostración/laboratorio práctico, acepta otorgar a Microsoft,
+sin cargo alguno, el derecho a usar, compartir y comercializar sus
+comentarios de cualquier modo y para cualquier fin. También concederá
+a terceros, sin cargo alguno, los derechos de patente necesarios para
+que sus productos, tecnologías y servicios usen o interactúen con
+cualquier parte específica de un software o servicio de Microsoft que
+incluya los comentarios. No enviará comentarios que estén sujetos a
+una licencia que obligue a Microsoft a conceder su software o
+documentación bajo licencia a terceras partes porque incluyamos sus
+comentarios en ellos. Estos derechos seguirán vigentes después del
+vencimiento de este acuerdo.
+
+MICROSOFT CORPORATION RENUNCIA POR LA PRESENTE A TODAS LAS GARANTÍAS Y
+CONDICIONES RELATIVAS A LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO, INCLUIDA
+CUALQUIER GARANTÍA Y CONDICIÓN DE COMERCIABILIDAD (YA SEA EXPRESA,
+IMPLÍCITA O ESTATUTARIA), DE IDONEIDAD PARA UN FIN DETERMINADO, DE
+TITULARIDAD Y DE AUSENCIA DE INFRACCIÓN. MICROSOFT NO DECLARA NI
+GARANTIZA LA EXACTITUD DE LOS RESULTADOS, EL RESULTADO DERIVADO DE LA
+REALIZACIÓN DE LA DEMOSTRACIÓN/LABORATORIO PRÁCTICO NI LA IDONEIDAD DE
+LA INFORMACIÓN CONTENIDA EN ELLA CON NINGÚN PROPÓSITO.
+
+**DECLINACIÓN DE RESPONSABILIDADES**
+
+Esta demostración/laboratorio práctico contiene solo una parte de las
+nuevas características y mejoras realizadas en Microsoft Power BI.
+Puede que algunas de las características cambien en versiones futuras
+del producto. En esta demostración/laboratorio práctico, conocerá
+algunas de estas nuevas características, pero no todas.
