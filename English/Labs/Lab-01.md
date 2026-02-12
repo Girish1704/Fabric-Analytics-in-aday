@@ -99,19 +99,19 @@ BI Desktop to understand the transformations and the model.
 
 2. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
      ![](../media/Lab-01/image8.png)
 
 3. On the Sign into Microsoft Azure tab, you will see the login screen, enter the following Email/ Username and then click on **Next**.
 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
      ![](../media/Lab-01/image9.png)
 
 4. Now enter the following **Temporary Access Pass** and click on **Sign in**.
 
-   * Temporary Access Pass: <inject key="AzureAdUserPassword"></inject>
+   * **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
      ![](../media/Lab-01/image10.png)
 
@@ -121,7 +121,8 @@ BI Desktop to understand the transformations and the model.
 
 6. **Account added to this Device** Dialog opens. Select **Done**.
 
-Power BI Desktop will now open.
+   > Power BI Desktop will now open. If the report does not load properly, close Power BI Desktop and reopen it again.
+ 
 
 ## Task 2: Analyze Power BI Desktop Report
 
@@ -147,7 +148,7 @@ couple of minutes understanding the report and move to the next steps.
 
 3. Select **Rocky Mountain from Sales Territory** to remove the filter.
 
-4. From the Scatter plot visual on the bottom center of the screen (Sales Orders by Sales) select the outlier on the top right (4th quadrant). Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up the last two quarters of 2023.
+4. From the Scatter plot visual on the bottom center of the screen (Sales Orders by Sales) select the outlier on the top right (4th quadrant). Notice the margin % is 51% or 52%, which is above the average of 50%. Also, the Sales YoY% has gone up the last two quarters of 2023.
 
     ![](../media/Lab-01/image15.png)
 
@@ -157,7 +158,7 @@ couple of minutes understanding the report and move to the next steps.
 
     ![](../media/Lab-01/image16.png)
 
-7. You will be navigated to the page which provides the Product Details. Notice there are some future orders in place as well.
+7. You will be navigated to the page which provides the **Product Details**. Notice there are some future orders in place as well.
 
 8. Once you are done reviewing this page, select the **Ctrl+back arrow** on the top left of the page to be navigated back to the Sales Report.
 
@@ -167,7 +168,7 @@ couple of minutes understanding the report and move to the next steps.
 
     ![](../media/Lab-01/image18.png)
 
-10. Notice there are two fact tables, Sales and PO.
+10. Notice there are two fact tables, **Sales and PO**.
 
     a. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
 
