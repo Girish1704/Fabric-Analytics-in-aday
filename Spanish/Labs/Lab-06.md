@@ -1,4 +1,6 @@
 # Microsoft Fabric Fabric Analyst in a Day-Laboratorio 6
+![](../media/Lab-06/main6.png)
+
 # Contenido
 - Presentación	
 - Almacén de lago de datos: análisis de datos	
@@ -11,8 +13,6 @@
 - Tarea 6: Sección opcional: crear relaciones
 - Tarea 7: Sección opcional: crear medidas	
 - Referencias	
-
-
 
 # Presentación 
 
@@ -49,21 +49,21 @@ Al final de este laboratorio, habrá aprendido:
 
     ![](../media/Lab-06/image6.png)
 
-Si desea explorar los datos antes de crear un modelo de datos, puede
-utilizar SQL para hacerlo. Hay dos opciones disponibles para usar SQL.
-La primera opción es la consulta visual, que utilizamos en el
-laboratorio anterior. La opción 2 es escribir código T-SQL. Se trata de
-una opción favorable para los desarrolladores. Exploremos más.
+    Si desea explorar los datos antes de crear un modelo de datos, puede
+    utilizar SQL para hacerlo. Hay dos opciones disponibles para usar SQL.
+    La primera opción es la consulta visual, que utilizamos en el
+    laboratorio anterior. La opción 2 es escribir código T-SQL. Se trata de
+    una opción favorable para los desarrolladores. Exploremos más.
 
-Supongamos que desea conocer rápidamente las Units vendidas por el
-proveedor mediante SQL.
+    Supongamos que desea conocer rápidamente las Units vendidas por el
+    proveedor mediante SQL.
 
-En el almacén de lago de datos, punto de conexión de análisis SQL,
-observe que en el panel izquierdo puede ver las tablas. Si expande las
-tablas, puede ver las columnas que componen la tabla. Además, hay
-opciones para crear vistas, funciones y procedimientos almacenados de
-SQL. Si tiene experiencia en SQL, no dude en explorar estas opciones.
-Intentemos escribir una consulta SQL simple.
+    En el almacén de lago de datos, punto de conexión de análisis SQL,
+    observe que en el panel izquierdo puede ver las tablas. Si expande las
+    tablas, puede ver las columnas que componen la tabla. Además, hay
+    opciones para crear vistas, funciones y procedimientos almacenados de
+    SQL. Si tiene experiencia en SQL, no dude en explorar estas opciones.
+    Intentemos escribir una consulta SQL simple.
 
 4. En el **menú superior**, seleccione **Nueva consulta SQL** o en el
     centro de la pantalla haga clic en **Nueva consulta SQL**. Esto le
@@ -76,15 +76,15 @@ Intentemos escribir una consulta SQL simple.
     proveedor. Para conseguirlo, se une la tabla Sales con las tablas
     Product y Supplier.
 
-[SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
+    [SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
 
-[FROM dbo.Sales s]{.mark}
+    [FROM dbo.Sales s]{.mark}
 
-[JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
+    [JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
 
-[JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
+    [JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
 
-[GROUP BY su.SupplierName]{.mark}
+    [GROUP BY su.SupplierName]{.mark}
 
 6. Haga clic en **Run** en el menú del editor de SQL para ver los
     resultados.
@@ -99,8 +99,8 @@ Intentemos escribir una consulta SQL simple.
     También hay una opción para ver las consultas que se comparten con
     usted mediante la carpeta **Consultas compartidas**.
 
-> **Nota:** las consultas visuales que había creado en laboratorios
-> anteriores también están disponibles en la carpeta Mis consultas.
+    > **Nota:** las consultas visuales que había creado en laboratorios
+    > anteriores también están disponibles en la carpeta Mis consultas.
 
     ![](../media/Lab-06/image8.png)
 
@@ -117,12 +117,12 @@ Intentemos escribir una consulta SQL simple.
 3. Se abrirá el cuadro de diálogo **Visualización de resultados**.
     Seleccione **Continuar**.
 
-Se abre el cuadro de diálogo **Visualización de resultados** que se
-parece a la vista de informe de Power BI Desktop. Esto tiene todas las
-características disponibles en la vista de informe de Power BI Desktop,
-puede formatear la página, seleccionar diferentes visuales, formatear
-visuales, añadir filtros, etc. No exploraremos estas opciones en este
-curso.
+    Se abre el cuadro de diálogo **Visualización de resultados** que se
+    parece a la vista de informe de Power BI Desktop. Esto tiene todas las
+    características disponibles en la vista de informe de Power BI Desktop,
+    puede formatear la página, seleccionar diferentes visuales, formatear
+    visuales, añadir filtros, etc. No exploraremos estas opciones en este
+    curso.
 
 4. Expanda el panel **Datos** y expanda **SQL query 1**.
 
@@ -150,7 +150,7 @@ curso.
 
     ![](../media/Lab-06/image12.png)
 
-Se le dirigirá de nuevo a la pantalla de consulta SQL.
+    Se le dirigirá de nuevo a la pantalla de consulta SQL.
 
 # Almacén de lago de datos: modelado semántico
 
@@ -196,14 +196,14 @@ Se le dirigirá de nuevo a la pantalla de consulta SQL.
 
     ![](../media/Lab-06/image15.png)
 
-Irá al nuevo modelo semántico con las tablas seleccionadas. Asegúrese de
-**reorganizar** las tablas según sea necesario. Observe que algunas de
-las tablas (Geo, Reseller, Sales y Product) tienen un signo de
-advertencia en la parte superior derecha de la tabla. Esto se debe a que
-son vistas. Todos los objetos visuales creados con campos de estas
-vistas estarán en modo Direct Query y no en modo Direct Lake.
+    Irá al nuevo modelo semántico con las tablas seleccionadas. Asegúrese de
+    **reorganizar** las tablas según sea necesario. Observe que algunas de
+    las tablas (Geo, Reseller, Sales y Product) tienen un signo de
+    advertencia en la parte superior derecha de la tabla. Esto se debe a que
+    son vistas. Todos los objetos visuales creados con campos de estas
+    vistas estarán en modo Direct Query y no en modo Direct Lake.
 
-> **Nota:** El modo Direct Lake es más rápido que el modo Direct Query.
+    > **Nota:** El modo Direct Lake es más rápido que el modo Direct Query.
 
 ### Tarea 4: Crear relaciones
 
@@ -272,18 +272,18 @@ creado, vayamos al lugar correcto.
     tablas **Sales** y **Product**. Seleccione **StockItemID** en la
     tabla **Sales** y **StockItemID** en la tabla **Product**.
 
-**Nota:** Todas nuestras actualizaciones se guardan automáticamente.
+    **Nota:** Todas nuestras actualizaciones se guardan automáticamente.
 
-**Punto de control:** su modelo debe tener tres relaciones entre las
-tablas Sales y Reseller, Sales y Date y Sales y Product como se muestra
-en la siguiente captura de pantalla:
+    **Punto de control:** su modelo debe tener tres relaciones entre las
+    tablas Sales y Reseller, Sales y Date y Sales y Product como se muestra
+    en la siguiente captura de pantalla:
 
     ![](../media/Lab-06/image23.png)
 
-Por razones de tiempo, no crearemos todas las relaciones. Si el tiempo
-lo permite, puede completar la sección opcional al final de la práctica
-de laboratorio. La sección opcional recorre los pasos para crear las
-relaciones restantes.
+    Por razones de tiempo, no crearemos todas las relaciones. Si el tiempo
+    lo permite, puede completar la sección opcional al final de la práctica
+    de laboratorio. La sección opcional recorre los pasos para crear las
+    relaciones restantes.
 
 ### Tarea 5: Crear medidas
 
@@ -450,8 +450,8 @@ Agreguemos las relaciones restantes.
 
 25. Seleccione **Guardar**.
 
-**Punto de control:** la administración de relaciones debe parecerse al
-de la siguiente captura de pantalla.
+    **Punto de control:** la administración de relaciones debe parecerse al
+    de la siguiente captura de pantalla.
 
     ![](../media/Lab-06/image32.png)
 
@@ -470,8 +470,8 @@ de la siguiente captura de pantalla.
 29. Haga clic en **Cerrar** para cerrar el cuadro de diálogo Administrar
     relaciones. Hemos terminado de crear todas las relaciones.
 
-**Punto de control:** su modelo debe parecerse al de la siguiente
-captura de pantalla.
+    **Punto de control:** su modelo debe parecerse al de la siguiente
+    captura de pantalla.
 
     ![](../media/Lab-06/image33.png)
 
