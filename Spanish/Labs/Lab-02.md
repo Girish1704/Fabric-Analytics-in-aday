@@ -52,7 +52,7 @@ en el explorador.*
     del cuadro de diálogo y seleccione Enviar.
 
     - **Correo electrónico/nombre de usuario:** se encuentra en la
-      pestaña Entorno.
+      pestaña Entorno.<inject key="AzureAdUserEmail"></inject>
 
     ![](../media/Lab-02/image7.png)
 
@@ -61,14 +61,14 @@ en el explorador.*
     **EmailUsername** y luego haga clic en **Siguiente**.
 
     - **Correo electrónico/nombre de usuario**: se encuentra en la
-      pestaña Entorno.
+      pestaña Entorno.<inject key="AzureAdUserEmail"></inject>
 
     ![](../media/Lab-02/image8.png)
 
 4. Ahora introduzca el siguiente **Pase de acceso temporal** y haga
     clic en **Iniciar sesión**.
 
-    - **Pase de acceso temporal:** se encuentra en la pestaña Entorno.
+    - **Pase de acceso temporal:** se encuentra en la pestaña Entorno.<inject key="AzureAdUserPassword"></inject>
 
     ![](../media/Lab-02/image9.png)
 
@@ -126,7 +126,7 @@ está.*
     derecho del explorador.
 
 4. En el campo **Nombre**, introduzca FAIAD_UserID (que se encuentra en
-    la pestaña Entorno).
+    la pestaña Entorno).<inject key="Deployment ID" enableCopy="false"/>
 
     ***Nota:** El nombre del área de trabajo debe ser único. Asegúrese de
 que aparezca una marca de verificación verde con "Este nombre está
