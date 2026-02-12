@@ -484,9 +484,9 @@ mediante la creación de una nueva canalización.
     **equals**. Observe que se agrega al cuadro de texto de expresión
     dinámica.
 
-**Nota:** Su función debería verse así **@or(equals())**. La función
-equals también toma dos parámetros. Comprobaremos si la variable
-varCounter es igual a 3.
+    **Nota:** Su función debería verse así **@or(equals())**. La función
+    equals también toma dos parámetros. Comprobaremos si la variable
+    varCounter es igual a 3.
 
     ![](../media/Lab-05/image34.png)
 

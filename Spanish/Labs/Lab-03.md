@@ -436,7 +436,7 @@ mediante la consulta Visual sin abrir la opción de Power Query.
     **"+"** después de la tabla, es posible que haya seleccionado un
     paso diferente. Seleccione Tabla y estará listo).
 
-<!-- -->
+
 
 5. En el menú Consulta visual, seleccione **Combinar -> Combinar
     consultas**.
