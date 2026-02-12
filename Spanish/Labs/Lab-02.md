@@ -146,11 +146,11 @@ disponible" debajo del campo Nombre.*
 
     ![](../media/Lab-02/image16.png)
 
-Se le dirigirá al área de trabajo que acaba de crear. Traeremos datos de
-los diferentes orígenes de datos a un almacén de lago de datos y
-utilizaremos los datos del almacén de lago de datos para crear nuestro
-modelo y generar informes en él. El primer paso es crear un almacén de
-lago de datos. Haremos esto a continuación.
+    Se le dirigirá al área de trabajo que acaba de crear. Traeremos datos de
+    los diferentes orígenes de datos a un almacén de lago de datos y
+    utilizaremos los datos del almacén de lago de datos para crear nuestro
+    modelo y generar informes en él. El primer paso es crear un almacén de
+    lago de datos. Haremos esto a continuación.
 
 ### Tarea 3: Crear un Lakehouse
 
@@ -183,20 +183,20 @@ este laboratorio.*
 
     ![](../media/Lab-02/image18.png)
 
-En unos momentos, se crea un almacén de lago y se le dirigirá a la
-interfaz del explorador del mismo. En la parte superior izquierda, junto
-al nombre de Fabric del encabezado, tendrá el icono del almacén de lago
-de datos. El icono del espacio de trabajo en la navegación izquierda
-reflejará que ahora contiene un elemento.
+    En unos momentos, se crea un almacén de lago y se le dirigirá a la
+    interfaz del explorador del mismo. En la parte superior izquierda, junto
+    al nombre de Fabric del encabezado, tendrá el icono del almacén de lago
+    de datos. El icono del espacio de trabajo en la navegación izquierda
+    reflejará que ahora contiene un elemento.
 
-Dentro del explorador del almacén de lago de datos, verá una sección
-Tables y Files. Un almacén de lago de datos podría exponer archivos de
-Azure Data Lake Storage Gen2 en la sección de archivos o un flujo de
-datos podría cargar datos en las tablas del almacén de lago de datos.
-Existen varias opciones disponibles. Le mostraremos algunas de las
-opciones en las siguientes prácticas de laboratorio.
+    Dentro del explorador del almacén de lago de datos, verá una sección
+    Tables y Files. Un almacén de lago de datos podría exponer archivos de
+    Azure Data Lake Storage Gen2 en la sección de archivos o un flujo de
+    datos podría cargar datos en las tablas del almacén de lago de datos.
+    Existen varias opciones disponibles. Le mostraremos algunas de las
+    opciones en las siguientes prácticas de laboratorio.
 
-![](../media/Lab-02/image19.png)
+    ![](../media/Lab-02/image19.png)
 
 # Información general de las experiencias de Fabric
 
@@ -311,13 +311,12 @@ g)  **Crear sus primeras funciones de datos de usuario**: esta sección
     administrar y transformar los datos del usuario.
 
  ![](../media/Lab-02/image22.png)
-
 4. Haga clic en **Volver a las cargas de trabajo** en la esquina
     superior izquierda de la pantalla. Esta acción le llevará a la
     página principal de cargas de trabajo, donde puede explorar otras
     herramientas o secciones.
 
-    ![](../media/Lab-02/image23.png)
+![](../media/Lab-02/image23.png)
 
 ### Tarea 5: Experiencia de Industry Solutions
 
@@ -390,13 +389,12 @@ f)  **Empiece a usar soluciones de datos de comercio minorista:**
     impleméntelas en sus proyectos.
 
 ![](../media/Lab-02/image25.png)
-
 3. Haga clic en Volver a las cargas de trabajo en la esquina superior
     izquierda de la pantalla. Esta acción le llevará a la página
     principal de cargas de trabajo, donde puede explorar otras
     herramientas o secciones.
 
-    ![](../media/Lab-02/image23.png)
+![](../media/Lab-02/image23.png)
 
 ### Tarea 6: Experiencia de Real-Time Intelligence
 
@@ -658,15 +656,14 @@ e. **Desarrollar y ejecutar Notebooks:** haga clic en el botón
     "Abrir" para aprender a desarrollar y ejecutar cuadernos para el
     análisis de datos.
 
-    ![A screenshot of a computer AI-generated content may be
+![A screenshot of a computer AI-generated content may be
 incorrect.](../media/Lab-02/image31.png)
-
 3. Haga clic en **Volver a las cargas de trabajo** en la esquina
     superior izquierda de la pantalla. Esta acción le llevará a la
     página principal de cargas de trabajo, donde puede explorar otras
     herramientas o secciones.
 
-    ![](../media/Lab-02/image23.png)
+![](../media/Lab-02/image23.png)
 
 ### Tarea 9: Experiencia de Data Warehouse
 

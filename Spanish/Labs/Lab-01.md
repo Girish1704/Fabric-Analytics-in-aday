@@ -368,9 +368,9 @@ avancemos a los siguientes pasos.
 
     ![](../media/Lab-01/image27.png)
 
-Ahora sabemos a qué nos enfrentamos. En los siguientes laboratorios,
-crearemos una consulta de Power Query similar mediante el flujo de datos
-Gen2 y haremos modelos mediante un Lakehouse.
+    Ahora sabemos a qué nos enfrentamos. En los siguientes laboratorios,
+    crearemos una consulta de Power Query similar mediante el flujo de datos
+    Gen2 y haremos modelos mediante un Lakehouse.
 
 # Referencias
 
