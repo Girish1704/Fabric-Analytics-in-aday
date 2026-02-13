@@ -129,7 +129,7 @@ Desktop.
 
     k. Warehouse.StockItems
 
-    **Hinweis:** „Sales.Invoices_May" ist das einzige Verzeichnis, das
+    >**Hinweis:** „Sales.Invoices_May" ist das einzige Verzeichnis, das
     **nicht** ausgewählt ist.
 
     ![](../media/Lab-03/image9.png)
@@ -167,7 +167,7 @@ Desktop.
 
     j. Warehouse.StockItems in **ProductItem**
 
-    **Hinweis:** Überprüfen Sie die Namen. Ein Tippfehler kann während der
+    >**Hinweis:** Überprüfen Sie die Namen. Ein Tippfehler kann während der
     Übung zu Fehlern führen.
 
 17. Wählen Sie **Erstellen** aus, um die Verknüpfung zu erstellen.
@@ -234,7 +234,7 @@ um die Daten zu transformieren.
     Symbol **Im Popup-Fenster öffnen** (rechts). Sie werden zum Power
     Query-Editor weitergeleitet.
 
-    ***Hinweis:** Möglicherweise müssen Sie nach rechts scrollen oder die
+    >**Hinweis:** Möglicherweise müssen Sie nach rechts scrollen oder die
     Registerkarte für Visual-Abfragen erneut öffnen, wenn Sie dieses Symbol
     nicht sofort sehen.*
 
@@ -330,7 +330,7 @@ um die Daten zu transformieren.
 
 20. Klicken Sie auf **OK**.
 
-    **Wichtig:** Vergewissern Sie sich, dass Sie nach unten scrollen und
+    >**Wichtig:** Vergewissern Sie sich, dass Sie nach unten scrollen und
     alles auswählen, um alle acht in Schritt 21 aufgeführten Spalten
     auszuwählen. Im folgenden Screenshot werden aufgrund einer Einschränkung
     der Bedienoberfläche nur die ersten 5 Spalten angezeigt.
@@ -345,7 +345,7 @@ um die Daten zu transformieren.
     Menüband **Start (2) -> Spalten auswählen (3) -> Spalten auswählen
     (4)** aus.
 
-    **Hinweis:** Wenn die Option „Spalten auswählen" nicht angezeigt wird,
+    >**Hinweis:** Wenn die Option „Spalten auswählen" nicht angezeigt wird,
     finden Sie sie unter „Spalten verwalten".
 
     ![](../media/Lab-03/image23.png)
@@ -392,7 +392,7 @@ um die Daten zu transformieren.
     Wir werden zum visuellen Abfrage-Editor weitergeleitet. Jetzt speichern
     wir diese Abfrage als Ansicht.
 
-    **Hinweis:** Alle Schritte, die wir mit dem Power Query-Editor
+    >**Hinweis:** Alle Schritte, die wir mit dem Power Query-Editor
     ausgeführt haben, können auch mit dem Editor für Visual-Abfragen
     ausgeführt werden.
 
@@ -640,7 +640,7 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
 
     ![](../media/Lab-03/image45.png)
 
-    **Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können
+    >**Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können
     Sie unter **Start-> Abfrage -> Erweiterter Editor** darauf zugreifen.
 
 16. **Wählen Sie Code aus Zeile 3** (#"Expanded Invoice" ...) bis zur
@@ -673,7 +673,7 @@ Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
 24. Geben Sie auf Ihrer Tastatur **STRG+V** ein, um den Code einzufügen,
     den Sie aus Power BI Desktop kopiert haben.
 
-    **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
+    >**Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
     **Auslassungspunkte (...)** oben rechts auf dem Bildschirm aus.
     Verwenden Sie den Schieberegler, um das **VM Native Clipboard** **zu
     aktivieren**. Wählen Sie im Dialogfeld „OK" aus. Nachdem Sie die
@@ -797,7 +797,7 @@ Editor".
 
     ![](../media/Lab-03/image59.png)
 
-    **Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können
+    >**Hinweis:** Wenn Sie den erweiterten Editor nicht finden können, können
     Sie unter **Start-> Abfrage -> Erweiterter Editor** darauf zugreifen.
 
 12. **Wählen Sie den gesamten Code** in „Erweiterter Editor" aus, und

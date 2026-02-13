@@ -145,9 +145,9 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     ![](../media/Lab-06/image11.png)
 
-Sie werden zum Bildschirm „SQL-Abfrage" weitergeleitet.
+    Sie werden zum Bildschirm „SQL-Abfrage" weitergeleitet.
 
-# Lakehouse -- Semantische Modellierung
+# Lakehouse - Semantische Modellierung
 
 ## Aufgabe 3: Semantisches Modell erstellen
 
@@ -199,7 +199,7 @@ Sie werden zum Bildschirm „SQL-Abfrage" weitergeleitet.
     Ansichten erstellten Visuals befinden sich im Direct Query- und nicht im
     Direct Lake-Modus.
 
-    **Hinweis:** Der Direct Lake-Modus ist schneller als der Direct Query-Modus.
+    >**Hinweis:** Der Direct Lake-Modus ist schneller als der Direct Query-Modus.
 
 ## Aufgabe 4: Beziehungen erstellen
 
@@ -269,9 +269,9 @@ lassen Sie uns zur richtigen Stelle gehen.
 
 17. Erstellen Sie eine analog eine **Viele-zu-Eins-Beziehung** zwischen den Tabellen **Sales** und **Product**. Wählen Sie in der Tabelle **Sales** den Eintrag **StockItemID** und in der Tabelle **Product** den Eintrag **StockItemID** aus.
 
-    **Hinweis:** Alle unsere Aktualisierungen werden automatisch gespeichert.
+    >**Hinweis:** Alle unsere Aktualisierungen werden automatisch gespeichert.
 
-    **Überprüfen Sie:** Das Modell muss die drei Beziehungen zwischen den Tabellen „Sales" und „Reseller", „Sales" und „Date" sowie „Sales" und „Product" aufweisen, wie im folgenden Screenshot gezeigt:
+    >**Überprüfen Sie:** Das Modell muss die drei Beziehungen zwischen den Tabellen „Sales" und „Reseller", „Sales" und „Date" sowie „Sales" und „Product" aufweisen, wie im folgenden Screenshot gezeigt:
 
     ![](../media/Lab-06/image22.png)
 
@@ -448,7 +448,7 @@ Ergänzen wir die restlichen Beziehungen.
 
 25. Wählen Sie **Speichern** aus.
 
-    **Prüfpunkt:** „Beziehungen verwalten" sollte so wie im Screenshot unten
+    >**Prüfpunkt:** „Beziehungen verwalten" sollte so wie im Screenshot unten
     aussehen.
 
     ![](../media/Lab-06/image31.png)
@@ -470,7 +470,7 @@ Ergänzen wir die restlichen Beziehungen.
 29. Wählen Sie **Schließen** aus, um das Dialogfeld „Beziehungen
     verwalten" zu schließen. Nun sind alle Beziehungen erstellt.
 
-    **Überprüfen Sie:** Das Modell sollte so wie im Screenshot unten
+    >**Überprüfen Sie:** Das Modell sollte so wie im Screenshot unten
     aussehen.
 
     ![](../media/Lab-06/image32.png)

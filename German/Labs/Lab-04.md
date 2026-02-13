@@ -27,7 +27,7 @@ aktualisiert. Um die Anzahl der Datenaktualisierungen für Dataflows zu
 verringern, erstellen wir für Snowflake und SharePoint-Datenquellen
 individuelle Dataflows.
 
-**Hinweis:** Ein einziger Dataflow berücksichtigt dabei mehrere
+>**Hinweis:** Ein einziger Dataflow berücksichtigt dabei mehrere
 Datenquellen.
 
 Das IT-Team hat bereits eine Verknüpfung zu Dataverse erstellt und die
@@ -94,7 +94,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     ![](../media/Lab-04/image8.png)
 
-    **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
+    >**Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
     Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den
     Schieberegler, um das **VM Native Clipboard** **zu aktivieren**. Wählen
     Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben,
@@ -168,7 +168,7 @@ Lakehouse erfasst werden.
     Sie sicher, dass „**Automatische Einstellungen verwenden**"
     **aktiviert** ist.
 
-    **Hinweis:** Sie können die automatischen Einstellungen deaktivieren und
+    >**Hinweis:** Sie können die automatischen Einstellungen deaktivieren und
     haben die Möglichkeit, die Aktualisierungsmethode und die Schemaoptionen
     festzulegen. Vergewissern Sie sich nach der Erkundung, dass
     „**Automatische Einstellungen verwenden**" **aktiviert** ist.
@@ -189,7 +189,7 @@ Lakehouse erfasst werden.
 
     ![](../media/Lab-04/image17.png)
 
-    **Hinweis:** Sie werden zum **Arbeitsbereich FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
+    >**Hinweis:** Sie werden zum **Arbeitsbereich FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     weitergeleitet. Es kann einige Momente dauern, bis die Ausführung des
     Dataflows abgeschlossen ist.
 
@@ -224,7 +224,7 @@ Lakehouse erfasst werden.
 
     ![](../media/Lab-04/image20.png)
 
-    **Hinweis:** Wenn die neu erstellten Tabellen nicht angezeigt werden,
+    >**Hinweis:** Wenn die neu erstellten Tabellen nicht angezeigt werden,
     wählen Sie die Auslassungspunkte neben „Tabellen" und „Aktualisieren"
     aus, um die Tabellen zu aktualisieren.
 
@@ -282,7 +282,7 @@ Lakehouse erfasst werden.
     derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken
     Sie zum Einfügen bitte Cmd+V.
 
-    **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
+    >**Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die
     **Auslassungspunkte (...)** oben rechts auf dem Bildschirm aus.
     Verwenden Sie den Schieberegler, um **das VM Native Clipboard zu
     aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen
@@ -316,9 +316,9 @@ werden, eine Verbindung zu konfigurieren.
 
     - Snowflake-Kennwort: <inject key="SnowFlake Password" enableCopy="false" />
 
-    **Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu
-    Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben,
-    verwenden Sie bitte die die nachfolgenden Anmeldeinformationen.
+        >**Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu
+        Snowflake mit den Anmeldeinformationen aus den Umgebungsdetails haben,
+        verwenden Sie bitte die die nachfolgenden Anmeldeinformationen.
 
     - **Snowflake-Benutzername:** SNOWFLAKE_BACKUP
 
@@ -416,7 +416,7 @@ werden, eine Verbindung zu konfigurieren.
 
     ![](../media/Lab-04/image33.png)
 
-    **Hinweis:** Wenn die neu erstellten Tabellen nicht angezeigt werden,
+    >**Hinweis:** Wenn die neu erstellten Tabellen nicht angezeigt werden,
     wählen Sie die Auslassungspunkte neben „Tabellen" und „Aktualisieren"
     aus, um die Tabellen zu aktualisieren.
 
@@ -442,7 +442,7 @@ befinden.
 3. Das Dialogfeld „Neue Verknüpfung" wird geöffnet. Wählen Sie unter
     **Externe Quellen** die Option **Dataverse** aus.
 
-    **Hinweis:** In der vorherigen Übung haben wir ähnliche Schritte zum
+    >**Hinweis:** In der vorherigen Übung haben wir ähnliche Schritte zum
     Erstellen einer Verknüpfung zu Azure Data Lake Storage Gen2 ausgeführt.
 
     ![](../media/Lab-04/image36.png)
@@ -459,7 +459,9 @@ befinden.
     ![](../media/Lab-04/image37.png)
 
 7. Wählen Sie im Anmeldedialogfeld **Benutzerkonto** aus, das Sie für
-    diese Übungen verwendet haben. **Hinweis:** Ihr Konto wird von dem
+    diese Übungen verwendet haben. 
+    
+    >**Hinweis:** Ihr Konto wird von dem
     auf dem Screenshot unten abweichen.
 
     ![](../media/Lab-04/image38.png)

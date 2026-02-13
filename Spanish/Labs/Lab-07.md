@@ -95,7 +95,7 @@ Power BI.
 
     ![](../media/Lab-07/image11.png)
 
-    **Punto de control:** tendrá un informe similar a la captura de pantalla
+    >**Punto de control:** tendrá un informe similar a la captura de pantalla
     siguiente. Hay algunos KPI y algunos objetos visuales de tendencias.
     Este es un buen comienzo si está analizando un nuevo modelo y necesita
     un impulso.

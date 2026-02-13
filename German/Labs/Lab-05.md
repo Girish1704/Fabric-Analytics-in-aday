@@ -88,7 +88,7 @@ Lieferanten-Dataflows zu konfigurieren.
 
     ![](../media/Lab-05/image8.png)
 
-    **Hinweis:** Auf der rechten Seite wird ein Fenster/Bereich mit einer
+    >**Hinweis:** Auf der rechten Seite wird ein Fenster/Bereich mit einer
     Liste der Aktualisierungen angezeigt.
 
 6. Sie werden feststellen, dass es eine Aktualisierung gibt, die
@@ -102,7 +102,7 @@ Lieferanten-Dataflows zu konfigurieren.
 
 7. Wählen Sie den Link **Startzeit** aus.
 
-    **Hinweis:** Die Startzeit ist für Sie unterschiedlich.
+    >**Hinweis:** Die Startzeit ist für Sie unterschiedlich.
 
     ![](../media/Lab-05/image10.png)
 
@@ -135,8 +135,7 @@ Lieferanten-Dataflows zu konfigurieren.
     Verantwortliche des Dataflows ist und wann er zuletzt geändert
     wurde.
     
-    - **Endorsement:** Hier können wir angeben, ob der Dataflow das Tag
-    **Heraufgestuft** oder **Zertifiziert** tragen soll, damit andere
+    - **Endorsement:** Hier können wir angeben, ob der Dataflow das Tag **Heraufgestuft** oder **Zertifiziert** tragen soll, damit andere
     ihn sehen können.
     
     - **Planen:** Hier können wir Dataflows planen.
@@ -157,7 +156,7 @@ Lieferanten-Dataflows zu konfigurieren.
 15. Für die Eigenschaft **Zeit** können wir **12:00 AM (2)** angeben, da
     wir Mitternacht festlegen möchten.
 
-    **Hinweis:** Durch Klicken auf den Link „Andere Uhrzeit hinzufügen"
+    >**Hinweis:** Durch Klicken auf den Link „Andere Uhrzeit hinzufügen"
     können Sie mehrere Aktualisierungszeiten hinzufügen.
 
 16. Sie können auch **Startdatum und -zeit (3)** sowie **Enddatum und
@@ -228,7 +227,7 @@ Problem zu beheben.
     Sie Optionen zum Anzeigen des Codes im JSON-Format. Außerdem sind
     Optionen zum automatischen Ausrichten der Aktivitäten verfügbar.
 
-    **Hinweis:** Wenn Sie am Ende der Übung über einen JSON-Hintergrund
+    >**Hinweis:** Wenn Sie am Ende der Übung über einen JSON-Hintergrund
     verfügen, können Sie auch „JSON-Code anzeigen" auswählen. Hier sehen
     Sie, dass die gesamte Orchestrierung, die Sie über die Entwurfsansicht
     durchführen, auch in JSON geschrieben werden kann.
@@ -250,7 +249,7 @@ Aktivität suchen, die wir verwenden können.
     zum Dataflow „df_People_SharePoint" herstellt. Wählen Sie im
     **unteren Bereich** die Option **„Einstellungen"** aus.
 
-    *Hinweis: Möglicherweise müssen Sie den unteren Bereich nach oben
+    >**Hinweis:** Möglicherweise müssen Sie den unteren Bereich nach oben
     ziehen, um die Einstellungen anzuzeigen.*
 
     ![](../media/Lab-05/image22.png)
@@ -285,7 +284,7 @@ Aktivität suchen, die wir verwenden können.
     Lassen wir den **Standardwert** unverändert, damit dem Dataflow
     genügend Zeit für die Aktualisierung zur Verfügung steht.
 
-    **Hinweis:** Da die Daten nicht in einem Zeitplan verfügbar sind, legen
+    >**Hinweis:** Da die Daten nicht in einem Zeitplan verfügbar sind, legen
     wir die Aktivität so fest, dass sie dreimal alle 10 Minuten erneut
     ausgeführt wird. Wenn der dritte Versuch fehlschlägt, wird ein Fehler
     gemeldet.
@@ -344,7 +343,7 @@ neuen Pipeline erreicht werden kann.
 
 3. Klicken Sie in der Aktivitätsliste auf **Bis**.
 
-    **Bis**: Mit dieser Aktivität wird eine Iteration ausgeführt, bis eine
+    >**Bis:** Mit dieser Aktivität wird eine Iteration ausgeführt, bis eine
     Bedingung erfüllt ist.
 
     In unserem Szenario erfolgt die Iteration des Dataflows so lange, bis er
@@ -371,7 +370,7 @@ neuen Pipeline erreicht werden kann.
 
 6. Geben Sie den **Standardwert** **0** ein.
 
-    **Hinweis:** Wir hängen den Variablennamen den Zusatz „var" an, damit
+    >**Hinweis:** Wir hängen den Variablennamen den Zusatz „var" an, damit
     sie leicht zu finden sind und da dies eine gut Vorgehensweise ist.
 
     ![](../media/Lab-05/image28.png)
@@ -401,7 +400,7 @@ neuen Pipeline erreicht werden kann.
     Dataflow fehlschlägt (entweder 5 Minuten/300 Sekunden oder 15
     Minuten/900 Sekunden).
 
-    **Hinweis:** Achten Sie darauf, dass vor oder nach dem Variablennamen
+    >**Hinweis:** Achten Sie darauf, dass vor oder nach dem Variablennamen
     kein Leerzeichen vorhanden ist.
 
     ![](../media/Lab-05/image29.png)
@@ -489,7 +488,7 @@ neuen Pipeline erreicht werden kann.
     **equals** aus. Beachten Sie, dass diese dem Textfeld für den
     dynamischen Ausdruck hinzugefügt wird.
 
-    **Hinweis:** Ihre Funktion sollte wie folgt aussehen:
+    >**Hinweis:** Ihre Funktion sollte wie folgt aussehen:
     **@or(equals())**. Die Funktion „equals" benötigt auch zwei Parameter.
     Wir überprüfen, ob die Variable „varCounter" gleich 3 ist.
 
@@ -601,7 +600,7 @@ den Wert der Variablen „varIsSuccess" auf „Ja" festzulegen.
 4. Geben Sie im Feld **Beschreibung** den Text **Set variable
     varIsSuccess to Yes** ein.
 
-    **Hinweis:** Zeigen Sie mit der Mais auf **Dataflow-Aktivität**. Rechts
+    >**Hinweis:** Zeigen Sie mit der Mais auf **Dataflow-Aktivität**. Rechts
     neben dem Aktivitätsfeld befinden sich vier Symbole. Diese können
     verwendet werden, um basierend auf dem Ergebnis der Aktivität eine
     Verbindung zur nächsten Aktivität herzustellen:
@@ -756,7 +755,7 @@ Nun müssen wir den Wert der Variablen „varCounter" auf den Wert
 
     ![](../media/Lab-05/image48.png)
 
-**Hinweis:** Diese Funktion legt den Wert der Variablen „varTempCounter"
+>**Hinweis:** Diese Funktion legt den Wert der Variablen „varTempCounter"
 auf den Wert der Variablen „varTempCounter" (varCounter =
 varTempCounter) fest. Am Ende jeder Iteration haben sowohl varCounter
 als auch varTempCounter denselben Wert.
@@ -859,7 +858,7 @@ Wartezeit festzulegen.
 1. Wir können die Pipeline testen, indem wir **Start -> Ausführen**
     auswählen.
 
-    **Hinweis:** Es kann einige Minuten dauern, bis die Pipeline vollständig
+    >**Hinweis:** Es kann einige Minuten dauern, bis die Pipeline vollständig
     aktualisiert ist. Dies ist eine Trainingsumgebung, sodass die Datei in
     SharePoint immer verfügbar ist. Daher schlägt Ihre Pipeline fehl.
 
@@ -899,15 +898,15 @@ Wartezeit festzulegen.
     **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** aus, um zur Startseite des
     Arbeitsbereichs zu navigieren**.**
 
-**Hinweis:** Im Bildschirm „Zeitplan" ist keine Option verfügbar, um Sie
-zu benachrichtigen, ob der Vorgang erfolgreich war oder nicht (wie beim
-Dataflow-Zeitplan). Die Benachrichtigung kann durch Hinzufügen einer
-Aktivität in der Pipeline erfolgen. Wir führen diesen Schritt nicht in
-dieser Übung durch, weil es sich um eine Übungsumgebung handelt.
+    >**Hinweis:** Im Bildschirm „Zeitplan" ist keine Option verfügbar, um Sie
+    zu benachrichtigen, ob der Vorgang erfolgreich war oder nicht (wie beim
+    Dataflow-Zeitplan). Die Benachrichtigung kann durch Hinzufügen einer
+    Aktivität in der Pipeline erfolgen. Wir führen diesen Schritt nicht in
+    dieser Übung durch, weil es sich um eine Übungsumgebung handelt.
 
-Wir haben Aktualisierungen für die verschiedenen Datenquellen geplant.
-In der nächsten Übung werden wir ein semantisches Modell mit
-Beziehungen, Kennzahlen und anderen Modellierungsvorgängen durchführen.
+    >**Hinweis:** Wir haben Aktualisierungen für die verschiedenen Datenquellen geplant.
+    In der nächsten Übung werden wir ein semantisches Modell mit
+    Beziehungen, Kennzahlen und anderen Modellierungsvorgängen durchführen.
 
 # Referenzen
 

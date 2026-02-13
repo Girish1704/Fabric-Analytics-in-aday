@@ -385,7 +385,7 @@ modelo semántico. Vamos a crear vistas para transformar los datos.
     Se nos dirigirá al editor de consultas visuales. Guardemos ahora esta
     consulta como una vista.
 
-    **Nota**: Todos los pasos que hemos realizado con el Editor de Power
+    >**Nota**: Todos los pasos que hemos realizado con el Editor de Power
     Query también se pueden llevar a cabo con el editor de consultas
     visuales.
 
@@ -528,7 +528,7 @@ mediante la consulta Visual sin abrir la opción de Power Query.
 
     ![](../media/Lab-03/image36.png)
 
-    **Nota**: La casilla **Customer** debe tener un borde azul si se activa
+    >**Nota**: La casilla **Customer** debe tener un borde azul si se activa
     la opción Habilitar carga.
 
 20. En el menú de consultas visuales, seleccione **Guardar como copia**.

@@ -104,7 +104,7 @@ neu erstellen.
     Trendvisualisierungen. Dies ist ein guter Ausgangspunkt, wenn Sie ein
     neues Modell analysieren und sofort starten müssen.
 
-    **Hinweis:** Im oberen Menü haben Sie die Möglichkeit, den Bericht zu
+    >**Hinweis:** Im oberen Menü haben Sie die Möglichkeit, den Bericht zu
     bearbeiten oder einige der Daten als Tabellen anzuzeigen. Sehen Sie sich
     diese Optionen doch einmal genauer an.
 
@@ -113,7 +113,8 @@ neu erstellen.
 
 10. Das Dialogfeld „Bericht speichern" wird geöffnet. Geben Sie dem
     Bericht den Namen **rpt_Sales_Auto_Report**.
-    **Hinweis:** Wir stellen dem Berichtsnamen das Präfix „rpt" voran,
+    
+    >**Hinweis:** Wir stellen dem Berichtsnamen das Präfix „rpt" voran,
     was für „Bericht" steht.
 
 11. Stellen Sie sicher, dass der Bericht in Ihrem Arbeitsbereich
@@ -123,7 +124,7 @@ neu erstellen.
 
     ![](../media/Lab-07/image12.png)
 
-    **Hinweis:** Der automatisch erstellte Bericht kann für Sie anders
+    >**Hinweis:** Der automatisch erstellte Bericht kann für Sie anders
     aussehen, da er „automatisch erstellt" wird. Dies hängt auch von den
     Beziehungen und Kennzahlen ab, die Sie in der vorangegangenen Übung
     (Übung 6) erstellt haben.
@@ -330,7 +331,8 @@ Modell vorzunehmen.
 
 2. Das Dialogfeld „Bericht speichern" wird geöffnet. Geben Sie dem
     Bericht den Namen **rpt_Sales_Report**.
-    **Hinweis:** Wir stellen dem Berichtsnamen das Präfix „rpt" voran,
+    
+    >**Hinweis:** Wir stellen dem Berichtsnamen das Präfix „rpt" voran,
     was für „Bericht" steht.
 
 3. Stellen Sie sicher, dass der Bericht im Arbeitsbereich
@@ -404,7 +406,7 @@ Modell vorzunehmen.
 
     ![](../media/Lab-07/image31.png)
 
-    **Hinweis:** Die Monate sind alphabetisch sortiert. Lassen Sie uns
+    >**Hinweis:** Die Monate sind alphabetisch sortiert. Lassen Sie uns
     dieses Problem beheben.
 
     ![](../media/Lab-07/image32.png)
@@ -845,47 +847,47 @@ aktualisieren.
     Sehen wir uns noch einmal die Herausforderungen an, die in der
     Problemstellung aufgeführt sind:
 
-    - **Das Dataset muss mindestens dreimal täglich aktualisiert werden, um
-    den verschiedenen Aktualisierungszeiten der Datenquellen Rechnung zu
-    tragen.**
+- **Das Dataset muss mindestens dreimal täglich aktualisiert werden, um
+den verschiedenen Aktualisierungszeiten der Datenquellen Rechnung zu
+tragen.**
 
     Wir haben dieses Problem mithilfe von Direct Lake gelöst. Jeder einzelne
-    Dataflow wird nach seinem Zeitplan aktualisiert. Datasets und Berichte
-    müssen nicht aktualisiert werden.
+Dataflow wird nach seinem Zeitplan aktualisiert. Datasets und Berichte
+müssen nicht aktualisiert werden.
 
-    - **Ihre Aktualisierungsvorgänge dauern lange, weil die Daten jedes Mal
-    komplett aktualisiert werden müssen, um alle Änderungen an den Daten
-    in den Quellsystemen zu erfassen.**
+- **Ihre Aktualisierungsvorgänge dauern lange, weil die Daten jedes Mal
+komplett aktualisiert werden müssen, um alle Änderungen an den Daten
+in den Quellsystemen zu erfassen.**
 
     Auch hier haben wir dieses Problem mithilfe von Direct Lake gelöst.
-    Jeder einzelne Dataflow wird nach seinem Zeitplan aktualisiert. Datasets
-    und Berichte müssen nicht aktualisiert werden, sodass wir uns keine
-    Sorgen über eine vollständige Aktualisierung machen müssen.
+Jeder einzelne Dataflow wird nach seinem Zeitplan aktualisiert. Datasets
+und Berichte müssen nicht aktualisiert werden, sodass wir uns keine
+Sorgen über eine vollständige Aktualisierung machen müssen.
 
-    - **Tritt in den Datenquellen, aus denen die Daten abgerufen werden, ein
-    Fehler auf, wird die DataSet-Aktualisierung abgebrochen. Oftmals wird
-    die Mitarbeiterdatei nicht pünktlich hochgeladen, was ebenso zum
-    Abbruch der DataSet-Aktualisierung führt.**
+- **Tritt in den Datenquellen, aus denen die Daten abgerufen werden, ein
+Fehler auf, wird die DataSet-Aktualisierung abgebrochen. Oftmals wird
+die Mitarbeiterdatei nicht pünktlich hochgeladen, was ebenso zum
+Abbruch der DataSet-Aktualisierung führt.**
 
     Pipelines helfen, dieses Problem zu lösen, indem sie die Möglichkeit
-    bieten, die Aktualisierung bei Fehlern und in verschiedenen Intervallen
-    zu wiederholen.
+bieten, die Aktualisierung bei Fehlern und in verschiedenen Intervallen
+zu wiederholen.
 
-    - **Änderungen am Datenmodell nehmen sehr viel Zeit in Anspruch, weil
-    Power Query aufgrund der großen Datenmenge und des aufwändigen
-    Transformationsvorgangs sehr lange braucht, um die Vorschauversionen
-    zu aktualisieren.**
+- **Änderungen am Datenmodell nehmen sehr viel Zeit in Anspruch, weil
+Power Query aufgrund der großen Datenmenge und des aufwändigen
+Transformationsvorgangs sehr lange braucht, um die Vorschauversionen
+zu aktualisieren.**
 
     Wir haben festgestellt, dass Dataflows und Lakehouses effizient und
-    einfach zu ändern sind. Das Laden der Vorschauversion in Dataflows und
-    Lakehouses dauert in der Regel nicht lange.
+einfach zu ändern sind. Das Laden der Vorschauversion in Dataflows und
+Lakehouses dauert in der Regel nicht lange.
 
-    - **Für Power BI Desktop brauchen Sie einen PC mit Windows, auch wenn im
-    Unternehmen Mac-Geräte genutzt werden.**
+- **Für Power BI Desktop brauchen Sie einen PC mit Windows, auch wenn im
+Unternehmen Mac-Geräte genutzt werden.**
 
     Microsoft Fabric ist ein SaaS-Angebot. Wir benötigen lediglich einen
-    Browser, um auf den Dienst zuzugreifen. Wir müssen keine Software auf
-    unseren Desktops installieren.
+Browser, um auf den Dienst zuzugreifen. Wir müssen keine Software auf
+unseren Desktops installieren.
 
 # Übungsumgebung bereinigen
 

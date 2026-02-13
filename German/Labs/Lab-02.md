@@ -43,10 +43,10 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     ![](../media/Lab-02/image6.png)
 
-    ***Hinweis:** Gegebenenfalls werden Sie automatisch angemeldet, wenn Sie
+    >**Hinweis:** Gegebenenfalls werden Sie automatisch angemeldet, wenn Sie
     die Übungsumgebung verwenden.*
 
-    > ***Hinweis:** Wenn Fabric nicht geöffnet wird, navigieren Sie im Browser zu http://app.fabric.microsoft.com/.*
+    >**Hinweis:** Wenn Fabric nicht geöffnet wird, navigieren Sie im Browser zu http://app.fabric.microsoft.com/.*
 
 2. Kopieren Sie den Benutzernamen, fügen Sie ihn im Feld „E-Mail" des
     Dialogfelds ein, und wählen Sie „Senden" aus.
@@ -90,7 +90,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 9. Das Dialogfeld „Upgrade auf eine kostenlose Testversion von
     Microsoft Fabric" wird geöffnet. Wählen Sie **Aktivieren** aus.
 
-    > ***Hinweis:** Ändern Sie nicht die Standardregion. Lassen Sie sie unverändert.*
+    > **Hinweis:** Ändern Sie nicht die Standardregion. Lassen Sie sie unverändert.*
 
     ![](../media/Lab-02/image11.png)
 
@@ -124,7 +124,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 4. Geben Sie im Feld **Name** „FAIAD_<inject key="Deployment ID" enableCopy="false"/> ein (Sie finden dieseauf
     der Registerkarte „Umgebung").
 
-    > ***Hinweis:** Der Name des Arbeitsbereichs muss eindeutig sein. Achten
+    > **Hinweis:** Der Name des Arbeitsbereichs muss eindeutig sein. Achten
     > Sie darauf, dass unter dem Feld für den Namen ein grünes Häkchen mit
     > dem Text „Dieser Name ist verfügbar" zu sehen ist.*
 
@@ -165,11 +165,11 @@ nächsten Schritt erledigen.
 3. Das Dialogfeld „Neues Lakehouse" wird angezeigt. Geben Sie
     **lh_FAIAD** in das Textfeld „Name" ein.
 
-    > ***Hinweis:** „lh" bezieht sich hier auf Lakehouse. Die Buchstaben
+    > **Hinweis:** „lh" bezieht sich hier auf Lakehouse. Die Buchstaben
     > „lh" werden vorangestellt, damit das Lakehouse leichter erkannt und
     > gefunden werden kann.*
     >
-    > ***Hinweis:** Die Previewfunktion der **Lakehouse-Schemas** ist sehr
+    > **Hinweis:** Die Previewfunktion der **Lakehouse-Schemas** ist sehr
     > interessant und sollte Beachtung finden. Da sie sich im Zustand
     > **Vorschauversion** befindet, werden wir sie ignorieren, um
     > unerwünschte Auswirkungen auf die Übung zu verhindern. Sobald die

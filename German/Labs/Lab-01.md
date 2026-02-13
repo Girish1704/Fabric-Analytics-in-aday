@@ -17,7 +17,7 @@ Die Übung enthält die Schritte, die der Benutzer durchführen muss, sowie
 zugehörige Screenshots zur visuellen Unterstützung. Wichtige Abschnitte
 sind in den Screenshots mit einem orangefarbenen Kasten gekennzeichnet.
 
-**Hinweis:** Einige der Screenshots können aufgrund laufender
+>**Hinweis:** Einige der Screenshots können aufgrund laufender
 Produktaktualisierungen veraltet sein.
 
 # Anwendungsfall/Problemstellung
@@ -334,9 +334,9 @@ die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
 
     - **Snowflake-Kennwort:** <inject key="SnowFlake Password" enableCopy="false" />
 
-    *Hinweis: Wenn Sie Probleme beim Herstellen einer Verbindung zu
-    Snowflake mit obigen Anmeldeinformationen haben, verwenden Sie bitte die
-    die nachfolgenden Backup-Anmeldeinformationen.*
+      >**Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu
+      Snowflake mit obigen Anmeldeinformationen haben, verwenden Sie bitte die
+      die nachfolgenden Backup-Anmeldeinformationen.*
 
     - **Snowflake-Benutzername:** SNOWFLAKE_BACKUP
 
