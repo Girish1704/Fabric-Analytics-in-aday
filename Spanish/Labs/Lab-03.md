@@ -93,7 +93,7 @@ Esto es como crear accesos directos en el escritorio de Windows.
 
 9. Copie el token de SAS y péguelo en el campo Token de SAS (5).
 
-    - **Token de SAS:**
+    - **Token de SAS:** <inject key="Sas token"></inject>
 
 10. Seleccione **Siguiente (6)** en la esquina inferior derecha de la
     pantalla.

@@ -154,7 +154,7 @@ disponible" debajo del campo Nombre.*
 
 ## Tarea 3: Crear un Lakehouse
 
-1. En el espacio de trabajo **FAIAD_Username** recién creado, localice
+1. En el espacio de trabajo **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** recién creado, localice
     el botón **+ Nuevo elemento (1)** en el panel de navegación de la
     izquierda. Aquí es donde puede comenzar a crear nuevos elementos en
     su área de trabajo.

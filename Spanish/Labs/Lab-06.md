@@ -33,7 +33,7 @@ Al final de este laboratorio, habrá aprendido:
 
 ## Tarea 1: Consultar datos con SQL
 
-1. Volvamos al área de trabajo de Fabric, **FAIAD_<username>**, que
+1. Volvamos al área de trabajo de Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, que
     creó en el Laboratorio 2, Tarea 8.
 
 2. Si lo desea, **Minimice el flujo de tareas** para ver la lista
@@ -43,7 +43,7 @@ Al final de este laboratorio, habrá aprendido:
     modelo semántico y punto de conexión SQL. Exploramos el almacén de
     lago de datos y creamos consultas visuales mediante el punto de
     conexión de análisis SQL en un laboratorio anterior. Seleccione
-    **FAIAD_<nombre de usuario>** en la navegación izquierda y elija
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** en la navegación izquierda y elija
     la opción **punto de conexión de análisis SQL de lh_FAIAD** para
     continuar explorando esta opción. Esto le llevará a la **vista de
     SQL** del explorador.
@@ -143,7 +143,7 @@ Al final de este laboratorio, habrá aprendido:
     informe**.
 
 9. Asegúrese de que el área de trabajo de destino es su área de trabajo
-    de Fabric **FAIAD_<username>**
+    de Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 10. Seleccione **Guardar**.
 
