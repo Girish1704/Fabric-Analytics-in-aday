@@ -18,8 +18,7 @@
     - Tarea 8: Experiencia de Data Science	
     - Tarea 9: Experiencia de Data Warehouse	
     - Tarea 10: Experiencia de bases de datos	
-- Referencias	
-
+- Referencias
 
 # Presentación 
 
@@ -946,4 +945,5 @@ Esta demostración/laboratorio práctico contiene solo una parte de las
 nuevas características y mejoras realizadas en Microsoft Power BI.
 Puede que algunas de las características cambien en versiones futuras
 del producto. En esta demostración/laboratorio práctico, conocerá
+
 algunas de estas nuevas características, pero no todas.
