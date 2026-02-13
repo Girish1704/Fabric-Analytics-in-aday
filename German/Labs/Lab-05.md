@@ -702,7 +702,7 @@ hinzufügen (varCounter = varCounter + 1). Daher nutzen wir die Variable
 10. Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie
     **@add(variables('varCounter'),1)** ein..
 
-    **Hinweis:** Sie können diesen Ausdruck gerne eingeben und die
+    >**Hinweis:** Sie können diesen Ausdruck gerne eingeben und die
     Funktionen über das Menü auswählen oder kopieren und einfügen. Diese
     Funktion legt den Wert der Variablen „varTempCounter" auf den Wert der
     Variablen „varCounter" plus eins (varTempCounter = varCounter + 1) fest.
@@ -882,7 +882,7 @@ Wartezeit festzulegen.
 
 8. Legen Sie Ihre **Zeitzone** fest.
 
-    **Hinweis**: Da es sich um eine Übungsumgebung handelt, können Sie die
+    >**Hinweis:** Da es sich um eine Übungsumgebung handelt, können Sie die
     Zeitzone auf Ihre bevorzugte Zeitzone festlegen. In einem realen
     Szenario legen Sie die Zeitzone basierend auf Ihrem/Speicherort der
     Datenquelle fest.

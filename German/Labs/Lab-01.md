@@ -150,7 +150,7 @@ Wiederverkäuferfirma.
 
 ![](../media/Lab-01/image11.jpeg)
 
-**Hinweis:** Bei diesem Training geht es um die Erfassung,
+>**Hinweis:** Bei diesem Training geht es um die Erfassung,
 Transformation und Modellierung von Daten mithilfe der in Fabric
 verfügbaren Tools. Es geht weder um die Anfertigung von Berichten noch
 die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.

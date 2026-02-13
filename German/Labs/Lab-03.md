@@ -539,7 +539,7 @@ Query-Option öffnen.
 
     ![](../media/Lab-03/image36.png)
 
-    **Hinweis**: Das Feld **Customer** sollte einen blauen Rand haben, wenn
+    >**Hinweis:** Das Feld **Customer** sollte einen blauen Rand haben, wenn
     die Option „Laden aktivieren" aktiviert ist.
 
 20. Wählen Sie im Menü der Visual-Abfrage **Als Ansicht speichern** aus.
