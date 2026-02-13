@@ -88,7 +88,7 @@ del proveedor.
 
     ![](../media/Lab-05/image8.png)
 
-    **Nota:** Aparecerá una ventana o panel en el lado derecho que muestra
+    >**Nota:** Aparecerá una ventana o panel en el lado derecho que muestra
     una lista de actualizaciones.
 
 6. Observará que hay una actualización singular que se ejecutó cuando
@@ -101,7 +101,7 @@ del proveedor.
 
 7. Seleccione el vínculo **Hora de inicio**.
 
-    **Nota:** La hora de inicio será diferente para usted.
+    >**Nota:** La hora de inicio será diferente para usted.
 
     ![](../media/Lab-05/image10.png)
 
@@ -138,7 +138,7 @@ del proveedor.
     - **Programación:** aquí es donde podemos programar los flujos de
     datos.
 
-    ![](../media/Lab-05/image13.png)
+        ![](../media/Lab-05/image13.png)
 
 12. Seleccione la opción **Programación**.
 
@@ -155,7 +155,7 @@ incorrect.](../media/Lab-05/image14.png)
 15. Para la propiedad **Time**, podemos especificar **12:00 AM (2)**, ya
     que queremos medianoche.
 
-    **Nota:** Al hacer clic en el vínculo Agregar otro horario, puede
+    >**Nota:** Al hacer clic en el vínculo Agregar otro horario, puede
     agregar múltiples horas de actualización.
 
 16. También podemos especificar una **Fecha y hora de inicio (3)**, así
@@ -225,7 +225,7 @@ incorrect.](../media/Lab-05/image14.png)
     para ver el código en formato JSON. También encontrará opciones para
     alinear las actividades de manera automática.
 
-    **Nota:** Si tiene un fondo JSON,   al final de la práctica de
+    >**Nota:** Si tiene un fondo JSON,   al final de la práctica de
     laboratorio, no dude en seleccionar Ver código JSON. Aquí notará que
     toda la orquestación que está realizando mediante la vista de diseño
     también se puede escribir en JSON.
@@ -247,7 +247,7 @@ utilizar.
     df_People_SharePoint.
     En el **panel inferior**, seleccione **Configuración**.
 
-    ***Nota:** Es posible que tenga que arrastrar el panel inferior hacia arriba
+    >**Nota:** Es posible que tenga que arrastrar el panel inferior hacia arriba
     para ver la configuración.*
 
     ![](../media/Lab-05/image22.png)
@@ -283,7 +283,7 @@ utilizar.
     **valor predeterminado** como está, lo que debería dar tiempo
     suficiente para que el flujo de datos se actualice.
 
-    **Nota:** Dado que los datos no están disponibles en una programación,
+    >**Nota:** Dado que los datos no están disponibles en una programación,
     configuremos la actividad para que se vuelva a ejecutar cada 10 minutos,
     tres veces. Si también falla en el tercer intento, se informará de un
     error.
@@ -341,7 +341,7 @@ mediante la creación de una nueva canalización.
 
 3. En la lista de actividades, haga clic en **Hasta**.
 
-    **Hasta:** es una actividad que se utiliza para iterar hasta que se
+    >**Hasta:** es una actividad que se utiliza para iterar hasta que se
     cumpla una condición.
 
     En nuestro escenario, vamos a iterar y actualizar el flujo de datos
@@ -367,7 +367,7 @@ mediante la creación de una nueva canalización.
 
 6. Introduzca un **Valor predeterminado** de **0**.
 
-    **Nota:** Estamos añadiendo "var" en los nombres de las variables, por
+    >**Nota:** Estamos añadiendo "var" en los nombres de las variables, por
     lo que es fácil encontrarlas
     y es un procedimiento recomendado.
 
@@ -399,7 +399,7 @@ mediante la creación de una nueva canalización.
     espera si el flujo de datos falla.
     (Ya sea cinco minutos/300 segundos o 15 minutos/900 segundos).
 
-    **Nota:** Asegúrese de que no haya espacios antes o después del nombre
+    >**Nota:** Asegúrese de que no haya espacios antes o después del nombre
     de la variable.
 
     ![](../media/Lab-05/image29.png)
@@ -485,7 +485,7 @@ mediante la creación de una nueva canalización.
     **equals**. Observe que se agrega al cuadro de texto de expresión
     dinámica.
 
-    **Nota:** Su función debería verse así **@or(equals())**. La función
+    >**Nota:** Su función debería verse así **@or(equals())**. La función
     equals también toma dos parámetros. Comprobaremos si la variable
     varCounter es igual a 3.
 
@@ -595,7 +595,7 @@ el iterador es establecer el valor de la variable varIsSuccess en Sí.
 4. En el campo **Descripción,** introduzca **"Set variable
     varIsSuccess to Yes"**.
 
-    **Nota:** Pase el cursor por encima de **la actividad del flujo de
+    >**Nota:** Pase el cursor por encima de **la actividad del flujo de
     datos**. A la derecha del cuadro de actividad hay cuatro iconos. Según
     el resultado de la actividad, se pueden utilizar para conectarse
     a la siguiente:
@@ -697,7 +697,7 @@ el iterador es establecer el valor de la variable varIsSuccess en Sí.
 10. Se abre el cuadro de diálogo Generador de expresiones de
     canalización. Introduzca **@add(variables('varCounter'),1)**
 
-    **Nota:** Siéntase libre de escribir esta expresión, use el menú para
+    >**Nota:** Siéntase libre de escribir esta expresión, use el menú para
     seleccionar las funciones o copiarla y pegarla. Esta función establece
     el valor de la variable varTempCounter al valor de la variable
 varCounter más uno (varTempCounter = varCounter + 1).
@@ -749,7 +749,7 @@ varCounter más uno (varTempCounter = varCounter + 1).
 
     ![](../media/Lab-05/image48.png)
 
-    **Nota:** Esta función establece el valor de la variable varCounter al
+    >**Nota:** Esta función establece el valor de la variable varCounter al
     valor de la variable varTempCounter (varCounter = varTempCounter). Al
     final de cada iteración, tanto varCounter como varTempCounter tienen el
     mismo valor.
@@ -819,8 +819,7 @@ establecer el tiempo de espera.
 
     Si es true, comprueba si el valor de la variable varCounter es 2. Si es
     true, establece el tiempo de espera en varWaitTime multiplicado por 15.
-    Recuerde, habíamos establecido el valor predeterminado de varWaitTime a
-    60. Eso sería 60*15 = 900 segundos. Si el valor de la variable
+    Recuerde, habíamos establecido el valor predeterminado de varWaitTime a 60. Eso sería 60*15 = 900 segundos. Si el valor de la variable
     varCounter no es 2 (es mayor que 2, lo que significa que la
     actualización del flujo de datos ha fallado 3 veces, hemos terminado de
     iterar. No tenemos que esperar más), el tiempo de espera se establece en
@@ -851,7 +850,7 @@ establecer el tiempo de espera.
 1. Podemos probar la canalización si seleccionamos **Inicio ->
     Ejecutar**.
 
-    **Nota:** Es posible que la actualización de la canalización de datos
+    >**Nota:** Es posible que la actualización de la canalización de datos
     tarde unos minutos. Este es un entorno de capacitación, por lo que el
     archivo en SharePoint siempre está disponible. Por lo tanto, su
     canalización nunca fallará.
@@ -875,7 +874,7 @@ establecer el tiempo de espera.
 
 8. Establezca su **Zona horaria**.
 
-    **Nota:** dado que se trata de un entorno de laboratorio, puede
+    >**Nota:** dado que se trata de un entorno de laboratorio, puede
     configurar la zona horaria según su zona horaria preferida. En un
     escenario real, configurará la zona horaria según la ubicación de su
     origen de datos.
@@ -889,7 +888,7 @@ establecer el tiempo de espera.
 
 11. Seleccione el área de trabajo de Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** en el panel izquierdo para navegar al área de trabajo.
 
-    **Nota:** En la pantalla Programación, no hay ninguna opción para
+    >**Nota:** En la pantalla Programación, no hay ninguna opción para
     notificar sobre el éxito o el error (como la programación de flujos de
     datos). La notificación se puede llevar a cabo mediante una actividad en
     la canalización. No lo haremos en este laboratorio, ya que es un entorno

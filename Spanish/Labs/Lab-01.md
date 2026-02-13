@@ -18,7 +18,7 @@ capturas de pantalla asociadas que sirven de ayuda visual. En cada
 captura de pantalla, las secciones se resaltan con cuadros de color
 naranja para indicar en qué áreas debe centrarse el usuario.
 
-**Nota:** Algunas de las capturas de pantalla pueden estar
+>**Nota:** Algunas de las capturas de pantalla pueden estar
 desactualizadas debido a las actualizaciones continuas del producto.
 
 # Escenario/planteamiento del problema
@@ -145,7 +145,7 @@ productos y empresa revendedora.
 
 ![](../media/Lab-01/image11.jpeg)
 
-**Nota:** En esta formación, nos centraremos en la adquisición,
+>**Nota:** En esta formación, nos centraremos en la adquisición,
 transformación y modelado de datos mediante las herramientas disponibles
 en Fabric. No nos centraremos en el desarrollo de informes ni en la
 navegación. Dediquemos un par de minutos a comprender el informe y
@@ -327,7 +327,7 @@ avancemos a los siguientes pasos.
 
     - **Contraseña de Snowflake:** <inject key="SnowFlake Password" enableCopy="false" />
 
-    >*Nota: Si tiene algún problema para conectarse a Snowflake con las
+    >**Nota:** Si tiene algún problema para conectarse a Snowflake con las
     credenciales anteriores, utilice las credenciales de copia de seguridad
     que se proporcionan a continuación.*
 

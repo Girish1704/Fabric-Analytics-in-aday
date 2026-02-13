@@ -28,7 +28,7 @@ momentos. Para minimizar la cantidad de actualizaciones de datos para
 flujos de datos, crearemos flujos de datos individuales para los
 orígenes de datos de Snowflake y SharePoint.
 
-**Nota:** Se admiten varios orígenes de datos en un único flujo de
+>**Nota:** Se admiten varios orígenes de datos en un único flujo de
 datos.
 
 El equipo de TI ya ha establecido un vínculo a Dataverse y aplicado las
@@ -94,7 +94,7 @@ Al final de este laboratorio, habrá aprendido:
 
     ![](../media/Lab-04/image8.png)
 
-    **Nota:** Si está trabajando en el entorno de laboratorio, seleccione
+    >**Nota:** Si está trabajando en el entorno de laboratorio, seleccione
     los puntos suspensivos en la parte superior derecha de la pantalla.
     Utilice el control deslizante para **habilitar** **Portapapeles nativo
     de VM**. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya
@@ -122,7 +122,7 @@ Al final de este laboratorio, habrá aprendido:
 
 4. Seleccione **Conectar**.
 
-    **Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la
+    >**Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la
     captura de pantalla siguiente.
 
     ![P69#yIS1](../media/Lab-04/image12.png)
@@ -169,7 +169,7 @@ de lago de datos.
     Asegúrese de que la opción "**Usar configuración automática**" esté
     **habilitada**.
 
-    **Nota:** Puede deshabilitar la configuración automática y observe que
+    >**Nota:** Puede deshabilitar la configuración automática y observe que
     tiene opciones para establecer las opciones Método de actualización y
     Esquema. Cuando haya finalizado la exploración, asegúrese de que la
     opción "**Usar configuración automática**" esté **habilitada**.
@@ -190,7 +190,7 @@ de lago de datos.
 
     ![](../media/Lab-04/image17.png)
 
-    **Nota:** Se le dirigirá de vuelta al área de trabajo
+    >**Nota:** Se le dirigirá de vuelta al área de trabajo
     **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. Es posible que el flujo de datos tarde unos
     minutos en terminar de ejecutarse.
 
@@ -223,7 +223,7 @@ de lago de datos.
 
     ![](../media/Lab-04/image20.png)
 
-    **Nota:** Si no ve las tablas recién creadas, seleccione los puntos
+    >**Nota:** Si no ve las tablas recién creadas, seleccione los puntos
     suspensivos junto a Tables y seleccionar Actualizar para actualizar las
     tablas.
 
@@ -278,7 +278,7 @@ de lago de datos.
     en Pegar no es compatible). Si está utilizando un dispositivo MAC,
     utilice Cmd+V para pegar.
 
-    **Nota:** Si está trabajando en el entorno de laboratorio, seleccione
+    >**Nota:** Si está trabajando en el entorno de laboratorio, seleccione
     los **puntos suspensivos (...)** en la parte superior derecha de la
     pantalla. Utilice el control deslizante para **habilitar**
     **Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de
@@ -313,9 +313,7 @@ configure la conexión.
 
     - Contraseña de Snowflake: <inject key="SnowFlake Password" enableCopy="false" /> 
 
-    **Nota:** Si tiene algún problema para conectarse a Snowflake con las
-        credenciales de los detalles del entorno, utilice las credenciales que
-        se proporcionan a continuación.
+    >**Nota:** Si tiene algún problema para conectarse a Snowflake con las credenciales de los detalles del entorno, utilice las credenciales que se proporcionan a continuación.
 
     - **Nombre de usuario de Snowflake:** SNOWFLAKE_BACKUP
 
@@ -416,7 +414,7 @@ configure la conexión.
 
     ![](../media/Lab-04/image33.png)
 
-    **Nota:** Si no ve las tablas recién creadas, seleccione los puntos
+    >**Nota:** Si no ve las tablas recién creadas, seleccione los puntos
     suspensivos junto a Tables y seleccionar Actualizar para actualizar las
     tablas.
 
@@ -442,7 +440,7 @@ conexión de análisis SQL).
 3. Se abre el cuadro de diálogo Nuevo acceso directo. En **Orígenes
     externos**, seleccione **Dataverse**.
 
-    **Nota:** En la práctica de laboratorio anterior, seguimos pasos
+    >**Nota:** En la práctica de laboratorio anterior, seguimos pasos
     similares para crear un acceso directo a Azure Data Lake Storage Gen2.
 
     ![](../media/Lab-04/image36.png)
@@ -457,9 +455,9 @@ conexión de análisis SQL).
 
     ![](../media/Lab-04/image37.png)
 
-7. En el cuadro de diálogo de inicio de sesión, seleccione la **cuenta
-    de usuario** que ha estado usando para estos laboratorios. **Nota:**
-    Su cuenta será diferente de la captura de pantalla siguiente.
+7. En el cuadro de diálogo de inicio de sesión, seleccione la **cuenta de usuario** que ha estado usando para estos laboratorios. 
+    
+    >**Nota:** Su cuenta será diferente de la captura de pantalla siguiente.
 
     ![P185#yIS1](../media/Lab-04/image38.png)
 

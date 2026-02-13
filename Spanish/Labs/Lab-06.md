@@ -271,9 +271,9 @@ creado, vayamos al lugar correcto.
     tablas **Sales** y **Product**. Seleccione **StockItemID** en la
     tabla **Sales** y **StockItemID** en la tabla **Product**.
 
-    **Nota:** Todas nuestras actualizaciones se guardan automáticamente.
+    >**Nota:** Todas nuestras actualizaciones se guardan automáticamente.
 
-    **Punto de control:** su modelo debe tener tres relaciones entre las
+    >**Punto de control:** su modelo debe tener tres relaciones entre las
     tablas Sales y Reseller, Sales y Date y Sales y Product como se muestra
     en la siguiente captura de pantalla:
 
@@ -449,7 +449,7 @@ Agreguemos las relaciones restantes.
 
 25. Seleccione **Guardar**.
 
-    **Punto de control:** la administración de relaciones debe parecerse al
+    >**Punto de control:** la administración de relaciones debe parecerse al
     de la siguiente captura de pantalla.
 
     ![](../media/Lab-06/image32.png)
@@ -469,7 +469,7 @@ Agreguemos las relaciones restantes.
 29. Haga clic en **Cerrar** para cerrar el cuadro de diálogo Administrar
     relaciones. Hemos terminado de crear todas las relaciones.
 
-    **Punto de control:** su modelo debe parecerse al de la siguiente
+    >**Punto de control:** su modelo debe parecerse al de la siguiente
     captura de pantalla.
 
     ![](../media/Lab-06/image33.png)

@@ -100,14 +100,15 @@ Power BI.
     Este es un buen comienzo si está analizando un nuevo modelo y necesita
     un impulso.
 
-    **Nota:** Observe que en el menú superior tiene la opción de editar el
+    >**Nota:** Observe que en el menú superior tiene la opción de editar el
     informe o ver algunos de los datos como tablas. No dude en explorar
     estas opciones.
 
 9. Guardemos este informe. En el menú superior, seleccione **Guardar**.
 
-10. Se abre el cuadro de diálogo Guardar el informe. Nombre el informe
-    como **rpt_Sales_Auto_Report** **Nota:** Estamos anteponiendo rpt al
+10. Se abre el cuadro de diálogo Guardar el informe. Nombre el informe como **rpt_Sales_Auto_Report**. 
+    
+    >**Nota:** Estamos anteponiendo rpt al
     nombre del informe, que es la abreviatura de informe (en inglés).
 
 11. Asegúrese de que el informe esté guardado en el área de trabajo
@@ -117,7 +118,7 @@ Power BI.
 
     ![](../media/Lab-07/image12.png)
 
-    **Nota:** El informe creado automáticamente puede verse diferente ya que
+    >**Nota:** El informe creado automáticamente puede verse diferente ya que
     se "creó automáticamente". También depende de las relaciones y medidas
     que creó en el laboratorio anterior (Laboratorio 6).
 
@@ -322,9 +323,9 @@ modelo.
 
 1. En el menú, seleccione **Archivo -> Guardar**.
 
-2. Se abre el cuadro de diálogo Guardar el informe. Nombre el informe
-    como **rpt_Sales_Report**
-    **Nota:** Estamos anteponiendo rpt al nombre del informe, que es la
+2. Se abre el cuadro de diálogo Guardar el informe. Nombre el informe como **rpt_Sales_Report**.
+    
+    >**Nota:** Estamos anteponiendo rpt al nombre del informe, que es la
     abreviatura de informe (en inglés).
 
 3. Asegúrese de que el informe esté guardado en el área de trabajo
@@ -394,7 +395,7 @@ modelo.
 
     ![](../media/Lab-07/image31.png)
 
-    **Nota:** Los meses están ordenados alfabéticamente. Vamos a arreglarlo.
+    >**Nota:** Los meses están ordenados alfabéticamente. Vamos a arreglarlo.
 
     ![](../media/Lab-07/image32.png)
 
@@ -473,9 +474,7 @@ Desktop.
 17. Guardemos el informe: desde el menú, seleccione **Archivo ->
     Guardar**.
 
-    Como se mencionó anteriormente, no crearemos todos los objetos visuales
-    en esta práctica de laboratorio. Siéntase libre de crear más objetos
-    visuales si lo desea.
+Como se mencionó anteriormente, no crearemos todos los objetos visuales en esta práctica de laboratorio. Siéntase libre de crear más objetos visuales si lo desea.
 
 ## Tarea 10: Conectar Power BI Desktop al modelo semántico
 
@@ -826,45 +825,45 @@ Sales view.
 
     Revisemos los desafíos que se enumeran en el planteamiento del problema:
 
-    - **Debe actualizar su conjunto de datos al menos tres veces al día para
-    adaptarse a los diferentes tiempos de actualización para los
-    diferentes orígenes de datos.**
+- **Debe actualizar su conjunto de datos al menos tres veces al día para
+adaptarse a los diferentes tiempos de actualización para los
+diferentes orígenes de datos.**
 
     Resolvimos esto con Direct Lake. Cada flujo de datos individual se
     actualiza según su programación. No es necesario actualizar los
     conjuntos de datos y los informes.
 
-    - **Sus operaciones de actualización tardan mucho tiempo, ya que
-    necesita hacer una actualización completa cada vez para capturar
-    cualquier actualización que haya ocurrido en los sistemas de origen.**
+- **Sus operaciones de actualización tardan mucho tiempo, ya que
+necesita hacer una actualización completa cada vez para capturar
+cualquier actualización que haya ocurrido en los sistemas de origen.**
 
     De nuevo, resolvimos esto con Direct Lake. Cada flujo de datos
     individual se actualiza según su programación. No es necesario
     actualizar los conjunto de datos y los informes, por lo que no tenemos
     que preocuparnos por la actualización completa.
 
-    - **Cualquier error en cualquiera de los orígenes de datos de los que
-    extrae provocará que se interrumpa la actualización del conjunto de
-    datos. Muchas veces, el archivo del empleado no se carga a tiempo, lo
-    que provoca que se interrumpa la actualización del conjunto de
-    datos.**
+- **Cualquier error en cualquiera de los orígenes de datos de los que
+extrae provocará que se interrumpa la actualización del conjunto de
+datos. Muchas veces, el archivo del empleado no se carga a tiempo, lo
+que provoca que se interrumpa la actualización del conjunto de
+datos.**
 
     Las canalizaciones ayudan a resolver este problema al ofrecer la
     capacidad de volver a intentar la actualización en caso de error y en
     diferentes intervalos.
 
-    - **Se necesita mucho tiempo para hacer cambios en su modelo de datos,
-    ya que Power Query tarda mucho en actualizar sus versiones
-    preliminares, dado el gran tamaño de los datos y las transformaciones
-    complejas.**
+- **Se necesita mucho tiempo para hacer cambios en su modelo de datos,
+ya que Power Query tarda mucho en actualizar sus versiones
+preliminares, dado el gran tamaño de los datos y las transformaciones
+complejas.**
 
     Vimos que los flujos de datos y los almacenes de lago de datos son
     eficientes y es fácil realizar cambios en ellos. Normalmente, la versión
     preliminar en flujos de datos y almacenes de lago de datos no tarda
     mucho en cargarse.
 
-    - **Necesita que un PO con Windows use Power BI Desktop aunque el
-    estándar corporativo es Mac.**
+- **Necesita que un PO con Windows use Power BI Desktop aunque el
+estándar corporativo es Mac.**
 
     Microsoft Fabric es una oferta SaaS. Lo único que necesitamos es un
     explorador para acceder al servicio. No tenemos que instalar ningún

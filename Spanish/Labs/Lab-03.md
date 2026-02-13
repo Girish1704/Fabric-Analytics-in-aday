@@ -129,7 +129,7 @@ Esto es como crear accesos directos en el escritorio de Windows.
 
     k. Warehouse.StockItems
 
-    **Nota:** Sales.Invoices_May es el único directorio que **no** está
+    >**Nota:** Sales.Invoices_May es el único directorio que **no** está
     seleccionado.
 
     ![](../media/Lab-03/image9.png)
@@ -168,7 +168,7 @@ Esto es como crear accesos directos en el escritorio de Windows.
 
     j. Warehouse.StockItems a **ProductItem**
 
-    **Nota:** Compruebe dos veces los nombres. Un error tipográfico causará
+    >**Nota:** Compruebe dos veces los nombres. Un error tipográfico causará
     errores durante el laboratorio.
 
 17. Seleccione **Crear** para crear el acceso directo.
@@ -229,7 +229,7 @@ modelo semántico. Vamos a crear vistas para transformar los datos.
     **Abrir en menú emergente** (hacia la derecha). Se le llevará al
     Editor de Power Query.
 
-    ***Nota:** Es posible que tenga que desplazarse hacia la derecha o
+    >**Nota:** Es posible que tenga que desplazarse hacia la derecha o
     volver a abrir la pestaña de consulta visual si no ve este icono
     inmediatamente.*
 
@@ -337,7 +337,7 @@ modelo semántico. Vamos a crear vistas para transformar los datos.
     opciones seleccione **Inicio (2) -> Elegir columnas (3) -> Elegir
     columnas (4)**.
 
-    **Nota:** Si la opción Elegir columnas no está visible, puede
+    >**Nota:** Si la opción Elegir columnas no está visible, puede
     encontrarla en Administrar columnas.
 
     ![](../media/Lab-03/image23.png)
@@ -625,7 +625,7 @@ posible en la consulta visual. Vamos a probar este método.
 
     ![](../media/Lab-03/image45.png)
 
-    **Nota:** Si no encuentra el Editor avanzado, puede acceder a él
+    >**Nota:** Si no encuentra el Editor avanzado, puede acceder a él
     en **Inicio -> Consulta -> Editor avanzado**.
 
 16. **Seleccione el código de la Línea 3** (#"Expanded Invoice" ...)
@@ -777,7 +777,7 @@ Para avanzar en las cosas, copiaremos el código en el Editor avanzado.
 
     ![](../media/Lab-03/image59.png)
 
-    **Nota:** Si no encuentra el Editor avanzado, puede acceder a él
+    >**Nota:** Si no encuentra el Editor avanzado, puede acceder a él
     en **Inicio -> Consulta -> Editor avanzado**.
 
 12. **Seleccione todo el código** en el Editor avanzado y **elimínelo**.

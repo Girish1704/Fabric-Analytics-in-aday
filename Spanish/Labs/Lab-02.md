@@ -44,10 +44,10 @@ Al final de este laboratorio, habrá aprendido:
 
     ![](../media/Lab-02/image6.png)
 
-    ***Nota:** Si está utilizando el entorno de laboratorio, es posible que
+    >**Nota:** Si está utilizando el entorno de laboratorio, es posible que
 inicie sesión automáticamente.*
 
-    ***Nota:** Si Fabric no se abre, vaya a http://app.fabric.microsoft.com/
+    >**Nota:** Si Fabric no se abre, vaya a http://app.fabric.microsoft.com/
 en el explorador.*
 
 2. Copie el nombre de usuario y péguelo en el campo Correo electrónico
@@ -55,7 +55,7 @@ en el explorador.*
 
     - **Correo electrónico/nombre de usuario:** <inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/Lab-02/image7.png)
+        ![](../media/Lab-02/image7.png)
 
 3. En la pestaña de **inicio de sesión de Microsoft Azure**, verá la
     pantalla de inicio de sesión. Introduzca el siguiente
@@ -63,14 +63,14 @@ en el explorador.*
 
     - **Correo electrónico/nombre de usuario**: <inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/Lab-02/image8.png)
+        ![](../media/Lab-02/image8.png)
 
 4. Ahora introduzca el siguiente **Pase de acceso temporal** y haga
     clic en **Iniciar sesión**.
 
     - **Pase de acceso temporal:** <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/Lab-02/image9.png)
+        ![](../media/Lab-02/image9.png)
 
 5. Se le dirigirá a la **página principal del servicio Power BI** que
     ya conoce.
@@ -92,7 +92,7 @@ en el explorador.*
 9. Se abre un cuadro de diálogo para actualizar a una prueba de
     Microsoft Fabric gratuita. Seleccione **Activar**.
 
-    ***Nota:** No cambie la región predeterminada. Manténgala tal y como
+    >**Nota:** No cambie la región predeterminada. Manténgala tal y como
 está.*
 
     ![](../media/Lab-02/image11.png)
@@ -127,7 +127,7 @@ está.*
 
 4. En el campo **Nombre**, introduzca FAIAD_<inject key="Deployment ID" enableCopy="false"/> (que se encuentra en la pestaña Entorno).
 
-    ***Nota:** El nombre del área de trabajo debe ser único. Asegúrese de
+    >**Nota:** El nombre del área de trabajo debe ser único. Asegúrese de
 que aparezca una marca de verificación verde con "Este nombre está
 disponible" debajo del campo Nombre.*
 
@@ -168,10 +168,10 @@ disponible" debajo del campo Nombre.*
 3. Aparecerá un cuadro de diálogo Nuevo lakehouse. Escriba **lh_FAIAD**
     en el cuadro de texto Nombre.
 
-    ***Nota:** lh aquí se refiere al Lakehouse. Vamos a anteponer lh para
+    >**Nota:** lh aquí se refiere al Lakehouse. Vamos a anteponer lh para
 que sea fácil de identificar y buscar.*
 
-    ***Nota:** La característica en vista previa de **Esquemas de almacén de
+    >**Nota:** La característica en vista previa de **Esquemas de almacén de
 lago de datos** es muy interesante y es algo que debe tener en cuenta.
 Dado que está en **Versión preliminar**, lo ignoraremos para que no haya
 un impacto negativo en la experiencia del laboratorio. Una vez que la
