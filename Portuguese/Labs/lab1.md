@@ -20,7 +20,7 @@ as capturas de tela associadas que fornecem auxílio visual. Em cada
 captura de tela, as seções estão destacadas com caixas laranjas para
 indicar as áreas nas quais o usuário deve se concentrar.
 
-**Observação:** Algumas capturas de tela podem estar desatualizadas
+>**Observação:** Algumas capturas de tela podem estar desatualizadas
 devido às atualizações contínuas do produto.
 
 # Cenário/Declaração do problema
@@ -60,10 +60,10 @@ sistemas, limpa-os e combina-os. Você extrai dados das seguintes fontes:
 
   ![](images1/media/image4.jpeg)
 
-No momento, você está criando um modelo semântico no Power BI Premium
-que extrai os dados dos sistemas de origem acima para que você possa
-gerar relatórios e fornecer aos usuários finais o recurso de
-autoatendimento. Você usa o Power Query para atualizar seu modelo.
+  No momento, você está criando um modelo semântico no Power BI Premium
+  que extrai os dados dos sistemas de origem acima para que você possa
+  gerar relatórios e fornecer aos usuários finais o recurso de
+  autoatendimento. Você usa o Power Query para atualizar seu modelo.
 
 **Você está enfrentando os seguintes desafios:**
 
@@ -87,8 +87,8 @@ autoatendimento. Você usa o Power Query para atualizar seu modelo.
 - Você precisa de um computador com Windows para usar o Power BI Desktop
   mesmo que o padrão corporativo seja Mac.
 
-Você ouviu falar do Microsoft Fabric e decidiu tentar ver se ele
-resolverá seus desafios.
+  Você ouviu falar do Microsoft Fabric e decidiu tentar ver se ele
+  resolverá seus desafios.
 
 ### **Visão geral do relatório do Power BI Desktop**
 
@@ -129,10 +129,9 @@ atual no Power BI Desktop para entender as transformações e o modelo.
 
     ![](images1/media/image10.png)
 
-6.  **Tudo pronto!** A caixa de diálogo é aberta. Selecione
-    **Concluído**.
+6.  **Tudo pronto!** A caixa de diálogo é aberta. Selecione **Concluído**.
 
-O Power BI Desktop será aberto.
+    O Power BI Desktop será aberto.
 
 ### Tarefa 2: Analisar relatório do Power BI Desktop
 
@@ -258,7 +257,7 @@ o relatório e passar para as próximas etapas.
     inserindo o **Nome de usuário e a Senha**. As credenciais são
     fornecidas abaixo. Quando concluído, selecione **Conectar**.
 
-- Email/Nome de usuário: encontrado na guia Ambiente
+    - Email/Nome de usuário: <inject key="AzureAdUserEmail"></inject>
 
 - Senha: encontrada na guia Ambiente
 
@@ -324,9 +323,9 @@ o relatório e passar para as próximas etapas.
     Insira o Nome de usuário e a Senha fornecidos abaixo e selecione
     **Conectar**.
 
-- **Email/Nome de usuário:** encontrado na guia Ambiente
+- **Email/Nome de usuário:** <inject key="AzureAdUserEmail"></inject>
 
-- **Senha:** encontrada na guia Ambiente
+- **Senha:** <inject key="AzureAdUserPassword"></inject>
 
   ![](images1/media/image26.png)
 
@@ -334,9 +333,9 @@ o relatório e passar para as próximas etapas.
 
     ![](images1/media/image27.png)
 
-Agora sabemos com o que estamos lidando. Nos laboratórios a seguir,
-criaremos um Power Query semelhante usando o Fluxo de Dados Gen2 e uma
-modelagem usando um Lakehouse.
+  Agora sabemos com o que estamos lidando. Nos laboratórios a seguir,
+  criaremos um Power Query semelhante usando o Fluxo de Dados Gen2 e uma
+  modelagem usando um Lakehouse.
 
 # Referências
 
