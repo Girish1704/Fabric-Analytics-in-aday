@@ -1,6 +1,5 @@
 # Microsoft Fabric Fabric Analyst in a Day-Labo 6
 ![](../media/Lab-06/main6.png)
-
 # Sommaire
 - Introduction	
 - Lakehouse : analyse des données	
@@ -101,12 +100,11 @@ ces options. Essayons d'écrire une requête SQL simple.
     permet d'afficher les requêtes partagées avec vous à l'aide du
     dossier **Requêtes partagées**.
 
-> **Remarque** **:** les requêtes visuelles que vous avez créées dans
-> les labos précédents sont également disponibles sous le dossier Mes
-> requêtes.
+    > **Remarque** **:** les requêtes visuelles que vous avez créées dans
+    > les labos précédents sont également disponibles sous le dossier Mes
+    > requêtes.
 
-    ![](../media/Lab-06/image8.png){width="4.321220472440945in"
-height="2.880812554680665in"}
+    ![](../media/Lab-06/image8.png)
 
 ### Tâche 2 : visualiser le résultat T-SQL
 
@@ -116,8 +114,7 @@ height="2.880812554680665in"}
 2. Dans le menu du volet Résultats, cliquez sur l'icône du menu
     déroulant **-> Visualiser les résultats**.
 
-    ![](../media/Lab-06/image9.png){width="3.9135695538057744in"
-height="3.704942038495188in"}
+    ![](../media/Lab-06/image9.png)
 
 3. La boîte de dialogue **Visualiser les résultats** s'ouvre alors.
     Cliquez sur **Continuer**.
@@ -134,8 +131,7 @@ explorer ces options dans ce cours.
 5. Sélectionnez les **champs** **Supplier_Name** et **Units**. Un
     visuel de table est créé.
 
-    ![](../media/Lab-06/image10.png){width="4.97952646544182in"
-height="1.148688757655293in"}
+    ![](../media/Lab-06/image10.png)
 
 6. Dans la section **Visualisations**, changez le type de visuel en
     sélectionnant l'**Histogramme empilé**.
@@ -143,8 +139,7 @@ height="1.148688757655293in"}
 7. Cliquez sur **Enregistrer en tant que rapport** en bas de l'écran à
     droite.
 
-    ![](../media/Lab-06/image11.png){width="4.937253937007874in"
-height="2.861765091863517in"}
+    ![](../media/Lab-06/image11.png)
 
 8. La boîte de dialogue Enregistrer votre rapport s'ouvre alors. Tapez
     **Units by Supplier** dans la zone de texte **Entrez un nom pour
@@ -155,8 +150,7 @@ height="2.861765091863517in"}
 
 10. Cliquez sur **Enregistrer**.
 
-    ![](../media/Lab-06/image12.png){width="2.4804965004374453in"
-height="2.4878346456692912in"}
+    ![](../media/Lab-06/image12.png)
 
 Vous êtes alors redirigé vers l'écran de requête SQL.
 
@@ -167,8 +161,7 @@ Vous êtes alors redirigé vers l'écran de requête SQL.
 1. Dans le menu du point de terminaison analytique SQL, cliquez sur
     **Nouveau modèle sémantique**.
 
-    ![](../media/Lab-06/image13.png){width="4.0in"
-height="0.9758475503062117in"}
+    ![](../media/Lab-06/image13.png)
 
 2. La boîte de dialogue **Nouveau modèle sémantique** s'ouvre alors.
     Saisissez **sm_FAIAD** comme nom du modèle sémantique Direct Lake.
@@ -180,8 +173,7 @@ height="0.9758475503062117in"}
     dans votre lakehouse.
 
     ![A screenshot of a computer AI-generated content may be
-incorrect.](../media/Lab-06/image14.png){width="5.4in"
-height="5.924858923884514in"}
+incorrect.](../media/Lab-06/image14.png)
 
 4. **Sélectionnez** les tables/vues suivantes :
 
@@ -205,8 +197,7 @@ height="5.924858923884514in"}
 
 5. Cliquez sur **Confirmer**.
 
-    ![](../media/Lab-06/image15.png){width="3.4in"
-height="2.825119203849519in"}
+    ![](../media/Lab-06/image15.png)
 
 Vous allez accéder au nouveau modèle sémantique avec les tables
 sélectionnées. N'hésitez pas à **réorganiser** les tables si nécessaire.
@@ -226,31 +217,26 @@ créé, rendez-vous à l'endroit approprié
 1. Nous allons revenir à **l'espace de travail** Fabric et sélectionner
     le modèle sémantique **sm_FAIAD**.
 
-    ![](../media/Lab-06/image16.png){width="4.8in"
-height="1.2887456255468066in"}
+    ![](../media/Lab-06/image16.png)
 
 2. Cliquez sur **Ouvrir le modèle sémantique**.
 
-    ![](../media/Lab-06/image17.png){width="5.967554680664917in"
-height="4.600290901137358in"}
+    ![](../media/Lab-06/image17.png)
 
 3. Dans le coin supérieur droit, vérifiez que vous êtes en mode
     **Édition**
 
-    ![](../media/Lab-06/image18.png){width="5.732641076115486in"
-height="3.1187018810148732in"}
+    ![](../media/Lab-06/image18.png)
 
 4. La première étape consiste à créer des relations entre ces tables.
 
-    ![](../media/Lab-06/image19.png){width="5.00530949256343in"
-height="4.140471347331584in"}
+    ![](../media/Lab-06/image19.png)
 
 5. Créons une relation entre les tables Sales et Reseller. Sélectionnez
     la valeur **ResellerID** dans la table **Sales** et faites-la
     glisser vers la valeur **ResellerID** dans la table **Reseller**.
 
-    ![](../media/Lab-06/image20.png){width="5.4508650481189855in"
-height="3.3219870953630797in"}
+    ![](../media/Lab-06/image20.png)
 
 6. La boîte de dialogue Nouvelle relation s'ouvre alors. Assurez-vous
     que le champ **À partir de la table** est défini sur **Sales** et le
@@ -267,8 +253,7 @@ height="3.3219870953630797in"}
 
 10. Cliquez sur **Enregistrer**.
 
-    ![](../media/Lab-06/image21.png){width="5.383752187226596in"
-height="6.646802274715661in"}
+    ![](../media/Lab-06/image21.png)
 
 11. De même, créez une relation entre les tables Sales et Date.
     Sélectionnez la valeur **InvoiceDate** dans la table **Sales** et
@@ -289,8 +274,7 @@ height="6.646802274715661in"}
 
 16. Cliquez sur **Enregistrer**.
 
-    ![](../media/Lab-06/image22.png){width="5.8113156167979in"
-height="7.123546587926509in"}
+    ![](../media/Lab-06/image22.png)
 
 17. De même, créez une relation **plusieurs-à-un** entre les tables
     **Sales** et **Product**. Sélectionnez la valeur **StockItemID**
@@ -305,8 +289,7 @@ relations entre les tables Sales et Reseller, les tables Sales et Date,
 et les tables Sales et Product, comme illustré dans la capture d'écran
 ci-dessous :
 
-    ![](../media/Lab-06/image23.png){width="4.219041994750656in"
-height="3.2375in"}
+    ![](../media/Lab-06/image23.png)
 
 Pour gagner du temps, nous n'allons pas créer toutes les relations. Si
 le temps le permet, vous pouvez suivre la section facultative à la fin
@@ -338,8 +321,7 @@ de bord Sales.
 
 8. Définissez le champ Nombre de décimales sur **0**.
 
-    ![](../media/Lab-06/image24.png){width="4.591711504811898in"
-height="2.679452099737533in"}
+    ![](../media/Lab-06/image24.png)
 
 9. Une fois la table **Sales** sélectionnée dans le menu supérieur,
     cliquez sur **Accueil -> Nouvelle mesure**. Notez que la barre de
@@ -359,8 +341,7 @@ height="2.679452099737533in"}
 
 14. Réglez le curseur **Séparateur de milliers** sur **Oui**.
 
-    ![](../media/Lab-06/image25.png){width="3.403510498687664in"
-height="1.9810170603674542in"}
+    ![](../media/Lab-06/image25.png)
 
 15. Une fois la table **Sales** sélectionnée dans le menu supérieur,
     cliquez sur **Accueil -> Nouvelle mesure**. Notez que la barre de
@@ -379,8 +360,7 @@ height="1.9810170603674542in"}
 
 20. Réglez le curseur **Séparateur de milliers** sur **Oui**.
 
-    ![](../media/Lab-06/image26.png){width="5.528548775153106in"
-height="3.187503280839895in"}
+    ![](../media/Lab-06/image26.png)
 
 21. Dans le volet **Données** (à droite), cliquez sur **Modèle**. Notez
     que cela fournit une vue qui aide à organiser tous les éléments du
@@ -392,8 +372,7 @@ height="3.187503280839895in"}
 23. Vous pouvez également **développer des tables individuelles** pour
     afficher les colonnes, hiérarchies et mesures dans chacune d'elles.
 
-    ![](../media/Lab-06/image27.png){width="2.135173884514436in"
-height="6.582178477690289in"}
+    ![](../media/Lab-06/image27.png)
 
 Encore une fois, pour gagner du temps, nous n'allons pas créer toutes
 les mesures. Si le temps le permet, vous pouvez suivre la section
@@ -412,8 +391,7 @@ Ajoutons les relations restantes.
 2. La boîte de dialogue Gérer les relations s'ouvre alors. Cliquez sur
     **+ Nouvelle relation**.
 
-    ![](../media/Lab-06/image28.png){width="4.8377799650043745in"
-height="1.651030183727034in"}
+    ![](../media/Lab-06/image28.png)
 
 3. La boîte de dialogue Nouvelle relation s'ouvre alors. Assurez-vous
     que le champ **À partir de la table** est défini sur **Sales** et le
@@ -431,8 +409,7 @@ height="1.651030183727034in"}
 7. Cliquez sur **Enregistrer**. La boîte de dialogue Gérer les
     relations s'ouvre alors avec la nouvelle relation ajoutée.
 
-    ![](../media/Lab-06/image29.png){width="2.994961723534558in"
-height="3.7237062554680667in"}
+    ![](../media/Lab-06/image29.png)
 
 8. Créons maintenant une relation entre les tables Product et Supplier.
     Cliquez sur + **Nouvelle relation**.
@@ -451,8 +428,7 @@ height="3.7237062554680667in"}
 
 13. Cliquez sur **Enregistrer**.
 
-    ![](../media/Lab-06/image30.png){width="5.113794838145232in"
-height="6.297964785651794in"}
+    ![](../media/Lab-06/image30.png)
 
 14. Créons maintenant une relation entre les tables Reseller et Geo.
     Cliquez sur **+ Nouvelle relation.**
@@ -472,8 +448,7 @@ height="6.297964785651794in"}
 
 19. Cliquez sur **Enregistrer**.
 
-    ![](../media/Lab-06/image31.png){width="5.995792869641295in"
-height="7.390988626421697in"}
+    ![](../media/Lab-06/image31.png)
 
 20. De même, créez une relation entre les tables Customer et Reseller.
     Cliquez sur + **Nouvelle relation**.
@@ -496,8 +471,7 @@ height="7.390988626421697in"}
 **Point de contrôle :** la boîte de dialogue Gérer les relations devrait
 ressembler à la capture d'écran ci-dessous.
 
-    ![](../media/Lab-06/image32.png){width="6.100290901137358in"
-height="5.260605861767279in"}
+    ![](../media/Lab-06/image32.png)
 
 26. De même, créez une relation **plusieurs-à-un** entre les tables
     **PO** et **Date**. Sélectionnez la valeur **Order_Date** dans la
@@ -516,11 +490,10 @@ height="5.260605861767279in"}
 29. Cliquez sur **Fermer** pour fermer la boîte de dialogue Gérer les
     relations. Nous avons fini de créer toutes les relations.
 
-**Point de contrôle :** votre modèle devrait ressembler à la capture
-d'écran ci-dessous.
+    **Point de contrôle :** votre modèle devrait ressembler à la capture
+    d'écran ci-dessous.
 
-    ![](../media/Lab-06/image33.png){width="5.123546587926509in"
-height="2.886152668416448in"}
+    ![](../media/Lab-06/image33.png)
 
 ### Tâche 7 : section facultative - Créer des mesures
 
@@ -543,8 +516,7 @@ Ajoutons les mesures restantes.
 
 7. Définissez le champ Nombre de décimales sur 0.
 
-    ![](../media/Lab-06/image34.png){width="4.86667760279965in"
-height="2.8444772528433946in"}
+    ![](../media/Lab-06/image34.png)
 
 8. Procédez de même pour ajouter les mesures suivantes :
 
@@ -564,8 +536,7 @@ Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions
 clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
 comporte des liens vers d'excellentes ressources.
 
-    ![](../media/Lab-06/image35.png){width="1.5682688101487314in"
-height="3.881113298337708in"}
+![](../media/Lab-06/image35.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos
 prochaines étapes avec Microsoft Fabric :
