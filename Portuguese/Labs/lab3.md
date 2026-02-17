@@ -1,23 +1,13 @@
-# ![](images3/media/image4.png)
-
 # Sumário
 
 - Introdução
-
 - Atalho para o ADLS Gen2
-
     - Tarefa 1: Criar um atalho
-
 - Transformar dados usando uma consulta Visual
-
     - Tarefa 2: Criar exibição Geo usando uma consulta Visual
-
     - Tarefa 3: Criar exibição Reseller usando uma consulta Visual
-
     - Tarefa 4: Criar a exibição Sales usando uma consulta Visual
-
     - Tarefa 5: Criar exibição Product usando uma consulta Visual
-
 - Referências
 
 # Introdução 
@@ -60,40 +50,40 @@ Ao final deste laboratório, você terá aprendido a:
 
 # Atalho para o ADLS Gen2
 
-### Tarefa 1: Criar um atalho
+## Tarefa 1: Criar um atalho
 
 Os atalhos são usados para criar um link com o local de destino. Os
 atalhos fornecem acesso aos dados sem a necessidade de mover fisicamente
 os dados para o lakehouse. É como criar atalhos na área de trabalho do
 Windows.
 
-1.  Na parte superior da tela, selecione a guia **lh_FAIAD** para
+1. Na parte superior da tela, selecione a guia **lh_FAIAD** para
     navegar até o Lakehouse.
 
-    a.  Se você não tiver uma guia, poderá navegar de volta ao seu Espaço de
+    a. Se você não tiver uma guia, poderá navegar de volta ao seu Espaço de
     Trabalho e abrir o Lakehouse a partir daí.
 
-2.  No painel **Explorer**, selecione as **reticências** ao lado de
+2. No painel **Explorer**, selecione as **reticências** ao lado de
     **Tabelas**.
 
-3.  Selecione **Novo atalho.**
+3. Selecione **Novo atalho.**
 
     ![](images3/media/image6.png)
 
-4.  A caixa de diálogo **Novo atalho** é aberta. Em **Fontes externas**, selecione **Azure Data Lake Storage Gen2**.
+4. A caixa de diálogo **Novo atalho** é aberta. Em **Fontes externas**, selecione **Azure Data Lake Storage Gen2**.
 
     ![](images3/media/image7.png)
 
-5.  Selecione **Nova conexão (1)**.
+5. Selecione **Nova conexão (1)**.
 
-6.  Insira o seguinte link para a propriedade **URL**:
+6. Insira o seguinte link para a propriedade **URL**:
     <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales> **(2):**
 
-7.  Clique em **Criar Nova Conexão (3)** na seção Conexão
+7. Clique em **Criar Nova Conexão (3)** na seção Conexão
 
-8.  Selecione **Assinatura de Acesso Compartilhado (SAS) (4)** no menu suspenso Tipo de autenticação.
+8. Selecione **Assinatura de Acesso Compartilhado (SAS) (4)** no menu suspenso Tipo de autenticação.
 
-9.  Copie o token SAS e cole-o no campo Token SAS (5).
+9. Copie o token SAS e cole-o no campo Token SAS (5).
 
     - **Token SAS:** <inject key="Sas token"></inject>
 
@@ -105,27 +95,27 @@ Windows.
 
 12. **Selecione** os seguintes diretórios **(2)** e clique em **Avançar (3)**:
 
-    a.  Application.Cities
+    a. Application.Cities
 
-    b.  Application.Countries
+    b. Application.Countries
 
-    c.  Application.StateProvinces
+    c. Application.StateProvinces
 
-    d.  DateDim
+    d. DateDim
 
-    e.  Sales.BuyingGroups
+    e. Sales.BuyingGroups
 
-    f.  Sales.Customers
+    f. Sales.Customers
 
-    g.  Sales.InvoiceLines
+    g. Sales.InvoiceLines
 
-    h.  Sales.Invoices
+    h. Sales.Invoices
 
-    i.  Warehouse.StockGroups
+    i. Warehouse.StockGroups
 
-    j.  Warehouse.StockItemStockGroups
+    j. Warehouse.StockItemStockGroups
 
-    k.  Warehouse.StockItems
+    k. Warehouse.StockItems
 
     > **Observação:** Sales.Invoices_May é o único diretório que **não está** selecionado.
 
@@ -141,25 +131,25 @@ Windows.
 
 16. Da mesma forma, renomeie os nomes de atalhos como abaixo:
 
-    a.  Application.Countries para **Countries**
+    a. Application.Countries para **Countries**
 
-    b.  Application.StateProvinces para **States**
+    b. Application.StateProvinces para **States**
 
-    c.  DateDim para **Date**
+    c. DateDim para **Date**
 
-    d.  Sales.BuyingGroups para **BuyingGroups**
+    d. Sales.BuyingGroups para **BuyingGroups**
 
-    e.  Sales.Customers para **Customers**
+    e. Sales.Customers para **Customers**
 
-    f.  Sales.InvoiceLines para **InvoiceLineItems**
+    f. Sales.InvoiceLines para **InvoiceLineItems**
 
-    g.  Sales.Invoices para **Invoices**
+    g. Sales.Invoices para **Invoices**
 
-    h.  Warehouse.StockGroups para **ProductGroups**
+    h. Warehouse.StockGroups para **ProductGroups**
 
-    i.  Warehouse.StockItemStockGroups para **ProductItemGroup**
+    i. Warehouse.StockItemStockGroups para **ProductItemGroup**
 
-    j.  Warehouse.StockItems para **ProductItem**
+    j. Warehouse.StockItems para **ProductItem**
 
     > **Observação**: confira novamente os nomes. Um erro de digitação poderá causar erros durante o laboratório.
 
@@ -175,9 +165,9 @@ Windows.
 
 # Transformar dados usando uma consulta Visual
 
-### Tarefa 2: Criar exibição Geo usando uma consulta Visual
+## Tarefa 2: Criar exibição Geo usando uma consulta Visual
 
-1. Nós podemos acessar o Lakehouse usando um ponto de extremidade SQL. Isso possibilita consultar os dados e criar exibições. No **canto superior direito** da tela, selecione **Lakehouse (1) -\> Ponto de extremidade de análise de SQL (2)**.
+1. Nós podemos acessar o Lakehouse usando um ponto de extremidade SQL. Isso possibilita consultar os dados e criar exibições. No **canto superior direito** da tela, selecione **Lakehouse (1) -> Ponto de extremidade de análise de SQL (2)**.
 
     ![](images3/media/image13.png)
 
@@ -189,29 +179,29 @@ Windows.
 
     ![](images3/media/image14.png)
 
-3.  Para criar uma consulta, precisamos adicionar tabelas ao painel Consulta Visual. Clique nas reticências ao lado da tabela **Cities (1)** e selecione **Inserir na tela (2).**
+3. Para criar uma consulta, precisamos adicionar tabelas ao painel Consulta Visual. Clique nas reticências ao lado da tabela **Cities (1)** e selecione **Inserir na tela (2).**
 
     ![](images3/media/image15.png)
 
-4.  Repita as mesmas etapas para as tabelas **States** e **Countries**.
+4. Repita as mesmas etapas para as tabelas **States** e **Countries**.
 
     Em seguida, precisamos mesclar essas consultas. O editor de consultas visuais vem com a opção de usar o Editor do Power Query. Vamos usá-lo, já que estamos familiarizados com isso por causa do Power BI.
 
-5.  **No menu do Editor de consultas visuais,** selecione o ícone **Abrir em popup** (à direita). Você irá para o Editor do Power Query.
+5. **No menu do Editor de consultas visuais,** selecione o ícone **Abrir em popup** (à direita). Você irá para o Editor do Power Query.
 
     >***Observação:** talvez seja necessário rolar para a direita ou reabrir sua guia de consulta de visual se você não vir imediatamente esse ícone*
 
     ![](images3/media/image16.png)
 
-6.  Com a consulta **Cities(1)** selecionada, na faixa de opções do Editor do Power Query, selecione **Página Inicial (2) -\> Combinar (3) -\> menu suspenso Mesclar consultas (4) -\> Mesclar consultas como novas (5)**. A caixa de diálogo Mesclar consultas é aberta.
+6. Com a consulta **Cities(1)** selecionada, na faixa de opções do Editor do Power Query, selecione **Página Inicial (2) -> Combinar (3) -> menu suspenso Mesclar consultas (4) -> Mesclar consultas como novas (5)**. A caixa de diálogo Mesclar consultas é aberta.
 
     ![](images3/media/image17.png)
 
-7.  Na **Tabela esquerda para mesclagem**, selecione **Cities**.
+7. Na **Tabela esquerda para mesclagem**, selecione **Cities**.
 
-8.  Na **Tabela direita para mesclagem**, selecione **States**.
+8. Na **Tabela direita para mesclagem**, selecione **States**.
 
-9.  Selecione as colunas **StateProvinceID** das duas tabelas. Vamos
+9. Selecione as colunas **StateProvinceID** das duas tabelas. Vamos
     usar esta coluna.
 
 10. Selecione **Interna** como o **Tipo de junção**.
@@ -227,13 +217,13 @@ de algumas colunas de States.
 
 13. Um painel é aberto. Verifique se somente as colunas seguintes foram selecionadas:
 
-    a.  StateProvinceCode
+    a. StateProvinceCode
 
-    b.  StateProvinceName
+    b. StateProvinceName
 
-    c.  CountryID
+    c. CountryID
 
-    d.  SalesTerritory
+    d. SalesTerritory
 
 14. Selecione **OK**.
 
@@ -241,7 +231,7 @@ de algumas colunas de States.
 
 Precisamos mesclar a consulta Countries agora.
 
-15. Com a consulta Mesclar selecionada **(1)**, selecione **Página Inicial (2) -\> Combinar (3) -\> menu suspenso Mesclar consultas (4) -\> Mesclar consultas (5).**
+15. Com a consulta Mesclar selecionada **(1)**, selecione **Página Inicial (2) -> Combinar (3) -> menu suspenso Mesclar consultas (4) -> Mesclar consultas (5).**
 
     ![](images3/media/image20.png)
 
@@ -262,21 +252,21 @@ Precisamos mesclar a consulta Countries agora.
 21. Um painel é aberto. Verifique se somente as colunas seguintes foram
     selecionadas:
 
-    a.  CountryName
+    a. CountryName
 
-    b.  FormalName
+    b. FormalName
 
-    c.  IsoAlpha3Code
+    c. IsoAlpha3Code
 
-    d.  IsoNumericCode
+    d. IsoNumericCode
 
-    e.  CountryType
+    e. CountryType
 
-    f.  Continent
+    f. Continent
 
-    g.  Region
+    g. Region
 
-    h.  Subregion
+    h. Subregion
 
 22. Selecione **OK**.
 
@@ -286,7 +276,7 @@ Precisamos mesclar a consulta Countries agora.
 
     Não precisamos de todas as colunas na tabela **Merge**. Certifique-se de selecionar apenas as colunas que precisamos.
 
-23. Com a consulta **Merge** selecionada (1), selecione **Página Inicial (2) -\> Escolher colunas (3) -\> Escolher colunas (4)** na faixa de opções.
+23. Com a consulta **Merge** selecionada (1), selecione **Página Inicial (2) -> Escolher colunas (3) -> Escolher colunas (4)** na faixa de opções.
 
     > **Observação:** se a opção Escolher colunas não estiver visível, você poderá encontrá-la em Gerenciar colunas.
 
@@ -294,17 +284,17 @@ Precisamos mesclar a consulta Countries agora.
 
 24. A caixa de diálogo Escolher colunas é aberta. **Desmarque** as colunas a seguir.
 
-    a.  StateProvinceID
+    a. StateProvinceID
 
-    b.  Location
+    b. Location
 
-    c.  LastEditedBy
+    c. LastEditedBy
 
-    d.  ValidFrom
+    d. ValidFrom
 
-    e.  ValidTo
+    e. ValidTo
 
-    f.  CountryID
+    f. CountryID
 
 25. Selecione **OK**.
 
@@ -344,38 +334,38 @@ Precisamos mesclar a consulta Countries agora.
 
     ![](images3/media/image28.png)
 
-### Tarefa 3: Criar exibição Reseller usando uma consulta Visual
+## Tarefa 3: Criar exibição Reseller usando uma consulta Visual
 
 Vamos criar a exibição Reseller, mesclando a tabela Customers com a
 tabela BuyingGroups. Desta vez, criaremos a exibição usando a consulta
 Visual sem abrir a opção Power Query.
 
-1.  No menu superior, clique no menu suspenso ao lado de **Nova consulta
+1. No menu superior, clique no menu suspenso ao lado de **Nova consulta
     SQL (1)** e depois selecione **Nova consulta visual (2)**.
 
-2.  Para criar uma consulta, precisamos adicionar tabelas ao painel Consulta Visual. Clique nas reticências ao lado da tabela **BuyingGroups (1)** e selecione **Inserir na tela (2)**.
+2. Para criar uma consulta, precisamos adicionar tabelas ao painel Consulta Visual. Clique nas reticências ao lado da tabela **BuyingGroups (1)** e selecione **Inserir na tela (2)**.
 
     ![](images3/media/image29.png)
 
-3.  Repita as mesmas etapas para a tabela **Customers**.
+3. Repita as mesmas etapas para a tabela **Customers**.
 
-4.  **Selecione a consulta Customers**. Quando selecionada, Customers terá um sinal de "**+**" depois da Tabela (isso indica que estamos adicionando uma etapa depois da Tabela. Se você não vir o sinal de "**+**" depois da tabela, talvez tenha selecionado uma etapa diferente. Selecione Table e pronto.)
+4. **Selecione a consulta Customers**. Quando selecionada, Customers terá um sinal de "**+**" depois da Tabela (isso indica que estamos adicionando uma etapa depois da Tabela. Se você não vir o sinal de "**+**" depois da tabela, talvez tenha selecionado uma etapa diferente. Selecione Table e pronto.)
 
 <!-- -->
 
-5.  No menu Consulta de Visual, selecione **Combinar -\> Mesclar consultas**.
+5. No menu Consulta de Visual, selecione **Combinar -> Mesclar consultas**.
 
     ![](images3/media/image30.png)
 
 A caixa de diálogo Mesclar é aberta com Customers selecionada como a tabela superior.
 
-6.  Na **Tabela direita para mesclagem**, selecione **BuyingGroups**.
+6. Na **Tabela direita para mesclagem**, selecione **BuyingGroups**.
 
-7.  Selecione as colunas **BuyingGroupID** das duas tabelas. Vamos usar esta coluna.
+7. Selecione as colunas **BuyingGroupID** das duas tabelas. Vamos usar esta coluna.
 
-8.  Selecione **Interna** como o **Tipo de junção**.
+8. Selecione **Interna** como o **Tipo de junção**.
 
-9.  Selecione **OK.**
+9. Selecione **OK.**
 
     ![](images3/media/image31.png)
 
@@ -389,37 +379,37 @@ A caixa de diálogo Mesclar é aberta com Customers selecionada como a tabela su
 
     Não precisamos de todas as colunas na tabela Customer. Vamos selecionar apenas aquelas de que precisamos.
 
-13. No menu de consulta de Visual, selecione **Gerenciar colunas -\> Escolher colunas**.
+13. No menu de consulta de Visual, selecione **Gerenciar colunas -> Escolher colunas**.
 
     ![](images3/media/image33.png)
 
 14. A caixa de diálogo Escolher colunas é aberta. **Selecione** as colunas a seguir.
 
-    a.  ResellerID
+    a. ResellerID
 
-    b.  ResellerName
+    b. ResellerName
 
-    c.  PostalCityID
+    c. PostalCityID
 
-    d.  PhoneNumber
+    d. PhoneNumber
 
-    e.  FaxNumber
+    e. FaxNumber
 
-    f.  WebsiteURL
+    f. WebsiteURL
 
-    g.  DeliveryAddressLine1
+    g. DeliveryAddressLine1
 
-    h.  DeliveryAddressLine2
+    h. DeliveryAddressLine2
 
-    i.  DeliveryPostalCode
+    i. DeliveryPostalCode
 
-    j.  PostalAddressLine1
+    j. PostalAddressLine1
 
-    k.  PostalAddressLine2
+    k. PostalAddressLine2
 
-    l.  PostalPostalCode
+    l. PostalPostalCode
 
-    m.  BuyingGroupName
+    m. BuyingGroupName
 
 15. Selecione **OK**.
 
@@ -459,26 +449,26 @@ A caixa de diálogo Mesclar é aberta com Customers selecionada como a tabela su
 
     ![](images3/media/image39.png)
 
-### Tarefa 4: Criar a exibição Sales usando uma consulta Visual
+## Tarefa 4: Criar a exibição Sales usando uma consulta Visual
 
 Vamos criar a exibição Sales, mesclando as tabelas InvoiceLineItems e Invoices com a exibição Reseller. Temos essa consulta no Power BI Desktop. Vamos copiar o código do Editor Avançado. Mas antes de copiar o código, precisamos criar uma tabela de mesclagem usando a consulta Visual, pois a criação de uma consulta em branco não é possível na
 consulta Visual. Vamos testar esse método.
 
-1.  No menu superior, clique no menu suspenso ao lado de **Nova consulta SQL** e depois selecione **Nova consulta visual**.
+1. No menu superior, clique no menu suspenso ao lado de **Nova consulta SQL** e depois selecione **Nova consulta visual**.
 
     ![](images3/media/image40.png)
 
-2.  Na seção **Explorer -\> Table**, precisamos adicionar as tabelas ao painel de Consulta Visual. Clique nas reticências ao lado da tabela **InvoiceLineItems** e selecione **Inserir na tela**.
+2. Na seção **Explorer -> Table**, precisamos adicionar as tabelas ao painel de Consulta Visual. Clique nas reticências ao lado da tabela **InvoiceLineItems** e selecione **Inserir na tela**.
 
-3.  Repita as mesmas etapas para a tabela **Invoices.**
+3. Repita as mesmas etapas para a tabela **Invoices.**
 
-4.  Na seção **Explorer -\> Views**, precisamos adicionar as tabelas ao painel de Consulta Visual. Clique nas reticências ao lado da tabela **Reseller** e selecione **Inserir na tela**.
+4. Na seção **Explorer -> Views**, precisamos adicionar as tabelas ao painel de Consulta Visual. Clique nas reticências ao lado da tabela **Reseller** e selecione **Inserir na tela**.
 
 5. No Editor de consulta Visual, selecione o ícone **Abrir em popup** para abrir o Editor do Power Query.
 
     ![](images3/media/image41.png)
 
-6. Com a consulta **InvoiceLineItems** selecionada, na faixa de opções, selecione **Página Inicial (2) -\> Combinar (3) -\> menu suspenso Mesclar consultas (4) -\> Mesclar consultas como novas (5)**. A caixa de diálogo Mesclar consultas é aberta.
+6. Com a consulta **InvoiceLineItems** selecionada, na faixa de opções, selecione **Página Inicial (2) -> Combinar (3) -> menu suspenso Mesclar consultas (4) -> Mesclar consultas como novas (5)**. A caixa de diálogo Mesclar consultas é aberta.
 
     ![](images3/media/image42.png)
 
@@ -498,19 +488,19 @@ consulta Visual. Vamos testar esse método.
 
 12. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que está na pasta **Reports** na área de trabalho do seu ambiente de laboratório.
 
-13. Na faixa de opções, selecione **Página Inicial -\> Transformar dados**. A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
+13. Na faixa de opções, selecione **Página Inicial -> Transformar dados**. A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
 
     ![](images3/media/image44.png)
 
 14. No painel esquerdo **Consultas**, na pasta **ADLSData** **(1)**, selecione a consulta **Sales (2).**
 
-15. Na faixa de opções, selecione **Página Inicial -\> Editor Avançado (3)**. A caixa de diálogo Editor Avançado é aberta.
+15. Na faixa de opções, selecione **Página Inicial -> Editor Avançado (3)**. A caixa de diálogo Editor Avançado é aberta.
 
     ![](images3/media/image45.png)
 
-    > **Observação:** se você não conseguir encontrar o Editor Avançado, poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
+    > **Observação:** se você não conseguir encontrar o Editor Avançado, poderá acessá-lo em **Início -> Consulta -> Editor Avançado**.
 
-16. **Selecione código da Linha 3** (#\"Expanded Invoice\"\...) até a última linha de código.
+16. **Selecione código da Linha 3** (#"Expanded Invoice"...) até a última linha de código.
 
 17. **Clique com o botão direito do mouse** e selecione **Copy**.
 
@@ -522,13 +512,13 @@ consulta Visual. Vamos testar esse método.
 
 20. Verifique se você tem a consulta **Merge** selecionada.
 
-21. Na faixa de opções, selecione **Página Inicial -\> Editor
+21. Na faixa de opções, selecione **Página Inicial -> Editor
     Avançado**. A caixa de diálogo Editor Avançado é aberta.
 
     ![](images3/media/image47.png)
 
 22. No **fim da linha 2, adicione uma vírgula** (Source =
-    Table.NestedJoin(InvoiceLineItems, {\"InvoiceID\"}, Invoices, {\"InvoiceID\"}, \"Invoices\", JoinKind.Inner),
+    Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
 
 23. Pressione **Enter** para começar uma nova linha.
 
@@ -593,60 +583,60 @@ consulta Visual. Vamos testar esse método.
     ![](images3/media/image53.png)
 
 
-### Tarefa 5: Criar exibição Product usando uma consulta Visual
+## Tarefa 5: Criar exibição Product usando uma consulta Visual
 
 Vamos criar a exibição Product, mesclando as tabelas **ProductItem**,
 **ProductItemGroup** e **ProductGroups**. Para continuar, vamos copiar o
 código no Editor Avançado.
 
-1.  No menu superior, clique no menu suspenso ao lado de **Nova consulta
+1. No menu superior, clique no menu suspenso ao lado de **Nova consulta
     SQL (1)** e depois selecione **Nova consulta visual (2)**.
 
     ![](images3/media/image54.png)
 
-2.  Na seção Explorer, precisamos adicionar as tabelas ao painel de
+2. Na seção Explorer, precisamos adicionar as tabelas ao painel de
     Consulta Visual. Clique nas reticências ao lado da tabela
     **ProductItem (1)** e selecione **Inserir na tela (2)**.
 
     ![](images3/media/image55.png)
 
-3.  Repita as mesmas etapas para as tabelas **ProductItemGroup** e
+3. Repita as mesmas etapas para as tabelas **ProductItemGroup** e
     **ProductGroups**.
 
-4.  No Editor de consulta Visual, selecione o ícone **Abrir em popup**
+4. No Editor de consulta Visual, selecione o ícone **Abrir em popup**
     para abrir o Editor do Power Query.
 
     ![](images3/media/image56.png)
 
-5.  Com a consulta **ProductItem** selecionada **(1)**, na faixa de
-    opções, selecione **Página Inicial (2) -\> Combinar (3) -\> menu
-    suspenso Mesclar consultas (4) -\>Mesclar consultas como novas
+5. Com a consulta **ProductItem** selecionada **(1)**, na faixa de
+    opções, selecione **Página Inicial (2) -> Combinar (3) -> menu
+    suspenso Mesclar consultas (4) ->Mesclar consultas como novas
     (5)**. A caixa de diálogo Mesclar é aberta.
 
     ![](images3/media/image57.png)
 
-6.  Na **Tabela esquerda para mesclagem**, selecione **ProductItem**.
+6. Na **Tabela esquerda para mesclagem**, selecione **ProductItem**.
 
-7.  Na **Tabela direita para mesclagem**, selecione
+7. Na **Tabela direita para mesclagem**, selecione
     **ProductItemGroup**.
 
-8.  Selecione as colunas **StockItemID** das duas tabelas. Vamos usar
+8. Selecione as colunas **StockItemID** das duas tabelas. Vamos usar
     esta coluna.
 
-9.  Selecione **Externa esquerda** como **Tipo de junção**.
+9. Selecione **Externa esquerda** como **Tipo de junção**.
 
 10. Selecione **OK.** Uma nova consulta Merge é criada.
 
     ![](images3/media/image58.png)
 
-11. Com a consulta Merge selecionada, selecione **Página Inicial - \>
+11. Com a consulta Merge selecionada, selecione **Página Inicial - >
     Editor Avançado** na faixa de opções. A caixa de diálogo Editor
     Avançado é aberta.
 
     ![](images3/media/image59.png)
 
     >**Observação:** se você não conseguir encontrar o Editor Avançado,
-poderá acessá-lo em **Início -\> Consulta -\> Editor Avançado**.
+poderá acessá-lo em **Início -> Consulta -> Editor Avançado**.
 
 12. **Selecione todo o código** no Editor Avançado e **exclua-o**.
 
@@ -708,16 +698,15 @@ criar o Atalho para outro Lakehouse.
 # Referências
 
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais
-funções disponíveis\
-no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links
-para ótimos recursos.
+funções disponíveis no Microsoft Fabric. No menu do serviço, a seção
+Ajuda (?) tem links para ótimos recursos.
 
-![](images3/media/image64.png)
+![](images1/media/image28.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas
 do Microsoft Fabric.
 
-- Veja a postagem do blog para ler o [anúncio completo de GA do
+- Veja a postagem do blog para ler o [anúncio completo da GA do
   Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
 - Explore o Fabric por meio do [Tour
@@ -743,16 +732,16 @@ do Microsoft Fabric.
 Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 
 - [Experiência do Data Factory no blog do
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+  Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Experiência do Synapse Data Engineering no blog do
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
 - [Experiência do Synapse Data Science no blog do
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
 - [Experiência do Synapse Data Warehousing no blog do
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+  Fabric](https://aka.ms/Fabric-DW-Blog)
 
 - [Experiência do Synapse Real-Time Analytics no blog do
   Fabric](https://aka.ms/Fabric-RTA-Blog)
@@ -760,7 +749,7 @@ Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 - [Blog de comunicado do Power BI](https://aka.ms/Fabric-PBI-Blog)
 
 - [Experiência do Data Activator no blog do
-  Fabric](https://aka.ms/Fabric-DA-Blog) 
+  Fabric](https://aka.ms/Fabric-DA-Blog)
 
 - [Administração e governança no blog do
   Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
@@ -770,65 +759,63 @@ Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 - [Blog de integração do Dataverse e Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Todos os direitos reservados.
->
-> Ao usar esta demonstração/este laboratório, você concorda com os
-> seguintes termos:
->
-> A tecnologia/funcionalidade descrita nesta demonstração/neste
-> laboratório é fornecida pela Microsoft Corporation para obter seus
-> comentários e oferecer uma experiência de aprendizado. Você pode usar
-> a demonstração/o laboratório somente para avaliar tais funcionalidades
-> e recursos de tecnologia e fornecer comentários à Microsoft. Você não
-> pode usá-los para nenhuma outra finalidade. Você não pode modificar,
-> copiar, distribuir, transmitir, exibir, executar, reproduzir,
-> publicar, licenciar, criar obras derivadas, transferir nem vender esta
-> demonstração/este laboratório ou qualquer parte deles.
->
-> A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
-> PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
-> REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
->
-> ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS
-> E FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
-> RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
-> CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA.
-> A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
-> LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS
-> RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL.
-> ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU
-> CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E
-> FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
->
-> **COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
-> tecnologia, as funcionalidades e/ou os conceitos descritos nesta
-> demonstração/neste laboratório à Microsoft, você concederá
-> à Microsoft, sem encargos, o direito de usar, compartilhar e
-> comercializar seus comentários de qualquer forma e para qualquer
-> finalidade. Você também concede a terceiros, sem encargos, quaisquer
-> direitos de patente necessários para que seus produtos, suas
-> tecnologias e seus serviços usem ou interajam com partes específicas
-> de um software ou um serviço da Microsoft que inclua os comentários.
-> Você não fornecerá comentários que estejam sujeitos a uma licença que
-> exija que a Microsoft licencie seu software ou sua documentação para
-> terceiros em virtude da inclusão de seus comentários neles. Esses
-> direitos continuarão em vigor após o término do contrato.
->
-> POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS
-> GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO,
-> INCLUINDO TODAS AS GARANTIAS\
-> E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM ELAS EXPRESSAS, IMPLÍCITAS OU
-> ESTATUTÁRIAS,\
-> E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO.
-> A MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO DOS RESULTADOS
-> DERIVADOS DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS
-> INFORMAÇÕES CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER
-> FINALIDADE.
->
-> **AVISO DE ISENÇÃO DE RESPONSABILIDADE**
->
-> Esta demonstração/este laboratório contém apenas uma parte dos novos
-> recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
-> podem ser alterados em versões futuras do produto. Nesta
-> demonstração/neste laboratório, você aprenderá sobre alguns dos novos
-> recursos, mas não todos.
+© 2026 Microsoft Corporation. Todos os direitos reservados.
+
+Ao usar esta demonstração/este laboratório, você concorda com os
+seguintes termos:
+
+A tecnologia/funcionalidade descrita nesta demonstração/neste
+laboratório é fornecida pela Microsoft Corporation para obter seus
+comentários e oferecer uma experiência de aprendizado. Você pode usar
+a demonstração/o laboratório somente para avaliar tais funcionalidades
+e recursos de tecnologia e fornecer comentários à Microsoft. Você não
+pode usá-los para nenhuma outra finalidade. Você não pode modificar,
+copiar, distribuir, transmitir, exibir, executar, reproduzir,
+publicar, licenciar, criar obras derivadas, transferir nem vender esta
+demonstração/este laboratório ou qualquer parte deles.
+
+A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER
+PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU
+REDISTRIBUIÇÃO ADICIONAL É EXPRESSAMENTE PROIBIDA.
+
+ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS
+E FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS
+RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM
+CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA.
+A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE
+LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS
+RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL.
+ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU
+CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E
+FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
+
+**COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de
+tecnologia, as funcionalidades e/ou os conceitos descritos nesta
+demonstração/neste laboratório à Microsoft, você concederá
+à Microsoft, sem encargos, o direito de usar, compartilhar e
+comercializar seus comentários de qualquer forma e para qualquer
+finalidade. Você também concede a terceiros, sem encargos, quaisquer
+direitos de patente necessários para que seus produtos, suas
+tecnologias e seus serviços usem ou interajam com partes específicas
+de um software ou um serviço da Microsoft que inclua os comentários.
+Você não fornecerá comentários que estejam sujeitos a uma licença que
+exija que a Microsoft licencie seu software ou sua documentação para
+terceiros em virtude da inclusão de seus comentários neles.
+Esses direitos continuarão em vigor após o término do contrato.
+
+POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS
+GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO,
+INCLUINDO TODAS AS GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM
+ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS,
+E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A
+MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS
+DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES
+CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
+
+**AVISO DE ISENÇÃO DE RESPONSABILIDADE**
+
+Esta demonstração/este laboratório contém apenas uma parte dos novos
+recursos e aprimoramentos do Microsoft Power BI. Alguns dos recursos
+podem ser alterados em versões futuras do produto. Nesta
+demonstração/neste laboratório, você aprenderá sobre alguns dos novos
+recursos, mas não todos.
