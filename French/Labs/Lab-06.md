@@ -50,21 +50,21 @@ modélisation dans le service.
 
     ![](../media/Lab-06/image6.png)
 
-Vous pouvez explorer les données avant de créer un modèle de données à
-l'aide de SQL. Deux options permettent d'utiliser SQL. La première
-option est une requête visuelle, que nous avons utilisée dans le labo
-précédent. L'option 2 consiste à écrire du code T-SQL. Il s'agit d'une
-option conviviale pour les développeurs. Explorons cela.
+    Vous pouvez explorer les données avant de créer un modèle de données à
+    l'aide de SQL. Deux options permettent d'utiliser SQL. La première
+    option est une requête visuelle, que nous avons utilisée dans le labo
+    précédent. L'option 2 consiste à écrire du code T-SQL. Il s'agit d'une
+    option conviviale pour les développeurs. Explorons cela.
 
-Supposons que vous souhaitiez connaître rapidement les unités (Units)
-vendues par fournisseur (Supplier) à l'aide de SQL.
+    Supposons que vous souhaitiez connaître rapidement les unités (Units)
+    vendues par fournisseur (Supplier) à l'aide de SQL.
 
-Dans le point de terminaison analytique SQL de la lakehouse, notez que
-vous pouvez afficher les tables dans le volet gauche. Si vous développez
-les tables, vous pouvez afficher les colonnes qui composent la table. En
-outre, des options permettent de créer des vues, fonctions et procédures
-stockées SQL. Si vous avez une expérience SQL, n'hésitez pas à explorer
-ces options. Essayons d'écrire une requête SQL simple.
+    Dans le point de terminaison analytique SQL de la lakehouse, notez que
+    vous pouvez afficher les tables dans le volet gauche. Si vous développez
+    les tables, vous pouvez afficher les colonnes qui composent la table. En
+    outre, des options permettent de créer des vues, fonctions et procédures
+    stockées SQL. Si vous avez une expérience SQL, n'hésitez pas à explorer
+    ces options. Essayons d'écrire une requête SQL simple.
 
 4. Dans le **menu supérieur,** sélectionnez **Nouvelle requête SQL** ou
     cliquez sur **Nouvelle requête SQL** au centre de l'écran. Vous êtes
@@ -77,16 +77,14 @@ ces options. Essayons d'écrire une requête SQL simple.
     parvenir, elle joint la table Sales avec les tables Product et
     Supplier.
 
-[SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
-
-[FROM dbo.Sales s]{.mark}
-
-[JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
-
-[JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
-
-[GROUP BY su.SupplierName]{.mark}
-
+    ```
+    SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
+    ```
+    
 6. Cliquez sur **Run** dans le menu de l'éditeur SQL pour afficher les
     résultats.
 
@@ -119,12 +117,12 @@ ces options. Essayons d'écrire une requête SQL simple.
 3. La boîte de dialogue **Visualiser les résultats** s'ouvre alors.
     Cliquez sur **Continuer**.
 
-La boîte de dialogue **Visualiser les résultats** s'ouvre alors et
-ressemble à la vue d'état Power BI Desktop. Elle affiche toutes les
-fonctionnalités disponibles dans la vue d'état Power BI Desktop : vous
-pouvez mettre en forme la page, sélectionner différents visuels, mettre
-en forme des visuels, ajouter des filtres, etc. Nous n'allons pas
-explorer ces options dans ce cours.
+    La boîte de dialogue **Visualiser les résultats** s'ouvre alors et
+    ressemble à la vue d'état Power BI Desktop. Elle affiche toutes les
+    fonctionnalités disponibles dans la vue d'état Power BI Desktop : vous
+    pouvez mettre en forme la page, sélectionner différents visuels, mettre
+    en forme des visuels, ajouter des filtres, etc. Nous n'allons pas
+    explorer ces options dans ce cours.
 
 4. Développez le volet **Données**, puis **SQL query 1**.
 
@@ -152,7 +150,7 @@ explorer ces options dans ce cours.
 
     ![](../media/Lab-06/image12.png)
 
-Vous êtes alors redirigé vers l'écran de requête SQL.
+    Vous êtes alors redirigé vers l'écran de requête SQL.
 
 # Lakehouse : modélisation sémantique
 
@@ -199,15 +197,15 @@ incorrect.](../media/Lab-06/image14.png)
 
     ![](../media/Lab-06/image15.png)
 
-Vous allez accéder au nouveau modèle sémantique avec les tables
-sélectionnées. N'hésitez pas à **réorganiser** les tables si nécessaire.
-Notez que certaines tables (Geo, Reseller, Sales et Product) comportent
-un symbole d'avertissement en haut de la table à droite. En effet, il
-s'agit de vues. Tous les visuels créés avec des champs provenant de ces
-vues sont en mode DirectQuery et non en mode Direct Lake.
+    Vous allez accéder au nouveau modèle sémantique avec les tables
+    sélectionnées. N'hésitez pas à **réorganiser** les tables si nécessaire.
+    Notez que certaines tables (Geo, Reseller, Sales et Product) comportent
+    un symbole d'avertissement en haut de la table à droite. En effet, il
+    s'agit de vues. Tous les visuels créés avec des champs provenant de ces
+    vues sont en mode DirectQuery et non en mode Direct Lake.
 
-**Remarque** **:** le mode Direct Lake est plus rapide que le mode
-DirectQuery.
+    >**Remarque** **:** le mode Direct Lake est plus rapide que le mode
+    DirectQuery.
 
 ### Tâche 4 : créer des relations
 
@@ -281,20 +279,20 @@ créé, rendez-vous à l'endroit approprié
     dans la table **Sales** et la valeur **StockItemID** dans la table
     **Product**.
 
-**Remarque :** toutes nos mises à jour sont enregistrées
-automatiquement.
+    >**Remarque :** toutes nos mises à jour sont enregistrées
+    automatiquement.
 
-**Point de contrôle :** votre modèle devrait comporter les trois
-relations entre les tables Sales et Reseller, les tables Sales et Date,
-et les tables Sales et Product, comme illustré dans la capture d'écran
-ci-dessous :
+    **Point de contrôle :** votre modèle devrait comporter les trois
+    relations entre les tables Sales et Reseller, les tables Sales et Date,
+    et les tables Sales et Product, comme illustré dans la capture d'écran
+    ci-dessous :
 
     ![](../media/Lab-06/image23.png)
 
-Pour gagner du temps, nous n'allons pas créer toutes les relations. Si
-le temps le permet, vous pouvez suivre la section facultative à la fin
-du labo. La section facultative passe en revue les étapes permettant de
-créer les relations restantes.
+    Pour gagner du temps, nous n'allons pas créer toutes les relations. Si
+    le temps le permet, vous pouvez suivre la section facultative à la fin
+    du labo. La section facultative passe en revue les étapes permettant de
+    créer les relations restantes.
 
 ### Tâche 5 : créer des mesures
 
@@ -374,13 +372,13 @@ de bord Sales.
 
     ![](../media/Lab-06/image27.png)
 
-Encore une fois, pour gagner du temps, nous n'allons pas créer toutes
-les mesures. Si le temps le permet, vous pouvez suivre la section
-facultative à la fin du labo. La section facultative passe en revue les
-étapes permettant de créer les mesures restantes.
+    Encore une fois, pour gagner du temps, nous n'allons pas créer toutes
+    les mesures. Si le temps le permet, vous pouvez suivre la section
+    facultative à la fin du labo. La section facultative passe en revue les
+    étapes permettant de créer les mesures restantes.
 
-Nous avons créé un modèle sémantique et l'étape suivante consiste à
-créer un état. Nous allons le faire dans le prochain labo.
+    Nous avons créé un modèle sémantique et l'étape suivante consiste à
+    créer un état. Nous allons le faire dans le prochain labo.
 
 ### Tâche 6 : section facultative - Créer des relations
 
@@ -468,8 +466,8 @@ Ajoutons les relations restantes.
 
 25. Cliquez sur **Enregistrer**.
 
-**Point de contrôle :** la boîte de dialogue Gérer les relations devrait
-ressembler à la capture d'écran ci-dessous.
+    **Point de contrôle :** la boîte de dialogue Gérer les relations devrait
+    ressembler à la capture d'écran ci-dessous.
 
     ![](../media/Lab-06/image32.png)
 
