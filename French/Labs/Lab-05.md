@@ -86,8 +86,8 @@ Fournisseur.
 
     ![](../media/Lab-05/image8.png)
 
-**Remarque :** une fenêtre (ou un panneau) apparaîtra sur le côté droit,
-affichant une liste des actualisations
+    >**Remarque :** une fenêtre (ou un panneau) apparaîtra sur le côté droit,
+    affichant une liste des actualisations
 
 6. Vous remarquerez qu'une seule actualisation s'est exécutée lorsque
     nous avons sélectionné l'option **Enregistrer et exécuter** dans le
@@ -99,15 +99,15 @@ affichant une liste des actualisations
 
 7. Cliquez sur le lien **Heure de début**.
 
-**Remarque :** l'heure de début est différente pour vous.
+    >**Remarque :** l'heure de début est différente pour vous.
 
     ![](../media/Lab-05/image10.png)
 
-L'écran Détails s'ouvre alors. Celui-ci contient des détails sur
-l'actualisation. Cela répertorie l'heure de début, l'heure de fin et la
-durée. Il répertorie également les tables/activités actualisées. En cas
-d'échec, vous pouvez cliquer sur le nom de la table/l'activité pour
-l'examiner plus en détail.
+    L'écran Détails s'ouvre alors. Celui-ci contient des détails sur
+    l'actualisation. Cela répertorie l'heure de début, l'heure de fin et la
+    durée. Il répertorie également les tables/activités actualisées. En cas
+    d'échec, vous pouvez cliquer sur le nom de la table/l'activité pour
+    l'examiner plus en détail.
 
     ![](../media/Lab-05/image11.png)
 
@@ -151,8 +151,8 @@ l'examiner plus en détail.
 15. Pour la propriété **Heure** nous pouvons spécifier **12:00 AM (2)**
     puisque nous voulons que cela se passe à minuit
 
-**Remarque :** en cliquant sur le lien Ajouter un autre horaire, vous
-pouvez ajouter plusieurs heures d'actualisation.
+    >**Remarque :** en cliquant sur le lien Ajouter un autre horaire, vous
+    pouvez ajouter plusieurs heures d'actualisation.
 
 16. Nous pouvons également spécifier une **date et heure de début (3)**
     ainsi qu'une **date et une heure de fin (4)**. Pour ce scénario,
@@ -170,10 +170,10 @@ pouvez ajouter plusieurs heures d'actualisation.
 
     ![](../media/Lab-05/image16.png)
 
-Comme indiqué précédemment, nous devons créer une logique personnalisée
-pour gérer le scénario dans lequel le fichier collaborateur dans
-SharePoint n'est pas livré à temps. Résolvons ce problème à l'aide d'un
-pipeline.
+    Comme indiqué précédemment, nous devons créer une logique personnalisée
+    pour gérer le scénario dans lequel le fichier collaborateur dans
+    SharePoint n'est pas livré à temps. Résolvons ce problème à l'aide d'un
+    pipeline.
 
 # Pipeline
 
@@ -192,15 +192,15 @@ pipeline.
 
     ![](../media/Lab-05/image18.png)
 
-Vous êtes alors redirigé vers la **page Pipeline**. Si vous avez utilisé
-Azure Data Factory, cet écran vous est familier. Présentons rapidement
-la disposition.
+    Vous êtes alors redirigé vers la **page Pipeline**. Si vous avez utilisé
+    Azure Data Factory, cet écran vous est familier. Présentons rapidement
+    la disposition.
 
-Vous vous trouvez sur l'écran d'**Accueil**. Le menu supérieur comporte
-des options permettant d'ajouter les activités couramment utilisées :
-valider, exécuter un pipeline et afficher l'historique d'exécution.
-De plus, le volet central comporte des options rapides permettant de
-commencer à créer le pipeline.
+    Vous vous trouvez sur l'écran d'**Accueil**. Le menu supérieur comporte
+    des options permettant d'ajouter les activités couramment utilisées :
+    valider, exécuter un pipeline et afficher l'historique d'exécution.
+    De plus, le volet central comporte des options rapides permettant de
+    commencer à créer le pipeline.
 
     ![](../media/Lab-05/image19.png)
 
@@ -222,10 +222,10 @@ commencer à créer le pipeline.
     vous permettent d'afficher le code au format JSON. En outre, des
     options vous permettent d'aligner automatiquement les activités.
 
-**Remarque :** Si vous disposez d'un arrière-plan JSON à la fin du labo,
-n'hésitez pas à cliquer sur Afficher le code JSON. Ici, notez que toute
-l'orchestration que vous effectuez à l'aide de la vue de conception peut
-également être écrite au format JSON.
+    >**Remarque :** Si vous disposez d'un arrière-plan JSON à la fin du labo,
+    n'hésitez pas à cliquer sur Afficher le code JSON. Ici, notez que toute
+    l'orchestration que vous effectuez à l'aide de la vue de conception peut
+    également être écrite au format JSON.
 
     ![](../media/Lab-05/image21.png)
 
@@ -244,8 +244,8 @@ utiliser.
     données df_People_SharePoint. Dans le **volet inférieur**, cliquez
     sur **Paramètres**.
 
-*Remarque : il peut être nécessaire de faire glisser le volet inférieur
-vers le haut pour afficher les paramètres.*
+    >**Remarque:** il peut être nécessaire de faire glisser le volet inférieur
+    vers le haut pour afficher les paramètres.*
 
     ![](../media/Lab-05/image22.png)
 
@@ -257,9 +257,9 @@ vers le haut pour afficher les paramètres.*
     exécutée, elle va actualiser **df_People_SharePoint**.
     C'était facile, non ?
 
-Dans notre scénario, les données collaborateur ne sont pas mises à jour
-dans les délais. Parfois, il y a un retard. Voyons si nous pouvons nous
-adapter à cela.
+    Dans notre scénario, les données collaborateur ne sont pas mises à jour
+    dans les délais. Parfois, il y a un retard. Voyons si nous pouvons nous
+    adapter à cela.
 
     ![](../media/Lab-05/image23.png)
 
@@ -279,10 +279,10 @@ adapter à cela.
     **valeur par défaut** telle quelle, ce qui devrait laisser
     suffisamment de temps au flux de données pour s'actualiser.
 
-**Remarque :** compte tenu du fait que les données ne sont pas
-disponibles dans les délais, définissons l'activité afin qu'elle se
-réexécute toutes les 10 minutes, trois fois. Si elle échoue également
-à la troisième tentative, un échec est signalé.
+    >**Remarque :** compte tenu du fait que les données ne sont pas
+    disponibles dans les délais, définissons l'activité afin qu'elle se
+    réexécute toutes les 10 minutes, trois fois. Si elle échoue également
+    à la troisième tentative, un échec est signalé.
 
 10. Définissez le champ **Nombre de nouvelles tentatives** sur **3**.
 
@@ -296,15 +296,15 @@ réexécute toutes les 10 minutes, trois fois. Si elle échoue également
 
     ![](../media/Lab-05/image24.png)
 
-Notez les avantages d'utiliser le pipeline par rapport à la définition
-du flux de données sur une actualisation planifiée (comme nous l'avons
-fait pour le flux de données précédent) :
+    Notez les avantages d'utiliser le pipeline par rapport à la définition
+    du flux de données sur une actualisation planifiée (comme nous l'avons
+    fait pour le flux de données précédent) :
 
-- Le pipeline permet d'effectuer plusieurs tentatives avant l'échec de
-  l'actualisation.
+    - Le pipeline permet d'effectuer plusieurs tentatives avant l'échec de
+    l'actualisation.
 
-- Le pipeline offre la possibilité d'effectuer d'autres tâches, en plus
-  d'actualiser le flux de données
+    - Le pipeline offre la possibilité d'effectuer d'autres tâches, en plus
+    d'actualiser le flux de données
 
 ### Tâche 4 : créer un pipeline
 
@@ -338,11 +338,11 @@ en créant un pipeline.
 
 3. Dans la liste des activités, cliquez sur **Until**.
 
-**Until** : activité permettant d'itérer jusqu'à ce qu'une condition
-soit remplie.
+    **Until** : activité permettant d'itérer jusqu'à ce qu'une condition
+    soit remplie.
 
-Dans notre scénario, nous allons itérer et actualiser le flux de données
-jusqu'à ce qu'il réussisse ou nous effectuons trois tentatives.
+    Dans notre scénario, nous allons itérer et actualiser le flux de données
+    jusqu'à ce qu'il réussisse ou nous effectuons trois tentatives.
 
     ![](../media/Lab-05/image27.png)
 
@@ -365,8 +365,8 @@ jusqu'à ce qu'il réussisse ou nous effectuons trois tentatives.
 
 6. Définissez le champ **Valeur par défaut** sur **0**.
 
-**Remarque :** nous ajoutons le préfixe var aux noms des variables, afin
-qu'il soit facile de les trouver, ce qui est une bonne pratique.
+    >**Remarque :** nous ajoutons le préfixe var aux noms des variables, afin
+    qu'il soit facile de les trouver, ce qui est une bonne pratique.
 
     ![](../media/Lab-05/image28.png)
 
@@ -395,8 +395,8 @@ qu'il soit facile de les trouver, ce qui est une bonne pratique.
         l'actualisation du flux de données échoue
         (soit 5 minutes/300 secondes, soit 15 minutes/900 secondes).
 
-**Remarque :** assurez-vous qu'il n'y a pas d'espace avant ou après le
-nom de la variable.
+    >**Remarque :** assurez-vous qu'il n'y a pas d'espace avant ou après le
+    nom de la variable.
 
     ![](../media/Lab-05/image29.png)
 
@@ -426,10 +426,10 @@ nom de la variable.
 
     ![](../media/Lab-05/image31.png)
 
-Nous devons écrire une expression qui s'exécute jusqu'à ce que la valeur
-de **varCounter soit 3** ou** **la valeur **de varIsSuccess soit Oui.**
-(varCounter et varIsSuccess sont les variables que nous venons de
-créer.)
+    Nous devons écrire une expression qui s'exécute jusqu'à ce que la valeur
+    de **varCounter soit 3** ou** **la valeur **de varIsSuccess soit Oui.**
+    (varCounter et varIsSuccess sont les variables que nous venons de
+    créer.)
 
 8. La boîte de dialogue **Générateur d'expressions de pipeline**
     s'ouvre alors. Dans la moitié inférieure de la boîte de dialogue se
@@ -481,9 +481,9 @@ créer.)
     **equals**. Notez que cette mention est ajoutée à la zone de texte
     de l'expression dynamique.
 
-**Remarque :** Votre fonction devrait ressembler à **@or(equals())**.
-La fonction equals utilise également deux paramètres. Nous allons
-vérifier si la variable varCounter est égale à 3.
+    >**Remarque :** Votre fonction devrait ressembler à **@or(equals())**.
+    La fonction equals utilise également deux paramètres. Nous allons
+    vérifier si la variable varCounter est égale à 3.
 
     ![](../media/Lab-05/image34.png)
 
@@ -529,8 +529,8 @@ vérifier si la variable varCounter est égale à 3.
 
 23. Votre expression devrait être :
 
-**@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),
-variables('varSuccess')))**
+    **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'),
+    variables('varSuccess')))**
 
 24. Cliquez sur **OK**.
 
@@ -595,21 +595,21 @@ varIsSuccess sur Oui.
 4. Dans le champ **Description**, saisissez **Set variable varIsSuccess
     to Yes**.
 
-**Remarque :** survolez l'**activité Flux de données**. À droite de la
-zone de l'activité se trouvent quatre icônes. Elles permettent de se
-connecter à l'activité suivante en fonction du résultat de l'activité :
+    >**Remarque :** survolez l'**activité Flux de données**. À droite de la
+    zone de l'activité se trouvent quatre icônes. Elles permettent de se
+    connecter à l'activité suivante en fonction du résultat de l'activité :
 
-a. L'icône représentant une **flèche incurvée grise** permet d'ignorer
-    l'activité.
+    a. L'icône représentant une **flèche incurvée grise** permet d'ignorer
+        l'activité.
 
-b. L'icône représentant une **coche verte** est utilisée en cas de
-    réussite de l'activité.
+    b. L'icône représentant une **coche verte** est utilisée en cas de
+        réussite de l'activité.
 
-c. L'icône représentant une **croix rouge** est utilisée en cas d'échec
-    de l'activité.
+    c. L'icône représentant une **croix rouge** est utilisée en cas d'échec
+        de l'activité.
 
-d. L'icône représentant une **flèche droite bleue** est utilisée à la
-    fin de l'activité.
+    d. L'icône représentant une **flèche droite bleue** est utilisée à la
+        fin de l'activité.
 
 <!-- -->
 
@@ -654,11 +654,11 @@ d. L'icône représentant une **flèche droite bleue** est utilisée à la
 
     ![](../media/Lab-05/image44.png)
 
-Nous devons maintenant définir le compteur si l'activité Flux de données
-échoue. Dans le pipeline, nous ne pouvons pas auto-référencer une
-variable. Autrement dit, nous ne pouvons pas incrémenter la variable de
-compteur varCounter en ajoutant un à sa valeur (varCounter =
-varCounter + 1). Nous utilisons donc la variable varTempCounter.
+    Nous devons maintenant définir le compteur si l'activité Flux de données
+    échoue. Dans le pipeline, nous ne pouvons pas auto-référencer une
+    variable. Autrement dit, nous ne pouvons pas incrémenter la variable de
+    compteur varCounter en ajoutant un à sa valeur (varCounter =
+    varCounter + 1). Nous utilisons donc la variable varTempCounter.
 
 ### Tâche 10 : configurer une 2^e^ activité Définir une variable
 
@@ -697,15 +697,15 @@ varCounter + 1). Nous utilisons donc la variable varTempCounter.
 10. La boîte de dialogue Générateur d'expressions de pipeline s'ouvre
     alors. Saisissez **@add(variables('varCounter'),1)**
 
-**Remarque :** n'hésitez pas à saisir cette expression, à sélectionner
-les fonctions à l'aide du menu ou à la copier-coller. cette fonction
-définit la valeur de la variable varTempCounter sur la valeur
-de la variable varCounter plus un (varTempCounter = varCounter + 1).
+    >**Remarque :** n'hésitez pas à saisir cette expression, à sélectionner
+    les fonctions à l'aide du menu ou à la copier-coller. cette fonction
+    définit la valeur de la variable varTempCounter sur la valeur
+    de la variable varCounter plus un (varTempCounter = varCounter + 1).
 
     ![](../media/Lab-05/image46.png)
 
-Nous devons maintenant définir la valeur de la variable varCounter sur
-la valeur de varTempCounter.
+    Nous devons maintenant définir la valeur de la variable varCounter sur
+    la valeur de varTempCounter.
 
 ### Tâche 11 : configurer une 3^e^ activité Définir une variable
 
@@ -749,10 +749,10 @@ la valeur de varTempCounter.
 
     ![](../media/Lab-05/image48.png)
 
-**Remarque :** cette fonction définit la valeur de la variable
-varCounter sur la valeur de la variable varTempCounter (varCounter =
-varTempCounter). À la fin de chaque itération, varCounter
-et varTempCounter ont la même valeur.
+    >**Remarque :** cette fonction définit la valeur de la variable
+    varCounter sur la valeur de la variable varTempCounter (varCounter =
+    varTempCounter). À la fin de chaque itération, varCounter
+    et varTempCounter ont la même valeur.
 
 ### Tâche 12 : configurer l'activité Attente
 
@@ -791,55 +791,50 @@ varWaitTime.
 8. La boîte de dialogue Générateur d'expressions de pipeline s'ouvre
     alors. Saisissez
 
-> **@if(**
->
-> **greater(variables('varCounter'), 1),**
->
-> **if(equals(variables('varCounter'), 2),**
->
-> **mul(variables('varWaitTime'),15 ),**
->
-> **mul(variables('varWaitTime'), 0)**
->
-> **),**
->
-> **mul(variables('varWaitTime'),5 )**
->
-> **)**
+    ```
+    @if(
+        greater(variables('varCounter'), 1),
+        if(equals(variables('varCounter'), 2),
+            mul(variables('varWaitTime'),15 ),
+            mul(variables('varWaitTime'), 0)
+        ),
+        mul(variables('varWaitTime'),5 )
+    )
+    ```
 
-N'hésitez pas à saisir cette expression, à sélectionner les fonctions à
-l'aide du menu ou à la
-copier-coller.
+    N'hésitez pas à saisir cette expression, à sélectionner les fonctions à
+    l'aide du menu ou à la
+    copier-coller.
 
     ![](../media/Lab-05/image50.png)
 
-Nous utilisons ici deux nouvelles fonctions :
+    Nous utilisons ici deux nouvelles fonctions :
 
-- **greater :** utilise deux nombres comme paramètres et compare lequel
-  est le plus grand.
+    - **greater :** utilise deux nombres comme paramètres et compare lequel
+    est le plus grand.
 
-- **mul :** il s'agit d'une fonction de multiplication effectuant une
-  multiplication à l'aide de deux paramètres.
+    - **mul :** il s'agit d'une fonction de multiplication effectuant une
+    multiplication à l'aide de deux paramètres.
 
-L'expression est une instruction if imbriquée. Elle vérifie si la valeur
-de la variable varCounter est supérieure à 1.
+    L'expression est une instruction if imbriquée. Elle vérifie si la valeur
+    de la variable varCounter est supérieure à 1.
 
-Si tel est le cas, elle vérifie si la valeur de la variable varCounter
-est 2. Si tel est le cas, elle définit le temps d'attente sur la valeur
-varWaitTime multipliée par 15. N'oubliez pas que nous avions défini par
-défaut la valeur de la variable varWaitTime sur 60. Le temps d'attente
-serait donc 60*15 = 900 secondes. Si la valeur de la variable
-varCounter n'est pas 2 (et donc supérieure à 2, ce qui signifie que
-l'actualisation du flux de données a échoué trois fois, que nous avons
-terminé l'itération et que nous n'avons plus besoin d'attendre), le
-temps d'attente est défini sur varWaitTime * 0, soit 0. Si la valeur de
-la variable varCounter est 1, nous multiplions la valeur varWaitTime
-par 5. Le temps d'attente serait donc 60*5 = 300 secondes.
+    Si tel est le cas, elle vérifie si la valeur de la variable varCounter
+    est 2. Si tel est le cas, elle définit le temps d'attente sur la valeur
+    varWaitTime multipliée par 15. N'oubliez pas que nous avions défini par
+    défaut la valeur de la variable varWaitTime sur 60. Le temps d'attente
+    serait donc 60*15 = 900 secondes. Si la valeur de la variable
+    varCounter n'est pas 2 (et donc supérieure à 2, ce qui signifie que
+    l'actualisation du flux de données a échoué trois fois, que nous avons
+    terminé l'itération et que nous n'avons plus besoin d'attendre), le
+    temps d'attente est défini sur varWaitTime * 0, soit 0. Si la valeur de
+    la variable varCounter est 1, nous multiplions la valeur varWaitTime
+    par 5. Le temps d'attente serait donc 60*5 = 300 secondes.
 
 9. Cliquez sur **OK**.
 
-**Point de contrôle :** votre itérateur **Until** devrait ressembler à
-la capture d'écran ci-dessous.
+    **Point de contrôle :** votre itérateur **Until** devrait ressembler à
+    la capture d'écran ci-dessous.
 
     ![A screenshot of activities in Until
 activity](../media/Lab-05/image51.png)
@@ -861,10 +856,10 @@ activity](../media/Lab-05/image51.png)
 1. Nous pouvons tester le pipeline en cliquant sur **Accueil ->
     Exécuter**.
 
-> **Remarque :** l'actualisation du pipeline peut prendre quelques
-> minutes. Il s'agit d'un environnement de formation, donc le fichier
-> est toujours disponible dans SharePoint. Par conséquent, votre
-> pipeline n'échoue jamais.
+    >**Remarque :** l'actualisation du pipeline peut prendre quelques
+    > minutes. Il s'agit d'un environnement de formation, donc le fichier
+    > est toujours disponible dans SharePoint. Par conséquent, votre
+    > pipeline n'échoue jamais.
 
 2. Nous pouvons définir le pipeline afin qu'il s'exécute selon une
     planification. Dans le menu supérieur, cliquez sur **Accueil ->
@@ -887,10 +882,10 @@ activity](../media/Lab-05/image51.png)
 
 8. Définissez votre **Fuseau horaire**.
 
-**Remarque** **:** comme il s'agit d'un environnement de labo, vous
-pouvez définir le fuseau horaire sur votre fuseau horaire préféré. Dans
-un scénario réel, vous définissez le fuseau horaire en fonction
-de l'emplacement de votre source de données.
+    >**Remarque** **:** comme il s'agit d'un environnement de labo, vous
+    pouvez définir le fuseau horaire sur votre fuseau horaire préféré. Dans
+    un scénario réel, vous définissez le fuseau horaire en fonction
+    de l'emplacement de votre source de données.
 
 9. Cliquez sur **Enregistrer**.
 
@@ -902,15 +897,15 @@ de l'emplacement de votre source de données.
 11. Sélectionnez votre espace de travail Fabric **FAIAD_<username>**
     dans le panneau de gauche pour accéder à l'espace de travail**.**
 
-**Remarque :** sur l'écran Planifier, aucune option ne permet de
-notifier le succès ou l'échec (comme Planification de flux de données).
-La notification peut être effectuée en ajoutant une activité dans le
-pipeline. Nous ne le faisons pas dans ce labo, car il s'agit d'un
-environnement de labo.
+    >**Remarque :** sur l'écran Planifier, aucune option ne permet de
+    notifier le succès ou l'échec (comme Planification de flux de données).
+    La notification peut être effectuée en ajoutant une activité dans le
+    pipeline. Nous ne le faisons pas dans ce labo, car il s'agit d'un
+    environnement de labo.
 
-Nous avons planifié des actualisations pour les différentes sources de
-données. Nous allons créer un modèle sémantique avec des relations, des
-mesures et d'autres opérations de modélisation dans le prochain labo.
+    Nous avons planifié des actualisations pour les différentes sources de
+    données. Nous allons créer un modèle sémantique avec des relations, des
+    mesures et d'autres opérations de modélisation dans le prochain labo.
 
 # Références
 
@@ -918,7 +913,7 @@ Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions
 clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
 comporte des liens vers d'excellentes ressources.
 
-    ![](../media/Lab-05/image56.png)
+![](../media/Lab-05/image56.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos
 prochaines étapes avec Microsoft Fabric :
