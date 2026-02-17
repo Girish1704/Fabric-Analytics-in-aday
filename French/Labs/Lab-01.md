@@ -18,7 +18,7 @@ chaque capture d'écran, des sections sont mises en évidence avec des
 encadrés orange afin de souligner la ou les zones sur
 laquelle/lesquelles l'utilisateur doit se concentrer.
 
-**Remarque** **:** certaines captures d'écran peuvent être obsolètes en
+>**Remarque** **:** certaines captures d'écran peuvent être obsolètes en
 raison des mises à jour produit en cours.
 
 # Scénario/Énoncé du problème
@@ -111,7 +111,8 @@ Desktop pour comprendre les transformations et le modèle.
     apparaît, copiez le **nom d'utilisateur** et collez-le dans le champ
     **E-mail** de la boîte de dialogue, puis cliquez sur **Continuer**.
 
-    - Adresse e-mail/nom d'utilisateur :
+    - Adresse e-mail/nom d'utilisateur :<inject key="AzureAdUserEmail"></inject>
+
 
     ![](../media/Lab-01/image8.png)
 
@@ -119,14 +120,14 @@ Desktop pour comprendre les transformations et le modèle.
     connexion ; saisissez l'adresse e-mail/nom d'utilisateur suivant,
     puis cliquez sur **Suivant**.
 
-    - Adresse e-mail/nom d'utilisateur :
+    - Adresse e-mail/nom d'utilisateur :<inject key="AzureAdUserEmail"></inject>
 
     ![](../media/Lab-01/image9.png)
 
 4. Saisissez maintenant le **Passe d'accès temporaire** suivant et
     cliquez sur **Se connecter**.
 
-    - Passe d'accès temporaire :
+    - Passe d'accès temporaire :<inject key="AzureAdUserPassword"></inject>
 
     ![](../media/Lab-01/image10.png)
 
@@ -149,7 +150,7 @@ produits et revendeur.
 
   ![](../media/Lab-01/image12.jpeg)
 
-**Remarque :** dans cette formation, nous nous concentrons sur
+>**Remarque :** dans cette formation, nous nous concentrons sur
 l'acquisition, la transformation et la modélisation de données à l'aide
 des outils disponibles dans Fabric. Nous n'aborderons pas l'élaboration
 d'états ou la navigation dans les états. Consacrons quelques minutes
@@ -283,10 +284,10 @@ d'états ou la navigation dans les états. Consacrons quelques minutes
     de passe**. Les informations d'identification sont fournies
     ci-après. Une fois que vous avez terminé, cliquez sur **Connecter**.
 
-    - Adresse e-mail/Nom d'utilisateur : disponible dans l'onglet
-      Environnement
+    - Adresse e-mail/Nom d'utilisateur :<inject key="AzureAdUserEmail"></inject>
+      
 
-    - Mot de passe : disponible dans l'onglet Environnement
+    - Mot de passe :<inject key="AzureAdUserEmail"></inject>
 
 9. Cliquez sur la requête **ADLS Base Folder** dans la fenêtre de
     requêtes. En sélectionnant cette requête, vous devrez entrer les
@@ -299,9 +300,9 @@ d'états ou la navigation dans les états. Consacrons quelques minutes
     d'accès partagé (SAS)**, puis saisissez le **jeton SAS** fourni
     ci-dessous. Cliquez ensuite sur **Connecter**.
 
-    - **Jeton SAS :** Disponible dans l'onglet Environnement
+    - **Jeton SAS :** <inject key="Sas token"></inject>
 
-    ![](../media/Lab-01/image24.png)
+      ![](../media/Lab-01/image24.png)
 
 11. Notez que le dossier **ADLSData** comporte plusieurs dimensions :
     Geo, Product, Reseller et Date. Il comporte également des faits
@@ -331,11 +332,11 @@ d'états ou la navigation dans les états. Consacrons quelques minutes
     d'identification pour connecter toutes les tables sous Snowflake à
     Snowflake, puis cliquez sur **Connecter**.
 
-    - **Nom d'utilisateur Snowflake** : TE_SNOWFLAKE1
+    - **Nom d'utilisateur Snowflake:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Mot de passe Snowflake** : 8UpfRpExVDXv2AC1
+    - **Mot de passe Snowflake:** <inject key="SnowFlake Password" enableCopy="false" />
 
-      *Remarque : si vous avez des difficultés à vous connecter à Snowflake
+      >**Remarque** : si vous avez des difficultés à vous connecter à Snowflake
       avec les informations d'identification susmentionnées, veuillez utiliser
       les informations d'identification de secours fournies ci-après.*
 
@@ -363,10 +364,11 @@ d'états ou la navigation dans les états. Consacrons quelques minutes
     connecter**. Saisissez le nom d'utilisateur et le mot de passe
     fournis ci-dessous, puis cliquez sur Connecter.
 
-    - **Adresse e-mail/Nom d'utilisateur :** Disponible dans l'onglet
-      Environnement
+    - **Adresse e-mail/Nom d'utilisateur :** <inject key="AzureAdUserEmail"></inject>
+      
 
-    - **Mot de passe :** Disponible dans l'onglet Environnement
+    - **Mot de passe :** <inject key="AzureAdUserPassword"></inject>
+
 
       ![](../media/Lab-01/image27.png)
 
