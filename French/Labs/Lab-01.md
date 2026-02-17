@@ -138,7 +138,7 @@ Desktop pour comprendre les transformations et le modèle.
 6. **Vous voilà prêt !** Une boîte de dialogue s'ouvre alors. Cliquez
     sur **Terminé**.
 
-Power BI Desktop s'ouvre alors.
+    Power BI Desktop s'ouvre alors.
 
 ### Tâche 2 : analyser l'état Power BI Desktop
 
@@ -147,7 +147,7 @@ répertoriés en haut de la page à gauche. Les visuels restants mettent en
 évidence les ventes au fil du temps, par secteur de vente, groupe de
 produits et revendeur.
 
-    ![](../media/Lab-01/image12.jpeg)
+  ![](../media/Lab-01/image12.jpeg)
 
 **Remarque :** dans cette formation, nous nous concentrons sur
 l'acquisition, la transformation et la modélisation de données à l'aide
@@ -216,21 +216,21 @@ d'états ou la navigation dans les états. Consacrons quelques minutes
 
 10. Notez qu'il existe deux tables de fait : Sales et PO.
 
-a. La granularité des données Sales est par valeur Date, Reseller,
-Product et People. Les valeurs Date, Reseller, Product et People sont
-liées à la table Sales.
+    a. La granularité des données Sales est par valeur Date, Reseller,
+    Product et People. Les valeurs Date, Reseller, Product et People sont
+    liées à la table Sales.
 
-b. La granularité des données PO est par valeur Date, Product et
-People. Les valeurs Date, Product et People sont liées à la table PO.
+    b. La granularité des données PO est par valeur Date, Product et
+    People. Les valeurs Date, Product et People sont liées à la table PO.
 
-c. Nous disposons de données Supplier par Product. La valeur Supplier
-est liée à la table Product.
+    c. Nous disposons de données Supplier par Product. La valeur Supplier
+    est liée à la table Product.
 
-d. Nous disposons des données d'emplacement du Reseller par Geo. La
-valeur Geo est liée à la valeur Reseller.
+    d. Nous disposons des données d'emplacement du Reseller par Geo. La
+    valeur Geo est liée à la valeur Reseller.
 
-e. Nous avons des informations Customer par Reseller. La valeur
-Customer est liée à la valeur Reseller.
+    e. Nous avons des informations Customer par Reseller. La valeur
+    Customer est liée à la valeur Reseller.
 
 ### Tâche 3 : examiner les requêtes Power Query
 
@@ -283,10 +283,10 @@ Customer est liée à la valeur Reseller.
     de passe**. Les informations d'identification sont fournies
     ci-après. Une fois que vous avez terminé, cliquez sur **Connecter**.
 
-- Adresse e-mail/Nom d'utilisateur : disponible dans l'onglet
-  Environnement
+    - Adresse e-mail/Nom d'utilisateur : disponible dans l'onglet
+      Environnement
 
-- Mot de passe : disponible dans l'onglet Environnement
+    - Mot de passe : disponible dans l'onglet Environnement
 
 9. Cliquez sur la requête **ADLS Base Folder** dans la fenêtre de
     requêtes. En sélectionnant cette requête, vous devrez entrer les
@@ -299,7 +299,7 @@ Customer est liée à la valeur Reseller.
     d'accès partagé (SAS)**, puis saisissez le **jeton SAS** fourni
     ci-dessous. Cliquez ensuite sur **Connecter**.
 
-- **Jeton SAS :** Disponible dans l'onglet Environnement
+    - **Jeton SAS :** Disponible dans l'onglet Environnement
 
     ![](../media/Lab-01/image24.png)
 
@@ -331,17 +331,17 @@ Customer est liée à la valeur Reseller.
     d'identification pour connecter toutes les tables sous Snowflake à
     Snowflake, puis cliquez sur **Connecter**.
 
-- **Nom d'utilisateur Snowflake** : TE_SNOWFLAKE1
+    - **Nom d'utilisateur Snowflake** : TE_SNOWFLAKE1
 
-- **Mot de passe Snowflake** : 8UpfRpExVDXv2AC1
+    - **Mot de passe Snowflake** : 8UpfRpExVDXv2AC1
 
-*Remarque : si vous avez des difficultés à vous connecter à Snowflake
-avec les informations d'identification susmentionnées, veuillez utiliser
-les informations d'identification de secours fournies ci-après.*
+      *Remarque : si vous avez des difficultés à vous connecter à Snowflake
+      avec les informations d'identification susmentionnées, veuillez utiliser
+      les informations d'identification de secours fournies ci-après.*
 
-- **Nom d'utilisateur Snowflake :** SNOWFLAKE_BACKUP
+    - **Nom d'utilisateur Snowflake :** SNOWFLAKE_BACKUP
 
-- **Mot de passe Snowflake :** 8UpfRpExVDXv2AC1
+    - **Mot de passe Snowflake :** 8UpfRpExVDXv2AC1
 
 14. Notez que le dossier SnowflakeData comporte une dimension Supplier
     et un fait PO (Commande/Dépense).
@@ -363,21 +363,21 @@ les informations d'identification de secours fournies ci-après.*
     connecter**. Saisissez le nom d'utilisateur et le mot de passe
     fournis ci-dessous, puis cliquez sur Connecter.
 
-- **Adresse e-mail/Nom d'utilisateur :** Disponible dans l'onglet
-  Environnement
+    - **Adresse e-mail/Nom d'utilisateur :** Disponible dans l'onglet
+      Environnement
 
-- **Mot de passe :** Disponible dans l'onglet Environnement
+    - **Mot de passe :** Disponible dans l'onglet Environnement
 
-    ![](../media/Lab-01/image27.png)
+      ![](../media/Lab-01/image27.png)
 
 17. Notez que le dossier **SharepointData** comporte la dimension
     People.
 
     ![](../media/Lab-01/image28.png)
 
-Nous savons désormais à quoi nous avons affaire. Dans les labos
-suivants, nous allons créer une requête Power Query similaire à l'aide
-de Dataflow Gen2 et effectuer une modélisation à l'aide d'une lakehouse.
+    Nous savons désormais à quoi nous avons affaire. Dans les labos
+    suivants, nous allons créer une requête Power Query similaire à l'aide
+    de Dataflow Gen2 et effectuer une modélisation à l'aide d'une lakehouse.
 
 # Références
 
@@ -385,7 +385,7 @@ Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions
 clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
 comporte des liens vers d'excellentes ressources.
 
-    ![](../media/Lab-01/image29.png)
+  ![](../media/Lab-01/image29.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos
 prochaines étapes avec Microsoft Fabric :
