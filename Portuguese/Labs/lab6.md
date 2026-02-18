@@ -123,7 +123,7 @@ Ao final deste laboratório, você terá aprendido:
     Fornecedor** na caixa de texto **Inserir um nome para o relatório**.
 
 9. Certifique-se de que o workspace de destino seja seu workspace do
-    Fabric, **FAIAD_<nome de usuário>**.
+    Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 10. Selecione **Salvar**.
 

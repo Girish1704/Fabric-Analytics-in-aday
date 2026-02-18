@@ -35,7 +35,7 @@ modélisation dans le service.
 
 ## Tâche 1 : interroger des données à l'aide de SQL
 
-1. Revenons à l'espace de travail Fabric **FAIAD_<username>** que
+1. Revenons à l'espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** que
     vous avez créé dans le labo 2, tâche 8.
 
 2. Si vous le souhaitez, **réduisez le flux de tâches** pour afficher
@@ -45,7 +45,7 @@ modélisation dans le service.
     sémantique et Point de terminaison SQL. Nous avons exploré la
     lakehouse et créé des requêtes visuelles à l'aide du point de
     terminaison analytique SQL dans un labo précédent. Sélectionnez
-    l'icône **FAIAD_<username>** dans le volet de navigation de
+    l'icône **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** dans le volet de navigation de
     gauche et choisissez l'option **point de terminaison d'analytique
     SQL lh_FAIAD** pour continuer à explorer cette option. Vous êtes
     alors redirigé vers la **vue SQL** de l'explorateur.
@@ -146,7 +146,7 @@ modélisation dans le service.
     votre rapport**.
 
 9. Assurez-vous que l'espace de travail de destination est votre espace
-    de travail Fabric **FAIAD_<username>**.
+    de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 10. Cliquez sur **Enregistrer**.
 

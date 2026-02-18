@@ -52,7 +52,7 @@ l'équipe informatique Lakehouse a créée(s).
 
 ## Tâche 1 : copier des requêtes SharePoint dans Dataflow
 
-1. Revenons à l'espace de travail Fabric **FAIAD_<username> (1)**
+1. Revenons à l'espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**
     que vous avez créé dans le labo 2, tâche 8.
 
 2. Cliquez sur l'option **+ Nouvel élément (2)** qui se trouve en haut
@@ -158,7 +158,7 @@ Lakehouse.
 
 5. Nous souhaitons créer la table dans la lakehouse que nous avons
     créée plus tôt. Dans le volet gauche, accédez à **Lakehouse ->
-    FAIAD_<username>**.
+    FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 6. Sélectionnez **lh_FAIAD**.
 
@@ -195,7 +195,7 @@ Lakehouse.
     ![](../media/Lab-04/image17.png)
 
     >**Remarque :** vous êtes alors redirigé(e) vers l'espace de travail
-    **FAIAD_<username>**. L'exécution du flux de données peut prendre
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. L'exécution du flux de données peut prendre
     quelques instants avant de se terminer.
 
 3. **Dataflow 1** est le flux de données sur lequel nous travaillions.
@@ -217,7 +217,7 @@ Lakehouse.
     ![](../media/Lab-04/image19.png)
 
     Vous êtes alors redirigé vers l'espace de travail
-    **FAIAD_<username>**.
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 7. Cliquez sur **lh_FAIAD** pour accéder à la lakehouse.
 
@@ -235,7 +235,7 @@ Lakehouse.
 
 ## Tâche 5 : copier des requêtes Snowflake dans Dataflow
 
-1. Revenons à l'espace de travail Fabric **FAIAD_<username> (1)**.
+1. Revenons à l'espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
 
 2. Cliquez sur l'option **+ Nouvel élément (2)** qui se trouve en haut
     à gauche de l'écran.
@@ -315,9 +315,9 @@ de configurer la connexion.
     d'identification pour connecter toutes les tables sous Snowflake à
     Snowflake, puis cliquez sur **Connecter**.
 
-    - Nom d'utilisateur Snowflake : TE_SNOWFLAKE1
+    - **Nom d'utilisateur Snowflake :** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - Mot de passe Snowflake : 8UpfRpExVDXv2AC1
+    - **Mot de passe Snowflake :** <inject key="SnowFlake Password" enableCopy="false" />
 
     >**Remarque :** si vous avez des difficultés à vous connecter à Snowflake
     avec les informations d'identification des détails de l'environnement,
@@ -352,7 +352,7 @@ de configurer la connexion.
 
 3. La boîte de dialogue Se connecter à la destination des données
     s'ouvre alors. Dans la liste déroulante **Connexion**, sélectionnez
-    **Lakehouse odl_user_<username> (aucun)**.
+    **Lakehouse odl_user_<inject key="Deployment ID" enableCopy="false"/> (aucun)**.
 
 4. Cliquez sur **Suivant**.
 
@@ -364,7 +364,7 @@ de configurer la connexion.
 
 6. Nous souhaitons créer la table dans la lakehouse que nous avons
     créée plus tôt. Dans le volet gauche, accédez à **Lakehouse ->
-    FAIAD_<username>**.
+    FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 7. Sélectionnez **lh_FAIAD**.
 
@@ -412,7 +412,7 @@ de configurer la connexion.
     ![](../media/Lab-04/image32.png)
 
     Vous êtes alors redirigé vers l'espace de travail
-    **FAIAD_<username>**. La publication du flux de données peut prendre
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**. La publication du flux de données peut prendre
     quelques instants.
 
 5. Cliquez sur **lh_FAIAD** pour accéder à la lakehouse.

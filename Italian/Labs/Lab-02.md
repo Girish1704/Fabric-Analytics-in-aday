@@ -51,24 +51,24 @@ http://app.fabric.microsoft.com/ nel browser.*
 2. Copiare il nome utente e incollarlo nel campo Posta elettronica
     della finestra di dialogo, quindi selezionare Invia.
 
-    - **E-mail/Nome utente:** disponibili nella scheda Ambiente
+    - **E-mail/Nome utente:** <inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/Lab-02/image7.png)
+        ![](../media/Lab-02/image7.png)
 
 3. Immettere i dati **EmailUsername** seguenti nella schermata di
     accesso visualizzata nella scheda **Accedi a Microsoft Azure**,
     quindi fare clic su **Avanti**.
 
-    - **E-mail/Nome utente:** disponibili nella scheda Ambiente
+    - **E-mail/Nome utente:** <inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/Lab-02/image8.png)
+        ![](../media/Lab-02/image8.png)
 
 4. Immettere il **Pass di accesso temporaneo** seguente e fare clic su
     **Accedi**.
 
-    - **Pass di accesso temporaneo:** disponibile nella scheda Ambiente
+    - **Pass di accesso temporaneo:** <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/Lab-02/image9.png)
+        ![](../media/Lab-02/image9.png)
 
 5. Si aprirà la **home page del servizio Power BI** abituale.
 
@@ -123,7 +123,7 @@ http://app.fabric.microsoft.com/ nel browser.*
 3. Si apre la finestra di dialogo **Crea un'area di lavoro** sul lato
     destro del browser.
 
-4. Nel campo **Nome** immettere FAIAD_UserID (disponibile nella scheda
+4. Nel campo **Nome** immettere **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**(disponibile nella scheda
     Ambiente)
 
     >***Nota:** il nome dell'area di lavoro deve essere univoco. Assicurarsi
@@ -151,7 +151,7 @@ http://app.fabric.microsoft.com/ nel browser.*
 
 ## Attività 3 - Creazione di un lakehouse
 
-1. Nella nuova area di lavoro **FAIAD_Username** individuare il
+1. Nella nuova area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** individuare il
     pulsante **+ Nuovo elemento (1)** nel riquadro di spostamento a
     sinistra. Qui è possibile iniziare a creare nuovi elementi
     nell'area di lavoro.

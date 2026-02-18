@@ -120,7 +120,7 @@ Ao final deste laboratório, você terá aprendido a:
 3. A caixa de diálogo **Criar um workspace** é aberta no lado direito
     do navegador.
 
-4. No campo **Nome**, insira FAIAD_UserID (encontrado na guia
+4. No campo **Nome**, insira **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** (encontrado na guia
     Ambiente).
 
     > ***Observação:** O nome do workspace deve ser exclusivo. Verifique se
@@ -145,7 +145,7 @@ Ao final deste laboratório, você terá aprendido a:
 
 ## Tarefa 3: Criar um Lakehouse
 
-1. No workspace recém-criado **FAIAD_Username**, localize o botão **+
+1. No workspace recém-criado **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, localize o botão **+
     Novo item (1)** no painel de navegação esquerdo. É aqui que você
     pode começar a criar novos itens em seu workspace.
 

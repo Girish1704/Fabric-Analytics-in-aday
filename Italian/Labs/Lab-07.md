@@ -45,7 +45,7 @@ Iniziamo usando l'opzione di creazione automatica del report. Più
 avanti nel lab, creeremo nuovamente il report presente in Power BI.
 
 1. Torniamo **all'area di lavoro di Fabric** creata nel Lab 2, di nome
-    **FAIAD_<nome utente>**.
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 2. Nella parte inferiore del pannello di sinistra selezionare l'icona
     **selettore esperienza in Fabric**.
@@ -112,7 +112,7 @@ avanti nel lab, creeremo nuovamente il report presente in Power BI.
     rpt, ovvero l'abbreviazione di report.
 
 11. Assicurarsi che il report sia salvato nell'area di lavoro
-    **FAIAD_<nome utente>.**
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
 
 12. Selezionare **Salva.**
 
@@ -137,7 +137,7 @@ avanti nel lab, creeremo nuovamente il report presente in Power BI.
 Creiamo un nuovo report usando un'area di disegno vuota.
 
 1. Nel **pannello di sinistra** selezionare il nome dell'area di
-    lavoro, **FAIAD_<nome utente>**, per tornare a essa.
+    lavoro, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, per tornare a essa.
 
 2. Nel menu in alto selezionare **Nuovo elemento** -> **Report**. Si
     aprirà la pagina per creare il primo report.
@@ -326,7 +326,7 @@ modello.
     rpt, ovvero l'abbreviazione di report.
 
 3. Assicurarsi che il report sia salvato nell'area di lavoro
-    **FAIAD_<nome utente>.**
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
 
 4. Selezionare **Salva.** Notare che il report è stato salvato ed è
     attiva la modalità di visualizzazione.
@@ -583,7 +583,7 @@ al file di maggio 2024 in ADLS Gen2 e aggiornando la vista Sales.
 2. Nell'angolo in basso a destra, fai clic sul **logo Fabric** e passa
     alla **visualizzazione Fabric**.
 
-3. Selezionare **FAIAD_<nome utente>** nella barra dei menu di
+3. Selezionare **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** nella barra dei menu di
     sinistra per andare alla home page dell'area di lavoro.
 
 4. Selezionare **lh_FAIAD** per spostarsi nel lakehouse.
@@ -864,7 +864,7 @@ al file di maggio 2024 in ADLS Gen2 e aggiornando la vista Sales.
 Quando si è pronti a eseguire la pulizia dell'ambiente lab, effettuare
 i passaggi seguenti.
 
-1. Selezionare l'area di lavoro **FAIAD_<nome utente>** nel
+1. Selezionare l'area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** nel
     pannello di sinistra per andare alla home page dell'area di lavoro.
 
 2. Dal menu in alto selezionare **Area di lavoro e impostazioni**.

@@ -64,7 +64,7 @@ In questo lab si imparerà a:
 Iniziamo con la configurazione di un aggiornamento pianificato del
 flusso di dati dei fornitori.
 
-1. Torniamo all'area di lavoro Fabric, **FAIAD_<username>**
+1. Torniamo all'area di lavoro Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     selezionando l'area di lavoro nel pannello a sinistra.
 
 2. Per ingrandire il pannello con l'elenco degli artefatti,
@@ -181,7 +181,7 @@ flusso di dati dei fornitori.
 
 ## Attività 2: Creazione di una pipeline
 
-1. Torniamo all'area di lavoro di Fabric, **FAIAD_<nome utente>**
+1. Torniamo all'area di lavoro di Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     selezionandola nel pannello di sinistra.
 
 2. Nel menu in alto seleziona **+ Nuovo elemento (1) -> Pipeline
@@ -250,7 +250,7 @@ aggiornare il flusso di dati. Troviamo un'attività che possiamo usare.
     ![](../media/Lab-05/image22.png)
 
 3. Assicurarsi che l'**Area di lavoro** sia impostata sull'area di
-    lavoro di Fabric **FAIAD_<nomeutente>.**
+    lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
 
 4. Nel menu a discesa **Flusso di dati** selezionare
     **df_People_SharePoint**. Quando questa attività Flusso di dati
@@ -314,7 +314,7 @@ saranno necessari 15 minuti affinché il file sia disponibile. Vogliamo
 pianificare i nuovi tentativi a cinque e 15 minuti. Vediamo come è
 possibile ottenere questo risultato creando una nuova pipeline.
 
-1. Nel pannello di sinistra fare clic su **FAIAD_<nome utente>** per
+1. Nel pannello di sinistra fare clic su **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** per
     andare alla home page dell'area di lavoro.
 
 2. Nel menu in alto, fare clic su + **Nuovo elemento (1)** e nella
@@ -565,7 +565,7 @@ possibile ottenere questo risultato creando una nuova pipeline.
 7. Selezionare **Impostazioni** nel riquadro inferiore.
 
 8. Assicurarsi che l'**Area di lavoro** sia impostata sulla propria
-    area di lavoro **FAIAD_<nomeutente>**.
+    area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 9. Nel menu a discesa **Flusso di dati** selezionare
     **df_People_SharePoint**.
@@ -887,7 +887,7 @@ variabile varWaitTime per impostare il tempo di attesa.
 
     ![](../media/Lab-05/image55.png)
 
-11. Selezionare l'area di lavoro di Fabric **FAIAD_<nome utente>**
+11. Selezionare l'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     nel pannello di sinistra per andare all'area di lavoro.
 
     >**Nota:** nella schermata Pianificazione non vi è un'opzione per la

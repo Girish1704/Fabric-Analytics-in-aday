@@ -112,7 +112,7 @@ Desktop pour comprendre les transformations et le modèle.
     apparaît, copiez le **nom d'utilisateur** et collez-le dans le champ
     **E-mail** de la boîte de dialogue, puis cliquez sur **Continuer**.
 
-    - Adresse e-mail/nom d'utilisateur :<inject key="AzureAdUserEmail"></inject>
+    - **Adresse e-mail/nom d'utilisateur:** <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-01/image8.png)
 
@@ -120,14 +120,14 @@ Desktop pour comprendre les transformations et le modèle.
     connexion ; saisissez l'adresse e-mail/nom d'utilisateur suivant,
     puis cliquez sur **Suivant**.
 
-    - Adresse e-mail/nom d'utilisateur :<inject key="AzureAdUserEmail"></inject>
+    - **Adresse e-mail/nom d'utilisateur:** <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-01/image9.png)
 
 4. Saisissez maintenant le **Passe d'accès temporaire** suivant et
     cliquez sur **Se connecter**.
 
-    - Passe d'accès temporaire :<inject key="AzureAdUserPassword"></inject>
+    - **Passe d'accès temporaire:** <inject key="AzureAdUserPassword"></inject>
 
       ![](../media/Lab-01/image10.png)
 
@@ -284,9 +284,9 @@ d'états ou la navigation dans les états. Consacrons quelques minutes
     de passe**. Les informations d'identification sont fournies
     ci-après. Une fois que vous avez terminé, cliquez sur **Connecter**.
 
-    - Adresse e-mail/Nom d'utilisateur :<inject key="AzureAdUserEmail"></inject>
+    - **Adresse e-mail/Nom d'utilisateur:** <inject key="AzureAdUserEmail"></inject>
   
-    - Mot de passe :<inject key="AzureAdUserEmail"></inject>
+    - **Mot de passe:** <inject key="AzureAdUserEmail"></inject>
 
 9. Cliquez sur la requête **ADLS Base Folder** dans la fenêtre de
     requêtes. En sélectionnant cette requête, vous devrez entrer les

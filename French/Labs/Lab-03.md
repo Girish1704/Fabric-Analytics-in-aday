@@ -93,7 +93,7 @@ de raccourcis sur le bureau Windows.
 
 9. Copiez le jeton SAS et collez-le dans le champ Jeton SAS (5).
 
-    - **Jeton SAS :**
+    - **Jeton SAS :** <inject key="Sas token"></inject>
 
 10. Cliquez sur **Suivant (6)** en bas de l'écran à droite.
 

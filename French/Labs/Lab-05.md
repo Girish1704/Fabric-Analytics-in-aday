@@ -64,7 +64,7 @@ d'actualisation pour les sources de données. Voici un résumé du besoin :
 Commençons par configurer une actualisation planifiée du flux de données
 Fournisseur.
 
-1. Revenons à l'espace de travail Fabric **FAIAD_<username>** en
+1. Revenons à l'espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** en
     cliquant sur l'espace de travail dans le volet gauche.
 
 2. Pour agrandir le volet avec la liste des artefacts, cliquez sur la
@@ -182,7 +182,7 @@ Fournisseur.
 
 ## Tâche 2 : créer un pipeline
 
-1. Revenons à l'espace de travail Fabric **FAIAD_<username>** en
+1. Revenons à l'espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** en
     cliquant sur l'espace de travail dans le volet gauche.
 
 2. Dans le menu supérieur, cliquez sur **+ Nouvel élément (1) ->
@@ -253,7 +253,7 @@ utiliser.
     ![](../media/Lab-05/image22.png)
 
 3. Assurez-vous que le champ **Espace de travail** est défini sur votre
-    espace de travail Fabric **FAIAD_<username>**.
+    espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 4. Dans la **liste déroulante Flux de données**, sélectionnez
     **df_People_SharePoint**. Lorsque cette activité Flux de données est
@@ -318,7 +318,7 @@ fichier est disponible sous 15 minutes. Nous souhaitons planifier les
 tentatives à cinq et 15 minutes. Voyons comment nous pouvons y parvenir
 en créant un pipeline.
 
-1. Dans le panneau de gauche, cliquez sur **FAIAD_<username>** pour
+1. Dans le panneau de gauche, cliquez sur **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** pour
     accéder à la page d'accueil de l'espace de travail.
 
 2. Dans le menu supérieur, cliquez sur **+ Nouvel élément (1)**, puis
@@ -569,7 +569,7 @@ en créant un pipeline.
 7. Cliquez sur **Paramètres** dans le volet inférieur.
 
 8. Assurez-vous que le champ **Espace de travail** est défini sur votre
-    espace de travail **FAIAD_<username>**.
+    espace de travail **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 9. Dans la **liste déroulante Flux de données**, sélectionnez
     **df_People_SharePoint**.
@@ -894,7 +894,7 @@ varWaitTime.
 
     ![](../media/Lab-05/image55.png)
 
-11. Sélectionnez votre espace de travail Fabric **FAIAD_<username>**
+11. Sélectionnez votre espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
     dans le panneau de gauche pour accéder à l'espace de travail.
 
     >**Remarque :** sur l'écran Planifier, aucune option ne permet de

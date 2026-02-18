@@ -277,9 +277,9 @@ rivenditrice.
     immettendo **Nome utente** e **Password**. Le credenziali vengono
     fornite di seguito. Al termine, selezionare **Connetti**.
 
-    - E-mail/Nome utente: disponibili nella scheda Ambiente
+    - **E-mail/Nome utente:** <inject key="AzureAdUserEmail"></inject>
 
-    - Password: disponibile nella scheda Ambiente
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
 9. Fare clic sulla query **ADLS Base Folder** nella finestra Query.
     Alla selezione di questa query verranno richieste le credenziali.
@@ -291,7 +291,7 @@ rivenditrice.
     **condiviso (SAS)** e immettere il **token SAS** fornito in
     precedenza. Selezionare **Connetti**.
 
-    - **Token SAS:** disponibile nella scheda Ambiente
+    - **Token SAS:** <inject key="Sas token"></inject>
 
       ![](../media/Lab-01/image23.png)
 
@@ -320,9 +320,9 @@ rivenditrice.
     forniti di seguito. Usare queste credenziali per connettere tutte le
     tabelle in Snowflake a Snowflake, quindi selezionare **Connetti**.
 
-    - **Nome utente Snowflake:** TE_SNOWFLAKE1
+    - **Nome utente Snowflake:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Password Snowflake:** 8UpfRpExVDXv2AC1
+    - **Password Snowflake:** <inject key="SnowFlake Password" enableCopy="false" />
 
     >*Nota: se si verificano problemi di connessione a Snowflake con le
     credenziali descritte sopra, usare le credenziali di backup fornite di
@@ -350,9 +350,9 @@ rivenditrice.
     **Accedi**. Immettere il nome utente e la password forniti di
     seguito, quindi selezionare Connetti.
 
-    - **E-mail/Nome utente:** disponibili nella scheda Ambiente
+    - **E-mail/Nome utente:** <inject key="AzureAdUserEmail"></inject>
 
-    - **Password:** disponibile nella scheda Ambiente
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
       ![](../media/Lab-01/image26.png)
 

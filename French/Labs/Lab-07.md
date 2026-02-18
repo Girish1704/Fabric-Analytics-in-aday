@@ -45,8 +45,8 @@ Commençons par utiliser l'option de création automatique d'un état. Plus
 tard dans le labo, nous allons recréer l'état dont nous disposons dans
 Power BI.
 
-1. Revenons à **l'espace de travail Fabric FAIAD_<username>** que
-    vous avez créé dans le labo 2, dénommé **FAIAD_<username>.**
+1. Revenons à **l'espace de travail Fabric FAIAD_<inject key="Deployment ID" enableCopy="false"/>** que
+    vous avez créé dans le labo 2, dénommé **FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
 
 2. Cliquez sur l'icône du **sélecteur de l'expérience Fabric** dans la
     partie inférieure du volet gauche.
@@ -119,7 +119,7 @@ Power BI.
     terme « report » (état) en anglais, au nom de l'état.
 
 11. Assurez-vous que l'état est enregistré dans votre espace de travail
-    **FAIAD_<username>.**
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
 
 12. Cliquez sur **Enregistrer**.
 
@@ -144,7 +144,7 @@ Power BI.
 Nous allons créer un nouvel état en utilisant un canevas vierge.
 
 1. Dans le **panneau de gauche**, sélectionnez le nom de votre espace
-    de travail, **FAIAD_<username>** pour naviguer dans l'espace de
+    de travail, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** pour naviguer dans l'espace de
     travail.
 
 2. Dans le menu supérieur, cliquez sur **Nouvel élément -> Rapport.**
@@ -335,7 +335,7 @@ modifications au modèle.
     terme « report » (état) en anglais, au nom de l'état.
 
 3. Assurez-vous que l'état est enregistré dans l'espace de travail
-    **FAIAD_<username>.**
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
 
 4. Cliquez sur **Enregistrer**. Notez que l'état est enregistré et que
     vous êtes en mode Affichage.
@@ -594,7 +594,7 @@ mai 2024 dans ADLS Gen2 et en mettant à jour la vue Sales.
 2. Dans le coin inférieur droit, cliquez sur le **logo Fabric** et
     passez à la **vue Fabric**.
 
-3. Cliquez sur **FAIAD_<username>** dans la barre de menus gauche
+3. Cliquez sur **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** dans la barre de menus gauche
     pour accéder à la page d'accueil de l'espace de travail.
 
 4. Cliquez sur **lh_FAIAD** pour accéder à la lakehouse.
@@ -878,7 +878,7 @@ mai 2024 dans ADLS Gen2 et en mettant à jour la vue Sales.
 Une fois que vous êtes prêt à nettoyer l'environnement de labo, procédez
 comme suit :
 
-1. Sélectionnez l'espace de travail **FAIAD_<username>** à partir du
+1. Sélectionnez l'espace de travail **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** à partir du
     panneau de gauche pour naviguer vers la page d'accueil de l'espace
     de travail.
 

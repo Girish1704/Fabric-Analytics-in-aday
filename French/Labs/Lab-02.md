@@ -125,7 +125,7 @@ quelle.*
 3. La boîte de dialogue **Créer un espace de travail** s'ouvre alors
     sur le côté droit du navigateur.
 
-4. Dans le champ **Nom**, saisissez FAIAD_UserID (disponible dans
+4. Dans le champ **Nom**, saisissez **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** (disponible dans
     l'onglet Environnement).
 
     > ***Remarque :** le nom de l'espace de travail doit être unique.

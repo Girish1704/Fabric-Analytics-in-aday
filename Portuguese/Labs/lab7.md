@@ -46,7 +46,7 @@ Vamos começar usando a opção de criação automática de relatório. E, mais
 adiante no laboratório, recriaremos o relatório que temos no Power BI.
 
 1. Vamos voltar ao **workspace do Fabric** que você criou no
-    laboratório 2, denominado **FAIAD_<nome de usuário>.**
+    laboratório 2, denominado **FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
 
 2. Na parte inferior esquerda da tela, selecione o ícone **Fabric
     experience selector**.
@@ -139,7 +139,7 @@ adiante no laboratório, recriaremos o relatório que temos no Power BI.
 Vamos criar um novo relatório usando uma tela em branco.
 
 1. No **painel esquerdo**, selecione o nome do seu workspace,
-    **FAIAD_<nome de usuário>** para ser direcionado para o
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** para ser direcionado para o
     workspace.
 
 2. No menu superior, selecione **Novo item -> Relatório.** Você será
@@ -581,7 +581,7 @@ e atualizando a exibição Sales.
 2. No canto inferior direito, clique no **logotipo do Fabric** e
     alterne para a **exibição do Fabric**.
 
-3. Selecione **FAIAD_<nome de usuário>** na barra de menus à
+3. Selecione **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** na barra de menus à
     esquerda a fim de navegar até a home page do workspace.
 
 4. Selecione **lh_FAIAD** para acessar o Lakehouse.
@@ -862,7 +862,7 @@ e atualizando a exibição Sales.
 Quando você estiver pronto para limpar o ambiente do laboratório, siga
 as etapas abaixo.
 
-1. Selecione o workspace **FAIAD_<nome de usuário>** no painel
+1. Selecione o workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** no painel
     esquerdo para navegar até a home page do workspace.
 
 2. No menu superior, selecione **Configurações do Workspace**.

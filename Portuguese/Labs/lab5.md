@@ -51,7 +51,7 @@ Ao final deste laboratório, você terá aprendido:
 Vamos começar configurando uma atualização agendada do Fluxo de dados
 Supplier.
 
-1. Voltamos ao workspace do Fabric, **FAIAD_<nome de usuário>** selecionando-o no painel esquerdo.
+1. Voltamos ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** selecionando-o no painel esquerdo.
 
 2. Para maximizar o painel com a lista de artefatos, selecione a seta dupla no canto superior direito do painel.
 
@@ -131,7 +131,7 @@ uma lista de atualizações
 
 ## Tarefa 2: Criar Pipeline
 
-1. Voltamos ao workspace do Fabric, **FAIAD_<nome de usuário>** selecionando-o no painel esquerdo.
+1. Voltamos ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** selecionando-o no painel esquerdo.
 
 2. No menu superior, selecione **+ Novo item (1) -> Pipeline (2)**.
 
@@ -175,7 +175,7 @@ Vamos começar a criar o pipeline. Precisamos de uma atividade para atualizar o 
 
     ![](../media/Lab-05/image22.png)
 
-3. Certifique-se de que o **Workspace** esteja definido como seu workspace do Fabric, **FAIAD_<nome de usuário>**.
+3. Certifique-se de que o **Workspace** esteja definido como seu workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 4. Na lista suspensa **Fluxo de dados**, selecione
     **df_People_SharePoint**. Quando esta atividade Fluxo de dados for executada, ela atualizará **df_People_SharePoint.** Isso foi fácil, certo?
@@ -218,7 +218,7 @@ Vamos começar a criar o pipeline. Precisamos de uma atividade para atualizar o 
 Vamos adicionar um pouco mais de complexidade ao nosso cenário.
 Observamos que, se os dados não estiverem disponíveis às 9h, normalmente estarão disponíveis em cinco minutos. Se a janela de tempo for perdida, levará 15 minutos para que o arquivo fique disponível. Queremos agendar as novas tentativas para 5 e 15 minutos. Vamos ver como isso pode ser alcançado criando um Pipeline.
 
-1. No painel esquerdo, clique em **FAIAD_<nome de usuário>** para navegar até a página inicial do workspace.
+1. No painel esquerdo, clique em **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** para navegar até a página inicial do workspace.
 
 2. No menu superior, clique em **+ Novo item (1)** e, na janela pop-out, clique em **Pipeline (2)**.
 
@@ -391,7 +391,7 @@ variables('varSuccess')))**
 
 7. Selecione **Configurações** no painel inferior.
 
-8. Certifique-se de que o **Workspace** esteja definido como seu workspace **FAIAD_<nome de usuário>**.
+8. Certifique-se de que o **Workspace** esteja definido como seu workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 9. Na lista suspensa **Fluxo de dados**, selecione **df_People_SharePoint**.
 
@@ -609,7 +609,7 @@ Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do flux
 
     ![](../media/Lab-05/image55.png)
 
-11. Selecione seu workspace do Fabric **FAIAD_<nome de usuário>** no painel esquerdo para navegar até o workspace.
+11. Selecione seu workspace do Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** no painel esquerdo para navegar até o workspace.
 
     > **Observação**: Na tela Agendamento, não há opção de notificação sobre
     > sucesso ou falha (como Agendamento do Fluxo de Dados). A notificação
