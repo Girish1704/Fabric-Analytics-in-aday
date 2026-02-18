@@ -1,14 +1,15 @@
-# Microsoft Fabric Fabric Analyst in a Day-Labo 1
+# Microsoft Fabric Fabric Analyst in a Day - Labo 1
+
 ![](../media/Lab-01/main1.png)
 
 # Sommaire	
 - Structure du document	
 - Scénario/Énoncé du problème	
 - Présentation de l’état Power BI Desktop	
-  - Tâche 1 : configurer Power BI Desktop dans l’environnement de labo	
-  - Tâche 2 : analyser l’état Power BI Desktop	
-  - Tâche 3 : examiner les requêtes Power Query	
-- Références	
+  - Tâche 1: configurer Power BI Desktop dans l’environnement de labo	
+  - Tâche 2: analyser l’état Power BI Desktop	
+  - Tâche 3: examiner les requêtes Power Query	
+- Références
 
 # Structure du document
 
@@ -99,7 +100,7 @@ voir s'il peut relever vos défis.
 Avant de prendre en main Fabric, examinons l'état actuel dans Power BI
 Desktop pour comprendre les transformations et le modèle.
 
-### Tâche 1 : configurer Power BI Desktop dans l'environnement de labo
+## Tâche 1 : configurer Power BI Desktop dans l'environnement de labo
 
 1. Ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Reports**
     sur le **bureau** de votre environnement de labo. Le fichier s'ouvre
@@ -113,8 +114,7 @@ Desktop pour comprendre les transformations et le modèle.
 
     - Adresse e-mail/nom d'utilisateur :<inject key="AzureAdUserEmail"></inject>
 
-
-    ![](../media/Lab-01/image8.png)
+      ![](../media/Lab-01/image8.png)
 
 3. Sur l'onglet Se connecter à Microsoft Azure, vous verrez l'écran de
     connexion ; saisissez l'adresse e-mail/nom d'utilisateur suivant,
@@ -122,14 +122,14 @@ Desktop pour comprendre les transformations et le modèle.
 
     - Adresse e-mail/nom d'utilisateur :<inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/Lab-01/image9.png)
+      ![](../media/Lab-01/image9.png)
 
 4. Saisissez maintenant le **Passe d'accès temporaire** suivant et
     cliquez sur **Se connecter**.
 
     - Passe d'accès temporaire :<inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/Lab-01/image10.png)
+      ![](../media/Lab-01/image10.png)
 
 5. La boîte de dialogue **Rester connecté à toutes vos applications**
     s'ouvre alors. Cliquez sur **OK**.
@@ -141,7 +141,7 @@ Desktop pour comprendre les transformations et le modèle.
 
     Power BI Desktop s'ouvre alors.
 
-### Tâche 2 : analyser l'état Power BI Desktop
+## Tâche 2 : analyser l'état Power BI Desktop
 
 L'état ci-dessous analyse les ventes de Fabrikam. Les KPI sont
 répertoriés en haut de la page à gauche. Les visuels restants mettent en
@@ -233,7 +233,7 @@ d'états ou la navigation dans les états. Consacrons quelques minutes
     e. Nous avons des informations Customer par Reseller. La valeur
     Customer est liée à la valeur Reseller.
 
-### Tâche 3 : examiner les requêtes Power Query
+## Tâche 3 : examiner les requêtes Power Query
 
 1. Examinons à présent Power Query pour comprendre les sources de
     données. Dans le ruban, cliquez sur **Accueil -> Transformer les
@@ -285,8 +285,7 @@ d'états ou la navigation dans les états. Consacrons quelques minutes
     ci-après. Une fois que vous avez terminé, cliquez sur **Connecter**.
 
     - Adresse e-mail/Nom d'utilisateur :<inject key="AzureAdUserEmail"></inject>
-      
-
+  
     - Mot de passe :<inject key="AzureAdUserEmail"></inject>
 
 9. Cliquez sur la requête **ADLS Base Folder** dans la fenêtre de
@@ -336,7 +335,7 @@ d'états ou la navigation dans les états. Consacrons quelques minutes
 
     - **Mot de passe Snowflake:** <inject key="SnowFlake Password" enableCopy="false" />
 
-      >**Remarque** : si vous avez des difficultés à vous connecter à Snowflake
+    >**Remarque** : si vous avez des difficultés à vous connecter à Snowflake
       avec les informations d'identification susmentionnées, veuillez utiliser
       les informations d'identification de secours fournies ci-après.*
 
@@ -365,10 +364,8 @@ d'états ou la navigation dans les états. Consacrons quelques minutes
     fournis ci-dessous, puis cliquez sur Connecter.
 
     - **Adresse e-mail/Nom d'utilisateur :** <inject key="AzureAdUserEmail"></inject>
-      
 
     - **Mot de passe :** <inject key="AzureAdUserPassword"></inject>
-
 
       ![](../media/Lab-01/image27.png)
 
@@ -447,7 +444,7 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Intégration de Dataverse et Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Tous droits réservés.
+© 2026 Microsoft Corporation. Tous droits réservés.
 
 En effectuant cette démonstration/ce labo, vous acceptez les conditions
 suivantes :

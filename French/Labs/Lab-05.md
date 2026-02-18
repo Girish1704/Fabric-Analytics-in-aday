@@ -1,22 +1,24 @@
-# Microsoft Fabric Fabric Analyst in a Day-Labo 5
+# Microsoft Fabric Fabric Analyst in a Day - Labo 5
+
 ![](../media/Lab-05/main5.png)
+
 # Sommaire
 - Introduction	
 - Dataflow Gen2	
-    - Tâche 1 : configurer l’actualisation planifiée pour le flux de données Fournisseur	
+    - Tâche 1: configurer l’actualisation planifiée pour le flux de données Fournisseur	
 - Pipeline    
-    - Tâche 2 : créer un pipeline	
-    - Tâche 3 : créer un pipeline simple	
-    - Tâche 4 : créer un pipeline	
-    - Tâche 5 : créer une activité Until	
-    - Tâche 6 : créer des variables	
-    - Tâche 7 : configurer l’activité Until	
-    - Tâche 8 : configurer l’activité Flux de données	
-    - Tâche 9 : configurer une 1re activité Définir une variable	
-    - Tâche 10 : configurer une 2e activité Définir une variable	
-    - Tâche 11 : configurer une 3e activité Définir une variable	
-    - Tâche 12 : configurer l’activité Attente	
-    - Tâche 13 : configurer l’actualisation planifiée pour le pipeline	
+    - Tâche 2: créer un pipeline	
+    - Tâche 3: créer un pipeline simple	
+    - Tâche 4: créer un pipeline	
+    - Tâche 5: créer une activité Until	
+    - Tâche 6: créer des variables	
+    - Tâche 7: configurer l’activité Until	
+    - Tâche 8: configurer l’activité Flux de données	
+    - Tâche 9: configurer une 1re activité Définir une variable	
+    - Tâche 10: configurer une 2e activité Définir une variable	
+    - Tâche 11: configurer une 3e activité Définir une variable	
+    - Tâche 12: configurer l’activité Attente	
+    - Tâche 13: configurer l’actualisation planifiée pour le pipeline	
 - Références	
 
 # Introduction 
@@ -57,7 +59,7 @@ d'actualisation pour les sources de données. Voici un résumé du besoin :
 
 # Dataflow Gen2
 
-### Tâche 1 : configurer l'actualisation planifiée pour le flux de données Fournisseur
+## Tâche 1 : configurer l'actualisation planifiée pour le flux de données Fournisseur
 
 Commençons par configurer une actualisation planifiée du flux de données
 Fournisseur.
@@ -177,7 +179,7 @@ Fournisseur.
 
 # Pipeline
 
-### Tâche 2 : créer un pipeline
+## Tâche 2 : créer un pipeline
 
 1. Revenons à l'espace de travail Fabric **FAIAD_<username>** en
     cliquant sur l'espace de travail dans le volet gauche.
@@ -229,7 +231,7 @@ Fournisseur.
 
     ![](../media/Lab-05/image21.png)
 
-### Tâche 3 : créer un pipeline simple
+## Tâche 3 : créer un pipeline simple
 
 Commençons à créer le pipeline. Nous avons besoin d'une activité pour
 actualiser le flux de données. Trouvons une activité que nous pouvons
@@ -306,7 +308,7 @@ utiliser.
     - Le pipeline offre la possibilité d'effectuer d'autres tâches, en plus
     d'actualiser le flux de données
 
-### Tâche 4 : créer un pipeline
+## Tâche 4 : créer un pipeline
 
 Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué
 que si les données ne sont pas disponibles à 9 h, elles le sont
@@ -329,7 +331,7 @@ en créant un pipeline.
 
     ![](../media/Lab-05/image26.png)
 
-### Tâche 5 : créer une activité Until
+## Tâche 5 : créer une activité Until
 
 1. Vous êtes alors redirigé vers l'écran Pipeline. Dans le menu,
     cliquez sur **Activités**.
@@ -346,7 +348,7 @@ en créant un pipeline.
 
     ![](../media/Lab-05/image27.png)
 
-### Tâche 6 : créer des variables
+## Tâche 6 : créer des variables
 
 1. Nous devons créer des variables permettant d'itérer et de définir le
     statut. Cliquez sur la **zone vide** dans le volet de conception du
@@ -383,24 +385,24 @@ en créant un pipeline.
 11. Procédez de même pour ajouter trois variables supplémentaires :
 
     a. **varIsSuccess** de type **String** avec la valeur par défaut
-        **Non**. Cette variable permet d'indiquer si l'actualisation du
-        flux de données a réussi.
+    **Non**. Cette variable permet d'indiquer si l'actualisation du
+    flux de données a réussi.
 
     b. **varSuccess** de type **String** avec la valeur par défaut
-        **Oui**. Cette variable permet de définir la valeur de
-        varIsSuccess si l'actualisation du flux de données réussit.
+    **Oui**. Cette variable permet de définir la valeur de
+    varIsSuccess si l'actualisation du flux de données réussit.
 
     c. **varWaitTime** de type **Integer** avec la valeur par défaut
-        **60**. Cette variable permet de définir le temps d'attente si
-        l'actualisation du flux de données échoue
-        (soit 5 minutes/300 secondes, soit 15 minutes/900 secondes).
+    **60**. Cette variable permet de définir le temps d'attente si
+    l'actualisation du flux de données échoue
+    (soit 5 minutes/300 secondes, soit 15 minutes/900 secondes).
 
     >**Remarque :** assurez-vous qu'il n'y a pas d'espace avant ou après le
     nom de la variable.
 
     ![](../media/Lab-05/image29.png)
 
-### Tâche 7 : configurer l'activité Until
+## Tâche 7 : configurer l'activité Until
 
 1. Sélectionnez l'activité **Jusqu'au**.
 
@@ -427,7 +429,7 @@ en créant un pipeline.
     ![](../media/Lab-05/image31.png)
 
     Nous devons écrire une expression qui s'exécute jusqu'à ce que la valeur
-    de **varCounter soit 3** ou** **la valeur **de varIsSuccess soit Oui.**
+    de **varCounter soit 3** ou la valeur **de varIsSuccess soit Oui.**
     (varCounter et varIsSuccess sont les variables que nous venons de
     créer.)
 
@@ -436,33 +438,33 @@ en créant un pipeline.
     trouve un menu :
 
     a. **Paramètres :** les valeurs transmises au pipeline. Par
-        exemple, une valeur provenant d'un pipeline transmise à un autre
-        pipeline. Ces valeurs peuvent être utilisées dans n'importe
-        quelle expression mais ne peuvent pas être modifiées pendant
-        l'exécution du pipeline.
+    exemple, une valeur provenant d'un pipeline transmise à un autre
+    pipeline. Ces valeurs peuvent être utilisées dans n'importe
+    quelle expression mais ne peuvent pas être modifiées pendant
+    l'exécution du pipeline.
 
     b. **Variables système :** Peuvent être utilisées dans des
-        expressions lors de la définition d'entités au sein de l'un ou
-        l'autre de ces services. par ex. ID du pipeline,
-        nom du pipeline, nom du déclencheur, etc.
+    expressions lors de la définition d'entités au sein de l'un ou
+    l'autre de ces services. par ex. ID du pipeline,
+    nom du pipeline, nom du déclencheur, etc.
 
     c. **Paramètres de déclenchement :** paramètres ayant déclenché le
-        pipeline. Par ex., Nom du fichier ou Chemin d'accès au dossier.
+    pipeline. Par ex., Nom du fichier ou Chemin d'accès au dossier.
 
     d. **Fonctions :** vous pouvez appeler des fonctions dans des
-        expressions. Les fonctions sont classées selon les catégories
-        suivantes : Collection, Conversion, Date, Logique, Mathématique
-        et Chaîne. Par ex., concat est une fonction Chaîne, add est une
-        fonction Mathématique, etc.
+    expressions. Les fonctions sont classées selon les catégories
+    suivantes : Collection, Conversion, Date, Logique, Mathématique
+    et Chaîne. Par ex., concat est une fonction Chaîne, add est une
+    fonction Mathématique, etc.
 
     e. **Variables :** les variables de pipeline sont des valeurs qui
-        peuvent être définies et modifiées lors de l'exécution d'un
-        pipeline. Contrairement aux paramètres de pipeline, qui sont
-        définis au niveau du pipeline et ne peuvent pas être modifiés
-        pendant l'exécution d'un pipeline, les variables de pipeline
-        peuvent être définies et modifiées dans un pipeline à l'aide
-        d'une activité Définir une variable. Nous allons prochainement
-        utiliser l'activité Définir une variable.
+    peuvent être définies et modifiées lors de l'exécution d'un
+    pipeline. Contrairement aux paramètres de pipeline, qui sont
+    définis au niveau du pipeline et ne peuvent pas être modifiés
+    pendant l'exécution d'un pipeline, les variables de pipeline
+    peuvent être définies et modifiées dans un pipeline à l'aide
+    d'une activité Définir une variable. Nous allons prochainement
+    utiliser l'activité Définir une variable.
 
     ![](../media/Lab-05/image32.png)
 
@@ -536,7 +538,7 @@ en créant un pipeline.
 
     ![](../media/Lab-05/image38.png)
 
-### Tâche 8 : configurer l'activité Flux de données
+## Tâche 8 : configurer l'activité Flux de données
 
 1. Vous êtes alors redirigé vers l'écran de conception. Une fois
     l'activité **Until** sélectionnée, cliquez sur **Activités** dans le
@@ -573,7 +575,7 @@ en créant un pipeline.
 
     ![](../media/Lab-05/image41.png)
 
-### Tâche 9 : configurer une 1re activité Définir une variable
+## Tâche 9 : configurer une 1st activité Définir une variable
 
 Nous avons configuré l'activité Flux de données comme nous l'avons fait
 plus tôt dans le labo. Nous allons maintenant ajouter une nouvelle
@@ -600,18 +602,16 @@ varIsSuccess sur Oui.
     connecter à l'activité suivante en fonction du résultat de l'activité :
 
     a. L'icône représentant une **flèche incurvée grise** permet d'ignorer
-        l'activité.
+    l'activité.
 
     b. L'icône représentant une **coche verte** est utilisée en cas de
-        réussite de l'activité.
+    réussite de l'activité.
 
     c. L'icône représentant une **croix rouge** est utilisée en cas d'échec
-        de l'activité.
+    de l'activité.
 
     d. L'icône représentant une **flèche droite bleue** est utilisée à la
-        fin de l'activité.
-
-<!-- -->
+    fin de l'activité.
 
 5. Cliquez sur la **coche verte** de l'activité Flux de données
     dfactivity_People_SharePoint et faites-la glisser pour vous
@@ -660,7 +660,7 @@ varIsSuccess sur Oui.
     compteur varCounter en ajoutant un à sa valeur (varCounter =
     varCounter + 1). Nous utilisons donc la variable varTempCounter.
 
-### Tâche 10 : configurer une 2^e^ activité Définir une variable
+## Tâche 10 : configurer une 2nd activité Définir une variable
 
 1. Dans le menu supérieur, cliquez sur **Activités -> Définir une
     variable**. L'activité Définir une variable est alors ajoutée au
@@ -707,7 +707,7 @@ varIsSuccess sur Oui.
     Nous devons maintenant définir la valeur de la variable varCounter sur
     la valeur de varTempCounter.
 
-### Tâche 11 : configurer une 3^e^ activité Définir une variable
+## Tâche 11 : configurer une 3rd activité Définir une variable
 
 1. Dans le menu supérieur, cliquez sur **Activités -> Définir une
     variable**. L'activité Définir une variable est alors ajoutée au
@@ -754,7 +754,7 @@ varIsSuccess sur Oui.
     varTempCounter). À la fin de chaque itération, varCounter
     et varTempCounter ont la même valeur.
 
-### Tâche 12 : configurer l'activité Attente
+## Tâche 12 : configurer l'activité Attente
 
 Ensuite, nous devons attendre 5 minutes/300 secondes si l'actualisation
 du flux de données échoue la première fois avant de réessayer. Si
@@ -791,16 +791,16 @@ varWaitTime.
 8. La boîte de dialogue Générateur d'expressions de pipeline s'ouvre
     alors. Saisissez
 
-    ```
-    @if(
-        greater(variables('varCounter'), 1),
-        if(equals(variables('varCounter'), 2),
-            mul(variables('varWaitTime'),15 ),
-            mul(variables('varWaitTime'), 0)
-        ),
-        mul(variables('varWaitTime'),5 )
-    )
-    ```
+   ```
+   @if(
+       greater(variables('varCounter'), 1),
+       if(equals(variables('varCounter'), 2),
+           mul(variables('varWaitTime'),15 ),
+           mul(variables('varWaitTime'), 0)
+       ),
+       mul(variables('varWaitTime'),5 )
+   )
+   ```
 
     N'hésitez pas à saisir cette expression, à sélectionner les fonctions à
     l'aide du menu ou à la
@@ -836,8 +836,7 @@ varWaitTime.
     **Point de contrôle :** votre itérateur **Until** devrait ressembler à
     la capture d'écran ci-dessous.
 
-    ![A screenshot of activities in Until
-activity](../media/Lab-05/image51.png)
+    ![](../media/Lab-05/image51.png)
 
 10. En haut du canevas de conception à gauche, cliquez sur
     **pl_Refresh_People_Sharepoint_Option2** ou **Main Canvas** pour
@@ -851,7 +850,7 @@ activity](../media/Lab-05/image51.png)
 
     ![](../media/Lab-05/image53.png)
 
-### Tâche 13 : configurer l'actualisation planifiée pour le pipeline
+## Tâche 13 : configurer l'actualisation planifiée pour le pipeline
 
 1. Nous pouvons tester le pipeline en cliquant sur **Accueil ->
     Exécuter**.
@@ -895,7 +894,7 @@ activity](../media/Lab-05/image51.png)
     ![](../media/Lab-05/image55.png)
 
 11. Sélectionnez votre espace de travail Fabric **FAIAD_<username>**
-    dans le panneau de gauche pour accéder à l'espace de travail**.**
+    dans le panneau de gauche pour accéder à l'espace de travail.
 
     >**Remarque :** sur l'écran Planifier, aucune option ne permet de
     notifier le succès ou l'échec (comme Planification de flux de données).
@@ -910,15 +909,15 @@ activity](../media/Lab-05/image51.png)
 # Références
 
 Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions
-clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
+clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
 comporte des liens vers d'excellentes ressources.
 
-![](../media/Lab-05/image56.png)
+  ![](../media/Lab-01/image29.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos
-prochaines étapes avec Microsoft Fabric :
+prochaines étapes avec Microsoft Fabric :
 
-- Consultez le billet de blog pour lire l'intégralité de l'[annonce de
+- Consultez le billet de blog pour lire l'intégralité de [l'annonce de
   la GA de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23).
 
 - Explorez Fabric grâce à la [visite
@@ -946,16 +945,16 @@ prochaines étapes avec Microsoft Fabric :
 Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 
 - [Blog Expérience Data Factory dans
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+  Fabric ](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Blog Expérience Synapse Data Engineering dans
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
 - [Blog Expérience Synapse Data Science dans
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
 - [Blog Expérience Synapse Data Warehousing dans
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+  Fabric](https://aka.ms/Fabric-DW-Blog)
 
 - [Blog Expérience Synapse Real-Time Analytics dans
   Fabric](https://aka.ms/Fabric-RTA-Blog)
@@ -963,7 +962,7 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Annonce Power BI](https://aka.ms/Fabric-PBI-Blog)
 
 - [Blog Expérience Data Activator dans
-  Fabric](https://aka.ms/Fabric-DA-Blog) 
+  Fabric](https://aka.ms/Fabric-DA-Blog)
 
 - [Blog Administration et gouvernance dans
   Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
@@ -973,68 +972,66 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Intégration de Dataverse et Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tous droits réservés.
->
-> En effectuant cette démonstration/ce labo, vous acceptez les
-> conditions suivantes :
->
-> La technologie/fonctionnalité décrite dans cette démonstration/ces
-> travaux pratiques est fournie par Microsoft Corporation en vue
-> d'obtenir vos commentaires et de vous fournir une expérience
-> d'apprentissage. Vous pouvez utiliser cette démonstration/ces ateliers
-> uniquement pour évaluer ces technologies et fonctionnalités, et pour
-> fournir des commentaires à Microsoft. Vous ne pouvez pas l'utiliser à
-> d'autres fins. Vous ne pouvez pas modifier, copier, distribuer,
-> transmettre, afficher, effectuer, reproduire, publier, accorder une
-> licence, créer des œuvres dérivées, transférer ou vendre tout ou une
-> partie de cette démonstration/ces ateliers.
->
-> LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CES TRAVAUX
-> PRATIQUES (OU DE TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU
-> AUTRE EMPLACEMENT EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION
-> EST EXPRESSÉMENT INTERDITE.
->
-> CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES FOURNISSENT CERTAINES
-> FONCTIONNALITÉS DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT
-> D'ÉVENTUELS NOUVEAUX CONCEPTS ET FONCTIONNALITÉS, DANS UN
-> ENVIRONNEMENT SIMULÉ SANS INSTALLATION OU CONFIGURATION COMPLEXE AUX
-> FINS DÉCRITES CI-DESSUS. LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS
-> CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES PEUVENT NE PAS REPRÉSENTER
-> LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE PAS FONCTIONNER DE LA MÊME
-> MANIÈRE QUE DANS UNE VERSION FINALE. IL EST ÉGALEMENT POSSIBLE QUE
-> NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES FONCTIONNALITÉS OU
-> CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES FONCTIONNALITÉS DANS
-> UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE DIFFÉRENTE.
->
-> **COMMENTAIRES.** Si vous envoyez des commentaires sur les
-> fonctionnalités, technologies et/ou concepts décrits dans ces
-> ateliers/cette démonstration à Microsoft, vous accordez à Microsoft,
-> sans frais, le droit d'utiliser, de partager et de commercialiser vos
-> commentaires de quelque manière et à quelque fin que ce soit. Vous
-> accordez également à des tiers, sans frais, les droits de brevet
-> nécessaires pour leurs produits, technologies et services en vue de
-> l'utilisation ou de l'interface avec des parties spécifiques d'un
-> logiciel ou d'un service Microsoft incluant les commentaires. Vous
-> n'enverrez pas de commentaires soumis à une licence exigeant que
-> Microsoft accorde une licence pour son logiciel ou sa documentation à
-> des tiers du fait que nous y incluons vos commentaires. Ces droits
-> survivent à ce contrat.
->
-> MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
-> QUI CONCERNE CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES, Y COMPRIS
-> TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES
-> SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
-> PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
-> AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
-> RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
-> DÉMONSTRATION/CES ATELIERS, OU L'ADÉQUATION DES INFORMATIONS CONTENUES
-> DANS CETTE DÉMONSTRATION/CES ATELIERS À QUELQUE FIN QUE CE SOIT.
->
-> **CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
->
-> Cette démonstration/Ce labo comporte seulement une partie des
-> nouvelles fonctionnalités et améliorations disponibles dans Microsoft
-> Power BI. Certaines fonctionnalités sont susceptibles de changer dans
-> les versions ultérieures du produit. Dans ce labo/cette démonstration,
-> vous allez découvrir comment utiliser certaines nouvelles
-> fonctionnalités, mais pas toutes.
+© 2026 Microsoft Corporation. Tous droits réservés.
+
+En effectuant cette démonstration/ce labo, vous acceptez les conditions
+suivantes :
+
+La technologie/fonctionnalité décrite dans cette démonstration/ce labo
+est fournie par Microsoft Corporation en vue d'obtenir vos commentaires
+et de vous fournir une expérience d'apprentissage. ous pouvez utiliser
+cette démonstration/ce labo uniquement pour évaluer ces technologies et
+fonctionnalités, et pour fournir des commentaires à Microsoft. Vous ne
+pouvez pas l'utiliser à d'autres fins. Vous ne pouvez pas modifier,
+copier, distribuer, transmettre, afficher, effectuer, reproduire,
+publier, accorder une licence, créer des œuvres dérivées, transférer ou
+vendre tout ou une partie de cette démonstration/ce labo.
+
+LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE TOUTE
+PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT EN VUE
+D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT INTERDITE.
+
+CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE
+PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
+CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
+INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS. LES
+TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
+PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
+PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
+ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
+FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
+FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
+DIFFÉRENTE.
+
+**COMMENTAIRES.** Si vous envoyez des commentaires sur les
+fonctionnalités, technologies et/ou concepts décrits dans cette
+démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
+frais, le droit d'utiliser, de partager et de commercialiser vos
+commentaires de quelque manière et à quelque fin que ce soit. Vous
+accordez également à des tiers, sans frais, les droits de brevet
+nécessaires pour leurs produits, technologies et services en vue de
+l'utilisation ou de l'interface avec des parties spécifiques d'un
+logiciel ou d'un service Microsoft incluant les commentaires.
+Vous n'enverrez pas de commentaires soumis à une licence exigeant que
+Microsoft accorde une licence pour son logiciel ou sa documentation à
+des tiers du fait que nous y incluons vos commentaires. Ces droits
+survivent à ce contrat.
+
+MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
+QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES
+ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT EXPLICITES,
+IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET
+D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE AUCUNE GARANTIE OU
+REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA
+CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE DÉMONSTRATION/CE LABO,
+OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE
+LABO À QUELQUE FIN QUE CE SOIT.
+
+**CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
+
+Cette démonstration/Ce labo comporte seulement une partie des nouvelles
+fonctionnalités et améliorations disponibles dans Microsoft Power BI.
+Certaines fonctionnalités sont susceptibles de changer dans les versions
+ultérieures du produit. Dans ce labo/cette démonstration, vous allez
+découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas
+toutes.

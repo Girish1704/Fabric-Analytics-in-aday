@@ -1,20 +1,21 @@
-# Microsoft Fabric Fabric Analyst in a Day-Labo 4 
+# Microsoft Fabric Fabric Analyst in a Day - Labo 4 
+
 ![](../media/Lab-04/main4.png)
 
 # Sommaire
 - Introduction	
  - Dataflow Gen2	
-    - Tâche 1 : copier des requêtes SharePoint dans Dataflow	
-    - Tâche 2 : créer une connexion SharePoint	
-    - Tâche 3 : configurer la destination des données pour la requête People	
-    - Tâche 4 : publier et renommer le flux de données SharePoint	
-    - Tâche 5 : copier des requêtes Snowflake dans Dataflow	
-    - Tâche 6 : créer une connexion à Snowflake	
-    - Tâche 7 : configurer la destination des données pour les requêtes Supplier et PO	
-    - Tâche 8 : renommer et publier le flux de données Snowflake
+    - Tâche 1: copier des requêtes SharePoint dans Dataflow	
+    - Tâche 2: créer une connexion SharePoint	
+    - Tâche 3: configurer la destination des données pour la requête People	
+    - Tâche 4: publier et renommer le flux de données SharePoint	
+    - Tâche 5: copier des requêtes Snowflake dans Dataflow	
+    - Tâche 6: créer une connexion à Snowflake	
+    - Tâche 7: configurer la destination des données pour les requêtes Supplier et PO	
+    - Tâche 8: renommer et publier le flux de données Snowflake
 - Raccourci vers le lakehouse interne	
-    - Tâche 9 : créer un raccourci vers Dataverse
-    - Tâche 10 : créer un raccourci vers une lakehouse	
+    - Tâche 9: créer un raccourci vers Dataverse
+    - Tâche 10: créer un raccourci vers une lakehouse	
 - Références	
 
 
@@ -49,7 +50,7 @@ l'équipe informatique Lakehouse a créée(s).
 
 # Dataflow Gen2
 
-### Tâche 1 : copier des requêtes SharePoint dans Dataflow
+## Tâche 1 : copier des requêtes SharePoint dans Dataflow
 
 1. Revenons à l'espace de travail Fabric **FAIAD_<username> (1)**
     que vous avez créé dans le labo 2, tâche 8.
@@ -108,7 +109,7 @@ l'équipe informatique Lakehouse a créée(s).
 
     ![](../media/Lab-04/image10.png)
 
-### Tâche 2 : créer une connexion SharePoint
+## Tâche 2 : créer une connexion SharePoint
 
 1. Cliquez sur **Configurer la connexion**.
 
@@ -129,7 +130,7 @@ l'équipe informatique Lakehouse a créée(s).
 
     ![](../media/Lab-04/image12.png)
 
-### Tâche 3 : configurer la destination des données pour la requête People
+## Tâche 3 : configurer la destination des données pour la requête People
 
 La connexion est établie et vous pouvez afficher les données dans le
 volet d'aperçu. N'hésitez pas à parcourir les étapes appliquées des
@@ -176,11 +177,11 @@ Lakehouse.
     mise à jour et Schéma. Ensuite, assurez-vous que l'option « **Utiliser
     les paramètres automatiques** » est **activée**.
 
-    10. Cliquez sur **Enregistrer les paramètres**.
+10. Cliquez sur **Enregistrer les paramètres**.
 
     ![](../media/Lab-04/image16.png)
 
-### Tâche 4 : publier et renommer le flux de données SharePoint
+## Tâche 4 : publier et renommer le flux de données SharePoint
 
 1. Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin
     inférieur droit**, notez que la liste déroulante Destination des
@@ -232,7 +233,7 @@ Lakehouse.
     cliquez sur les points de suspension en regard de Tables et sélectionnez
     Actualiser pour actualiser les tables.
 
-### Tâche 5 : copier des requêtes Snowflake dans Dataflow
+## Tâche 5 : copier des requêtes Snowflake dans Dataflow
 
 1. Revenons à l'espace de travail Fabric **FAIAD_<username> (1)**.
 
@@ -291,7 +292,7 @@ Lakehouse.
 
     ![](../media/Lab-04/image23.png)
 
-### Tâche 6 : créer une connexion à Snowflake
+## Tâche 6 : créer une connexion à Snowflake
 
 Notez que les cinq requêtes sont collées et que vous disposez désormais
 du volet Requêtes à gauche. Comme nous n'avons pas de connexion créée
@@ -340,7 +341,7 @@ de configurer la connexion.
     la requête PO pour créer le fait PO. Nous devons maintenant ingérer les
     données Supplier et PO dans Lakehouse.
 
-### Tâche 7 : configurer la destination des données pour les requêtes Supplier et PO
+## Tâche 7 : configurer la destination des données pour les requêtes Supplier et PO
 
 1. Sélectionnez la requête **Supplier (1).**
 
@@ -391,7 +392,7 @@ de configurer la connexion.
 
     ![](../media/Lab-04/image30.png)
 
-### Tâche 8 : renommer et publier le flux de données Snowflake
+## Tâche 8 : renommer et publier le flux de données Snowflake
 
 1. En haut de l'écran, cliquez sur la **flèche en regard de Flux de
     données 2 (le nom peut différer)** pour le renommer.
@@ -433,7 +434,7 @@ Dataverse.
 
 # Raccourci vers le lakehouse interne
 
-### Tâche 9 : créer un raccourci vers Dataverse
+## Tâche 9 : créer un raccourci vers Dataverse
 
 Vous devriez être dans la lakehouse **lh_FAIAD**. Vérifiez que vous vous
 trouvez dans la vue Lakehouse (et non dans le point de terminaison
@@ -502,7 +503,7 @@ analytique SQL).
 
     ![](../media/Lab-04/image39.png)
 
-### Tâche 10 : créer un raccourci vers une lakehouse
+## Tâche 10 : créer un raccourci vers une lakehouse
 
 1. Dans le volet **Explorateur**, cliquez sur les **points de
     suspension** en regard de **Tables**.
@@ -554,15 +555,15 @@ analytique SQL).
 # Références
 
 Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions
-clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
+clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
 comporte des liens vers d'excellentes ressources.
 
-![](../media/Lab-04/image45.png)
+  ![](../media/Lab-01/image29.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos
 prochaines étapes avec Microsoft Fabric :
 
-- Consultez le billet de blog pour lire l'intégralité de l'[annonce de
+- Consultez le billet de blog pour lire l'intégralité de [l'annonce de
   la GA de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23).
 
 - Explorez Fabric grâce à la [visite
@@ -590,16 +591,16 @@ prochaines étapes avec Microsoft Fabric :
 Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 
 - [Blog Expérience Data Factory dans
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+  Fabric ](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Blog Expérience Synapse Data Engineering dans
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
 - [Blog Expérience Synapse Data Science dans
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
 - [Blog Expérience Synapse Data Warehousing dans
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+  Fabric](https://aka.ms/Fabric-DW-Blog)
 
 - [Blog Expérience Synapse Real-Time Analytics dans
   Fabric](https://aka.ms/Fabric-RTA-Blog)
@@ -607,7 +608,7 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Annonce Power BI](https://aka.ms/Fabric-PBI-Blog)
 
 - [Blog Expérience Data Activator dans
-  Fabric](https://aka.ms/Fabric-DA-Blog) 
+  Fabric](https://aka.ms/Fabric-DA-Blog)
 
 - [Blog Administration et gouvernance dans
   Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
@@ -617,68 +618,66 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Intégration de Dataverse et Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tous droits réservés.
->
-> En effectuant cette démonstration/ce labo, vous acceptez les
-> conditions suivantes :
->
-> La technologie/fonctionnalité décrite dans cette démonstration/ce labo
-> est fournie par Microsoft Corporation en vue d'obtenir vos
-> commentaires et de vous fournir une expérience d'apprentissage. Vous
-> pouvez utiliser cette démonstration/ce labo uniquement pour évaluer
-> ces technologies et fonctionnalités, et pour fournir des commentaires
-> à Microsoft. Vous ne pouvez pas l'utiliser à d'autres fins. Vous ne
-> pouvez pas modifier, copier, distribuer, transmettre, afficher,
-> effectuer, reproduire, publier, accorder une licence, créer des œuvres
-> dérivées, transférer ou vendre tout ou une partie de cette
-> démonstration/ce labo.
->
-> LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE
-> TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT
-> EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT
-> INTERDITE.
->
-> CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS
-> DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
-> CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
-> INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS.
-> LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
-> PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
-> PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
-> ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
-> FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
-> FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
-> DIFFÉRENTE.
->
-> **COMMENTAIRES.** Si vous envoyez des commentaires sur les
-> fonctionnalités, technologies et/ou concepts décrits dans cette
-> démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
-> frais, le droit d'utiliser, de partager et de commercialiser vos
-> commentaires de quelque manière et à quelque fin que ce soit. Vous
-> accordez également à des tiers, sans frais, les droits de brevet
-> nécessaires pour leurs produits, technologies et services en vue de
-> l'utilisation ou de l'interface avec des parties spécifiques d'un
-> logiciel ou d'un service Microsoft incluant les commentaires. Vous
-> n'enverrez pas de commentaires soumis à une licence exigeant que
-> Microsoft accorde une licence pour son logiciel ou sa documentation à
-> des tiers du fait que nous y incluons vos commentaires. Ces droits
-> survivent à ce contrat.
->
-> MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
-> QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES
-> GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT
-> EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
-> PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
-> AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
-> RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
-> DÉMONSTRATION/CE LABO, OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS
-> CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
->
-> **CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
->
-> Cette démonstration/Ce labo comporte seulement une partie des
-> nouvelles fonctionnalités et améliorations disponibles dans Microsoft
-> Power BI. Certaines fonctionnalités sont susceptibles de changer dans
-> les versions ultérieures du produit. Dans cette démonstration/ce labo,
-> vous allez découvrir comment utiliser certaines nouvelles
-> fonctionnalités, mais pas toutes.
+© 2026 Microsoft Corporation. Tous droits réservés.
+
+En effectuant cette démonstration/ce labo, vous acceptez les conditions
+suivantes :
+
+La technologie/fonctionnalité décrite dans cette démonstration/ce labo
+est fournie par Microsoft Corporation en vue d'obtenir vos commentaires
+et de vous fournir une expérience d'apprentissage. ous pouvez utiliser
+cette démonstration/ce labo uniquement pour évaluer ces technologies et
+fonctionnalités, et pour fournir des commentaires à Microsoft. Vous ne
+pouvez pas l'utiliser à d'autres fins. Vous ne pouvez pas modifier,
+copier, distribuer, transmettre, afficher, effectuer, reproduire,
+publier, accorder une licence, créer des œuvres dérivées, transférer ou
+vendre tout ou une partie de cette démonstration/ce labo.
+
+LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE TOUTE
+PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT EN VUE
+D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT INTERDITE.
+
+CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE
+PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
+CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
+INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS. LES
+TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
+PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
+PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
+ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
+FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
+FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
+DIFFÉRENTE.
+
+**COMMENTAIRES.** Si vous envoyez des commentaires sur les
+fonctionnalités, technologies et/ou concepts décrits dans cette
+démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
+frais, le droit d'utiliser, de partager et de commercialiser vos
+commentaires de quelque manière et à quelque fin que ce soit. Vous
+accordez également à des tiers, sans frais, les droits de brevet
+nécessaires pour leurs produits, technologies et services en vue de
+l'utilisation ou de l'interface avec des parties spécifiques d'un
+logiciel ou d'un service Microsoft incluant les commentaires.
+Vous n'enverrez pas de commentaires soumis à une licence exigeant que
+Microsoft accorde une licence pour son logiciel ou sa documentation à
+des tiers du fait que nous y incluons vos commentaires. Ces droits
+survivent à ce contrat.
+
+MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
+QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES
+ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT EXPLICITES,
+IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET
+D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE AUCUNE GARANTIE OU
+REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA
+CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE DÉMONSTRATION/CE LABO,
+OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE
+LABO À QUELQUE FIN QUE CE SOIT.
+
+**CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
+
+Cette démonstration/Ce labo comporte seulement une partie des nouvelles
+fonctionnalités et améliorations disponibles dans Microsoft Power BI.
+Certaines fonctionnalités sont susceptibles de changer dans les versions
+ultérieures du produit. Dans ce labo/cette démonstration, vous allez
+découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas
+toutes.

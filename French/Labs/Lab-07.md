@@ -1,22 +1,23 @@
-# Microsoft Fabric Fabric Analyst in a Day-Labo 7
+# Microsoft Fabric Fabric Analyst in a Day - Labo 7
+
 ![](../media/Lab-07/main7.png)
+
 # Sommaire
 - Introduction	
 - Power BI	
-    - Tâche 1 : créer automatiquement un état	
-    - Tâche 2 : configurer l’arrière-plan d’un nouvel état	
-    - Tâche 3 : ajouter un en-tête à l’état	
-    - Tâche 4 : ajouter des KPI à l’état	
-    - Tâche 5 : ajouter un graphique en courbes à l’état	
-    - Tâche 6 : enregistrer l’état	
-    - Tâche 7 : configurer la colonne Year de la table Date	
-    - Tâche 8 : configurer la colonne Month Name de la table Date	
-    - Tâche 9 : mettre en forme le graphique en courbes	
-    - Tâche 10 : connecter Power BI Desktop au modèle sémantique	
-    - Tâche 11 : ajouter de nouvelles données pour simuler le mode Direct Lake	
+    - Tâche 1: créer automatiquement un état	
+    - Tâche 2: configurer l’arrière-plan d’un nouvel état	
+    - Tâche 3: ajouter un en-tête à l’état	
+    - Tâche 4: ajouter des KPI à l’état	
+    - Tâche 5: ajouter un graphique en courbes à l’état	
+    - Tâche 6: enregistrer l’état	
+    - Tâche 7: configurer la colonne Year de la table Date	
+    - Tâche 8: configurer la colonne Month Name de la table Date	
+    - Tâche 9: mettre en forme le graphique en courbes	
+    - Tâche 10: connecter Power BI Desktop au modèle sémantique	
+    - Tâche 11: ajouter de nouvelles données pour simuler le mode Direct Lake	
 - Nettoyer l’environnement de labo	
 - Références	
-
 
 # Introduction 
 
@@ -38,7 +39,7 @@ données. Vous allez maintenant créer un état.
 
 # Power BI
 
-### Tâche 1 : créer automatiquement un état
+## Tâche 1 : créer automatiquement un état
 
 Commençons par utiliser l'option de création automatique d'un état. Plus
 tard dans le labo, nous allons recréer l'état dont nous disposons dans
@@ -58,7 +59,7 @@ Power BI.
 
     ![](../media/Lab-07/image7.png)
 
-4. Cliquez sur **Nouveau rapport** dans le menu supérieur.
+4. Cliquez sur **+ Nouveau rapport** dans le menu supérieur.
 
     ![](../media/Lab-07/image8.png)
 
@@ -76,13 +77,13 @@ Power BI.
     Sélectionnez **sm_FAIAD**.
 
     a. **sm_FAIAD :** il s'agit du modèle sémantique que nous avons
-        créé et à l'aide duquel nous souhaitons créer l'état.
+    créé et à l'aide duquel nous souhaitons créer l'état.
 
     b. **lh_FAIAD :** il s'agit de la lakehouse dans laquelle nous
-        avons ingéré toutes les données.
+    avons ingéré toutes les données.
 
     c. **Units by Supplier :** il s'agit du jeu de données que nous
-        avons créé à l'aide de T-SQL.
+    avons créé à l'aide de T-SQL.
 
 7. Cliquez sur la **flèche en regard du bouton Créer automatiquement un
     état**. Notez que deux options sont disponibles : Créer
@@ -138,7 +139,7 @@ Power BI.
 
     ![](../media/Lab-07/image13.png)
 
-### Tâche 2 : configurer l'arrière-plan d'un nouvel état
+## Tâche 2 : configurer l'arrière-plan d'un nouvel état
 
 Nous allons créer un nouvel état en utilisant un canevas vierge.
 
@@ -200,7 +201,7 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 
     ![](../media/Lab-07/image18.png)
 
-### Tâche 3 : ajouter un en-tête à l'état
+## Tâche 3 : ajouter un en-tête à l'état
 
 1. Ajoutons l'en-tête dans la marge supérieure. Dans le **menu**,
     cliquez sur **Zone de texte**.
@@ -227,7 +228,7 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 
     ![](../media/Lab-07/image19.png)
 
-### Tâche 4 : ajouter des KPI à l'état
+## Tâche 4 : ajouter des KPI à l'état
 
 1. Ajoutons l'indicateur de performance clé Sales. Cliquez sur
     l'**espace blanc** dans le canevas pour détourner le focus de la
@@ -302,7 +303,7 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 
     ![](../media/Lab-07/image25.png)
 
-### Tâche 5 : ajouter un graphique en courbes à l'état
+## Tâche 5 : ajouter un graphique en courbes à l'état
 
 Créons un graphique en courbes pour visualiser Sales dans le temps par
 Reseller Company.
@@ -320,7 +321,7 @@ Reseller Company.
 
     ![](../media/Lab-07/image26.png)
 
-### Tâche 6 : enregistrer l'état
+## Tâche 6 : enregistrer l'état
 
 Nous allons enregistrer l'état avant de le quitter pour apporter des
 modifications au modèle.
@@ -341,7 +342,7 @@ modifications au modèle.
 
     ![](../media/Lab-07/image27.png)
 
-### Tâche 7 : configurer la colonne Year de la table Date
+## Tâche 7 : configurer la colonne Year de la table Date
 
 1. Dans le **menu supérieur**, cliquez sur **Modifier** pour repasser
     en mode Édition.
@@ -381,7 +382,7 @@ modifications au modèle.
 
     ![](../media/Lab-07/image30.png)
 
-### Tâche 8 : configurer la colonne Month Name de la table Date
+## Tâche 8 : configurer la colonne Month Name de la table Date
 
 1. Ajoutons le mois à ce graphique. Dans la table Date, faites glisser
     le champ **MonthNameShort** sous **Year** sur l'**axe des X**. Notez
@@ -425,7 +426,7 @@ modifications au modèle.
 
     ![](../media/Lab-07/image34.png)
 
-### Tâche 9 : mettre en forme le graphique en courbes
+## Tâche 9 : mettre en forme le graphique en courbes
 
 Notez à quel point il est facile de mettre à jour le modèle sémantique
 lors de la création des états. Cela donne des interactions fluides comme
@@ -484,7 +485,7 @@ Power BI Desktop.
     Comme indiqué précédemment, nous n'allons pas créer tous les visuels
     dans ce labo. À votre guise, n'hésitez pas à créer d'autres visuels.
 
-### Tâche 10 : connecter Power BI Desktop au modèle sémantique
+## Tâche 10 : connecter Power BI Desktop au modèle sémantique
 
 Voyons maintenant à quel point il est facile de connecter Power BI
 Desktop au modèle sémantique et de créer des visuels.
@@ -567,7 +568,7 @@ Desktop au modèle sémantique et de créer des visuels.
 20. Enregistrons l'état en cliquant sur **Fichier -> Enregistrer** dans
     le ruban.
 
-### Tâche 11 : ajouter de nouvelles données pour simuler le mode Direct Lake
+## Tâche 11 : ajouter de nouvelles données pour simuler le mode Direct Lake
 
 En général, en mode Import, une fois les données de la source
 actualisées, nous devons actualiser le modèle Power BI après quoi les
@@ -662,151 +663,150 @@ mai 2024 dans ADLS Gen2 et en mettant à jour la vue Sales.
     SQL**. Un volet de nouvelle requête SQL s'ouvre alors.
 
 21. **Copiez** le code ci-dessous et **collez**-le dans le volet de
-    requête SQL**.**
+    requête SQL.
 
     ```
-        ALTER VIEW [dbo].[Sales] AS (
-        select [$Outer].[InvoiceLineID] as [InvoiceLineID],
-            [$Outer].[InvoiceID] as [InvoiceID],
-            [$Outer].[StockItemID] as [StockItemID],
-            [$Outer].[Quantity] as [Quantity],
-            [$Outer].[UnitPrice] as [UnitPrice],
-            [$Outer].[TaxRate] as [TaxRate],
-            [$Outer].[TaxAmount] as [TaxAmount],
-            [$Outer].[LineProfit] as [LineProfit],
-            [$Outer].[ExtendedPrice] as [ExtendedPrice],
-            [$Outer].[CustomerID] as [ResellerID],
-            [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
-            [$Outer].[InvoiceDate] as [InvoiceDate],
-            [$Outer].[t0_0] as [Sales Amount]
+    ALTER VIEW [dbo].[Sales] AS (
+    select [$Outer].[InvoiceLineID] as [InvoiceLineID],
+        [$Outer].[InvoiceID] as [InvoiceID],
+        [$Outer].[StockItemID] as [StockItemID],
+        [$Outer].[Quantity] as [Quantity],
+        [$Outer].[UnitPrice] as [UnitPrice],
+        [$Outer].[TaxRate] as [TaxRate],
+        [$Outer].[TaxAmount] as [TaxAmount],
+        [$Outer].[LineProfit] as [LineProfit],
+        [$Outer].[ExtendedPrice] as [ExtendedPrice],
+        [$Outer].[CustomerID] as [ResellerID],
+        [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
+        [$Outer].[InvoiceDate] as [InvoiceDate],
+        [$Outer].[t0_0] as [Sales Amount]
+    from 
+    (
+        select [_].[InvoiceLineID] as [InvoiceLineID],
+            [_].[InvoiceID] as [InvoiceID],
+            [_].[StockItemID] as [StockItemID],
+            [_].[Quantity] as [Quantity],
+            [_].[UnitPrice] as [UnitPrice],
+            [_].[TaxRate] as [TaxRate],
+            [_].[TaxAmount] as [TaxAmount],
+            [_].[LineProfit] as [LineProfit],
+            [_].[ExtendedPrice] as [ExtendedPrice],
+            [_].[CustomerID] as [CustomerID],
+            [_].[SalespersonPersonID] as [SalespersonPersonID],
+            [_].[InvoiceDate] as [InvoiceDate],
+            [_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
         from 
         (
-            select [_].[InvoiceLineID] as [InvoiceLineID],
-                [_].[InvoiceID] as [InvoiceID],
-                [_].[StockItemID] as [StockItemID],
-                [_].[Quantity] as [Quantity],
-                [_].[UnitPrice] as [UnitPrice],
-                [_].[TaxRate] as [TaxRate],
-                [_].[TaxAmount] as [TaxAmount],
-                [_].[LineProfit] as [LineProfit],
-                [_].[ExtendedPrice] as [ExtendedPrice],
-                [_].[CustomerID] as [CustomerID],
-                [_].[SalespersonPersonID] as [SalespersonPersonID],
-                [_].[InvoiceDate] as [InvoiceDate],
-                [_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
-            from 
+            select [$Outer].[InvoiceLineID],
+                [$Outer].[InvoiceID],
+                [$Outer].[StockItemID],
+                [$Outer].[Quantity],
+                [$Outer].[UnitPrice],
+                [$Outer].[TaxRate],
+                [$Outer].[TaxAmount],
+                [$Outer].[LineProfit],
+                [$Outer].[ExtendedPrice],
+                [$Inner].[CustomerID],
+                [$Inner].[SalespersonPersonID],
+                [$Inner].[InvoiceDate]
+            from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
+            inner join 
             (
-                select [$Outer].[InvoiceLineID],
-                    [$Outer].[InvoiceID],
-                    [$Outer].[StockItemID],
-                    [$Outer].[Quantity],
-                    [$Outer].[UnitPrice],
-                    [$Outer].[TaxRate],
-                    [$Outer].[TaxAmount],
-                    [$Outer].[LineProfit],
-                    [$Outer].[ExtendedPrice],
-                    [$Inner].[CustomerID],
-                    [$Inner].[SalespersonPersonID],
-                    [$Inner].[InvoiceDate]
-                from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
-                inner join 
+                select [_].[InvoiceID] as [InvoiceID2],
+                    [_].[CustomerID] as [CustomerID],
+                    [_].[BillToResellerID] as [BillToResellerID],
+                    [_].[OrderID] as [OrderID],
+                    [_].[DeliveryMethodID] as [DeliveryMethodID],
+                    [_].[ContactPersonID] as [ContactPersonID],
+                    [_].[AccountsPersonID] as [AccountsPersonID],
+                    [_].[SalespersonPersonID] as [SalespersonPersonID],
+                    [_].[PackedByPersonID] as [PackedByPersonID],
+                    [_].[InvoiceDate] as [InvoiceDate],
+                    [_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                    [_].[IsCreditNote] as [IsCreditNote],
+                    [_].[CreditNoteReason] as [CreditNoteReason],
+                    [_].[Comments] as [Comments],
+                    [_].[DeliveryInstructions] as [DeliveryInstructions],
+                    [_].[InternalComments] as [InternalComments],
+                    [_].[TotalDryItems] as [TotalDryItems],
+                    [_].[TotalChillerItems] as [TotalChillerItems],
+                    [_].[DeliveryRun] as [DeliveryRun],
+                    [_].[RunPosition] as [RunPosition],
+                    [_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                    [_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                    [_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                    [_].[LastEditedBy] as [LastEditedBy2],
+                    [_].[LastEditedWhen] as [LastEditedWhen2]
+                from 
                 (
-                    select [_].[InvoiceID] as [InvoiceID2],
-                        [_].[CustomerID] as [CustomerID],
-                        [_].[BillToResellerID] as [BillToResellerID],
-                        [_].[OrderID] as [OrderID],
-                        [_].[DeliveryMethodID] as [DeliveryMethodID],
-                        [_].[ContactPersonID] as [ContactPersonID],
-                        [_].[AccountsPersonID] as [AccountsPersonID],
-                        [_].[SalespersonPersonID] as [SalespersonPersonID],
-                        [_].[PackedByPersonID] as [PackedByPersonID],
-                        [_].[InvoiceDate] as [InvoiceDate],
-                        [_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
-                        [_].[IsCreditNote] as [IsCreditNote],
-                        [_].[CreditNoteReason] as [CreditNoteReason],
-                        [_].[Comments] as [Comments],
-                        [_].[DeliveryInstructions] as [DeliveryInstructions],
-                        [_].[InternalComments] as [InternalComments],
-                        [_].[TotalDryItems] as [TotalDryItems],
-                        [_].[TotalChillerItems] as [TotalChillerItems],
-                        [_].[DeliveryRun] as [DeliveryRun],
-                        [_].[RunPosition] as [RunPosition],
-                        [_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
-                        [_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
-                        [_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
-                        [_].[LastEditedBy] as [LastEditedBy2],
-                        [_].[LastEditedWhen] as [LastEditedWhen2]
-                    from 
-                    (
-                        select [$Table].[InvoiceID] as [InvoiceID],
-                            [$Table].[CustomerID] as [CustomerID],
-                            [$Table].[BillToResellerID] as [BillToResellerID],
-                            [$Table].[OrderID] as [OrderID],
-                            [$Table].[DeliveryMethodID] as [DeliveryMethodID],
-                            [$Table].[ContactPersonID] as [ContactPersonID],
-                            [$Table].[AccountsPersonID] as [AccountsPersonID],
-                            [$Table].[SalespersonPersonID] as [SalespersonPersonID],
-                            [$Table].[PackedByPersonID] as [PackedByPersonID],
-                            [$Table].[InvoiceDate] as [InvoiceDate],
-                            [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
-                            [$Table].[IsCreditNote] as [IsCreditNote],
-                            [$Table].[CreditNoteReason] as [CreditNoteReason],
-                            [$Table].[Comments] as [Comments],
-                            [$Table].[DeliveryInstructions] as [DeliveryInstructions],
-                            [$Table].[InternalComments] as [InternalComments],
-                            [$Table].[TotalDryItems] as [TotalDryItems],
-                            [$Table].[TotalChillerItems] as [TotalChillerItems],
-                            [$Table].[DeliveryRun] as [DeliveryRun],
-                            [$Table].[RunPosition] as [RunPosition],
-                            [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
-                            [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
-                            [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
-                            [$Table].[LastEditedBy] as [LastEditedBy],
-                            [$Table].[LastEditedWhen] as [LastEditedWhen]
-                        from [lh_FAIAD].[dbo].[Invoices] as [$Table]
-                        union all select [$Table].[InvoiceID] as [InvoiceID],
-                            [$Table].[CustomerID] as [CustomerID],
-                            [$Table].[BillToResellerID] as [BillToResellerID],
-                            [$Table].[OrderID] as [OrderID],
-                            [$Table].[DeliveryMethodID] as [DeliveryMethodID],
-                            [$Table].[ContactPersonID] as [ContactPersonID],
-                            [$Table].[AccountsPersonID] as [AccountsPersonID],
-                            [$Table].[SalespersonPersonID] as [SalespersonPersonID],
-                            [$Table].[PackedByPersonID] as [PackedByPersonID],
-                            [$Table].[InvoiceDate] as [InvoiceDate],
-                            [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
-                            [$Table].[IsCreditNote] as [IsCreditNote],
-                            [$Table].[CreditNoteReason] as [CreditNoteReason],
-                            [$Table].[Comments] as [Comments],
-                            [$Table].[DeliveryInstructions] as [DeliveryInstructions],
-                            [$Table].[InternalComments] as [InternalComments],
-                            [$Table].[TotalDryItems] as [TotalDryItems],
-                            [$Table].[TotalChillerItems] as [TotalChillerItems],
-                            [$Table].[DeliveryRun] as [DeliveryRun],
-                            [$Table].[RunPosition] as [RunPosition],
-                            [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
-                            [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
-                            [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
-                            [$Table].[LastEditedBy] as [LastEditedBy],
-                            [$Table].[LastEditedWhen] as [LastEditedWhen]
-                        from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]
-                    ) as [_]
-                ) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and [$Inner].[InvoiceID2] is null)
-            ) as [_]
-        ) as [$Outer]
-        where exists 
+                    select [$Table].[InvoiceID] as [InvoiceID],
+                        [$Table].[CustomerID] as [CustomerID],
+                        [$Table].[BillToResellerID] as [BillToResellerID],
+                        [$Table].[OrderID] as [OrderID],
+                        [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                        [$Table].[ContactPersonID] as [ContactPersonID],
+                        [$Table].[AccountsPersonID] as [AccountsPersonID],
+                        [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                        [$Table].[PackedByPersonID] as [PackedByPersonID],
+                        [$Table].[InvoiceDate] as [InvoiceDate],
+                        [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                        [$Table].[IsCreditNote] as [IsCreditNote],
+                        [$Table].[CreditNoteReason] as [CreditNoteReason],
+                        [$Table].[Comments] as [Comments],
+                        [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                        [$Table].[InternalComments] as [InternalComments],
+                        [$Table].[TotalDryItems] as [TotalDryItems],
+                        [$Table].[TotalChillerItems] as [TotalChillerItems],
+                        [$Table].[DeliveryRun] as [DeliveryRun],
+                        [$Table].[RunPosition] as [RunPosition],
+                        [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                        [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                        [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                        [$Table].[LastEditedBy] as [LastEditedBy],
+                        [$Table].[LastEditedWhen] as [LastEditedWhen]
+                    from [lh_FAIAD].[dbo].[Invoices] as [$Table]
+                    union all select [$Table].[InvoiceID] as [InvoiceID],
+                        [$Table].[CustomerID] as [CustomerID],
+                        [$Table].[BillToResellerID] as [BillToResellerID],
+                        [$Table].[OrderID] as [OrderID],
+                        [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                        [$Table].[ContactPersonID] as [ContactPersonID],
+                        [$Table].[AccountsPersonID] as [AccountsPersonID],
+                        [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                        [$Table].[PackedByPersonID] as [PackedByPersonID],
+                        [$Table].[InvoiceDate] as [InvoiceDate],
+                        [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                        [$Table].[IsCreditNote] as [IsCreditNote],
+                        [$Table].[CreditNoteReason] as [CreditNoteReason],
+                        [$Table].[Comments] as [Comments],
+                        [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                        [$Table].[InternalComments] as [InternalComments],
+                        [$Table].[TotalDryItems] as [TotalDryItems],
+                        [$Table].[TotalChillerItems] as [TotalChillerItems],
+                        [$Table].[DeliveryRun] as [DeliveryRun],
+                        [$Table].[RunPosition] as [RunPosition],
+                        [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                        [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                        [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                        [$Table].[LastEditedBy] as [LastEditedBy],
+                        [$Table].[LastEditedWhen] as [LastEditedWhen]
+                    from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]
+                ) as [_]
+            ) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and [$Inner].[InvoiceID2] is null)
+        ) as [_]
+    ) as [$Outer]
+    where exists 
+    (
+        select 1
+        from 
         (
-            select 1
-            from 
-            (
-                select [ResellerID]
-                from [lh_FAIAD].[dbo].[Reseller] as [$Table]
-            ) as [$Inner]
-            where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and [$Inner].[ResellerID] is null
-        )
-        )
-        
-        ```
+            select [ResellerID]
+            from [lh_FAIAD].[dbo].[Reseller] as [$Table]
+        ) as [$Inner]
+        where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and [$Inner].[ResellerID] is null
+    )
+    )
+    ```
 
 22. Dans le menu de requête visuelle, cliquez sur **Exécuter** pour
     exécuter le code.
@@ -903,15 +903,15 @@ comme suit :
 # Références
 
 Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions
-clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
+clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
 comporte des liens vers d'excellentes ressources.
 
-![](../media/Lab-07/image57.png)
+  ![](../media/Lab-01/image29.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos
 prochaines étapes avec Microsoft Fabric :
 
-- Consultez le billet de blog pour lire l'intégralité de l'[annonce de
+- Consultez le billet de blog pour lire l'intégralité de [l'annonce de
   la GA de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23).
 
 - Explorez Fabric grâce à la [visite
@@ -939,16 +939,16 @@ prochaines étapes avec Microsoft Fabric :
 Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 
 - [Blog Expérience Data Factory dans
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+  Fabric ](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Blog Expérience Synapse Data Engineering dans
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
 - [Blog Expérience Synapse Data Science dans
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
 - [Blog Expérience Synapse Data Warehousing dans
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+  Fabric](https://aka.ms/Fabric-DW-Blog)
 
 - [Blog Expérience Synapse Real-Time Analytics dans
   Fabric](https://aka.ms/Fabric-RTA-Blog)
@@ -956,7 +956,7 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Annonce Power BI](https://aka.ms/Fabric-PBI-Blog)
 
 - [Blog Expérience Data Activator dans
-  Fabric](https://aka.ms/Fabric-DA-Blog) 
+  Fabric](https://aka.ms/Fabric-DA-Blog)
 
 - [Blog Administration et gouvernance dans
   Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
@@ -966,68 +966,66 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Intégration de Dataverse et Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tous droits réservés.
->
-> En effectuant cette démonstration/ce labo, vous acceptez les
-> conditions suivantes :
->
-> La technologie/fonctionnalité décrite dans cette démonstration/ces
-> travaux pratiques est fournie par Microsoft Corporation en vue
-> d'obtenir vos commentaires et de vous fournir une expérience
-> d'apprentissage. Vous pouvez utiliser cette démonstration/ces ateliers
-> uniquement pour évaluer ces technologies et fonctionnalités, et pour
-> fournir des commentaires à Microsoft. Vous ne pouvez pas l'utiliser à
-> d'autres fins. Vous ne pouvez pas modifier, copier, distribuer,
-> transmettre, afficher, effectuer, reproduire, publier, accorder une
-> licence, créer des œuvres dérivées, transférer ou vendre tout ou une
-> partie de cette démonstration/ces ateliers.
->
-> LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CES TRAVAUX
-> PRATIQUES (OU DE TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU
-> AUTRE EMPLACEMENT EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION
-> EST EXPRESSÉMENT INTERDITE.
->
-> CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES FOURNISSENT CERTAINES
-> FONCTIONNALITÉS DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT
-> D'ÉVENTUELS NOUVEAUX CONCEPTS ET FONCTIONNALITÉS, DANS UN
-> ENVIRONNEMENT SIMULÉ SANS INSTALLATION OU CONFIGURATION COMPLEXE AUX
-> FINS DÉCRITES CI-DESSUS. LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS
-> CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES PEUVENT NE PAS REPRÉSENTER
-> LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE PAS FONCTIONNER DE LA MÊME
-> MANIÈRE QUE DANS UNE VERSION FINALE. IL EST ÉGALEMENT POSSIBLE QUE
-> NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES FONCTIONNALITÉS OU
-> CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES FONCTIONNALITÉS
-> DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE DIFFÉRENTE.
->
-> **COMMENTAIRES.** Si vous envoyez des commentaires sur les
-> fonctionnalités, technologies et/ou concepts décrits dans ces
-> ateliers/cette démonstration à Microsoft, vous accordez à Microsoft,
-> sans frais, le droit d'utiliser, de partager et de commercialiser vos
-> commentaires de quelque manière et à quelque fin que ce soit. Vous
-> accordez également à des tiers, sans frais, les droits de brevet
-> nécessaires pour leurs produits, technologies et services en vue de
-> l'utilisation ou de l'interface avec des parties spécifiques d'un
-> logiciel ou d'un service Microsoft incluant les commentaires. Vous
-> n'enverrez pas de commentaires soumis à une licence exigeant que
-> Microsoft accorde une licence pour son logiciel ou sa documentation à
-> des tiers du fait que nous y incluons vos commentaires. Ces droits
-> survivent à ce contrat.
->
-> MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
-> QUI CONCERNE CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES, Y COMPRIS
-> TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES
-> SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
-> PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
-> AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
-> RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
-> DÉMONSTRATION/CES ATELIERS, OU L'ADÉQUATION DES INFORMATIONS CONTENUES
-> DANS CETTE DÉMONSTRATION/CES ATELIERS À QUELQUE FIN QUE CE SOIT.
->
-> **CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
->
-> Cette démonstration/Ce labo comporte seulement une partie des
-> nouvelles fonctionnalités et améliorations disponibles dans Microsoft
-> Power BI. Certaines fonctionnalités sont susceptibles de schanger dans
-> les versions ultérieures du produit. Dans ce labo/cette démonstration,
-> vous allez découvrir comment utiliser certaines nouvelles
-> fonctionnalités, mais pas toutes.
+© 2026 Microsoft Corporation. Tous droits réservés.
+
+En effectuant cette démonstration/ce labo, vous acceptez les conditions
+suivantes :
+
+La technologie/fonctionnalité décrite dans cette démonstration/ce labo
+est fournie par Microsoft Corporation en vue d'obtenir vos commentaires
+et de vous fournir une expérience d'apprentissage. ous pouvez utiliser
+cette démonstration/ce labo uniquement pour évaluer ces technologies et
+fonctionnalités, et pour fournir des commentaires à Microsoft. Vous ne
+pouvez pas l'utiliser à d'autres fins. Vous ne pouvez pas modifier,
+copier, distribuer, transmettre, afficher, effectuer, reproduire,
+publier, accorder une licence, créer des œuvres dérivées, transférer ou
+vendre tout ou une partie de cette démonstration/ce labo.
+
+LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE TOUTE
+PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT EN VUE
+D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT INTERDITE.
+
+CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE
+PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
+CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
+INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS. LES
+TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
+PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
+PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
+ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
+FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
+FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
+DIFFÉRENTE.
+
+**COMMENTAIRES.** Si vous envoyez des commentaires sur les
+fonctionnalités, technologies et/ou concepts décrits dans cette
+démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
+frais, le droit d'utiliser, de partager et de commercialiser vos
+commentaires de quelque manière et à quelque fin que ce soit. Vous
+accordez également à des tiers, sans frais, les droits de brevet
+nécessaires pour leurs produits, technologies et services en vue de
+l'utilisation ou de l'interface avec des parties spécifiques d'un
+logiciel ou d'un service Microsoft incluant les commentaires.
+Vous n'enverrez pas de commentaires soumis à une licence exigeant que
+Microsoft accorde une licence pour son logiciel ou sa documentation à
+des tiers du fait que nous y incluons vos commentaires. Ces droits
+survivent à ce contrat.
+
+MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
+QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES
+ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT EXPLICITES,
+IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET
+D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE AUCUNE GARANTIE OU
+REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA
+CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE DÉMONSTRATION/CE LABO,
+OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE
+LABO À QUELQUE FIN QUE CE SOIT.
+
+**CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
+
+Cette démonstration/Ce labo comporte seulement une partie des nouvelles
+fonctionnalités et améliorations disponibles dans Microsoft Power BI.
+Certaines fonctionnalités sont susceptibles de changer dans les versions
+ultérieures du produit. Dans ce labo/cette démonstration, vous allez
+découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas
+toutes.

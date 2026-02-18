@@ -1,15 +1,16 @@
-# Microsoft Fabric Fabric Analyst in a Day-Labo 3
+# Microsoft Fabric Fabric Analyst in a Day - Labo 3
+
 ![](../media/Lab-03/main3.png)
 
 # Sommaire
 - Introduction	
 - Raccourci vers ADLS Gen2	
-    - Tâche 1 : créer un raccourci	
+    - Tâche 1: créer un raccourci	
 - Transformer des données à l’aide d’une requête visuelle	
-    - Tâche 2 : créer une vue Geo à l’aide d’une requête visuelle	
-    - Tâche 3 : créer une vue Reseller à l’aide d’une requête visuelle	
-    - Tâche 4 : créer une vue Sales à l’aide d’une requête visuelle	
-    - Tâche 5 : créer une vue Product à l’aide d’une requête visuelle	
+    - Tâche 2: créer une vue Geo à l’aide d’une requête visuelle	
+    - Tâche 3: créer une vue Reseller à l’aide d’une requête visuelle	
+    - Tâche 4: créer une vue Sales à l’aide d’une requête visuelle	
+    - Tâche 5: créer une vue Product à l’aide d’une requête visuelle	
 - Références	
 
 # Introduction 
@@ -55,7 +56,7 @@ Requête visuelle.
 
 # Raccourci vers ADLS Gen2
 
-### Tâche 1 : créer un raccourci
+## Tâche 1 : créer un raccourci
 
 Des raccourcis permettent de créer un lien vers l'emplacement cible. Les
 raccourcis permettent d'accéder aux données sans avoir besoin de les
@@ -65,8 +66,7 @@ de raccourcis sur le bureau Windows.
 1. En haut de votre écran, sélectionnez l'onglet **lh_FAIAD** pour
     accéder au lakehouse.
 
-    a. Si vous n'avez pas d'onglet ouvert, vous pouvez revenir à votre
-        espace de travail et ouvrir le Lakehouse à partir de là.
+    a. Si vous n'avez pas d'onglet ouvert, vous pouvez revenir à votre espace de travail et ouvrir le Lakehouse à partir de là.
 
 2. Dans le volet **Explorateur**, cliquez sur les **points de
     suspension** en regard de **Tables**.
@@ -166,7 +166,7 @@ de raccourcis sur le bureau Windows.
 
     j. Warehouse.StockItems sur **ProductItem**
 
-**Remarque :** vérifiez les noms. Une faute de frappe peut provoquer des
+    **Remarque :** vérifiez les noms. Une faute de frappe peut provoquer des
 erreurs lors du labo.
 
 17. Cliquez sur **Créer** pour créer le raccourci.
@@ -185,7 +185,7 @@ erreurs lors du labo.
 
 # Transformer des données à l'aide d'une requête visuelle
 
-### Tâche 2 : créer une vue Geo à l'aide d'une requête visuelle
+## Tâche 2 : créer une vue Geo à l'aide d'une requête visuelle
 
 1. Nous pouvons accéder à la **Lakehouse** à l'aide d'un point de
     terminaison SQL. Ainsi, nous pouvons interroger les données et créer
@@ -341,8 +341,7 @@ erreurs lors du labo.
     **Accueil (2) - > Choisir des colonnes (3) -> Choisir des colonnes
     (4)** dans le ruban.
 
-    > **Remarque :** si l'option Choisir des colonnes n'est pas visible,
-    > vous pouvez la trouver sous Gérer les colonnes.
+    > **Remarque :** si l'option Choisir des colonnes n'est pas visible, vous pouvez la trouver sous Gérer les colonnes.
 
     ![](../media/Lab-03/image23.png)
 
@@ -415,7 +414,7 @@ erreurs lors du labo.
 
     ![](../media/Lab-03/image28.png)
 
-### Tâche 3 : créer une vue Reseller à l'aide d'une requête visuelle
+## Tâche 3 : créer une vue Reseller à l'aide d'une requête visuelle
 
 Créons une vue Reseller en fusionnant la table Customers avec la table
 BuyingGroups. Cette fois-ci, nous allons créer la vue à l'aide d'une
@@ -440,8 +439,6 @@ requête visuelle sans ouvrir l'option Power Query.
     que nous ajoutons une étape après Table. Si vous ne voyez pas le
     signe « **+** » après Table, vous avez peut-être sélectionné une
     autre étape. Sélectionnez Table et vous serez prêt.)
-
-<!-- -->
 
 5. Dans le menu Requête visuelle, cliquez sur **Combiner -> Fusionner
     des requêtes**.
@@ -561,7 +558,7 @@ requête visuelle sans ouvrir l'option Power Query.
 
     ![](../media/Lab-03/image39.png)
 
-### Tâche 4 : créer une vue Sales à l'aide d'une requête visuelle
+## Tâche 4 : créer une vue Sales à l'aide d'une requête visuelle
 
 Créons la vue Sales en fusionnant les tables InvoiceLineItems et
 Invoices avec la vue Reseller. Nous disposons de cette requête dans
@@ -685,10 +682,10 @@ pas possible dans la requête visuelle. Essayons cette méthode.
 
     ![](../media/Lab-03/image50.png)
 
-Si c'est plus facile, supprimez tout le code dans l'Éditeur avancé et
-collez le code ci-dessous à la place :
+    Si c'est plus facile, supprimez tout le code dans l'Éditeur avancé et
+    collez le code ci-dessous à la place :
 
-```
+    ```
     let
     Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
         #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
@@ -700,9 +697,7 @@ collez le code ci-dessous à la place :
         #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
     in
         #"Removed Columns"
-    
-
-```
+    ```
 
 27. Vous êtes alors redirigé(e) vers l'Éditeur Power Query. Dans le
     volet gauche Requêtes, **double-cliquez sur la requête Merge** pour
@@ -738,7 +733,7 @@ collez le code ci-dessous à la place :
 
     ![](../media/Lab-03/image53.png)
 
-### Tâche 5 : créer une vue Product à l'aide d'une requête visuelle
+## Tâche 5 : créer une vue Product à l'aide d'une requête visuelle
 
 Créons la vue Product en fusionnant les tables **ProductItem**,
 **ProductItemGroup** et **ProductGroups**. Pour faire avancer les
@@ -801,7 +796,7 @@ choses, nous allons copier le code dans l'Éditeur avancé.
 
 13. **Collez** le code ci-dessous dans l'Éditeur avancé :
 
- ```
+    ```
     let
        Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
        #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
@@ -810,8 +805,7 @@ choses, nous allons copier le code dans l'Éditeur avancé.
        #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
     in
        #"Choose columns"
-    
-```
+    ```
 
 14. Cliquez sur **OK** pour fermer l'Éditeur avancé. Vous êtes alors
     redirigé(e) vers l'Éditeur Power Query.
@@ -862,15 +856,15 @@ choses, nous allons copier le code dans l'Éditeur avancé.
 # Références
 
 Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions
-clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
+clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
 comporte des liens vers d'excellentes ressources.
 
-![](../media/Lab-03/image64.png)
+  ![](../media/Lab-01/image29.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos
 prochaines étapes avec Microsoft Fabric :
 
-- Consultez le billet de blog pour lire l'intégralité de l'[annonce de
+- Consultez le billet de blog pour lire l'intégralité de [l'annonce de
   la GA de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23).
 
 - Explorez Fabric grâce à la [visite
@@ -892,22 +886,22 @@ prochaines étapes avec Microsoft Fabric :
   Fabric](https://aka.ms/fabric-get-started-ebook).
 
 - Rejoignez la [communauté Fabric](https://aka.ms/fabric-community) pour
-  publier vos questions, partager vos commentaires et apprendre des
+  publier vos questions, partager vos commentaires et apprendre des
   autres.
 
 Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 
 - [Blog Expérience Data Factory dans
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+  Fabric ](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Blog Expérience Synapse Data Engineering dans
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
 - [Blog Expérience Synapse Data Science dans
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
 - [Blog Expérience Synapse Data Warehousing dans
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+  Fabric](https://aka.ms/Fabric-DW-Blog)
 
 - [Blog Expérience Synapse Real-Time Analytics dans
   Fabric](https://aka.ms/Fabric-RTA-Blog)
@@ -915,7 +909,7 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Annonce Power BI](https://aka.ms/Fabric-PBI-Blog)
 
 - [Blog Expérience Data Activator dans
-  Fabric](https://aka.ms/Fabric-DA-Blog) 
+  Fabric](https://aka.ms/Fabric-DA-Blog)
 
 - [Blog Administration et gouvernance dans
   Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
@@ -925,68 +919,66 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Intégration de Dataverse et Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tous droits réservés.
->
-> En effectuant cette démonstration/ce labo, vous acceptez les
-> conditions suivantes :
->
-> La technologie/fonctionnalité décrite dans cette démonstration/ce labo
-> est fournie par Microsoft Corporation en vue d'obtenir vos
-> commentaires et de vous fournir une expérience d'apprentissage. Vous
-> pouvez utiliser cette démonstration/ce labo uniquement pour évaluer
-> ces technologies et fonctionnalités, et pour fournir des commentaires
-> à Microsoft. Vous ne pouvez pas l'utiliser à d'autres fins. Vous ne
-> pouvez pas modifier, copier, distribuer, transmettre, afficher,
-> effectuer, reproduire, publier, accorder une licence, créer des œuvres
-> dérivées, transférer ou vendre tout ou une partie de cette
-> démonstration/ce labo.
->
-> LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE
-> TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT
-> EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT
-> INTERDITE.
->
-> CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE
-> PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
-> CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
-> INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS.
-> LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
-> PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
-> PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
-> ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS
-> PAS DE VERSION FINALE DE CES FONCTIONNALITÉS OU CONCEPTS. VOTRE
-> EXPÉRIENCE D'UTILISATION DE CES FONCTIONNALITÉS DANS UN ENVIRONNEMENT
-> PHYSIQUE PEUT ÉGALEMENT ÊTRE DIFFÉRENTE.
->
-> **COMMENTAIRES.** Si vous envoyez des commentaires sur les
-> fonctionnalités, technologies et/ou concepts décrits dans cette
-> démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
-> frais, le droit d'utiliser, de partager et de commercialiser vos
-> commentaires de quelque manière et à quelque fin que ce soit. Vous
-> accordez également à des tiers, sans frais, les droits de brevet
-> nécessaires pour leurs produits, technologies et services en vue
-> de l'utilisation ou de l'interface avec des parties spécifiques d'un
-> logiciel ou d'un service Microsoft incluant les commentaires. Vous
-> n'enverrez pas de commentaires soumis à une licence exigeant que
-> Microsoft accorde une licence pour son logiciel ou sa documentation
-> à des tiers du fait que nous y incluons vos commentaires. Ces droits
-> survivent à ce contrat.
->
-> MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
-> QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES
-> GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT
-> EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
-> PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
-> AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
-> RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
-> DÉMONSTRATION/CE LABO, OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS
-> CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
->
-> **CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
->
-> Cette démonstration/Ce labo comporte seulement une partie des
-> nouvelles fonctionnalités et améliorations disponibles dans Microsoft
-> Power BI. Certaines fonctionnalités sont susceptibles de changer dans
-> les versions ultérieures du produit. Dans ce labo/cette démonstration,
-> vous allez découvrir comment utiliser certaines nouvelles
-> fonctionnalités, mais pas toutes.
+© 2026 Microsoft Corporation. Tous droits réservés.
+
+En effectuant cette démonstration/ce labo, vous acceptez les conditions
+suivantes :
+
+La technologie/fonctionnalité décrite dans cette démonstration/ce labo
+est fournie par Microsoft Corporation en vue d'obtenir vos commentaires
+et de vous fournir une expérience d'apprentissage. ous pouvez utiliser
+cette démonstration/ce labo uniquement pour évaluer ces technologies et
+fonctionnalités, et pour fournir des commentaires à Microsoft. Vous ne
+pouvez pas l'utiliser à d'autres fins. Vous ne pouvez pas modifier,
+copier, distribuer, transmettre, afficher, effectuer, reproduire,
+publier, accorder une licence, créer des œuvres dérivées, transférer ou
+vendre tout ou une partie de cette démonstration/ce labo.
+
+LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE TOUTE
+PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT EN VUE
+D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT INTERDITE.
+
+CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE
+PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
+CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
+INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS. LES
+TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
+PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
+PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
+ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
+FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
+FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
+DIFFÉRENTE.
+
+**COMMENTAIRES.** Si vous envoyez des commentaires sur les
+fonctionnalités, technologies et/ou concepts décrits dans cette
+démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
+frais, le droit d'utiliser, de partager et de commercialiser vos
+commentaires de quelque manière et à quelque fin que ce soit. Vous
+accordez également à des tiers, sans frais, les droits de brevet
+nécessaires pour leurs produits, technologies et services en vue de
+l'utilisation ou de l'interface avec des parties spécifiques d'un
+logiciel ou d'un service Microsoft incluant les commentaires.
+Vous n'enverrez pas de commentaires soumis à une licence exigeant que
+Microsoft accorde une licence pour son logiciel ou sa documentation à
+des tiers du fait que nous y incluons vos commentaires. Ces droits
+survivent à ce contrat.
+
+MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
+QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES
+ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT EXPLICITES,
+IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET
+D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE AUCUNE GARANTIE OU
+REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA
+CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE DÉMONSTRATION/CE LABO,
+OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE
+LABO À QUELQUE FIN QUE CE SOIT.
+
+**CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
+
+Cette démonstration/Ce labo comporte seulement une partie des nouvelles
+fonctionnalités et améliorations disponibles dans Microsoft Power BI.
+Certaines fonctionnalités sont susceptibles de changer dans les versions
+ultérieures du produit. Dans ce labo/cette démonstration, vous allez
+découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas
+toutes.

@@ -1,16 +1,18 @@
-# Microsoft Fabric Fabric Analyst in a Day-Labo 6
+# Microsoft Fabric Fabric Analyst in a Day - Labo 6
+
 ![](../media/Lab-06/main6.png)
+
 # Sommaire
 - Introduction	
-- Lakehouse : analyse des données	
-- Tâche 1 : interroger des données à l’aide de SQL	
-- Tâche 2 : visualiser le résultat T-SQL	
-- Lakehouse : modélisation sémantique	
-    - Tâche 3 : créer un modèle sémantique	
-    - Tâche 4 : créer des relations	
-    - Tâche 5 : créer des mesures	
-    - Tâche 6 : section facultative - Créer des relations	
-    - Tâche 7 : section facultative - Créer des mesures	
+- Lakehouse: analyse des données	
+    - Tâche 1: interroger des données à l’aide de SQL	
+    - Tâche 2: visualiser le résultat T-SQL	
+- Lakehouse: modélisation sémantique	
+    - Tâche 3: créer un modèle sémantique	
+    - Tâche 4: créer des relations	
+    - Tâche 5: créer des mesures	
+    - Tâche 6: section facultative - Créer des relations	
+    - Tâche 7: section facultative - Créer des mesures	
 - Références	
 
 # Introduction 
@@ -31,7 +33,7 @@ modélisation dans le service.
 
 # Lakehouse : analyse des données
 
-### Tâche 1 : interroger des données à l'aide de SQL
+## Tâche 1 : interroger des données à l'aide de SQL
 
 1. Revenons à l'espace de travail Fabric **FAIAD_<username>** que
     vous avez créé dans le labo 2, tâche 8.
@@ -104,7 +106,7 @@ modélisation dans le service.
 
     ![](../media/Lab-06/image8.png)
 
-### Tâche 2 : visualiser le résultat T-SQL
+## Tâche 2 : visualiser le résultat T-SQL
 
 1. Nous pouvons également visualiser le résultat de cette requête.
     **Mettez en surbrillance la requête** dans le volet de requête.
@@ -154,7 +156,7 @@ modélisation dans le service.
 
 # Lakehouse : modélisation sémantique
 
-### Tâche 3 : créer un modèle sémantique
+## Tâche 3 : créer un modèle sémantique
 
 1. Dans le menu du point de terminaison analytique SQL, cliquez sur
     **Nouveau modèle sémantique**.
@@ -207,7 +209,7 @@ incorrect.](../media/Lab-06/image14.png)
     >**Remarque** **:** le mode Direct Lake est plus rapide que le mode
     DirectQuery.
 
-### Tâche 4 : créer des relations
+## Tâche 4 : créer des relations
 
 Si vous n'êtes pas actuellement dans le modèle sémantique nouvellement
 créé, rendez-vous à l'endroit approprié
@@ -282,7 +284,7 @@ créé, rendez-vous à l'endroit approprié
     >**Remarque :** toutes nos mises à jour sont enregistrées
     automatiquement.
 
-    **Point de contrôle :** votre modèle devrait comporter les trois
+    >**Point de contrôle :** votre modèle devrait comporter les trois
     relations entre les tables Sales et Reseller, les tables Sales et Date,
     et les tables Sales et Product, comme illustré dans la capture d'écran
     ci-dessous :
@@ -294,7 +296,7 @@ créé, rendez-vous à l'endroit approprié
     du labo. La section facultative passe en revue les étapes permettant de
     créer les relations restantes.
 
-### Tâche 5 : créer des mesures
+## Tâche 5 : créer des mesures
 
 Ajoutons quelques mesures dont nous avons besoin pour créer le tableau
 de bord Sales.
@@ -380,7 +382,7 @@ de bord Sales.
     Nous avons créé un modèle sémantique et l'étape suivante consiste à
     créer un état. Nous allons le faire dans le prochain labo.
 
-### Tâche 6 : section facultative - Créer des relations
+## Tâche 6 : section facultative - Créer des relations
 
 Ajoutons les relations restantes.
 
@@ -493,7 +495,7 @@ Ajoutons les relations restantes.
 
     ![](../media/Lab-06/image33.png)
 
-### Tâche 7 : section facultative - Créer des mesures
+## Tâche 7 : section facultative - Créer des mesures
 
 Ajoutons les mesures restantes.
 
@@ -518,28 +520,24 @@ Ajoutons les mesures restantes.
 
 8. Procédez de même pour ajouter les mesures suivantes :
 
-    a. Dans la table **Sales, GM = SUM('Sales'[LineProfit])** au
-        format **Devise avec 0 décimale**.
+    a. Dans la table **Sales, GM = SUM('Sales'[LineProfit])** au format **Devise avec 0 décimale**.
 
-    b. Dans la table **Sales**, **GM% = DIVIDE([GM], [Sales])** au
-        format **Pourcentage avec 0 décimale**.
+    b. Dans la table **Sales**, **GM% = DIVIDE([GM], [Sales])** au format **Pourcentage avec 0 décimale**.
 
-    c. Dans la table **Customer, No of Customers =
-        COUNTROWS(Customer)** au format **Nombre entier avec l'option
-        Séparateur de milliers activée**.
+    c. Dans la table **Customer, No of Customers = COUNTROWS(Customer)** au format **Nombre entier avec l'option Séparateur de milliers activée**.
 
 # Références
 
 Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions
-clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
+clés de Microsoft Fabric. Dans le menu du service, la section Aide (?)
 comporte des liens vers d'excellentes ressources.
 
-![](../media/Lab-06/image35.png)
+  ![](../media/Lab-01/image29.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos
 prochaines étapes avec Microsoft Fabric :
 
-- Consultez le billet de blog pour lire l'intégralité de l'[annonce de
+- Consultez le billet de blog pour lire l'intégralité de [l'annonce de
   la GA de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23).
 
 - Explorez Fabric grâce à la [visite
@@ -567,16 +565,16 @@ prochaines étapes avec Microsoft Fabric :
 Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 
 - [Blog Expérience Data Factory dans
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+  Fabric ](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Blog Expérience Synapse Data Engineering dans
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
 - [Blog Expérience Synapse Data Science dans
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
 - [Blog Expérience Synapse Data Warehousing dans
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+  Fabric](https://aka.ms/Fabric-DW-Blog)
 
 - [Blog Expérience Synapse Real-Time Analytics dans
   Fabric](https://aka.ms/Fabric-RTA-Blog)
@@ -584,7 +582,7 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Annonce Power BI](https://aka.ms/Fabric-PBI-Blog)
 
 - [Blog Expérience Data Activator dans
-  Fabric](https://aka.ms/Fabric-DA-Blog) 
+  Fabric](https://aka.ms/Fabric-DA-Blog)
 
 - [Blog Administration et gouvernance dans
   Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
@@ -594,68 +592,66 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Intégration de Dataverse et Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tous droits réservés.
->
-> En effectuant cette démonstration/ce labo, vous acceptez les
-> conditions suivantes :
->
-> La technologie/fonctionnalité décrite dans cette démonstration/ce labo
-> est fournie par Microsoft Corporation en vue d'obtenir vos
-> commentaires et de vous fournir une expérience d'apprentissage. Vous
-> pouvez utiliser cette démonstration/ce labo uniquement pour évaluer
-> ces technologies et fonctionnalités, et pour fournir des commentaires
-> à Microsoft. Vous ne pouvez pas l'utiliser à d'autres fins. Vous ne
-> pouvez pas modifier, copier, distribuer, transmettre, afficher,
-> effectuer, reproduire, publier, accorder une licence, créer des œuvres
-> dérivées, transférer ou vendre tout ou une partie de cette
-> démonstration/ce labo.
->
-> LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE
-> TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT
-> EN VUE D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT
-> INTERDITE.
->
-> CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS
-> DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
-> CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
-> INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS.
-> LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
-> PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
-> PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
-> ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
-> FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
-> FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
-> DIFFÉRENTE.
->
-> **COMMENTAIRES.** Si vous envoyez des commentaires sur les
-> fonctionnalités, technologies et/ou concepts décrits dans cette
-> démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
-> frais, le droit d'utiliser, de partager et de commercialiser vos
-> commentaires de quelque manière et à quelque fin que ce soit. Vous
-> accordez également à des tiers, sans frais, les droits de brevet
-> nécessaires pour leurs produits, technologies et services en vue de
-> l'utilisation ou de l'interface avec des parties spécifiques d'un
-> logiciel ou d'un service Microsoft incluant les commentaires. Vous
-> n'enverrez pas de commentaires soumis à une licence exigeant que
-> Microsoft accorde une licence pour son logiciel ou sa documentation à
-> des tiers du fait que nous y incluons vos commentaires. Ces droits
-> survivent à ce contrat.
->
-> MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
-> QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES
-> GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT
-> EXPLICITES, IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE
-> PARTICULIER, DE TITRE ET D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE
-> AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES
-> RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE
-> DÉMONSTRATION/CE LABO, OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS
-> CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
->
-> **CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
->
-> Cette démonstration/Ce labo comporte seulement une partie des
-> nouvelles fonctionnalités et améliorations disponibles dans Microsoft
-> Power BI. Certaines fonctionnalités sont susceptibles de changer dans
-> les versions ultérieures du produit. Dans cette démonstration/ce labo,
-> vous allez découvrir comment utiliser certaines nouvelles
-> fonctionnalités, mais pas toutes.
+© 2026 Microsoft Corporation. Tous droits réservés.
+
+En effectuant cette démonstration/ce labo, vous acceptez les conditions
+suivantes :
+
+La technologie/fonctionnalité décrite dans cette démonstration/ce labo
+est fournie par Microsoft Corporation en vue d'obtenir vos commentaires
+et de vous fournir une expérience d'apprentissage. ous pouvez utiliser
+cette démonstration/ce labo uniquement pour évaluer ces technologies et
+fonctionnalités, et pour fournir des commentaires à Microsoft. Vous ne
+pouvez pas l'utiliser à d'autres fins. Vous ne pouvez pas modifier,
+copier, distribuer, transmettre, afficher, effectuer, reproduire,
+publier, accorder une licence, créer des œuvres dérivées, transférer ou
+vendre tout ou une partie de cette démonstration/ce labo.
+
+LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE TOUTE
+PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT EN VUE
+D'UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT INTERDITE.
+
+CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE
+PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D'ÉVENTUELS NOUVEAUX
+CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS
+INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS. LES
+TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO
+PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE
+PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST
+ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES
+FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D'UTILISATION DE CES
+FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE
+DIFFÉRENTE.
+
+**COMMENTAIRES.** Si vous envoyez des commentaires sur les
+fonctionnalités, technologies et/ou concepts décrits dans cette
+démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans
+frais, le droit d'utiliser, de partager et de commercialiser vos
+commentaires de quelque manière et à quelque fin que ce soit. Vous
+accordez également à des tiers, sans frais, les droits de brevet
+nécessaires pour leurs produits, technologies et services en vue de
+l'utilisation ou de l'interface avec des parties spécifiques d'un
+logiciel ou d'un service Microsoft incluant les commentaires.
+Vous n'enverrez pas de commentaires soumis à une licence exigeant que
+Microsoft accorde une licence pour son logiciel ou sa documentation à
+des tiers du fait que nous y incluons vos commentaires. Ces droits
+survivent à ce contrat.
+
+MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
+QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES
+ET CONDITIONS DE QUALITÉ MARCHANDE, QU'ELLES SOIENT EXPLICITES,
+IMPLICITES OU LÉGALES, D'ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET
+D'ABSENCE DE CONTREFAÇON. MICROSOFT N'OFFRE AUCUNE GARANTIE OU
+REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA
+CONSÉQUENCE QUI DÉCOULE DE L'UTILISATION DE CETTE DÉMONSTRATION/CE LABO,
+OU L'ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE
+LABO À QUELQUE FIN QUE CE SOIT.
+
+**CLAUSE D'EXCLUSION DE RESPONSABILITÉ**
+
+Cette démonstration/Ce labo comporte seulement une partie des nouvelles
+fonctionnalités et améliorations disponibles dans Microsoft Power BI.
+Certaines fonctionnalités sont susceptibles de changer dans les versions
+ultérieures du produit. Dans ce labo/cette démonstration, vous allez
+découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas
+toutes.
