@@ -1,5 +1,7 @@
 ﻿# Microsoft Fabric - Fabric Analyst in a Day - Laboratório 6
 
+![](../media/Lab-01/main6.png)
+
 # Sumário
 - Introdução
 - Lakehouse - Analisar dados

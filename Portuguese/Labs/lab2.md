@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Laboratório 2
 
-
+![](../media/Lab-01/main2.png)
 
 # Sumário
 
