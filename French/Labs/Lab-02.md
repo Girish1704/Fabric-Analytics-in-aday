@@ -14,8 +14,8 @@
     - Tâche 5: expérience Industry Solutions	
     - Tâche 6: expérience Real-Time Intelligence	
     - Tâche 7: expérience Data Engineering	
-    - Tâches 8: expérience Data Science	
-    - Tâches 9: expérience Data Warehouse	
+    - Tâche 8: expérience Data Science	
+    - Tâche 9: expérience Data Warehouse	
     - Tâche 10: expérience Databases	
 - Références	
 
@@ -954,3 +954,4 @@ Certaines fonctionnalités sont susceptibles de changer dans les versions
 ultérieures du produit. Dans ce labo/cette démonstration, vous allez
 découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas
 toutes.
+
