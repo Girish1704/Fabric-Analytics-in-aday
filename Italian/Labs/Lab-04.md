@@ -1,5 +1,7 @@
-# Microsoft Fabric Fabric Analyst in a Day-Lab 4
+# Microsoft Fabric Fabric Analyst in a Day - Lab 4
+
 ![](../media/Lab-04/main4.png)
+
 # Sommario
 - Introduzione	
 - Flusso di dati Gen2	
@@ -273,7 +275,7 @@ dobbiamo inserire i dati di People nel lakehouse.
 8. Tornare al **browser**.
 
 9. Nel **riquadro Flusso di dati** selezionare il **riquadro centrale**
-    e premere **CTRL+V** (l'opzione Incolla del menu del pulsante
+    e premere **CTRL + V** (l'opzione Incolla del menu del pulsante
     destro non è attualmente supportata). Se si usa un dispositivo MAC,
     usare Cmd+V per incollare.
 
@@ -308,17 +310,17 @@ di configurare la connessione.
     tabelle in **Snowflake** a Snowflake, quindi selezionare
     **Connetti**.
 
-- Nome utente Snowflake: TE_SNOWFLAKE1
+    - Nome utente Snowflake: TE_SNOWFLAKE1
 
-- Password Snowflake: 8UpfRpExVDXv2AC1
+    - Password Snowflake: 8UpfRpExVDXv2AC1
 
     >**Nota:** se si verificano problemi di connessione a Snowflake usando le
-    credenziali dei dettagli dell'ambiente, usare le credenziali fornite di
-    seguito.
+        credenziali dei dettagli dell'ambiente, usare le credenziali fornite di
+        seguito.
 
-- **Nome utente Snowflake:** SNOWFLAKE_BACKUP
+    - **Nome utente Snowflake:** SNOWFLAKE_BACKUP
 
-- **Password Snowflake:** 8UpfRpExVDXv2AC1.
+    - **Password Snowflake:** 8UpfRpExVDXv2AC1.
 
 5. Selezionare **Connetti**.
 
@@ -412,8 +414,7 @@ di configurare la connessione.
 7. Notare che le tabelle **PO** e **Supplier** ora sono disponibili nel
     lakehouse.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](../media/Lab-04/image33.png)
+    ![](../media/Lab-04/image33.png)
 
     >**Nota:** se le tabelle appena create non sono visibili, selezionare i
     puntini di sospensione accanto a Tables e selezionare Aggiorna per
@@ -539,19 +540,19 @@ Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità
 chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione
 Guida (?) include collegamenti ad alcune risorse utili.
 
-![](../media/Lab-04/image45.png)
+![](../media/Lab-01/image28.png)
 
-Di seguito sono riportate ulteriori risorse utili che consentiranno di
-progredire nell'uso di Microsoft Fabric.
+Di seguito sono indicate altre risorse utili a progredire nell'uso di
+Microsoft Fabric.
 
-- Vedere il post di blog per leggere l'[annuncio completo sulla
-  disponibilità generale
-  di Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+- Vedere il post di blog per leggere [l'annuncio completo sulla
+  disponibilità generale di Microsoft
+  Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
 - Esplorare Fabric attraverso la [Presentazione
   guidata](https://aka.ms/Fabric-GuidedTour)
 
-- Iscriversi alla [versione di valutazione gratuita di Microsoft
+- Iscriversi alla versione di [valutazione gratuita di Microsoft
   Fabric](https://aka.ms/try-fabric)
 
 - Visitare il [sito Web di Microsoft
@@ -563,25 +564,25 @@ progredire nell'uso di Microsoft Fabric.
 - Consultare la [documentazione tecnica di
   Fabric](https://aka.ms/fabric-docs)
 
-- Leggere l'[e-book gratuito introduttivo a
+- Leggere [l'e-book gratuito introduttivo a
   Fabric](https://aka.ms/fabric-get-started-ebook)
 
 - Unirsi alla [community di Fabric](https://aka.ms/fabric-community) per
-  pubblicare domande, condividere feedback e imparare dagli altri
+  pubblicare domande, condividere feedback e imparare dagli altri
 
 Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
 
 - [Blog sull'esperienza Data Factory in
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+  Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Blog sull'esperienza Synapse Data Engineering in
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
 - [Blog sull'esperienza Synapse Data Science in
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
 - [Blog sull'esperienza Synapse Data Warehousing in
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+  Fabric](https://aka.ms/Fabric-DW-Blog)
 
 - [Blog sull'esperienza Synapse Real-Time Analytics in
   Fabric](https://aka.ms/Fabric-RTA-Blog)
@@ -589,7 +590,7 @@ Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
 - [Blog di annunci di Power BI](https://aka.ms/Fabric-PBI-Blog)
 
 - [Blog sull'esperienza Data Activator in
-  Fabric](https://aka.ms/Fabric-DA-Blog) 
+  Fabric](https://aka.ms/Fabric-DA-Blog)
 
 - [Blog su amministrazione e governance in
   Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
@@ -599,68 +600,65 @@ Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
 - [Blog sull'integrazione di Dataverse e Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
->
-> L'uso della demo/del lab implica l'accettazione delle seguenti
-> condizioni:
->
-> La tecnologia/le funzionalità descritte nella demo/nel lab sono
-> fornite da Microsoft Corporation allo scopo di ottenere feedback
-> dall'utente e offrire un'esperienza di apprendimento. L'utilizzo
-> della demo/del lab è consentito solo per la valutazione delle
-> caratteristiche e delle funzionalità di tale tecnologia e per l'invio
-> di feedback a Microsoft. L'utilizzo per qualsiasi altro scopo non
-> è consentito. È vietato modificare, copiare, distribuire, trasmettere,
-> visualizzare, eseguire, riprodurre, pubblicare, concedere in licenza,
-> usare per la creazione di lavori derivati, trasferire o vendere questa
-> demo/questo lab o parte di essi.
->
-> SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
-> LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
-> QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O
-> RIDISTRIBUZIONE.
->
-> QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
-> SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
-> NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
-> UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
-> SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI
-> IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
-> COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
-> VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
-> FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI
-> TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA
-> IN UN AMBIENTE FISICO.
->
-> **FEEDBACK.** L'invio a Microsoft di feedback sulle caratteristiche,
-> sulle funzionalità e/o sui concetti della tecnologia descritti in
-> questa demo/questo lab implica la concessione a Microsoft, a titolo
-> gratuito, del diritto di utilizzare, condividere e commercializzare
-> tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche
-> la concessione a titolo gratuito a terze parti del diritto di utilizzo
-> di eventuali brevetti necessari per i loro prodotti, le loro
-> tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai
-> componenti software o ai servizi Microsoft specifici che includono il
-> feedback. L'utente si impegna a non inviare feedback la cui
-> inclusione all'interno di software o documentazione Microsoft imponga
-> a Microsoft di concedere in licenza a terze parti tale software o
-> documentazione. Questi diritti sussisteranno anche dopo la scadenza
-> del presente contratto.
->
-> CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA
-> O CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE
-> E CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O
-> PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO,
-> TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O
-> RAPPRESENTAZIONI IN RELAZIONE ALL'ACCURATEZZA DEI RISULTATI
-> E DELL'OUTPUT DERIVANTI DALL'USO DELLA DEMO/DEL LAB O
-> ALL'ADEGUATEZZA DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER
-> QUALSIASI SCOPO.
->
-> **CLAUSOLA DI RESPONSABILITÀ**
->
-> Questa demo/questo lab contiene solo una parte delle nuove
-> funzionalità e dei miglioramenti in Microsoft Power BI. Alcune
-> funzionalità potrebbero cambiare nelle versioni future del prodotto.
-> In questa demo/in questo lab si apprendono alcune delle nuove
-> funzionalità, ma non tutte.
+© 2026 Microsoft Corporation. Tutti i diritti sono riservati.
+
+L'uso della demo/del lab implica l'accettazione delle seguenti
+condizioni:
+
+La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite
+da Microsoft Corporation allo scopo di ottenere feedback dall'utente e
+offrire un'esperienza di apprendimento. L'utilizzo della demo/del lab
+è consentito solo per la valutazione delle caratteristiche e delle
+funzionalità di tale tecnologia e per l'invio di feedback a Microsoft.
+L'utilizzo per qualsiasi altro scopo non è consentito. È vietato
+modificare, copiare, distribuire, trasmettere, visualizzare, eseguire,
+riprodurre, pubblicare, concedere in licenza, usare per la creazione di
+lavori derivati, trasferire o vendere questa demo/questo lab o parte di
+essi.
+
+SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
+LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
+QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
+
+QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
+SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
+NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
+UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
+SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN
+QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
+COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
+VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
+FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI
+TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ RISULTARE DIVERSA IN UN AMBIENTE
+FISICO.
+
+**FEEDBACK.** L'invio a Microsoft di feedback sulle caratteristiche,
+sulle funzionalità e/o sui concetti della tecnologia descritti in questa
+demo/questo lab implica la concessione a Microsoft, a titolo gratuito,
+del diritto di utilizzare, condividere e commercializzare tale feedback
+in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a
+titolo gratuito a terze parti del diritto di utilizzo di eventuali
+brevetti necessari per i loro prodotti, le loro tecnologie e i loro
+servizi al fine di utilizzare o interfacciarsi ai componenti software o
+ai servizi Microsoft specifici che includono il feedback. L'utente si
+impegna a non inviare feedback la cui inclusione all'interno di
+software o documentazione Microsoft imponga a Microsoft di concedere in
+licenza a terze parti tale software o documentazione. Questi diritti
+sussisteranno anche dopo la scadenza del presente contratto.
+
+CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O
+CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
+CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE
+DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON
+VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN
+RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI
+DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI
+CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
+
+**CLAUSOLA DI RESPONSABILITÀ**
+
+Questa demo/questo lab contiene solo una parte delle nuove funzionalità
+e dei miglioramenti in Microsoft Power BI. Alcune funzionalità
+potrebbero cambiare nelle versioni future del prodotto. In questa
+demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non
+tutte.

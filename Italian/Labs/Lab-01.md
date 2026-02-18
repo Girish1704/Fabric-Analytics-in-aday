@@ -118,14 +118,14 @@ Desktop per comprendere le trasformazioni e il modello.
 
     - Posta elettronica/nome utente:
 
-    ![](../media/Lab-01/image8.png)
+      ![](../media/Lab-01/image8.png)
 
 4. Immettere il **Pass di accesso temporaneo** seguente e fare clic su
     **Accedi**.
 
     - Pass di accesso temporaneo:
 
-    ![](../media/Lab-01/image9.png)
+       ![](../media/Lab-01/image9.png)
 
 5. Si apre la finestra di dialogo **Rimani connesso a tutte le tue
     app**. Selezionare **OK**.
@@ -215,19 +215,19 @@ rivenditrice.
 10. Ci sono due tabelle dei fatti Sales e PO.
 
     a. La granularità dei dati di Sales è per Date, Reseller, Product e
-        People. Date, Reseller, Product e People si collegano a Sales.
+    People. Date, Reseller, Product e People si collegano a Sales.
 
     b. La granularità dei dati di PO è per Date, Product e People.
-        Date, Product e People si collegano a PO.
+    Date, Product e People si collegano a PO.
 
     c. Sono presenti dati di Supplier per Product. Supplier si collega
-        a Product.
+    a Product.
 
     d. Sono presenti dati località di Reseller per Geo. Geo si collega
-        a Reseller.
+    a Reseller.
 
     e. Sono presenti informazioni di Customer per Reseller. Customer si
-        collega a Reseller.
+    collega a Reseller.
 
 ## Attività 3 - Analisi delle query in Power Query
 
@@ -293,7 +293,7 @@ rivenditrice.
 
     - **Token SAS:** disponibile nella scheda Ambiente
 
-    ![](../media/Lab-01/image23.png)
+      ![](../media/Lab-01/image23.png)
 
 11. La cartella **ADLSData** include più dimensioni: Geo, Product,
     Reseller e Date. Include anche i fatti Sales.
@@ -324,7 +324,7 @@ rivenditrice.
 
     - **Password Snowflake:** 8UpfRpExVDXv2AC1
 
-    *Nota: se si verificano problemi di connessione a Snowflake con le
+    >*Nota: se si verificano problemi di connessione a Snowflake con le
     credenziali descritte sopra, usare le credenziali di backup fornite di
     seguito.*
 
@@ -354,7 +354,7 @@ rivenditrice.
 
     - **Password:** disponibile nella scheda Ambiente
 
-    ![](../media/Lab-01/image26.png)
+      ![](../media/Lab-01/image26.png)
 
 17. La cartella **SharepointData** include la dimensione People.
 
@@ -430,7 +430,7 @@ Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
 - [Blog sull'integrazione di Dataverse e Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+© 2026 Microsoft Corporation. Tutti i diritti sono riservati.
 
 L'uso della demo/del lab implica l'accettazione delle seguenti
 condizioni:

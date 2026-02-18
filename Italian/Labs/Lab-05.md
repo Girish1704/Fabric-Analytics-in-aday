@@ -1,5 +1,7 @@
-# Microsoft Fabric Fabric Analyst in a Day-Lab 5
+# Microsoft Fabric Fabric Analyst in a Day - Lab 5
+
 ![](../media/Lab-05/main5.png)
+
 # Sommario
 - Introduzione	
 - Flusso di dati Gen2	
@@ -124,24 +126,26 @@ flusso di dati dei fornitori.
 
 11. Vedrai che nel pannello **Impostazioni** che appare sono disponibili
     tre opzioni:
-    **Informazioni su:** possiamo modificare il nome del flusso di dati
+
+    - **Informazioni su:** possiamo modificare il nome del flusso di dati
     e aggiungere una descrizione. Inoltre, possiamo vedere chi è il
     proprietario del flusso di dati e l'ultima volta che è stato
     modificato.
-    **Approvazione:** consente di specificare se il flusso di dati
+    
+    - **Approvazione:** consente di specificare se il flusso di dati
     conterrà il tag **Alzato di livello**
     o **Certificato** per consentire agli altri di visualizzarlo.
-    **Pianifica:** qui è possibile pianificare i flussi di dati.
+    
+    - **Pianifica:** qui è possibile pianificare i flussi di dati.
 
-    ![](../media/Lab-05/image13.png)
+      ![](../media/Lab-05/image13.png)
 
 12. Seleziona l'opzione **Pianifica**
 
 13. Per attivare una pianificazione, è sufficiente fare clic su
     **Aggiungi pianificazione**
 
->    ![A screenshot of a computer AI-generated content may be
-> incorrect.](../media/Lab-05/image14.png)
+    ![](../media/Lab-05/image14.png)
 
 14. In questo modo è possibile specificare la cadenza
     dell'aggiornamento selezionando un'opzione per la proprietà
@@ -241,7 +245,7 @@ aggiornare il flusso di dati. Troviamo un'attività che possiamo usare.
     **Impostazioni**.
 
     >***Nota:*** potrebbe essere necessario trascinare il riquadro inferiore verso
-    l'alto per visualizzare le impostazioni.*
+    l'alto per visualizzare le impostazioni.
 
     ![](../media/Lab-05/image22.png)
 
@@ -378,18 +382,18 @@ possibile ottenere questo risultato creando una nuova pipeline.
 11. Eseguire passaggi analoghi per aggiungere altre tre variabili:
 
     a. **varIsSuccess** di tipo **String** con valore predefinito
-        **No**. Questa variabile verrà usata per indicare se
-        l'aggiornamento del flusso di dati ha avuto esito positivo.
+    **No**. Questa variabile verrà usata per indicare se
+    l'aggiornamento del flusso di dati ha avuto esito positivo.
 
     b. **varSuccess** di tipo **String** con valore predefinito **Sì**.
-        Questa variabile verrà usata per impostare il valore di
-        varIsSuccess se l'aggiornamento del flusso di dati ha esito
-        positivo.
+    Questa variabile verrà usata per impostare il valore di
+    varIsSuccess se l'aggiornamento del flusso di dati ha esito
+    positivo.
 
     c. **varWaitTime** di tipo **Integer** con valore predefinito
-        **60**. Questa variabile verrà usata per impostare il tempo di
-        attesa in caso il flusso di dati non riesca
-        (5 minuti/300 secondi oppure 15 minuti/900 secondi).
+    **60**. Questa variabile verrà usata per impostare il tempo di
+    attesa in caso il flusso di dati non riesca
+    (5 minuti/300 secondi oppure 15 minuti/900 secondi).
 
     >**Nota:** accertarsi che non ci siano spazi prima o dopo il nome della
     variabile.
@@ -432,32 +436,32 @@ possibile ottenere questo risultato creando una nuova pipeline.
     presente un menu:
 
     a. **Parametri:** valori passati alla pipeline. Ad esempio, il
-        valore di una pipeline passato a un'altra pipeline. Questi
-        valori possono essere utilizzati in qualsiasi espressione,
-        ma non possono essere modificati durante l'esecuzione della
-        pipeline.
+    valore di una pipeline passato a un'altra pipeline. Questi
+    valori possono essere utilizzati in qualsiasi espressione,
+    ma non possono essere modificati durante l'esecuzione della
+    pipeline.
 
     b. **Variabili di sistema:** è possibile usarle nelle espressioni
-        per definire entità all'interno di uno dei servizi, ad esempio
-        ID pipeline, nome pipeline, nome trigger e così via.
+    per definire entità all'interno di uno dei servizi, ad esempio
+    ID pipeline, nome pipeline, nome trigger e così via.
 
     c. **Parametri trigger:** parametri che hanno attivato la pipeline.
-        Ad esempio, nome file o percorso cartella.
+    Ad esempio, nome file o percorso cartella.
 
     d. **Funzioni:** è possibile chiamare funzioni all'interno delle
-        espressioni. Le funzioni sono classificate in funzioni Raccolta,
-        Conversione, Data, Logica, Matematica e Stringa. Ad esempio,
-        concat è una funzione Stringa, add è una funzione Matematica e
-        così via.
+    espressioni. Le funzioni sono classificate in funzioni Raccolta,
+    Conversione, Data, Logica, Matematica e Stringa. Ad esempio,
+    concat è una funzione Stringa, add è una funzione Matematica e
+    così via.
 
     e. **Variabili:** le variabili della pipeline sono valori che è
-        possibile impostare e modificare durante l'esecuzione della
-        pipeline. A differenza dei parametri della pipeline, che sono
-        definiti a livello di pipeline e non possono essere modificati
-        durante l'esecuzione della pipeline, le variabili della
-        pipeline possono essere impostate e modificate all'interno di
-        una pipeline usando un'attività Imposta variabile. Useremo a
-        breve l'attività Imposta variabile.
+    possibile impostare e modificare durante l'esecuzione della
+    pipeline. A differenza dei parametri della pipeline, che sono
+    definiti a livello di pipeline e non possono essere modificati
+    durante l'esecuzione della pipeline, le variabili della
+    pipeline possono essere impostate e modificate all'interno di
+    una pipeline usando un'attività Imposta variabile. Useremo a
+    breve l'attività Imposta variabile.
 
     ![](../media/Lab-05/image32.png)
 
@@ -596,18 +600,16 @@ Sì.
     icone. Tali icone si possono usare per la connessione all'attività
     successiva in base al risultato dell'attività:
 
-a. L'icona **freccia curva grigia** si usa per saltare l'attività.
+    a. L'icona **freccia curva grigia** si usa per saltare l'attività.
 
-b. L'icona **segno di spunta verde** si usa in caso di esito positivo
+    b. L'icona **segno di spunta verde** si usa in caso di esito positivo
     dell'attività.
 
-c. L'icona **segno X rosso** si usa in caso di esito negativo
+    c. L'icona **segno X rosso** si usa in caso di esito negativo
     dell'attività.
 
-d. L'icona **freccia dritta blu** si usa al completamento
+    d. L'icona **freccia dritta blu** si usa al completamento
     dell'attività.
-
-<!-- -->
 
 5. Fare clic sul **segno di spunta verde** dall'attività Flusso di
     dati dfactivity_People_SharePoint e trascinare per connettere la
@@ -788,7 +790,7 @@ variabile varWaitTime per impostare il tempo di attesa.
 8. Si apre la finestra di dialogo Generatore di espressioni della
     pipeline. Immettere
 
-     ```
+   ```
    @if(
        greater(variables('varCounter'), 1),
        if(equals(variables('varCounter'), 2),
@@ -798,12 +800,13 @@ variabile varWaitTime per impostare il tempo di attesa.
        mul(variables('varWaitTime'),5 )
    )
    ```
+
     È possibile digitare l'espressione, usare il menu per selezionare le
     funzioni o copiare e incollare l'espressione.
 
     ![](../media/Lab-05/image50.png)
 
-Qui usiamo due nuove funzioni:
+    Qui usiamo due nuove funzioni:
 
 - **greater:** prende due numeri come parametri e li confronta per
   indicare qual è il maggiore.
@@ -857,7 +860,7 @@ Qui usiamo due nuove funzioni:
     una pianificazione. Nel menu in alto selezionare **Home ->
     Pianificazione**. Si apre la finestra Pianificazione.
 
-3. Seleziona il pulsante **Aggiungi pianificazione** sotto **Esecuzione
+3. Seleziona il pulsante **+ Aggiungi pianificazione** sotto **Esecuzione
     pianificata**.
 
     ![](../media/Lab-05/image54.png)
@@ -885,7 +888,7 @@ Qui usiamo due nuove funzioni:
     ![](../media/Lab-05/image55.png)
 
 11. Selezionare l'area di lavoro di Fabric **FAIAD_<nome utente>**
-    nel pannello di sinistra per andare all'area di lavoro**.**
+    nel pannello di sinistra per andare all'area di lavoro.
 
     >**Nota:** nella schermata Pianificazione non vi è un'opzione per la
     notifica dell'esito positivo o negativo (come nella pianificazione del
@@ -901,21 +904,21 @@ Qui usiamo due nuove funzioni:
 
 Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità
 chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione
-Guida (?) include collegamenti ad alcune risorse utili.
+Guida (?) include collegamenti ad alcune risorse utili.
 
-![](../media/Lab-05/image56.png)
+  ![](../media/Lab-01/image28.png)
 
-Di seguito sono riportate ulteriori risorse utili che consentiranno di
-progredire nell'uso di Microsoft Fabric.
+Di seguito sono indicate altre risorse utili a progredire nell'uso di
+Microsoft Fabric.
 
-- Vedere il post di blog per leggere l'[annuncio completo sulla
+- Vedere il post di blog per leggere [l'annuncio completo sulla
   disponibilità generale di Microsoft
   Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
 - Esplorare Fabric attraverso la [Presentazione
   guidata](https://aka.ms/Fabric-GuidedTour)
 
-- Iscriversi alla [versione di valutazione gratuita di Microsoft
+- Iscriversi alla versione di [valutazione gratuita di Microsoft
   Fabric](https://aka.ms/try-fabric)
 
 - Visitare il [sito Web di Microsoft
@@ -927,25 +930,25 @@ progredire nell'uso di Microsoft Fabric.
 - Consultare la [documentazione tecnica di
   Fabric](https://aka.ms/fabric-docs)
 
-- Leggere l'[e-book gratuito introduttivo a
+- Leggere [l'e-book gratuito introduttivo a
   Fabric](https://aka.ms/fabric-get-started-ebook)
 
 - Unirsi alla [community di Fabric](https://aka.ms/fabric-community) per
-  pubblicare domande, condividere feedback e imparare dagli altri
+  pubblicare domande, condividere feedback e imparare dagli altri
 
-Leggere i blog di annunci più approfonditi sull'esperienza in Fabric:
+Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
 
 - [Blog sull'esperienza Data Factory in
-  Fabric](https://aka.ms/Fabric-Data-Factory-Blog) 
+  Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Blog sull'esperienza Synapse Data Engineering in
-  Fabric](https://aka.ms/Fabric-DE-Blog) 
+  Fabric](https://aka.ms/Fabric-DE-Blog)
 
 - [Blog sull'esperienza Synapse Data Science in
-  Fabric](https://aka.ms/Fabric-DS-Blog) 
+  Fabric](https://aka.ms/Fabric-DS-Blog)
 
 - [Blog sull'esperienza Synapse Data Warehousing in
-  Fabric](https://aka.ms/Fabric-DW-Blog) 
+  Fabric](https://aka.ms/Fabric-DW-Blog)
 
 - [Blog sull'esperienza Synapse Real-Time Analytics in
   Fabric](https://aka.ms/Fabric-RTA-Blog)
@@ -953,7 +956,7 @@ Leggere i blog di annunci più approfonditi sull'esperienza in Fabric:
 - [Blog di annunci di Power BI](https://aka.ms/Fabric-PBI-Blog)
 
 - [Blog sull'esperienza Data Activator in
-  Fabric](https://aka.ms/Fabric-DA-Blog) 
+  Fabric](https://aka.ms/Fabric-DA-Blog)
 
 - [Blog su amministrazione e governance in
   Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
@@ -963,67 +966,65 @@ Leggere i blog di annunci più approfonditi sull'esperienza in Fabric:
 - [Blog sull'integrazione di Dataverse e Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
->
-> L'uso della demo/del lab implica l'accettazione delle seguenti
-> condizioni:
->
-> La tecnologia/le funzionalità descritte nella demo/nel lab sono
-> fornite da Microsoft Corporation allo scopo di ottenere feedback
-> dall'utente e offrire un'esperienza di apprendimento. L'utilizzo
-> della demo/del lab è consentito solo per la valutazione delle
-> caratteristiche e delle funzionalità di tale tecnologia e per l'invio
-> di feedback a Microsoft. L'utilizzo per qualsiasi altro scopo non è
-> consentito. È vietato modificare, copiare, distribuire, trasmettere,
-> visualizzare, eseguire, riprodurre, pubblicare, concedere in licenza,
-> usare per la creazione di lavori derivati, trasferire o vendere questa
-> demo/questo lab o parte di essi.
->
-> SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
-> LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
-> QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O
-> RIDISTRIBUZIONE.
->
-> QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
-> SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
-> NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
-> UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
-> SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI
-> IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
-> COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
-> VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
-> FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI
-> TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA IN
-> UN AMBIENTE FISICO.
->
-> **FEEDBACK.** L'invio a Microsoft di feedback sulle caratteristiche,
-> sulle funzionalità e/o sui concetti della tecnologia descritti in
-> questa demo/questo lab implica la concessione a Microsoft, a titolo
-> gratuito, del diritto di utilizzare, condividere e commercializzare
-> tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche
-> la concessione a titolo gratuito a terze parti del diritto di utilizzo
-> di eventuali brevetti necessari per i loro prodotti, le loro
-> tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai
-> componenti software o ai servizi Microsoft specifici che includono
-> il feedback. L'utente si impegna a non inviare feedback la cui
-> inclusione all'interno di software o documentazione Microsoft imponga
-> a Microsoft di concedere in licenza a terze parti tale software o
-> documentazione. Questi diritti sussisteranno anche dopo la scadenza
-> del presente contratto.
->
-> CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA
-> O CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE
-> E CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O
-> PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO,
-> TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE
-> O RAPPRESENTAZIONI IN RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E
-> DELL'OUTPUT DERIVANTI DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA
-> DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
->
-> **CLAUSOLA DI RESPONSABILITÀ**
->
-> Questa demo/questo lab contiene solo una parte delle nuove
-> funzionalità e dei miglioramenti in Microsoft Power BI. Alcune
-> funzionalità potrebbero cambiare nelle versioni future del prodotto.
-> In questa demo/in questo lab si apprendono alcune delle nuove
-> funzionalità, ma non tutte.
+© 2026 Microsoft Corporation. Tutti i diritti sono riservati.
+
+L'uso della demo/del lab implica l'accettazione delle seguenti
+condizioni:
+
+La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite
+da Microsoft Corporation allo scopo di ottenere feedback dall'utente e
+offrire un'esperienza di apprendimento. L'utilizzo della demo/del lab
+è consentito solo per la valutazione delle caratteristiche e delle
+funzionalità di tale tecnologia e per l'invio di feedback a Microsoft.
+L'utilizzo per qualsiasi altro scopo non è consentito. È vietato
+modificare, copiare, distribuire, trasmettere, visualizzare, eseguire,
+riprodurre, pubblicare, concedere in licenza, usare per la creazione di
+lavori derivati, trasferire o vendere questa demo/questo lab o parte di
+essi.
+
+SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL
+LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN
+QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
+
+QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE
+SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E
+NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON
+UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI
+SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN
+QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ
+COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA
+VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI
+FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI
+TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ RISULTARE DIVERSA IN UN AMBIENTE
+FISICO.
+
+**FEEDBACK.** L'invio a Microsoft di feedback sulle caratteristiche,
+sulle funzionalità e/o sui concetti della tecnologia descritti in questa
+demo/questo lab implica la concessione a Microsoft, a titolo gratuito,
+del diritto di utilizzare, condividere e commercializzare tale feedback
+in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a
+titolo gratuito a terze parti del diritto di utilizzo di eventuali
+brevetti necessari per i loro prodotti, le loro tecnologie e i loro
+servizi al fine di utilizzare o interfacciarsi ai componenti software o
+ai servizi Microsoft specifici che includono il feedback. L'utente si
+impegna a non inviare feedback la cui inclusione all'interno di
+software o documentazione Microsoft imponga a Microsoft di concedere in
+licenza a terze parti tale software o documentazione. Questi diritti
+sussisteranno anche dopo la scadenza del presente contratto.
+
+CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O
+CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E
+CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE
+DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON
+VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN
+RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI
+DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI
+CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
+
+**CLAUSOLA DI RESPONSABILITÀ**
+
+Questa demo/questo lab contiene solo una parte delle nuove funzionalità
+e dei miglioramenti in Microsoft Power BI. Alcune funzionalità
+potrebbero cambiare nelle versioni future del prodotto. In questa
+demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non
+tutte.
