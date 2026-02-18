@@ -60,11 +60,11 @@ In questo lab si apprenderà quanto segue:
 
     ![](../media/Lab-04/image6.png)
 
-Lasciare il nome predefinito e verificare che l'opzione "Abilita
-integrazione Git" sia selezionata. Quindi, selezionare **Crea**. Si
-apre la **pagina Flusso di dati**. L'interfaccia di Flusso di dati Gen2
-è simile a Power Query in Power BI Desktop. Possiamo copiare le query da
-Power BI Desktop a Flusso di dati Gen2. Proviamo.
+    Lasciare il nome predefinito e verificare che l'opzione "Abilita
+    integrazione Git" sia selezionata. Quindi, selezionare **Crea**. Si
+    apre la **pagina Flusso di dati**. L'interfaccia di Flusso di dati Gen2
+    è simile a Power Query in Power BI Desktop. Possiamo copiare le query da
+    Power BI Desktop a Flusso di dati Gen2. Proviamo.
 
 4. Se non è già stato fatto, aprire il file **FAIAD.pbix** che si trova
     nella cartella **Reports** sul desktop dell'ambiente lab.
@@ -90,17 +90,17 @@ Power BI Desktop a Flusso di dati Gen2. Proviamo.
 
     ![](../media/Lab-04/image8.png)
 
-**Nota:** se si lavora in un ambiente lab, selezionare i puntini di
-sospensione in alto a destra della schermata. Usare il dispositivo di
-scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra
-di dialogo selezionare OK. Dopo aver incollato le query è possibile
-disabilitare questa opzione.
+    >**Nota:** se si lavora in un ambiente lab, selezionare i puntini di
+    sospensione in alto a destra della schermata. Usare il dispositivo di
+    scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra
+    di dialogo selezionare OK. Dopo aver incollato le query è possibile
+    disabilitare questa opzione.
 
     ![](../media/Lab-04/image9.png)
 
-La query è stata incollata ed è disponibile nel pannello di sinistra.
-Poiché non abbiamo creato una connessione a SharePoint, compare un
-messaggio di avviso che chiede di configurare la connessione.
+    La query è stata incollata ed è disponibile nel pannello di sinistra.
+    Poiché non abbiamo creato una connessione a SharePoint, compare un
+    messaggio di avviso che chiede di configurare la connessione.
 
     ![](../media/Lab-04/image10.png)
 
@@ -118,8 +118,8 @@ messaggio di avviso che chiede di configurare la connessione.
 
 4. Selezionare **Connetti**.
 
-**Nota:** l'accesso verrà eseguito usando le proprie credenziali.
-Saranno diverse rispetto allo screenshot qui sotto.
+    >**Nota:** l'accesso verrà eseguito usando le proprie credenziali.
+    Saranno diverse rispetto allo screenshot qui sotto.
 
     ![](../media/Lab-04/image12.png)
 
@@ -164,11 +164,11 @@ dobbiamo inserire i dati di People nel lakehouse.
     destinazione. Assicurarsi che l'opzione "**Usa impostazioni
     automatiche**" sia **abilitata**.
 
-**Nota:** se si disabilitano le impostazioni automatiche, si potrà
-notare che sono disponibili opzioni per impostare il metodo di
-aggiornamento e opzioni dello schema. Dopo aver vagliato le possibilità
-offerte, assicurarsi che l'opzione "**Usa impostazioni automatiche**"
-sia **abilitata**.
+    >**Nota:** se si disabilitano le impostazioni automatiche, si potrà
+    notare che sono disponibili opzioni per impostare il metodo di
+    aggiornamento e opzioni dello schema. Dopo aver vagliato le possibilità
+    offerte, assicurarsi che l'opzione "**Usa impostazioni automatiche**"
+    sia **abilitata**.
 
 10. Selezionare **Salva impostazioni**.
 
@@ -186,9 +186,9 @@ sia **abilitata**.
 
     ![](../media/Lab-04/image17.png)
 
-**Nota:** sarai reindirizzato all'**area di lavoro FAIAD_<nome
-utente>**. Il completamento dell'esecuzione del flusso di dati
-potrebbe richiedere alcuni istanti.
+    >**Nota:** sarai reindirizzato all'**area di lavoro FAIAD_<nome
+    utente>**. Il completamento dell'esecuzione del flusso di dati
+    potrebbe richiedere alcuni istanti.
 
 3. **Dataflow 1** è il flusso di dati utilizzato. Rinominiamolo prima
     di continuare. Fai clic sui **puntini di sospensione (...)**
@@ -208,7 +208,7 @@ potrebbe richiedere alcuni istanti.
 
     ![](../media/Lab-04/image19.png)
 
-Si tornerà all'area di lavoro **FAIAD_<nome utente>**.
+    Si tornerà all'area di lavoro **FAIAD_<nome utente>**.
 
 7. Selezionare **lh_FAIAD** per spostarsi nel lakehouse.
 
@@ -219,9 +219,9 @@ Si tornerà all'area di lavoro **FAIAD_<nome utente>**.
 
     ![](../media/Lab-04/image20.png)
 
-**Nota:** se le tabelle appena create non sono visibili, selezionare i
-puntini di sospensione accanto a Tables e selezionare Aggiorna per
-aggiornare le tabelle.
+    >**Nota:** se le tabelle appena create non sono visibili, selezionare i
+    puntini di sospensione accanto a Tables e selezionare Aggiorna per
+    aggiornare le tabelle.
 
 ### Attività 5: Copia di query di Snowflake nel flusso di dati
 
@@ -235,13 +235,13 @@ aggiornare le tabelle.
 
     ![](../media/Lab-04/image21.png)
 
-Lasciare il nome predefinito e verificare che l'opzione "Abilita
-integrazione Git" sia selezionata. Quindi, selezionare **Crea**. Se
-ricevi un messaggio che indica "Esiste già un flusso di dati con questo
-nome", modifica il nome in **Flusso di dati 2**. Si aprirà la pagina
-**Flusso di dati**. Ora che abbiamo familiarità con Flusso di dati,
-procediamo con la copia delle query da Power BI Desktop a Flusso di
-dati.
+    Lasciare il nome predefinito e verificare che l'opzione "Abilita
+    integrazione Git" sia selezionata. Quindi, selezionare **Crea**. Se
+    ricevi un messaggio che indica "Esiste già un flusso di dati con questo
+    nome", modifica il nome in **Flusso di dati 2**. Si aprirà la pagina
+    **Flusso di dati**. Ora che abbiamo familiarità con Flusso di dati,
+    procediamo con la copia delle query da Power BI Desktop a Flusso di
+    dati.
 
 4. Se non è già stato fatto, aprire il file **FAIAD.pbix** che si trova
     nella cartella **Reports** sul desktop dell'ambiente lab.
@@ -277,11 +277,11 @@ dati.
     destro non è attualmente supportata). Se si usa un dispositivo MAC,
     usare Cmd+V per incollare.
 
-**Nota:** se si lavora in un ambiente lab, selezionare i **puntini di
-sospensione (...)** in alto a destra nello schermo. Usare il dispositivo
-di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra
-di dialogo selezionare OK. Dopo aver incollato le query è possibile
-disabilitare questa opzione.
+    >**Nota:** se si lavora in un ambiente lab, selezionare i **puntini di
+    sospensione (...)** in alto a destra nello schermo. Usare il dispositivo
+    di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra
+    di dialogo selezionare OK. Dopo aver incollato le query è possibile
+    disabilitare questa opzione.
 
     ![](../media/Lab-04/image23.png)
 
@@ -312,9 +312,9 @@ di configurare la connessione.
 
 - Password Snowflake: 8UpfRpExVDXv2AC1
 
-**Nota:** se si verificano problemi di connessione a Snowflake usando le
-credenziali dei dettagli dell'ambiente, usare le credenziali fornite di
-seguito.
+    >**Nota:** se si verificano problemi di connessione a Snowflake usando le
+    credenziali dei dettagli dell'ambiente, usare le credenziali fornite di
+    seguito.
 
 - **Nome utente Snowflake:** SNOWFLAKE_BACKUP
 
@@ -324,14 +324,14 @@ seguito.
 
     ![](../media/Lab-04/image25.png)
 
-Viene stabilita la connessione ed è possibile visualizzare i dati nel
-pannello di anteprima. Esplorare i Passaggi applicati delle query. In
-genere, la query Suppliers contiene i dettagli sui fornitori
-e SupplierCategories, come il nome della tabella indica, contiene tutte
-le categorie di fornitori. Queste due tabelle vengono unite per creare
-la dimensione Supplier, con le colonne necessarie. Analogamente, uniremo
-PO Line Items e PO per creare il fatto PO. Ora dobbiamo inserire i dati
-di Supplier e PO nel lakehouse.
+    Viene stabilita la connessione ed è possibile visualizzare i dati nel
+    pannello di anteprima. Esplorare i Passaggi applicati delle query. In
+    genere, la query Suppliers contiene i dettagli sui fornitori
+    e SupplierCategories, come il nome della tabella indica, contiene tutte
+    le categorie di fornitori. Queste due tabelle vengono unite per creare
+    la dimensione Supplier, con le colonne necessarie. Analogamente, uniremo
+    PO Line Items e PO per creare il fatto PO. Ora dobbiamo inserire i dati
+    di Supplier e PO nel lakehouse.
 
 ### Attività 7: Configurazione della destinazione dei dati per le query Supplier e PO
 
@@ -401,8 +401,8 @@ di Supplier e PO nel lakehouse.
 
     ![](../media/Lab-04/image32.png)
 
-Si tornerà all'area di lavoro **FAIAD_<nome utente>**. La
-pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
+    Si tornerà all'area di lavoro **FAIAD_<nome utente>**. La
+    pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
 
 5. Selezionare **lh_FAIAD** per spostarsi nel lakehouse.
 
@@ -415,11 +415,11 @@ pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
     ![A screenshot of a computer AI-generated content may be
 incorrect.](../media/Lab-04/image33.png)
 
-**Nota:** se le tabelle appena create non sono visibili, selezionare i
-puntini di sospensione accanto a Tables e selezionare Aggiorna per
-aggiornare le tabelle.
+    >**Nota:** se le tabelle appena create non sono visibili, selezionare i
+    puntini di sospensione accanto a Tables e selezionare Aggiorna per
+    aggiornare le tabelle.
 
-Ora creiamo un collegamento per importare i dati da Dataverse.
+    Ora creiamo un collegamento per importare i dati da Dataverse.
 
 # Collegamento al lakehouse interno
 
@@ -428,7 +428,7 @@ Ora creiamo un collegamento per importare i dati da Dataverse.
 Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere
 nella vista Lakehouse (non nell'endpoint di Analisi SQL).
 
-    ![](../media/Lab-04/image34.png)
+![](../media/Lab-04/image34.png)
 
 1. Nel pannello **Explorer** selezionare i **puntini di sospensione**
     accanto a **Tables**.
@@ -440,8 +440,8 @@ nella vista Lakehouse (non nell'endpoint di Analisi SQL).
 3. Viene visualizzata la finestra di dialogo Nuovo collegamento. In
     **Origini esterne** selezionare **Dataverse**.
 
-**Nota:** nel lab precedente abbiamo seguito passaggi simili per creare
-un collegamento a Azure Data Lake Storage Gen2.
+    >**Nota:** nel lab precedente abbiamo seguito passaggi simili per creare
+    un collegamento a Azure Data Lake Storage Gen2.
 
     ![](../media/Lab-04/image36.png)
 
@@ -464,21 +464,21 @@ un collegamento a Azure Data Lake Storage Gen2.
 8. Selezionare **Avanti** nella finestra di dialogo Impostazioni
     connessione.
 
-Si apre una finestra di dialogo in cui sarà possibile scegliere un
-bucket/una directory diverso da Dataverse. Notare che sono presenti
-numerosi bucket diversi. Possiamo selezionare i bucket di cui abbiamo
-bisogno e seguire il processo come nel Lab 3 (usare una query visiva per
-trasformare i dati e creare viste). Possiamo anche usare il flusso di
-dati Gen2 come abbiamo fatto in precedenza in questo lab per stabilire
-una connessione a SharePoint.
+    Si apre una finestra di dialogo in cui sarà possibile scegliere un
+    bucket/una directory diverso da Dataverse. Notare che sono presenti
+    numerosi bucket diversi. Possiamo selezionare i bucket di cui abbiamo
+    bisogno e seguire il processo come nel Lab 3 (usare una query visiva per
+    trasformare i dati e creare viste). Possiamo anche usare il flusso di
+    dati Gen2 come abbiamo fatto in precedenza in questo lab per stabilire
+    una connessione a SharePoint.
 
-Nel nostro scenario il team IT ha già stabilito un collegamento a
-Dataverse e applicato le necessarie trasformazioni dei dati, eseguendone
-il mirroring nel file Power BI Desktop. Ha inserito questi dati nel
-lakehouse nell'area di lavoro Amministrazione e ha concesso l'accesso
-alle tabelle. Dal momento che il team IT si è occupato della parte più
-complessa del lavoro, possiamo creare un collegamento a questo lakehouse
-nell'area di lavoro Amministrazione.
+    Nel nostro scenario il team IT ha già stabilito un collegamento a
+    Dataverse e applicato le necessarie trasformazioni dei dati, eseguendone
+    il mirroring nel file Power BI Desktop. Ha inserito questi dati nel
+    lakehouse nell'area di lavoro Amministrazione e ha concesso l'accesso
+    alle tabelle. Dal momento che il team IT si è occupato della parte più
+    complessa del lavoro, possiamo creare un collegamento a questo lakehouse
+    nell'area di lavoro Amministrazione.
 
 9. Selezionare **Annulla** nella finestra di dialogo Nuovo collegamento
     per tornare al lakehouse.
@@ -528,10 +528,10 @@ nell'area di lavoro Amministrazione.
 
     ![](../media/Lab-04/image44.png)
 
-Abbiamo creato un collegamento a un altro lakehouse.
+    Abbiamo creato un collegamento a un altro lakehouse.
 
-Ora abbiamo inserito tutti i dati necessari nel lakehouse. Nel prossimo
-lab pianificheremo un aggiornamento per il flusso di dati di SharePoint.
+    Ora abbiamo inserito tutti i dati necessari nel lakehouse. Nel prossimo
+    lab pianificheremo un aggiornamento per il flusso di dati di SharePoint.
 
 # Riferimenti
 
@@ -539,7 +539,7 @@ Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità
 chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione
 Guida (?) include collegamenti ad alcune risorse utili.
 
-    ![](../media/Lab-04/image45.png)
+![](../media/Lab-04/image45.png)
 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di
 progredire nell'uso di Microsoft Fabric.

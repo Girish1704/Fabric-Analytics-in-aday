@@ -16,7 +16,7 @@ associati che forniscono un aiuto visivo. In ogni screenshot vi sono
 sezioni evidenziate con riquadri arancioni che indicano le aree su
 cui l'utente deve concentrarsi.
 
-**Nota:** alcuni screenshot potrebbero non essere aggiornati a causa dei
+>**Nota:** alcuni screenshot potrebbero non essere aggiornati a causa dei
 continui aggiornamenti del prodotto.
 
 # Scenario/Esposizione del problema
@@ -142,14 +142,14 @@ in alto a sinistra nella pagina. Gli oggetti visivi rimanenti
 evidenziano le vendite nel tempo, per area, gruppo di prodotti e azienda
 rivenditrice.
 
-    ![](../media/Lab-01/image11.jpeg)
+  ![](../media/Lab-01/image11.jpeg)
 
-**Nota:** in questo corso di formazione ci concentreremo
-sull'acquisizione, la trasformazione e la modellazione dei dati
-mediante gli strumenti disponibili in Fabric. Non ci concentreremo sullo
-sviluppo di report né sullo spostamento al loro interno. Dedichiamo
-qualche minuto alla comprensione del report prima di procedere ai
-passaggi successivi.
+  >**Nota:** in questo corso di formazione ci concentreremo
+  sull'acquisizione, la trasformazione e la modellazione dei dati
+  mediante gli strumenti disponibili in Fabric. Non ci concentreremo sullo
+  sviluppo di report né sullo spostamento al loro interno. Dedichiamo
+  qualche minuto alla comprensione del report prima di procedere ai
+  passaggi successivi.
 
 1. Analizziamo i dati per area di vendita. Selezionare **New England
     nel grafico a dispersione Sales Territory**. In Sales over time
@@ -318,17 +318,17 @@ passaggi successivi.
     forniti di seguito. Usare queste credenziali per connettere tutte le
     tabelle in Snowflake a Snowflake, quindi selezionare **Connetti**.
 
-- **Nome utente Snowflake:** TE_SNOWFLAKE1
+    - **Nome utente Snowflake:** TE_SNOWFLAKE1
 
-- **Password Snowflake:** 8UpfRpExVDXv2AC1
+    - **Password Snowflake:** 8UpfRpExVDXv2AC1
 
-*Nota: se si verificano problemi di connessione a Snowflake con le
-credenziali descritte sopra, usare le credenziali di backup fornite di
-seguito.*
+    *Nota: se si verificano problemi di connessione a Snowflake con le
+    credenziali descritte sopra, usare le credenziali di backup fornite di
+    seguito.*
 
-- **Nome utente Snowflake:** SNOWFLAKE_BACKUP
+    - **Nome utente Snowflake:** SNOWFLAKE_BACKUP
 
-- **Password Snowflake:** 8UpfRpExVDXv2AC1
+    - **Password Snowflake:** 8UpfRpExVDXv2AC1
 
 14. Notare che la cartella SnowflakeData include la dimensione Supplier
     e il fatto PO (ordine/spesa).
@@ -348,9 +348,9 @@ seguito.*
     **Accedi**. Immettere il nome utente e la password forniti di
     seguito, quindi selezionare Connetti.
 
-- **E-mail/Nome utente:** disponibili nella scheda Ambiente
+    - **E-mail/Nome utente:** disponibili nella scheda Ambiente
 
-- **Password:** disponibile nella scheda Ambiente
+    - **Password:** disponibile nella scheda Ambiente
 
     ![](../media/Lab-01/image26.png)
 
@@ -358,9 +358,9 @@ seguito.*
 
     ![](../media/Lab-01/image27.png)
 
-Ora conosciamo gli elementi con cui dobbiamo lavorare. Nel lab seguenti
-creeremo una query di Power Query analoga usando Dataflow Gen2 e un
-modello mediante un lakehouse.
+    Ora conosciamo gli elementi con cui dobbiamo lavorare. Nel lab seguenti
+    creeremo una query di Power Query analoga usando Dataflow Gen2 e un
+    modello mediante un lakehouse.
 
 # Riferimenti
 
@@ -368,7 +368,7 @@ Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità
 chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione
 Guida (?) include collegamenti ad alcune risorse utili.
 
-    ![](../media/Lab-01/image28.png)
+  ![](../media/Lab-01/image28.png)
 
 Di seguito sono indicate altre risorse utili a progredire nell'uso di
 Microsoft Fabric.
