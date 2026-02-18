@@ -126,47 +126,48 @@ Fournisseur.
 
 11. Vous pouvez voir que dans le panneau **Paramètres** qui s'affiche,
     nous avons trois options :
-    **À propos :** ici, nous pouvons modifier le nom du flux de données
+    
+    - **À propos :** ici, nous pouvons modifier le nom du flux de données
     et ajouter une description. Nous pouvons également voir qui est le
     propriétaire du flux de données et la date de sa dernière
     modification.
-    **Approbation :** cela nous permet de spécifier si le flux de
+    - **Approbation :** cela nous permet de spécifier si le flux de
     données portera l'étiquette **Promu** ou **Certifié** afin que les
     autres puissent l'identifier.
-    **Planifier :** c'est ici que nous pouvons planifier les flux de
+    - **Planifier :** c'est ici que nous pouvons planifier les flux de
     données.
+    
+        ![](../media/Lab-05/image13.png)
 
-    ![](../media/Lab-05/image13.png)
+13. Sélectionnez l'option **Planifier**
 
-12. Sélectionnez l'option **Planifier**
-
-13. Pour activer une planification, il suffit de cliquer sur **Ajouter
+14. Pour activer une planification, il suffit de cliquer sur **Ajouter
     une planification**
 
     ![](../media/Lab-05/image14.png)
 
-14. Cela nous permet désormais de définir la fréquence de
+15. Cela nous permet désormais de définir la fréquence de
     l'actualisation en sélectionnant une option pour la propriété
     **Répéter**. Pour ce scénario, nous pouvons choisir **Quotidien
     (1)**
 
-15. Pour la propriété **Heure** nous pouvons spécifier **12:00 AM (2)**
+16. Pour la propriété **Heure** nous pouvons spécifier **12:00 AM (2)**
     puisque nous voulons que cela se passe à minuit
 
     >**Remarque :** en cliquant sur le lien Ajouter un autre horaire, vous
     pouvez ajouter plusieurs heures d'actualisation.
 
-16. Nous pouvons également spécifier une **date et heure de début (3)**
+17. Nous pouvons également spécifier une **date et heure de début (3)**
     ainsi qu'une **date et une heure de fin (4)**. Pour ce scénario,
     choisissez simplement la date du jour comme date de début et date de
     fin.
 
-17. Vous pouvez spécifier le **Fuseau horaire (5)** de votre choix.
+18. Vous pouvez spécifier le **Fuseau horaire (5)** de votre choix.
     Enfin, cliquez sur **Enregistrer**
 
     ![](../media/Lab-05/image15.png)
 
-18. Vous verrez l'actualisation planifiée et pourrez la modifier ou la
+19. Vous verrez l'actualisation planifiée et pourrez la modifier ou la
     supprimer si elle n'est plus nécessaire, ou encore ajouter d'autres
     actualisations planifiées.
 
@@ -1034,4 +1035,5 @@ fonctionnalités et améliorations disponibles dans Microsoft Power BI.
 Certaines fonctionnalités sont susceptibles de changer dans les versions
 ultérieures du produit. Dans ce labo/cette démonstration, vous allez
 découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas
+
 toutes.
