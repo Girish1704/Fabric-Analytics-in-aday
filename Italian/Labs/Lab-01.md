@@ -1,12 +1,14 @@
 # Microsoft Fabric Fabric Analyst in a Day-Lab 1
-  ![](../media/Lab-01/main1.png)
-# Sommario	
-- Struttura del documento	
+
+![](../media/Lab-01/main1.png)
+
+# Sommario
+- Struttura del documento
 - Scenario/Esposizione del problema	
 - Panoramica del report di Power BI Desktop	
-  - Attività 1 - Impostazione di Power BI Desktop nell'ambiente lab	
-  - Attività 2 - Analisi del report di Power BI Desktop	
-  - Attività 3 - Analisi delle query in Power Query	
+  - Attività 1: Impostazione di Power BI Desktop nell'ambiente lab	
+  - Attività 2: Analisi del report di Power BI Desktop	
+  - Attività 3: Analisi delle query in Power Query	
 - Riferimenti	
 
 # Struttura del documento
@@ -93,7 +95,7 @@ verificare se può risolvere queste problematiche.
 Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI
 Desktop per comprendere le trasformazioni e il modello.
 
-### Attività 1 - Impostazione di Power BI Desktop nell'ambiente lab
+## Attività 1 - Impostazione di Power BI Desktop nell'ambiente lab
 
 1. Aprire il file **FAIAD.pbix** contenuto nella cartella **Reports**
     sul **Desktop** dell'ambiente lab. Il file si aprirà in Power BI
@@ -108,7 +110,7 @@ Desktop per comprendere le trasformazioni e il modello.
 
     - Posta elettronica/nome utente:
 
-    ![](../media/Lab-01/image7.png)
+      ![](../media/Lab-01/image7.png)
 
 3. Immettere i dati Posta elettronica/nome utente seguenti nella
     schermata di accesso visualizzata nella scheda Accedi a Microsoft
@@ -135,7 +137,7 @@ Desktop per comprendere le trasformazioni e il modello.
 
 Si aprirà Power BI Desktop.
 
-### Attività 2 - Analisi del report di Power BI Desktop
+## Attività 2 - Analisi del report di Power BI Desktop
 
 Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati
 in alto a sinistra nella pagina. Gli oggetti visivi rimanenti
@@ -227,7 +229,7 @@ rivenditrice.
     e. Sono presenti informazioni di Customer per Reseller. Customer si
         collega a Reseller.
 
-### Attività 3 - Analisi delle query in Power Query
+## Attività 3 - Analisi delle query in Power Query
 
 1. Osserviamo Power Query per comprendere le origini dati. Nella barra
     multifunzione selezionare **Home -> Trasforma dati**.

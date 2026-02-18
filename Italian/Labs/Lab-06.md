@@ -29,7 +29,7 @@ In questo lab si apprenderà quanto segue:
 
 # Lakehouse: analisi di dati
 
-### Attività 1: Query sui dati mediante SQL
+## Attività 1: Query sui dati mediante SQL
 
 1. Torniamo all'area di lavoro di Fabric **FAIAD_<nome utente>**
     creata nel Lab 2, Attività 8.
@@ -101,7 +101,7 @@ In questo lab si apprenderà quanto segue:
 
     ![](../media/Lab-06/image8.png)
 
-### Attività 2: Visualizzazione del risultato T-SQL
+## Attività 2: Visualizzazione del risultato T-SQL
 
 1. Possiamo anche visualizzare il risultato di questa query.
     **Evidenziare la query** nel riquadro delle query
@@ -151,7 +151,7 @@ In questo lab si apprenderà quanto segue:
 
 # Lakehouse: modellazione semantica
 
-### Attività 3: Creazione di un modello semantico
+## Attività 3: Creazione di un modello semantico
 
 1. Nel menu dell'endpoint di analisi SQL selezionare **Nuovo modello
     semantico**.
@@ -205,7 +205,7 @@ In questo lab si apprenderà quanto segue:
     >**Nota:** la modalità Direct Lake è più veloce della modalità Direct
     Query.
 
-### Attività 4: Creazione di relazioni
+## Attività 4: Creazione di relazioni
 
 Se non ti trovi attualmente all'interno del nuovo modello semantico
 creato, andiamo nel punto corretto
@@ -288,7 +288,7 @@ incorrect.](../media/Lab-06/image18.png)
     laboratorio. La sezione facoltativa illustra i passaggi per creare
     le relazioni rimanenti.
 
-### Attività 5: Creazione delle misure
+## Attività 5: Creazione delle misure
 
 Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
@@ -376,7 +376,7 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
     Abbiamo creato un modello semantico, il passaggio successivo è creare un
     report. Ce ne occuperemo nel prossimo lab.
 
-### Attività 6: Sezione facoltativa: creazione delle relazioni
+## Attività 6: Sezione facoltativa: creazione delle relazioni
 
 Aggiungiamo le relazioni rimanenti.
 
@@ -482,7 +482,7 @@ Aggiungiamo le relazioni rimanenti.
 
     ![](../media/Lab-06/image33.png)
 
-### Attività 7: Sezione facoltativa: creazione delle misure
+## Attività 7: Sezione facoltativa: creazione delle misure
 
 Aggiungiamo le misure rimanenti.
 

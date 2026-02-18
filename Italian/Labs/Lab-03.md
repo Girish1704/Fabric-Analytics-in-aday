@@ -51,7 +51,7 @@ In questo lab si imparerà a:
 
 # Collegamento ad ADLS Gen2
 
-### Attività 1 - Creazione di un collegamento
+## Attività 1 - Creazione di un collegamento
 
 I collegamenti sono usati per creare un collegamento all'ubicazione di
 destinazione e permettono di accedere ai dati senza la necessità di
@@ -183,7 +183,7 @@ i dati.
 
 # Trasformazione dei dati usando le query visive
 
-### Attività 2 - Creazione di una vista Geo mediante le query visive
+## Attività 2 - Creazione di una vista Geo mediante le query visive
 
 1. Possiamo accedere a **Lakehouse** tramite un endpoint SQL. Questo
     permette di eseguire query sui dati e creare viste. In **alto a
@@ -408,7 +408,7 @@ i dati.
 
     ![](../media/Lab-03/image28.png)
 
-### Attività 3 - Creazione di una vista Reseller mediante le query visive
+## Attività 3 - Creazione di una vista Reseller mediante le query visive
 
 Ora creeremo la vista Reseller unendo la tabella Customers alla tabella
 BuyingGroups. Questa volta creeremo la vista usando una query visiva
@@ -550,7 +550,7 @@ senza aprire l'opzione Power Query.
 
     ![](../media/Lab-03/image39.png)
 
-### Attività 4 - Creazione di una vista Sales mediante le query visive
+## Attività 4 - Creazione di una vista Sales mediante le query visive
 
 Ora creeremo la vista Sales, unendo le tabelle InvoiceLineItems e
 Invoices e la vista Reseller. Abbiamo questa query in Power BI Desktop.
@@ -722,7 +722,7 @@ a usare questo metodo.
 
     ![](../media/Lab-03/image53.png)
 
-### Attività 5 - Creazione di una vista Product mediante le query visive
+## Attività 5 - Creazione di una vista Product mediante le query visive
 
 Ora creeremo la vista Product unendo le tabelle **ProductItem**,
 **ProductItemGroup** e **ProductGroups**. Per procedere, copieremo il
