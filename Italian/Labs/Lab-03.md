@@ -91,7 +91,7 @@ nel desktop di Windows.
 9. Copiare il token di firma di accesso condiviso e incollarlo nel
     campo Token di firma di accesso condiviso (5).
 
-- **Token di firma di accesso condiviso:**
+    - **Token di firma di accesso condiviso:**
 
 10. Selezionare **Avanti (6)** in basso a destra della schermata.
 
@@ -126,7 +126,7 @@ nel desktop di Windows.
 
     k. Warehouse.StockItems
 
-    **Nota:** Sales.Invoices_May è l'unica directory **non** selezionata.
+    >**Nota:** Sales.Invoices_May è l'unica directory **non** selezionata.
 
     ![](../media/Lab-03/image9.png)
 
@@ -164,8 +164,8 @@ nel desktop di Windows.
 
     j. Warehouse.StockItems in **ProductItem**
 
-**Nota**: ricontrollare i nomi. Un errore di digitazione potrebbe
-causare errori durante il lab.
+    >**Nota**: ricontrollare i nomi. Un errore di digitazione potrebbe
+    causare errori durante il lab.
 
 17. Selezionare **Crea** per creare il collegamento.
 
@@ -192,15 +192,15 @@ i dati.
 
     ![](../media/Lab-03/image13.png)
 
-Verrai indirizzato all'endpoint di Analisi SQL. Ora hai un nuovo
-elemento nel riquadro di spostamento in alto e puoi tornare al lakehouse
-selezionando quella scheda. Il pannello Explorer è cambiato.
-Ora è possibile creare viste, stored procedure, query e altro ancora.
-Creeremo una query visiva poiché fornisce un'interfaccia con poco
-codice, come Power Query. Salveremo il risultato come vista.
+    Verrai indirizzato all'endpoint di Analisi SQL. Ora hai un nuovo
+    elemento nel riquadro di spostamento in alto e puoi tornare al lakehouse
+    selezionando quella scheda. Il pannello Explorer è cambiato.
+    Ora è possibile creare viste, stored procedure, query e altro ancora.
+    Creeremo una query visiva poiché fornisce un'interfaccia con poco
+    codice, come Power Query. Salveremo il risultato come vista.
 
-Inizieremo creando una vista Geo. Per creare la vista Geo, dobbiamo
-unire i dati delle tabelle Cities, States e Countries.
+    Inizieremo creando una vista Geo. Per creare la vista Geo, dobbiamo
+    unire i dati delle tabelle Cities, States e Countries.
 
 2. Nel menu in alto fare clic sul menu a discesa accanto a **Nuova
     query SQL (1)**, quindi selezionare **Nuova query visiva (2)**.
@@ -217,16 +217,16 @@ unire i dati delle tabelle Cities, States e Countries.
 4. Ripetere gli stessi passaggi per le tabelle **States** e
     **Countries**.
 
-Ora dobbiamo unire queste query. L'editor di query visive include
-un'opzione che permette di usare l'editor di Power Query. Lo
-conosciamo già da Power BI, quindi lo useremo.
+    Ora dobbiamo unire queste query. L'editor di query visive include
+    un'opzione che permette di usare l'editor di Power Query. Lo
+    conosciamo già da Power BI, quindi lo useremo.
 
 5. **Nel menu dell'editor di query visive** selezionare l'icona
     **Apri in popup** (verso destra). Si apre l'editor di Power Query.
 
-***Nota:** potrebbe essere necessario scorrere verso destra o riaprire
-la scheda della query visiva se questa icona non viene visualizzata
-immediatamente*
+    >***Nota:** potrebbe essere necessario scorrere verso destra o riaprire
+    la scheda della query visiva se questa icona non viene visualizzata
+    immediatamente*
 
     ![](../media/Lab-03/image16.png)
 
@@ -252,9 +252,9 @@ immediatamente*
 
     ![](../media/Lab-03/image18.png)
 
-Notare che è stata creata una nuova query denominata **Merge**. Abbiamo
-bisogno di alcune
-colonne da States.
+    Notare che è stata creata una nuova query denominata **Merge**. Abbiamo
+    bisogno di alcune
+    colonne da States.
 
 12. Nella **vista dati** (pannello inferiore) fare clic sulla **freccia
     doppia** accanto alla colonna **States**
@@ -275,7 +275,7 @@ colonne da States.
 
     ![](../media/Lab-03/image19.png)
 
-Ora dobbiamo unire la query Countries.
+    Ora dobbiamo unire la query Countries.
 
 15. Con la query di unione selezionata **(1)**, selezionare **Home (2)
     -> Combina (3) -> Elenco a discesa Esegui merge di query (4) ->
@@ -297,7 +297,7 @@ Ora dobbiamo unire la query Countries.
 
     ![](../media/Lab-03/image21.png)
 
-Abbiamo bisogno di alcune colonne da Countries.
+    Abbiamo bisogno di alcune colonne da Countries.
 
 20. Nella **vista dati** (pannello inferiore) fare clic sulla **freccia
     doppia** accanto alla colonna **Countries**.
@@ -323,22 +323,22 @@ Abbiamo bisogno di alcune colonne da Countries.
 
 22. Selezionare **OK**.
 
-**Importante:** assicurarsi di scorrere verso il basso e selezionare
-tutte le otto colonne elencate nel passaggio 21. Lo screenshot seguente
-mostra solo le prime 5 colonne a causa di una limitazione
-dell'interfaccia utente.
+    **Importante:** assicurarsi di scorrere verso il basso e selezionare
+    tutte le otto colonne elencate nel passaggio 21. Lo screenshot seguente
+    mostra solo le prime 5 colonne a causa di una limitazione
+    dell'interfaccia utente.
 
     ![](../media/Lab-03/image22.png)
 
-Non sono necessarie tutte le colonne della tabella **Merge**.
-Assicurarsi di selezionare solo quelle necessarie.
+    Non sono necessarie tutte le colonne della tabella **Merge**.
+    Assicurarsi di selezionare solo quelle necessarie.
 
 23. Con la query **Merge** selezionata (1), nella barra multifunzione
     selezionare **Home (2) -> Scegli colonne (3) -> Scegli colonne
     (4)**.
 
-**Nota:** se l'opzione Scegli colonne non è visibile, cercarla in
-Gestisci colonne.
+    > **Nota:** se l'opzione Scegli colonne non è visibile, cercarla in
+    Gestisci colonne.
 
     ![](../media/Lab-03/image23.png)
 
@@ -361,10 +361,10 @@ Gestisci colonne.
 
     ![](../media/Lab-03/image24.png)
 
-Notare che il processo è simile a quello di Power Query, abbiamo tutti i
-passaggi registrati sia nel pannello Passaggi applicati a destra sia
-nella vista visiva. Rinominiamo la query di unione e scegliamo Abilita
-caricamento, in modo da caricare i dati da questa query.
+    Notare che il processo è simile a quello di Power Query, abbiamo tutti i
+    passaggi registrati sia nel pannello Passaggi applicati a destra sia
+    nella vista visiva. Rinominiamo la query di unione e scegliamo Abilita
+    caricamento, in modo da caricare i dati da questa query.
 
 26. **Fare clic con il pulsante destro del mouse** sulla query di
     **unione** nel pannello Query (a sinistra). Selezionare
@@ -381,19 +381,19 @@ caricamento, in modo da caricare i dati da questa query.
 
     ![](../media/Lab-03/image25.png)
 
-Verremo indirizzati all'editor di query visive. Ora salviamo la query
-come vista.
+    Verremo indirizzati all'editor di query visive. Ora salviamo la query
+    come vista.
 
-**Nota**: tutti i passaggi eseguiti mediante l'editor di Power Query
-possono anche essere eseguiti usando l'editor di query visive.
+    >**Nota**: tutti i passaggi eseguiti mediante l'editor di Power Query
+    possono anche essere eseguiti usando l'editor di query visive.
 
 30. Dal menu Editor di query visive selezionare **Salva come
     visualizzazione**.
 
     ![](../media/Lab-03/image26.png)
 
-Si apre la finestra di dialogo Salva come visualizzazione. È possibile
-rivedere la query se si desidera verificare il codice SQL.
+    Si apre la finestra di dialogo Salva come visualizzazione. È possibile
+    rivedere la query se si desidera verificare il codice SQL.
 
 31. Immettere **Geo** come **Nome visualizzazione**.
 
@@ -401,7 +401,7 @@ rivedere la query se si desidera verificare il codice SQL.
 
     ![](../media/Lab-03/image27.png)
 
-Si riceverà un avviso una volta salvata la vista.
+    Si riceverà un avviso una volta salvata la vista.
 
 33. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la
     vista Geo appena creata.
@@ -441,8 +441,8 @@ senza aprire l'opzione Power Query.
 
     ![](../media/Lab-03/image30.png)
 
-Si apre la finestra di dialogo Unione con Customers selezionato come
-tabella superiore.
+    Si apre la finestra di dialogo Unione con Customers selezionato come
+    tabella superiore.
 
 6. Nella **tabella di destra per l'unione** selezionare
     **BuyingGroups**.
@@ -467,8 +467,8 @@ tabella superiore.
 
     ![](../media/Lab-03/image32.png)
 
-Non sono necessarie tutte le colonne della tabella Customer.
-Selezioniamo solo quelle di cui abbiamo bisogno.
+    Non sono necessarie tutte le colonne della tabella Customer.
+    Selezioniamo solo quelle di cui abbiamo bisogno.
 
 13. Dal menu della query visiva selezionare **Gestisci colonne ->
     Scegli colonne**.
@@ -516,8 +516,8 @@ Selezioniamo solo quelle di cui abbiamo bisogno.
 
     ![](../media/Lab-03/image35.png)
 
-Nella tabella Customer sono documentati tutti i passaggi. Ora salviamo
-la vista.
+    Nella tabella Customer sono documentati tutti i passaggi. Ora salviamo
+    la vista.
 
 18. Dobbiamo salvare la query Customers poiché contiene tutti i
     passaggi. Dobbiamo abilitare il caricamento. Selezionare i **puntini
@@ -527,15 +527,15 @@ la vista.
 
     ![](../media/Lab-03/image36.png)
 
-**Nota**: se l'opzione Abilita caricamento è selezionata, la casella
-**Customer** deve avere un bordo blu.
+    >**Nota**: se l'opzione Abilita caricamento è selezionata, la casella
+    **Customer** deve avere un bordo blu.
 
 20. Dal menu Query visiva selezionare **Salva come visualizzazione**.
 
     ![](../media/Lab-03/image37.png)
 
-Si apre la finestra di dialogo Salva come visualizzazione. La query SQL
-è ora disponibile. Se lo desideriamo, possiamo rivederla.
+    Si apre la finestra di dialogo Salva come visualizzazione. La query SQL
+    è ora disponibile. Se lo desideriamo, possiamo rivederla.
 
 21. Immettere **Reseller** come **Nome visualizzazione**.
 
@@ -543,7 +543,7 @@ Si apre la finestra di dialogo Salva come visualizzazione. La query SQL
 
     ![](../media/Lab-03/image38.png)
 
-Si riceverà un avviso una volta salvata la vista.
+    Si riceverà un avviso una volta salvata la vista.
 
 23. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la
     vista Reseller appena creata.
@@ -602,8 +602,8 @@ a usare questo metodo.
 
     ![](../media/Lab-03/image43.png)
 
-Copiamo il codice da Power BI Desktop e lo incolliamo usando l'Editor
-avanzato.
+    Copiamo il codice da Power BI Desktop e lo incolliamo usando l'Editor
+    avanzato.
 
 12. Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** nella
     cartella **Reports** sul desktop dell'ambiente lab.
@@ -623,8 +623,8 @@ avanzato.
 
     ![](../media/Lab-03/image45.png)
 
-**Nota:** se non si riesce a trovare l'Editor avanzato, è possibile
-accedervi in **Home -> Query -> Editor avanzato**.
+    >**Nota:** se non si riesce a trovare l'Editor avanzato, è possibile
+    accedervi in **Home -> Query -> Editor avanzato**.
 
 16. **Selezionare li codice dalla riga 3** (#"Expanded Invoice" ...)
     fino all'ultima riga di codice.
@@ -656,11 +656,10 @@ accedervi in **Home -> Query -> Editor avanzato**.
 24. Usare la combinazione di tasti **CTRL+V** per incollare il codice
     copiato da Power BI Desktop.
 
-**Nota**: se si lavora in un ambiente lab, selezionare i **puntini di
-sospensione (...)** in alto a destra nello schermo. Usare il dispositivo
-di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra
-di dialogo selezionare OK. Dopo aver incollato le query è possibile
-disabilitare questa opzione.
+    >**Nota**: se si lavora in un ambiente lab, selezionare i **puntini disospensione (...)** in alto a destra nello schermo. Usare il dispositivo
+    di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra
+    di dialogo selezionare OK. Dopo aver incollato le query è possibile
+    disabilitare questa opzione.
 
     ![](../media/Lab-03/image48.png)
 
@@ -673,45 +672,24 @@ disabilitare questa opzione.
 
     ![](../media/Lab-03/image50.png)
 
-Se è più semplice, eliminare tutto il codice nell'editor avanzato e
-incollare il codice sottostante.
+    Se è più semplice, eliminare tutto il codice nell'editor avanzato e
+    incollare il codice sottostante.
 
-[let]{.mark}
-
-[  Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"},
-Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),]{.mark}
-
-[    #"Expanded Invoice" = Table.ExpandTableColumn(Source,
-"Invoices", {"CustomerID", "BillToCustomerID",
-"SalespersonPersonID", "InvoiceDate"}, {"CustomerID",
-"BillToCustomerID", "SalespersonPersonID",
-"InvoiceDate"}),]{.mark}
-
-[    #"Removed Other Columns" = Table.SelectColumns(#"Expanded
-Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID",
-"Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit",
-"ExtendedPrice", "CustomerID", "SalespersonPersonID",
-"InvoiceDate"}),]{.mark}
-
-[    #"Renamed Columns" = Table.RenameColumns(#"Removed Other
-Columns",{{"CustomerID", "ResellerID"}}),]{.mark}
-
-[    #"Merged Queries" = Table.NestedJoin(#"Renamed Columns",
-{"ResellerID"}, Reseller, {"ResellerID"}, "Customer",
-JoinKind.Inner),]{.mark}
-
-[    #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales
-Amount", each [ExtendedPrice] - [TaxAmount]),]{.mark}
-
-[    #"Changed Type" = Table.TransformColumnTypes(#"Added
-Custom",{{"Sales Amount", type number}}),]{.mark}
-
-[    #"Removed Columns" = Table.RemoveColumns(#"Changed
-Type",{"Customer"})]{.mark}
-
-[in]{.mark}
-
-[#"Removed Columns"]{.mark}
+    ```
+        let
+        Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+            #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+            #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+            #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+            #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
+            #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+            #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+            #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
+        in
+            #"Removed Columns"
+        
+        
+    ```
 
 27. Si tornerà all'editor di Power Query. A sinistra, nel pannello
     Query, **fare doppio clic sulla query Merge** per rinominarla.
@@ -737,7 +715,7 @@ Type",{"Customer"})]{.mark}
 
     ![](../media/Lab-03/image52.png)
 
-Si riceverà un avviso una volta salvata la vista.
+    Si riceverà un avviso una volta salvata la vista.
 
 34. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la
     vista Sales appena creata.
@@ -800,40 +778,24 @@ codice nell'Editor avanzato.
 
     ![](../media/Lab-03/image59.png)
 
-**Nota:** se non si riesce a trovare l'Editor avanzato, è possibile
-accedervi in **Home -> Query -> Editor avanzato**.
+    >**Nota:** se non si riesce a trovare l'Editor avanzato, è possibile
+    accedervi in **Home -> Query -> Editor avanzato**.
 
 12. **Selezionare tutto il codice** nell'Editor avanzato ed
     **eliminarlo**.
 
 13. **Incollare** il codice di seguito nell'Editor avanzato.
 
-[let]{.mark}
-
-[Source = Table.NestedJoin(ProductItem, {"StockItemID"},
-ProductItemGroup, {"StockItemID"}, "ProductItemGroup",
-JoinKind.LeftOuter),]{.mark}
-
-[#"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source,
-"ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),]{.mark}
-
-[#"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup",
-{"StockGroupID"}, ProductGroups, {"StockGroupID"},
-"ProductGroups", JoinKind.LeftOuter),]{.mark}
-
-[#"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged
-queries", "ProductGroups", {"StockGroupName"},
-{"StockGroupName"}),]{.mark}
-
-[#"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups",
-{"StockItemID", "StockItemName", "SupplierID", "Size",
-"IsChillerStock", "TaxRate", "UnitPrice",
-"RecommendedRetailPrice", "TypicalWeightPerUnit",
-"StockGroupName"})]{.mark}
-
-[in]{.mark}
-
-[#"Choose columns"]{.mark}
+    ```
+        let
+        Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+        #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+        #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+        #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+        #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+        in
+        #"Choose columns"
+        ```
 
 14. Selezionare **OK** per chiudere l'Editor avanzato. Si aprirà
     nuovamente l'editor di Power Query.
@@ -865,21 +827,21 @@ queries", "ProductGroups", {"StockGroupName"},
 
     ![](../media/Lab-03/image62.png)
 
-Si riceverà un avviso una volta salvata la vista.
+    Si riceverà un avviso una volta salvata la vista.
 
 22. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la
     vista Product appena creata.
 
     ![](../media/Lab-03/image63.png)
 
-Abbiamo trasformato i dati dall'origine dati ADLS Gen2. In questo
-laboratorio è stato spiegato come creare collegamenti e sono state
-illustrate varie opzioni per usare le viste di query visive per
-trasformare i dati.
+    Abbiamo trasformato i dati dall'origine dati ADLS Gen2. In questo
+    laboratorio è stato spiegato come creare collegamenti e sono state
+    illustrate varie opzioni per usare le viste di query visive per
+    trasformare i dati.
 
-Nel prossimo lab verrà descritto come usare Dataflow Gen2 e creare un
-collegamento
-a un altro lakehouse.
+    Nel prossimo lab verrà descritto come usare Dataflow Gen2 e creare un
+    collegamento
+    a un altro lakehouse.
 
 # Riferimenti
 
@@ -887,7 +849,7 @@ Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità
 chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione
 Guida (?) include collegamenti ad alcune risorse utili.
 
-    ![](../media/Lab-03/image64.png)
+![](../media/Lab-03/image64.png)
 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di
 progredire nell'uso di Microsoft Fabric.

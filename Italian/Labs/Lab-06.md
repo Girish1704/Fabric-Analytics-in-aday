@@ -48,21 +48,21 @@ In questo lab si apprenderà quanto segue:
 
     ![](../media/Lab-06/image6.png)
 
-Se si desidera esplorare i dati prima di creare un modello di dati, è
-possibile usare SQL a questo fine. Sono disponibili due opzioni per
-usare SQL. La prima opzione è la query visiva, che abbiamo usato nel lab
-precedente. La seconda opzione è la scrittura di codice T-SQL. Si tratta
-di un'opzione pensata per gli sviluppatori. Esaminiamola assieme.
+    Se si desidera esplorare i dati prima di creare un modello di dati, è
+    possibile usare SQL a questo fine. Sono disponibili due opzioni per
+    usare SQL. La prima opzione è la query visiva, che abbiamo usato nel lab
+    precedente. La seconda opzione è la scrittura di codice T-SQL. Si tratta
+    di un'opzione pensata per gli sviluppatori. Esaminiamola assieme.
 
-Supponiamo di voler conoscere rapidamente le unità Units dal fornitore
-mediante SQL.
+    Supponiamo di voler conoscere rapidamente le unità Units dal fornitore
+    mediante SQL.
 
-Nell'endpoint di Analisi SQL del lakehouse, come indicato nel pannello
-di sinistra, è possibile visualizzare le tabelle. Espandendo le tabelle,
-si possono visualizzare le colonne che compongono la tabella. Vi sono
-inoltre opzioni per la creazione di viste SQL, funzioni e stored
-procedure. Se si ha familiarità con SQL, è possibile esplorare queste
-opzioni. Proviamo a scrivere una semplice query SQL.
+    Nell'endpoint di Analisi SQL del lakehouse, come indicato nel pannello
+    di sinistra, è possibile visualizzare le tabelle. Espandendo le tabelle,
+    si possono visualizzare le colonne che compongono la tabella. Vi sono
+    inoltre opzioni per la creazione di viste SQL, funzioni e stored
+    procedure. Se si ha familiarità con SQL, è possibile esplorare queste
+    opzioni. Proviamo a scrivere una semplice query SQL.
 
 4. Nel **menu in alto** selezionare **Nuova query SQL** oppure, al
     centro dello schermo, fare clic su **Nuova query SQL.** Si aprirà la
@@ -75,15 +75,13 @@ opzioni. Proviamo a scrivere una semplice query SQL.
     ottenere questo risultato è necessario unire la tabella Sales alle
     tabelle Product e Supplier.
 
-[SELECT su.SupplierName, SUM(Quantity) as Units]{.mark}
-
-[FROM dbo.Sales s]{.mark}
-
-[JOIN dbo.Product p on p.StockItemID = s.StockItemID]{.mark}
-
-[JOIN dbo.Supplier su on su.SupplierID = p.SupplierID]{.mark}
-
-[GROUP BY su.SupplierName]{.mark}
+    ```
+    SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
+    ```
 
 6. Fare clic su **Esegui** nel menu dell'editor SQL per visualizzare i
     risultati.
@@ -98,8 +96,8 @@ opzioni. Proviamo a scrivere una semplice query SQL.
     condivise con l'utente corrente mediante la cartella **Query
     condivise**.
 
-**Nota:** le query visive create nei lab precedenti sono disponibili
-anche nella cartella My queries.
+    >**Nota:** le query visive create nei lab precedenti sono disponibili
+    anche nella cartella My queries.
 
     ![](../media/Lab-06/image8.png)
 
@@ -116,12 +114,12 @@ anche nella cartella My queries.
 3. Si apre la finestra di dialogo **Visualizza risultati** .
     Selezionare **Continua**.
 
-Si apre la finestra di dialogo **Visualizza risultati** che ha un
-aspetto simile alla vista del report Power BI Desktop. Presenta tutte le
-funzionalità disponibili nella vista del report Power BI Desktop: è
-possibile formattare la pagina, selezionare diversi oggetti visivi,
-formattare gli oggetti visivi, aggiungere filtri, ecc. Non esploreremo
-queste opzioni in questo corso.
+    Si apre la finestra di dialogo **Visualizza risultati** che ha un
+    aspetto simile alla vista del report Power BI Desktop. Presenta tutte le
+    funzionalità disponibili nella vista del report Power BI Desktop: è
+    possibile formattare la pagina, selezionare diversi oggetti visivi,
+    formattare gli oggetti visivi, aggiungere filtri, ecc. Non esploreremo
+    queste opzioni in questo corso.
 
 4. Espandere il riquadro **Dati**, quindi espandere **Query SQL 1**.
 
@@ -149,7 +147,7 @@ queste opzioni in questo corso.
 
     ![](../media/Lab-06/image12.png)
 
-Si aprirà nuovamente la schermata Query SQL.
+    Si aprirà nuovamente la schermata Query SQL.
 
 # Lakehouse: modellazione semantica
 
@@ -197,15 +195,15 @@ Si aprirà nuovamente la schermata Query SQL.
 
     ![](../media/Lab-06/image15.png)
 
-Potrai accedere al nuovo modello semantico con le tabelle selezionate. È
-possibile **ridisporre** liberamente le tabelle in base alle esigenze.
-Notare che alcune tabelle (Geo, Reseller, Sales e Product) presentano un
-segnale di avviso in alto a destra. Questo perché si tratta di viste.
-Tutti gli oggetti visivi creati con campi a partire da queste viste
-saranno in modalità Direct Query e non in modalità Direct Lake.
+    Potrai accedere al nuovo modello semantico con le tabelle selezionate. È
+    possibile **ridisporre** liberamente le tabelle in base alle esigenze.
+    Notare che alcune tabelle (Geo, Reseller, Sales e Product) presentano un
+    segnale di avviso in alto a destra. Questo perché si tratta di viste.
+    Tutti gli oggetti visivi creati con campi a partire da queste viste
+    saranno in modalità Direct Query e non in modalità Direct Lake.
 
-**Nota:** la modalità Direct Lake è più veloce della modalità Direct
-Query.
+    >**Nota:** la modalità Direct Lake è più veloce della modalità Direct
+    Query.
 
 ### Attività 4: Creazione di relazioni
 
@@ -277,18 +275,18 @@ incorrect.](../media/Lab-06/image18.png)
     **Sales** e **Product**. Selezionare **StockItemID** dalla tabella
     **Sales** e **StockItemID** dalla tabella **Product**.
 
-**Nota:** tutti i nostri aggiornamenti vengono salvati automaticamente.
+    >**Nota:** tutti i nostri aggiornamenti vengono salvati automaticamente.
 
-**Checkpoint:** il modello dovrebbe avere le tre relazioni tra le
-tabelle Sales e Reseller e le tabelle Sales e Date e Sales e Product
-come mostrato nello screenshot seguente:
+    **Checkpoint:** il modello dovrebbe avere le tre relazioni tra le
+    tabelle Sales e Reseller e le tabelle Sales e Date e Sales e Product
+    come mostrato nello screenshot seguente:
 
     ![](../media/Lab-06/image23.png)
 
-Per motivi di tempo, non creeremo tutte le relazioni. Se il tempo lo
-consente, è possibile completare la sezione facoltativa alla fine del
-laboratorio. La sezione facoltativa illustra i passaggi per creare
-le relazioni rimanenti.
+    Per motivi di tempo, non creeremo tutte le relazioni. Se il tempo lo
+    consente, è possibile completare la sezione facoltativa alla fine del
+    laboratorio. La sezione facoltativa illustra i passaggi per creare
+    le relazioni rimanenti.
 
 ### Attività 5: Creazione delle misure
 
@@ -370,13 +368,13 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
     ![](../media/Lab-06/image27.png)
 
-Anche in questo caso, per motivi di tempo non creeremo tutte le misure.
-Se il tempo lo consente, è possibile completare la sezione facoltativa
-alla fine del laboratorio. La sezione facoltativa illustra i passaggi
-per creare le misure rimanenti.
+    Anche in questo caso, per motivi di tempo non creeremo tutte le misure.
+    Se il tempo lo consente, è possibile completare la sezione facoltativa
+    alla fine del laboratorio. La sezione facoltativa illustra i passaggi
+    per creare le misure rimanenti.
 
-Abbiamo creato un modello semantico, il passaggio successivo è creare un
-report. Ce ne occuperemo nel prossimo lab.
+    Abbiamo creato un modello semantico, il passaggio successivo è creare un
+    report. Ce ne occuperemo nel prossimo lab.
 
 ### Attività 6: Sezione facoltativa: creazione delle relazioni
 
@@ -459,8 +457,8 @@ Aggiungiamo le relazioni rimanenti.
 
 25. Selezionare **Salva**.
 
-**Checkpoint:** le relazioni del modello dovrebbero presentarsi come
-illustrato nello screenshot seguente.
+    **Checkpoint:** le relazioni del modello dovrebbero presentarsi come
+    illustrato nello screenshot seguente.
 
     ![](../media/Lab-06/image32.png)
 
@@ -479,8 +477,8 @@ illustrato nello screenshot seguente.
 29. Selezionare **Chiudi** per chiudere la finestra di dialogo Gestisci
     relazioni. Abbiamo creato tutte le relazioni.
 
-**Checkpoint:** il modello dovrebbe presentarsi come illustrato nello
-screenshot seguente.
+    **Checkpoint:** il modello dovrebbe presentarsi come illustrato nello
+    screenshot seguente.
 
     ![](../media/Lab-06/image33.png)
 
@@ -525,7 +523,7 @@ Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità
 chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione
 Guida (?) include collegamenti ad alcune risorse utili.
 
-    ![](../media/Lab-06/image35.png)
+![](../media/Lab-06/image35.png)
 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di
 progredire nell'uso di Microsoft Fabric.
