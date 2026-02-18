@@ -384,8 +384,7 @@ page](../media/Lab-02/image7.png)
     sinistra della schermata. Si apre la pagina principale dei carichi
     di lavoro, in cui è possibile esplorare altri strumenti o sezioni.
 
-    ![](../media/Lab-02/image23.png){width="2.6in"
-height="0.5652165354330708in"}
+    ![](../media/Lab-02/image23.png)
 
 ### Attività 6 - Esperienza Real-Time Intelligence
 
@@ -580,9 +579,7 @@ height="0.5652165354330708in"}
     sinistra della schermata. Si apre la pagina principale dei carichi
     di lavoro, in cui è possibile esplorare altri strumenti o sezioni.
 
-    ![](../media/Lab-02/image23.png){width="2.6in"
-height="0.5652165354330708in"}
-
+    ![](../media/Lab-02/image23.png)
 ### Attività 8 - Esperienza Data Science
 
 1. Nella pagina **Carichi di lavoro personali** fare clic su **Data
@@ -787,11 +784,11 @@ height="0.5652165354330708in"}
 
     ![](../media/Lab-02/image23.png)
 
-In questo lab abbiamo esplorato l'interfaccia di Fabric e creato
-un'area di lavoro di Fabric e un lakehouse. Nel prossimo lab si
-imparerà a usare i collegamenti nel lakehouse per connettersi ai
-dati ADLS Gen2
-e a trasformare tali dati mediante l'uso delle viste.
+    In questo lab abbiamo esplorato l'interfaccia di Fabric e creato
+    un'area di lavoro di Fabric e un lakehouse. Nel prossimo lab si
+    imparerà a usare i collegamenti nel lakehouse per connettersi ai
+    dati ADLS Gen2
+    e a trasformare tali dati mediante l'uso delle viste.
 
 # Riferimenti
 
