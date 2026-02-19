@@ -1,3 +1,5 @@
+# Microsoft Fabric - Fabric Analyst in a Day - ラボ 3
+
 # 概要
 
 このシナリオでは、ERP システムから取得された販売データが ADLS Gen2
