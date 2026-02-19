@@ -69,7 +69,7 @@ Microsoft Fabric
 Fabric の説明を始める前に、変換とモデルについて理解するために現在の
 Power BI Desktop のレポートを見てみましょう。
 
-### タスク 1: ラボ環境で Power BI Desktop を設定する
+## タスク 1: ラボ環境で Power BI Desktop を設定する
 
 1. お使いのラボ環境のデスクトップにある **Reports** フォルダー内の
     **FAIAD.pbix** を開
@@ -109,7 +109,7 @@ Power BI Desktop のレポートを見てみましょう。
 
 これで Power BI Desktop が開きます。
 
-### タスク 2: Power BI Desktop レポートを分析する
+## タスク 2: Power BI Desktop レポートを分析する
 
 以下のレポートでは、Fabrikam の売上を分析しています。ページの左上に KPI
 が一覧表示されています。残りのビジュアルは、担当地域、製品グループ、リセラー会社ごとの時系列に沿った売上を強調しています。
@@ -194,7 +194,7 @@ generated](../media/Lab-01/image14.jpeg)
     につながっ
     ています。
 
-### タスク 3: Power Query を確認する
+## タスク 3: Power Query を確認する
 
 1. Power Query を調べてデータ
     ソースについて理解しましょう。リボンから**ホーム ->
