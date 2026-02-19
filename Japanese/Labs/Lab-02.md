@@ -2,6 +2,24 @@
 
 ![](../media/Lab-01/main2.png)
 
+# 目次
+  
+- 概要
+- Fabric ライセンス
+    - タスク 1: Microsoft Fabric 試用版ライセンスを有効にする
+- Fabric ワークスペース
+    - タスク 2: Fabric ワークスペースを作成する
+    - タスク 3: レイクハウスを作成する
+- Fabric のエクスペリエンスの概要
+    - タスク 4: Data Factory のエクスペリエンス
+    - タスク 5: Industry Solutions のエクスペリエンス
+    - タスク 6: Real-Time Intelligence エクスペリエンス
+    - タスク 7: Data Engineering のエクスペリエンス
+    - タスク 8: Data Science のエクスペリエンス
+    - タスク 9: Data Warehouse のエクスペリエンス
+    - タスク 10: データベースのエクスペリエンス
+- 参考資料
+
 # 概要
 
 今日は、Microsoft Fabric
