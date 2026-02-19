@@ -1,6 +1,8 @@
 # Microsoft Fabric - Fabric Analyst in a Day - ラボ 7
 
 
+![](../media/Lab-01/main7.png)
+
 # 概要
 
 このコースではレイクハウスについて紹介し、さまざまなデータ

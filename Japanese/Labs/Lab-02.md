@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - ラボ 2
 
+![](../media/Lab-01/main2.png)
+
 # 概要
 
 今日は、Microsoft Fabric

@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - ラボ 4
 
+![](../media/Lab-01/main4.png)
+
 # 概要
 
 このシナリオでは、Supplier データが Snowflake に、Customer データが
