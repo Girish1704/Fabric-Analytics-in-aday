@@ -209,10 +209,7 @@
 
     ![](../media/Lab-06/image19.png)
 
-5. Sales テーブルと Reseller
-テーブルの間にリレーションシップを作成しましょう。**Sales** 
-テーブルで **ResellerID** を選択して、**Reseller** テーブルの
-**ResellerID** までドラッグします。
+5. Sales テーブルと Reseller テーブルの間にリレーションシップを作成しましょう。**Sales**  テーブルで **ResellerID** を選択して、**Reseller** テーブルの **ResellerID** までドラッグします。
 
     ![](../media/Lab-06/image20.png)
 
