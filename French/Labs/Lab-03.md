@@ -66,7 +66,7 @@ de raccourcis sur le bureau Windows.
 1. En haut de votre écran, sélectionnez l'onglet **lh_FAIAD** pour
     accéder au lakehouse.
 
-    a. Si vous n'avez pas d'onglet ouvert, vous pouvez revenir à votre espace de travail et ouvrir le Lakehouse à partir de là.
+    >**Remarque :** Si vous n'avez pas d'onglet ouvert, vous pouvez revenir à votre espace de travail et ouvrir le Lakehouse à partir de là.
 
 2. Dans le volet **Explorateur**, cliquez sur les **points de
     suspension** en regard de **Tables**.
@@ -166,7 +166,7 @@ de raccourcis sur le bureau Windows.
 
     j. Warehouse.StockItems sur **ProductItem**
 
-    **Remarque :** vérifiez les noms. Une faute de frappe peut provoquer des
+    >**Remarque :** vérifiez les noms. Une faute de frappe peut provoquer des
 erreurs lors du labo.
 
 17. Cliquez sur **Créer** pour créer le raccourci.
@@ -229,7 +229,7 @@ erreurs lors du labo.
     l'icône **Ouvrir dans une fenêtre contextuelle** (vers la droite).
     Vous êtes alors redirigé(e) vers l'éditeur Power Query.
 
-    >***Remarque :** vous devrez peut-être faire défiler vers la droite ou
+    >**Remarque :** vous devrez peut-être faire défiler vers la droite ou
     rouvrir votre onglet de requête visuelle si vous ne voyez pas
     immédiatement cette icône*
 
@@ -327,7 +327,7 @@ erreurs lors du labo.
 
 22. Cliquez sur **OK**.
 
-    **Important :** veillez à faire défiler la page vers le bas et à
+    >**Important :** veillez à faire défiler la page vers le bas et à
     sélectionner les huit colonnes listées à l'étape 21. La capture d'écran
     ci-dessous n'affiche que les cinq premières colonnes en raison d'une
     limitation de l'interface utilisateur.

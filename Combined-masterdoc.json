@@ -103,34 +103,34 @@
     },
     {
         "Name": "FAIAD - Microsoft Fabric Fabric Analyst in a Day Workshop",
-        "Language": "Italina",
+        "Language": "Italian",
         "Files": [
              {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italina/Labs/Lab-01.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italian/Labs/Lab-01.md",
                 "Order": 1
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italina/Labs/Lab-02.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italian/Labs/Lab-02.md",
                 "Order": 2
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italina/Labs/Lab-03.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italian/Labs/Lab-03.md",
                 "Order": 3
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italina/Labs/Lab-04.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italian/Labs/Lab-04.md",
                 "Order": 4
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italina/Labs/Lab-05.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italian/Labs/Lab-05.md",
                 "Order": 5
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italina/Labs/Lab-06.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italian/Labs/Lab-06.md",
                 "Order": 6
             },
             {
-                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italina/Labs/Lab-07.md",
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Italian/Labs/Lab-07.md",
                 "Order": 7
             }
         ]

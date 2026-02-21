@@ -425,9 +425,9 @@ de configurer la connexion.
 
     ![](../media/Lab-04/image33.png)
 
->**Remarque :** si vous ne voyez pas les tables venant d'être créées,
-cliquez sur les points de suspension en regard de Tables et sélectionnez
-Actualiser pour actualiser les tables.
+    >**Remarque :** si vous ne voyez pas les tables venant d'être créées,
+    cliquez sur les points de suspension en regard de Tables et sélectionnez
+    Actualiser pour actualiser les tables.
 
 Créons maintenant un raccourci permettant d'importer les données de
 Dataverse.

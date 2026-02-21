@@ -364,7 +364,9 @@ quelle.*
     au besoin crucial visant à transformer efficacement les données de
     santé dans un format approprié pour l'analyse.
 
-    > **Prise en main :** Pour commencer à utiliser Industry Solutions, procédez comme suit :
+    **Prise en main :** 
+    
+    Pour commencer à utiliser Industry Solutions, procédez comme suit :
 
     a. **Découvrir les solutions de données de santé** **:** cliquez sur
     « En savoir plus » pour en apprendre davantage sur les solutions de
@@ -526,7 +528,7 @@ quelle.*
     des sections qui se trouvent sur cette page, lesquelles vous
     aideront à utiliser **Data Engineering** efficacement et pas à pas.
 
-    > **En quoi consiste Data Engineering ?**
+    **En quoi consiste Data Engineering ?**
 
     Data Engineering est un outil qui vous aide à concevoir, créer et gérer
     des infrastructures et des systèmes de collecte, de stockage, de
@@ -556,7 +558,7 @@ quelle.*
     f. **API pour GraphQL** **:** API permettant d'interroger plusieurs
     sources de données.
 
-    > **Démarrer :**
+    **Démarrer :**
 
     Pour commencer à utiliser Data Engineering, procédez comme suit :
 
