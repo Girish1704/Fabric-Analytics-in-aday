@@ -108,7 +108,7 @@ Desktop per comprendere le trasformazioni e il modello.
     campo **Posta elettronica** della finestra di dialogo, quindi
     selezionare **Continua**.
 
-    - Posta elettronica/nome utente:
+    - **Posta elettronica/nome utente:** <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-01/image7.png)
 
@@ -116,14 +116,14 @@ Desktop per comprendere le trasformazioni e il modello.
     schermata di accesso visualizzata nella scheda Accedi a Microsoft
     Azure, quindi fare clic su **Avanti**.
 
-    - Posta elettronica/nome utente:
+    - **Posta elettronica/nome utente:** <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-01/image8.png)
 
 4. Immettere il **Pass di accesso temporaneo** seguente e fare clic su
     **Accedi**.
 
-    - Pass di accesso temporaneo:
+    - **Pass di accesso temporaneo:** <inject key="AzureAdUserPassword"></inject>
 
        ![](../media/Lab-01/image9.png)
 
@@ -324,7 +324,7 @@ rivenditrice.
 
     - **Password Snowflake:** <inject key="SnowFlake Password" enableCopy="false" />
 
-    >*Nota: se si verificano problemi di connessione a Snowflake con le
+    >**Nota:** se si verificano problemi di connessione a Snowflake con le
     credenziali descritte sopra, usare le credenziali di backup fornite di
     seguito.*
 

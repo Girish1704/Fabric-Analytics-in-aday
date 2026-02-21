@@ -337,7 +337,7 @@ possibile ottenere questo risultato creando una nuova pipeline.
 
 3. Nell'elenco di attività fare clic su **Fino a**.
 
-    **Fino a**: è un'attività usata per eseguire l'iterazione finché una
+    >**Fino a**: è un'attività usata per eseguire l'iterazione finché una
     condizione non viene soddisfatta.
 
     Nel nostro scenario, ripeteremo e aggiorneremo il flusso di dati finché
@@ -808,11 +808,11 @@ variabile varWaitTime per impostare il tempo di attesa.
 
     Qui usiamo due nuove funzioni:
 
-- **greater:** prende due numeri come parametri e li confronta per
-  indicare qual è il maggiore.
+    - **greater:** prende due numeri come parametri e li confronta per
+    indicare qual è il maggiore.
 
-- **mul:** questa è una funzione di moltiplicazione, prende due
-  parametri da moltiplicare.
+    - **mul:** questa è una funzione di moltiplicazione, prende due
+    parametri da moltiplicare.
 
     L'espressione è un'istruzione if annidata. Controlla se il valore
     della variabile varCounter è maggiore di 1.

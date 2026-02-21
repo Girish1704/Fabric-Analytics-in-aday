@@ -822,42 +822,42 @@ al file di maggio 2024 in ADLS Gen2 e aggiornando la vista Sales.
     per adattarsi ai diversi tempi di aggiornamento delle diverse origini
     dati.**
 
-    Abbiamo risolto questo problema usando Direct Lake. Ogni singolo flusso
-    di dati viene aggiornato in base alla propria pianificazione. Non è
-    necessario aggiornare i set di dati né i report.
+        Abbiamo risolto questo problema usando Direct Lake. Ogni singolo flusso
+        di dati viene aggiornato in base alla propria pianificazione. Non è
+        necessario aggiornare i set di dati né i report.
 
     - **Le operazioni di aggiornamento richiedono molto tempo in quanto è
     necessario eseguire un aggiornamento completo ogni volta per acquisire
     eventuali aggiornamenti dei sistemi di origine.**
 
-    Abbiamo risolto anche questo problema usando Direct Lake. Ogni singolo
-    flusso di dati viene aggiornato in base alla propria pianificazione. Non
-    è necessario aggiornare i set di dati né il report, pertanto non è
-    richiesto un aggiornamento completo.
+        Abbiamo risolto anche questo problema usando Direct Lake. Ogni singolo
+        flusso di dati viene aggiornato in base alla propria pianificazione. Non
+        è necessario aggiornare i set di dati né il report, pertanto non è
+        richiesto un aggiornamento completo.
 
     - **Se si verificano errori in qualsiasi delle origini dati da cui si
     estraggono i dati, l'aggiornamento del set di dati si interrompe.
     Spesso il file dei dipendenti non viene caricato in tempo e ciò causa
     l'interruzione dell'aggiornamento del set di dati.**
 
-    Le pipeline aiutano a risolvere il problema, consentendo di provare più
-    volte a eseguire l'aggiornamento a intervalli diversi.
+        Le pipeline aiutano a risolvere il problema, consentendo di provare più
+        volte a eseguire l'aggiornamento a intervalli diversi.
 
     - **Eventuali modifiche al modello di dati richiedono molto tempo in
     quanto Power Query richiede molto tempo per l'aggiornamento delle
     anteprime, date le dimensioni elevate dei dati e le trasformazioni
     complesse.**
 
-    Abbiamo capito che i flussi di dati e i lakehouse sono efficienti e
-    facili da modificare. In genere, il caricamento dell'anteprima nei
-    flussi di dati e nei lakehouse non richiede molto tempo.
+        Abbiamo capito che i flussi di dati e i lakehouse sono efficienti e
+        facili da modificare. In genere, il caricamento dell'anteprima nei
+        flussi di dati e nei lakehouse non richiede molto tempo.
 
     - **È necessario un PC Windows per usare Power BI Desktop anche se lo
     standard aziendale è Mac.**
 
-    Microsoft Fabric è un'offerta SaaS. Tutto ciò di cui abbiamo bisogno è
-    un browser per accedere al servizio. Non dobbiamo installare alcun
-    software nei nostri desktop.
+        Microsoft Fabric è un'offerta SaaS. Tutto ciò di cui abbiamo bisogno è
+        un browser per accedere al servizio. Non dobbiamo installare alcun
+        software nei nostri desktop.
 
 # Pulizia dell'ambiente lab
 

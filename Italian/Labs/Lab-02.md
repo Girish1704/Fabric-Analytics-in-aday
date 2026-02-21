@@ -133,8 +133,9 @@ http://app.fabric.microsoft.com/ nel browser.*
 5. Se si desidera, è possibile immettere una descrizione per l'area di
     lavoro. Questo campo è facoltativo.
 
-6. Fare clic su **Avanzate** per espandere la
-    sezione.    ![](../media/Lab-02/image15.png)
+6. Fare clic su **Avanzate** per espandere la sezione.    
+    
+    ![](../media/Lab-02/image15.png)
 
 7. In **Modalità licenza** assicurarsi che si sia selezionato
     **Versione di prova** (deve essere selezionato per impostazione

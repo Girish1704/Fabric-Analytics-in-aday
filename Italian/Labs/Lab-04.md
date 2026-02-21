@@ -27,7 +27,7 @@ in momenti diversi. Per ridurre il numero di aggiornamenti dei dati per
 i flussi di dati, creeremo flussi di dati individuali per le origini
 dati Snowflake e SharePoint.
 
-**Nota:** è supportata la presenza di più origini dati in un unico
+>**Nota:** è supportata la presenza di più origini dati in un unico
 flusso di dati.
 
 Il team IT ha già stabilito un collegamento a Dataverse e applicato le
@@ -311,9 +311,7 @@ di configurare la connessione.
 
     - **Password Snowflake:** <inject key="SnowFlake Password" enableCopy="false" />
 
-    >**Nota:** se si verificano problemi di connessione a Snowflake usando le
-        credenziali dei dettagli dell'ambiente, usare le credenziali fornite di
-        seguito.
+    >**Nota:** se si verificano problemi di connessione a Snowflake usando le credenziali dei dettagli dell'ambiente, usare le credenziali fornite di seguito.
 
     - **Nome utente Snowflake:** SNOWFLAKE_BACKUP
 
