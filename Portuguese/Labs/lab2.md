@@ -43,9 +43,9 @@ Ao final deste laboratório, você terá aprendido a:
 
     ![](../media/Lab-02/image6.png)
 
-    ***Observação:** se você estiver usando o ambiente de laboratório, ele poderá conectar você automaticamente.*
+    >**Observação:** se você estiver usando o ambiente de laboratório, ele poderá conectar você automaticamente.*
 
-    ***Observação**: se o Fabric não abrir, navegue até http://app.fabric.microsoft.com/ no navegador.*
+    >**Observação**: se o Fabric não abrir, navegue até http://app.fabric.microsoft.com/ no navegador.*
 
 2. Copie o Nome de usuário e cole-o no campo Email da caixa de texto e
     selecione Enviar.
@@ -88,7 +88,7 @@ Ao final deste laboratório, você terá aprendido a:
 9. A caixa de A caixa de diálogo de atualização para uma avaliação
     gratuita do Microsoft Fabric é aberta. Selecione **Ativar**.
 
-    ***Observação:** não altere a região padrão. Mantenha isso como está.*
+    >**Observação:** não altere a região padrão. Mantenha isso como está.*
 
     ![](../media/Lab-02/image11.png)
 
@@ -123,7 +123,7 @@ Ao final deste laboratório, você terá aprendido a:
 4. No campo **Nome**, insira **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** (encontrado na guia
     Ambiente).
 
-    > ***Observação:** O nome do workspace deve ser exclusivo. Verifique se
+    > **Observação:** O nome do workspace deve ser exclusivo. Verifique se
     > há uma marca de seleção verde em "Este nome está disponível", abaixo
     > do campo Nome.*
 
@@ -159,10 +159,10 @@ Ao final deste laboratório, você terá aprendido a:
 3. Uma caixa de diálogo Novo lakehouse será exibida. Insira
     **lh_FAIAD** na caixa de texto Nome.
 
-    > ***Observação:** "lh" refere-se a Lakehouse. Estamos prefixando
+    > **Observação:** "lh" refere-se a Lakehouse. Estamos prefixando
     > "lh" para que seja fácil de identificar e pesquisar.*
     >
-    > ***Observação:** a versão prévia do recurso **Esquemas de Lakehouse**
+    > **Observação:** a versão prévia do recurso **Esquemas de Lakehouse**
     > é muito interessante, por isso é algo que você deve conhecer. Como ele
     > está no estado **Versão Preliminar**, vamos ignorá-lo para que não
     > haja impacto negativo na experiência do laboratório. Assim que o
@@ -583,7 +583,7 @@ Ao final deste laboratório, você terá aprendido a:
     c. **Notebook:** usado para explorar dados e criar soluções de machine
     learning.
 
-    d**. Introdução aos Notebooks**: clique no botão "Abrir" para saber
+    d. **Introdução aos Notebooks**: clique no botão "Abrir" para saber
     como começar a usar os notebooks.
 
     e. **Desenvolver e Executar Notebooks**: clique no botão "Abrir" para

@@ -103,7 +103,7 @@ atual no Power BI Desktop para entender as transformações e o modelo.
     o **Nome de usuário**
     e cole-o no campo **Email** do diálogo e selecione **Continuar**.
 
-    - Email/Nome de usuário: <inject key="AzureAdUserEmail"></inject>
+    - **Email/Nome de usuário:** <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-01/image7.png)
 
@@ -111,13 +111,13 @@ atual no Power BI Desktop para entender as transformações e o modelo.
     tela, insira o seguinte Email/Nome de usuário e clique em
     **Avançar**.
 
-    - Email/Nome de usuário: <inject key="AzureAdUserEmail"></inject>
+    - **Email/Nome de usuário:** <inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-01/image8.png)
 
 4. Agora, insira a seguinte **Senha de Acesso Temporária** e clique em **Entrar**.
 
-    - Senha de Acesso Temporária: <inject key="AzureAdUserPassword"></inject> 
+    - **Senha de Acesso Temporária:** <inject key="AzureAdUserPassword"></inject> 
 
       ![](../media/Lab-01/image9.png)
 
@@ -138,7 +138,7 @@ Sales over time, por Territory, Product Group e Reseller Company.
 
 ![](../media/Lab-01/image11.jpeg)
 
-**Observação:** Neste treinamento, estamos nos concentrando na
+>**Observação:** Neste treinamento, estamos nos concentrando na
 aquisição, transformação e modelagem de dados usando as ferramentas
 disponíveis no Fabric. Não nos concentraremos no desenvolvimento ou na
 navegação de relatórios. Vamos reservar alguns minutos para entender
@@ -299,7 +299,7 @@ o relatório e passar para as próximas etapas.
 
     - **Senha do Snowflake:** <inject key="SnowFlake Password" enableCopy="false" />
 
-    *Observação: se você tiver problemas para se conectar ao Snowflake com as credenciais acima, use as credenciais de backup fornecidas abaixo.*
+    >**Observação:** se você tiver problemas para se conectar ao Snowflake com as credenciais acima, use as credenciais de backup fornecidas abaixo.
 
     - **Nome de usuário do Snowflake:** SNOWFLAKE_BACKUP
 

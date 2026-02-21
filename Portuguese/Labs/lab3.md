@@ -193,7 +193,7 @@ Windows.
 
 5. **No menu do Editor de consultas visuais,** selecione o ícone **Abrir em popup** (à direita). Você irá para o Editor do Power Query.
 
-    >***Observação:** talvez seja necessário rolar para a direita ou reabrir sua guia de consulta de visual se você não vir imediatamente esse ícone*
+    >**Observação:** talvez seja necessário rolar para a direita ou reabrir sua guia de consulta de visual se você não vir imediatamente esse ícone*
 
     ![](../media/Lab-03/image16.png)
 
@@ -359,7 +359,7 @@ Visual sem abrir a opção Power Query.
 
     ![](../media/Lab-03/image30.png)
 
-A caixa de diálogo Mesclar é aberta com Customers selecionada como a tabela superior.
+    A caixa de diálogo Mesclar é aberta com Customers selecionada como a tabela superior.
 
 6. Na **Tabela direita para mesclagem**, selecione **BuyingGroups**.
 

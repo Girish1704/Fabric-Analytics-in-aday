@@ -166,7 +166,7 @@ A conexão é estabelecida, e você pode exibir os dados no painel de visualiza�
 
     ![](../media/Lab-04/image20.png)
 
-> **Observação:** se você não vir as tabelas recém-criadas, selecione as reticências ao lado de Tabelas e selecione Atualizar para atualizar as tabelas.
+    > **Observação:** se você não vir as tabelas recém-criadas, selecione as reticências ao lado de Tabelas e selecione Atualizar para atualizar as tabelas.
 
 ## Tarefa 5: Copiar consultas do Snowflake para o Fluxo de Dados
 
@@ -333,7 +333,9 @@ Você deve estar no Lakehouse **lh_FAIAD**. Verifique se você está na exibiç�
 
     ![](../media/Lab-04/image37.png)
 
-7. Na caixa de diálogo Entrar, select a **conta de usuário** que você tem usado para esses laboratórios. A caixa de diálogo Entrar na sua conta é aberta. Escolha sua conta para entrar. **Observação:** sua conta será diferente da captura de tela abaixo.
+7. Na caixa de diálogo Entrar, select a **conta de usuário** que você tem usado para esses laboratórios. A caixa de diálogo Entrar na sua conta é aberta. Escolha sua conta para entrar. 
+
+    >**Observação:** sua conta será diferente da captura de tela abaixo.
 
     ![P184#yIS1](../media/Lab-04/image38.png)
 

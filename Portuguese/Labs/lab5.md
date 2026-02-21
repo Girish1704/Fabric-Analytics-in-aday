@@ -168,10 +168,9 @@ Vamos começar a criar o pipeline. Precisamos de uma atividade para atualizar o 
 
 1. No menu superior, selecione **Atividades -> Fluxo de dados**. A atividade Fluxo de dados é adicionada ao painel central de design. Observe que o painel inferior agora tem opções de configuração da atividade Fluxo de dados.
 
-2. Vamos configurar a atividade para conectar-se ao fluxo de dados df_People_SharePoint. No **painel inferior**, selecione
-**Configurações**.
-
-    > *Observação: talvez seja necessário arrastar o painel inferior para cima para ver as configurações.*
+2. Vamos configurar a atividade para conectar-se ao fluxo de dados df_People_SharePoint. No **painel inferior**, selecione **Configurações**.
+    
+    >**Observação:** talvez seja necessário arrastar o painel inferior para cima para ver as configurações.
 
     ![](../media/Lab-05/image22.png)
 
@@ -279,8 +278,7 @@ Observamos que, se os dados não estiverem disponíveis às 9h, normalmente esta
 
     c. **varWaitTime** do tipo **Integer** e valor padrão **60**. Essa variável será usada para definir o tempo de espera se o fluxo de dados falhar (5 minutos/300 segundos ou 15 minutos/900 segundos).
 
-    > **Observação:** certifique-se de que não haja espaço antes ou depois
-    > do nome da variável.
+    > **Observação:** certifique-se de que não haja espaço antes ou depois do nome da variável.
 
     ![](../media/Lab-05/image29.png)
 
