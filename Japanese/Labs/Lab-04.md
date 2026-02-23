@@ -184,7 +184,7 @@ IT チームが作成したテーブルのショートカットを作成しま�
 5. **説明**テキスト ボックスに、**Dataflow to ingest People data from
     SharePoint to Lakehouse** と入力します (2)。
 
-6. 完了したら、設定ウィンドウを閉じます **(3)**。
+6. 完了したら、設定ウィンドウを閉じます **(3)** 。
 
     ![](../media/Lab-04/image18.png)
 
