@@ -152,9 +152,15 @@ create a Lakehouse. We will do this next.
     
     >**Note:** The preview feature **Lakehouse Schemas** is very interesting and is something you should be aware of. Since it is in **Preview** state, we will ignore it so there is no negative impact on the lab experience. Once the feature is general available we will bring it into this lab.
 
-4. Select **Create**
+1. Choose **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (2)** as the **location**.
+
+1. Make sure **Lakehouse schemas (3)** is unchecked.
+
+1. Then, select **Create (4)** to proceed.
     
-    ![](../media/Lab-02/2.png)
+    ![alt text](image.png)
+
+    >**Note:** **Please make sure to deselect the Lakehouse Schema feature, as it is now enabled by default.**
 
     Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse explorer interface. On the top left, next to the Fabric name in the header, you will have the Lakehouse icon. The workspace icon on the left navigation will reflect that it now contains an item.
 
