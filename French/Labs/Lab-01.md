@@ -444,7 +444,7 @@ Lisez les blogs d'annonces plus détaillés sur l'expérience Fabric :
 - [Blog Intégration de Dataverse et Microsoft
   Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2026 Microsoft Corporation. Tous droits réservés.
+© 2025 Microsoft Corporation. Tous droits réservés.
 
 En effectuant cette démonstration/ce labo, vous acceptez les conditions
 suivantes :
