@@ -54,7 +54,7 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Copy SharePoint queries to Dataflow
 
-1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** **(1)** and select **lh_FAIAD** lakehouse you created in Lab 2, Task 2.
+1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** **(1)** you created in Lab 2, Task 2.
 
 3. Under the **Get data (2)** section, select **New Dataflow Gen2 (3)**.
 
@@ -317,9 +317,9 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view
 
 ![](../media/Lab-04/image34.png)
 
-1. In **Explorer** panel, select the **ellipsis** next to **dbo** under tables.
+1. In **Explorer** panel, select the **ellipsis** next to **Tables**.
 
-2. Select **New table shortcut**.
+2. Select **New Shortcut**.
 
     ![](../media/Lab-04/image35.png)
 
@@ -355,9 +355,9 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view
 
 ## Task 10: Create a Shortcut to a Lakehouse
 
-1. In **Explorer** panel, select the **ellipsis** next to **dbo** under tables.
+1. In **Explorer** panel, select the **ellipsis** next to **Tables**.
 
-2. Select **New table shortcut**.
+2. Select **New Shortcut**.
 
     ![](../media/Lab-04/image35.png)
 

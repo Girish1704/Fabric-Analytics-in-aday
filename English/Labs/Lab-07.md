@@ -461,9 +461,9 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
     ![](../media/Lab-07/image46.png)
 
-5. From the **Explorer pane** on the left, select the **ellipsis (...)** next to **dbo** under tables.
+5. From the **Explorer pane** on the left, select the **ellipsis (...)** next to **Tables**.
 
-6. Select **New table shortcut**.
+6. Select **New shortcut**.
 
     ![](../media/Lab-07/image47.png)
 
@@ -499,7 +499,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
     ![](../media/Lab-07/image51.png)
 
-    > Notice in the **Explorer pane** on the left, we now have the InvoicesMay table. Now we need to update the Sales view.
+    Notice in the **Explorer pane** on the left, we now have the InvoicesMay table. Now we need to update the Sales view.
 
 19. On the **top right** of the screen, select **Lakehouse -\> SQL analytics endpoint**.
 
@@ -658,11 +658,11 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
 23. Select **rpt_Sales_Report** from the left menu bar to navigate back to the **report**.
 
-24. From the top menu select the **Refresh Icon** on the right. Notice now in the Line chart there is data for May 2024. Also, notice the Sales amount has increased.
+24. From the top menu select the **Refresh Icon**. Notice now in the Line chart there is data for May 2024. Also, notice the Sales amount has increased.
 
     ![](../media/Lab-07/image54.png)
 
-    We do not have to refresh the data model and report when data changes. This is the advantage of Direct Lake and Direct query.
+    We do not have to refresh the data model and report when data changes.This is the advantage of Direct Lake and Direct query.
 
     Let's revisit the challenges that are listed in the problem statement:
 

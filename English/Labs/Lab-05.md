@@ -159,7 +159,7 @@ Let's use a Pipeline to solve this.
 
 1. Let's navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** by selecting the workspace in the left panel.
 
-2. From the top menu select **+ New item (1) -> Search and select Pipeline (3).**
+2. From the top menu select **+ New item (1) -> Pipeline (2).**
 
     ![](../media/Lab-05/image17.png)
 

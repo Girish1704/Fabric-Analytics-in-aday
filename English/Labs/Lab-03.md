@@ -54,13 +54,15 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     >**Note:** If you don't have a tab you can navigate back to your Workspace and open the Lakehouse from there.
 
-2. In the **Explorer** panel, **expand (1)** Tables and then select the **ellipsis (2)** next to **dbo**.
+2. In the **Explorer** panel, select the **ellipsis** next to
+    **Tables**.
 
-3. Select **New table shortcut (3).**
+3. Select **New Shortcut.**
 
     ![](../media/Lab-03/image6.png)
 
-4. **New Shortcut** dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**.
+4. **New Shortcut** dialog opens. Under **External sources**, select
+    **Azure Data Lake Storage Gen2**.
 
     ![](../media/Lab-03/image7.png)
 
@@ -150,7 +152,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     ![](../media/Lab-03/image11.png)
 
-18. Notice all the Shortcuts are created as Tables in dbo. Select **BuyingGroups** table and notice we can see a preview of the data in the data panel.
+18. Notice all the Shortcuts are created as Tables. Select **BuyingGroups** table and notice we can see a preview of the data in the data panel.
 
     ![](../media/Lab-03/image12.png)
 
