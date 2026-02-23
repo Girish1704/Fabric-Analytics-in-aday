@@ -152,15 +152,9 @@ create a Lakehouse. We will do this next.
     
     >**Note:** The preview feature **Lakehouse Schemas** is very interesting and is something you should be aware of. Since it is in **Preview** state, we will ignore it so there is no negative impact on the lab experience. Once the feature is general available we will bring it into this lab.
 
-1. Choose **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (2)** as the **location**.
-
-1. Make sure **Lakehouse schemas (3)** is unchecked.
-
-1. Then, select **Create (4)** to proceed.
+4. Select **Create**
     
-    ![alt text](image.png)
-
-    >**Note:** **Please make sure to deselect the Lakehouse Schema feature, as it is now enabled by default.**
+    ![](../media/Lab-02/2.png)
 
     Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse explorer interface. On the top left, next to the Fabric name in the header, you will have the Lakehouse icon. The workspace icon on the left navigation will reflect that it now contains an item.
 
@@ -521,11 +515,11 @@ create a Lakehouse. We will do this next.
     
     **What is a Fabric Database?**
 
-    SQL database in Microsoft Fabric is a developer-friendly transactional database, based on Azure SQL Database, that allows you to easily create your operational database in Fabric. A SQL database in Fabric uses the same SQL Database Engine as Azure SQL Database.
+    SQL database in Microsoft Fabric is a developer-friendly transactional database, based on Azure SQL Database, that allows you to easily create your operational database in Fabric. A SQL database in Fabric uses the same SQL Database Engine as Azure SQL Database.
     
     **Item types:**
 
-    a. **SQL database**: SQL database in Fabric is part of the Database workload, and the data is accessible from other items in Fabric. Your SQL database data is also kept up-to-date in a queryable format in OneLake, so you can use all the different services in Fabric, such as running analytics with Spark, executing notebooks, data engineering, visualizing through Power BI Reports, and more.
+    a. **SQL database**: SQL database in Fabric is part of the Database workload, and the data is accessible from other items in Fabric. Your SQL database data is also kept up-to-date in a queryable format in OneLake, so you can use all the different services in Fabric, such as running analytics with Spark, executing notebooks, data engineering, visualizing through Power BI Reports, and more.
     
     b. **Cosmos DB:** Cosmos DB in Microsoft Fabric is an AI-optimized NoSQL database with a simplified management experience. As a developer, you can use Cosmos DB in Fabric to build AI applications with less friction and without having to take on typical database management tasks.
 
@@ -561,7 +555,7 @@ Help (?) section has links to some great resources.
 Here are a few more resources that will help you with your next steps
 with Microsoft Fabric.
 
-- See blog post to read the full 
+- See blog post to read the full 
 
 - Explore Fabric through the [Guided
   Tour](https://aka.ms/Fabric-GuidedTour)
@@ -580,22 +574,22 @@ with Microsoft Fabric.
 - Read the [free e-book on getting started with
   Fabric](https://aka.ms/fabric-get-started-ebook)
 
-- Join the [Fabric community](https://aka.ms/fabric-community) to post
+- Join the [Fabric community](https://aka.ms/fabric-community) to post
   your questions, share your feedback, and learn from others
 
 Read the more in-depth Fabric experience announcement blogs:
 
 - [Data Factory experience in Fabric
-  blog](https://aka.ms/Fabric-Data-Factory-Blog) 
+  blog](https://aka.ms/Fabric-Data-Factory-Blog) 
 
 - [Synapse Data Engineering experience in Fabric
-  blog](https://aka.ms/Fabric-DE-Blog) 
+  blog](https://aka.ms/Fabric-DE-Blog) 
 
 - [Synapse Data Science experience in Fabric
-  blog](https://aka.ms/Fabric-DS-Blog) 
+  blog](https://aka.ms/Fabric-DS-Blog) 
 
 - [Synapse Data Warehousing experience in Fabric
-  blog](https://aka.ms/Fabric-DW-Blog) 
+  blog](https://aka.ms/Fabric-DW-Blog) 
 
 - [Synapse Real-Time Analytics experience in Fabric
   blog](https://aka.ms/Fabric-RTA-Blog)
@@ -603,7 +597,7 @@ Read the more in-depth Fabric experience announcement blogs:
 - [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
 
 - [Data Activator experience in Fabric
-  blog](https://aka.ms/Fabric-DA-Blog) 
+  blog](https://aka.ms/Fabric-DA-Blog) 
 
 - [Administration and governance in Fabric
   blog](https://aka.ms/Fabric-Admin-Gov-Blog)
