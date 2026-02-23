@@ -15,7 +15,7 @@
     - Tarefa 6: Criar variáveis
     - Tarefa 7: Configurar atividade Until
     - Tarefa 8: Configurar atividade Dataflow
-    - Tarefa 9: Configurar 1nd atividade Set variable
+    - Tarefa 9: Configurar 1st atividade Set variable
     - Tarefa 10: Configurar 2nd atividade Set variable
     - Tarefa 11: Configurar 3rd atividade Set variable
     - Tarefa 12: Configurar atividade Wait
@@ -133,7 +133,7 @@ uma lista de atualizações
 
 1. Voltamos ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** selecionando-o no painel esquerdo.
 
-2. No menu superior, selecione **+ Novo item (1) -> Pipeline (2)**.
+2. No menu superior, selecione **+ Novo item (1) -> Pipeline (2) -> Pipeline (3)**.
 
     ![](../media/Lab-05/image17.png)
 
@@ -395,7 +395,7 @@ variables('varSuccess')))**
 
     ![](../media/Lab-05/image41.png)
 
-## Tarefa 9: Configurar 1nd atividade Set variable
+## Tarefa 9: Configurar 1st atividade Set variable
 
 Configuramos a atividade Fluxo de dados como fizemos anteriormente no laboratório. Agora, adicionaremos uma nova lógica. Se a atualização do fluxo de dados for bem-sucedida, precisaremos sair do iterador Until. Lembre-se de que uma das condições para a existência do iterador é definir o valor da variável varIsSuccess como Sim.
 
