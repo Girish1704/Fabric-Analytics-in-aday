@@ -97,21 +97,21 @@ BI Desktop to understand the transformations and the model.
 
    ![](../media/Lab-01/image7.png)
 
-2. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
+2. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
-   * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
      ![](../media/Lab-01/image8.png)
 
-3. On the Sign into Microsoft Azure tab, you will see the login screen, enter the following Email/ Username and then click on **Next**.
+3. On the Sign into Microsoft Azure tab, you will see the login screen, enter the following Email/ Username and then click on **Next**.
 
-   * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
      ![](../media/Lab-01/image9.png)
 
-4. Now enter the following **Temporary Access Pass** and click on **Sign in**.
+4. Now enter the following **Temporary Access Pass** and click on **Sign in**.
 
-   * **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
+   * Temporary Access Pass: <inject key="AzureAdUserPassword"></inject>
 
      ![](../media/Lab-01/image10.png)
 
@@ -121,8 +121,7 @@ BI Desktop to understand the transformations and the model.
 
 6. **Account added to this Device** Dialog opens. Select **Done**.
 
-   > Power BI Desktop will now open. If the report does not load properly, close Power BI Desktop and reopen it again.
- 
+Power BI Desktop will now open.
 
 ## Task 2: Analyze Power BI Desktop Report
 
@@ -148,7 +147,7 @@ couple of minutes understanding the report and move to the next steps.
 
 3. Select **Rocky Mountain from Sales Territory** to remove the filter.
 
-4. From the Scatter plot visual on the bottom center of the screen (Sales Orders by Sales) select the outlier on the top right (4th quadrant). Notice the margin % is 51% or 52%, which is above the average of 50%. Also, the Sales YoY% has gone up the last two quarters of 2023.
+4. From the Scatter plot visual on the bottom center of the screen (Sales Orders by Sales) select the outlier on the top right (4th quadrant). Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up the last two quarters of 2023.
 
     ![](../media/Lab-01/image15.png)
 
@@ -158,7 +157,7 @@ couple of minutes understanding the report and move to the next steps.
 
     ![](../media/Lab-01/image16.png)
 
-7. You will be navigated to the page which provides the **Product Details**. Notice there are some future orders in place as well.
+7. You will be navigated to the page which provides the Product Details. Notice there are some future orders in place as well.
 
 8. Once you are done reviewing this page, select the **Ctrl+back arrow** on the top left of the page to be navigated back to the Sales Report.
 
@@ -168,7 +167,7 @@ couple of minutes understanding the report and move to the next steps.
 
     ![](../media/Lab-01/image18.png)
 
-10. Notice there are two fact tables, **Sales and PO**.
+10. Notice there are two fact tables, Sales and PO.
 
     a. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
 
@@ -248,7 +247,7 @@ couple of minutes understanding the report and move to the next steps.
 
     * **Snowflake Username:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    * **Snowflake Password:** <inject key="SnowFlake Password" enableCopy="false" />
+    * **Snowflake Password:** <inject key="SnowFlake Username" enableCopy="false" />
 
       >**Note:** If you experience any issues connecting to Snowflake with the credentials above, please use the backup credentials provided below.
 
@@ -291,7 +290,7 @@ Help (?) section has links to some great resources.
 Here are a few more resources that will help you with your next steps
 with Microsoft Fabric.
 
-- See blog post to read the full [Microsoft Fabric GA
+- See blog post to read the full [Microsoft Fabric GA
   announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
 - Explore Fabric through the [Guided
@@ -311,22 +310,22 @@ with Microsoft Fabric.
 - Read the [free e-book on getting started with
   Fabric](https://aka.ms/fabric-get-started-ebook)
 
-- Join the [Fabric community](https://aka.ms/fabric-community) to post
+- Join the [Fabric community](https://aka.ms/fabric-community) to post
   your questions, share your feedback, and learn from others
 
 Read the more in-depth Fabric experience announcement blogs:
 
 - [Data Factory experience in Fabric
-  blog](https://aka.ms/Fabric-Data-Factory-Blog) 
+  blog](https://aka.ms/Fabric-Data-Factory-Blog) 
 
 - [Synapse Data Engineering experience in Fabric
-  blog](https://aka.ms/Fabric-DE-Blog) 
+  blog](https://aka.ms/Fabric-DE-Blog) 
 
 - [Synapse Data Science experience in Fabric
-  blog](https://aka.ms/Fabric-DS-Blog) 
+  blog](https://aka.ms/Fabric-DS-Blog) 
 
 - [Synapse Data Warehousing experience in Fabric
-  blog](https://aka.ms/Fabric-DW-Blog) 
+  blog](https://aka.ms/Fabric-DW-Blog) 
 
 - [Synapse Real-Time Analytics experience in Fabric
   blog](https://aka.ms/Fabric-RTA-Blog)
@@ -334,7 +333,7 @@ Read the more in-depth Fabric experience announcement blogs:
 - [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
 
 - [Data Activator experience in Fabric
-  blog](https://aka.ms/Fabric-DA-Blog) 
+  blog](https://aka.ms/Fabric-DA-Blog) 
 
 - [Administration and governance in Fabric
   blog](https://aka.ms/Fabric-Admin-Gov-Blog)
