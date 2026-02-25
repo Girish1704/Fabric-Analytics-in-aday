@@ -31,7 +31,7 @@ Desktop에서 관계 생성, 측정값 추가 등과 같은 모델링 활동을 
 ### 작업 1: SQL을 사용한 데이터 쿼리
 
 1. 다시 랩 2, 작업 8에서 만든 Fabric 작업 영역
-    **FAIAD_<username>**(으)로 되돌아가 보겠습니다.
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**(으)로 되돌아가 보겠습니다.
 
 2. 원하는 경우 **작업 흐름을 최소화**하여 전체 항목 목록을 볼 수
     있습니다.
@@ -39,7 +39,7 @@ Desktop에서 관계 생성, 측정값 추가 등과 같은 모델링 활동을 
 3. 레이크하우스, 의미 체계 모델, SQL 엔드포인트 등 lh_FAIAD와 관련된 세
     가지 요소를 볼 수 있습니다. 이전 랩에서 레이크하우스를 탐색하고 SQL
     분석 엔드포인트를 사용하여 시각적 쿼리를 만들었습니다. 왼쪽 탐색
-    모음에서 **FAIAD_<사용자 이름>**을 선택하고 **lh_FAIAD SQL 분석
+    모음에서 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**을 선택하고 **lh_FAIAD SQL 분석
     엔드포인트** 옵션을 선택하여 이 옵션을 계속 탐색합니다. 탐색기의
     **SQL 보기**로 이동합니다.
 
@@ -127,7 +127,7 @@ Desktop에서 관계 생성, 측정값 추가 등과 같은 모델링 활동을 
 8. 보고서 저장 대화 상자가 열립니다. **보고서의 이름 입력** 텍스트
     상자에 **Units by Supplier**를 입력합니다.
 
-9. 대상 작업 영역이 Fabric 작업 영역 **FAIAD_<username>**(으)로
+9. 대상 작업 영역이 Fabric 작업 영역 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**(으)로
     설정되어 있는지 확인합니다.
 
 10. **저장**을 선택합니다.

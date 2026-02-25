@@ -94,20 +94,20 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     복사하여 대화 상자의 **전자 메일** 필드에 붙여넣고 **계속**을
     선택합니다.
 
-    - 이메일/사용자 이름:
+    - 이메일/사용자 이름:<inject key="AzureAdUserEmail"></inject>
 
     ![](../media/Lab-01/image5.png)
 
 3. Microsoft Azure 로그인 탭에 로그인 화면이 표시되면 다음
     이메일/사용자 이름을 입력한 후 다음을 클릭합니다.
 
-    - 이메일/사용자 이름:
+    - 이메일/사용자 이름:<inject key="AzureAdUserEmail"></inject>
 
     ![](../media/Lab-01/image6.png)
 
 4. 이제 다음 **임시 액세스 패스**를 입력하고 **로그인**을 클릭합니다.
 
-    - 임시 액세스 패스:
+    - 임시 액세스 패스:<inject key="AzureAdUserPassword"></inject>
 
     ![](../media/Lab-01/image7.png)
 
@@ -244,9 +244,9 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     자격 증명 정보를 입력할 수 있습니다. 아래에 제공된 자격 증명 정보를
     입력합니다. 입력하고 나면 **연결을** 선택합니다.
 
-    - 이메일/사용자 이름: 환경 탭에서 찾을 수 있습니다.
+    - 이메일/사용자 이름:<inject key="AzureAdUserEmail"></inject>
 
-    - 암호: 환경 탭에서 찾을 수 있습니다.
+    - 암호:<inject key="AzureAdUserPassword"></inject>
 
 9. **ADLS Base Folder** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를
     선택하면 자격 증명을 입력해야 합니다. **자격 증명 편집**을
@@ -258,7 +258,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     아래에 제공된 **
     SAS** 토큰을 입력합니다. 그런 다음 **연결**을 선택합니다.
 
-    - **SAS 토큰:** 환경 탭에서 찾을 수 있습니다.
+    - **SAS 토큰:** <inject key="Sas token"></inject>
 
     ![](../media/Lab-01/image21.png)
 
@@ -286,9 +286,10 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     입력합니다. 이 자격 증명을 사용하여 Snowflake 아래의 모든 테이블을
     Snowflake에 연결한 다음 연결을 선택합니다.
 
-    - **Snowflake 사용자 이름:** TE_SNOWFLAKE1
+    - **Snowflake 사용자 이름:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Snowflake 암호:** 8UpfRpExVDXv2AC1
+    - **Snowflake 암호:** <inject key="SnowFlake Username" enableCopy="false" />
+
 
         >*참고: 위 자격 증명으로 Snowflake에 연결하는 데 문제가 발생할 경우,
         아래에 제공된 백업 자격 증명을 사용합니다.*
@@ -314,9 +315,10 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 16. **Microsoft 계정** 옵션을 선택한 다음 **로그인**을 클릭합니다.
     아래에 입력한 사용자 이름과 암호를 입력한 다음 연결을 선택합니다.
 
-    - **이메일/사용자 이름:** 환경 탭에서 찾을 수 있습니다.
+    - **이메일/사용자 이름:** <inject key="AzureAdUserEmail"></inject>
 
-    - **암호:** 환경 탭에서 찾을 수 있습니다.
+    - **암호:** <inject key="AzureAdUserPassword"></inject>
+
 
     ![](../media/Lab-01/image24.png)
 

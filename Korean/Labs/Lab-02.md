@@ -47,20 +47,20 @@ http://app.fabric.microsoft.com/으로 이동합니다.*
 2. 사용자 이름을 복사하여 대화 상자의 전자 메일 필드에 붙여넣고 제출을
     선택합니다.
 
-    - **전자 메일/사용자 이름:** 환경 탭에서 찾을 수 있습니다.
+    - **전자 메일/사용자 이름:** <inject key="AzureAdUserEmail"></inject>
 
     ![](../media/Lab-02/image3.png)
 
 3. **Microsoft Azure으로 로그인** 탭에 로그인 화면이 표시되면 다음
     **EmailUsername**을 입력한 후 **다음**을 클릭합니다.
 
-    - **전자 메일/사용자 이름:** 환경 탭에서 찾을 수 있습니다.
+    - **전자 메일/사용자 이름:** <inject key="AzureAdUserEmail"></inject>
 
     ![](../media/Lab-02/image4.png)
 
 4. 이제 다음 **임시 액세스 패스**를 입력하고 **로그인**을 클릭합니다.
 
-    - **임시 액세스 패스**: 환경 탭에서 발견
+    - **임시 액세스 패스**: <inject key="AzureAdUserPassword"></inject>
 
     ![](../media/Lab-02/image5.png)
 
@@ -140,7 +140,7 @@ incorrect.](../media/Lab-02/image8.png)
 
 ### 작업 3: 레이크하우스 만들기
 
-1. 새로 생성된 작업 영역 **FAIAD_Username**에서 왼쪽 탐색 창에 있는 **+
+1. 새로 생성된 작업 영역 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**에서 왼쪽 탐색 창에 있는 **+
     새 항목 (1)** 버튼을 찾습니다. 여기에서 작업 영역에 새로운 항목을
     만들 수 있습니다.
 
