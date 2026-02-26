@@ -1,5 +1,7 @@
 # Microsoft Fabric Fabric Analyst in a Day-랩 4
+
 ![](../media/Lab-04/main4.png)
+
 # 목차 
 - 소개
 - 데이터 흐름 2세대	
@@ -44,10 +46,9 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
 
 # 데이터 흐름 2세대
 
-### 작업 1: SharePoint 쿼리를 데이터 흐름에 복사
+## 작업 1: SharePoint 쿼리를 데이터 흐름에 복사
 
-1. 다시 랩 2, 작업 8에서 만든 Fabric 작업 영역, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
-(1)**으로 되돌아가 보겠습니다.
+1. 다시 랩 2, 작업 8에서 만든 Fabric 작업 영역, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** **(1)** 으로 되돌아가 보겠습니다.
 
 2. 왼쪽 상단 모서리에 있는 **+ 새 항목 (2)** 옵션을 선택합니다.
 
@@ -78,7 +79,7 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
 
 8. 브라우저에서 **데이터 흐름 화면**으로 다시 이동합니다.
 
-9. **데이터 흐름 창**에서 **Ctrl+V**를 입력합니다(현재 마우스 우클릭
+9. **데이터 흐름 창**에서 **Ctrl + V**를 입력합니다(현재 마우스 우클릭
     붙여 넣기는 지원되지 않습니다). MAC 디바이스를 사용하는 경우 Cmd+V를
     사용하여 붙여 넣습니다.
 
@@ -97,7 +98,7 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
 
     ![](../media/Lab-04/image7.png)
 
-### 작업 2: SharePoint 연결 만들기
+## 작업 2: SharePoint 연결 만들기
 
 1. **연결 구성**을 선택합니다.
 
@@ -115,7 +116,7 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
 
     ![](../media/Lab-04/image9.png)
 
-### 작업 3: People 쿼리를 위한 데이터 대상 구성
+## 작업 3: People 쿼리를 위한 데이터 대상 구성
 
 연결이 설정되었으며 미리 보기 패널에서 데이터를 확인할 수 있습니다.
 쿼리의 적용된 단계를 자유롭게 탐색하세요. 이제 People 데이터를
@@ -124,7 +125,7 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
 1. **People (1)** 쿼리를 선택합니다.
 
 2. 리본 메뉴에서 **홈 -> 쿼리(2) -> 데이터 저장 위치 추가(3)** **->
-    레이크하우스(4)**를 선택합니다.
+    레이크하우스(4)** 를 선택합니다.
 
     ![](../media/Lab-04/image10.png)
 
@@ -160,13 +161,13 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
 
     ![](../media/Lab-04/image13.png)
 
-### 작업 4: SharePoint 데이터 흐름 이름 바꾸기 및 게시
+## 작업 4: SharePoint 데이터 흐름 이름 바꾸기 및 게시
 
 1. **Power Query 창**으로 이동합니다. **오른쪽 하단**에서 데이터 대상이
-    **Lakehouse (1)**로 설정된 것을 확인합니다.
+    **Lakehouse (1)** 로 설정된 것을 확인합니다.
 
-2. 왼쪽 상단 모서리에서 **저장 후 실행 (2)**을 선택합니다. 새로 고침이
-    시작되었다는 알림이 표시되면 데이터 흐름 **(3)**을 닫을 수 있습니다.
+2. 왼쪽 상단 모서리에서 **저장 후 실행 (2)** 을 선택합니다. 새로 고침이
+    시작되었다는 알림이 표시되면 데이터 흐름 **(3)** 을 닫을 수 있습니다.
 
     ![](../media/Lab-04/image14.png)
 
@@ -174,23 +175,23 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
     실행을 완료하는 데 잠시 시간이 걸릴 수 있습니다.
 
 3. **Dataflow 1**이 작업 중인 데이터 흐름입니다. 계속하기 전에 이름을
-    바꿔 보겠습니다. 데이터 흐름 1 옆의 **줄임표(...)**를 클릭합니다.
+    바꿔 보겠습니다. 데이터 흐름 1 옆의 **줄임표(...)** 를 클릭합니다.
     **설정**을 선택합니다(데이터 흐름이 실행 중일 때는 설정에 액세스할
     수 없습니다).
 
     ![](../media/Lab-04/image15.png)
 
 4. 데이터 흐름 설정 창이 열립니다. **이름**을 **df_People_SharePoint
-    (1)**로 변경합니다.
+    (1)** 로 변경합니다.
 
 5. **설명** 텍스트 상자에 **Dataflow to ingest People data from
-    SharePoint to Lakehouse (2)**를 추가합니다.
+    SharePoint to Lakehouse (2)** 를 추가합니다.
 
-6. 완료되면 설정 창 **(3)**을 닫습니다.
+6. 완료되면 설정 창 **(3)** 을 닫습니다.
 
     ![](../media/Lab-04/image16.png)
 
-**FAIAD_<inject key="Deployment ID" enableCopy="false"/> 작업 영역**으로 되돌아갑니다.
+    **FAIAD_<inject key="Deployment ID" enableCopy="false"/> 작업 영역**으로 되돌아갑니다.
 
 1. **lh_FAIAD**를 선택하여 레이크하우스로 이동합니다.
 
@@ -203,14 +204,14 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
     **참고:** 새로 생성된 테이블이 표시되지 않으면 테이블 옆에 있는 줄임표를
     선택하고 새로 고침을 선택하여 테이블을 새로 고칩니다.
 
-### 작업 5: Snowflake 쿼리를 데이터 흐름에 복사
+## 작업 5: Snowflake 쿼리를 데이터 흐름에 복사
 
-1. Fabric 작업 영역인 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**로 다시 이동해
+1. Fabric 작업 영역인 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)** 로 다시 이동해
 보겠습니다.
 
 2. 왼쪽 상단 모서리에 있는 **+ 새 항목 (2)** 옵션을 선택합니다.
 
-3. 권장 항목에서 **데이터 흐름 2세대 (3)**을 선택합니다.
+3. 권장 항목에서 **데이터 흐름 2세대 (3)** 을 선택합니다.
 
     ![](../media/Lab-04/image18.png)
 
@@ -252,13 +253,13 @@ IT 팀은 이미 Dataverse에 대한 링크를 설정하고 필요한 데이터 
     디바이스를 사용하는 경우 Cmd+V를 사용하여 붙여 넣습니다.
 
     **참고:** 랩 환경에서 일하는 경우 화면 오른쪽 상단의 **말줄임표
-    (...)**를 선택하시기 바랍니다. 슬라이더를 사용하여 **VM 네이티브
+    (...)** 를 선택하시기 바랍니다. 슬라이더를 사용하여 **VM 네이티브
     클립보드**를 **활성화**합니다. 대화 상자에서 확인을 선택합니다. 쿼리
     붙여 넣기가 완료되면 이 옵션을 비활성화할 수 있습니다.
 
     ![](../media/Lab-04/image20.png)
 
-### 작업 6: Snowflake에 대한 연결 만들기
+## 작업 6: Snowflake에 대한 연결 만들기
 
 5개의 쿼리가 붙여 넣기 되어 있고 이제 왼쪽에 쿼리 패널이 표시됩니다.
 Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하는 경고
@@ -277,13 +278,11 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
     입력합니다. 이 자격 증명을 사용하여 **Snowflake 아래의** 모든
     테이블을 **Snowflake에 연결**한 다음 연결을 선택합니다.
 
-    - Snowflake 사용자 이름: <inject key="SnowFlake Username" enableCopy="false" />
+    - **Snowflake 사용자 이름:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - Snowflake 암호: <inject key="SnowFlake Password" enableCopy="false" />
+    - **Snowflake 암호:** <inject key="SnowFlake Password" enableCopy="false" />
 
-
-    **참고:** 환경 세부 정보의 자격 증명을 사용하여 Snowflake에 연결하는 데
-    문제가 있는 경우, 아래에 제공된 자격 증명을 사용하시기 바랍니다.
+    >**참고:** 환경 세부 정보의 자격 증명을 사용하여 Snowflake에 연결하는 데 문제가 있는 경우, 아래에 제공된 자격 증명을 사용하시기 바랍니다.
 
     - **Snowflake 사용자 이름:** SNOWFLAKE_BACKUP
 
@@ -301,17 +300,17 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
     Items을 PO와 병합하여 PO 팩트를 생성합니다. 이제 Supplier 및 PO 데이터를
     레이크하우스에 수집해야 합니다.
 
-### 작업 7: Supplier 및 PO 쿼리를 위한 데이터 대상 구성
+## 작업 7: Supplier 및 PO 쿼리를 위한 데이터 대상 구성
 
 1. **Supplier (1)** 쿼리를 선택합니다.
 
 2. 리본 메뉴에서 **홈 (2) -> 데이터 대상 추가 (3) ->
-    레이크하우스(4)**를 선택합니다.
+    레이크하우스(4)** 를 선택합니다.
 
     ![](../media/Lab-04/image23.png)
 
 3. 데이터 대상에 연결 대화 상자가 열립니다. **연결 드롭다운에서**
-    **Lakehouse odl_user_<inject key="Deployment ID" enableCopy="false"/>(없음)**을(를) 선택합니다.
+    **Lakehouse odl_user_<inject key="Deployment ID" enableCopy="false"/>(없음)** 을(를) 선택합니다.
 
 4. **다음**을 선택합니다.
 
@@ -344,9 +343,9 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
 
     ![](../media/Lab-04/image27.png)
 
-### 작업 8: Snowflake 데이터 흐름 이름 바꾸기 및 게시
+## 작업 8: Snowflake 데이터 흐름 이름 바꾸기 및 게시
 
-1. 화면 **상단에서 Dataflow 2 옆에 있는 화살표(이름은 다를 수 있음)**를
+1. 화면 **상단에서 Dataflow 2 옆에 있는 화살표(이름은 다를 수 있음)** 를
     선택하여 이름을 바꿉니다.
 
 2. 대화 상자에서 이름을 **df_Supplier_Snowflake**로 변경합니다.
@@ -355,8 +354,8 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
 
     ![](../media/Lab-04/image28.png)
 
-4. 왼쪽 상단 모서리에서 **저장 후 실행** **(1)**을 선택합니다. 새로
-    고침이 시작되었다는 알림이 표시되면 데이터 흐름 **(2)**을 닫을 수
+4. 왼쪽 상단 모서리에서 **저장 후 실행** **(1)** 을 선택합니다. 새로
+    고침이 시작되었다는 알림이 표시되면 데이터 흐름 **(2)** 을 닫을 수
     있습니다.
 
     ![](../media/Lab-04/image29.png)
@@ -380,7 +379,7 @@ Snowflake에 대해 생성된 연결이 없으므로 연결 구성을 요청하�
 
 # 내부 레이크하우스 바로 가기
 
-### 작업 9: Dataverse 바로 가기 생성 방법
+## 작업 9: Dataverse 바로 가기 생성 방법
 
 레이크하우스 **lh_FAIAD**에 있어야 합니다. SQL 분석 엔드포인트가 아닌
 Lakehouse 보기에 있는지 확인하세요.
@@ -402,9 +401,9 @@ Lakehouse 보기에 있는지 확인하세요.
     ![](../media/Lab-04/image33.png)
 
 4. **새 연결을 선택하면 (1)** 연결 설정 대화 상자가 열립니다. **환경
-    도메인**으로 **org6c18814a.crm.dynamics.com (2)**을 입력합니다.
+    도메인**으로 **org6c18814a.crm.dynamics.com (2)** 을 입력합니다.
 
-5. **인증 종류를 조직 계정 (3)**으로 그대로 둡니다.
+5. **인증 종류를 조직 계정 (3)** 으로 그대로 둡니다.
 
 6. 아직 로그인하지 않은 경우 **로그인**을 선택합니다.
 
@@ -436,7 +435,7 @@ Lakehouse 보기에 있는지 확인하세요.
 
     ![](../media/Lab-04/image36.png)
 
-### 작업 10: 레이크하우스 바로 가기 생성
+## 작업 10: 레이크하우스 바로 가기 생성
 
 1. **왼쪽 탐색기** 창에서 **테이블** 옆의 **줄임표**를 선택합니다.
 
@@ -487,21 +486,21 @@ Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 �
 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는
 유용한 리소스로 연결되는 링크가 있습니다.
 
-![](../media/Lab-04/image42.png)
+![](../media/Lab-01/image26.png)
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가
 자료입니다.
 
 - [Microsoft Fabric GA 발표](https://aka.ms/Fabric-Hero-Blog-Ignite23)
-  전문을 블로그 포스트로 읽기
+  전문을 블로그 포스트로 읽기.
 
 - [가이드 투어](https://aka.ms/Fabric-GuidedTour)로 Fabric 탐색
 
-- [Microsoft Fabric 무료 평가판](https://aka.ms/try-fabric) 신청
+- [Microsoft Fabric 무료 평가판](https://aka.ms/Fabric-GuidedTour) 신청
 
 - [Microsoft Fabric 웹사이트](https://aka.ms/microsoft-fabric) 방문
 
-- [Fabric 학습 모듈](https://aka.ms/learn-fabric)을 탐색해서 새로운 기술
+- [Fabric 학습 모듈을](https://aka.ms/learn-fabric) 탐색해서 새로운 기술
   익히기
 
 - [Fabric 기술 문서](https://aka.ms/fabric-docs) 검토
@@ -510,28 +509,29 @@ Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 �
   읽기
 
 - [Fabric 커뮤니티](https://aka.ms/fabric-community)에 가입하여 질문을
-  게시하고 피드백을 공유하며 다른 사람들로부터 배우기
+  게시하고 피드백을 공유하며 다른 사람들로
+  부터 배우기
 
-더 많은 심층 Fabric 환경 발표 블로그 포스트 읽기:
+다음에서 더 심층적인 Fabric 경험 발표 블로그를 읽어보세요.
 
 - [Fabric 블로그의 Data Factory
-  환경](https://aka.ms/Fabric-Data-Factory-Blog) 
+  환경](https://aka.ms/Fabric-Data-Factory-Blog)
 
 - [Fabric 블로그의 Synapse Data Engineering
-  환경](https://aka.ms/Fabric-DE-Blog) 
+  환경](https://aka.ms/Fabric-DE-Blog)
 
 - [Fabric 블로그의 Synapse Data Science
-  환경](https://aka.ms/Fabric-DS-Blog) 
+  환경](https://aka.ms/Fabric-DS-Blog)
 
 - [Fabric 블로그의 Synapse Data Warehousing
-  환경](https://aka.ms/Fabric-DW-Blog) 
+  환경](https://aka.ms/Fabric-DW-Blog)
 
 - [Fabric 블로그의 Synapse Real-Time Analytics
   환경](https://aka.ms/Fabric-RTA-Blog)
 
 - [Power BI 발표 블로그](https://aka.ms/Fabric-PBI-Blog)
 
-- [Fabric 블로그의 Data Activator 환경](https://aka.ms/Fabric-DA-Blog) 
+- [Fabric 블로그의 Data Activator 환경](https://aka.ms/Fabric-DA-Blog)
 
 - [Fabric 블로그의 관리 및
   거버넌스](https://aka.ms/Fabric-Admin-Gov-Blog)
@@ -541,48 +541,47 @@ Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 �
 - [Dataverse 및 Microsoft Fabric 통합
   블로그](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. All rights reserved.
->
-> 이 데모/랩을 사용하면 다음 조건에 동의하게 됩니다.
->
-> 이 데모/랩에 설명된 기술/기능은 학습 환경을 제공하고 사용자 의견을
-> 얻기 위해 Microsoft Corporation에서 제공합니다. 데모/랩을 통해서만
-> 이러한 기술적 특성과 기능을 평가하고 사용자 의견을 Microsoft에 제시할
-> 수 있습니다. 다른 용도로는 사용할 수 없습니다. 이 데모/랩 또는 그
-> 일부에 대해 수정, 복사, 배포, 전송, 표시, 수행, 재현, 게시, 라이선스
-> 허여, 파생 작업 생성, 양도 또는 판매할 수 없습니다.
->
-> 추가 복제 또는 재배포를 위한 다른 서버 또는 위치에 대한 데모/랩(또는
-> 그 일부)의 복사 또는 재현은 명시적으로 금지됩니다.
->
-> 이 데모/랩은 위에서 명시한 목적을 위해 복잡한 설정 또는 설치가 없는
-> 시뮬레이션된 환경에서 잠재적인 새로운 기능과 개념을 포함하여 특정
-> 소프트웨어 기술/제품의 특성 및 기능을 제공합니다. 이 데모/랩에서
-> 서술된 기술/개념은 전체 기능을 나타내지 않을 수 있으며, 최종 버전이
-> 작동하지 않을 수도 있습니다. 또한 해당 기능 또는 개념의 최종 버전을
-> 릴리스하지 않을 수도 있습니다. 또한 실제 환경에서 이러한 특성과 기능을
-> 사용한 경험이 다를 수도 있습니다.
->
-> **피드백.** 이 데모/랩에서 서술된 기술적 특성, 기능 및/또는 개념에
-> 대한 사용자 의견을 Microsoft에 제시하면 Microsoft는 이 사용자 의견을
-> 어떤 방식과 목적으로든 무료로 사용, 공유 및 상용화할 수 있습니다. 또한
-> 제품, 기술 및 서비스에서 사용자 의견이 포함된 Microsoft 소프트웨어
-> 또는 서비스의 특정 부분을 사용하거나 인터페이스하는 데 필요한 모든
-> 특허권을 제3자에게 무료로 제공합니다. Microsoft에서 사용자 의견을
-> 포함하기 때문에 Microsoft에서 해당 소프트웨어 또는 설명서의 사용을
-> 인가해야 하는 라이선스에 종속된 사용자 의견은 제공할 수 없습니다.
-> 이러한 권리는 본 계약에 의거하여 유효합니다.
->
-> Microsoft Corporation은 이에 따라 명시적, 묵시적 또는 법적 특정
-> 목적에의 적합성, 권리 및 비침해 여부에 관계없이 모든 보증과 조건을
-> 포함하여 데모/랩과 관련된 모든 보증 및 조건을 부인합니다. Microsoft는
-> 어떤 목적으로든 결과의 정확성, 데모/랩의 사용으로 파생된 출력 또는
-> 데모/랩에 포함된 정보의 적합성과 관련하여 어떠한 보증이나 진술도 하지
-> 않습니다.
->
-> **고지 사항**
->
-> 이 데모/랩에는 Microsoft Power BI의 새로운 기능 및 향상된 기능 중
-> 일부만 포함되어 있습니다. 일부 기능은 제품의 향후 릴리스에서 변경될 수
-> 있습니다. 이 데모/랩에서는 새로운 기능 모두가 아닌 일부에 대해
-> 학습하게 됩니다.
+© 2025 Microsoft Corporation. All rights reserved.
+
+이 데모/랩을 사용하면 다음 조건에 동의하게 됩니다.
+
+이 데모/랩에 설명된 기술/기능은 학습 환경을 제공하고 사용자 의견을 얻기
+위해 Microsoft Corporation에서 제공합니다. 데모/랩을 통해서만 이러한
+기술적 특성과 기능을 평가하고 사용자 의견을 Microsoft에 제시할 수
+있습니다. 다른 용도로는 사용할 수 없습니다. 이 데모/랩 또는 그 일부에
+대해 수정, 복사, 배포, 전송, 표시, 수행, 재현, 게시, 라이선스 허여, 파생
+작업 생성, 양도 또는 판매할 수 없습니다.
+
+추가 복제 또는 재배포를 위한 다른 서버 또는 위치에 대한 데모/랩(또는 그
+일부)의 복사 또는 재현은 명시적으로 금지됩니다.
+
+이 데모/랩은 위에서 명시한 목적을 위해 복잡한 설정 또는 설치가 없는
+시뮬레이션된 환경에서 잠재적인 새로운 기능과 개념을 포함하여 특정
+소프트웨어 기술/제품의 특성 및 기능을 제공합니다. 이 데모/랩에서 서술된
+기술/개념은 전체 기능을 나타내지 않을 수 있으며, 최종 버전이 작동하지
+않을 수도 있습니다. 또한 해당 기능 또는 개념의 최종 버전을 릴리스하지
+않을 수도 있습니다. 또한 실제 환경에서 이러한 특성과 기능을 사용한
+경험이 다를 수도 있습니다.
+
+**피드백**. 이 데모/랩에서 서술된 기술적 특성, 기능 및/또는 개념에 대한
+사용자 의견을 Microsoft에 제시하면 Microsoft는 이 사용자 의견을 어떤
+방식과 목적으로든 무료로 사용, 공유 및 상용화할 수 있습니다. 또한 제품,
+기술 및 서비스에서 사용자 의견이 포함된 Microsoft 소프트웨어 또는
+서비스의 특정 부분을 사용하거나 인터페이스하는 데 필요한 모든 특허권을
+제3자에게 무료로 제공합니다. Microsoft에서 사용자 의견을 포함하기 때문에
+Microsoft에서 해당 소프트웨어 또는 설명서의 사용을 인가해야 하는
+라이선스에 종속된 사용자 의견은 제공할 수 없습니다. 이러한 권리는 본
+계약에 의거하여 유효합니다.
+
+Microsoft Corporation은 이에 따라 명시적, 묵시적 또는 법적 특정 목적에의
+적합성, 권리 및 비침해 여부에 관계없이 모든 보증과 조건을 포함하여
+데모/랩과 관련된 모든 보증 및 조건을 부인합니다. Microsoft는 어떤
+목적으로든 결과의 정확성, 데모/랩의 사용으로 파생된 출력 또는 데모/랩에
+포함된 정보의 적합성과 관련하여 어떠한 보증이나 진술도 하지 않습니다.
+
+**고지 사항**
+
+이 데모/랩에는 Microsoft Power BI의 새로운 기능 및 향상된 기능 중 일부만
+포함되어 있습니다. 일부 기능은 제품의 향후 릴리스에서 변경될 수
+있습니다. 이 데모/랩에서는 새로운 기능 모두가 아닌 일부에 대해 학습하게
+됩니다.

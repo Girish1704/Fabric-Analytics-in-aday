@@ -1,4 +1,5 @@
 # Microsoft Fabric Fabric Analyst in a Day -랩 1
+
 ![](../media/Lab-01/main1.png)
 
 # 목차
@@ -83,7 +84,7 @@ Microsoft Fabric에 대해 들어봤기 때문에 그것이 문제를 해결할 
 Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보고 변환과
 모델을 이해해 보겠습니다.
 
-### 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
+## 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
 
 1. 랩 환경에서 바탕 화면의 **Reports** 폴더에 있는 **FAIAD.pbix**를
     엽니다. 파일이 Power BI Desktop에 열립니다.
@@ -96,20 +97,20 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     - 이메일/사용자 이름:<inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/Lab-01/image5.png)
+      ![](../media/Lab-01/image5.png)
 
 3. Microsoft Azure 로그인 탭에 로그인 화면이 표시되면 다음
     이메일/사용자 이름을 입력한 후 다음을 클릭합니다.
 
     - 이메일/사용자 이름:<inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/Lab-01/image6.png)
+      ![](../media/Lab-01/image6.png)
 
 4. 이제 다음 **임시 액세스 패스**를 입력하고 **로그인**을 클릭합니다.
 
     - 임시 액세스 패스:<inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/Lab-01/image7.png)
+      ![](../media/Lab-01/image7.png)
 
 5. **모든 앱에 로그인 상태 유지** 대화 상자가 열립니다. **확인**을
     선택합니다.
@@ -121,7 +122,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     이제 Power BI Desktop이 열립니다.
 
-### 작업 2: Power BI Desktop 보고서 분석
+## 작업 2: Power BI Desktop 보고서 분석
 
 아래 보고서는 Fabrikam의 매출을 분석합니다. KPI는 페이지 왼쪽 상단에
 나열됩니다. 나머지 시각적 개체는 지역, 제품 그룹, 재판매사별 시간 경과에
@@ -199,7 +200,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     e. Reseller별 Customer 정보가 있습니다. Customer가 Reseller에
     연결됩니다.
 
-### 작업 3: Power Query 검토
+## 작업 3: Power Query 검토
 
 1. Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서
     **홈 -> 데이터 변환**을 선택합니다.
@@ -260,7 +261,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     - **SAS 토큰:** <inject key="Sas token"></inject>
 
-    ![](../media/Lab-01/image21.png)
+      ![](../media/Lab-01/image21.png)
 
 11. **ADLSData** 폴더에는 Geo, Product, Reseller, Date 등 다양한
     차원(dimension)이 있습니다. Sales 팩트도 있습니다.
@@ -290,8 +291,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     - **Snowflake 암호:** <inject key="SnowFlake Username" enableCopy="false" />
 
-
-        >*참고: 위 자격 증명으로 Snowflake에 연결하는 데 문제가 발생할 경우,
+    >*참고: 위 자격 증명으로 Snowflake에 연결하는 데 문제가 발생할 경우,
         아래에 제공된 백업 자격 증명을 사용합니다.*
 
     - **Snowflake 사용자 이름:** SNOWFLAKE_BACKUP
@@ -319,8 +319,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     - **암호:** <inject key="AzureAdUserPassword"></inject>
 
-
-    ![](../media/Lab-01/image24.png)
+      ![](../media/Lab-01/image24.png)
 
 17. **SharepointData** 폴더에는 People 차원이 있습니다.
 
@@ -390,7 +389,7 @@ Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 �
 - [Dataverse 및 Microsoft Fabric 통합
   블로그](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. All rights reserved.
+© 2025 Microsoft Corporation. All rights reserved.
 
 이 데모/랩을 사용하면 다음 조건에 동의하게 됩니다.
 
