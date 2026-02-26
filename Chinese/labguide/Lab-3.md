@@ -65,7 +65,7 @@ ADLS Gen2 的快捷方式
 快捷方式用于创建指向目标位置的链接。快捷方式提供对数据的访问权限，而无需将数据实际移动到湖屋中。这就像在 Windows 桌面中创建快捷方式一样。
 
 
-1.  在屏幕顶部，选择 **lh_FAIAD** 选项卡以导航到湖屋。
+1. 在屏幕顶部，选择 **lh_FAIAD** 选项卡以导航到湖屋。
 
     <!-- -->
 
@@ -74,32 +74,32 @@ ADLS Gen2 的快捷方式
     <!-- -->
 
 
-2.  在**资源管理器**面板中，选择表旁边的**省略号**。
+2. 在**资源管理器**面板中，选择表旁边的**省略号**。
 
 
-3.  选择**新建快捷方式。**
+3. 选择**新建快捷方式。**
 
     ![](../media/Lab-3/image6.png)
 
 
-4.  **新建快捷方式**对话框随即打开。在**外部源**下，选择 **Azure Data Lake Storage Gen2**。
+4. **新建快捷方式**对话框随即打开。在**外部源**下，选择 **Azure Data Lake Storage Gen2**。
 
     ![](../media/Lab-3/image7.png)
 
 
-5.  选择**新建连接 (1)。**
+5. 选择**新建连接 (1)。**
 
 
-6.  针对 **URL** 属性输入以下链接：https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2)：**
+6. 针对 **URL** 属性输入以下链接：https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2)：**
 
 
-7.  单击“连接”部分下的**创建新连接** (3)
+7. 单击“连接”部分下的**创建新连接** (3)
 
 
-8.  从“身份验证种类”下拉列表中选择**共享访问签名(SAS) (4)**。
+8. 从“身份验证种类”下拉列表中选择**共享访问签名(SAS) (4)**。
 
 
-9.  复制 SAS 令牌并将其粘贴到 SAS 令牌 (5) 字段中。
+9. 复制 SAS 令牌并将其粘贴到 SAS 令牌 (5) 字段中。
 
     - **SAS 令牌：**
 
@@ -115,31 +115,31 @@ ADLS Gen2 的快捷方式
 12. **选择**以下目录 **(2)**，然后单击**下一步 (3)**：
 
 
-1.  Application.Cities
+1. Application.Cities
 
 
-2.  Application.Countries
+2. Application.Countries
 
 
-3.  Application.StateProvinces
+3. Application.StateProvinces
 
 
-4.  DateDim
+4. DateDim
 
 
-5.  Sales.BuyingGroups
+5. Sales.BuyingGroups
 
 
-6.  Sales.Customers
+6. Sales.Customers
 
 
-7.  Sales.InvoiceLines
+7. Sales.InvoiceLines
 
 
-8.  Sales.Invoices
+8. Sales.Invoices
 
 
-9.  Warehouse.StockGroups
+9. Warehouse.StockGroups
 
 
 10. Warehouse.StockItemStockGroups
@@ -152,7 +152,7 @@ ADLS Gen2 的快捷方式
     ![](../media/Lab-3/image9.png)
 
 
-13. 系统会将您导航到下一个对话框，我们可以在其中编辑名称。针对 **Application.Cities**，\
+13. 系统会将您导航到下一个对话框，我们可以在其中编辑名称。针对 **Application.Cities**，
     在“操作”下选择**编辑图标 (1)**。
 
 
@@ -167,31 +167,31 @@ ADLS Gen2 的快捷方式
 16. 同样，按如下所示重命名快捷方式名称：
 
 
-1.  将 Application.Countries 重命名为 **Countries**
+1. 将 Application.Countries 重命名为 **Countries**
 
 
-2.  将 Application.StateProvinces 重命名为 **States**
+2. 将 Application.StateProvinces 重命名为 **States**
 
 
-3.  将 DateDim 重命名为 **Date**
+3. 将 DateDim 重命名为 **Date**
 
 
-4.  将 Sales.BuyingGroups 重命名为 **BuyingGroups**
+4. 将 Sales.BuyingGroups 重命名为 **BuyingGroups**
 
 
-5.  将 Sales.Customers 重命名为 **Customers**
+5. 将 Sales.Customers 重命名为 **Customers**
 
 
-6.  将 Sales.InvoiceLines 重命名为 **InvoiceLineItems**
+6. 将 Sales.InvoiceLines 重命名为 **InvoiceLineItems**
 
 
-7.  将 Sales.Invoices 重命名为 **Invoices**
+7. 将 Sales.Invoices 重命名为 **Invoices**
 
 
-8.  将 Warehouse.StockGroups 重命名为 **ProductGroups**
+8. 将 Warehouse.StockGroups 重命名为 **ProductGroups**
 
 
-9.  将 Warehouse.StockItemStockGroups 重命名为 **ProductItemGroup**
+9. 将 Warehouse.StockItemStockGroups 重命名为 **ProductItemGroup**
 
 
 10. 将 Warehouse.StockItems 重命名为 **ProductItem**
@@ -215,7 +215,7 @@ ADLS Gen2 的快捷方式
 ### 任务 2：使用视觉对象查询创建 Geo 视图
 
 
-1.  我们可以使用 SQL 终结点访问湖屋。这提供查询数据和创建视图的功能。在屏幕的**右上角**，选择**Lakehouse (1) -\> SQL 分析终结点 (2)**。
+1. 我们可以使用 SQL 终结点访问湖屋。这提供查询数据和创建视图的功能。在屏幕的**右上角**，选择**Lakehouse (1) -> SQL 分析终结点 (2)**。
 
     ![](../media/Lab-3/image13.png)
 
@@ -224,40 +224,40 @@ ADLS Gen2 的快捷方式
     我们将首先创建 Geo 视图。我们需要合并 Cities、States 和 Countries 表的数据来创建 Geo 视图。
 
 
-2.  从顶部菜单中，单击**新建 SQL 查询 (1)** 旁边的下拉列表，然后选择**新建视觉对象查询 (2)**。
+2. 从顶部菜单中，单击**新建 SQL 查询 (1)** 旁边的下拉列表，然后选择**新建视觉对象查询 (2)**。
 
     ![](../media/Lab-3/image14.png)
 
 
-3.  若要生成查询，我们需要将表添加到“视觉对象查询”面板。单击 **Cities (1)** 表旁边的省略号，然后选择**插入画布 (2)**。
+3. 若要生成查询，我们需要将表添加到“视觉对象查询”面板。单击 **Cities (1)** 表旁边的省略号，然后选择**插入画布 (2)**。
 
     ![](../media/Lab-3/image15.png)
 
 
-4.  针对 **States** 和 **Countries** 表重复相同步骤。
+4. 针对 **States** 和 **Countries** 表重复相同步骤。
 
     接下来，我们需要合并这些查询。视觉对象查询编辑器附带使用 Power Query 编辑器的选项。让我们来使用此选项，由于 Power BI，我们对此很熟悉。
 
 
-5.  从视觉对象查询编辑器的菜单中，选择**在弹出窗口中打开**图标（位于右侧）。系统会将您导航到 Power Query 编辑器。
+5. 从视觉对象查询编辑器的菜单中，选择**在弹出窗口中打开**图标（位于右侧）。系统会将您导航到 Power Query 编辑器。
 
     ***注意：**如果没有立即看到此图标，您可能需要向右滚动或重新打开视觉对象查询选项卡*
 
     ![](../media/Lab-3/image16.png)
 
 
-6.  选择 **Cities (1)** 查询后，从 Power Query 编辑器功能区中，选择**主页 (2) -\> 合并 (3) -\> 合并查询下拉列表 (4) -\> 将查询合并为新查询 (5)**。“合并查询”对话框随即打开。
+6. 选择 **Cities (1)** 查询后，从 Power Query 编辑器功能区中，选择**主页 (2) -> 合并 (3) -> 合并查询下拉列表 (4) -> 将查询合并为新查询 (5)**。“合并查询”对话框随即打开。
 
     ![](../media/Lab-3/image17.png)
 
 
-7.  在**用于合并的左表**中，选择 **Cities**。
+7. 在**用于合并的左表**中，选择 **Cities**。
 
 
-8.  在**用于合并的右表**中，选择 **States**。
+8. 在**用于合并的右表**中，选择 **States**。
 
 
-9.  从两个表中选择 **StateProvinceID** 列。我们将使用此列进行联接。
+9. 从两个表中选择 **StateProvinceID** 列。我们将使用此列进行联接。
 
 
 10. 选择**内部**作为**联接种类**。
@@ -276,16 +276,16 @@ ADLS Gen2 的快捷方式
 13. 面板随即打开。确保仅选择以下列：
 
 
-1.  StateProvinceCode
+1. StateProvinceCode
 
 
-2.  StateProvinceName
+2. StateProvinceName
 
 
-3.  CountryID
+3. CountryID
 
 
-4.  SalesTerritory
+4. SalesTerritory
 
 
 14. 选择**确定**。
@@ -295,7 +295,7 @@ ADLS Gen2 的快捷方式
     现在，我们需要合并 Countries 查询。
 
 
-15. 选择合并 **(1)** 查询后，选择**主页 (2) -\> 组合 (3) -\> 合并查询下拉列表 (4)** -\> 合**并查询 (5)**。
+15. 选择合并 **(1)** 查询后，选择**主页 (2) -> 组合 (3) -> 合并查询下拉列表 (4)** -> 合**并查询 (5)**。
 
     ![](../media/Lab-3/image20.png)
 
@@ -322,28 +322,28 @@ ADLS Gen2 的快捷方式
 21. 面板随即打开。确保仅选择以下列：
 
 
-1.  CountryName
+1. CountryName
 
 
-2.  FormalName
+2. FormalName
 
 
-3.  IsoAlpha3Code
+3. IsoAlpha3Code
 
 
-4.  IsoNumericCode
+4. IsoNumericCode
 
 
-5.  CountryType
+5. CountryType
 
 
-6.  Continent
+6. Continent
 
 
-7.  Region
+7. Region
 
 
-8.  Subregion
+8. Subregion
 
 
 22. 选择**确定**。
@@ -355,7 +355,7 @@ ADLS Gen2 的快捷方式
     我们不需要 **Merge** 表中的所有列。确保仅选择所需的列。
 
 
-23. 选择**合并** (1) 查询后，从功能区中选择**主页 (2) -\> 选择列 (3) -\> 选择列 (4)**。
+23. 选择**合并** (1) 查询后，从功能区中选择**主页 (2) -> 选择列 (3) -> 选择列 (4)**。
 
     **注意：**如果“选择列”选项不可见，您可以在“管理列”下找到它。
 
@@ -365,22 +365,22 @@ ADLS Gen2 的快捷方式
 24. “选择列”对话框随即打开。**取消选中**以下列。
 
 
-1.  StateProvinceID
+1. StateProvinceID
 
 
-2.  Location
+2. Location
 
 
-3.  LastEditedBy
+3. LastEditedBy
 
 
-4.  ValidFrom
+4. ValidFrom
 
 
-5.  ValidTo
+5. ValidTo
 
 
-6.  CountryID
+6. CountryID
 
 
 25. 选择**确定**。
@@ -434,39 +434,39 @@ ADLS Gen2 的快捷方式
 让我们创建 Reseller 视图，该视图可通过合并“Customers”表与“BuyingGroups”表来创建。这次我们将使用视觉对象查询创建视图，而不打开 Power Query 选项。
 
 
-1.  从顶部菜单中，单击**新建 SQL 查询 (1)** 旁边的下拉列表，然后选择**新建视觉对象查询 (2)**。
+1. 从顶部菜单中，单击**新建 SQL 查询 (1)** 旁边的下拉列表，然后选择**新建视觉对象查询 (2)**。
 
 
-2.  若要生成查询，我们需要将表添加到“视觉对象查询”面板。单击 **BuyingGroups (1)** 表旁边的省略号，然后选择**插入画布 (2)**。
+2. 若要生成查询，我们需要将表添加到“视觉对象查询”面板。单击 **BuyingGroups (1)** 表旁边的省略号，然后选择**插入画布 (2)**。
 
     ![](../media/Lab-3/image29.png)
 
 
-3.  针对 **Customers** 表重复相同步骤。
+3. 针对 **Customers** 表重复相同步骤。
 
 
-4.  选择 **Customers** 查询。选择后，Customers 将在“表”后面有一个 **+** 号（这指示我们要在“表”后面添加一个步骤。如果您在“Table”后没有看到 **+** 符号，则可能选择了其他步骤。选择“Table”即可开始）。
+4. 选择 **Customers** 查询。选择后，Customers 将在“表”后面有一个 **+** 号（这指示我们要在“表”后面添加一个步骤。如果您在“Table”后没有看到 **+** 符号，则可能选择了其他步骤。选择“Table”即可开始）。
 
     <!-- -->
 
 
-5.  从“视觉对象查询”菜单中，选择**组合 -\> 合并查询**。
+5. 从“视觉对象查询”菜单中，选择**组合 -> 合并查询**。
 
     ![](../media/Lab-3/image30.png)
 
     “合并”对话框随即打开，其中已选择“Customers”作为顶部表。
 
 
-6.  在**用于合并的右表**中，选择 **BuyingGroups**。
+6. 在**用于合并的右表**中，选择 **BuyingGroups**。
 
 
-7.  从两个表中选择 **BuyingGroupID** 列。我们将使用此列进行联接。
+7. 从两个表中选择 **BuyingGroupID** 列。我们将使用此列进行联接。
 
 
-8.  选择**内部**作为**联接种类**。
+8. 选择**内部**作为**联接种类**。
 
 
-9.  选择**确定**。
+9. 选择**确定**。
 
     ![](../media/Lab-3/image31.png)
 
@@ -484,7 +484,7 @@ ADLS Gen2 的快捷方式
     我们不需要 Customer 表中的所有列。让我们仅选择所需列。
 
 
-13. 从“视觉对象查询”菜单中，选择**管理列 -\> 选择列**。
+13. 从“视觉对象查询”菜单中，选择**管理列 -> 选择列**。
 
     ![](../media/Lab-3/image33.png)
 
@@ -492,31 +492,31 @@ ADLS Gen2 的快捷方式
 14. “选择列”对话框随即打开。**选择**以下列。
 
 
-1.  ResellerID
+1. ResellerID
 
 
-2.  ResellerName
+2. ResellerName
 
 
-3.  PostalCityID
+3. PostalCityID
 
 
-4.  PhoneNumber
+4. PhoneNumber
 
 
-5.  FaxNumber
+5. FaxNumber
 
 
-6.  WebsiteURL
+6. WebsiteURL
 
 
-7.  DeliveryAddressLine1
+7. DeliveryAddressLine1
 
 
-8.  DeliveryAddressLine2
+8. DeliveryAddressLine2
 
 
-9.  DeliveryPostalCode
+9. DeliveryPostalCode
 
 
 10. PostalAddressLine1
@@ -582,37 +582,37 @@ ADLS Gen2 的快捷方式
 让我们创建 Sales 视图，该视图可通过合并“InvoiceLineItems”和“Invoices”表与“Reseller”视图来创建。我们在 Power BI Desktop 中有此查询。我们将从“高级编辑器”复制代码。但在复制代码之前，我们需要使用视觉对象查询创建一个合并表，因为无法在视觉对象查询中创建空白查询。让我们试一下此方法。
 
 
-1.  从顶部菜单中，单击**新建 SQL 查询**旁边的下拉列表，然后选择**新建视觉对象查询**。
+1. 从顶部菜单中，单击**新建 SQL 查询**旁边的下拉列表，然后选择**新建视觉对象查询**。
 
     ![](../media/Lab-3/image40.png)
 
 
-2.  从**资源管理器 -\> 表**部分中，我们需要将表添加到“视觉对象查询”面板。单击 **InvoiceLineItems** 表旁边的省略号，然后选择**插入画布**。
+2. 从**资源管理器 -> 表**部分中，我们需要将表添加到“视觉对象查询”面板。单击 **InvoiceLineItems** 表旁边的省略号，然后选择**插入画布**。
 
 
-3.  针对 **Invoices** 表重复相同步骤。
+3. 针对 **Invoices** 表重复相同步骤。
 
 
-4.  从**资源管理器 -\> 视图**部分中，我们需要将表添加到“视觉对象查询”面板。单击 **Reseller** 表旁边的省略号，然后选择**插入画布**。
+4. 从**资源管理器 -> 视图**部分中，我们需要将表添加到“视觉对象查询”面板。单击 **Reseller** 表旁边的省略号，然后选择**插入画布**。
 
 
-5.  从视觉对象查询编辑器中，选择**在弹出窗口中打开**以打开 Power Query 编辑器。
+5. 从视觉对象查询编辑器中，选择**在弹出窗口中打开**以打开 Power Query 编辑器。
 
     ![](../media/Lab-3/image41.png)
 
 
-6.  选择 **InvoiceLineItems** 查询后，从功能区中选择**主页 (2) -\> 合并 (3) -\> 合并查询下拉列表 (4) -\> 将查询合并为新查询 (5)。**“合并查询”对话框随即打开。
+6. 选择 **InvoiceLineItems** 查询后，从功能区中选择**主页 (2) -> 合并 (3) -> 合并查询下拉列表 (4) -> 将查询合并为新查询 (5)。**“合并查询”对话框随即打开。
 
     ![](../media/Lab-3/image42.png)
 
 
-7.  在**用于合并的左表**中，选择 **InvoiceLineItems**。
+7. 在**用于合并的左表**中，选择 **InvoiceLineItems**。
 
 
-8.  在**用于合并的右表**中，选择 **Invoices**。
+8. 在**用于合并的右表**中，选择 **Invoices**。
 
 
-9.  从两个表中选择 **InvoiceID** 列。我们将使用此列进行联接。
+9. 从两个表中选择 **InvoiceID** 列。我们将使用此列进行联接。
 
 
 10. 选择**内部**作为**联接种类**。
@@ -628,7 +628,7 @@ ADLS Gen2 的快捷方式
 12. 如果您尚未打开 **FAIAD.pbix**，请打开它。它位于您的实验室环境的桌面的 **Reports** 文件夹中。
 
 
-13. 从功能区中选择**主页 -\> 转换数据**。Power Query 窗口随即打开。您在之前的实验室中注意到，左侧面板中的查询是按数据源组织的。
+13. 从功能区中选择**主页 -> 转换数据**。Power Query 窗口随即打开。您在之前的实验室中注意到，左侧面板中的查询是按数据源组织的。
 
     ![](../media/Lab-3/image44.png)
 
@@ -636,11 +636,11 @@ ADLS Gen2 的快捷方式
 14. 从左侧**查询**面板的 **ADLSData** **(1)** 文件夹下，选择 **Sales (2)** 查询**。**
 
 
-15. 从功能区中选择**主页 -\> 高级编辑器 (3)**。“高级编辑器”对话框随即打开。
+15. 从功能区中选择**主页 -> 高级编辑器 (3)**。“高级编辑器”对话框随即打开。
 
     ![](../media/Lab-3/image45.png)
 
-    **注意：**如果找不到高级编辑器，可以在**主页 -\> 查询 -\> 高级编辑器**下访问它。
+    **注意：**如果找不到高级编辑器，可以在**主页 -> 查询 -> 高级编辑器**下访问它。
 
 
 16. **选择行 3 中的代码**  一直到最后一行代码。
@@ -660,7 +660,7 @@ ADLS Gen2 的快捷方式
 20. 确保您已选择 **合并** 查询。
 
 
-21. 从功能区中选择**主页 -\> 高级编辑器**。“高级编辑器”对话框随即打开。
+21. 从功能区中选择**主页 -> 高级编辑器**。“高级编辑器”对话框随即打开。
 
     ![](../media/Lab-3/image47.png)
 
@@ -693,23 +693,23 @@ ADLS Gen2 的快捷方式
 
     Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
 
-    \#"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
 
-    \#"Removed Other Columns" = Table.SelectColumns,
+    #"Removed Other Columns" = Table.SelectColumns,
 
-    \#"Renamed Columns" = Table.RenameColumns,
+    #"Renamed Columns" = Table.RenameColumns,
 
-    \#"Merged Queries" = Table.NestedJoin,
+    #"Merged Queries" = Table.NestedJoin,
 
-    \#"Added Custom" = Table.AddColumn,
+    #"Added Custom" = Table.AddColumn,
 
-    \#"Changed Type" = Table.TransformColumnTypes,
+    #"Changed Type" = Table.TransformColumnTypes,
 
-    \#"Removed Columns" = Table.RemoveColumns
+    #"Removed Columns" = Table.RemoveColumns
 
     in
 
-    \#"Removed Columns"
+    #"Removed Columns"
 
 
 27. 系统会将您导航回 Power Query 编辑器。在左侧的“查询”面板中，双击 **Merge** 查询以对其重命名。
@@ -726,7 +726,7 @@ ADLS Gen2 的快捷方式
 30. 选择**保存**以保存并关闭 Power Query 对话框。系统会将您导航到视觉对象查询编辑器。
 
 
-31. 从“视觉对象查询”菜单中，选择**另存为视图**。“另存为视图”对话框随即打开。请注意，\
+31. 从“视觉对象查询”菜单中，选择**另存为视图**。“另存为视图”对话框随即打开。请注意，
     SQL 查询可用。您可以通过选择它来进行查看。
 
 
@@ -749,39 +749,39 @@ ADLS Gen2 的快捷方式
 让我们创建 Product 视图，该视图可通过合并 **ProductItem**、**ProductItemGroup** 和 **ProductGroups** 表来创建。若要继续，我们需要将代码复制到“高级编辑器”中。
 
 
-1.  从顶部菜单中，单击**新建 SQL 查询 (1)** 旁边的下拉列表，然后选择**新建视觉对象查询 (2)**。
+1. 从顶部菜单中，单击**新建 SQL 查询 (1)** 旁边的下拉列表，然后选择**新建视觉对象查询 (2)**。
 
     ![](../media/Lab-3/image54.png)
 
 
-2.  从“资源管理器”部分中，我们需要将表添加到“视觉对象查询”面板。单击 **ProductItem (1)** 表旁边的省略号，然后选**插入画布 (2)**。
+2. 从“资源管理器”部分中，我们需要将表添加到“视觉对象查询”面板。单击 **ProductItem (1)** 表旁边的省略号，然后选**插入画布 (2)**。
 
     ![](../media/Lab-3/image55.png)
 
 
-3.  针对 **ProductItemGroup** 和 **ProductGroups** 表重复相同步骤。
+3. 针对 **ProductItemGroup** 和 **ProductGroups** 表重复相同步骤。
 
 
-4.  从视觉对象查询编辑器中，选择**在弹出窗口中打开**以打开 Power Query 编辑器。
+4. 从视觉对象查询编辑器中，选择**在弹出窗口中打开**以打开 Power Query 编辑器。
 
     ![](../media/Lab-3/image56.png)
 
 
-5.  选择 **ProductItem** 查询后 **(1)**，从功能区中，选择**主页 (2) -\> 组合 (3) -\> 合并查询下拉列表 (4) -\> 将查询合并为新查询 (5)。**“合并”对话框随即打开。
+5. 选择 **ProductItem** 查询后 **(1)**，从功能区中，选择**主页 (2) -> 组合 (3) -> 合并查询下拉列表 (4) -> 将查询合并为新查询 (5)。**“合并”对话框随即打开。
 
     ![](../media/Lab-3/image57.png)
 
 
-6.  在**用于合并的左表**中，选择 **ProductItem**。
+6. 在**用于合并的左表**中，选择 **ProductItem**。
 
 
-7.  在**用于合并的右表**中，选择 **ProductItemGroup**。
+7. 在**用于合并的右表**中，选择 **ProductItemGroup**。
 
 
-8.  从两个表中选择 **StockItemID** 列。我们将使用此列进行联接。
+8. 从两个表中选择 **StockItemID** 列。我们将使用此列进行联接。
 
 
-9.  选择**左外**作为**联接种类**。
+9. 选择**左外**作为**联接种类**。
 
 
 10. 选择**确定。**已创建新的“Merge”查询。
@@ -789,11 +789,11 @@ ADLS Gen2 的快捷方式
     ![](../media/Lab-3/image58.png)
 
 
-11. 选择 Merge 查询后，从功能区中，选择**主页 -\> 高级编辑器**。“高级编辑器”对话框随即打开。
+11. 选择 Merge 查询后，从功能区中，选择**主页 -> 高级编辑器**。“高级编辑器”对话框随即打开。
 
     ![](../media/Lab-3/image59.png)
 
-    **注意：**如果找不到高级编辑器，可以在**主页 -\> 查询 -\> 高级编辑器**下访问它。
+    **注意：**如果找不到高级编辑器，可以在**主页 -> 查询 -> 高级编辑器**下访问它。
 
 
 12. 在“高级编辑器”中**选择全部代码**，然后将其**删除**。
@@ -805,17 +805,17 @@ ADLS Gen2 的快捷方式
 
     Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
 
-    \#"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+    #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
 
-    \#"Merged queries" = Table.NestedJoin,
+    #"Merged queries" = Table.NestedJoin,
 
-    \#"Expanded ProductGroups" = Table.ExpandTableColumn,
+    #"Expanded ProductGroups" = Table.ExpandTableColumn,
 
-    \#"Choose columns" = Table.SelectColumns
+    #"Choose columns" = Table.SelectColumns
 
     in
 
-    \#"Choose columns"
+    #"Choose columns"
 
 
 14. 选择**确定**以关闭“高级编辑器”。系统会将您导航回 Power Query 编辑器。
@@ -854,7 +854,7 @@ ADLS Gen2 的快捷方式
 
     ![](../media/Lab-3/image63.png)
 
-    我们已转换来自 ADLS Gen2 数据源的数据。在本实验室中，我们了解了如何创建快捷方式，\ 并探索了使用视觉对象查询视图转换数据的各种选项。
+    我们已转换来自 ADLS Gen2 数据源的数据。在本实验室中，我们了解了如何创建快捷方式， 并探索了使用视觉对象查询视图转换数据的各种选项。
 
     在下一个实验室中，我们将了解如何使用数据流 Gen2 以及如何创建另一个湖屋的快捷方式。
 

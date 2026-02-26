@@ -41,7 +41,7 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 - **员工数据：** 来自 HR 系统；作为导出文件存储在 SharePoint 文件夹中。每天早上
   9 点更新。
 
-![](../media/Lab-1/image4.jpeg)
+  ![](../media/Lab-1/image4.jpeg)
 
 您正在 Power BI Premium 中生成一个语义模型，该模型从上述源系统中提取数据，以满足您的报告需求并为最终用户提供自助服务功能。您使用 Power Query 更新模型。
 
@@ -82,14 +82,14 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
     - 电子邮件/用户名：
 
-     ![](../media/Lab-1/image7.png)
+      ![](../media/Lab-1/image7.png)
 
 
 4. 现在，输入以下**临时登入密码**，然后单击**登录**。
 
     - 临时登入密码：
 
-    ![](../media/Lab-1/image8.png)
+      ![](../media/Lab-1/image8.png)
 
 
 5. **保持登录到您的所有应用**对话框随即打开。选择**确定**。
@@ -271,7 +271,7 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
     - **密码：** 在“环境”选项卡中找到：
 
-    ![](../media/Lab-1/image25.png)
+        ![](../media/Lab-1/image25.png)
 
 
 17. 请注意，**SharepointData** 文件夹具有 People 维度。
@@ -326,7 +326,7 @@ Fabric Analyst in a Day (FAIAD) 介绍了 Microsoft Fabric 中提供的一些主
 
 - [Dataverse 和 Microsoft Fabric 集成博客](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation。保留所有权利。
+© 2025 Microsoft Corporation。保留所有权利。
 
 使用此演示/实验即表示您已同意以下条款：
 
