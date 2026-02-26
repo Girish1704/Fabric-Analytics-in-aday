@@ -2,27 +2,27 @@
 
 # 目录
 
-简介
+- 简介
 
-湖屋 - 分析数据
+- 湖屋 - 分析数据
 
-任务 1：使用 SQL 查询数据
+    - 任务 1：使用 SQL 查询数据
 
-任务 2：可视化 T-SQL 结果
+    - 任务 2：可视化 T-SQL 结果
 
-湖屋 - 语义建模
+- 湖屋 - 语义建模
 
-任务 3：创建语义模型
+    - 任务 3：创建语义模型
 
-任务 4：创建关系
+    - 任务 4：创建关系
 
-任务 5：创建度量值
+    - 任务 5：创建度量值
 
-任务 6：可选部分 - 创建关系
+    - 任务 6：可选部分 - 创建关系
 
-任务 7：可选部分 - 创建度量值
+    - 任务 7：可选部分 - 创建度量值
 
-参考
+- 参考
 
 
 # **简介**
@@ -46,8 +46,7 @@
 2. 您可以选择**最小化任务流**以查看完整的项目列表。
 
 
-3. 您将看到与 lh_FAIAD 关联的三个元素 - 湖屋、语义模型和 SQL 终结点。我们在之前的实验室中探索了湖屋并使用 SQL 分析终结点创建了视觉对象查询。在左侧导航中选择
-    **FAIAD_<用户名>**，然后选择 **lh_FAIAD SQL 分析终结点**选项以继续探索此选项。     系统会将您导航回资源管理器的 SQL 视图。
+3. 您将看到与 lh_FAIAD 关联的三个元素 - 湖屋、语义模型和 SQL 终结点。我们在之前的实验室中探索了湖屋并使用 SQL 分析终结点创建了视觉对象查询。在左侧导航中选择 **FAIAD_<用户名>**，然后选择 **lh_FAIAD SQL 分析终结点**选项以继续探索此选项。系统会将您导航回资源管理器的 SQL 视图。
 
     ![](../media/Lab-6/image6.png)
 
@@ -65,16 +64,13 @@
 
 5. 将**以下 SQL 查询**粘贴到**查询窗口**中。此查询将返回“units by Supplier”名称。它将 Sales 表与 Product 和 Supplier 表联接起来以实现此目的。
 
-    SELECT su.SupplierName, SUM(Quantity) as Units
-
-    FROM dbo.Sales s
-
-    JOIN dbo.Product p on p.StockItemID = s.StockItemID
-
-    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
-
-    GROUP BY su.SupplierName
-
+   ```
+   SELECT su.SupplierName, SUM(Quantity) as Units
+   FROM dbo.Sales s
+   JOIN dbo.Product p on p.StockItemID = s.StockItemID
+   JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+   GROUP BY su.SupplierName
+   ```
 
 6. 在 SQL 编辑器菜单中单击**运行**以查看结果。
 
@@ -84,7 +80,7 @@
 
 8. **左侧资源管理器**面板上的**查询**部分下，请注意此查询保存在**我的查询**下，为 **SQL query 1**。这里提供一个选项用于重命名并保存该查询以供将来使用。还有一个选项用于使用 **Shared queries** 文件夹查看与您共享的查询。
 
-    **注意：**您在之前的实验室中创建的视觉对象查询也可在“My queries”文件夹下找到。
+    **注意：** 您在之前的实验室中创建的视觉对象查询也可在“My queries”文件夹下找到。
 
     ![](../media/Lab-6/image8.png)
 
@@ -153,31 +149,31 @@
 4. **选择**以下表/视图：
 
 
-1. **Customer**
+    1. **Customer**
 
 
-2. **Date**
+    2. **Date**
 
 
-3. **People**
+    3. **People**
 
 
-4. **PO**
+    4. **PO**
 
 
-5. **Supplier**
+    5. **Supplier**
 
 
-6. **Geo**
+    6. **Geo**
 
 
-7. **Product**
+    7. **Product**
 
 
-8. **Reseller**
+    8. **Reseller**
 
 
-9. **Sales**
+    9. **Sales**
 
 
 5. 选择**确认**。
@@ -186,7 +182,7 @@
 
     系统会将您导航到包含所选表的新语义模型。请注意，某些表（Geo、Reseller、Sales 和 Product）的右上角会显示警告标志。这是因为这些是视图。使用这些视图中的字段创建的任何视觉对象都将处于 Direct Query 模式，而不是 Direct Lake 模式。
 
-    **注意：**Direct Lake 模式比 Direct Query 模式更快。
+    **注意：** Direct Lake 模式比 Direct Query 模式更快。
 
 ## 任务 4：创建关系
 
@@ -258,9 +254,9 @@
 17. 同样，在 **Sales** 和 **Product** 表之间创建**多对一**关系。从 **Sales** 表中选择 **StockItemID**，
     从 **Product** 表中选择 **StockItemID**。
 
-    **注意：**我们的所有更新将自动保存。
+    **注意：** 我们的所有更新将自动保存。
 
-    **检查点：**您的模型应在 Sales 和 Reseller 表、Sales 和 Date 表以及 Sales 和 Product 表之间建立三种关系，如下面的屏幕截图所示：
+    **检查点：** 您的模型应在 Sales 和 Reseller 表、Sales 和 Date 表以及 Sales 和 Product 表之间建立三种关系，如下面的屏幕截图所示：
 
     ![](../media/Lab-6/image23.png)
 
@@ -356,7 +352,7 @@
 让我们来添加其余关系。
 
 
-1. 从菜单中，选择**“主页 -> 管理关系”**。
+1. 从菜单中，选择 **“主页 -> 管理关系”**。
 
 
 2. “管理关系”对话框随即打开。选择 **+ 新建关系**。
@@ -423,22 +419,17 @@
 
 20. 同样，在 Customer 和 Reseller 之间创建关系。选择 **+ 新建关系**。
 
-
 21. “新建关系”对话框随即打开。确保**从表**是 **Customer**，**列**是 **ResellerID**。
-
 
 22. 确保**到表**是 **Reseller**，**列**是 **ResellerID**。
 
-
 23. 确保**基数**是**多对一(*:1)**。
-
 
 24. 确保**交叉筛选器方向**是**单向**。
 
-
 25. 选择**保存**。
 
-    **检查点：**管理关系应类似于下面的屏幕截图。
+    **检查点：** 管理关系应类似于下面的屏幕截图。
 
     ![](../media/Lab-6/image32.png)
 
@@ -454,7 +445,7 @@
 
 29. 选择**关闭**以关闭“管理关系”对话框。我们已经创建了所有关系。
 
-    **检查点：**您的模型应类似于下面的屏幕截图。
+    **检查点：** 您的模型应类似于下面的屏幕截图。
 
     ![](../media/Lab-6/image33.png)
 
@@ -485,9 +476,7 @@
 
     ![](../media/Lab-6/image34.png)
 
-
 8. 按照相似的步骤添加以下度量值：
-
 
     1. 在 **Sales** 表中，**GM = SUM(‘Sales’[LineProfit])** 的格式已**设置**为**不带小数位数的货币**。
 

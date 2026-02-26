@@ -1,40 +1,24 @@
-# ![](../media/Lab-3/image4.png)
+
 
 # 目录
 
-简介
+- 简介
 
-ADLS Gen2 的快捷方式
+- ADLS Gen2 的快捷方式
 
-任务 1：创建快捷方式
+    - 任务 1：创建快捷方式
 
-使用视觉对象查询转换数据
+- 使用视觉对象查询转换数据
 
-任务 2：使用视觉对象查询创建 Geo 视图
+    - 任务 2：使用视觉对象查询创建 Geo 视图
 
-任务 3：使用视觉对象查询创建 Reseller 视图
+    - 任务 3：使用视觉对象查询创建 Reseller 视图
 
-任务 4：使用视觉对象查询创建 Sales 视图
+    - 任务 4：使用视觉对象查询创建 Sales 视图
 
-任务 5：使用视觉对象查询创建 Product 视图
+    - 任务 5：使用视觉对象查询创建 Product 视图
 
-参考
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
+- 参考
 
 # 简介
 
@@ -42,13 +26,13 @@ ADLS Gen2 的快捷方式
 
 可通过多种方法引入此数据。
 
-- **快捷方式：**这将创建指向数据的链接，我们可以使用视觉对象查询视图来转换它。我们将在本实验室中使用快捷方式。
+- **快捷方式：** 这将创建指向数据的链接，我们可以使用视觉对象查询视图来转换它。我们将在本实验室中使用快捷方式。
 
-- **笔记本：**这需要我们编写代码。这种方法适合开发人员。
+- **笔记本：** 这需要我们编写代码。这种方法适合开发人员。
 
-- **数据流 Gen2：**您可能熟悉 Power Query 或数据流 Gen1。数据流 Gen2 顾名思义是数据流的新版本。它提供 Power Query/数据流 Gen1 的所有功能，并添加了将数据转换和引入到多个数据源的功能。我们将在下面几个实验室中进行介绍。
+- **数据流 Gen2：** 您可能熟悉 Power Query 或数据流 Gen1。数据流 Gen2 顾名思义是数据流的新版本。它提供 Power Query/数据流 Gen1 的所有功能，并添加了将数据转换和引入到多个数据源的功能。我们将在下面几个实验室中进行介绍。
 
-- **管道：**这是一个编排工具。可以编排活动来提取、转换和引入数据。我们将使用管道执行数据流 Gen2 活动，该活动又将执行提取、转换和引入。
+- **管道：** 这是一个编排工具。可以编排活动来提取、转换和引入数据。我们将使用管道执行数据流 Gen2 活动，该活动又将执行提取、转换和引入。
 
 我们将首先创建一个快捷方式，以将数据从 ADLS Gen2 数据源引入到湖屋中。引入后，我们将使用视觉对象查询视图来转换它。
 
@@ -67,12 +51,7 @@ ADLS Gen2 的快捷方式
 
 1. 在屏幕顶部，选择 **lh_FAIAD** 选项卡以导航到湖屋。
 
-    <!-- -->
-
     1)  如果没有选项卡，您可以导航回工作区并从那里打开湖屋。
-
-    <!-- -->
-
 
 2. 在**资源管理器**面板中，选择表旁边的**省略号**。
 
@@ -90,7 +69,7 @@ ADLS Gen2 的快捷方式
 5. 选择**新建连接 (1)。**
 
 
-6. 针对 **URL** 属性输入以下链接：https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2)：**
+6. 针对 **URL** 属性输入以下链接：https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2)：** 
 
 
 7. 单击“连接”部分下的**创建新连接** (3)
@@ -101,7 +80,7 @@ ADLS Gen2 的快捷方式
 
 9. 复制 SAS 令牌并将其粘贴到 SAS 令牌 (5) 字段中。
 
-    - **SAS 令牌：**
+    - **SAS 令牌：** 
 
 
 10. 选择屏幕右下角的**下一步 (6)**。
@@ -114,46 +93,43 @@ ADLS Gen2 的快捷方式
 
 12. **选择**以下目录 **(2)**，然后单击**下一步 (3)**：
 
-
-1. Application.Cities
-
-
-2. Application.Countries
+    1. Application.Cities
 
 
-3. Application.StateProvinces
+    2. Application.Countries
 
 
-4. DateDim
+    3. Application.StateProvinces
 
 
-5. Sales.BuyingGroups
+    4. DateDim
 
 
-6. Sales.Customers
+    5. Sales.BuyingGroups
 
 
-7. Sales.InvoiceLines
+    6. Sales.Customers
 
 
-8. Sales.Invoices
+    7. Sales.InvoiceLines
 
 
-9. Warehouse.StockGroups
+    8. Sales.Invoices
 
 
-10. Warehouse.StockItemStockGroups
+    9. Warehouse.StockGroups
 
 
-11. Warehouse.StockItems
+    10. Warehouse.StockItemStockGroups
 
-    **注意：**Sales.Invoices_May 是唯一**未**选择的目录。
+
+    11. Warehouse.StockItems
+
+    **注意：** Sales.Invoices_May 是唯一**未**选择的目录。
 
     ![](../media/Lab-3/image9.png)
 
-
-13. 系统会将您导航到下一个对话框，我们可以在其中编辑名称。针对 **Application.Cities**，
-    在“操作”下选择**编辑图标 (1)**。
+13. 系统会将您导航到下一个对话框，我们可以在其中编辑名称。针对 **Application.Cities**， 在“操作”下选择**编辑图标 (1)**。
 
 
 14. 将 **Application.Cities 重命名为 Cities (2)**。
@@ -166,37 +142,27 @@ ADLS Gen2 的快捷方式
 
 16. 同样，按如下所示重命名快捷方式名称：
 
+    1. 将 Application.Countries 重命名为 **Countries**
 
-1. 将 Application.Countries 重命名为 **Countries**
+    2. 将 Application.StateProvinces 重命名为 **States**
 
+    3. 将 DateDim 重命名为 **Date**
 
-2. 将 Application.StateProvinces 重命名为 **States**
+    4. 将 Sales.BuyingGroups 重命名为 **BuyingGroups**
 
+    5. 将 Sales.Customers 重命名为 **Customers**
 
-3. 将 DateDim 重命名为 **Date**
+    6. 将 Sales.InvoiceLines 重命名为 **InvoiceLineItems**
 
+    7. 将 Sales.Invoices 重命名为 **Invoices**
 
-4. 将 Sales.BuyingGroups 重命名为 **BuyingGroups**
+    8. 将 Warehouse.StockGroups 重命名为 **ProductGroups**
 
+    9. 将 Warehouse.StockItemStockGroups 重命名为 **ProductItemGroup**
 
-5. 将 Sales.Customers 重命名为 **Customers**
+    10. 将 Warehouse.StockItems 重命名为 **ProductItem**
 
-
-6. 将 Sales.InvoiceLines 重命名为 **InvoiceLineItems**
-
-
-7. 将 Sales.Invoices 重命名为 **Invoices**
-
-
-8. 将 Warehouse.StockGroups 重命名为 **ProductGroups**
-
-
-9. 将 Warehouse.StockItemStockGroups 重命名为 **ProductItemGroup**
-
-
-10. 将 Warehouse.StockItems 重命名为 **ProductItem**
-
-    > **注意：**仔细检查名称。拼写错误将导致实验室期间出现错误。
+    > **注意：** 仔细检查名称。拼写错误将导致实验室期间出现错误。
 
 
 17. 选择**创建**以创建快捷方式。
@@ -241,7 +207,7 @@ ADLS Gen2 的快捷方式
 
 5. 从视觉对象查询编辑器的菜单中，选择**在弹出窗口中打开**图标（位于右侧）。系统会将您导航到 Power Query 编辑器。
 
-    ***注意：**如果没有立即看到此图标，您可能需要向右滚动或重新打开视觉对象查询选项卡*
+    ***注意：** 如果没有立即看到此图标，您可能需要向右滚动或重新打开视觉对象查询选项卡*
 
     ![](../media/Lab-3/image16.png)
 
@@ -275,18 +241,13 @@ ADLS Gen2 的快捷方式
 
 13. 面板随即打开。确保仅选择以下列：
 
+    1. StateProvinceCode
 
-1. StateProvinceCode
+    2. StateProvinceName
 
+    3. CountryID
 
-2. StateProvinceName
-
-
-3. CountryID
-
-
-4. SalesTerritory
-
+    4. SalesTerritory
 
 14. 选择**确定**。
 
@@ -322,33 +283,33 @@ ADLS Gen2 的快捷方式
 21. 面板随即打开。确保仅选择以下列：
 
 
-1. CountryName
+    1. CountryName
 
 
-2. FormalName
+    2. FormalName
 
 
-3. IsoAlpha3Code
+    3. IsoAlpha3Code
 
 
-4. IsoNumericCode
+    4. IsoNumericCode
 
 
-5. CountryType
+    5. CountryType
 
 
-6. Continent
+    6. Continent
 
 
-7. Region
+    7. Region
 
 
-8. Subregion
+    8. Subregion
 
 
 22. 选择**确定**。
 
-    **重要提示：**请确保向下滚动并全选步骤 21 中列出的 8 列。由于 UI 限制，下面的屏幕截图仅显示前 5 列。
+    **重要提示：** 请确保向下滚动并全选步骤 21 中列出的 8 列。由于 UI 限制，下面的屏幕截图仅显示前 5 列。
 
     ![](../media/Lab-3/image22.png)
 
@@ -357,7 +318,7 @@ ADLS Gen2 的快捷方式
 
 23. 选择**合并** (1) 查询后，从功能区中选择**主页 (2) -> 选择列 (3) -> 选择列 (4)**。
 
-    **注意：**如果“选择列”选项不可见，您可以在“管理列”下找到它。
+    **注意：** 如果“选择列”选项不可见，您可以在“管理列”下找到它。
 
     ![](../media/Lab-3/image23.png)
 
@@ -365,22 +326,22 @@ ADLS Gen2 的快捷方式
 24. “选择列”对话框随即打开。**取消选中**以下列。
 
 
-1. StateProvinceID
+    1. StateProvinceID
 
 
-2. Location
+    2. Location
 
 
-3. LastEditedBy
+    3. LastEditedBy
 
 
-4. ValidFrom
+    4. ValidFrom
 
 
-5. ValidTo
+    5. ValidTo
 
 
-6. CountryID
+    6. CountryID
 
 
 25. 选择**确定**。
@@ -447,8 +408,6 @@ ADLS Gen2 的快捷方式
 
 4. 选择 **Customers** 查询。选择后，Customers 将在“表”后面有一个 **+** 号（这指示我们要在“表”后面添加一个步骤。如果您在“Table”后没有看到 **+** 符号，则可能选择了其他步骤。选择“Table”即可开始）。
 
-    <!-- -->
-
 
 5. 从“视觉对象查询”菜单中，选择**组合 -> 合并查询**。
 
@@ -492,43 +451,43 @@ ADLS Gen2 的快捷方式
 14. “选择列”对话框随即打开。**选择**以下列。
 
 
-1. ResellerID
+    1. ResellerID
 
 
-2. ResellerName
+    2. ResellerName
 
 
-3. PostalCityID
+    3. PostalCityID
 
 
-4. PhoneNumber
+    4. PhoneNumber
 
 
-5. FaxNumber
+    5. FaxNumber
 
 
-6. WebsiteURL
+    6. WebsiteURL
 
 
-7. DeliveryAddressLine1
+    7. DeliveryAddressLine1
 
 
-8. DeliveryAddressLine2
+    8. DeliveryAddressLine2
 
 
-9. DeliveryPostalCode
+    9. DeliveryPostalCode
 
 
-10. PostalAddressLine1
+    10. PostalAddressLine1
 
 
-11. PostalAddressLine2
+    11. PostalAddressLine2
 
 
-12. PostalPostalCode
+    12. PostalPostalCode
 
 
-13. BuyingGroupName
+    13. BuyingGroupName
 
 
 15. 选择**确定**。
@@ -633,14 +592,14 @@ ADLS Gen2 的快捷方式
     ![](../media/Lab-3/image44.png)
 
 
-14. 从左侧**查询**面板的 **ADLSData** **(1)** 文件夹下，选择 **Sales (2)** 查询**。**
+14. 从左侧**查询**面板的 **ADLSData** **(1)** 文件夹下，选择 **Sales (2)** 查询。
 
 
 15. 从功能区中选择**主页 -> 高级编辑器 (3)**。“高级编辑器”对话框随即打开。
 
     ![](../media/Lab-3/image45.png)
 
-    **注意：**如果找不到高级编辑器，可以在**主页 -> 查询 -> 高级编辑器**下访问它。
+    **注意：** 如果找不到高级编辑器，可以在**主页 -> 查询 -> 高级编辑器**下访问它。
 
 
 16. **选择行 3 中的代码**  一直到最后一行代码。
@@ -689,27 +648,19 @@ ADLS Gen2 的快捷方式
 
     为了更方便起见，请删除“高级编辑器”中的所有代码，并将以下代码粘贴到“高级编辑器”中。
 
+    ```
     let
-
     Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
-
-    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
-
-    #"Removed Other Columns" = Table.SelectColumns,
-
-    #"Renamed Columns" = Table.RenameColumns,
-
-    #"Merged Queries" = Table.NestedJoin,
-
-    #"Added Custom" = Table.AddColumn,
-
-    #"Changed Type" = Table.TransformColumnTypes,
-
-    #"Removed Columns" = Table.RemoveColumns
-
+        #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+        #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
+        #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+        #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+        #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
     in
-
-    #"Removed Columns"
+        #"Removed Columns"
+    ```
 
 
 27. 系统会将您导航回 Power Query 编辑器。在左侧的“查询”面板中，双击 **Merge** 查询以对其重命名。
@@ -784,7 +735,7 @@ ADLS Gen2 的快捷方式
 9. 选择**左外**作为**联接种类**。
 
 
-10. 选择**确定。**已创建新的“Merge”查询。
+10. 选择**确定。** 已创建新的“Merge”查询。
 
     ![](../media/Lab-3/image58.png)
 
@@ -793,7 +744,7 @@ ADLS Gen2 的快捷方式
 
     ![](../media/Lab-3/image59.png)
 
-    **注意：**如果找不到高级编辑器，可以在**主页 -> 查询 -> 高级编辑器**下访问它。
+    **注意：** 如果找不到高级编辑器，可以在**主页 -> 查询 -> 高级编辑器**下访问它。
 
 
 12. 在“高级编辑器”中**选择全部代码**，然后将其**删除**。
@@ -801,21 +752,16 @@ ADLS Gen2 的快捷方式
 
 13. 将以下代码**粘贴**到“高级编辑器”中。
 
+    ```
     let
-
-    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
-
-    #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
-
-    #"Merged queries" = Table.NestedJoin,
-
-    #"Expanded ProductGroups" = Table.ExpandTableColumn,
-
-    #"Choose columns" = Table.SelectColumns
-
+       Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+       #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+       #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+       #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+       #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
     in
-
-    #"Choose columns"
+       #"Choose columns"
+    ```
 
 
 14. 选择**确定**以关闭“高级编辑器”。系统会将您导航回 Power Query 编辑器。
