@@ -1,5 +1,7 @@
 # Microsoft Fabric Fabric Analyst in a Day 实验室 5
 
+![](../media/Lab-1/main5.png)
+
 # 目录
 
 - 简介

@@ -1,6 +1,6 @@
 # Microsoft Fabric Fabric Analyst in a Day 实验室 1
 
-
+![](../media/Lab-1/main1.png)
 
 # 目录
 
