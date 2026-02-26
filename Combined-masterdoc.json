@@ -236,5 +236,39 @@
                 "Order": 7
             }            
         ]
+    },
+    {
+        "Name": "FAIAD - Microsoft Fabric Fabric Analyst in a Day Workshop",
+        "Language": "Korean",
+        "Files": [
+             {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Korean/Labs/Lab-01.md",
+                "Order": 1
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Korean/Labs/Lab-02.md",
+                "Order": 2
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Korean/Labs/Lab-03.md",
+                "Order": 3
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Korean/Labs/Lab-04.md",
+                "Order": 4
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Korean/Labs/Lab-05.md",
+                "Order": 5
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Korean/Labs/Lab-06.md",
+                "Order": 6
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/December-2025/Korean/Labs/Lab-07.md",
+                "Order": 7
+            }            
+        ]
     }
 ]
