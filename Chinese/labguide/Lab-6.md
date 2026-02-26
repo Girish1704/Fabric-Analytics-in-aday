@@ -1,4 +1,4 @@
-
+# Microsoft Fabric Fabric Analyst in a Day 实验室 6
 
 # 目录
 
@@ -84,7 +84,7 @@
 
     ![](../media/Lab-6/image8.png)
 
-###  任务 2：可视化 T-SQL 结果
+## 任务 2：可视化 T-SQL 结果
 
 
 1. 我们还可以可视化该查询的结果。在查询窗格中**突出显示查询**
@@ -251,8 +251,7 @@
     ![](../media/Lab-6/image22.png)
 
 
-17. 同样，在 **Sales** 和 **Product** 表之间创建**多对一**关系。从 **Sales** 表中选择 **StockItemID**，
-    从 **Product** 表中选择 **StockItemID**。
+17. 同样，在 **Sales** 和 **Product** 表之间创建**多对一**关系。从 **Sales** 表中选择 **StockItemID**，从 **Product** 表中选择 **StockItemID**。
 
     **注意：** 我们的所有更新将自动保存。
 

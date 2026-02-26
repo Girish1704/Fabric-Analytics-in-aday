@@ -1,4 +1,4 @@
-
+# Microsoft Fabric Fabric Analyst in a Day 实验室 3
 
 # 目录
 
@@ -51,7 +51,7 @@
 
 1. 在屏幕顶部，选择 **lh_FAIAD** 选项卡以导航到湖屋。
 
-    1)  如果没有选项卡，您可以导航回工作区并从那里打开湖屋。
+    1. 如果没有选项卡，您可以导航回工作区并从那里打开湖屋。
 
 2. 在**资源管理器**面板中，选择表旁边的**省略号**。
 
@@ -82,11 +82,9 @@
 
     - **SAS 令牌：** 
 
-
 10. 选择屏幕右下角的**下一步 (6)**。
 
     ![](../media/Lab-3/image8.png)
-
 
 11. 您将连接到 ADLS Gen2，目录结构显示在左侧面板中。展开 **Delta-Parquet-Format-FY25 (1)**。
 
@@ -95,33 +93,23 @@
 
     1. Application.Cities
 
-
     2. Application.Countries
-
 
     3. Application.StateProvinces
 
-
     4. DateDim
-
 
     5. Sales.BuyingGroups
 
-
     6. Sales.Customers
-
 
     7. Sales.InvoiceLines
 
-
     8. Sales.Invoices
-
 
     9. Warehouse.StockGroups
 
-
     10. Warehouse.StockItemStockGroups
-
 
     11. Warehouse.StockItems
 
@@ -131,14 +119,11 @@
 
 13. 系统会将您导航到下一个对话框，我们可以在其中编辑名称。针对 **Application.Cities**， 在“操作”下选择**编辑图标 (1)**。
 
-
 14. 将 **Application.Cities 重命名为 Cities (2)**。
-
 
 15. 选中名称旁边的复选标记以保存更改 **(3)**。
 
     ![](../media/Lab-3/image10.png)
-
 
 16. 同样，按如下所示重命名快捷方式名称：
 
@@ -164,11 +149,9 @@
 
     > **注意：** 仔细检查名称。拼写错误将导致实验室期间出现错误。
 
-
 17. 选择**创建**以创建快捷方式。
 
     ![](../media/Lab-3/image11.png)
-
 
 18. 请注意，所有快捷方式均以表的形式创建。选择 **BuyingGroups** 表，请注意，我们可以看到数据面板中的数据预览。
 

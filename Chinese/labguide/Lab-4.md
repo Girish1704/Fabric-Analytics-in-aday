@@ -1,4 +1,4 @@
-
+# Microsoft Fabric Fabric Analyst in a Day 实验室 4
 
 # 目录
 
@@ -156,8 +156,6 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     ![](../media/Lab-4/image15.png)
 
-###
-
 ## 任务 4：发布并重命名 SharePoint 数据流
 
 
@@ -187,7 +185,6 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
     ![](../media/Lab-4/image18.png)
 
     系统会将您导航回 **FAIAD_<username> 工作区**。
-
 
 7. 选择 **lh_FAIAD** 以导航到湖屋。
 
@@ -225,20 +222,19 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
 6. 从左侧面板中 **SnowflakeData** 文件夹下，按 **Ctrl+ 选择**或 Shift+ 选择以下查询：
 
-
-1. SupplierCategories
-
-
-2. Suppliers
+    1. SupplierCategories
 
 
-3. Supplier
+    2. Suppliers
 
 
-4. PO
+    3. Supplier
 
 
-5. PO Line Items
+    4. PO
+
+
+    5. PO Line Items
 
 
 7. **右键单击**并选择**复制**。
