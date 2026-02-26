@@ -60,7 +60,7 @@ ADLS Gen2 的快捷方式
 
 # ADLS Gen2 的快捷方式
 
-### 任务 1：创建快捷方式
+## 任务 1：创建快捷方式
 
 快捷方式用于创建指向目标位置的链接。快捷方式提供对数据的访问权限，而无需将数据实际移动到湖屋中。这就像在 Windows 桌面中创建快捷方式一样。
 
@@ -212,7 +212,7 @@ ADLS Gen2 的快捷方式
 
 # 使用视觉对象查询转换数据
 
-### 任务 2：使用视觉对象查询创建 Geo 视图
+## 任务 2：使用视觉对象查询创建 Geo 视图
 
 
 1. 我们可以使用 SQL 终结点访问湖屋。这提供查询数据和创建视图的功能。在屏幕的**右上角**，选择**Lakehouse (1) -> SQL 分析终结点 (2)**。
@@ -429,7 +429,7 @@ ADLS Gen2 的快捷方式
 
     ![](../media/Lab-3/image28.png)
 
-### 任务 3：使用视觉对象查询创建 Reseller 视图
+## 任务 3：使用视觉对象查询创建 Reseller 视图
 
 让我们创建 Reseller 视图，该视图可通过合并“Customers”表与“BuyingGroups”表来创建。这次我们将使用视觉对象查询创建视图，而不打开 Power Query 选项。
 
@@ -577,7 +577,7 @@ ADLS Gen2 的快捷方式
 
     ![](../media/Lab-3/image39.png)
 
-### 任务 4：使用视觉对象查询创建 Sales 视图
+## 任务 4：使用视觉对象查询创建 Sales 视图
 
 让我们创建 Sales 视图，该视图可通过合并“InvoiceLineItems”和“Invoices”表与“Reseller”视图来创建。我们在 Power BI Desktop 中有此查询。我们将从“高级编辑器”复制代码。但在复制代码之前，我们需要使用视觉对象查询创建一个合并表，因为无法在视觉对象查询中创建空白查询。让我们试一下此方法。
 
@@ -744,7 +744,7 @@ ADLS Gen2 的快捷方式
 
     ![](../media/Lab-3/image53.png)
 
-### 任务 5：使用视觉对象查询创建 Product 视图
+## 任务 5：使用视觉对象查询创建 Product 视图
 
 让我们创建 Product 视图，该视图可通过合并 **ProductItem**、**ProductItemGroup** 和 **ProductGroups** 表来创建。若要继续，我们需要将代码复制到“高级编辑器”中。
 
@@ -860,13 +860,13 @@ ADLS Gen2 的快捷方式
 
 # 参考
 
-Fabric Analyst in a Day (FAIAD) 向您介绍了 Microsoft Fabric 中提供的一些主要功能。在服务菜单中，“帮助 (?)”部分包含指向一些优质资源的链接。
+Fabric Analyst in a Day (FAIAD) 介绍了 Microsoft Fabric 中提供的一些主要功能。在服务菜单中，“帮助 (?)”部分包含指向一些优质资源的链接。
 
-![](../media/Lab-3/image64.png)
+![](../media/Lab-1/image27.png)
 
 以下更多参考资源可帮助您进行与 Microsoft Fabric 相关的后续步骤。
 
-- 请参阅博客文章以阅读完整的 [Microsoft Fabric GA 公告](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+- 请参阅博客文章以阅读完整的 [Microsoft Fabric GA 公告](https://aka.ms/Fabric-Hero-Blog-Ignite23)
 
 - 通过[引导式教程](https://aka.ms/Fabric-GuidedTour)探索 Fabric
 
@@ -878,9 +878,9 @@ Fabric Analyst in a Day (FAIAD) 向您介绍了 Microsoft Fabric 中提供的一
 
 - 探索 [Fabric 技术文档](https://aka.ms/fabric-docs)
 
-- 阅读[有关 Fabric 入门指南的免费电子书](https://aka.ms/fabric-get-started-ebook)
+- 阅读有关 [Fabric 入门的免费电子书](https://aka.ms/fabric-get-started-ebook)
 
-- 加入 [Fabric 社区](https://aka.ms/fabric-community)发布问题、分享反馈并向他人学习
+- 加入 [Fabric 社区](https://aka.ms/fabric-community)发布问题、共享反馈并向他人学习
 
 阅读更多深度 Fabric 体验公告博客：
 
@@ -896,12 +896,28 @@ Fabric Analyst in a Day (FAIAD) 向您介绍了 Microsoft Fabric 中提供的一
 
 - [Power BI 公告博客](https://aka.ms/Fabric-PBI-Blog)
 
-- [Fabric 中的 Data Activator 博客](https://aka.ms/Fabric-DA-Blog)
+- [Fabric 中的 Data Activator 体验博客](https://aka.ms/Fabric-DA-Blog)
 
 - [Fabric 中的管理和治理博客](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-- [Fabric 中的 OneLake 博客https://aka.ms/Fabric-OneLake-Blog](https://aka.ms/Fabric-OneLake-Blog)
+- [Fabric 中的 OneLake 博客](https://aka.ms/Fabric-OneLake-Blog)
 
 - [Dataverse 和 Microsoft Fabric 集成博客](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation.保留所有权利。 > > 使用此演示/实验即表示您已同意以下条款： > > 本演示/实验中的技术/功能由 Microsoft Corporation 出于获取反馈和提供学习体验的目的提供。只能将本演示/实验用于评估这些技术特性和功能以及向 Microsoft 提供反馈。不得用于任何其他用途。不得对此演示/实验或其任何部分进行修改、复制、分发、传送、显示、执行、复制、公布、许可、转让、销售或基于以上内容创建衍生作品。 > > 严禁将本演示/实验（或其任何部分）复制到任何其他服务器或位置以便进一步复制或再分发。 > > 本演示/实验出于上述目的，在不涉及复杂设置或安装操作的模拟环境中提供特定软件技术/产品特性和功能，包括潜在的新功能和概念。本演示/实验中展示的技术/概念可能不是完整的功能，可能会以不同于最终版本的工作方式工作。我们也可能不会发布此类功能或概念的最终版本。在物理环境中使用此类特性和功能的体验可能也有所不同。 > > **反馈。**如您针对本演示/实验中所述的技术特性、功能和/或概念向 Microsoft 提供反馈，则意味着您向 Microsoft 无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。您同样无偿为第三方提供其产品、技术和服务使用或配合使用包含此反馈的 Microsoft 软件或服务的任何特定部分所需的任何专利权。如果根据某项许可的规定，Microsoft 由于在其软件或文档中包含了您的反馈需要向第三方授予该软件或文档的许可，请不要提供这样的反馈。这些权利在本协议终止后继续有效。 > > 对于本演示/实验，Microsoft Corporation 不提供任何明示、暗示或法定的保证和条件，包括有关适销性、针对特定目的的适用性、所有权和不侵权的所有保证和条件。对于使用本演示/实验产生的结果或输出内容的准确性，或者出于任何目的包含本演示/实验中的信息的适用性，Microsoft 不做任何保证或陈述。 > > **免责声明** > > 本演示/实验仅包含 Microsoft Power BI 的部分新功能和增强功能。在产品的后续版本中，部分功能可能有所更改。在本演示/实验中，可了解部分新功能，但并非全部新功能。
+© 2025 Microsoft Corporation。保留所有权利。
+
+使用此演示/实验即表示您已同意以下条款：
+
+本演示/实验室中的技术/功能由 Microsoft Corporation 出于获取反馈和提供学习体验的目的提供。只能将本演示/实验室用于评估这些技术特性和功能以及向 Microsoft 提供反馈。不得用于任何其他用途。不得对此演示/实验或其任何部分进行修改、复制、分发、传送、显示、执行、复制、公布、许可、转让、销售或基于以上内容创建衍生作品。
+
+严禁将本演示/实验（或其任何部分）复制到任何其他服务器或位置以便进一步复制或再分发。
+
+本演示/实验出于上述目的，在不涉及复杂设置或安装操作的模拟环境中提供特定软件技术/产品特性和功能，包括潜在的新功能和概念。本演示/实验中展示的技术/概念可能不是完整的功能，可能会以不同于最终版本的工作方式工作。我们也可能不会发布此类功能或概念的最终版本。在物理环境中使用此类特性和功能的体验可能也有所不同。
+
+**反馈。** 如您针对本演示/实验中所述的技术特性、功能和/或概念向 Microsoft 提供反馈，则意味着您向 Microsoft 无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。您同样无偿为第三方提供其产品、技术和服务使用或配合使用包含此反馈的 Microsoft 软件或服务的任何特定部分所需的任何专利权。如果根据某项许可的规定，Microsoft 由于在其软件或文档中包含了您的反馈需要向第三方授予该软件或文档的许可，请不要提供这样的反馈。这些权利在本协议终止后继续有效。
+
+对于本演示/实验，Microsoft Corporation 不提供任何明示、暗示或法定的保证和条件，包括有关适销性、针对特定目的的适用性、所有权和不侵权的所有保证和条件。对于使用本演示/实验产生的结果或输出内容的准确性，或者出于任何目的包含本演示/实验中的信息的适用性，Microsoft 不做任何保证或陈述。
+
+**免责声明**
+
+本演示/实验仅包含 Microsoft Power BI 的部分新功能和增强功能。在产品的后续版本中，部分功能可能有所更改。在本演示/实验中，可了解部分新功能，但并非全部新功能。
