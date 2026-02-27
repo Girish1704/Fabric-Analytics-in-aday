@@ -65,7 +65,7 @@
 我们首先为供应商数据流配置计划刷新。
 
 
-1. 让我们通过在左侧面板中选择 Fabric 工作区 **FAIAD_<username>**，导航回该工作区。
+1. 让我们通过在左侧面板中选择 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，导航回该工作区。
 
 
 2. 若要最大化包含项目列表的面板，请选择面板右上角的双箭头。
@@ -160,7 +160,7 @@
 ## 任务 2：创建管道
 
 
-1. 让我们通过在左侧面板中选择 Fabric 工作区 **FAIAD_<username>**，导航回该工作区。
+1. 让我们通过在左侧面板中选择 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，导航回该工作区。
 
 
 2. 从顶部菜单中，选择 **+ 新建项 (1) -> 管道 (2)**。
@@ -211,7 +211,7 @@
     ![](../media/Lab-5/image22.png)
 
 
-3. 确保将**工作区**设置为您的 Fabric 工作区 **FAIAD_<username>。**
+3. 确保将**工作区**设置为您的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 
 4. 从**数据流下拉列表**中，选择 **df_People_SharePoint**。执行此数据流活动时，它将刷新 **df_People_SharePoint。** 这很容易，对吧？
@@ -262,7 +262,7 @@
 我们为应用场景加大难度。我们注意到，如果在上午 9 点还未提供数据，那么通常在五分钟内会提供。如果错过该时段，则需要 15 分钟后才能获得文件。我们希望将重试时间安排在 5 分钟和 15 分钟。让我们看一下如何通过创建新管道来实现这一点。
 
 
-1. 从左侧面板中，点击 **FAIAD_<username>**，以导航到工作区主页。
+1. 从左侧面板中，点击 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，以导航到工作区主页。
 
 
 2. 从顶部菜单中，单击 + **新建项 (1)**，然后从弹出窗口中，单击**管道 (2)**。
@@ -481,7 +481,7 @@
 7. 从底部窗格中选择**设置**。
 
 
-8. 确保将**工作区**设置为您的工作区 **FAIAD_<username>。**
+8. 确保将**工作区**设置为您的工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 
 9. 从**数据流下拉列表**中，选择 **df_People_SharePoint**。
@@ -743,7 +743,7 @@
     ![](../media/Lab-5/image55.png)
 
 
-11. 从左侧面板中选择您的 Fabric 工作区 **FAIAD_<username>**，以导航到工作区。
+11. 从左侧面板中选择您的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，以导航到工作区。
 
     > **注意：** 在计划屏幕中，没有通知成功或失败的选项（和数据流计划一样）。可以通过在管道中添加活动来提供通知。我们不在本实验室中进行此操作，因为这是实验室环境。
 

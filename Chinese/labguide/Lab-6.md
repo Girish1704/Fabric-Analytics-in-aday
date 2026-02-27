@@ -42,13 +42,13 @@
 ## 任务 1：使用 SQL 查询数据
 
 
-1. 让我们导航回您在实验室 2 任务 8 中创建的 Fabric 工作区 **FAIAD_<username>**。
+1. 让我们导航回您在实验室 2 任务 8 中创建的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**。
 
 
 2. 您可以选择**最小化任务流**以查看完整的项目列表。
 
 
-3. 您将看到与 lh_FAIAD 关联的三个元素 - 湖屋、语义模型和 SQL 终结点。我们在之前的实验室中探索了湖屋并使用 SQL 分析终结点创建了视觉对象查询。在左侧导航中选择 **FAIAD_<用户名>**，然后选择 **lh_FAIAD SQL 分析终结点**选项以继续探索此选项。系统会将您导航回资源管理器的 SQL 视图。
+3. 您将看到与 lh_FAIAD 关联的三个元素 - 湖屋、语义模型和 SQL 终结点。我们在之前的实验室中探索了湖屋并使用 SQL 分析终结点创建了视觉对象查询。在左侧导航中选择 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**，然后选择 **lh_FAIAD SQL 分析终结点**选项以继续探索此选项。系统会将您导航回资源管理器的 SQL 视图。
 
     ![](../media/Lab-6/image6.png)
 
@@ -121,7 +121,7 @@
 8. “保存报表”对话框随即打开。在**为报表输入名称**文本框中，键入 **Units by Supplier**。
 
 
-9. 确保目标工作区是您的 Fabric 工作区 **FAIAD_<username>**
+9. 确保目标工作区是您的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 
 10. 选择**保存**。

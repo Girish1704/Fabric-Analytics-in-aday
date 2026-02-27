@@ -56,7 +56,7 @@
 我们先使用自动创建报表选项。稍后在实验中，我们将重新创建 Power BI 中的报表。
 
 
-1. 让我们导航回您在实验室 2 中创建的名为 **FAIAD_<username>** 的 **Fabric** **工作区**。
+1. 让我们导航回您在实验室 2 中创建的名为 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 的 **Fabric** **工作区**。
 
 
 2. 在左侧面板底部，选择 **Fabric 体验选择器**图标。
@@ -106,7 +106,7 @@
     **注意：** 我们在报表名称前加上 rpt（报表的缩写）作为前缀。
 
 
-11. 确保将报表保存在您的工作区 **FAIAD_<username>。**
+11. 确保将报表保存在您的工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 
 12. 选择**保存。**
@@ -126,7 +126,7 @@
 我们使用空白画布创建新报表。
 
 
-1. 在**左侧面板**中，选择您的工作区名称 **FAIAD_<username>** 以导航到该工作区。
+1. 在**左侧面板**中，选择您的工作区名称 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 以导航到该工作区。
 
 
 2. 从顶部菜单中，选择**新建项目 -> 报表**。您将导航到“生成您的第一个报表”页面。
@@ -320,7 +320,7 @@
     
     **注意：** 我们在报表名称前加上 rpt（报表的缩写）作为前缀。
 
-3. 确保将报表保存在 **FAIAD_<username>** 工作区。
+3. 确保将报表保存在 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 工作区。
 
 
 4. 选择**保存。**请**注意**，报表已保存，并且您处于视图模式。
@@ -578,7 +578,7 @@
 2. 在右下角，单击 **Fabric 徽标**并切换到 **Fabric 视图**。
 
 
-3. 在左侧菜单栏中，选择 **FAIAD_<username>** 以导航到工作区主页。
+3. 在左侧菜单栏中，选择 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 以导航到工作区主页。
 
 
 4. 选择 **lh_FAIAD** 以导航到湖屋。
@@ -836,7 +836,7 @@
 准备好清理实验环境后，请按照以下步骤操作。
 
 
-1. 从左侧面板中选择 **FAIAD_<username>** 工作区，以导航到工作区主页。
+1. 从左侧面板中选择 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 工作区，以导航到工作区主页。
 
 
 2. 从顶部菜单中，选择**工作区设置**。

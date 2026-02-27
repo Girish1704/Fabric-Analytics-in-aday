@@ -74,20 +74,20 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
 2. “输入你的电子邮件地址”对话框出现后，复制**用户名**并将其粘贴到对话框的**电子邮件**字段中，然后选择**继续**。
 
-    - 电子邮件/用户名：
+    - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-1/image6.png)
 
 3. 在“登录到 Microsoft Azure”选项卡上，您将看到登录屏幕，输入以下电子邮件/用户名，然后单击**下一步**。
 
-    - 电子邮件/用户名：
+    - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
 
       ![](../media/Lab-1/image7.png)
 
 
 4. 现在，输入以下**临时登入密码**，然后单击**登录**。
 
-    - 临时登入密码：
+    - 临时登入密码：<inject key="AzureAdUserPassword"></inject>
 
       ![](../media/Lab-1/image8.png)
 
@@ -127,9 +127,7 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
     ![](../media/Lab-1/image13.jpeg)
 
-
 5. 在散点图视觉对象中选择离群值 Reseller 以**删除筛选器**。
-
 
 6. 我们按产品组和经销商获取产品详细信息。从按产品组和经销商公司划分的销售条形图视觉对象中，**右键单击 Tailspin Toys 的 Packaging Materials 栏**，并从对话框中选择**钻取 -> Product Detail**。
 
@@ -204,10 +202,9 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
 8. 您可以通过输入**用户名**和**密码**来输入 Dataverse 数据源的凭据。下面提供了凭据。完成后，选择**连接**。
 
-    - 电子邮件/用户名：在“环境”选项卡中找到
+    - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
 
-    - 密码：在“环境”选项卡中找到
-
+    - 密码：<inject key="AzureAdUserPassword"></inject>
 
 9. 单击“查询”窗口中的 **ADLS Base Folder** 查询。选择本查询后，您将需要输入凭据。
     单击**编辑凭据**。
@@ -217,9 +214,9 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
 10. 对于 ADLS 数据源，选择**共享访问签名 (SAS)** 选项，然后输入下面提供的 **SAS 令牌**。然后，选择**连接**。
 
-    - **SAS 令牌：** 在“环境”选项卡中找到
+    - **SAS 令牌：** <inject key="Sas token"></inject>
 
-    ![](../media/Lab-1/image22.png)
+        ![](../media/Lab-1/image22.png)
 
 
 11. 请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和 Date。还具有
@@ -241,11 +238,11 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
 13. 输入下面提供的 **Snowflake 用户名**和 **Snowflake 密码**。使用这些凭据将 Snowflake 下的所有表连接到 Snowflake，然后选择“连接”。
 
-    - **Snowflake 用户名：** TE_SNOWFLAKE1
+    - **Snowflake 用户名：** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Snowflake 密码：** 8UpfRpExVDXv2AC1
+    - **Snowflake 密码：** <inject key="SnowFlake Username" enableCopy="false" />
 
-    *注意：如果您在使用上述凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的备份凭据。*
+        >**注意:** 如果您在使用上述凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的备份凭据。
 
     - **Snowflake 用户名：** SNOWFLAKE_BACKUP
 
@@ -267,9 +264,9 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 16. 选择 **Microsoft 帐户**选项，然后单击**登录**。输入下面提供的用户名和密码，然后选择
     **连接**。
 
-    - **电子邮件/用户名：** 在“环境”选项卡中找到
+    - **电子邮件/用户名：** <inject key="AzureAdUserEmail"></inject>
 
-    - **密码：** 在“环境”选项卡中找到：
+    - **密码：** <inject key="AzureAdUserPassword"></inject>
 
         ![](../media/Lab-1/image25.png)
 

@@ -51,20 +51,20 @@ http://app.fabric.microsoft.com/으로 이동합니다.*
 
     - **전자 메일/사용자 이름:** <inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/Lab-02/image3.png)
+        ![](../media/Lab-02/image3.png)
 
 3. **Microsoft Azure으로 로그인** 탭에 로그인 화면이 표시되면 다음
     **EmailUsername**을 입력한 후 **다음**을 클릭합니다.
 
     - **전자 메일/사용자 이름:** <inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/Lab-02/image4.png)
+        ![](../media/Lab-02/image4.png)
 
 4. 이제 다음 **임시 액세스 패스**를 입력하고 **로그인**을 클릭합니다.
 
     - **임시 액세스 패스**: <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/Lab-02/image5.png)
+        ![](../media/Lab-02/image5.png)
 
 5. 익숙한 **Power BI 서비스 홈 페이지**가 열립니다.
 

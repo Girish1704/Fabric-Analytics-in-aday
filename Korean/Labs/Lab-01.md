@@ -291,8 +291,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     - **Snowflake 암호:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    >*참고: 위 자격 증명으로 Snowflake에 연결하는 데 문제가 발생할 경우,
-        아래에 제공된 백업 자격 증명을 사용합니다.*
+      >**참고:** 위 자격 증명으로 Snowflake에 연결하는 데 문제가 발생할 경우, 아래에 제공된 백업 자격 증명을 사용합니다.*
 
     - **Snowflake 사용자 이름:** SNOWFLAKE_BACKUP
 
