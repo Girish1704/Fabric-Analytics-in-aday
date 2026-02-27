@@ -256,8 +256,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     ![](../media/Lab-01/image20.png)
 
 10. ADLS 데이터 원본의 경우 **SAS(공유 액세스 서명)** 옵션을 선택하고
-    아래에 제공된 **
-    SAS** 토큰을 입력합니다. 그런 다음 **연결**을 선택합니다.
+    아래에 제공된 **SAS** 토큰을 입력합니다. 그런 다음 **연결**을 선택합니다.
 
     - **SAS 토큰:** <inject key="Sas token"></inject>
 
