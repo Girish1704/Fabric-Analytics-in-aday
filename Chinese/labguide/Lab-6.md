@@ -150,33 +150,23 @@
 
 4. **选择**以下表/视图：
 
-
     1. **Customer**
-
 
     2. **Date**
 
-
     3. **People**
-
 
     4. **PO**
 
-
     5. **Supplier**
-
 
     6. **Geo**
 
-
     7. **Product**
-
 
     8. **Reseller**
 
-
     9. **Sales**
-
 
 5. 选择**确认**。
 

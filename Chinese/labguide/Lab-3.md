@@ -53,10 +53,9 @@
 
 1. 在屏幕顶部，选择 **lh_FAIAD** 选项卡以导航到湖屋。
 
-    1. 如果没有选项卡，您可以导航回工作区并从那里打开湖屋。
+    >如果没有选项卡，您可以导航回工作区并从那里打开湖屋。
 
 2. 在**资源管理器**面板中，选择表旁边的**省略号**。
-
 
 3. 选择**新建快捷方式。**
 
@@ -267,30 +266,21 @@
 
 21. 面板随即打开。确保仅选择以下列：
 
-
     1. CountryName
-
 
     2. FormalName
 
-
     3. IsoAlpha3Code
-
 
     4. IsoNumericCode
 
-
     5. CountryType
-
 
     6. Continent
 
-
     7. Region
 
-
     8. Subregion
-
 
 22. 选择**确定**。
 
@@ -310,24 +300,17 @@
 
 24. “选择列”对话框随即打开。**取消选中**以下列。
 
-
     1. StateProvinceID
-
 
     2. Location
 
-
     3. LastEditedBy
-
 
     4. ValidFrom
 
-
     5. ValidTo
 
-
     6. CountryID
-
 
 25. 选择**确定**。
 
@@ -435,45 +418,31 @@
 
 14. “选择列”对话框随即打开。**选择**以下列。
 
-
     1. ResellerID
-
 
     2. ResellerName
 
-
     3. PostalCityID
-
 
     4. PhoneNumber
 
-
     5. FaxNumber
-
 
     6. WebsiteURL
 
-
     7. DeliveryAddressLine1
-
 
     8. DeliveryAddressLine2
 
-
     9. DeliveryPostalCode
-
 
     10. PostalAddressLine1
 
-
     11. PostalAddressLine2
-
 
     12. PostalPostalCode
 
-
     13. BuyingGroupName
-
 
 15. 选择**确定**。
 

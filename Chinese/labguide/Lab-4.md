@@ -226,18 +226,13 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     1. SupplierCategories
 
-
     2. Suppliers
-
 
     3. Supplier
 
-
     4. PO
 
-
     5. PO Line Items
-
 
 7. **右键单击**并选择**复制**。
 
