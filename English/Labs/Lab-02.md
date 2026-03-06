@@ -129,11 +129,11 @@ By the end of this lab, you will have learned:
 
 7. Under **Workspace Type**, make sure **Fabric trial** is selected.
 
-   ![](../media/E1T1S14-2.png)
+   ![](../media/Lab-02/E1T1S14-2.png)
 
 9.Under **Details**, keep the selected trial **(1)** and click **Apply (2)** to proceed.
 
-    ![](../media/E1T1S14-3.png)
+    ![](../media/Lab-02/E1T1S14-3.png)
 
 You'll be navigated to your newly created workspace. We will bring data
 from the different data sources into a Lakehouse and use the data from
