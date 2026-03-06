@@ -127,11 +127,13 @@ By the end of this lab, you will have learned:
 
     ![](../media/Lab-02/image15.png)
 
-7. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
+7. Under **Workspace Type**, make sure **Fabric trial** is selected.
 
-8. Select **Apply** to create a new workspace.
+   ![](../media/Lab-02/E1T1S14-2.png)
 
-    ![](../media/Lab-02/image16.png)
+8. Under **Details**, keep the selected trial **(1)** and click **Apply (2)** to proceed.
+    
+   ![](../media/Lab-02/E1T1S14-3.png)
 
 You'll be navigated to your newly created workspace. We will bring data
 from the different data sources into a Lakehouse and use the data from
