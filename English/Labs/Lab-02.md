@@ -563,7 +563,7 @@ Help (?) section has links to some great resources.
 Here are a few more resources that will help you with your next steps
 with Microsoft Fabric.
 
-- See blog post to read the full 
+- See blog post to read the full Microsoft Fabric GA announcement.
 
 - Explore Fabric through the [Guided
   Tour](https://aka.ms/Fabric-GuidedTour)
@@ -639,7 +639,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,

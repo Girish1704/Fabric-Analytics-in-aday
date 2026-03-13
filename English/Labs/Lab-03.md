@@ -83,7 +83,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     ![](../media/Lab-03/image8.png)
 
-11. You will be connected to ADLS Gen2 with the directory structuredisplayed in the left panel. Expand **Delta-Parquet-Format-FY25 (1)**.
+11. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25 (1)**.
 
 12. Select the following directories **(2)** and then click on
     **Next (3):**
@@ -334,6 +334,7 @@ table with the BuyingGroups table. This time around we will create the
 view using Visual query without opening the Power Query option.
 
 1. From the top menu, click the drop down next to **New SQL query (1)** and then select **New visual query (2)**.
+    ![](../media/Lab-03/image40.png)
 
 2. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **BuyingGroups (1)** table and select **Insert into canvas (2)**.
 
@@ -730,7 +731,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,

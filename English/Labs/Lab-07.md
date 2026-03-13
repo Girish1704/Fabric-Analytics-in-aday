@@ -662,7 +662,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
     ![](../media/Lab-07/image54.png)
 
-    We do not have to refresh the data model and report when data changes.This is the advantage of Direct Lake and Direct query.
+    We do not have to refresh the data model and report when data changes. This is the advantage of Direct Lake and Direct query.
 
     Let's revisit the challenges that are listed in the problem statement:
 
@@ -776,7 +776,7 @@ PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS
 DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK
 THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL
 VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH
-FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
+FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE
 DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features,
