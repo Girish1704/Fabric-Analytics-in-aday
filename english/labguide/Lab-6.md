@@ -1,5 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 6
 
+![](../media/Lab-1/main6.png)
+
 # Contents
 
 - Introduction
