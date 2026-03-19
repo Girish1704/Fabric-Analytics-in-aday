@@ -1,3 +1,5 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Lab 1
+
 # Contents
 
 - Document Structure
@@ -68,21 +70,21 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 
 2. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
-    - Email/Username:
+    - Email/Username: <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/Lab-1/image8.png)
 
 
 3. On the Sign into Microsoft Azure tab, you will see the login screen, enter the following Email/ Username and then click on **Next**.
 
-    - Email/Username:
+    - Email/Username: <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/Lab-1/image9.png)
 
 
 4. Now enter the following **Temporary Access Pass** and click on **Sign in**.
 
-    - Temporary Access Pass:
+    - Temporary Access Pass: <inject key="AzureAdUserPassword"></inject>
 
         ![](../media/Lab-1/image10.png)
 
@@ -196,10 +198,9 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 8. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password**. The credentials are provided below. When done, select **Connect**.
 
-    - Email/Username: Found in Environment Tab
+    - Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-    - Password: Found in Environment Tab
-
+    - Password: <inject key="AzureAdUserPassword"></inject>
 
 9. Click on the **ADLS Base Folder** Query from the Queries window. Selecting this query will require the credentials. Click **Edit Credentials**.
          
@@ -207,10 +208,9 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 10. For the ADLS data source, choose the **Shared access signature (SAS)** option and enter the **SAS token** provided below. Then, select **Connect**.
 
-    - **SAS token:** Found in Environment Tab
+    - **SAS token:** <inject key="Sas token"></inject>
 
         ![](../media/Lab-1/image24.png)
-
 
 11. Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales facts.
 
@@ -229,16 +229,15 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 13. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables under Snowflake to Snowflake and then select **Connect**.
 
-    - **Snowflake Username:** TE_SNOWFLAKE1
+    * **Snowflake Username:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Snowflake Password:** 8UpfRpExVDXv2AC1
+    * **Snowflake Password:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    *Note: If you experience any issues connecting to Snowflake with the credentials above, please use the backup credentials provided below.*
+      >**Note:** If you experience any issues connecting to Snowflake with the credentials above, please use the backup credentials provided below.
 
     - **Snowflake Username:** SNOWFLAKE_BACKUP
 
     - **Snowflake Password:** 8UpfRpExVDXv2AC1
-
 
 14. Notice the **SnowflakeData** folder has Supplier dimension and PO(Order / Spend) fact.
 
@@ -253,9 +252,9 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 16. Select the **Microsoft account** option, then click **Sign in**. Enter the Username and Password provided below, and then select **Connect**.
 
-    - **Email/Username:** Found in Environment Tab
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-    - **Password:** Found in Environment Tab
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
         ![](../media/Lab-1/image27.png)
 

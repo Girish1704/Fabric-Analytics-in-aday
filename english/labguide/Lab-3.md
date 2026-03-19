@@ -1,4 +1,4 @@
-
+# Microsoft Fabric - Fabric Analyst in a Day - Lab 3
 
 # Contents
 
@@ -82,7 +82,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 9. Copy the SAS token and paste it into the SAS token (5) field.
 
-    - **SAS token:**
+    - **SAS token:** <inject key="Sas token"></inject>
 
 
 10. Select **Next (6)** on the bottom right of the screen.
@@ -558,28 +558,19 @@ Let’s create the Sales view, which is created by merging the tables InvoiceLin
 
     If it is easier, delete all the code in the Advanced Editor and paste the below code into Advanced Editor.
 
+    ```
     let
-
     Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
-
-    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
-
-    #"Removed Other Columns" = Table.SelectColumns,
-
-    #"Renamed Columns" = Table.RenameColumns,
-
-    #"Merged Queries" = Table.NestedJoin,
-
-    #"Added Custom" = Table.AddColumn,
-
-    #"Changed Type" = Table.TransformColumnTypes,
-
-    #"Removed Columns" = Table.RemoveColumns
-
+        #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+        #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
+        #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+        #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+        #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
     in
-
-    #"Removed Columns"
-
+        #"Removed Columns"
+    ```
 
 27. You will be navigated back to the Power Query Editor. In the left, Queries panel, **double-click on Merge** query to rename it.
 
@@ -669,22 +660,16 @@ Let’s create the Product view, which is created by merging **ProductItem**, **
 
 13. **Paste** the below code into Advanced editor.
 
+    ```
     let
-
-    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
-
-    #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
-
-    #"Merged queries" = Table.NestedJoin,
-
-    #"Expanded ProductGroups" = Table.ExpandTableColumn,
-
-    #"Choose columns" = Table.SelectColumns
-
+       Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+       #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+       #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+       #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+       #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
     in
-
-    #"Choose columns"
-
+       #"Choose columns"
+    ```
 
 14. Select **OK** to close Advanced Editor. You will be navigated back to Power Query editor.
 
