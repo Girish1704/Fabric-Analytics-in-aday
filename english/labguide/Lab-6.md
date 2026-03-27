@@ -226,7 +226,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 2. From the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
 
-3. Enter **Sales = SUM(‘Sales’[Sales Amount])** in the **formula bar**.
+3. Enter **Sales = SUM(Sales[Sales Amount])** in the **formula bar**.
 
 
 4. Click the **check mark** left of the formula bar or click the **Enter** button.
@@ -249,7 +249,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 9. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
 
-10. Enter **Units = SUM(‘Sales’[Quantity])** in the **formula bar**.
+10. Enter **Units = SUM(Sales[Quantity])** in the **formula bar**.
 
 
 11. Click the **check mark** left of the formula bar or click the **Enter** button.
@@ -269,7 +269,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 15. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
 
-16. Enter **Sales Orders = DISTINCTCOUNT(‘Sales’[InvoiceID])** in the **formula bar**.
+16. Enter **Sales Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar**.
 
 
 17. Click the **check mark** left of the formula bar or click the **Enter** button.
@@ -438,13 +438,13 @@ Let’s add the remaining measures.
 8. Follow similar steps to add the following measures:
 
 
-    1. In **Sales** table, **GM = SUM(‘Sales’[LineProfit])** formatted as **Currency with 0 decimal places**.
+    1. In **Sales** table, **GM = SUM(Sales[LineProfit])** formatted as **Currency with 0 decimal places**.
 
 
     2. In **Sales** table, **GM% = DIVIDE([GM], [Sales])** formatted as **Percentage with 0 decimal places**.
 
 
-    3. In **Customer** table**, No of Customers = COUNTROWS(Customer)** formatted as **Whole Number with Thousands separator enabled**.
+    3. In **Customer** table, **No of Customers = COUNTROWS(Customer)** formatted as **Whole Number with Thousands separator enabled**.
 
 # References
 
@@ -500,7 +500,7 @@ The technology/functionality described in this demo/lab is provided by Microsoft
 
 COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
 
-THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
+THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
 
