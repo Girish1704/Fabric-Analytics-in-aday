@@ -434,15 +434,11 @@ Let’s add the remaining measures.
 
     ![](../media/Lab-6/image34.png)
 
-
 8. Follow similar steps to add the following measures:
-
 
     1. In **Sales** table, **GM = SUM(Sales[LineProfit])** formatted as **Currency with 0 decimal places**.
 
-
     2. In **Sales** table, **GM% = DIVIDE([GM], [Sales])** formatted as **Percentage with 0 decimal places**.
-
 
     3. In **Customer** table, **No of Customers = COUNTROWS(Customer)** formatted as **Whole Number with Thousands separator enabled**.
 

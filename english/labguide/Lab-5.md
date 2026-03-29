@@ -633,7 +633,7 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
 2. We can set the pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. Schedule dialog opens.
 
-3. Select the **Add Schedule** button below **Scheduled run**.
+3. Select the **+ Add Schedule** button below **Scheduled run**.
 
     ![](../media/Lab-5/image54.png)
 
