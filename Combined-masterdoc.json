@@ -3,32 +3,32 @@
         "Name": "FAIAD - Microsoft Fabric Fabric Analyst in a Day Workshop",
         "Language": "English",
         "Files": [
-         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/December-2025/English/Labs/Lab-01.md",
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/english/labguide/Lab-1.md",
           "Order": 1
         },
-        {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/December-2025/English/Labs/Lab-02.md",
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/english/labguide/Lab-2.md",
           "Order": 2
         },
-        {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/December-2025/English/Labs/Lab-03.md",
+           {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/english/labguide/Lab-3.md",
           "Order": 3
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/December-2025/English/Labs/Lab-04.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/english/labguide/Lab-4.md",
           "Order": 4
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/December-2025/English/Labs/Lab-05.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/english/labguide/Lab-5.md",
           "Order": 5
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/December-2025/English/Labs/Lab-06.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/english/labguide/Lab-6.md",
           "Order": 6
         },
-        {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/December-2025/English/Labs/Lab-07.md",
+            {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/english/labguide/Lab-7.md",
           "Order": 7
         }
     ]
