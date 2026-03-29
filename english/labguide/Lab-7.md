@@ -414,62 +414,45 @@ Let’s save the report before we navigate away from the report to make changes 
 
 Notice how easy it is to update the semantic model while building the reports. This gives a seamless interaction like Power BI Desktop.
 
-
 1. With the **Line chart visual selected**, in the **Data section** expand **Reseller** table.
 
-
-6. Drag **Reseller -> Reseller Company** field to the **Legend** section.
+1. Drag **Reseller -> Reseller Company** field to the **Legend** section.
 
     ![](../media/Lab-7/image35.png)
 
+1. With the **Line chart visual selected**, from the **Visualization** section select **Format visual icon -> General**.
 
-7. With the **Line chart visual selected**, from the **Visualization** section select **Format visual icon -> General**.
+1. Expand **Title** section.
 
+1. Set **Title** text to **Sales over time**.
 
-8. Expand **Title** section.
+1. Expand **Effects** section.
 
-
-9. Set **Title** text to **Sales over time**.
-
-
-10. Expand **Effects** section.
-
-
-11. Use **Background** slider to set it to **Off**.
+1. Use **Background** slider to set it to **Off**.
 
     ![](../media/Lab-7/image36.png)
 
+1. From the **Visualization** section select **Format visual icon -> Visual**.
 
-12. From the **Visualization** section select **Format visual icon -> Visual**.
+1. Expand **Lines** section.
 
+1. In the **Apply settings to -> Series dropdown,** select **Tailspin Toys**.
 
-13. Expand **Lines** section.
+1. Expand **Colors** section.
 
+1. Set **color** to **#F17925**
 
-14. In the **Apply settings to -> Series dropdown,** select **Tailspin Toys**.
+1. In the **Apply settings to -> Series dropdown,** select **Wingtip Toys**.
 
+1. Set **color** to **#004753**
 
-15. Expand **Colors** section.
+1. Resize the **visual** and move it to the **top right box as shown in the screenshot**.
 
-
-16. Set **color** to **#F17925**
-
-
-17. In the **Apply settings to -> Series dropdown,** select **Wingtip Toys**.
-
-
-18. Set **color** to **#004753**
-
-
-19. Resize the **visual** and move it to the **top right box as shown in the screenshot**.
-
-
-20. Scroll to the right on the visual and **notice we have data through April 2024**.
+1. Scroll to the right on the visual and **notice we have data through April 2024**.
 
     ![](../media/Lab-7/image37.png)
 
-
-21. Let’s save the report, from the menu select **File -> Save**.
+1. Let’s save the report, from the menu select **File -> Save**.
 
     As mentioned earlier, we will not build all the visuals in this lab. At your leisure, feel free to build more visuals.
 
