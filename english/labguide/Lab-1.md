@@ -147,7 +147,6 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
          
     ![](../media/Lab-1/image18.png)
 
-
 10. Notice there are two fact tables, Sales and PO.
 
     1. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.

@@ -50,52 +50,39 @@ By the end of this lab, you will have learned:
 
 Shortcuts are used to create a link to the target location. Shortcuts provide access to the data without needing to physically move the data into the lakehouse. This is like creating shortcuts in Windows desktop.
 
-
 1. In the top of your screen select the **lh_FAIAD** tab to navigate to the Lakehouse.
-
 
 1. If you don’t have a tab you can navigate back to your Workspace and open the Lakehouse from there.
 
+1. In the **Explorer** panel, select the **ellipsis** next to **Tables**.
 
-2. In the **Explorer** panel, select the **ellipsis** next to **Tables**.
-
-
-3. Select **New shortcut**.
+1. Select **New shortcut**.
 
     ![](../media/Lab-3/image6.png)
 
-
-4. **New Shortcut** dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**.
+1. **New Shortcut** dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**.
 
     ![](../media/Lab-3/image7.png)
 
+1. Select **New connection (1)**.
 
-5. Select N**ew connection (1)**.
+1. Enter the following link for the **URL** property: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2):**
 
+1. Click on **Create New Connection (3)** under the Connection section
 
-6. Enter the following link for the **URL** property: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2):**
+1. Select **Shared Access Signature (SAS) (4)** from the Authentication kind dropdown.
 
-
-7. Click on **Create New Connection (3)** under the Connection section
-
-
-8. Select **Shared Access Signature (SAS) (4)** from the Authentication kind dropdown.
-
-
-9. Copy the SAS token and paste it into the SAS token (5) field.
+1. Copy the SAS token and paste it into the SAS token (5) field.
 
     - **SAS token:** <inject key="Sas token"></inject>
 
-
-10. Select **Next (6)** on the bottom right of the screen.
+1. Select **Next (6)** on the bottom right of the screen.
 
     ![](../media/Lab-3/image8.png)
 
+1. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25 (1)**.
 
-11. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25 (1)**.
-
-
-12. **Select** the following directories **(2)** and then click on **Next (3):**
+1. **Select** the following directories **(2)** and then click on **Next (3):**
 
     1. Application.Cities
 
@@ -123,18 +110,15 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     ![](../media/Lab-3/image9.png)
 
+1. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon (1)** under Actions for **Application.Cities**.
 
-13. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon (1)** under Actions for **Application.Cities**.
+1. Rename **Application.Cities to Cities (2)**.
 
-
-14. Rename **Application.Cities to Cities (2)**.
-
-
-15. Select the check mark next to the name to save the change **(3)**.
+1. Select the check mark next to the name to save the change **(3)**.
 
     ![](../media/Lab-3/image10.png)
 
-16. Similarly, rename the Shortcut Names as below:
+1. Similarly, rename the Shortcut Names as below:
 
     1. Application.Countries to **Countries**
 
@@ -158,11 +142,11 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     > **Note:** Double check the names. A typo will cause errors during the lab.
 
-17. Select **Create** to create the Shortcut.
+1. Select **Create** to create the Shortcut.
 
     ![](../media/Lab-3/image11.png)
 
-18. Notice all the Shortcuts are created as Tables. Select **BuyingGroups** table and notice we can see a preview of the data in the data panel.
+1. Notice all the Shortcuts are created as Tables. Select **BuyingGroups** table and notice we can see a preview of the data in the data panel.
 
     ![](../media/Lab-3/image12.png)
 
