@@ -69,34 +69,37 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 
     ![](../media/Lab-1/image7.png)
 
+   >### Note: If Power BI Desktop becomes unresponsive at the **Enter your email address** window and you’re unable to type, hover over the Power BI icon on the taskbar **(1)**. Then, close the secondary (blank/white) window by clicking the **X (2)**. This will restore responsiveness to the main Power BI window.
 
-2. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
+    ![](../media/Lab-1/powerbidesktop-note.png)
+
+3. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
     - Email/Username: <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/Lab-1/image8.png)
 
 
-3. On the Sign into Microsoft Azure tab, you will see the login screen, enter the following Email/ Username and then click on **Next**.
+4. On the Sign into Microsoft Azure tab, you will see the login screen, enter the following Email/ Username and then click on **Next**.
 
     - Email/Username: <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/Lab-1/image9.png)
 
 
-4. Now enter the following **Temporary Access Pass** and click on **Sign in**.
+5. Now enter the following **Temporary Access Pass** and click on **Sign in**.
 
     - Temporary Access Pass: <inject key="AzureAdUserPassword"></inject>
 
         ![](../media/Lab-1/image10.png)
 
 
-5. **Stay Signed in to all your apps** dialog opens. Select **OK**.
+6. **Stay Signed in to all your apps** dialog opens. Select **OK**.
 
     ![](../media/Lab-1/image11.png)
 
 
-6. **You’re all set!** Dialog opens. Select **Done**.
+7. **You’re all set!** Dialog opens. Select **Done**.
 
     Power BI Desktop will now open.
 
