@@ -382,7 +382,7 @@ Let’s save the report before we navigate away from the report to make changes 
 
 5. Select **Sort by -> Sort ascending**.
 
-    ![](../media/Lab-7/L8T8P5.png)
+    ![](../media/Lab-7/L8T5P3.png)
 
     **Note:** The months are sorted alphabetically. Let’s fix this.
 
