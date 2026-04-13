@@ -374,15 +374,15 @@ Let’s save the report before we navigate away from the report to make changes 
 2. Select the **ellipsis (…)** on the top right corner of the visual.
 
 
-3. Select **Sort axis -> Year Short_Month_Name**.
+3. Select **Sort by -> Year Short_Month_Name**.
 
 
 4. Select the **ellipsis (…)** on the top right corner of the visual.
 
 
-5. Select **Sort axis -> Sort ascending**.
+5. Select **Sort by -> Sort ascending**.
 
-    ![](../media/Lab-7/image31.png)
+    ![](../media/Lab-7/L8T8P5.png)
 
     **Note:** The months are sorted alphabetically. Let’s fix this.
 
