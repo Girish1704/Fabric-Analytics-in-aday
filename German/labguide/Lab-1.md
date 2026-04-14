@@ -69,6 +69,10 @@ Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in Power BI D
 
     ![](../media/Lab-1/image7.png)
 
+    > ### **Hinweis:** Wenn Power BI Desktop im Bildschirm **„Enter your email address“** nicht mehr reagiert und Sie nichts eingeben können, bewegen Sie den Mauszeiger über das Power BI-Symbol in der Taskleiste **(1)**. Schließen Sie anschließend das zusätzliche leere (weiße) Fenster, indem Sie auf **X** **(2)** klicken. Dadurch wird das Hauptfenster von Power BI wieder reaktionsfähig.
+
+    ![](../media/Lab-1/powerbidesktop-note.png)
+
 2. Sobald das Dialogfeld „E-Mail-Adresse eingeben“ angezeigt wird, kopieren Sie den **Benutzernamen**, fügen Sie ihn in das Feld **E-Mail-Adresse** des Dialogfelds ein, und wählen Sie **Weiter** aus.
 
     - E-Mail-Adresse/Benutzername: <inject key="AzureAdUserEmail"></inject>

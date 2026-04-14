@@ -40,7 +40,7 @@ Para extraer información valiosa de los datos, se extraen datos de varios siste
 
 - **Datos de empleado:** estos datos provienen del sistema de recursos humanos; se almacenan como un archivo de exportación en una carpeta de SharePoint. Se actualiza a todas las mañanas a las 9:00.
 
-![](../media/Lab-1/image4.jpeg)
+    ![](../media/Lab-1/image4.jpeg)
 
 Actualmente está creando un modelo semántico en Power BI Premium que extrae los datos de los sistemas de origen anteriores para satisfacer sus necesidades de informes y ofrecer a los usuarios finales la capacidad de autoservicio. Use Power Query para actualizar su modelo.
 
@@ -67,6 +67,10 @@ Antes de comenzar con Fabric, veamos el informe actual en Power BI Desktop para 
 1. Abra **FAIAD.pbix**, que se encuentra en la carpeta **Reports** en el **escritorio** de su entorno de laboratorio. El archivo se abrirá en Power BI Desktop.
 
     ![](../media/Lab-1/image6.png)
+
+    > ### **Nota:** Si Power BI Desktop deja de responder en la pantalla **“Enter your email address”** y no puedes escribir, mueve el cursor sobre el icono de Power BI en la barra de tareas **(1)**. Luego, cierra la ventana adicional en blanco haciendo clic en **X** **(2)**. Esto hará que la ventana principal de Power BI vuelva a responder.
+
+    ![](../media/Lab-1/powerbidesktop-note.png)
 
 2. Una vez que aparezca el cuadro de diálogo "Introduzca su dirección de correo electrónico", copie el **Nombre de usuario** y péguelo en el campo **Correo electrónico** del cuadro de diálogo, y seleccione **Continuar**.
 

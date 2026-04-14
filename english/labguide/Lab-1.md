@@ -69,7 +69,7 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 
     ![](../media/Lab-1/image7.png)
 
-   >###  **Note:** If Power BI Desktop becomes unresponsive on the **“Enter your email address”** screen and you cannot type, move your cursor over the Power BI icon on the taskbar (1). Then close the extra blank (white) window by clicking **X** (2). This will make the main Power BI window responsive again.
+   >### **Note:** If Power BI Desktop becomes unresponsive on the **“Enter your email address”** screen and you cannot type, move your cursor over the Power BI icon on the taskbar (1). Then close the extra blank (white) window by clicking **X** (2). This will make the main Power BI window responsive again.
 
     ![](../media/Lab-1/powerbidesktop-note.png)
 
