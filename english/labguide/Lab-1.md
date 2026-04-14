@@ -22,7 +22,7 @@
 
 The lab includes steps for the user to follow along with associated screenshots that provide visual aid. In each screenshot, sections are highlighted with orange boxes to indicate the area(s) user should focus on.
 
-**Note:** Some of the screenshots may be out of date due to ongoing product updates.
+>**Note:** Some of the screenshots may be out of date due to ongoing product updates.
 
 # Scenario / Problem Statement
 
@@ -69,7 +69,7 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 
     ![](../media/Lab-1/image7.png)
 
-   >### Note: **Note:** If Power BI Desktop becomes unresponsive on the **“Enter your email address”** screen and you cannot type, move your cursor over the Power BI icon on the taskbar (1). Then close the extra blank (white) window by clicking **X** (2). This will make the main Power BI window responsive again.
+   >###  **Note:** If Power BI Desktop becomes unresponsive on the **“Enter your email address”** screen and you cannot type, move your cursor over the Power BI icon on the taskbar (1). Then close the extra blank (white) window by clicking **X** (2). This will make the main Power BI window responsive again.
 
     ![](../media/Lab-1/powerbidesktop-note.png)
 
@@ -109,7 +109,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 ![](../media/Lab-1/image12.png)
 
-**Note:** In this training, we are focusing on data acquisition, transformation, and modeling using tools available in Fabric. We will not be focusing on report development or navigation. Let’s spend a couple of minutes understanding the report and move to the next steps.
+>**Note:** In this training, we are focusing on data acquisition, transformation, and modeling using tools available in Fabric. We will not be focusing on report development or navigation. Let’s spend a couple of minutes understanding the report and move to the next steps.
 
 
 1. Let’s analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual. Notice from the Sales over time, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at the Sales YoY% column chart you will notice that Wingtip Toys sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4.

@@ -52,9 +52,9 @@ By the end of this lab, you will have learned:
 
     ![](../media/Lab-2/image6.png)
 
-    ***Note: If you're using the lab environment, it may sign you in automatically**.*
+    >***Note: If you're using the lab environment, it may sign you in automatically**.*
 
-    ***Note:** If Fabric does not open navigate to http://app.fabric.microsoft.com/ in the browser.*
+    >***Note:** If Fabric does not open navigate to http://app.fabric.microsoft.com/ in the browser.*
 
 2. Copy the Username and paste it into the Email field of the dialog and select Submit.
 
@@ -91,7 +91,7 @@ By the end of this lab, you will have learned:
 
 9. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
 
-    **Note:** Do not change the default region. Keep this as-is.
+    >**Note:** Do not change the default region. Keep this as-is.
 
     ![](../media/Lab-2/image11.png)
 
@@ -119,7 +119,7 @@ By the end of this lab, you will have learned:
 
 4. In the **Name** field enter **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
         
-    ***Note:** The workspace name must be unique. Make sure a green check mark with "This name is available" is displayed below the Name field.*
+    >***Note:** The workspace name must be unique. Make sure a green check mark with "This name is available" is displayed below the Name field.*
 
 5. If you choose, you can enter a Description for the workspace. This is an optional field.
 
@@ -146,9 +146,9 @@ By the end of this lab, you will have learned:
 
 3. A new lakehouse dialog will appear. Enter **lh_FAIAD** in the Name textbox.
          
-    **Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.         
+    >**Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.         
     
-    **Note:** This feature is no longer in preview **but we still do not need to enable it**.
+    >**Note:** This feature is no longer in preview **but we still do not need to enable it**.
 
 1. Make sure **Lakehouse schemas (2)** is unchecked.
 
@@ -250,7 +250,7 @@ By the end of this lab, you will have learned:
 
     c. **Healthcare solutions:** are strategically designed to accelerate the time to value for customers by addressing the critical need to efficiently transform healthcare data into a suitable format for analysis.
 
-    **Note:** Some solutions may not appear for you
+    >**Note:** Some solutions may not appear for you
     
     **Get Started:** 
     
