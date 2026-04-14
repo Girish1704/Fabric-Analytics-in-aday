@@ -36,7 +36,7 @@
 
 In our scenario, Supplier Data is in Snowflake, Customer Data is in Dataverse, and Employee Data is in SharePoint. All these data sources are updated at different times. To minimize the number of data refreshes for Dataflows, we are going to create individual Dataflows for Snowflake and SharePoint data sources.
 
-**Note:** Multiple data sources are supported in a single Dataflow.
+>**Note:** Multiple data sources are supported in a single Dataflow.
 
 The IT team has already established a link to Dataverse and applied the necessary data transformations, mirroring those in the Power BI Desktop file. They have ingested this data into the Lakehouse in the Admin workspace and have given us access to the table(s). We are going to create a Shortcut to table(s) the Lakehouse IT team has created.
 
@@ -78,7 +78,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/Lab-4/image8.png)
 
-    **Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    >**Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/Lab-4/image9.png)
 
@@ -141,7 +141,7 @@ The connection is established, and you can view the data in the preview panel. F
 
 9. Choose destination settings dialog opens. Make sure “**Use automatic settings**” is **enabled**.
 
-    **Note:** You can disable automatic settings and notice you have options to set Update method and Schema options. Once done exploring, make sure “**Use automatic settings**” is **enabled**.
+    >**Note:** You can disable automatic settings and notice you have options to set Update method and Schema options. Once done exploring, make sure “**Use automatic settings**” is **enabled**.
 
 
 10. Select **Save settings**.
@@ -156,7 +156,7 @@ The connection is established, and you can view the data in the preview panel. F
 
     ![](../media/Lab-4/image17.png)
 
-    **Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to finish running.
+    >**Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to finish running.
 
 3. **Dataflow 1** is the dataflow we were working on. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Settings** (While the Dataflow is running you cannot access the settings).
 
@@ -180,7 +180,7 @@ The connection is established, and you can view the data in the preview panel. F
          
     ![](../media/Lab-4/image20.png)
 
-    **Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select refresh to refresh the Tables.
+    >**Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select refresh to refresh the Tables.
 
 ## Task 5: Copy Snowflake queries to Dataflow
 
@@ -218,7 +218,7 @@ The connection is established, and you can view the data in the preview panel. F
 
 9. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
 
-    **Note:** If you are working in the lab environment, please select the **ellipsis (…)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    >**Note:** If you are working in the lab environment, please select the **ellipsis (…)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/Lab-4/image23.png)
 
@@ -325,7 +325,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
          
     ![](../media/Lab-4/image33.png)
 
-    **Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select refresh to refresh the Tables.
+    >**Note:** If you do not see the newly created tables, select the ellipsis next to Tables and select refresh to refresh the Tables.
 
     Now let’s create a shortcut to bring in data from Dataverse.
 
@@ -348,7 +348,7 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view
 
 3. New shortcut dialog opens. Under **External sources**, select **Dataverse**.
 
-    **Note:** In the previous lab, we followed similar steps to create a shortcut to Azure Data Lake Storage Gen2.
+    >**Note:** In the previous lab, we followed similar steps to create a shortcut to Azure Data Lake Storage Gen2.
 
     ![](../media/Lab-4/image36.png)
 
@@ -364,7 +364,7 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view
 
 7. From the sign in dialog box, select the **user account** you have been using for these labs. 
 
-    **Note:** Your account will be different than the screenshot below.
+    >**Note:** Your account will be different than the screenshot below.
 
     ![](../media/Lab-4/image38.png)
 

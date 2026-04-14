@@ -74,7 +74,7 @@ By the end of this lab, you will have learned:
 
 8. On the **left** **Explorer** panel, under **Queries** section notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
-    **Note:** Visual queries you had created in earlier labs are also available under My queries folder.
+    >**Note:** Visual queries you had created in earlier labs are also available under My queries folder.
 
     ![](../media/Lab-6/image8.png)
 
@@ -152,7 +152,7 @@ By the end of this lab, you will have learned:
     
     You will be navigated to the new semantic model with the selected tables. Feel free to **rearrange** the tables as needed. Notice that some of the tables (Geo, Reseller, Sales and Product) have a warning sign on the top right of the table. This is because these are views. Any visuals created with fields from these views will be in direct query mode and not direct lake mode.
 
-    **Note:** Direct lake mode is faster than direct query mode.
+    >**Note:** Direct lake mode is faster than direct query mode.
 
 ## Task 4: Create Relationships
 
@@ -207,7 +207,7 @@ If you are not currently inside of the newly created semantic model, let’s get
 
 17. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
 
-    **Note:** All our updates are automatically saved.
+    >**Note:** All our updates are automatically saved.
 
     **Checkpoint:** Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
 

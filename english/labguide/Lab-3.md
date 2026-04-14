@@ -72,7 +72,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 1. Select **Shared Access Signature (SAS) (4)** from the Authentication kind dropdown.
 
-1. Copy the SAS token and paste it into the SAS token (5) field.
+1. Copy the SAS token and paste it into the SAS token **(5)** field.
 
     - **SAS token:** <inject key="Sas token"></inject>
 
@@ -106,7 +106,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     11. Warehouse.StockItems
 
-    **Note:** Sales.Invoices_May is the only directory that is **not** selected.
+    >**Note:** Sales.Invoices_May is the only directory that is **not** selected.
 
     ![](../media/Lab-3/image9.png)
 
@@ -178,7 +178,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 5. **From the menu in Visual query editor**, select the **Open in popup** icon (towards the right). You will be navigated to Power Query editor.
          
-    ***Note:** You may have to scroll to the right or re-open your visual query tab if you do not immediately see this icon*
+    >***Note:** You may have to scroll to the right or re-open your visual query tab if you do not immediately see this icon*
 
     ![](../media/Lab-3/image16.png)
 
@@ -273,7 +273,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 23. With **Merge** query selected (1), from the ribbon select **Home (2) -> Choose columns (3) -> Choose columns (4)**.
 
-    **Note:** If the Choose columns option is not visible, you can find it under Manage columns.
+    >**Note:** If the Choose columns option is not visible, you can find it under Manage columns.
 
     ![](../media/Lab-3/image23.png)
 
@@ -313,7 +313,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
     We will be navigated to the Visual query editor. Let’s now save this query as a view.
 
-    **Note:** All the steps we performed using Power Query editor can be performed using Visual query editor as well.
+    >**Note:** All the steps we performed using Power Query editor can be performed using Visual query editor as well.
 
 30. From the Visual query editor menu select **Save as view**.
 
@@ -347,7 +347,7 @@ Let’s create the Reseller view which is created by merging Customers table wit
 
 3. Repeat the same steps for the **Customers** table.
 
-4. **Select the Customers** query. When selected, Customers will have a “**+”** sign after Table (this indicates we are adding a step after Table. If you do not see the **“+”** sign after table, you may have selected a different step. Select Table and you will be good to go).
+4. **Select the Customers** query. When selected, Customers will have a **“+”** sign after Table (this indicates we are adding a step after Table. If you do not see the **“+”** sign after table, you may have selected a different step. Select Table and you will be good to go).
 
 5. From the Visual query menu, select **Combine -> Merge queries**.
 
@@ -425,7 +425,7 @@ Let’s create the Reseller view which is created by merging Customers table wit
 
     ![](../media/Lab-3/image36.png)
 
-    **Note:** The **Customer** box should have a blue border, if enable load is checked.
+    >**Note:** The **Customer** box should have a blue border, if enable load is checked.
 
 20. From the Visual query menu, select **Save as view**.
 
@@ -497,7 +497,7 @@ Let’s create the Sales view, which is created by merging the tables InvoiceLin
 
     ![](../media/Lab-3/image45.png)
 
-    **Note:** If you're unable to find the Advanced Editor, you can access it under **Home -> Query -> Advanced Editor**.
+    >**Note:** If you're unable to find the Advanced Editor, you can access it under **Home -> Query -> Advanced Editor**.
 
 
 16. **Select code from Line 3**  all the way through to the last line of code.
@@ -530,7 +530,7 @@ Let’s create the Sales view, which is created by merging the tables InvoiceLin
 
 24. Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
 
-    **Note:** If you are working in the lab environment, please select the **ellipsis (…)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    >**Note:** If you are working in the lab environment, please select the **ellipsis (…)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/Lab-3/image48.png)
 
@@ -640,7 +640,7 @@ Let’s create the Product view, which is created by merging **ProductItem**, **
 
     ![](../media/Lab-3/image59.png)
 
-    **Note:** If you're unable to find the Advanced Editor, you can access it under **Home -> Query -> Advanced Editor**.
+    >**Note:** If you're unable to find the Advanced Editor, you can access it under **Home -> Query -> Advanced Editor**.
 
 
 12. **Select all the code** in Advanced editor and **delete** it.

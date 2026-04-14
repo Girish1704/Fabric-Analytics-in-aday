@@ -84,7 +84,7 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
     ![](../media/Lab-5/image8.png)
 
-    **Note:** A window/panel will appear on the right side showing a list of refreshes
+    >**Note:** A window/panel will appear on the right side showing a list of refreshes
 
 
 6. You will notice that there is a singular refresh that executed when we selected the **Save and run** option in the previous lab. The **Type** of refresh we can see is listed as **On Demand** which lets us know this was a manually executed refresh.
@@ -94,7 +94,7 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
 7. Select the **Start time** link.
 
-    **Note:** Start time will be different for you.
+    >**Note:** Start time will be different for you.
 
     ![](../media/Lab-5/image10.png)
 
@@ -132,7 +132,7 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
 15. For the **Time** property we can specify **12:00 AM** **(2)** since we want midnight
 
-    **Note:** By clicking on Add another time link, you can add multiple refresh times.
+    >**Note:** By clicking on Add another time link, you can add multiple refresh times.
 
 
 16. We can also specify a **Start date and time (3)** as well as an **End date and time (4)**. For this scenario simply choose whatever the current day is for the start date and the end date.
@@ -183,7 +183,7 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
 7. From the top menu select **View**. Here you will find options to view the code in JSON format. You will also find options to auto align the activities.
 
-    **Note:** If you have a JSON background, at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON.
+    >**Note:** If you have a JSON background, at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON.
 
     ![](../media/Lab-5/image21.png)
 
@@ -197,7 +197,7 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 
 2. We are going to configure the activity to connect to df_People_SharePoint dataflow. From the **bottom** **pane**, select **Settings**.
 
-    *Note: You may need to drag the bottom pane up to see settings.*
+    >**Note:** You may need to drag the bottom pane up to see settings.*
 
     ![](../media/Lab-5/image22.png)
 
@@ -224,7 +224,7 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 
 9. There is an option to set **Timeout**. Let’s leave the **default value** as is which should give enough time for the dataflow to refresh.
 
-    **Note:** Since the data is not available on a schedule, let’s set the activity to re-execute every 10 minutes, three times. If it fails on the third attempt as well, then it will report a failure.
+    >**Note:** Since the data is not available on a schedule, let’s set the activity to re-execute every 10 minutes, three times. If it fails on the third attempt as well, then it will report a failure.
 
 
 10. Set **Retry** to **3**
@@ -288,7 +288,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
 6. Enter **Default value** of **0**.
 
-    **Note:** we are appending variable names with var, so it is easy to find them, and it is good practice.
+    >**Note:** we are appending variable names with var, so it is easy to find them, and it is good practice.
 
     ![](../media/Lab-5/image28.png)
 
@@ -308,7 +308,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
     3. **varWaitTime** of type **Integer** and default value **60**. This variable will be used to set the wait time if dataflow fails. (Either 5 minutes/300 seconds or 15 minutes/900 seconds.)
 
-        **Note:** Make sure there is no space before or after the variable name.
+        >**Note:** Make sure there is no space before or after the variable name.
 
         ![](../media/Lab-5/image29.png)
 
@@ -362,7 +362,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
 12. From the **Logical Functions** section, select **equals** function. Notice this is added to the dynamic expression text box.
 
-    **Note:** Your function should look like **@or(equals())**. The equals function also takes two parameters. We will be checking if the variable varCounter is equal to 3.
+    >**Note:** Your function should look like **@or(equals())**. The equals function also takes two parameters. We will be checking if the variable varCounter is equal to 3.
 
     ![](../media/Lab-5/image34.png)
 
@@ -459,7 +459,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
 4. In the **Description** field, enter “**Set variable varIsSuccess to Yes”**.
 
-    **Note:** Hover over **Dataflow activity**. To the right of the activity box there are four icons. These can be used to connect to the next activity based on the result of the activity:
+    >**Note:** Hover over **Dataflow activity**. To the right of the activity box there are four icons. These can be used to connect to the next activity based on the result of the activity:
 
     1. **Grey curved arrow** icon is used on skip of the activity.
 
@@ -517,7 +517,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
 10. Pipeline expression builder dialog opens. Enter **@add(variables('varCounter'),1)**
 
-    **Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function is setting the value of variable varTempCounter to the value of variable varCounter plus one, (varTempCounter = varCounter + 1).
+    >**Note:** Feel free to type this expression in, use the menu to select the functions, or copy and paste it. This function is setting the value of variable varTempCounter to the value of variable varCounter plus one, (varTempCounter = varCounter + 1).
 
     ![](../media/Lab-5/image46.png)
 
@@ -553,7 +553,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
     ![](../media/Lab-5/image48.png)
 
-    **Note:** This function sets the value of variable varCounter to the value of variable varTempCounter (varCounter = varTempCounter). At the end of each iteration both varCounter and varTempCounter have the same value.
+    >**Note:** This function sets the value of variable varCounter to the value of variable varTempCounter (varCounter = varTempCounter). At the end of each iteration both varCounter and varTempCounter have the same value.
 
 ## Task 12: Configure Wait Activity
 
@@ -629,7 +629,7 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
 1. We can test the pipeline, by selecting **Home -> Run**.
          
-    **Note:** It may take a few minutes for the pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your pipeline will never fail.
+    >**Note:** It may take a few minutes for the pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your pipeline will never fail.
 
 2. We can set the pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. Schedule dialog opens.
 
@@ -647,7 +647,7 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
 8. Set your **Time zone**.
 
-    **Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
+    >**Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
 
 9. Select **Save**.
 
@@ -657,7 +657,7 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
 11. Select your Fabric workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** in the left panel to navigate to the workspace.
 
-    **Note:** In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the pipeline. We are not doing it in this lab because this is a lab environment.
+    >**Note:** In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the pipeline. We are not doing it in this lab because this is a lab environment.
 
     We have scheduled refreshes for the various data sources. We will create a semantic model with relationships, measures and other modeling operations in the next lab.
 

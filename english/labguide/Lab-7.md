@@ -90,13 +90,13 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
     **Checkpoint:** You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
 
-    **Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
+    >**Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
 
 9. Let’s save this report. From the top menu, select **Save**.
 
 10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report**
 
-    **Note:** we are prefixing report name with rpt which is short for report.
+    >**Note:** we are prefixing report name with rpt which is short for report.
 
 11. Make sure the report is saved in your workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
@@ -104,7 +104,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
     ![](../media/Lab-7/image12.png)
     
-    **Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6).
+    >**Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6).
 
     Above screenshot is how the auto-created report **may** look if you created all the relationships and measures including the optional relationships (Lab 6).
 
@@ -307,7 +307,7 @@ Let’s save the report before we navigate away from the report to make changes 
 
 2. Save your report dialog opens. Name the report as **rpt_Sales_Report**
 
-    **Note:** We are prefixing report name with rpt which is short for report.
+    >**Note:** We are prefixing report name with rpt which is short for report.
 
 3. Make sure the report is saved in **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** workspace.
 
@@ -384,7 +384,7 @@ Let’s save the report before we navigate away from the report to make changes 
 
     ![](../media/Lab-7/L8T5P3.png)
 
-    **Note:** The months are sorted alphabetically. Let’s fix this.
+    >**Note:** The months are sorted alphabetically. Let’s fix this.
 
     ![](../media/Lab-7/image32.png)
 
@@ -779,19 +779,19 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
     - **You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources**.
 
-    We solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed.
+        We solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed.
 
     - **Your refresh operations take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems**.
 
-    Again, we solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed, so we do not have to worry about full refresh.
+        Again, we solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed, so we do not have to worry about full refresh.
 
     - **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn’t upload on time resulting in your dataset refresh breaking**.
 
-    Pipelines help to solve this problem, by providing the ability to retry refresh on failure and at different intervals.
+        Pipelines help to solve this problem, by providing the ability to retry refresh on failure and at different intervals.
 
     - **It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations**.
 
-    We noticed Dataflows and Lakehouses are efficient and easy to make changes. Typically, preview in Dataflows and Lakehouses do not take long to load.
+        We noticed Dataflows and Lakehouses are efficient and easy to make changes. Typically, preview in Dataflows and Lakehouses do not take long to load.
 
     - **You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac**.
 
