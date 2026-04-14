@@ -97,7 +97,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     ![](../media/Lab-2/image12.png)
 
-11. Sie werden zur **Startseite von Microsoft Fabric** geleitet. Möglicherweise öffnet sich das Dialogfeld „Willkommen zur Fabric-Ansicht“. Sie können entweder **Tour starten** oder **Abbrechen **auswählen.
+11. Sie werden zur **Startseite von Microsoft Fabric** geleitet. Möglicherweise öffnet sich das Dialogfeld „Willkommen zur Fabric-Ansicht“. Sie können entweder **Tour starten** oder **Abbrechen** auswählen.
 
     ![](../media/Lab-2/image13.png)
 
