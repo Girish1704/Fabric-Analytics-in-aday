@@ -72,7 +72,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 1. Select **Shared Access Signature (SAS) (4)** from the Authentication kind dropdown.
 
-1. Copy the **SAS token** and paste it into the SAS token (5) field.
+1. Copy the SAS token and paste it into the SAS token **(5)** field.
 
     - **SAS token:** <inject key="Sas token"></inject>
 

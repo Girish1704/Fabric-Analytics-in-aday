@@ -779,19 +779,19 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
     - **You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources**.
 
-    We solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed.
+        We solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed.
 
     - **Your refresh operations take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems**.
 
-    Again, we solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed, so we do not have to worry about full refresh.
+        Again, we solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Datasets and reports do not have to be refreshed, so we do not have to worry about full refresh.
 
     - **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn’t upload on time resulting in your dataset refresh breaking**.
 
-    Pipelines help to solve this problem, by providing the ability to retry refresh on failure and at different intervals.
+        Pipelines help to solve this problem, by providing the ability to retry refresh on failure and at different intervals.
 
     - **It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations**.
 
-    We noticed Dataflows and Lakehouses are efficient and easy to make changes. Typically, preview in Dataflows and Lakehouses do not take long to load.
+        We noticed Dataflows and Lakehouses are efficient and easy to make changes. Typically, preview in Dataflows and Lakehouses do not take long to load.
 
     - **You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac**.
 
