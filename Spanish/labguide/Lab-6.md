@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Laboratorio 6 
 
-![](../media/Lab-6/es-lab6.png)c
+![](../media/Lab-6/es-lab6.png)
 
 # Contenido
 

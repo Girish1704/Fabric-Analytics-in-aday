@@ -260,7 +260,7 @@ Speichern wir den Bericht, bevor wir ihn verlassen, um Änderungen am Modell vor
     
     >**Hinweis:** Wir stellen dem Berichtsnamen das Präfix „rpt“ voran, was für „Bericht“ steht.
 
-3. Stellen Sie sicher, dass der Bericht im Arbeitsbereich **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** gespeichert wird**.**
+3. Stellen Sie sicher, dass der Bericht im Arbeitsbereich **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** gespeichert wird.
 
 4. Wählen Sie **Speichern** aus. Beachten Sie, dass der Bericht gespeichert ist und Sie sich im Anzeigemodus befinden.
 

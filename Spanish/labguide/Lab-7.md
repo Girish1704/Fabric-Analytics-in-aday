@@ -94,7 +94,9 @@ Comencemos con la opción de creación automática de informes. Y, más adelante
 
 9. Guardemos este informe. En el menú superior, seleccione **Guardar**.
 
-10. Se abre el cuadro de diálogo Guardar el informe. Nombre el informe como **rpt_Sales_Auto_Report** **Nota:** Estamos anteponiendo rpt al nombre del informe, que es la abreviatura de informe (en inglés).
+10. Se abre el cuadro de diálogo Guardar el informe. Nombre el informe como **rpt_Sales_Auto_Report** 
+
+    >**Nota:** Estamos anteponiendo rpt al nombre del informe, que es la abreviatura de informe (en inglés).
 
 11. Asegúrese de que el informe esté guardado en el área de trabajo **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 

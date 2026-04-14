@@ -215,7 +215,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     g. **Erste Benutzerdatenfunktionen erstellen:** In diesem Abschnitt erfahren Sie, wie Sie Benutzerdatenfunktionen erstellen, die zum Verwalten und Transformieren von Benutzerdaten nützlich sind.
 
-        ![](../media/Lab-2/image22.png)
+    ![](../media/Lab-2/image22.png)
 
 4. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück zu Workloads**. Auf diese Weise gelangen Sie zur Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte erkunden können.
 
@@ -259,7 +259,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     f. **Erste Schritte mit Einzelhandelslösungen:** Beginnen Sie mit der Bereitstellung von Einzelhandelslösungen, und implementieren Sie sie in Ihre Projekte.
 
-        ![](../media/Lab-2/image25.png)
+    ![](../media/Lab-2/image25.png)
 
 3. Klicken Sie in der oberen linken Ecke des Bildschirms auf „Zurück zu Workloads“. Auf diese Weise gelangen Sie zur Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte erkunden können.
 
@@ -321,7 +321,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     h. **Erste Schritte mit Aktivator:** Klicken Sie auf die Schaltfläche „Öffnen“, um mit Aktiviatorkonzepten zu beginnen und das Tool effektiv zu nutzen.
 
-        ![](../media/Lab-2/image27.png)
+    ![](../media/Lab-2/image27.png)
 
 3. Klicken Sie in der oberen linken Ecke des Bildschirms auf „Zurück zu Workloads“. Auf diese Weise gelangen Sie zur Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte erkunden können.
 
@@ -380,7 +380,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     j. **Erste API für GraphQL erstellen:** Klicken Sie auf die Schaltfläche „Öffnen“, um zu erfahren, wie Sie eine API für GraphQL erstellen.
 
-        ![](../media/Lab-2/image29.png)
+    ![](../media/Lab-2/image29.png)
 
 3. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück zu Workloads**. Auf diese Weise gelangen Sie zur Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte erkunden können.
 
@@ -426,7 +426,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     e. **Notebooks entwickeln und ausführen:** Klicken Sie auf die Schaltfläche „Öffnen“, um zu erfahren, wie Sie Notebooks für die Datenanalyse entwickeln und ausführen.
 
-        ![](../media/Lab-2/image31.png)
+    ![](../media/Lab-2/image31.png)
 
 3. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück zu Workloads**. Auf diese Weise gelangen Sie zur Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte erkunden können.
 
@@ -480,7 +480,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     b. **Erste Schritte mit Warehouse:** Klicken Sie auf die Schaltfläche „Öffnen“, um zu erfahren, wie Sie ein Warehouse zum Analysieren von Daten verwenden können.
 
-        ![](../media/Lab-2/image33.png)
+    ![](../media/Lab-2/image33.png)
 
 ## Aufgabe 10: Datenbanken-Funktionsbereich
 
@@ -510,7 +510,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     c. **Datenbankvorlagen:** Durchsuchen Sie eine Bibliothek mit vorgefertigten Vorlagen gängiger Datenbankdesigns
 
-        ![](../media/Lab-2/image35.png)
+    ![](../media/Lab-2/image35.png)
 
 3. Klicken Sie in der oberen linken Ecke des Bildschirms auf „Zurück zu Workloads“. Auf diese Weise gelangen Sie zur Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte erkunden können.
 

@@ -194,7 +194,7 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 
     - **Token de SAS:** <inject key="Sas token"></inject>
 
-    ![](../media/Lab-1/image23.png)
+        ![](../media/Lab-1/image23.png)
 
 11. Observe que la carpeta **ADLSData** tiene varias dimensiones: Geo, Product, Reseller y Date. También tiene datos de Sales.
 

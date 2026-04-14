@@ -140,7 +140,7 @@ Al final de este laboratorio, habrá aprendido:
 
 3. Aparecerá un cuadro de diálogo Nuevo lakehouse. Escriba **lh_FAIAD** en el cuadro de texto Nombre.
 
-    **Nota:** lh aquí se refiere al Lakehouse. Vamos a anteponer lh para que sea fácil de identificar y buscar.*
+    > **Nota:** lh aquí se refiere al Lakehouse. Vamos a anteponer lh para que sea fácil de identificar y buscar.*
 
     > **Nota:** Esta característica ya no se encuentra en versión preliminar, **pero aún no necesitamos habilitarla**.
 
@@ -258,7 +258,7 @@ Al final de este laboratorio, habrá aprendido:
 
     f. **Empiece a usar soluciones de datos de comercio minorista:** comience a implementar soluciones de datos de comercio minorista e impleméntelas en sus proyectos.
 
-        ![](../media/Lab-2/image25.png)
+    ![](../media/Lab-2/image25.png)
 
 3. Haga clic en Volver a las cargas de trabajo en la esquina superior izquierda de la pantalla. Esta acción le llevará a la página principal de cargas de trabajo, donde puede explorar otras herramientas o secciones.
 
@@ -320,7 +320,7 @@ Al final de este laboratorio, habrá aprendido:
 
     h. **Comenzar con activador**: haga clic en el botón “Abrir” para comenzar con los conceptos de activador y comenzar a usar la herramienta de manera efectiva.
 
-        ![](../media/Lab-2/image27.png)
+    ![](../media/Lab-2/image27.png)
 
 3. Haga clic en Volver a las cargas de trabajo en la esquina superior izquierda de la pantalla. Esta acción le llevará a la página principal de cargas de trabajo, donde puede explorar otras herramientas o secciones.
 

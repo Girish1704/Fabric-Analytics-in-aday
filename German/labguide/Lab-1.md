@@ -123,7 +123,7 @@ Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert. Die KPIs 
 
 5. Wählen Sie im Streudiagrammvisual den Reseller mit dem Ausreißer aus, um den **Filter zu entfernen**.
 
-6. Sehen wir nun die Produktinformationen nach Produktgruppe und Wiederverkäufer an. Klicken Sie im Balkendiagrammvisual „Sales nach Product Group und Reseller Company“ mit der rechten Maustaste auf den Balken **Packaging Materials** **von Tailspin Toys**, und wählen Sie im Dialogfeld die Option **Drillthrough ausführen -\> Product Detail** aus.
+6. Sehen wir nun die Produktinformationen nach Produktgruppe und Wiederverkäufer an. Klicken Sie im Balkendiagrammvisual „Sales nach Product Group und Reseller Company“ mit der rechten Maustaste auf den Balken **Packaging Materials** **von Tailspin Toys**, und wählen Sie im Dialogfeld die Option **Drillthrough ausführen -> Product Detail** aus.
 
     ![](../media/Lab-1/image16.png)
 
@@ -140,15 +140,15 @@ Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert. Die KPIs 
 
 10. Beachten Sie, dass es zwei Faktentabellen gibt: Sales und PO.
 
-        a. Die Genauigkeit der Sales-Daten richtet sich nach Date, Reseller, Product und People. Date, Reseller, Product und People sind mit Sales in Zusammenhang gesetzt.
+    1. Die Genauigkeit der Sales-Daten richtet sich nach Date, Reseller, Product und People. Date, Reseller, Product und People sind mit Sales in Zusammenhang gesetzt.
 
-        b. Die Genauigkeit von PO-Daten richtet sich nach Date, Product und People. Date, Product und People sind mit PO in Zusammenhang gesetzt.
+    2. Die Genauigkeit von PO-Daten richtet sich nach Date, Product und People. Date, Product und People sind mit PO in Zusammenhang gesetzt.
 
-        c. Wir haben Supplier-Daten nach Product. Supplier steht mit Product in Zusammenhang.
+    3. Wir haben Supplier-Daten nach Product. Supplier steht mit Product in Zusammenhang.
 
-        d. Wir haben Reseller-Standortdaten nach Geo. Geo steht in Zusammenhang mit Reseller.
+    4. Wir haben Reseller-Standortdaten nach Geo. Geo steht in Zusammenhang mit Reseller.
 
-        e. Wir haben Customer-Informationen nach Reseller. Customer steht in Zusammenhang mit Reseller.
+    5. Wir haben Customer-Informationen nach Reseller. Customer steht in Zusammenhang mit Reseller.
 
 ## Aufgabe 3: Power Query-Abfragen überprüfen
 

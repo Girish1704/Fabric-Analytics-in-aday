@@ -1,0 +1,37 @@
+[
+    {
+      "Name": "Fabric - Analyst in a day",
+      "Language": "German",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/tree/March-2026",
+      "Files": [  
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/German/labguide/Lab-1.md",
+          "Order": 1
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/German/labguide/Lab-2.md",
+          "Order": 2
+        },
+           {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/German/labguide/Lab-3.md",
+          "Order": 3
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/German/labguide/Lab-4.md",
+          "Order": 4
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/German/labguide/Lab-5.md",
+          "Order": 5
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/German/labguide/Lab-6.md",
+          "Order": 6
+        },
+            {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/refs/heads/March-2026/German/labguide/Lab-7.md",
+          "Order": 7
+        }
+      ]
+    }
+  ]
