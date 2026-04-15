@@ -1,52 +1,38 @@
-# ![](../media/Lab-7/image4.png)
+# Microsoft Fabric - Fabric Analyst in a Day - Labo 7
+
+# ![](../media/Lab-7/T7.png)
 
 # Sommaire
 
-Introduction
+- Introduction
 
-Power BI
+- Power BI
 
-Tâche 1 : créer automatiquement un état
+    - Tâche 1 : créer automatiquement un état
 
-Tâche 2 : configurer l’arrière-plan d’un nouvel état
+    - Tâche 2 : configurer l’arrière-plan d’un nouvel état
 
-Tâche 3 : ajouter un en-tête à l’état
+    - Tâche 3 : ajouter un en-tête à l’état
 
-Tâche 4 : ajouter des KPI à l’état
+    - Tâche 4 : ajouter des KPI à l’état
 
-Tâche 5 : ajouter un graphique en courbes à l’état
+    - Tâche 5 : ajouter un graphique en courbes à l’état
 
-Tâche 6 : enregistrer l’état
+    - Tâche 6 : enregistrer l’état
 
-Tâche 7 : configurer la colonne Year de la table Date
+    - Tâche 7 : configurer la colonne Year de la table Date
 
-Tâche 8 : configurer la colonne Month Name de la table Date
+    - Tâche 8 : configurer la colonne Month Name de la table Date
 
-Tâche 9 : mettre en forme le graphique en courbes
+    - Tâche 9 : mettre en forme le graphique en courbes
 
-Tâche 10 : connecter Power BI Desktop au modèle sémantique
+    - Tâche 10 : connecter Power BI Desktop au modèle sémantique
 
-Tâche 11 : ajouter de nouvelles données pour simuler le mode Direct Lake
+    - Tâche 11 : ajouter de nouvelles données pour simuler le mode Direct Lake
 
-Nettoyer l’environnement de labo
+- Nettoyer l’environnement de labo
 
-Références
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
+- Références
 
 # Introduction
 
@@ -68,72 +54,57 @@ Dans cette formation, vous avez découvert le lakehouse, ingéré des données d
 
 Commençons par utiliser l’option de création automatique d’un état. Plus tard dans le labo, nous allons recréer l’état dont nous disposons dans Power BI.
 
+1. Revenons à **l’espace de travail Fabric** que vous avez créé dans le labo 2, dénommé **FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
 
-1.  Revenons à **l’espace de travail Fabric FAIAD\_\<username\>** que vous avez créé dans le labo 2, dénommé **FAIAD\_\<username\>.**
-
-
-2.  Cliquez sur l’icône du **sélecteur de l’expérience Fabric** dans la partie inférieure du volet gauche.
+2. Cliquez sur l’icône du **sélecteur de l’expérience Fabric** dans la partie inférieure du volet gauche.
 
     ![](../media/Lab-7/image6.png)
 
-
-3.  La boîte de dialogue Expérience Fabric s’ouvre alors. Cliquez sur **Power BI**. Vous êtes alors redirigé vers la **page d’Accueil Power BI**.
+3. La boîte de dialogue Expérience Fabric s’ouvre alors. Cliquez sur **Power BI**. Vous êtes alors redirigé vers la **page d’Accueil Power BI**.
 
     ![](../media/Lab-7/image7.png)
 
-
-4.  Cliquez sur **Nouveau rapport** dans le menu supérieur.
+4. Cliquez sur **Nouveau rapport** dans le menu supérieur.
 
     ![](../media/Lab-7/image8.png)
 
-
-5.  Vous êtes alors redirigé vers l’écran **Créer votre premier rapport**. Des options permettent de créer un état à l’aide du format Excel ou CSV, saisir des données manuellement ou choisir un modèle sémantique publié. Nous avons créé un modèle sémantique dans les labos précédents, donc utilisons-le. Sélectionnez l’option **Choisir un modèle sémantique publié**.
+5. Vous êtes alors redirigé vers l’écran **Créer votre premier rapport**. Des options permettent de créer un état à l’aide du format Excel ou CSV, saisir des données manuellement ou choisir un modèle sémantique publié. Nous avons créé un modèle sémantique dans les labos précédents, donc utilisons-le. Sélectionnez l’option **Choisir un modèle sémantique publié**.
 
     ![](../media/Lab-7/image9.png)
 
+6. Choisissez un jeu de données à utiliser dans votre état lorsque la page s’ouvre. Notez que nous disposons de plusieurs options. Sélectionnez **sm_FAIAD**.
 
-6.  Choisissez un jeu de données à utiliser dans votre état lorsque la page s’ouvre. Notez que nous disposons de plusieurs options. Sélectionnez **sm_FAIAD**.
+    1. **sm_FAIAD :** il s’agit du modèle sémantique que nous avons créé et à l’aide duquel nous souhaitons créer l’état.
 
+    2. **lh_FAIAD :** il s’agit du lakehouse dans lequel nous avons ingéré toutes les données.
 
-1.  **sm_FAIAD :** il s’agit du modèle sémantique que nous avons créé et à l’aide duquel nous souhaitons créer l’état.
+    3. **Units by Supplier :** il s’agit du jeu de données que nous avons créé à l’aide de T-SQL.
 
-
-2.  **lh_FAIAD :** il s’agit du lakehouse dans lequel nous avons ingéré toutes les données.
-
-
-3.  **Units by Supplier :** il s’agit du jeu de données que nous avons créé à l’aide de T-SQL.
-
-
-7.  Cliquez sur la **flèche en regard du bouton Créer automatiquement un état**. Notez que deux options sont disponibles : Créer automatiquement un état et Créer un rapport vide. Essayons la création automatique, donc sélectionnons **Créer automatiquement un état**.
+7. Cliquez sur la **flèche en regard du bouton Créer automatiquement un état**. Notez que deux options sont disponibles : Créer automatiquement un état et Créer un rapport vide. Essayons la création automatique, donc sélectionnons **Créer automatiquement un état**.
 
     ![](../media/Lab-7/image10.png)
 
-
-8.  Power BI commence alors à créer automatiquement l’état. Une fois l’état prêt, une boîte de dialogue s’affiche en haut de l’écran à droite. Sélectionnez **Afficher l’état maintenant ou il se chargera automatiquement dans quelques secondes.**
+8. Power BI commence alors à créer automatiquement l’état. Une fois l’état prêt, une boîte de dialogue s’affiche en haut de l’écran à droite. Sélectionnez **Afficher l’état maintenant ou il se chargera automatiquement dans quelques secondes.**
 
     ![](../media/Lab-7/image11.png)
 
     **Point de contrôle :** vous disposez d’un état qui ressemble à la capture d’écran ci-dessous. Quelques KPI et quelques visuels de tendance sont disponibles. Il s’agit d’un bon point de départ si vous analysez un nouveau modèle.
 
-    **Remarque :** dans le menu supérieur, notez que vous pouvez modifier l’état ou afficher certaines données sous forme de tables. N’hésitez pas à explorer ces options.
+    >**Remarque :** dans le menu supérieur, notez que vous pouvez modifier l’état ou afficher certaines données sous forme de tables. N’hésitez pas à explorer ces options.
 
-
-9.  Enregistrons cet état. Dans le menu supérieur, cliquez sur **Enregistrer**.
-
+9. Enregistrons cet état. Dans le menu supérieur, cliquez sur **Enregistrer**.
 
 10. La boîte de dialogue Enregistrer votre état s’ouvre alors. Nommez l’état **rpt_Sales_Auto_Report**.
 
     **Remarque :** nous ajoutons le préfixe rpt, à savoir l’abréviation du terme « report » (état) en anglais, au nom de l’état.
 
-
-11. Assurez-vous que l’état est enregistré dans votre espace de travail **FAIAD\_\<username\>.**
-
+11. Assurez-vous que l’état est enregistré dans votre espace de travail **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 12. Cliquez sur **Enregistrer**.
 
     ![](../media/Lab-7/image12.png)
 
-    **Remarque :** l’état créé automatiquement peut être différent pour vous, car il est « créé automatiquement ». Cela dépend également des relations et des mesures créées dans le labo précédent (Labo 6).
+    >**Remarque :** l’état créé automatiquement peut être différent pour vous, car il est « créé automatiquement ». Cela dépend également des relations et des mesures créées dans le labo précédent (Labo 6).
 
     La capture d’écran ci-dessus illustre à quoi **peut** ressembler l’état créé automatiquement si vous avez créé toutes les relations et mesures, y compris les relations facultatives (Labo 6).
 
@@ -145,55 +116,43 @@ Commençons par utiliser l’option de création automatique d’un état. Plus 
 
 Nous allons créer un nouvel état en utilisant un canevas vierge.
 
+1. Dans le **panneau de gauche**, sélectionnez le nom de votre espace de travail, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** pour naviguer dans l’espace de travail.
 
-1.  Dans le **panneau de gauche**, sélectionnez le nom de votre espace de travail, **FAIAD\_\<username\>** pour naviguer dans l’espace de travail.
 
-
-2.  Dans le menu supérieur, cliquez sur **Nouvel élément -\> Rapport.** Vous êtes alors redirigé(e) vers la page Créer votre premier état.
+2. Dans le menu supérieur, cliquez sur **Nouvel élément -\> Rapport.** Vous êtes alors redirigé(e) vers la page Créer votre premier état.
 
     ![](../media/Lab-7/image14.png)
 
-
-3.  Sélectionnez **Choisir un modèle sémantique publié** pour pouvoir choisir le modèle que nous avons créé.
+3. Sélectionnez **Choisir un modèle sémantique publié** pour pouvoir choisir le modèle que nous avons créé.
 
     ![](../media/Lab-7/image15.png)
 
+4. Choisissez un modèle sémantique à utiliser dans la boîte de dialogue de l’état qui s’ouvre. Sélectionnez **sm_FAIAD**.
 
-4.  Choisissez un modèle sémantique à utiliser dans la boîte de dialogue de l’état qui s’ouvre. Sélectionnez **sm_FAIAD**.
-
-
-5.  Cliquez sur la **flèche en regard du bouton Créer automatiquement un état**. Vous êtes alors redirigé vers une page d’état qui ressemble à la page d’état Power BI Desktop.
+5. Cliquez sur la **flèche en regard du bouton Créer automatiquement un état**. Vous êtes alors redirigé vers une page d’état qui ressemble à la page d’état Power BI Desktop.
 
     ![](../media/Lab-7/image16.png)
 
-
-6.  Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Reports** sur le **bureau** de votre environnement de labo.
+6. Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Reports** sur le **bureau** de votre environnement de labo.
 
     Cet état va nous servir de référence. Nous allons commencer par ajouter l’arrière-plan du canevas. Nous allons créer l’en-tête de l’état, ajouter quelques KPI et créer le graphique en courbes Sales over time. Pour gagner du temps et étant entendu que vous avez de l’expérience dans la création de visuels dans Power BI Desktop, nous n’allons pas créer tous les visuels.
 
     ![](../media/Lab-7/image17.png)
 
 
-7.  Revenez au **canevas Power BI** dans votre navigateur.
+7. Revenez au **canevas Power BI** dans votre navigateur.
 
+8. Cliquez sur l’**icône** **Mettre en forme la page** dans le volet Visualisation.
 
-8.  Cliquez sur l’**icône** **Mettre en forme la page** dans le volet Visualisation.
-
-
-9.  Développez la section **Arrière-plan du canevas**.
-
+9. Développez la section **Arrière-plan du canevas**.
 
 10. Cliquez sur **Parcourir** depuis l’option **Image**. La boîte de dialogue Explorateur de fichiers s’ouvre alors.
 
-
 11. Accédez au dossier **Reports** sur le **bureau** de votre environnement de labo.
-
 
 12. Sélectionnez **Summary Background.png**.
 
-
 13. Définissez la liste déroulante **Ajustement de l’image** sur **Ajuster**.
-
 
 14. Réglez le curseur Transparence sur **0 %**.
 
@@ -201,110 +160,79 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 
 ### Tâche 3 : ajouter un en-tête à l’état
 
+1. Ajoutons l’en-tête dans la marge supérieure. Dans le **menu**, cliquez sur **Zone de texte**.
 
-1.  Ajoutons l’en-tête dans la marge supérieure. Dans le **menu**, cliquez sur **Zone de texte**.
+2. Saisissez **Fabrikam Company** comme première ligne de la zone de texte.
 
+3. Saisissez **Sales Report** comme deuxième ligne de la zone de texte.
 
-2.  Saisissez **Fabrikam Company** comme première ligne de la zone de texte.
+4. Mettez en surbrillance **Fabrikam Company** et définissez les champs **Police** sur **Segoe UI** et **Taille de la police** sur **18, gras**.
 
+5. Mettez en surbrillance **État Sales** et définissez les champs **Police** sur **Segoe UI** et **Taille de la police** sur **14**.
 
-3.  Saisissez **Sales Report** comme deuxième ligne de la zone de texte.
+6. Une fois la **zone de texte** sélectionnée, développez **Effets** dans le volet Format à droite.
 
+7. Réglez le curseur **Arrière-plan** sur **Désactivé**.
 
-4.  Mettez en surbrillance **Fabrikam Company** et définissez les champs **Police** sur **Segoe UI** et **Taille de la police** sur **18, gras**.
-
-
-5.  Mettez en surbrillance **État Sales** et définissez les champs **Police** sur **Segoe UI** et **Taille de la police** sur **14**.
-
-
-6.  Une fois la **zone de texte** sélectionnée, développez **Effets** dans le volet Format à droite.
-
-
-7.  Réglez le curseur **Arrière-plan** sur **Désactivé**.
-
-
-8.  Redimensionnez la **zone de texte pour l’adapter à la marge supérieure**.
+8. Redimensionnez la **zone de texte pour l’adapter à la marge supérieure**.
 
     ![](../media/Lab-7/image19.png)
 
 ### Tâche 4 : ajouter des KPI à l’état
 
+1. Ajoutons l’indicateur de performance clé Sales. Cliquez sur l’**espace blanc** dans le canevas pour détourner le focus de la zone de texte.
 
-1.  Ajoutons l’indicateur de performance clé Sales. Cliquez sur l’**espace blanc** dans le canevas pour détourner le focus de la zone de texte.
+2. Dans la section **Visualisations**, cliquez sur le visuel **Carte**.
 
+3. Dans la section **Données**, développez la **table** **Sales**.
 
-2.  Dans la section **Visualisations**, cliquez sur le visuel **Carte**.
-
-
-3.  Dans la section **Données**, développez la **table** **Sales**.
-
-
-4.  Sélectionnez la mesure **Sales**.
+4. Sélectionnez la mesure **Sales**.
 
     ![](../media/Lab-7/image20.png)
 
+5. Une fois le visuel **Carte multiligne sélectionné**, cliquez sur l’icône **Mettre en forme le visuel** dans la section **Visualisations**.
 
-5.  Une fois le visuel **Carte multiligne sélectionné**, cliquez sur l’icône **Mettre en forme le visuel** dans la section **Visualisations**.
+6. Développez la section **Légende**.
 
-
-6.  Développez la section **Légende**.
-
-
-7.  Sélectionnez le menu déroulant **Valeur**. Modifiez la taille de la police à 12.
+7. Sélectionnez le menu déroulant **Valeur**. Modifiez la taille de la police à 12.
 
     ![](../media/Lab-7/image21.png)
 
+8. Avec la section **Légende** toujours sélectionnée, développez la section **Étiquette**.
 
-8.  Avec la section **Légende** toujours sélectionnée, développez la section **Étiquette**.
-
-
-9.  Diminuez la **taille de la police** sur **10**.
-
+9. Diminuez la **taille de la police** sur **10**.
 
 10. Cliquez sur la **liste déroulante Couleur**. La boîte de dialogue Palette de couleurs s’ouvre alors.
 
-
 11. Cliquez sur **Plus de couleurs**.
-
 
 12. Définissez la valeur Hex sur **\#004753**.
 
     ![](../media/Lab-7/image22.png)
 
-
 13. Développez la section **Cartes**.
-
 
 14. Réglez le curseur **Barre d’accentuation** sur **Désactivé**.
 
     ![](../media/Lab-7/image23.png)
 
-
 15. Cliquez sur **Général** dans le volet Visualisations.
-
 
 16. Développez la section **Effets**.
 
-
 17. Réglez le curseur **Arrière-plan** sur **Désactivé**.
-
 
 18. Redimensionnez le **visuel** et déplacez-le vers la **case gauche, comme illustré dans la capture d’écran**.
 
     ![](../media/Lab-7/image24.png)
 
-
 19. Ajoutons une autre carte. Sélectionnez la **carte Sales** que nous venons de créer. **Copiez** le visuel en sélectionnant **Ctrl+C** avec votre clavier.
-
 
 20. **Collez** le visuel à l’aide du raccourci clavier **Ctrl + V**. Notez que le visuel est collé sur le canevas.
 
-
 21. Une fois le **nouveau visuel** mis en surbrillance, supprimez la mesure **Sales** dans la section **Volet Visualisation -\> Générer un élément visuel -\> Champs**.
 
-
 22. Dans la section **Données**, développez la table **Sales** et sélectionnez la mesure **Units**.
-
 
 23. Redimensionnez le **visuel** et **placez-le dans la case située sous le visuel Sales**.
 
@@ -314,17 +242,13 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 
 Créons un graphique en courbes pour visualiser Sales dans le temps par Reseller Company.
 
+1. Cliquez sur l’**espace blanc** dans le canevas pour détourner le focus du visuel Carte multiligne.
 
-1.  Cliquez sur l’**espace blanc** dans le canevas pour détourner le focus du visuel Carte multiligne.
+2. Dans la **section** **Visualisations**, sélectionnez **Graphique en courbes**.
 
+3. Dans la section **Données**, développez la table **Date**.
 
-2.  Dans la **section** **Visualisations**, sélectionnez **Graphique en courbes**.
-
-
-3.  Dans la section **Données**, développez la table **Date**.
-
-
-4.  Cliquez sur le champ **Year**. Notez que le champ Year est une somme par défaut et ajouté à l’axe Y. Résolvons ce problème.
+4. Cliquez sur le champ **Year**. Notez que le champ Year est une somme par défaut et ajouté à l’axe Y. Résolvons ce problème.
 
     ![](../media/Lab-7/image26.png)
 
@@ -332,66 +256,49 @@ Créons un graphique en courbes pour visualiser Sales dans le temps par Reseller
 
 Nous allons enregistrer l’état avant de le quitter pour apporter des modifications au modèle.
 
+1. Dans le menu supérieur, cliquez sur **Fichier -> Enregistrer**.
 
-1.  Dans le menu supérieur, cliquez sur **Fichier -\> Enregistrer**.
-
-
-2.  La boîte de dialogue Enregistrer votre état s’ouvre alors. Nommez l’état **rpt_Sales_Report**.
+2. La boîte de dialogue Enregistrer votre état s’ouvre alors. Nommez l’état **rpt_Sales_Report**.
 
     > **Remarque :** nous ajoutons le préfixe rpt, à savoir l’abréviation du terme « report » (état) en anglais, au nom de l’état.
 
+3. Assurez-vous que l’état est enregistré dans l’espace de travail **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
-3.  Assurez-vous que l’état est enregistré dans l’espace de travail **FAIAD\_\<username\>.**
-
-
-4.  Cliquez sur **Enregistrer**. Notez que l’état est enregistré et que vous êtes en mode Affichage.
+4. Cliquez sur **Enregistrer**. Notez que l’état est enregistré et que vous êtes en mode Affichage.
 
     ![](../media/Lab-7/image27.png)
 
 ### Tâche 7 : configurer la colonne Year de la table Date
 
-
-1.  Dans le **menu supérieur**, cliquez sur **Modifier** pour repasser en mode Édition.
+1. Dans le **menu supérieur**, cliquez sur **Modifier** pour repasser en mode Édition.
 
     ![](../media/Lab-7/image28.png)
 
-
-2.  Dans le **menu supérieur**, sélectionnez **Ouvrir le modèle sémantique**. Notez que le modèle sémantique est ouvert dans une nouvelle fenêtre/un nouvel onglet de navigateur.
+2. Dans le **menu supérieur**, sélectionnez **Ouvrir le modèle sémantique**. Notez que le modèle sémantique est ouvert dans une nouvelle fenêtre/un nouvel onglet de navigateur.
 
     ![](../media/Lab-7/image29.png)
 
+3. Dans le coin supérieur droit, passez au mode **Édition**
 
-3.  Dans le coin supérieur droit, passez au mode **Édition**
+4. Dans le volet **Données** **à droite**, cliquez sur Tables.
 
+5. Développez la table **Date**.
 
-4.  Dans le volet **Données** **à droite**, cliquez sur Tables.
+6. Cliquez sur la colonne **Year**.
 
+7. Dans le volet **Propriétés** à gauche, développez la section **Options avancées**.
 
-5.  Développez la table **Date**.
-
-
-6.  Cliquez sur la colonne **Year**.
-
-
-7.  Dans le volet **Propriétés** à gauche, développez la section **Options avancées**.
-
-
-8.  Dans la liste déroulante **Totaliser par**, sélectionnez **Aucun**.
+8. Dans la liste déroulante **Totaliser par**, sélectionnez **Aucun**.
 
     ![](../media/Lab-7/image30.png)
 
-
-9.  Revenez à **la fenêtre/l’onglet d’état** du navigateur.
-
+9. Revenez à **la fenêtre/l’onglet d’état** du navigateur.
 
 10. Dans le volet **Données** à droite, développez la table **Date**. Notez que Year n’est pas un champ de somme.
 
-
 11. Une fois le visuel **Graphique en courbes** sélectionné, **supprimez Somme de Year** de l’axe Y.
 
-
 12. Sélectionnez le champ **Year** pour l’ajouter à l’**axe X**.
-
 
 13. Développez la table **Sales** et sélectionnez la mesure **Sales**.
 
@@ -399,20 +306,15 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 
 ### Tâche 8 : configurer la colonne Month Name de la table Date
 
+1. Ajoutons le mois à ce graphique. Dans la table Date, faites glisser le champ **MonthNameShort** sous **Year** sur l’**axe des X**. Notez que le visuel est trié selon Sales. Trions-le selon **MonthNameShort**.
 
-1.  Ajoutons le mois à ce graphique. Dans la table Date, faites glisser le champ **MonthNameShort** sous **Year** sur l’**axe des X**. Notez que le visuel est trié selon Sales. Trions-le selon **MonthNameShort**.
+2. Cliquez sur les **points de suspension (…)** dans le coin supérieur droit du visuel.
 
+3. Sélectionnez **Trier axe -\> Year Short_Month_Name**.
 
-2.  Cliquez sur les **points de suspension (…)** dans le coin supérieur droit du visuel.
+4. Cliquez sur les **points de suspension (…)** dans le coin supérieur droit du visuel.
 
-
-3.  Sélectionnez **Trier axe -\> Year Short_Month_Name**.
-
-
-4.  Cliquez sur les **points de suspension (…)** dans le coin supérieur droit du visuel.
-
-
-5.  Sélectionnez **Trier axe -\> Tri croissant**.
+5. Sélectionnez **Trier axe -\> Tri croissant**.
 
     ![](../media/Lab-7/image32.png)
 
@@ -420,23 +322,17 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 
     ![](../media/Lab-7/image33.png)
 
+6. Revenez à **la fenêtre/l’onglet de navigateur** dans laquelle/lequel le modèle sémantique est ouvert.
 
-6.  Revenez à **la fenêtre/l’onglet de navigateur** dans laquelle/lequel le modèle sémantique est ouvert.
+7. Dans le volet **Données**, développez la table **Date**.
 
+8. Sélectionnez la colonne **MonthNameShort**.
 
-7.  Dans le volet **Données**, développez la table **Date**.
-
-
-8.  Sélectionnez la colonne **MonthNameShort**.
-
-
-9.  Dans le volet **Propriétés** à gauche, développez la section **Options avancées**.
-
+9. Dans le volet **Propriétés** à gauche, développez la section **Options avancées**.
 
 10. Dans la liste déroulante **Trier par colonne**, sélectionnez **Month**.
 
     ![](../media/Lab-7/image34.png)
-
 
 11. Revenez à **la fenêtre/l’onglet d’état** du navigateur. Notez maintenant que les mois sont triés correctement.
 
@@ -446,62 +342,45 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 
 Notez à quel point il est facile de mettre à jour le modèle sémantique lors de la création des états. Cela donne des interactions fluides comme Power BI Desktop.
 
+1. Une fois le visuel **Graphique en courbes** sélectionné, développez la table **Reseller** dans la section **Données**.
 
-1.  Une fois le visuel **Graphique en courbes** sélectionné, développez la table **Reseller** dans la section **Données**.
-
-
-2.  Faites glisser le champ **Reseller -\> Reseller Company** vers la section **Légende**.
+2. Faites glisser le champ **Reseller -\> Reseller Company** vers la section **Légende**.
 
     ![](../media/Lab-7/image36.png)
 
+3. Une fois le visuel **Graphique en courbes** sélectionné, cliquez sur l’icône **Mettre en forme le visuel -\> Général** dans la section **Visualisations**.
 
-3.  Une fois le visuel **Graphique en courbes** sélectionné, cliquez sur l’icône **Mettre en forme le visuel -\> Général** dans la section **Visualisations**.
+4. Développer la section **Titre**.
 
+5. Définissez le texte **Titre** sur **Sales over time**.
 
-4.  Développer la section **Titre**.
+6. Développez la section **Effets**.
 
-
-5.  Définissez le texte **Titre** sur **Sales over time**.
-
-
-6.  Développez la section **Effets**.
-
-
-7.  Réglez le curseur **Arrière-plan** sur **Désactivé**.
+7. Réglez le curseur **Arrière-plan** sur **Désactivé**.
 
     ![](../media/Lab-7/image37.png)
 
+8. Dans la section **Visualisations**, cliquez sur l’icône **Mettre en forme le visuel -\> Objet visuel**.
 
-8.  Dans la section **Visualisations**, cliquez sur l’icône **Mettre en forme le visuel -\> Objet visuel**.
-
-
-9.  Développez la section **Lignes**.
-
+9. Développez la section **Lignes**.
 
 10. Dans la liste déroulante **Appliquer les paramètres à -\> Série,** sélectionnez **Tailspin Toys**.
 
-
 11. Développez la section **Couleurs**.
 
+12. Définissez la **couleur** sur **#F17925**.
 
-12. Définissez la **couleur** sur **\#F17925**.
+13. Dans la liste déroulante **Appliquer les paramètres à -> Série,** sélectionnez **Wingtip Toys**.
 
-
-13. Dans la liste déroulante **Appliquer les paramètres à -\> Série,** sélectionnez **Wingtip Toys**.
-
-
-14. Définissez la **couleur** sur **\#004753**.
-
+14. Définissez la **couleur** sur **#004753**.
 
 15. Redimensionnez le **visuel** et déplacez-le vers la **case supérieure droite, comme illustré dans la capture d’écran**.
-
 
 16. Faites défiler le visuel vers la droite et **notez que nous disposons de données jusqu’en avril 2024**.
 
     ![](../media/Lab-7/image38.png)
 
-
-17. Enregistrons l’état en sélectionnant **Fichier -\> Enregistrer** dans le menu.
+17. Enregistrons l’état en sélectionnant **Fichier -> Enregistrer** dans le menu.
 
     Comme indiqué précédemment, nous n’allons pas créer tous les visuels dans ce labo. À votre guise, n’hésitez pas à créer d’autres visuels.
 
@@ -509,49 +388,37 @@ Notez à quel point il est facile de mettre à jour le modèle sémantique lors 
 
 Voyons maintenant à quel point il est facile de connecter Power BI Desktop au modèle sémantique et de créer des visuels.
 
+1. Ouvrez le fichier **FAIADTemplate.pbix** situé dans le dossier **Reports** sur le **bureau** de votre environnement de labo.
 
-1.  Ouvrez le fichier **FAIADTemplate.pbix** situé dans le dossier **Reports** sur le **bureau** de votre environnement de labo.
-
-
-2.  Dans le ruban, cliquez sur **Accueil -\> Catalogue OneLake -\> Modèles sémantiques Power BI**.
+2. Dans le ruban, cliquez sur **Accueil -\> Catalogue OneLake -\> Modèles sémantiques Power BI**.
 
     ![](../media/Lab-7/image39.png)
 
+3. La boîte de dialogue Hub de données OneLake s’ouvre alors. Sélectionnez **sm_FAIAD**, le modèle sémantique que nous avons créé.
 
-3.  La boîte de dialogue Hub de données OneLake s’ouvre alors. Sélectionnez **sm_FAIAD**, le modèle sémantique que nous avons créé.
-
-
-4.  Cliquez sur **Connexion**. Notez que les tables du modèle sémantique se trouvent dans le volet Données.
+4. Cliquez sur **Connexion**. Notez que les tables du modèle sémantique se trouvent dans le volet Données.
 
     ![](../media/Lab-7/image40.png)
 
-
-5.  Dans le **volet gauche**, cliquez sur **Vue Modèle**. Notez que nous pouvons visualiser la relation entre les tables.
+5. Dans le **volet gauche**, cliquez sur **Vue Modèle**. Notez que nous pouvons visualiser la relation entre les tables.
 
     ![](../media/Lab-7/image41.png)
 
+6. Dans le **volet gauche**, cliquez sur **Vue État** pour revenir à la vue État.
 
-6.  Dans le **volet gauche**, cliquez sur **Vue État** pour revenir à la vue État.
+7. Si vous ne l’avez pas encore fait, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Reports** sur le **bureau** de votre environnement de labo.
 
+8. Sélectionnez le **visuel Titre d’état**.
 
-7.  Si vous ne l’avez pas encore fait, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Reports** sur le **bureau** de votre environnement de labo.
-
-
-8.  Sélectionnez le **visuel Titre d’état**.
-
-
-9.  Dans le ruban, cliquez sur **Accueil -\> Copier**.
+9. Dans le ruban, cliquez sur **Accueil -\> Copier**.
 
     ![](../media/Lab-7/image42.png)
 
-
 10. Accédez à **FAIADTemplate.pbix** et cliquez sur le canevas d’état.
 
-
-11. Dans le ruban, cliquez sur **Accueil -\> Coller**.
+11. Dans le ruban, cliquez sur **Accueil -> Coller**.
 
     ![](../media/Lab-7/image43.png)
-
 
 12. De même, copiez-collez les **KPI Sales et Units**. Pour votre information, plusieurs visuels peuvent être copiés-collés ensemble.
 
@@ -559,31 +426,23 @@ Voyons maintenant à quel point il est facile de connecter Power BI Desktop au m
 
     Notez qu’il est facile de copier les visuels d’un état existant et de les coller dans un état qui se connecte au modèle sémantique. Notez que les noms de table, les noms de colonne et les noms de mesure doivent être identiques afin que le copier-coller fonctionne. S’ils ne sont pas identiques, vous pouvez avoir une erreur, mais elle peut être facilement corrigée.
 
-
 13. Accédez à **FAIAD.pbix** et sélectionnez le graphique en courbes Sales over time.
 
-
-14. Dans le ruban, cliquez sur **Accueil -\> Copier**.
-
+14. Dans le ruban, cliquez sur **Accueil -> Copier**.
 
 15. Accédez à **FAIADTemplate.pbix** et cliquez sur le canevas d’état.
 
-
-16. Dans le ruban, cliquez sur **Accueil -\> Coller**. Notez que le visuel ne s’affiche pas. En effet, à l’heure actuelle, le modèle sémantique ne crée pas de hiérarchie à partir du champ de date.
-
+16. Dans le ruban, cliquez sur **Accueil -> Coller**. Notez que le visuel ne s’affiche pas. En effet, à l’heure actuelle, le modèle sémantique ne crée pas de hiérarchie à partir du champ de date.
 
 17. Résolvons ce problème. Dans le volet **Visualisation**, sous l’**axe des X**, supprimez **StartOfMonth**.
 
     ![](../media/Lab-7/image45.png)
 
-
 18. Dans le volet **Données**, développez la table **Date**.
-
 
 19. Faites glisser le champ **StartOfMonth** sur l’**axe des X**. Cela corrige le visuel. Vous devrez peut-être mettre en forme le visuel.
 
     ![](../media/Lab-7/image46.png)
-
 
 20. Enregistrons l’état en cliquant sur **Fichier -\> Enregistrer** dans le ruban.
 
@@ -595,67 +454,49 @@ Explorons le scénario dans lequel les données sont mises à jour dans la sourc
 
 Dans un scénario réel, les données sont mises à jour à la source. Puisque nous sommes dans un environnement de formation, nous allons simuler cela. Nous avons des données Sales jusqu’en avril 2024. Ajoutons les données Sales de mai 2024 en créant un raccourci vers le fichier de mai 2024 dans ADLS Gen2 et en mettant à jour la vue Sales.
 
+1. Revenez au **navigateur**.
 
-1.  Revenez au **navigateur**.
+2. Dans le coin inférieur droit, cliquez sur le **logo Fabric** et passez à la **vue Fabric**.
 
+3. Cliquez sur **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** dans la barre de menus gauche pour accéder à la page d’accueil de l’espace de travail.
 
-2.  Dans le coin inférieur droit, cliquez sur le **logo Fabric** et passez à la **vue Fabric**.
-
-
-3.  Cliquez sur **FAIAD\_\<username\>** dans la barre de menus gauche pour accéder à la page d’accueil de l’espace de travail.
-
-
-4.  Cliquez sur **lh_FAIAD** pour accéder au lakehouse.
+4. Cliquez sur **lh_FAIAD** pour accéder au lakehouse.
 
     ![](../media/Lab-7/image47.png)
 
+5. Dans le volet **Explorateur** à gauche, cliquez sur les **points de suspension** en regard de **Tables**.
 
-5.  Dans le volet **Explorateur** à gauche, cliquez sur les **points de suspension** en regard de **Tables**.
-
-
-6.  Cliquez sur **Nouveau raccourci**.
+6. Cliquez sur **Nouveau raccourci**.
 
     ![](../media/Lab-7/image48.png)
 
-
-7.  La boîte de dialogue Nouveau raccourci s’ouvre alors. Sous **Sources externes**, sélectionnez **Azure Data Lake Storage Gen2**.
+7. La boîte de dialogue Nouveau raccourci s’ouvre alors. Sous **Sources externes**, sélectionnez **Azure Data Lake Storage Gen2**.
 
     ![](../media/Lab-7/image49.png)
 
+8. Comme vous avez créé une connexion plus tôt dans les labos, vous n’avez pas besoin d’en créer une nouvelle ; votre connexion ADLS apparaît sous Connexions existantes.
 
-8.  Comme vous avez créé une connexion plus tôt dans les labos, vous n’avez pas besoin d’en créer une nouvelle ; votre connexion ADLS apparaît sous Connexions existantes.
-
-
-9.  Si vous n’avez pas encore créé cette connexion, cliquez sur **Créer une connexion** et procédez comme suit :
-
+9. Si vous n’avez pas encore créé cette connexion, cliquez sur **Créer une connexion** et procédez comme suit :
 
 10. Sous **Paramètres de connexion -\> URL**, saisissez ce lien : <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>.
-
 
 11. Cliquez sur **Suivant**.
 
     ![](../media/Lab-7/image50.png)
 
-
 12. Vous êtes alors connecté à ADLS Gen2 avec la structure de répertoires s’affichant dans le volet gauche. Développez **Delta-Parquet-Format-FY25**.
 
-
 13. Sélectionnez **Sales.Invoices_May**.
-
 
 14. Cliquez sur **Suivant**.
 
     ![](../media/Lab-7/image51.png)
 
-
 15. Vous êtes alors redirigé vers la boîte de dialogue suivante dans laquelle nous pouvons modifier les noms. Cliquez sur l’**icône Modifier** sous Actions pour **Sales.Invoices_May**.
-
 
 16. Redéfinissez le nom de **Sales.Invoices_May sur InvoicesMay**.
 
-
 17. Cliquez sur la **coche** en regard du nom pour enregistrer la modification.
-
 
 18. Cliquez sur **Créer**.
 
@@ -663,19 +504,156 @@ Dans un scénario réel, les données sont mises à jour à la source. Puisque n
 
     Notez que la table InvoicesMay se trouve désormais dans le **volet Explorateur** à gauche. Nous devons maintenant mettre à jour la vue Sales.
 
-
 19. En **haut** de l’écran à droite, cliquez sur **Lakehouse -\> Point de terminaison analytique SQL**.
 
     ![](../media/Lab-7/image53.png)
 
-
 20. Dans le menu supérieur, cliquez sur **Accueil -\> Nouvelle requête SQL**. Un volet de nouvelle requête SQL s’ouvre alors.
-
 
 21. **Copiez** le code ci-dessous et **collez**-le dans le volet de requête SQL**.**
 
-    > ```sql ALTER VIEW \[dbo\].\[Sales\] AS ( > > select \[\$Outer\].\[InvoiceLineID\] as \[InvoiceLineID\], > > \[\$Outer\].\[InvoiceID\] as \[InvoiceID\], > > \[\$Outer\].\[StockItemID\] as \[StockItemID\], > > \[\$Outer\].\[Quantity\] as \[Quantity\], > > \[\$Outer\].\[UnitPrice\] as \[UnitPrice\], > > \[\$Outer\].\[TaxRate\] as \[TaxRate\], > > \[\$Outer\].\[TaxAmount\] as \[TaxAmount\], > > \[\$Outer\].\[LineProfit\] as \[LineProfit\], > > \[\$Outer\].\[ExtendedPrice\] as \[ExtendedPrice\], > > \[\$Outer\].\[CustomerID\] as \[ResellerID\], > > \[\$Outer\].\[SalespersonPersonID\] as \[SalespersonPersonID\], > > \[\$Outer\].\[InvoiceDate\] as \[InvoiceDate\], > > \[\$Outer\].\[t0_0\] as \[Sales Amount\] > > from > > ( > > select \[\_\].\[InvoiceLineID\] as \[InvoiceLineID\], > > \[\_\].\[InvoiceID\] as \[InvoiceID\], > > \[\_\].\[StockItemID\] as \[StockItemID\], > > \[\_\].\[Quantity\] as \[Quantity\], > > \[\_\].\[UnitPrice\] as \[UnitPrice\], > > \[\_\].\[TaxRate\] as \[TaxRate\], > > \[\_\].\[TaxAmount\] as \[TaxAmount\], > > \[\_\].\[LineProfit\] as \[LineProfit\], > > \[\_\].\[ExtendedPrice\] as \[ExtendedPrice\], > > \[\_\].\[CustomerID\] as \[CustomerID\], > > \[\_\].\[SalespersonPersonID\] as \[SalespersonPersonID\], > > \[\_\].\[InvoiceDate\] as \[InvoiceDate\], > > \[\_\].\[ExtendedPrice\] - \[\_\].\[TaxAmount\] as \[t0_0\] > > from > > ( > > select \[\$Outer\].\[InvoiceLineID\], > > \[\$Outer\].\[InvoiceID\], > > \[\$Outer\].\[StockItemID\], > > \[\$Outer\].\[Quantity\], > > \[\$Outer\].\[UnitPrice\], > > \[\$Outer\].\[TaxRate\], > > \[\$Outer\].\[TaxAmount\], > > \[\$Outer\].\[LineProfit\], > > \[\$Outer\].\[ExtendedPrice\], > > \[\$Inner\].\[CustomerID\], > > \[\$Inner\].\[SalespersonPersonID\], > > \[\$Inner\].\[InvoiceDate\] > > from \[lh_FAIAD\].\[dbo\].\[InvoiceLineItems\] as \[\$Outer\] > > inner join > > ( > > select \[\_\].\[InvoiceID\] as \[InvoiceID2\], > > \[\_\].\[CustomerID\] as \[CustomerID\], > > \[\_\].\[BillToResellerID\] as \[BillToResellerID\], > > \[\_\].\[OrderID\] as \[OrderID\], > > \[\_\].\[DeliveryMethodID\] as \[DeliveryMethodID\], > > \[\_\].\[ContactPersonID\] as \[ContactPersonID\], > > \[\_\].\[AccountsPersonID\] as \[AccountsPersonID\], > > \[\_\].\[SalespersonPersonID\] as \[SalespersonPersonID\], > > \[\_\].\[PackedByPersonID\] as \[PackedByPersonID\], > > \[\_\].\[InvoiceDate\] as \[InvoiceDate\], > > \[\_\].\[CustomerPurchaseOrderNumber\] as \[CustomerPurchaseOrderNumber\], > > \[\_\].\[IsCreditNote\] as \[IsCreditNote\], > > \[\_\].\[CreditNoteReason\] as \[CreditNoteReason\], > > \[\_\].\[Comments\] as \[Comments\], > > \[\_\].\[DeliveryInstructions\] as \[DeliveryInstructions\], > > \[\_\].\[InternalComments\] as \[InternalComments\], > > \[\_\].\[TotalDryItems\] as \[TotalDryItems\], > > \[\_\].\[TotalChillerItems\] as \[TotalChillerItems\], > > \[\_\].\[DeliveryRun\] as \[DeliveryRun\], > > \[\_\].\[RunPosition\] as \[RunPosition\], > > \[\_\].\[ReturnedDeliveryData\] as \[ReturnedDeliveryData\], > > \[\_\].\[ConfirmedDeliveryTime\] as \[ConfirmedDeliveryTime\], > > \[\_\].\[ConfirmedReceivedBy\] as \[ConfirmedReceivedBy\], > > \[\_\].\[LastEditedBy\] as \[LastEditedBy2\], > > \[\_\].\[LastEditedWhen\] as \[LastEditedWhen2\] > > from > > ( > > select \[\$Table\].\[InvoiceID\] as \[InvoiceID\], > > \[\$Table\].\[CustomerID\] as \[CustomerID\], > > \[\$Table\].\[BillToResellerID\] as \[BillToResellerID\], > > \[\$Table\].\[OrderID\] as \[OrderID\], > > \[\$Table\].\[DeliveryMethodID\] as \[DeliveryMethodID\], > > \[\$Table\].\[ContactPersonID\] as \[ContactPersonID\], > > \[\$Table\].\[AccountsPersonID\] as \[AccountsPersonID\], > > \[\$Table\].\[SalespersonPersonID\] as \[SalespersonPersonID\], > > \[\$Table\].\[PackedByPersonID\] as \[PackedByPersonID\], > > \[\$Table\].\[InvoiceDate\] as \[InvoiceDate\], > > \[\$Table\].\[CustomerPurchaseOrderNumber\] as \[CustomerPurchaseOrderNumber\], > > \[\$Table\].\[IsCreditNote\] as \[IsCreditNote\], > > \[\$Table\].\[CreditNoteReason\] as \[CreditNoteReason\], > > \[\$Table\].\[Comments\] as \[Comments\], > > \[\$Table\].\[DeliveryInstructions\] as \[DeliveryInstructions\], > > \[\$Table\].\[InternalComments\] as \[InternalComments\], > > \[\$Table\].\[TotalDryItems\] as \[TotalDryItems\], > > \[\$Table\].\[TotalChillerItems\] as \[TotalChillerItems\], > > \[\$Table\].\[DeliveryRun\] as \[DeliveryRun\], > > \[\$Table\].\[RunPosition\] as \[RunPosition\], > > \[\$Table\].\[ReturnedDeliveryData\] as \[ReturnedDeliveryData\], > > \[\$Table\].\[ConfirmedDeliveryTime\] as \[ConfirmedDeliveryTime\], > > \[\$Table\].\[ConfirmedReceivedBy\] as \[ConfirmedReceivedBy\], > > \[\$Table\].\[LastEditedBy\] as \[LastEditedBy\], > > \[\$Table\].\[LastEditedWhen\] as \[LastEditedWhen\] > > from \[lh_FAIAD\].\[dbo\].\[Invoices\] as \[\$Table\] > > union all select \[\$Table\].\[InvoiceID\] as \[InvoiceID\], > > \[\$Table\].\[CustomerID\] as \[CustomerID\], > > \[\$Table\].\[BillToResellerID\] as \[BillToResellerID\], > > \[\$Table\].\[OrderID\] as \[OrderID\], > > \[\$Table\].\[DeliveryMethodID\] as \[DeliveryMethodID\], > > \[\$Table\].\[ContactPersonID\] as \[ContactPersonID\], > > \[\$Table\].\[AccountsPersonID\] as \[AccountsPersonID\], > > \[\$Table\].\[SalespersonPersonID\] as \[SalespersonPersonID\], > > \[\$Table\].\[PackedByPersonID\] as \[PackedByPersonID\], > > \[\$Table\].\[InvoiceDate\] as \[InvoiceDate\], > > \[\$Table\].\[CustomerPurchaseOrderNumber\] as \[CustomerPurchaseOrderNumber\], > > \[\$Table\].\[IsCreditNote\] as \[IsCreditNote\], > > \[\$Table\].\[CreditNoteReason\] as \[CreditNoteReason\], > > \[\$Table\].\[Comments\] as \[Comments\], > > \[\$Table\].\[DeliveryInstructions\] as \[DeliveryInstructions\], > > \[\$Table\].\[InternalComments\] as \[InternalComments\], > > \[\$Table\].\[TotalDryItems\] as \[TotalDryItems\], > > \[\$Table\].\[TotalChillerItems\] as \[TotalChillerItems\], > > \[\$Table\].\[DeliveryRun\] as \[DeliveryRun\], > > \[\$Table\].\[RunPosition\] as \[RunPosition\], > > \[\$Table\].\[ReturnedDeliveryData\] as \[ReturnedDeliveryData\], > > \[\$Table\].\[ConfirmedDeliveryTime\] as \[ConfirmedDeliveryTime\], > > \[\$Table\].\[ConfirmedReceivedBy\] as \[ConfirmedReceivedBy\], > > \[\$Table\].\[LastEditedBy\] as \[LastEditedBy\], > > \[\$Table\].\[LastEditedWhen\] as \[LastEditedWhen\] > > from \[lh_FAIAD\].\[dbo\].\[InvoicesMay\] as \[\$Table\] > > ) as \[\_\] > > ) as \[\$Inner\] on (\[\$Outer\].\[InvoiceID\] = \[\$Inner\].\[InvoiceID2\] or \[\$Outer\].\[InvoiceID\] is null and \[\$Inner\].\[InvoiceID2\] is null) > > ) as \[\_\] > > ) as \[\$Outer\] > > where exists > > ( > > select 1 > > from > > ( > > select \[ResellerID\] > > from \[lh_FAIAD\].\[dbo\].\[Reseller\] as \[\$Table\] > > ) as \[\$Inner\] > > where \[\$Outer\].\[CustomerID\] = \[\$Inner\].\[ResellerID\] or \[\$Outer\].\[CustomerID\] is null and \[\$Inner\].\[ResellerID\] is null > > ) > > ) ```
-
+    ```
+    ALTER VIEW [dbo].[Sales] AS (
+    select [$Outer].[InvoiceLineID] as [InvoiceLineID],
+        [$Outer].[InvoiceID] as [InvoiceID],
+        [$Outer].[StockItemID] as [StockItemID],
+        [$Outer].[Quantity] as [Quantity],
+        [$Outer].[UnitPrice] as [UnitPrice],
+        [$Outer].[TaxRate] as [TaxRate],
+        [$Outer].[TaxAmount] as [TaxAmount],
+        [$Outer].[LineProfit] as [LineProfit],
+        [$Outer].[ExtendedPrice] as [ExtendedPrice],
+        [$Outer].[CustomerID] as [ResellerID],
+        [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
+        [$Outer].[InvoiceDate] as [InvoiceDate],
+        [$Outer].[t0_0] as [Sales Amount]
+    from 
+    (
+        select [_].[InvoiceLineID] as [InvoiceLineID],
+            [_].[InvoiceID] as [InvoiceID],
+            [_].[StockItemID] as [StockItemID],
+            [_].[Quantity] as [Quantity],
+            [_].[UnitPrice] as [UnitPrice],
+            [_].[TaxRate] as [TaxRate],
+            [_].[TaxAmount] as [TaxAmount],
+            [_].[LineProfit] as [LineProfit],
+            [_].[ExtendedPrice] as [ExtendedPrice],
+            [_].[CustomerID] as [CustomerID],
+            [_].[SalespersonPersonID] as [SalespersonPersonID],
+            [_].[InvoiceDate] as [InvoiceDate],
+            [_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
+        from 
+        (
+            select [$Outer].[InvoiceLineID],
+                [$Outer].[InvoiceID],
+                [$Outer].[StockItemID],
+                [$Outer].[Quantity],
+                [$Outer].[UnitPrice],
+                [$Outer].[TaxRate],
+                [$Outer].[TaxAmount],
+                [$Outer].[LineProfit],
+                [$Outer].[ExtendedPrice],
+                [$Inner].[CustomerID],
+                [$Inner].[SalespersonPersonID],
+                [$Inner].[InvoiceDate]
+            from [lh_FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
+            inner join 
+            (
+                select [_].[InvoiceID] as [InvoiceID2],
+                    [_].[CustomerID] as [CustomerID],
+                    [_].[BillToResellerID] as [BillToResellerID],
+                    [_].[OrderID] as [OrderID],
+                    [_].[DeliveryMethodID] as [DeliveryMethodID],
+                    [_].[ContactPersonID] as [ContactPersonID],
+                    [_].[AccountsPersonID] as [AccountsPersonID],
+                    [_].[SalespersonPersonID] as [SalespersonPersonID],
+                    [_].[PackedByPersonID] as [PackedByPersonID],
+                    [_].[InvoiceDate] as [InvoiceDate],
+                    [_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                    [_].[IsCreditNote] as [IsCreditNote],
+                    [_].[CreditNoteReason] as [CreditNoteReason],
+                    [_].[Comments] as [Comments],
+                    [_].[DeliveryInstructions] as [DeliveryInstructions],
+                    [_].[InternalComments] as [InternalComments],
+                    [_].[TotalDryItems] as [TotalDryItems],
+                    [_].[TotalChillerItems] as [TotalChillerItems],
+                    [_].[DeliveryRun] as [DeliveryRun],
+                    [_].[RunPosition] as [RunPosition],
+                    [_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                    [_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                    [_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                    [_].[LastEditedBy] as [LastEditedBy2],
+                    [_].[LastEditedWhen] as [LastEditedWhen2]
+                from 
+                (
+                    select [$Table].[InvoiceID] as [InvoiceID],
+                        [$Table].[CustomerID] as [CustomerID],
+                        [$Table].[BillToResellerID] as [BillToResellerID],
+                        [$Table].[OrderID] as [OrderID],
+                        [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                        [$Table].[ContactPersonID] as [ContactPersonID],
+                        [$Table].[AccountsPersonID] as [AccountsPersonID],
+                        [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                        [$Table].[PackedByPersonID] as [PackedByPersonID],
+                        [$Table].[InvoiceDate] as [InvoiceDate],
+                        [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                        [$Table].[IsCreditNote] as [IsCreditNote],
+                        [$Table].[CreditNoteReason] as [CreditNoteReason],
+                        [$Table].[Comments] as [Comments],
+                        [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                        [$Table].[InternalComments] as [InternalComments],
+                        [$Table].[TotalDryItems] as [TotalDryItems],
+                        [$Table].[TotalChillerItems] as [TotalChillerItems],
+                        [$Table].[DeliveryRun] as [DeliveryRun],
+                        [$Table].[RunPosition] as [RunPosition],
+                        [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                        [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                        [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                        [$Table].[LastEditedBy] as [LastEditedBy],
+                        [$Table].[LastEditedWhen] as [LastEditedWhen]
+                    from [lh_FAIAD].[dbo].[Invoices] as [$Table]
+                    union all select [$Table].[InvoiceID] as [InvoiceID],
+                        [$Table].[CustomerID] as [CustomerID],
+                        [$Table].[BillToResellerID] as [BillToResellerID],
+                        [$Table].[OrderID] as [OrderID],
+                        [$Table].[DeliveryMethodID] as [DeliveryMethodID],
+                        [$Table].[ContactPersonID] as [ContactPersonID],
+                        [$Table].[AccountsPersonID] as [AccountsPersonID],
+                        [$Table].[SalespersonPersonID] as [SalespersonPersonID],
+                        [$Table].[PackedByPersonID] as [PackedByPersonID],
+                        [$Table].[InvoiceDate] as [InvoiceDate],
+                        [$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
+                        [$Table].[IsCreditNote] as [IsCreditNote],
+                        [$Table].[CreditNoteReason] as [CreditNoteReason],
+                        [$Table].[Comments] as [Comments],
+                        [$Table].[DeliveryInstructions] as [DeliveryInstructions],
+                        [$Table].[InternalComments] as [InternalComments],
+                        [$Table].[TotalDryItems] as [TotalDryItems],
+                        [$Table].[TotalChillerItems] as [TotalChillerItems],
+                        [$Table].[DeliveryRun] as [DeliveryRun],
+                        [$Table].[RunPosition] as [RunPosition],
+                        [$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
+                        [$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
+                        [$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
+                        [$Table].[LastEditedBy] as [LastEditedBy],
+                        [$Table].[LastEditedWhen] as [LastEditedWhen]
+                    from [lh_FAIAD].[dbo].[InvoicesMay] as [$Table]
+                ) as [_]
+            ) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and [$Inner].[InvoiceID2] is null)
+        ) as [_]
+    ) as [$Outer]
+    where exists 
+    (
+        select 1
+        from 
+        (
+            select [ResellerID]
+            from [lh_FAIAD].[dbo].[Reseller] as [$Table]
+        ) as [$Inner]
+        where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and [$Inner].[ResellerID] is null
+    )
+    )
+    ```
 
 22. Dans le menu de requête visuelle, cliquez sur **Exécuter** pour exécuter le code.
 
@@ -683,9 +661,7 @@ Dans un scénario réel, les données sont mises à jour à la source. Puisque n
 
     ![](../media/Lab-7/image54.png)
 
-
 23. Cliquez sur **rpt_Sales_Report** dans la barre de menu de gauche pour revenir à l’état**.**
-
 
 24. Dans le menu supérieur, sélectionnez **l’icône Actualiser**. Notez maintenant que le graphique en courbes comporte des données pour mai 2024. Notez également que le montant des ventes a augmenté.
 
@@ -697,44 +673,39 @@ Dans un scénario réel, les données sont mises à jour à la source. Puisque n
 
     - **Vous devez actualiser votre jeu de données au moins trois fois par jour pour tenir compte des différentes heures de mise à jour des différentes sources de données.**
 
-    Nous avons résolu ce problème à l’aide de Direct Lake. Chaque flux de données individuel est actualisé selon son calendrier. Les jeux de données et les états n’ont pas besoin d’être actualisés.
+        Nous avons résolu ce problème à l’aide de Direct Lake. Chaque flux de données individuel est actualisé selon son calendrier. Les jeux de données et les états n’ont pas besoin d’être actualisés.
 
     - **Vos opérations d’actualisation prennent beaucoup de temps, car vous devez effectuer chaque fois une actualisation complète pour capturer toutes les mises à jour survenues sur les systèmes sources.**
 
-    Encore une fois, nous avons résolu ce problème à l’aide de Direct Lake. Chaque flux de données individuel est actualisé selon son calendrier. Les jeux de données et les états n’ont pas besoin d’être actualisés, donc nous n’avons pas à nous soucier d’une actualisation complète.
+        Encore une fois, nous avons résolu ce problème à l’aide de Direct Lake. Chaque flux de données individuel est actualisé selon son calendrier. Les jeux de données et les états n’ont pas besoin d’être actualisés, donc nous n’avons pas à nous soucier d’une actualisation complète.
 
     - **Toute erreur dans l’une des sources de données à partir desquelles vous extrayez des données entraîne une interruption de l’actualisation de votre jeu de données. Il arrive souvent que le fichier collaborateur ne soit pas chargé à temps, ce qui aboutit à une interruption de l’actualisation de votre jeu de données.**
 
-    Les pipelines permettent de résoudre ce problème, en rendant possible une actualisation en cas d’échec et à différents intervalles.
+        Les pipelines permettent de résoudre ce problème, en rendant possible une actualisation en cas d’échec et à différents intervalles.
 
     - **Apporter des modifications à votre modèle de données prend beaucoup de temps, car Power Query en prend beaucoup pour actualiser vos aperçus, compte tenu du gros volume de données et des transformations complexes.**
 
-    Nous avons remarqué que les flux de données et les lakehouses sont efficaces et faciles à modifier. En général, le chargement de l’aperçu dans les flux de données et le lakehouse ne prend pas beaucoup de temps.
+        Nous avons remarqué que les flux de données et les lakehouses sont efficaces et faciles à modifier. En général, le chargement de l’aperçu dans les flux de données et le lakehouse ne prend pas beaucoup de temps.
 
     - **Vous avez besoin d’un PC Windows pour utiliser Power BI Desktop, même si le standard de l’entreprise est Mac.**
 
-    Microsoft Fabric est une offre SaaS. Il nous suffit d’un navigateur pour accéder au service. Nous n’avons pas besoin d’installer de logiciel sur nos bureaux.
+        Microsoft Fabric est une offre SaaS. Il nous suffit d’un navigateur pour accéder au service. Nous n’avons pas besoin d’installer de logiciel sur nos bureaux.
 
 # Nettoyer l’environnement de labo
 
 Une fois que vous êtes prêt à nettoyer l’environnement de labo, procédez comme suit :
 
+1. Sélectionnez l’espace de travail **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** à partir du panneau de gauche pour naviguer vers la page d’accueil de l’espace de travail.
 
-1.  Sélectionnez l’espace de travail **FAIAD\_\<username\>** à partir du panneau de gauche pour naviguer vers la page d’accueil de l’espace de travail.
-
-
-2.  Dans le menu supérieur, cliquez sur **Paramètres de l’espace de travail**.
+2. Dans le menu supérieur, cliquez sur **Paramètres de l’espace de travail**.
 
     ![](../media/Lab-7/image56.png)
 
+3. La boîte de dialogue Paramètres d’espace de travail s’ouvre alors. Dans la section **Général**, faites défiler vers le bas.
 
-3.  La boîte de dialogue Paramètres d’espace de travail s’ouvre alors. Dans la section **Général**, faites défiler vers le bas.
+4. Cliquez sur **Supprimer cet espace de travail**.
 
-
-4.  Cliquez sur **Supprimer cet espace de travail**.
-
-
-5.  La boîte de dialogue Supprimer l’espace de travail s’ouvre alors. Cliquez sur **Supprimer**.
+5. La boîte de dialogue Supprimer l’espace de travail s’ouvre alors. Cliquez sur **Supprimer**.
 
     L’espace de travail et tous les éléments qu’il comporte sont alors supprimés.
 
@@ -786,4 +757,20 @@ Lisez les blogs d’annonces plus détaillés sur l’expérience Fabric :
 
 - [Blog Intégration de Dataverse et Microsoft Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-> © 2023 Microsoft Corporation. Tous droits réservés. > > En effectuant cette démonstration/ce labo, vous acceptez les conditions suivantes : > > La technologie/fonctionnalité décrite dans cette démonstration/ces travaux pratiques est fournie par Microsoft Corporation en vue d’obtenir vos commentaires et de vous fournir une expérience d’apprentissage. Vous pouvez utiliser cette démonstration/ces ateliers uniquement pour évaluer ces technologies et fonctionnalités, et pour fournir des commentaires à Microsoft. Vous ne pouvez pas l’utiliser à d’autres fins. Vous ne pouvez pas modifier, copier, distribuer, transmettre, afficher, effectuer, reproduire, publier, accorder une licence, créer des œuvres dérivées, transférer ou vendre tout ou une partie de cette démonstration/ces ateliers. > > LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES (OU DE TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT EN VUE D’UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT INTERDITE. > > CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES FOURNISSENT CERTAINES FONCTIONNALITÉS DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D’ÉVENTUELS NOUVEAUX CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS. LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D’UTILISATION DE CES FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE DIFFÉRENTE. > > **COMMENTAIRES.** Si vous envoyez des commentaires sur les fonctionnalités, technologies et/ou concepts décrits dans ces ateliers/cette démonstration à Microsoft, vous accordez à Microsoft, sans frais, le droit d’utiliser, de partager et de commercialiser vos commentaires de quelque manière et à quelque fin que ce soit. Vous accordez également à des tiers, sans frais, les droits de brevet nécessaires pour leurs produits, technologies et services en vue de l’utilisation ou de l’interface avec des parties spécifiques d’un logiciel ou d’un service Microsoft incluant les commentaires. Vous n’enverrez pas de commentaires soumis à une licence exigeant que Microsoft accorde une licence pour son logiciel ou sa documentation à des tiers du fait que nous y incluons vos commentaires. Ces droits survivent à ce contrat. > > MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE QUI CONCERNE CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES, Y COMPRIS TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU’ELLES SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D’ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET D’ABSENCE DE CONTREFAÇON. MICROSOFT N’OFFRE AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L’UTILISATION DE CETTE DÉMONSTRATION/CES ATELIERS, OU L’ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CES ATELIERS À QUELQUE FIN QUE CE SOIT. > > **CLAUSE D’EXCLUSION DE RESPONSABILITÉ** > > Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de schanger dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.
+© 2026 Microsoft Corporation. Tous droits réservés.
+
+En effectuant cette démonstration/ce labo, vous acceptez les conditions suivantes :
+
+La technologie/fonctionnalité décrite dans cette démonstration/ce labo est fournie par Microsoft Corporation en vue d’obtenir vos commentaires et de vous fournir une expérience d’apprentissage. ous pouvez utiliser cette démonstration/ce labo uniquement pour évaluer ces technologies et fonctionnalités, et pour fournir des commentaires à Microsoft. Vous ne pouvez pas l’utiliser à d’autres fins. Vous ne pouvez pas modifier, copier, distribuer, transmettre, afficher, effectuer, reproduire, publier, accorder une licence, créer des œuvres dérivées, transférer ou vendre tout ou une partie de cette démonstration/ce labo. 
+
+LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT EN VUE D’UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT INTERDITE.
+
+CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D’ÉVENTUELS NOUVEAUX CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS. LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D’UTILISATION DE CES FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE DIFFÉRENTE.
+
+**COMMENTAIRES.** Si vous envoyez des commentaires sur les fonctionnalités, technologies et/ou concepts décrits dans cette démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans frais, le droit d’utiliser, de partager et de commercialiser vos commentaires de quelque manière et à quelque fin que ce soit. Vous accordez également à des tiers, sans frais, les droits de brevet nécessaires pour leurs produits, technologies et services en vue de l’utilisation ou de l’interface avec des parties spécifiques d’un logiciel ou d’un service Microsoft incluant les commentaires. Vous n’enverrez pas de commentaires soumis à une licence exigeant que Microsoft accorde une licence pour son logiciel ou sa documentation à des tiers du fait que nous y incluons vos commentaires. Ces droits survivent à ce contrat.
+
+MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU’ELLES SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D’ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET D’ABSENCE DE CONTREFAÇON. MICROSOFT N’OFFRE AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L’UTILISATION DE CETTE DÉMONSTRATION/CE LABO, OU L’ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
+
+**CLAUSE D’EXCLUSION DE RESPONSABILITÉ**
+
+Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.

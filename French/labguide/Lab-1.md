@@ -1,6 +1,6 @@
-# 
+# Microsoft Fabric - Fabric Analyst in a Day - Labo 1
 
-![](../media/Lab-1/image4.png)
+![](../media/Lab-1/T1.png)
 
 # Sommaire
 
@@ -70,19 +70,19 @@ Avant de prendre en main Fabric, examinons l’état actuel dans Power BI Deskto
 
 2. Lorsque la boîte de dialogue « Saisissez votre adresse e-mail » apparaît, copiez le **nom d’utilisateur** et collez-le dans le champ **E-mail** de la boîte de dialogue, puis cliquez sur **Continuer**.
 
-    - Adresse e-mail/nom d’utilisateur :
+    - Adresse e-mail/nom d’utilisateur : <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/Lab-1/image8.png)
 
 3. Sur l’onglet Se connecter à Microsoft Azure, vous verrez l’écran de connexion ; saisissez l’adresse e-mail/nom d’utilisateur suivant, puis cliquez sur **Suivant**.
 
-    - Adresse e-mail/nom d’utilisateur :
+    - Adresse e-mail/nom d’utilisateur : <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/Lab-1/image9.png)
 
 4. Saisissez maintenant le **Passe d’accès temporaire** suivant et cliquez sur **Se connecter**.
 
-    - Passe d’accès temporaire :
+    - Passe d’accès temporaire : <inject key="AzureAdUserPassword"></inject>
 
         ![](../media/Lab-1/image10.png)
 
@@ -178,9 +178,9 @@ L’état ci-dessous analyse les ventes de Fabrikam. Les KPI sont répertoriés 
 
 8. Vous pouvez saisir les informations d’identification de la source de données Dataverse en saisissant le **Nom d’utilisateur** et le **Mot de passe**. Les informations d’identification sont fournies ci-après. Une fois que vous avez terminé, cliquez sur **Connecter**.
 
-    - Adresse e-mail/Nom d’utilisateur : disponible dans l’onglet Environnement
+    - Adresse e-mail/Nom d’utilisateur : <inject key="AzureAdUserEmail"></inject>
 
-    - Mot de passe : disponible dans l’onglet Environnement
+    - Mot de passe : <inject key="AzureAdUserPassword"></inject>
 
 9. Cliquez sur la requête **ADLS Base Folder** dans la fenêtre de requêtes. En sélectionnant cette requête, vous devrez entrer les informations d’identification. Cliquez sur **Modifier les informations d’identification**.
 
@@ -188,7 +188,7 @@ L’état ci-dessous analyse les ventes de Fabrikam. Les KPI sont répertoriés 
 
 10. Pour la source de données ADLS, sélectionnez l’option **Signature d’accès partagé (SAS)**, puis saisissez le **jeton SAS** fourni ci-dessous. Cliquez ensuite sur **Connecter**.
 
-    - **Jeton SAS :** Disponible dans l’onglet Environnement
+    - **Jeton SAS :** <inject key="Sas token"></inject>
 
         ![](../media/Lab-1/image24.png)
 
@@ -208,9 +208,9 @@ L’état ci-dessous analyse les ventes de Fabrikam. Les KPI sont répertoriés 
 
 13. Saisissez le **nom d’utilisateur Snowflake** et le **mot de passe Snowflake** fournis ci-après. Utilisez ces informations d’identification pour connecter toutes les tables sous Snowflake à Snowflake, puis cliquez sur **Connecter**.
 
-    - **Nom d’utilisateur Snowflake** : TE_SNOWFLAKE1
+    - **Nom d’utilisateur Snowflake** : <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Mot de passe Snowflake** : 8UpfRpExVDXv2AC1
+    - **Mot de passe Snowflake** : <inject key="SnowFlake Username" enableCopy="false" />
 
         >**Remarque** : si vous avez des difficultés à vous connecter à Snowflake avec les informations d’identification susmentionnées, veuillez utiliser les informations d’identification de secours fournies ci-après.
 
@@ -230,9 +230,9 @@ L’état ci-dessous analyse les ventes de Fabrikam. Les KPI sont répertoriés 
 
 16. Cliquez sur l’option **Compte Microsoft**, puis sur **Se connecter**. Saisissez le nom d’utilisateur et le mot de passe fournis ci-dessous, puis cliquez sur Connecter.
 
-    - **Adresse e-mail/Nom d’utilisateur :** Disponible dans l’onglet Environnement
+    - **Adresse e-mail/Nom d’utilisateur :** <inject key="AzureAdUserEmail"></inject>
 
-    - **Mot de passe :** Disponible dans l’onglet Environnement
+    - **Mot de passe :** <inject key="AzureAdUserPassword"></inject>
 
         ![](../media/Lab-1/image27.png)
 
@@ -288,7 +288,7 @@ Lisez les blogs d’annonces plus détaillés sur l’expérience Fabric :
 
 - [Blog Intégration de Dataverse et Microsoft Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Tous droits réservés.
+© 2026 Microsoft Corporation. Tous droits réservés.
 
 En effectuant cette démonstration/ce labo, vous acceptez les conditions suivantes :
 
