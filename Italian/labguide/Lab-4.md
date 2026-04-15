@@ -1,0 +1,537 @@
+# ![](../media/Lab-4/image4.png)
+
+# Sommario
+
+Introduzione
+
+Flusso di dati Gen2
+
+Attività 1: Copia di query SharePoint nel flusso di dati
+
+Attività 2: Creazione della connessione a SharePoint
+
+Attività 3: Configurazione della destinazione dei dati per la query People
+
+Attività 4: Pubblicazione e ridenominazione del flusso di dati SharePoint
+
+Attività 5: Copia di query di Snowflake nel flusso di dati
+
+Attività 6: Creazione della connessione a Snowflake
+
+Attività 7: Configurazione della destinazione dei dati per le query Supplier e PO
+
+Attività 8: Ridenominazione e pubblicazione del flusso di dati Snowflake
+
+Collegamento al lakehouse interno
+
+Attività 9: Come creare un collegamento a Dataverse
+
+Attività 10: Creazione di un collegamento a un lakehouse
+
+Riferimenti
+
+#
+
+#
+
+#
+
+#
+
+#
+
+#
+
+#
+
+#
+
+# Introduzione
+
+Nel nostro scenario, i dati sui fornitori si trovano in Snowflake, i dati sui clienti si trovano in Dataverse e i dati sui dipendenti si trovano in SharePoint. Tutte queste origini dati vengono aggiornate in momenti diversi. Per ridurre il numero di aggiornamenti dei dati per i flussi di dati, creeremo flussi di dati individuali per le origini dati Snowflake e SharePoint.
+
+**Nota:** è supportata la presenza di più origini dati in un unico flusso di dati.
+
+Il team IT ha già stabilito un collegamento a Dataverse e applicato le necessarie trasformazioni dei dati, eseguendone il mirroring nel file Power BI Desktop. Ha inserito questi dati nel lakehouse nell'area di lavoro Amministrazione e ha concesso l'accesso alle tabelle. Ora creeremo un collegamento alla tabella o alle tabelle create dal team Lakehouse IT.
+
+In questo lab si apprenderà quanto segue:
+
+- Come stabilire una connessione a SharePoint mediante Flusso di dati Gen2 e inserire dati in lakehouse
+
+- Come stabilire una connessione a Snowflake tramite Flusso di dati Gen2 e inserire dati in Lakehouse
+
+- Come inserire dati in un lakehouse condiviso
+
+# Flusso di dati Gen2
+
+### Attività 1: Copia di query SharePoint nel flusso di dati
+
+
+1.  Torneremo quindi all'area di lavoro di Fabric, **FAIAD\_\<nome utente\> (1)** creata nel Lab 2, Attività 8.
+
+
+2.  Selezionare l'opzione **+ Nuovo elemento (2)** nell'angolo in alto a sinistra.
+
+
+3.  Nella sezione **Recupera dati (3)** selezionare **Dataflow Gen2 (4).**
+
+    ![](../media/Lab-4/image6.png)
+
+    Lasciare il nome predefinito e verificare che l'opzione "Abilita integrazione Git" sia selezionata. Quindi, selezionare **Crea**. Si apre la **pagina Flusso di dati**. L'interfaccia di Flusso di dati Gen2 è simile a Power Query in Power BI Desktop. Possiamo copiare le query da Power BI Desktop a Flusso di dati Gen2. Proviamo.
+
+
+4.  Se non è già stato fatto, aprire il file **FAIAD.pbix** che si trova nella cartella **Reports** sul desktop dell'ambiente lab.
+
+
+5.  Nella barra multifunzione selezionare **Home -\> Trasforma dati**. Si apre la finestra Power Query. Come abbiamo visto nei lab precedenti, le query nel pannello di sinistra sono organizzate per origine dati.
+
+
+6.  Nel pannello di sinistra, nella cartella SharepointData, **selezionare la query People**.
+
+
+7.  **Fare clic con il pulsante destro del mouse** e selezionare **Copia**.
+
+    ![](../media/Lab-4/image7.png)
+
+
+8.  Tornare alla schermata **Flusso di dati** nel browser.
+
+
+9.  Nel **riquadro Flusso di dati** premere **CTRL+V** (l'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
+
+    ![](../media/Lab-4/image8.png)
+
+    **Nota:** se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
+
+    ![](../media/Lab-4/image9.png)
+
+    La query è stata incollata ed è disponibile nel pannello di sinistra. Poiché non abbiamo creato una connessione a SharePoint, compare un messaggio di avviso che chiede di configurare la connessione.
+
+    ![](../media/Lab-4/image10.png)
+
+### Attività 2: Creazione della connessione a SharePoint
+
+
+1.  Selezionare **Configura connessione**.
+
+    ![](../media/Lab-4/image11.png)
+
+
+2.  Si apre la finestra di dialogo Connetti a origine dati. Assicurarsi che nel menu a discesa **Connessione** sia selezionato **Crea nuova connessione**.
+
+
+3.  Il **Tipo di autenticazione** dovrebbe essere **Account aziendale**.
+
+
+4.  Selezionare **Connetti**.
+
+    **Nota:** l'accesso verrà eseguito usando le proprie credenziali. Saranno diverse rispetto allo screenshot qui sotto.
+
+    ![](../media/Lab-4/image12.png)
+
+### Attività 3: Configurazione della destinazione dei dati per la query People
+
+Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello di anteprima. Esplora i passaggi applicati delle query. Ora dobbiamo inserire i dati di People nel lakehouse.
+
+
+1.  Selezionare la query **People (1)**.
+
+
+2.  Nella barra multifunzione selezionare **Home -\> Query (2) -\> Aggiungi destinazione dati (3) -\> Lakehouse (4)**.
+
+    ![](../media/Lab-4/image13.png)
+
+
+3.  Si apre la finestra di dialogo Connetti alla destinazione dati. Dobbiamo creare una nuova connessione a Lakehouse. Con l'opzione **Crea nuova connessione** selezionata nel menu a discesa Connessione e** **Tipo di autenticazione impostato su **Account aziendale**, selezionare **Avanti**.
+
+    ![](../media/Lab-4/image14.png)
+
+
+4.  Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione **Nuova tabella** sia selezionato, poiché si sta creando una nuova tabella.
+
+
+5.  Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a **Lakehouse -\> FAIAD\_\<nomeutente\>**.
+
+
+6.  Selezionare **lh_FAIAD**
+
+
+7.  Lasciare il nome della tabella **People**
+
+
+8.  Selezionare **Avanti**.
+
+    ![](../media/Lab-4/image15.png)
+
+
+9.  Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Assicurarsi che l'opzione "**Usa impostazioni automatiche**" sia **abilitata**.
+
+    **Nota:** se si disabilitano le impostazioni automatiche, si potrà notare che sono disponibili opzioni per impostare il metodo di aggiornamento e opzioni dello schema. Dopo aver vagliato le possibilità offerte, assicurarsi che l'opzione "**Usa impostazioni automatiche**" sia **abilitata**.
+
+
+10. Selezionare **Salva impostazioni**.
+
+    ![](../media/Lab-4/image16.png)
+
+### Attività 4: Pubblicazione e ridenominazione del flusso di dati SharePoint
+
+
+1.  Si apre nuovamente la **finestra di Power Query**. Nell'**angolo in basso a destra** nota che la Destinazione dati è impostata su **Lakehouse (1)**.
+
+
+2.  Seleziona **Salva e esegui (2)** nell'angolo in alto a sinistra. Quando vedi la notifica di avvio di un aggiornamento, puoi chiudere il flusso di dati **(3)**
+
+    ![](../media/Lab-4/image17.png)
+
+    **Nota:** sarai reindirizzato all'**area di lavoro FAIAD\_\<nome utente\>**. Il completamento dell'esecuzione del flusso di dati potrebbe richiedere alcuni istanti.
+
+
+3.  **Dataflow 1** è il flusso di dati utilizzato. Rinominiamolo prima di continuare. Fai clic sui **puntini di sospensione (...)** accanto a Dataflow 1. Seleziona **Impostazioni** (mentre il flusso di dati
+    è in esecuzione, non è possibile accedere alle impostazioni).
+
+    ![](../media/Lab-4/image18.png)
+
+
+4.  Si apre la finestra delle impostazioni del flusso di dati. Cambia il **nome** in **df_People_SharePoint (1)**.
+
+
+5.  Nella casella di testo **Descrizione** aggiungi **Dataflow to ingest People data from SharePoint to Lakehouse (2)**.
+
+
+6.  Una volta terminato, chiudi la finestra delle impostazioni **(3)**.
+
+    ![](../media/Lab-4/image19.png)
+
+    Si tornerà all'area di lavoro **FAIAD\_\<nome utente\>**.
+
+
+7.  Selezionare **lh_FAIAD** per spostarsi nel lakehouse.
+
+
+8.  Assicurarsi di essere nella vista Lakehouse (non l'endpoint di Analisi SQL).
+
+
+9.  Notare la tabella **People** ora disponibile nel lakehouse.
+
+    ![](../media/Lab-4/image20.png)
+
+    **Nota:** se le tabelle appena create non sono visibili, selezionare i puntini di sospensione accanto a Tables e selezionare Aggiorna per aggiornare le tabelle.
+
+### Attività 5: Copia di query di Snowflake nel flusso di dati
+
+
+1.  Ora torniamo all'area di lavoro di Fabric, **FAIAD\_\<nome utente\> (1)**.
+
+
+2.  Selezionare l'opzione **+ Nuovo elemento (2)** nell'angolo in alto a sinistra.
+
+
+3.  In Elementi consigliati selezionare **Dataflow Gen2 (3)**.
+
+    ![](../media/Lab-4/image21.png)
+
+    Lasciare il nome predefinito e verificare che l'opzione "Abilita integrazione Git" sia selezionata. Quindi, selezionare **Crea**. Se ricevi un messaggio che indica "Esiste già un flusso di dati con questo nome", modifica il nome in **Flusso di dati 2**. Si aprirà la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di dati, procediamo con la copia delle query da Power BI Desktop a Flusso di dati.
+
+
+4.  Se non è già stato fatto, aprire il file **FAIAD.pbix** che si trova nella cartella **Reports** sul desktop dell'ambiente lab.
+
+
+5.  Nella barra multifunzione selezionare **Home -\> Trasforma dati**. Si apre la finestra Power Query. Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
+
+
+6.  Nel pannello di sinistra selezionare le seguenti query nella cartella **SnowflakeData** tenendo premuto il tasto **CTRL o MAIUSC**:
+
+
+1.  SupplierCategories
+
+
+2.  Suppliers
+
+
+3.  Supplier
+
+
+4.  PO
+
+
+5.  PO Line Items
+
+
+7.  **Fare clic con il pulsante destro del mouse** e selezionare **Copia**.
+
+    ![](../media/Lab-4/image22.png)
+
+
+8.  Tornare al **browser**.
+
+
+9.  Nel **riquadro Flusso di dati** selezionare il **riquadro centrale** e premere **CTRL+V** (l'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
+
+    **Nota:** se si lavora in un ambiente lab, selezionare i **puntini di sospensione (…)** in alto a destra nello schermo. Usare il dispositivo di scorrimento per **abilitare** **VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
+
+    ![](../media/Lab-4/image23.png)
+
+### Attività 6: Creazione della connessione a Snowflake
+
+Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il pannello Query. Poiché non abbiamo creato una connessione a Snowflake, compare un messaggio di avviso che chiede di configurare la connessione.
+
+
+1.  Selezionare **Configura connessione**.
+
+    ![](../media/Lab-4/image24.png)
+
+
+2.  Si apre la finestra di dialogo Connetti a origine dati. Assicurarsi che nel menu a discesa **Connessione** sia selezionato **Crea nuova connessione**.
+
+
+3.  Il **Tipo di autenticazione** dovrebbe essere impostato su **Snowflake**.
+
+
+4.  Immettere il **nome utente Snowflake** e **la password Snowflake** forniti di seguito. Usare queste credenziali per connettere tutte le tabelle in **Snowflake** a Snowflake, quindi selezionare **Connetti**.
+
+    - Nome utente Snowflake: TE_SNOWFLAKE1
+
+    - Password Snowflake: 8UpfRpExVDXv2AC1
+
+    **Nota:** se si verificano problemi di connessione a Snowflake usando le credenziali dei dettagli dell'ambiente, usare le credenziali fornite di seguito.
+
+    - **Nome utente Snowflake:** SNOWFLAKE_BACKUP
+
+    - **Password Snowflake:** 8UpfRpExVDXv2AC1.
+
+
+5.  Selezionare **Connetti**.
+
+    ![](../media/Lab-4/image25.png)
+
+    Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello di anteprima. Esplorare i Passaggi applicati delle query. In genere, la query Suppliers contiene i dettagli sui fornitori e SupplierCategories, come il nome della tabella indica, contiene tutte le categorie di fornitori. Queste due tabelle vengono unite per creare la dimensione Supplier, con le colonne necessarie. Analogamente, uniremo PO Line Items e PO per creare il fatto PO. Ora dobbiamo inserire i dati di Supplier e PO nel lakehouse.
+
+### Attività 7: Configurazione della destinazione dei dati per le query Supplier e PO
+
+
+1.  Selezionare la query **Supplier (1)**.
+
+
+2.  Nella barra multifunzione selezionare **Home (2) -\> Aggiungi destinazione dati (3) -\> Lakehouse (4).**
+
+    ![](../media/Lab-4/image26.png)
+
+
+3.  Si apre la finestra di dialogo Connetti alla destinazione dati. Nel **menu a discesa Connessione** seleziona **Lakehouse odl_user\_\<username\> (nessuno)**.
+
+
+4.  Selezionare **Avanti**.
+
+    ![](../media/Lab-4/image27.png)
+
+
+5.  Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione **Nuova tabella** sia selezionato, poiché si sta creando una nuova tabella.
+
+
+6.  Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a **Lakehouse -\> FAIAD\_\<nomeutente\>.**
+
+
+7.  Selezionare **lh_FAIAD**
+
+
+8.  Lasciare il nome della tabella **Supplier**
+
+
+9.  Selezionare **Avanti**.
+
+    ![](../media/Lab-4/image28.png)
+
+
+10. Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare **Salva impostazioni**.
+
+    ![](../media/Lab-4/image29.png)
+
+
+11. Si apre nuovamente la **finestra di Power Query**. Nell'angolo in basso a destra notare che la **Destinazione dati** è impostata su **Lakehouse**. Allo stesso modo, **impostare la Destinazione dati per** **la query PO**. Al termine, la **Destinazione dati** della query **PO** dovrebbe essere impostata su **Lakehouse** come illustrato nello screenshot.
+
+    ![](../media/Lab-4/image30.png)
+
+### Attività 8: Ridenominazione e pubblicazione del flusso di dati Snowflake
+
+
+1.  Nella parte superiore dello schermo seleziona la **freccia accanto a Flusso di dati 2 (il nome potrebbe essere diverso)** per rinominarlo.
+
+
+2.  Nella finestra di dialogo cambiarne il nome in **df_Supplier_Snowflake**
+
+
+3.  Premere **INVIO** per salvare la modifica del nome.
+
+    ![](../media/Lab-4/image31.png)
+
+
+4.  Seleziona **Salva e esegui (1)** nell'angolo in alto a sinistra. Quando vedi la notifica di avvio di un aggiornamento, puoi chiudere il flusso di dati **(2)**
+
+    ![](../media/Lab-4/image32.png)
+
+    Si tornerà all'area di lavoro **FAIAD\_\<nome utente\>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
+
+
+5.  Selezionare **lh_FAIAD** per spostarsi nel lakehouse.
+
+
+6.  Assicurarsi di essere nella vista Lakehouse (non l'endpoint di Analisi SQL).
+
+
+7.  Notare che le tabelle **PO** e **Supplier** ora sono disponibili nel lakehouse.
+
+    ![](../media/Lab-4/image33.png)
+
+    **Nota:** se le tabelle appena create non sono visibili, selezionare i puntini di sospensione accanto a Tables e selezionare Aggiorna per aggiornare le tabelle.
+
+    Ora creiamo un collegamento per importare i dati da Dataverse.
+
+# Collegamento al lakehouse interno
+
+### Attività 9: Come creare un collegamento a Dataverse
+
+Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere nella vista Lakehouse (non nell'endpoint di Analisi SQL).
+
+![](../media/Lab-4/image34.png)
+
+
+1.  Nel pannello **Explorer** selezionare i **puntini di sospensione** accanto a **Tables**.
+
+
+2.  Selezionare **Nuovo collegamento**.
+
+    ![](../media/Lab-4/image35.png)
+
+
+3.  Viene visualizzata la finestra di dialogo Nuovo collegamento. In **Origini esterne** selezionare **Dataverse**.
+
+    **Nota:** nel lab precedente abbiamo seguito passaggi simili per creare un collegamento a Azure Data Lake Storage Gen2.
+
+    ![](../media/Lab-4/image36.png)
+
+
+4.  **Selezionare Nuova connessione (1).** Si aprirà la finestra di dialogo Impostazioni connessione. Immettere **org6c18814a.crm.dynamics.com (2)** come **Dominio ambiente**.
+
+
+5.  Lasciare **Tipo di autenticazione** come **Account aziendale (3).**
+
+
+6.  Se l'accesso non è ancora stato eseguito, selezionare **Accedi.**
+
+    ![](../media/Lab-4/image37.png)
+
+
+7.  Nella finestra di dialogo per l'accesso selezionare l'**account utente** usato per i lab. **Nota:** l'account sarà diverso rispetto allo screenshot di seguito.
+
+    ![](../media/Lab-4/image38.png)
+
+
+8.  Selezionare **Avanti** nella finestra di dialogo Impostazioni connessione.
+
+    Si apre una finestra di dialogo in cui sarà possibile scegliere un bucket/una directory diverso da Dataverse. Notare che sono presenti numerosi bucket diversi. Possiamo selezionare i bucket di cui abbiamo bisogno e seguire il processo come nel Lab 3 (usare una query visiva per trasformare i dati e creare viste). Possiamo anche usare il flusso di dati Gen2 come abbiamo fatto in precedenza in questo lab per stabilire una connessione a SharePoint.
+
+    Nel nostro scenario il team IT ha già stabilito un collegamento a Dataverse e applicato le necessarie trasformazioni dei dati, eseguendone il mirroring nel file Power BI Desktop. Ha inserito questi dati nel lakehouse nell'area di lavoro Amministrazione e ha concesso l'accesso alle tabelle. Dal momento che il team IT si è occupato della parte più complessa del lavoro, possiamo creare un collegamento a questo lakehouse nell'area di lavoro Amministrazione.
+
+
+9.  Selezionare **Annulla** nella finestra di dialogo Nuovo collegamento per tornare al lakehouse.
+
+    ![](../media/Lab-4/image39.png)
+
+### Attività 10: Creazione di un collegamento a un lakehouse
+
+
+1.  Nel pannello **Explorer** selezionare i **puntini di sospensione** accanto a **Tables**.
+
+
+2.  Selezionare **Nuovo collegamento**.
+
+    ![](../media/Lab-4/image35.png)
+
+
+3.  Viene visualizzata la finestra di dialogo Nuovo collegamento. Selezionare l'opzione **Microsoft** **OneLake** in Origini interne.
+
+    ![](../media/Lab-4/image40.png)
+
+
+4.  Selezionare **lh_dataverse**.
+
+
+5.  Selezionare **Avanti**.
+
+    ![](../media/Lab-4/image41.png)
+
+
+6.  Nel pannello di sinistra espandere **lh_dataverse -\> Tables**. Notare che l'amministratore IT ha concesso l'accesso alla tabella Customer.
+
+
+7.  Selezionare **Customer**.
+
+
+8.  Selezionare **Avanti**.
+
+    ![](../media/Lab-4/image42.png)
+
+
+9.  Selezionare **Crea** nella successiva finestra di dialogo. Si tornerà al lakehouse lh_FAIAD.
+
+    ![](../media/Lab-4/image43.png)
+
+
+10. Nel pannello **Explorer** a sinistra, notare la tabella **Customer** appena creata.
+
+
+11. Selezionare la tabella **Customer** per visualizzare i dati nel pannello di anteprima.
+
+    ![](../media/Lab-4/image44.png)
+
+    Abbiamo creato un collegamento a un altro lakehouse.
+
+    Ora abbiamo inserito tutti i dati necessari nel lakehouse. Nel prossimo lab pianificheremo un aggiornamento per il flusso di dati di SharePoint.
+
+# Riferimenti
+
+Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione Guida (?) include collegamenti ad alcune risorse utili.
+
+![](../media/Lab-4/image45.png)
+
+Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell'uso di Microsoft Fabric.
+
+- Vedere il post di blog per leggere l'[annuncio completo sulla disponibilità generale di Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+
+- Esplorare Fabric attraverso la [Presentazione guidata](https://aka.ms/Fabric-GuidedTour)
+
+- Iscriversi alla [versione di valutazione gratuita di Microsoft Fabric](https://aka.ms/try-fabric)
+
+- Visitare il [sito Web di Microsoft Fabric](https://aka.ms/microsoft-fabric)
+
+- Acquisire nuove competenze esplorando i [moduli di apprendimento su Fabric](https://aka.ms/learn-fabric)
+
+- Consultare la [documentazione tecnica di Fabric](https://aka.ms/fabric-docs)
+
+- Leggere l'[e-book gratuito introduttivo a Fabric](https://aka.ms/fabric-get-started-ebook)
+
+- Unirsi alla [community di Fabric](https://aka.ms/fabric-community) per pubblicare domande, condividere feedback e imparare dagli altri
+
+Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
+
+- [Blog sull'esperienza Data Factory in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
+
+- [Blog sull'esperienza Synapse Data Engineering in Fabric](https://aka.ms/Fabric-DE-Blog)
+
+- [Blog sull'esperienza Synapse Data Science in Fabric](https://aka.ms/Fabric-DS-Blog)
+
+- [Blog sull'esperienza Synapse Data Warehousing in Fabric](https://aka.ms/Fabric-DW-Blog)
+
+- [Blog sull'esperienza Synapse Real-Time Analytics in Fabric](https://aka.ms/Fabric-RTA-Blog)
+
+- [Blog di annunci di Power BI](https://aka.ms/Fabric-PBI-Blog)
+
+- [Blog sull'esperienza Data Activator in Fabric](https://aka.ms/Fabric-DA-Blog)
+
+- [Blog su amministrazione e governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
+
+- [Blog su OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)
+
+- [Blog sull'integrazione di Dataverse e Microsoft Fabric](https://aka.ms/Dataverse-Fabric-Blog)
+
+> © 2023 Microsoft Corporation. Tutti i diritti sono riservati. > > L'uso della demo/del lab implica l'accettazione delle seguenti condizioni: > > La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite da Microsoft Corporation allo scopo di ottenere feedback dall'utente e offrire un'esperienza di apprendimento. L'utilizzo della demo/del lab è consentito solo per la valutazione delle caratteristiche e delle funzionalità di tale tecnologia e per l'invio di feedback a Microsoft. L'utilizzo per qualsiasi altro scopo non è consentito. È vietato modificare, copiare, distribuire, trasmettere, visualizzare, eseguire, riprodurre, pubblicare, concedere in licenza, usare per la creazione di lavori derivati, trasferire o vendere questa demo/questo lab o parte di essi. > > SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE. > > QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA IN UN AMBIENTE FISICO. > > **FEEDBACK.** L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o documentazione Microsoft imponga a Microsoft di concedere in licenza a terze parti tale software o documentazione. Questi diritti sussisteranno anche dopo la scadenza del presente contratto. > > CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO. > > **CLAUSOLA DI RESPONSABILITÀ** > > Questa demo/questo lab contiene solo una parte delle nuove funzionalità e dei miglioramenti in Microsoft Power BI. Alcune funzionalità potrebbero cambiare nelle versioni future del prodotto. In questa demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non tutte.
