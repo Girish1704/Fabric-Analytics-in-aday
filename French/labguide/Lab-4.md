@@ -1,4 +1,4 @@
-# Microsoft Fabric-Fabric Analyst in a Day-Labo 4
+# Microsoft Fabric - Fabric Analyst in a Day - Labo 4
 
 # ![](../media/Lab-4/T4.png)
 
