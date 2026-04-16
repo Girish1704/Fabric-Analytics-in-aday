@@ -38,7 +38,7 @@ Nous avons des données provenant de différentes sources ingérées dans la lak
 
 # Lakehouse : analyse des données
 
-### Tâche 1 : interroger des données à l’aide de SQL
+## Tâche 1 : interroger des données à l’aide de SQL
 
 1. Revenons à l’espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** que vous avez créé dans le labo 2, tâche 8.
 
@@ -78,7 +78,7 @@ Nous avons des données provenant de différentes sources ingérées dans la lak
 
     ![](../media/Lab-6/image8.png)
 
-### Tâche 2 : visualiser le résultat T-SQL
+## Tâche 2 : visualiser le résultat T-SQL
 
 1. Nous pouvons également visualiser le résultat de cette requête. **Mettez en surbrillance la requête** dans le volet de requête.
 
@@ -114,7 +114,7 @@ Nous avons des données provenant de différentes sources ingérées dans la lak
 
 # Lakehouse : modélisation sémantique
 
-### Tâche 3 : créer un modèle sémantique
+## Tâche 3 : créer un modèle sémantique
 
 1. Dans le menu du point de terminaison analytique SQL, cliquez sur **Nouveau modèle sémantique**.
 
@@ -154,7 +154,7 @@ Nous avons des données provenant de différentes sources ingérées dans la lak
 
     >**Remarque** **:** le mode Direct Lake est plus rapide que le mode DirectQuery.
 
-### Tâche 4 : créer des relations
+## Tâche 4 : créer des relations
 
 Si vous n’êtes pas actuellement dans le modèle sémantique nouvellement créé, rendez-vous à l’endroit approprié
 
@@ -214,7 +214,7 @@ Si vous n’êtes pas actuellement dans le modèle sémantique nouvellement cré
 
     Pour gagner du temps, nous n’allons pas créer toutes les relations. Si le temps le permet, vous pouvez suivre la section facultative à la fin du labo. La section facultative passe en revue les étapes permettant de créer les relations restantes.
 
-### Tâche 5 : créer des mesures
+## Tâche 5 : créer des mesures
 
 Ajoutons quelques mesures dont nous avons besoin pour créer le tableau de bord Sales.
 
@@ -276,7 +276,7 @@ Ajoutons quelques mesures dont nous avons besoin pour créer le tableau de bord 
 
     Nous avons créé un modèle sémantique et l’étape suivante consiste à créer un état. Nous allons le faire dans le prochain labo.
 
-### Tâche 6 : section facultative - Créer des relations
+## Tâche 6 : section facultative - Créer des relations
 
 Ajoutons les relations restantes.
 
@@ -354,7 +354,7 @@ Ajoutons les relations restantes.
 
     ![](../media/Lab-6/image33.png)
 
-### Tâche 7 : section facultative - Créer des mesures
+## Tâche 7 : section facultative - Créer des mesures
 
 Ajoutons les mesures restantes.
 

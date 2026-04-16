@@ -136,7 +136,7 @@ La connexion est établie et vous pouvez afficher les données dans le volet d�
 
     ![](../media/Lab-4/image16.png)
 
-### Tâche 4 : publier et renommer le flux de données SharePoint
+## Tâche 4 : publier et renommer le flux de données SharePoint
 
 1. Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin inférieur droit**, notez que la liste déroulante Destination des données est définie sur **Lakehouse (1)**.
 
@@ -170,7 +170,7 @@ La connexion est établie et vous pouvez afficher les données dans le volet d�
 
     >**Remarque :** si vous ne voyez pas les tables venant d’être créées, cliquez sur les points de suspension en regard de Tables et sélectionnez Actualiser pour actualiser les tables.
 
-### Tâche 5 : copier des requêtes Snowflake dans Dataflow
+## Tâche 5 : copier des requêtes Snowflake dans Dataflow
 
 1. Revenons à l’espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
 
@@ -210,7 +210,7 @@ La connexion est établie et vous pouvez afficher les données dans le volet d�
 
     ![](../media/Lab-4/image23.png)
 
-### Tâche 6 : créer une connexion à Snowflake
+## Tâche 6 : créer une connexion à Snowflake
 
 Notez que les cinq requêtes sont collées et que vous disposez désormais du volet Requêtes à gauche. Comme nous n’avons pas de connexion créée pour Snowflake, un message d’avertissement s’affiche pour vous demander de configurer la connexion.
 
@@ -240,7 +240,7 @@ Notez que les cinq requêtes sont collées et que vous disposez désormais du vo
 
     La connexion est alors établie et vous pouvez afficher les données dans le volet d’aperçu. N’hésitez pas à parcourir les étapes appliquées des requêtes. En substance, la requête Suppliers comporte les détails des fournisseurs et la requête SupplierCategories, comme son nom l’indique, comporte toutes les catégories de fournisseurs. Ces deux tables sont jointes pour créer la dimension Supplier, avec les colonnes dont nous avons besoin. De même, nous avons fusionné la requête PO Line Items avec la requête PO pour créer le fait PO. Nous devons maintenant ingérer les données Supplier et PO dans Lakehouse.
 
-### Tâche 7 : configurer la destination des données pour les requêtes Supplier et PO
+## Tâche 7 : configurer la destination des données pour les requêtes Supplier et PO
 
 1. Sélectionnez la requête **Supplier (1).**
 
@@ -274,7 +274,7 @@ Notez que les cinq requêtes sont collées et que vous disposez désormais du vo
 
     ![](../media/Lab-4/image30.png)
 
-### Tâche 8 : renommer et publier le flux de données Snowflake
+## Tâche 8 : renommer et publier le flux de données Snowflake
 
 1. En haut de l’écran, cliquez sur la **flèche en regard de Flux de données 2 (le nom peut différer)** pour le renommer.
 
@@ -304,7 +304,7 @@ Notez que les cinq requêtes sont collées et que vous disposez désormais du vo
 
 # Raccourci vers le lakehouse interne
 
-### Tâche 9 : créer un raccourci vers Dataverse
+## Tâche 9 : créer un raccourci vers Dataverse
 
 Vous devriez être dans le lakehouse **lh_FAIAD**. Vérifiez que vous vous trouvez dans la vue Lakehouse (et non dans le point de terminaison analytique SQL).
 
@@ -344,7 +344,7 @@ Vous devriez être dans le lakehouse **lh_FAIAD**. Vérifiez que vous vous trouv
 
     ![](../media/Lab-4/image39.png)
 
-### Tâche 10 : créer un raccourci vers un lakehouse
+## Tâche 10 : créer un raccourci vers un lakehouse
 
 1. Dans le volet **Explorateur**, cliquez sur les **points de suspension** en regard de **Tables**.
 

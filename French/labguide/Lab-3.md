@@ -46,7 +46,7 @@ Nous allons commencer par créer un raccourci pour ingérer des données dans un
 
 # Raccourci vers ADLS Gen2
 
-### Tâche 1 : créer un raccourci
+## Tâche 1 : créer un raccourci
 
 Des raccourcis permettent de créer un lien vers l’emplacement cible. Les raccourcis permettent d’accéder aux données sans avoir besoin de les déplacer physiquement dans le lakehouse. Cela s’apparente à la création de raccourcis sur le bureau Windows.
 
@@ -155,7 +155,7 @@ Des raccourcis permettent de créer un lien vers l’emplacement cible. Les racc
 
 # Transformer des données à l’aide d’une requête visuelle
 
-### Tâche 2 : créer une vue Geo à l’aide d’une requête visuelle
+## Tâche 2 : créer une vue Geo à l’aide d’une requête visuelle
 
 1.  Nous pouvons accéder au **lakehouse** à l’aide d’un point de terminaison SQL. Ainsi, nous pouvons interroger les données et créer des vues. En **haut à droite** de l'écran, cliquez sur **Lakehouse (1) -\> Point de terminaison Analytique SQL (2)**.
 
@@ -321,7 +321,7 @@ Des raccourcis permettent de créer un lien vers l’emplacement cible. Les racc
 
     ![](../media/Lab-3/image28.png)
 
-### Tâche 3 : créer une vue Reseller à l’aide d’une requête visuelle
+## Tâche 3 : créer une vue Reseller à l’aide d’une requête visuelle
 
 Créons une vue Reseller en fusionnant la table Customers avec la table BuyingGroups. Cette fois-ci, nous allons créer la vue à l’aide d’une requête visuelle sans ouvrir l’option Power Query.
 
@@ -431,7 +431,7 @@ Créons une vue Reseller en fusionnant la table Customers avec la table BuyingGr
 
     ![](../media/Lab-3/image39.png)
 
-### Tâche 4 : créer une vue Sales à l’aide d’une requête visuelle
+## Tâche 4 : créer une vue Sales à l’aide d’une requête visuelle
 
 Créons la vue Sales en fusionnant les tables InvoiceLineItems et Invoices avec la vue Reseller. Nous disposons de cette requête dans Power BI Desktop. Nous allons copier le code depuis l’Éditeur avancé. Mais avant de copier le code, nous devons créer une table de fusion à l’aide d’une requête visuelle, car la création d’une requête vide n’est pas possible dans la requête visuelle. Essayons cette méthode.
 
@@ -555,7 +555,7 @@ Créons la vue Sales en fusionnant les tables InvoiceLineItems et Invoices avec 
 
     ![](../media/Lab-3/image53.png)
 
-### Tâche 5 : créer une vue Product à l’aide d’une requête visuelle
+## Tâche 5 : créer une vue Product à l’aide d’une requête visuelle
 
 Créons la vue Product en fusionnant les tables **ProductItem**, **ProductItemGroup** et **ProductGroups**. Pour faire avancer les choses, nous allons copier le code dans l’Éditeur avancé.
 
