@@ -696,7 +696,8 @@ Ora creeremo la vista Sales, unendo le tabelle InvoiceLineItems e Invoices e la 
     ![](../media/Lab-3/image50.png)
 
     Se è più semplice, eliminare tutto il codice nell'editor avanzato e incollare il codice sottostante.
-
+    
+    ```
     let
 
     Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
@@ -718,7 +719,7 @@ Ora creeremo la vista Sales, unendo le tabelle InvoiceLineItems e Invoices e la 
     in
 
     \#"Removed Columns"
-
+    ```
 
 27. Si tornerà all'editor di Power Query. A sinistra, nel pannello Query, **fare doppio clic sulla query Merge** per rinominarla.
 

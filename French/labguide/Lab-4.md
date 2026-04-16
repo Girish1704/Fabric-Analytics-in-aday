@@ -50,7 +50,7 @@ L’équipe informatique a déjà établi un lien vers Dataverse et appliqué le
 
 # Dataflow Gen2
 
-### Tâche 1 : copier des requêtes SharePoint dans Dataflow
+## Tâche 1 : copier des requêtes SharePoint dans Dataflow
 
 1. Revenons à l’espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** **(1)** que vous avez créé dans le labo 2, tâche 8.
 
@@ -86,7 +86,7 @@ L’équipe informatique a déjà établi un lien vers Dataverse et appliqué le
 
     ![](../media/Lab-4/image10.png)
 
-### Tâche 2 : créer une connexion SharePoint
+## Tâche 2 : créer une connexion SharePoint
 
 1. Cliquez sur **Configurer la connexion**.
 
@@ -102,7 +102,7 @@ L’équipe informatique a déjà établi un lien vers Dataverse et appliqué le
 
     ![](../media/Lab-4/image12.png)
 
-### Tâche 3 : configurer la destination des données pour la requête People
+## Tâche 3 : configurer la destination des données pour la requête People
 
 La connexion est établie et vous pouvez afficher les données dans le volet d’aperçu. N’hésitez pas à parcourir les étapes appliquées des requêtes. Nous devons maintenant ingérer les données People dans le lakehouse.
 
