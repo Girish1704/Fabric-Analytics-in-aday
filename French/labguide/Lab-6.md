@@ -44,7 +44,7 @@ Nous avons des données provenant de différentes sources ingérées dans la lak
 
 2. Si vous le souhaitez, **réduisez le flux de tâches** pour afficher la liste complète des éléments.
 
-3. Vous voyez trois éléments associés à lh_FAIAD : Lakehouse, Modèle sémantique et Point de terminaison SQL. Nous avons exploré le lakehouse et créé des requêtes visuelles à l’aide du point de terminaison analytique SQL dans un labo précédent. Sélectionnez l’icône **FAIAD_<inject key="Deployment ID" enableCopy="false>** dans le volet de navigation de gauche et choisissez l’option **point de terminaison analytique SQL lh_FAIAD** pour continuer à explorer cette option. Vous êtes alors redirigé vers la **vue SQL** de l’explorateur.
+3. Vous voyez trois éléments associés à lh_FAIAD : Lakehouse, Modèle sémantique et Point de terminaison SQL. Nous avons exploré le lakehouse et créé des requêtes visuelles à l’aide du point de terminaison analytique SQL dans un labo précédent. Sélectionnez l’icône **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** dans le volet de navigation de gauche et choisissez l’option **point de terminaison analytique SQL lh_FAIAD** pour continuer à explorer cette option. Vous êtes alors redirigé vers la **vue SQL** de l’explorateur.
 
     ![](../media/Lab-6/image6.png)
 
@@ -60,7 +60,7 @@ Nous avons des données provenant de différentes sources ingérées dans la lak
 
 5. Collez la **requête SQL ci-dessous** dans la **fenêtre Requête**. Cette requête renvoie les unités par nom de fournisseur. Pour y parvenir, elle joint la table Sales avec les tables Product et Supplier.
 
-    ```
+    ```sql
    SELECT su.SupplierName, SUM(Quantity) as Units
    FROM dbo.Sales s
    JOIN dbo.Product p on p.StockItemID = s.StockItemID
@@ -82,7 +82,7 @@ Nous avons des données provenant de différentes sources ingérées dans la lak
 
 1. Nous pouvons également visualiser le résultat de cette requête. **Mettez en surbrillance la requête** dans le volet de requête.
 
-2. Dans le menu du volet Résultats, cliquez sur l’icône du menu déroulant **-\> Visualiser les résultats**.
+2. Dans le menu du volet Résultats, cliquez sur l’icône du menu déroulant **-> Visualiser les résultats**.
 
     ![](../media/Lab-6/image9.png)
 
@@ -208,7 +208,7 @@ Si vous n’êtes pas actuellement dans le modèle sémantique nouvellement cré
 
     >**Remarque :** toutes nos mises à jour sont enregistrées automatiquement.
 
-    **Point de contrôle :** votre modèle devrait comporter les trois relations entre les tables Sales et Reseller, les tables Sales et Date, et les tables Sales et Product, comme illustré dans la capture d’écran ci-dessous :
+    >**Point de contrôle :** votre modèle devrait comporter les trois relations entre les tables Sales et Reseller, les tables Sales et Date, et les tables Sales et Product, comme illustré dans la capture d’écran ci-dessous :
 
     ![](../media/Lab-6/image23.png)
 
@@ -220,9 +220,9 @@ Ajoutons quelques mesures dont nous avons besoin pour créer le tableau de bord 
 
 1. Cliquez sur la table **Sales** dans la vue de modèle. Nous souhaitons ajouter les mesures à la table Sales.
 
-2. Dans le menu supérieur, cliquez sur **Accueil -\> Nouvelle mesure**. Notez que la barre de formule s’affiche.
+2. Dans le menu supérieur, cliquez sur **Accueil -> Nouvelle mesure**. Notez que la barre de formule s’affiche.
 
-3. Saisissez **Sales = SUM(‘Sales’\[Sales Amount\])** dans la **barre de formule**.
+3. Saisissez **Sales = SUM(‘Sales’[Sales Amount])** dans la **barre de formule**.
 
 4. Cliquez sur la **coche** à gauche de la barre de formule ou appuyez sur la touche **Entrée**.
 
@@ -250,7 +250,7 @@ Ajoutons quelques mesures dont nous avons besoin pour créer le tableau de bord 
 
     ![](../media/Lab-6/image25.png)
 
-15. Une fois la table **Sales** sélectionnée dans le menu supérieur, cliquez sur **Accueil -\> Nouvelle mesure**. Notez que la barre de formule s’affiche.
+15. Une fois la table **Sales** sélectionnée dans le menu supérieur, cliquez sur **Accueil -> Nouvelle mesure**. Notez que la barre de formule s’affiche.
 
 16. Saisissez **Sales Orders = DISTINCTCOUNT(‘Sales’[InvoiceID])** dans la **barre de formule**.
 
@@ -266,7 +266,7 @@ Ajoutons quelques mesures dont nous avons besoin pour créer le tableau de bord 
 
 21. Dans le volet **Données** (à droite), cliquez sur **Modèle**. Notez que cela fournit une vue qui aide à organiser tous les éléments du modèle sémantique.
 
-22. Développez **Modèle sémantique -\> Mesures** pour afficher toutes les mesures que vous venez de créer.
+22. Développez **Modèle sémantique -> Mesures** pour afficher toutes les mesures que vous venez de créer.
 
 23. Vous pouvez également **développer des tables individuelles** pour afficher les colonnes, hiérarchies et mesures dans chacune d’elles.
 
@@ -290,7 +290,7 @@ Ajoutons les relations restantes.
 
 4. Assurez-vous que le champ **Vers la table** est défini sur **People** et le paramètre **Colonne** sur **PersonID**.
 
-5. Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (\*:1)**.
+5. Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (*:1)**.
 
 6. Assurez-vous que le champ **Direction du filtre croisé** est défini sur **À sens unique**.
 
@@ -304,7 +304,7 @@ Ajoutons les relations restantes.
 
 10. Assurez-vous que le champ **Vers la table** est défini sur **Supplier** et le paramètre **Colonne** sur **SupplierID**.
 
-11. Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (\*:1)**.
+11. Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (*:1)**.
 
 12. Assurez-vous que le champ **Direction du** **filtre croisé** est défini sur **À double sens**.
 
@@ -318,7 +318,7 @@ Ajoutons les relations restantes.
 
 16. Assurez-vous que le champ **Vers la table** est défini sur **Geo** et le paramètre **Colonne** sur **CityID**.
 
-17. Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (\*:1)**.
+17. Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (*:1)**.
 
 18. Assurez-vous que le champ **Direction du filtre croisé** est défini sur **À double sens**.
 
@@ -332,13 +332,13 @@ Ajoutons les relations restantes.
 
 22. Assurez-vous que le champ **Vers la table** est défini sur **Reseller** et le paramètre **Colonne** sur **ResellerID**.
 
-23. Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (\*:1)**.
+23. Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (*:1)**.
 
 24. Assurez-vous que le champ **Direction du filtre croisé** est défini sur **À sens unique**.
 
 25. Cliquez sur **Enregistrer**.
 
-    **Point de contrôle :** la boîte de dialogue Gérer les relations devrait ressembler à la capture d’écran ci-dessous.
+    >**Point de contrôle :** la boîte de dialogue Gérer les relations devrait ressembler à la capture d’écran ci-dessous.
 
     ![](../media/Lab-6/image32.png)
 
@@ -350,7 +350,7 @@ Ajoutons les relations restantes.
 
 29. Cliquez sur **Fermer** pour fermer la boîte de dialogue Gérer les relations. Nous avons fini de créer toutes les relations.
 
-    **Point de contrôle :** votre modèle devrait ressembler à la capture d’écran ci-dessous.
+    >**Point de contrôle :** votre modèle devrait ressembler à la capture d’écran ci-dessous.
 
     ![](../media/Lab-6/image33.png)
 
@@ -358,9 +358,9 @@ Ajoutons les relations restantes.
 
 Ajoutons les mesures restantes.
 
-1. Sélectionnez la table **Sales**, puis cliquez sur **Accueil -\> Nouvelle mesure** dans le menu supérieur.
+1. Sélectionnez la table **Sales**, puis cliquez sur **Accueil -> Nouvelle mesure** dans le menu supérieur.
 
-2. Entrez **Avg Order = DIVIDE(\[Sales\], \[Sales Orders\])** dans la barre de formule.
+2. Entrez **Avg Order = DIVIDE([Sales], [Sales Orders])** dans la barre de formule.
 
 3. Cliquez sur la **coche** dans la barre de formule ou appuyez sur la touche Entrée.
 
@@ -376,9 +376,9 @@ Ajoutons les mesures restantes.
 
 8. Procédez de même pour ajouter les mesures suivantes :
 
-    1. Dans la table **Sales, GM = SUM(‘Sales’\[LineProfit\])** au format **Devise avec 0 décimale**.
+    1. Dans la table **Sales, GM = SUM(‘Sales’[LineProfit])** au format **Devise avec 0 décimale**.
 
-    2. Dans la table **Sales**, **GM% = DIVIDE(\[GM\], \[Sales\])** au format **Pourcentage avec 0 décimale**.
+    2. Dans la table **Sales**, **GM% = DIVIDE([GM], [Sales])** au format **Pourcentage avec 0 décimale**.
 
     3. Dans la table **Customer, No of Customers = COUNTROWS(Customer)** au format **Nombre entier avec l’option Séparateur de milliers activée**.
 
@@ -442,6 +442,4 @@ CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE PRODUIT/T
 
 MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU’ELLES SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D’ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET D’ABSENCE DE CONTREFAÇON. MICROSOFT N’OFFRE AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L’UTILISATION DE CETTE DÉMONSTRATION/CE LABO, OU L’ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
 
-**CLAUSE D’EXCLUSION DE RESPONSABILITÉ**
-
-Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.
+**CLAUSE D’EXCLUSION DE RESPONSABILITÉ** Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.

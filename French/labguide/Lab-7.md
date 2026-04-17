@@ -54,7 +54,7 @@ Dans cette formation, vous avez découvert le lakehouse, ingéré des données d
 
 Commençons par utiliser l’option de création automatique d’un état. Plus tard dans le labo, nous allons recréer l’état dont nous disposons dans Power BI.
 
-1. Revenons à **l’espace de travail Fabric** que vous avez créé dans le labo 2, dénommé **FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
+1. Revenons à **l’espace de travail Fabric** que vous avez créé dans le labo 2, dénommé **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 2. Cliquez sur l’icône du **sélecteur de l’expérience Fabric** dans la partie inférieure du volet gauche.
 
@@ -88,7 +88,7 @@ Commençons par utiliser l’option de création automatique d’un état. Plus 
 
     ![](../media/Lab-7/image11.png)
 
-    **Point de contrôle :** vous disposez d’un état qui ressemble à la capture d’écran ci-dessous. Quelques KPI et quelques visuels de tendance sont disponibles. Il s’agit d’un bon point de départ si vous analysez un nouveau modèle.
+    >**Point de contrôle :** vous disposez d’un état qui ressemble à la capture d’écran ci-dessous. Quelques KPI et quelques visuels de tendance sont disponibles. Il s’agit d’un bon point de départ si vous analysez un nouveau modèle.
 
     >**Remarque :** dans le menu supérieur, notez que vous pouvez modifier l’état ou afficher certaines données sous forme de tables. N’hésitez pas à explorer ces options.
 
@@ -96,7 +96,7 @@ Commençons par utiliser l’option de création automatique d’un état. Plus 
 
 10. La boîte de dialogue Enregistrer votre état s’ouvre alors. Nommez l’état **rpt_Sales_Auto_Report**.
 
-    **Remarque :** nous ajoutons le préfixe rpt, à savoir l’abréviation du terme « report » (état) en anglais, au nom de l’état.
+    >**Remarque :** nous ajoutons le préfixe rpt, à savoir l’abréviation du terme « report » (état) en anglais, au nom de l’état.
 
 11. Assurez-vous que l’état est enregistré dans votre espace de travail **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
@@ -119,7 +119,7 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 1. Dans le **panneau de gauche**, sélectionnez le nom de votre espace de travail, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** pour naviguer dans l’espace de travail.
 
 
-2. Dans le menu supérieur, cliquez sur **Nouvel élément -\> Rapport.** Vous êtes alors redirigé(e) vers la page Créer votre premier état.
+2. Dans le menu supérieur, cliquez sur **Nouvel élément -> Rapport.** Vous êtes alors redirigé(e) vers la page Créer votre premier état.
 
     ![](../media/Lab-7/image14.png)
 
@@ -138,7 +138,6 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
     Cet état va nous servir de référence. Nous allons commencer par ajouter l’arrière-plan du canevas. Nous allons créer l’en-tête de l’état, ajouter quelques KPI et créer le graphique en courbes Sales over time. Pour gagner du temps et étant entendu que vous avez de l’expérience dans la création de visuels dans Power BI Desktop, nous n’allons pas créer tous les visuels.
 
     ![](../media/Lab-7/image17.png)
-
 
 7. Revenez au **canevas Power BI** dans votre navigateur.
 
@@ -230,7 +229,7 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 
 20. **Collez** le visuel à l’aide du raccourci clavier **Ctrl + V**. Notez que le visuel est collé sur le canevas.
 
-21. Une fois le **nouveau visuel** mis en surbrillance, supprimez la mesure **Sales** dans la section **Volet Visualisation -\> Générer un élément visuel -\> Champs**.
+21. Une fois le **nouveau visuel** mis en surbrillance, supprimez la mesure **Sales** dans la section **Volet Visualisation -> Générer un élément visuel -> Champs**.
 
 22. Dans la section **Données**, développez la table **Sales** et sélectionnez la mesure **Units**.
 
@@ -344,11 +343,11 @@ Notez à quel point il est facile de mettre à jour le modèle sémantique lors 
 
 1. Une fois le visuel **Graphique en courbes** sélectionné, développez la table **Reseller** dans la section **Données**.
 
-2. Faites glisser le champ **Reseller -\> Reseller Company** vers la section **Légende**.
+2. Faites glisser le champ **Reseller -> Reseller Company** vers la section **Légende**.
 
     ![](../media/Lab-7/image36.png)
 
-3. Une fois le visuel **Graphique en courbes** sélectionné, cliquez sur l’icône **Mettre en forme le visuel -\> Général** dans la section **Visualisations**.
+3. Une fois le visuel **Graphique en courbes** sélectionné, cliquez sur l’icône **Mettre en forme le visuel -> Général** dans la section **Visualisations**.
 
 4. Développer la section **Titre**.
 
@@ -360,11 +359,11 @@ Notez à quel point il est facile de mettre à jour le modèle sémantique lors 
 
     ![](../media/Lab-7/image37.png)
 
-8. Dans la section **Visualisations**, cliquez sur l’icône **Mettre en forme le visuel -\> Objet visuel**.
+8. Dans la section **Visualisations**, cliquez sur l’icône **Mettre en forme le visuel -> Objet visuel**.
 
 9. Développez la section **Lignes**.
 
-10. Dans la liste déroulante **Appliquer les paramètres à -\> Série,** sélectionnez **Tailspin Toys**.
+10. Dans la liste déroulante **Appliquer les paramètres à -> Série,** sélectionnez **Tailspin Toys**.
 
 11. Développez la section **Couleurs**.
 
@@ -390,7 +389,7 @@ Voyons maintenant à quel point il est facile de connecter Power BI Desktop au m
 
 1. Ouvrez le fichier **FAIADTemplate.pbix** situé dans le dossier **Reports** sur le **bureau** de votre environnement de labo.
 
-2. Dans le ruban, cliquez sur **Accueil -\> Catalogue OneLake -\> Modèles sémantiques Power BI**.
+2. Dans le ruban, cliquez sur **Accueil -> Catalogue OneLake -> Modèles sémantiques Power BI**.
 
     ![](../media/Lab-7/image39.png)
 
@@ -444,7 +443,7 @@ Voyons maintenant à quel point il est facile de connecter Power BI Desktop au m
 
     ![](../media/Lab-7/image46.png)
 
-20. Enregistrons l’état en cliquant sur **Fichier -\> Enregistrer** dans le ruban.
+20. Enregistrons l’état en cliquant sur **Fichier -> Enregistrer** dans le ruban.
 
 ## Tâche 11 : ajouter de nouvelles données pour simuler le mode Direct Lake
 
@@ -478,7 +477,7 @@ Dans un scénario réel, les données sont mises à jour à la source. Puisque n
 
 9. Si vous n’avez pas encore créé cette connexion, cliquez sur **Créer une connexion** et procédez comme suit :
 
-10. Sous **Paramètres de connexion -\> URL**, saisissez ce lien : <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>.
+10. Sous **Paramètres de connexion -> URL**, saisissez ce lien : <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>.
 
 11. Cliquez sur **Suivant**.
 
@@ -504,13 +503,13 @@ Dans un scénario réel, les données sont mises à jour à la source. Puisque n
 
     Notez que la table InvoicesMay se trouve désormais dans le **volet Explorateur** à gauche. Nous devons maintenant mettre à jour la vue Sales.
 
-19. En **haut** de l’écran à droite, cliquez sur **Lakehouse -\> Point de terminaison analytique SQL**.
+19. En **haut** de l’écran à droite, cliquez sur **Lakehouse -> Point de terminaison analytique SQL**.
 
     ![](../media/Lab-7/image53.png)
 
-20. Dans le menu supérieur, cliquez sur **Accueil -\> Nouvelle requête SQL**. Un volet de nouvelle requête SQL s’ouvre alors.
+20. Dans le menu supérieur, cliquez sur **Accueil -> Nouvelle requête SQL**. Un volet de nouvelle requête SQL s’ouvre alors.
 
-21. **Copiez** le code ci-dessous et **collez**-le dans le volet de requête SQL**.**
+21. **Copiez** le code ci-dessous et **collez**-le dans le volet de requête SQL.
 
     ```
     ALTER VIEW [dbo].[Sales] AS (
@@ -661,7 +660,7 @@ Dans un scénario réel, les données sont mises à jour à la source. Puisque n
 
     ![](../media/Lab-7/image54.png)
 
-23. Cliquez sur **rpt_Sales_Report** dans la barre de menu de gauche pour revenir à l’état**.**
+23. Cliquez sur **rpt_Sales_Report** dans la barre de menu de gauche pour revenir à l’état.
 
 24. Dans le menu supérieur, sélectionnez **l’icône Actualiser**. Notez maintenant que le graphique en courbes comporte des données pour mai 2024. Notez également que le montant des ventes a augmenté.
 
@@ -771,6 +770,4 @@ CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE PRODUIT/T
 
 MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU’ELLES SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D’ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET D’ABSENCE DE CONTREFAÇON. MICROSOFT N’OFFRE AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L’UTILISATION DE CETTE DÉMONSTRATION/CE LABO, OU L’ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
 
-**CLAUSE D’EXCLUSION DE RESPONSABILITÉ**
-
-Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.
+**CLAUSE D’EXCLUSION DE RESPONSABILITÉ** Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.
