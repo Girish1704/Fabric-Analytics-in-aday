@@ -58,7 +58,7 @@ Attualmente è in fase di creazione un modello semantico in Power BI Premium che
 
 Hai sentito parlare di Microsoft Fabric e hai deciso di provarlo per verificare se può risolvere queste problematiche.
 
-### **Panoramica del report di Power BI Desktop**
+### Panoramica del report di Power BI Desktop
 
 Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop per comprendere le trasformazioni e il modello.
 
@@ -67,6 +67,10 @@ Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop pe
 1. Aprire il file **FAIAD.pbix** contenuto nella cartella **Reports** sul **Desktop** dell'ambiente lab. Il file si aprirà in Power BI Desktop.
 
     ![](../media/Lab-1/image7.png)
+
+    > ### **Nota:** Se Power BI Desktop non risponde nella schermata **“Inserisci il tuo indirizzo email”** e non è possibile digitare, sposta il cursore sull’icona di Power BI nella barra delle applicazioni (1). Quindi chiudi la finestra aggiuntiva vuota (bianca) facendo clic su **X** (2). Questo renderà nuovamente reattiva la finestra principale di Power BI.
+
+    ![](../../english/media/Lab-1/powerbidesktop-note.png)
 
 2. Quando si apre la finestra di dialogo "Immettere l'indirizzo di posta elettronica", copiare il **Nome utente** e incollarlo nel campo **Posta elettronica** della finestra di dialogo, quindi selezionare **Continua**.
 
@@ -118,7 +122,7 @@ Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto
 
 5. Selezionare il Reseller outlier nel grafico a dispersione per **rimuovere il filtro**.
 
-6. Otteniamo i dettagli del prodotto per gruppo di prodotti e rivenditore. Nel grafico a barre Vendite per gruppo di prodotti e azienda rivenditrice **fare clic con il pulsante destro del mouse sulla barra Packaging Materials per Tailspin Toys** e nella finestra di dialogo selezionare **Drill-through -\> Product Detail**.
+6. Otteniamo i dettagli del prodotto per gruppo di prodotti e rivenditore. Nel grafico a barre Vendite per gruppo di prodotti e azienda rivenditrice **fare clic con il pulsante destro del mouse sulla barra Packaging Materials per Tailspin Toys** e nella finestra di dialogo selezionare **Drill-through -> Product Detail**.
 
     ![](../media/Lab-1/image16.png)
 
@@ -146,11 +150,11 @@ Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto
 
 ## Attività 3 - Analisi delle query in Power Query
 
-1. Osserviamo Power Query per comprendere le origini dati. Nella barra multifunzione selezionare **Home -\> Trasforma dati**.
+1. Osserviamo Power Query per comprendere le origini dati. Nella barra multifunzione selezionare **Home -> Trasforma dati**.
 
     ![](../media/Lab-1/image19.png)
 
-2. Si apre la finestra Power Query. Nella barra multifunzione selezionare **Home -\> Impostazioni origine dati**. Si apre la finestra di dialogo Impostazioni origine dati. Scorrendo l'elenco si noterà che vi sono quattro origini dati, come indicato nell'esposizione del problema:
+2. Si apre la finestra Power Query. Nella barra multifunzione selezionare **Home -> Impostazioni origine dati**. Si apre la finestra di dialogo Impostazioni origine dati. Scorrendo l'elenco si noterà che vi sono quattro origini dati, come indicato nell'esposizione del problema:
 
     - Snowflake
 
@@ -234,7 +238,7 @@ Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto
 
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/Lab-1/image27.png)
+        ![](../media/Lab-1/image27.png)
 
 17. La cartella **SharepointData** include la dimensione People.
 
@@ -302,6 +306,6 @@ QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE SOFTWARE/FUNZIONALITÀ DI 
 
 CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
 
-**CLAUSOLA DI RESPONSABILITÀ**
+**CLAUSOLA DI RESPONSABILITÀ** 
 
 Questa demo/questo lab contiene solo una parte delle nuove funzionalità e dei miglioramenti in Microsoft Power BI. Alcune funzionalità potrebbero cambiare nelle versioni future del prodotto. In questa demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non tutte.

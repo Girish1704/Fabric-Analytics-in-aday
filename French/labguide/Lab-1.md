@@ -68,6 +68,10 @@ Avant de prendre en main Fabric, examinons l’état actuel dans Power BI Deskto
 
     ![](../media/Lab-1/image7.png)
 
+    > ### **Remarque :** Si Power BI Desktop ne répond plus sur l’écran **« Entrez votre adresse e-mail »** et que vous ne pouvez pas taper, placez votre curseur sur l’icône Power BI dans la barre des tâches (1). Ensuite, fermez la fenêtre supplémentaire vide (blanche) en cliquant sur **X** (2). Cela rendra à nouveau la fenêtre principale de Power BI réactive.
+
+    ![](../../english/media/Lab-1/powerbidesktop-note.png)
+
 2. Lorsque la boîte de dialogue « Saisissez votre adresse e-mail » apparaît, copiez le **nom d’utilisateur** et collez-le dans le champ **E-mail** de la boîte de dialogue, puis cliquez sur **Continuer**.
 
     - Adresse e-mail/nom d’utilisateur : <inject key="AzureAdUserEmail"></inject>
@@ -302,4 +306,6 @@ CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE PRODUIT/T
 
 MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU’ELLES SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D’ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET D’ABSENCE DE CONTREFAÇON. MICROSOFT N’OFFRE AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L’UTILISATION DE CETTE DÉMONSTRATION/CE LABO, OU L’ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
 
-**CLAUSE D’EXCLUSION DE RESPONSABILITÉ** Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.
+**CLAUSE D’EXCLUSION DE RESPONSABILITÉ** 
+
+Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.

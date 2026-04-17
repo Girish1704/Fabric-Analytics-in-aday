@@ -64,7 +64,7 @@ In questo lab si imparerà a:
 
 Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dati dei fornitori.
 
-1. Torniamo all'area di lavoro Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> ** selezionando l'area di lavoro nel pannello a sinistra.
+1. Torniamo all'area di lavoro Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** selezionando l'area di lavoro nel pannello a sinistra.
 
 2. Per ingrandire il pannello con l'elenco degli artefatti, selezionare la doppia freccia in alto a destra del pannello.
 
@@ -76,8 +76,7 @@ Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dat
 
 4. Posiziona il cursore del mouse sulla riga **df_Supplier_Snowflake**. Seleziona i **puntini di sospensione (…)**.
 
-5. Nota che sono presenti le opzioni per eliminare, aprire e aggiornare il flusso di dati.
-    Esaminiamo la cronologia degli aggiornamenti. Seleziona **Esecuzioni recenti**.
+5. Nota che sono presenti le opzioni per eliminare, aprire e aggiornare il flusso di dati. Esaminiamo la cronologia degli aggiornamenti. Seleziona **Esecuzioni recenti**.
 
     ![](../media/Lab-5/image8.png)
 
@@ -106,15 +105,20 @@ Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dat
     ![](../media/Lab-5/image12.png)
 
 11. Vedrai che nel pannello **Impostazioni** che appare sono disponibili tre opzioni:
-    **Informazioni su:** possiamo modificare il nome del flusso di dati e aggiungere una descrizione. Inoltre, possiamo vedere chi è il proprietario del flusso di dati e l'ultima volta che è stato modificato.   **Approvazione:** consente di specificare se il flusso di dati conterrà il tag **Alzato di livello**     o **Certificato** per consentire agli altri di visualizzarlo.   **Pianifica:** qui è possibile pianificare i flussi di dati.
+    
+    - *Informazioni su:** possiamo modificare il nome del flusso di dati e aggiungere una descrizione. Inoltre, possiamo vedere chi è il proprietario del flusso di dati e l'ultima volta che è stato modificato. 
+    
+    - **Approvazione:** consente di specificare se il flusso di dati conterrà il tag **Alzato di livello** o **Certificato** per consentire agli altri di visualizzarlo.   
+    
+    - **Pianifica:** qui è possibile pianificare i flussi di dati.
 
-    ![](../media/Lab-5/image13.png)
+        ![](../media/Lab-5/image13.png)
 
 12. Seleziona l'opzione **Pianifica**
 
 13. Per attivare una pianificazione, è sufficiente fare clic su **Aggiungi pianificazione**
 
-    > ![](../media/Lab-5/image14.png)
+    ![](../media/Lab-5/image14.png)
 
 14. In questo modo è possibile specificare la cadenza dell'aggiornamento selezionando un'opzione per la proprietà **Repeat**. Per questo scenario è possibile scegliere **Giornaliero (1)**
 
@@ -138,9 +142,9 @@ Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dat
 
 ## Attività 2: Creazione di una pipeline
 
-1. Torniamo all'area di lavoro di Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> ** selezionandola nel pannello di sinistra.
+1. Torniamo all'area di lavoro di Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** selezionandola nel pannello di sinistra.
 
-2. Nel menu in alto seleziona **+ Nuovo elemento (1) -\> Pipeline (2).**
+2. Nel menu in alto seleziona **+ Nuovo elemento (1) -> Pipeline (2).**
 
     ![](../media/Lab-5/image17.png)
 
@@ -176,11 +180,11 @@ Iniziamo a creare la pipeline. Abbiamo bisogno di un'attività per aggiornare il
 
 2. Configureremo l'attività per la connessione al flusso di dati df_People_SharePoint. Nel **riquadro inferiore** seleziona **Impostazioni**.
 
-    >***Nota:** potrebbe essere necessario trascinare il riquadro inferiore verso l'alto per visualizzare le impostazioni.*
+    >**Nota:** potrebbe essere necessario trascinare il riquadro inferiore verso l'alto per visualizzare le impostazioni.
 
     ![](../media/Lab-5/image22.png)
 
-3. Assicurarsi che l'**Area di lavoro** sia impostata sull'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/> **
+3. Assicurarsi che l'**Area di lavoro** sia impostata sull'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 4. Nel menu a discesa **Flusso di dati** selezionare **df_People_SharePoint**. Quando questa attività Flusso di dati viene eseguita, aggiornerà **df_People_SharePoint.** Questa procedura è molto semplice.
 
@@ -206,7 +210,7 @@ Iniziamo a creare la pipeline. Abbiamo bisogno di un'attività per aggiornare il
 
 12. Impostare **Intervallo tra i tentativi (sec)** su **600**.
 
-13. Nel menu selezionare l'icona **Home -\> Salva** per salvare la pipeline.
+13. Nel menu selezionare l'icona **Home -> Salva** per salvare la pipeline.
 
     ![](../media/Lab-5/image24.png)
 
@@ -220,7 +224,7 @@ Iniziamo a creare la pipeline. Abbiamo bisogno di un'attività per aggiornare il
 
 Aggiungiamo un po' più di complessità al nostro scenario. Abbiamo notato che se i dati non sono disponibili alle 09:00, in genere lo sono entro cinque minuti. Se non viene rispettata la finestra temporale, saranno necessari 15 minuti affinché il file sia disponibile. Vogliamo pianificare i nuovi tentativi a cinque e 15 minuti. Vediamo come è possibile ottenere questo risultato creando una nuova pipeline.
 
-1. Nel pannello di sinistra fare clic su **FAIAD_<inject key="Deployment ID" enableCopy="false"/> ** per andare alla home page dell'area di lavoro.
+1. Nel pannello di sinistra fare clic su **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** per andare alla home page dell'area di lavoro.
 
 2. Nel menu in alto, fare clic su + **Nuovo elemento (1)** e nella finestra popup, fare clic su **Pipeline (2)**.
 
@@ -238,7 +242,7 @@ Aggiungiamo un po' più di complessità al nostro scenario. Abbiamo notato che s
 
 3. Nell'elenco di attività fare clic su **Fino a**.
 
-    **Fino a**: è un'attività usata per eseguire l'iterazione finché una condizione non viene soddisfatta.
+    >**Fino a**: è un'attività usata per eseguire l'iterazione finché una condizione non viene soddisfatta.
 
     Nel nostro scenario, ripeteremo e aggiorneremo il flusso di dati finché non avrà esito positivo o finché non avremo provato tre volte.
 
@@ -306,7 +310,7 @@ Aggiungiamo un po' più di complessità al nostro scenario. Abbiamo notato che s
 
 8. Si apre la finestra di dialogo **Generatore di espressioni della pipeline**. Nella metà inferiore della  finestra di dialogo è presente un menu:
 
-    1. **Parametri:** valori passati alla pipeline. Ad esempio, il valore di una pipeline passato a un'altra pipeline. Questi valori possono essere utilizzati in qualsiasi espressione,         ma non possono essere modificati durante l'esecuzione della pipeline.
+    1. **Parametri:** valori passati alla pipeline. Ad esempio, il valore di una pipeline passato a un'altra pipeline. Questi valori possono essere utilizzati in qualsiasi espressione, ma non possono essere modificati durante l'esecuzione della pipeline.
 
     2. **Variabili di sistema:** è possibile usarle nelle espressioni per definire entità all'interno di uno dei servizi, ad esempio ID pipeline, nome pipeline, nome trigger e così via.
 
@@ -318,7 +322,7 @@ Aggiungiamo un po' più di complessità al nostro scenario. Abbiamo notato che s
 
     6. **Variabili di libreria:** le variabili di libreria utilizzano variabili definite nell'elemento Fabric della libreria di variabili. Queste variabili offrono un modo centralizzato per gestire le configurazioni tra le aree di lavoro per supportare i flussi di lavoro CI/CD. Possono essere utilizzate insieme a pipeline, notebook, collegamenti lakehouse e altro ancora.
 
-    ![](../media/Lab-5/image32.png)
+        ![](../media/Lab-5/image32.png)
 
 9. Fai clic su **Funzioni** nel menu.
 
@@ -388,7 +392,7 @@ Aggiungiamo un po' più di complessità al nostro scenario. Abbiamo notato che s
 
 7. Selezionare **Impostazioni** nel riquadro inferiore.
 
-8. Assicurarsi che l'**Area di lavoro** sia impostata sulla propria area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/> **.
+8. Assicurarsi che l'**Area di lavoro** sia impostata sulla propria area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 9. Nel menu a discesa **Flusso di dati** selezionare **df_People_SharePoint**.
 
@@ -432,7 +436,7 @@ Abbiamo configurato l'attività Flusso di dati come abbiamo fatto in precedenza 
 
 10. Si apre la finestra di dialogo Generatore di espressioni della pipeline. Selezionare l'area di testo **Aggiungere contenuto dinamico di seguito usando qualsiasi combinazione di espressioni, funzioni e variabili di sistema (1)**.
 
-11. Nel menu in basso fare clic sui **puntini di sospensione (...) (2)** e selezionare **Variabili (3) -\> varSuccess (4)**. **@variables(‘varSuccess’)** viene immesso nell'area di testo Aggiungere contenuto dinamico di seguito. Tenere presente che quando abbiamo creato le variabili, abbiamo impostato il valore predefinito della variabile varSuccess su Sì. Quindi, assegniamo il valore Sì alla variabile varIsSuccess.
+11. Nel menu in basso fare clic sui **puntini di sospensione (...) (2)** e selezionare **Variabili (3) -> varSuccess (4)**. **@variables(‘varSuccess’)** viene immesso nell'area di testo Aggiungere contenuto dinamico di seguito. Tenere presente che quando abbiamo creato le variabili, abbiamo impostato il valore predefinito della variabile varSuccess su Sì. Quindi, assegniamo il valore Sì alla variabile varIsSuccess.
 
 12. Selezionare **OK**. Si aprirà nuovamente il **riquadro di progettazione dell'iteratore**.
 
@@ -504,7 +508,7 @@ Abbiamo configurato l'attività Flusso di dati come abbiamo fatto in precedenza 
 
 Quindi, dovremo impostare un'attesa di 5 minuti/300 secondi in caso di un primo esito negativo dell'aggiornamento del flusso di dati, prima di un nuovo tentativo. Se l'aggiornamento del flusso di dati non riesce per una seconda volta, dovrà intercorrere un'attesa di 15 minuti/900 secondi prima di un nuovo tentativo. Useremo l'attività Attesa e la variabile varWaitTime per impostare il tempo di attesa.
 
-1. Nel menu in alto selezionare **Attività -> puntini di sospensione (…) -\> Attesa**. L'attività Attesa viene aggiunta al canvas di progettazione.
+1. Nel menu in alto selezionare **Attività -> puntini di sospensione (…) -> Attesa**. L'attività Attesa viene aggiunta al canvas di progettazione.
 
 2. Con l'attività **Attesa** selezionata, nel riquadro inferiore selezionare **Generale**. Assegniamo all'attività un nome e una descrizione.
 
@@ -522,7 +526,7 @@ Quindi, dovremo impostare un'attesa di 5 minuti/300 secondi in caso di un primo 
 
 8. Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere
 
-    ```
+    ```sql
    @if(
        greater(variables('varCounter'), 1),
        if(equals(variables('varCounter'), 2),
@@ -544,11 +548,11 @@ Quindi, dovremo impostare un'attesa di 5 minuti/300 secondi in caso di un primo 
 
     L'espressione è un'istruzione if annidata. Controlla se il valore della variabile varCounter è maggiore di 1.
 
-    Se è true, controlla se il valore della variabile varCounter è 2. Se è true, imposta il tempo di attesa su varWaitTime per 15. Ricordare che abbiamo impostato il valore predefinito di 60 per la variabile varWaitTime. Il risultato sarebbe 60\*15 = 900 secondi. Se il valore della variabile varCounter è diverso da 2 (è maggiore di 2, ossia l'aggiornamento del flusso di dati non è riuscito per 3 volte e l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è impostato su varWaitTime \* 0. Pertanto è pari a 0. Se il valore della variabile varCounter è 1, moltiplicheremo varWaitTime \* 5. Il risultato sarebbe 60\*5 = 300 secondi.
+    Se è true, controlla se il valore della variabile varCounter è 2. Se è true, imposta il tempo di attesa su varWaitTime per 15. Ricordare che abbiamo impostato il valore predefinito di 60 per la variabile varWaitTime. Il risultato sarebbe 60*15 = 900 secondi. Se il valore della variabile varCounter è diverso da 2 (è maggiore di 2, ossia l'aggiornamento del flusso di dati non è riuscito per 3 volte e l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è impostato su varWaitTime * 0. Pertanto è pari a 0. Se il valore della variabile varCounter è 1, moltiplicheremo varWaitTime * 5. Il risultato sarebbe 60*5 = 300 secondi.
 
 9. Selezionare **OK**.
 
-    **Checkpoint:** l'iteratore Fino a dovrebbe presentarsi come illustrato nello screenshot seguente.
+    >**Checkpoint:** l'iteratore Fino a dovrebbe presentarsi come illustrato nello screenshot seguente.
 
     ![](../media/Lab-5/image51.png)
 
@@ -562,11 +566,11 @@ Quindi, dovremo impostare un'attesa di 5 minuti/300 secondi in caso di un primo 
 
 ## Attività 13: Configurazione dell'aggiornamento pianificato per la pipeline
 
-1. Possiamo testare la pipeline di dati selezionando **Home -\> Esegui**.
+1. Possiamo testare la pipeline di dati selezionando **Home -> Esegui**.
 
     >**Nota:** il completamento dell'aggiornamento della pipeline di dati potrebbe richiedere alcuni minuti. Questo è un ambiente di formazione, quindi il file in SharePoint è sempre disponibile. Pertanto, in questo caso la pipeline non avrà mai esito negativo.
 
-2. Possiamo impostare la pipeline in modo che venga eseguita in base a una pianificazione. Nel menu in alto selezionare **Home -\> Pianificazione**. Si apre la finestra Pianificazione.
+2. Possiamo impostare la pipeline in modo che venga eseguita in base a una pianificazione. Nel menu in alto selezionare **Home -> Pianificazione**. Si apre la finestra Pianificazione.
 
 3. Seleziona il pulsante **Aggiungi pianificazione** sotto **Esecuzione pianificata**.
 
@@ -590,7 +594,7 @@ Quindi, dovremo impostare un'attesa di 5 minuti/300 secondi in caso di un primo 
 
     ![](../media/Lab-5/image55.png)
 
-11. Selezionare l'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/> ** nel pannello di sinistra per andare all'area di lavoro**.**
+11. Selezionare l'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** nel pannello di sinistra per andare all'area di lavoro.
 
     >**Nota:** nella schermata Pianificazione non vi è un'opzione per la notifica dell'esito positivo o negativo (come nella pianificazione del flusso di dati). È possibile impostare la notifica aggiungendo un'attività nella pipeline. Non effettueremo questa impostazione in questo lab poiché si tratta di un ambiente lab.
 

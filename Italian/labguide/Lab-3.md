@@ -72,7 +72,7 @@ I collegamenti sono usati per creare un collegamento all'ubicazione di destinazi
 
 9. Selezionare **Firma di accesso condiviso (SAS) (4)** nel menu a discesa Tipo di autenticazione.
 
-10. Copiare il token di firma di accesso condiviso e incollarlo nel campo Token di firma di accesso condiviso (5).
+10. Copiare il token di firma di accesso condiviso e incollarlo nel campo Token di firma di accesso condiviso **(5)**.
 
     - **Token di firma di accesso condiviso:** <inject key="Sas token"></inject>
 
@@ -110,11 +110,9 @@ I collegamenti sono usati per creare un collegamento all'ubicazione di destinazi
 
     ![](../media/Lab-3/image9.png)
 
-
 14. Si verrà indirizzati alla finestra di dialogo successiva, dove si ha la possibilità di modificare i nomi. Selezionare l'**icona Modifica (1)** in Azioni per **Application.Cities**.
 
 15. Rinominare **Application.Cities in Cities (2).**
-
 
 16. Selezionare il segno di spunta accanto al nome per salvare la modifica **(3)**.
 
@@ -158,7 +156,7 @@ I collegamenti sono usati per creare un collegamento all'ubicazione di destinazi
 
 ## Attività 2 - Creazione di una vista Geo mediante le query visive
 
-1. Possiamo accedere a Lakehouse tramite un endpoint SQL. Questo permette di eseguire query sui dati e creare viste. In **alto a destra** della schermata selezionare **Lakehouse (1) -\> Endpoint di Analisi SQL (2)**.
+1. Possiamo accedere a Lakehouse tramite un endpoint SQL. Questo permette di eseguire query sui dati e creare viste. In **alto a destra** della schermata selezionare **Lakehouse (1) -> Endpoint di Analisi SQL (2)**.
 
     ![](../media/Lab-3/image13.png)
 
@@ -180,11 +178,11 @@ I collegamenti sono usati per creare un collegamento all'ubicazione di destinazi
 
 5. **Nel menu dell'editor di query visive** selezionare l'icona **Apri in popup** (verso destra). Si apre l'editor di Power Query.
 
-    >***Nota:** potrebbe essere necessario scorrere verso destra o riaprire la scheda della query visiva se questa icona non viene visualizzata immediatamente*
+    >**Nota:** potrebbe essere necessario scorrere verso destra o riaprire la scheda della query visiva se questa icona non viene visualizzata immediatamente.
 
     ![](../media/Lab-3/image16.png)
 
-6. Con la query **Cities(1)** selezionata, nella barra multifunzione dell'editor di Power Query selezionare **Home (2) -\> Combina (3) -\> Elenco a discesa Esegui merge di query (4) -\> Esegui merge di query come nuova (5)**. Si apre la finestra di dialogo Esegui merge di query.
+6. Con la query **Cities(1)** selezionata, nella barra multifunzione dell'editor di Power Query selezionare **Home (2) -> Combina (3) -> Elenco a discesa Esegui merge di query (4) -> Esegui merge di query come nuova (5)**. Si apre la finestra di dialogo Esegui merge di query.
 
     ![](../media/Lab-3/image17.png)
 
@@ -203,34 +201,31 @@ I collegamenti sono usati per creare un collegamento all'ubicazione di destinazi
 
     Notare che è stata creata una nuova query denominata **Merge**. Abbiamo bisogno di alcune colonne da States.
 
-12. Nella **vista dati** (pannello inferiore) fare clic sulla **freccia doppia** accanto alla colonna **States**
-    (ultima colonna a destra).
+12. Nella **vista dati** (pannello inferiore) fare clic sulla **freccia doppia** accanto alla colonna **States** (ultima colonna a destra).
 
 13. Si apre un pannello. Verifica che siano selezionate solo le colonne seguenti:
 
-1. StateProvinceCode
+    1. StateProvinceCode
 
-2. StateProvinceName
+    2. StateProvinceName
 
-3. CountryID
+    3. CountryID
 
-4. SalesTerritory
+    4. SalesTerritory
 
-14. Selezionare **OK**.
+    14. Selezionare **OK**.
 
-    ![](../media/Lab-3/image19.png)
+        ![](../media/Lab-3/image19.png)
 
-    Ora dobbiamo unire la query Countries.
+        Ora dobbiamo unire la query Countries.
 
-15. Con la query di unione selezionata **(1)**, selezionare **Home (2) -\> Combina (3) -\> Elenco a discesa Esegui merge di query (4) -\> Esegui merge di query (5)**.
+15. Con la query di unione selezionata **(1)**, selezionare **Home (2) -> Combina (3) -> Elenco a discesa Esegui merge di query (4) -> Esegui merge di query (5)**.
 
     ![](../media/Lab-3/image20.png)
 
-16. Si apre la finestra di dialogo Esegui merge di query. Nella **tabella di destra per l'unione**
-    selezionare **Countries**.
+16. Si apre la finestra di dialogo Esegui merge di query. Nella **tabella di destra per l'unione** selezionare **Countries**.
 
-17. Selezionare le colonne **ICountryID** da entrambe le tabelle. Useremo questa colonna
-    per creare un join.
+17. Selezionare le colonne **ICountryID** da entrambe le tabelle. Useremo questa colonna per creare un join.
 
 18. Selezionare **Inner** come **Tipo di join**.
 
@@ -262,13 +257,13 @@ I collegamenti sono usati per creare un collegamento all'ubicazione di destinazi
 
 22. Selezionare **OK**.
 
-    **Importante:** assicurarsi di scorrere verso il basso e selezionare tutte le otto colonne elencate nel passaggio 21. Lo screenshot seguente mostra solo le prime 5 colonne a causa di una limitazione dell'interfaccia utente.
+    >**Importante:** assicurarsi di scorrere verso il basso e selezionare tutte le otto colonne elencate nel passaggio 21. Lo screenshot seguente mostra solo le prime 5 colonne a causa di una limitazione dell'interfaccia utente.
 
     ![](../media/Lab-3/image22.png)
 
     Non sono necessarie tutte le colonne della tabella **Merge**. Assicurarsi di selezionare solo quelle necessarie.
 
-23. Con la query **Merge** selezionata (1), nella barra multifunzione selezionare **Home (2) -\> Scegli colonne (3) -\> Scegli colonne (4)**.
+23. Con la query **Merge** selezionata **(1)**, nella barra multifunzione selezionare **Home (2) -> Scegli colonne (3) -> Scegli colonne (4)**.
 
     >**Nota:** se l'opzione Scegli colonne non è visibile, cercarla in Gestisci colonne.
 
@@ -330,8 +325,7 @@ I collegamenti sono usati per creare un collegamento all'ubicazione di destinazi
 
 Ora creeremo la vista Reseller unendo la tabella Customers alla tabella BuyingGroups. Questa volta creeremo la vista usando una query visiva senza aprire l'opzione Power Query.
 
-1. Nel menu in alto fare clic sul menu a discesa accanto a **Nuova query SQL (1)**, quindi selezionare
-    **Nuova query visiva (2)**.
+1. Nel menu in alto fare clic sul menu a discesa accanto a **Nuova query SQL (1)**, quindi selezionare **Nuova query visiva (2)**.
 
 2. Per creare una query, dobbiamo aggiungere tabelle nel pannello Query visiva. Fare clic sui puntini di sospensione accanto alla tabella **BuyingGroups (1)** e selezionare **Inserisci nell'area di disegno (2)**.
 
@@ -339,10 +333,9 @@ Ora creeremo la vista Reseller unendo la tabella Customers alla tabella BuyingGr
 
 3. Ripetere gli stessi passaggi per la tabella **Customers**.
 
-4. **Selezionare la query Customers**. Dopo la selezione, Customers avrà un segno "**+**" dopo Table
-    (ciò indica che si aggiunge un passaggio dopo Table). Se dopo Table non è visibile alcun segno **"+"**, è possibile che si sia selezionato un passaggio diverso. Selezionare Table e il problema è risolto).
+4. **Selezionare la query Customers**. Dopo la selezione, Customers avrà un segno "**+**" dopo Table (ciò indica che si aggiunge un passaggio dopo Table). Se dopo Table non è visibile alcun segno **"+"**, è possibile che si sia selezionato un passaggio diverso. Selezionare Table e il problema è risolto).
 
-5. Nel menu Query visiva selezionare **Combina -\> Esegui merge di query**.
+5. Nel menu Query visiva selezionare **Combina -> Esegui merge di query**.
 
     ![](../media/Lab-3/image30.png)
 
@@ -369,7 +362,7 @@ Ora creeremo la vista Reseller unendo la tabella Customers alla tabella BuyingGr
 
     Non sono necessarie tutte le colonne della tabella Customer. Selezioniamo solo quelle di cui abbiamo bisogno.
 
-13. Dal menu della query visiva selezionare **Gestisci colonne -\> Scegli colonne**.
+13. Dal menu della query visiva selezionare **Gestisci colonne -> Scegli colonne**.
 
     ![](../media/Lab-3/image33.png)
 
@@ -447,17 +440,17 @@ Ora creeremo la vista Sales, unendo le tabelle InvoiceLineItems e Invoices e la 
 
     ![](../media/Lab-3/image40.png)
 
-2. Nella sezione **Explorer -\> Tabella** è necessario aggiungere tabelle nel pannello Query visiva. Fare clic sui puntini di sospensione accanto alla tabella **InvoiceLineItems** e selezionare **Inserisci nell'area di disegno**.
+2. Nella sezione **Explorer -> Tabella** è necessario aggiungere tabelle nel pannello Query visiva. Fare clic sui puntini di sospensione accanto alla tabella **InvoiceLineItems** e selezionare **Inserisci nell'area di disegno**.
 
 3. Ripetere gli stessi passaggi per la tabella **Invoices**.
 
-4. Nella sezione **Explorer -\> Viste** è necessario aggiungere tabelle nel pannello Query visiva. Fare clic sui puntini di sospensione accanto alla tabella **Reseller** e selezionare **Inserisci nell'area di disegno**.
+4. Nella sezione **Explorer -> Viste** è necessario aggiungere tabelle nel pannello Query visiva. Fare clic sui puntini di sospensione accanto alla tabella **Reseller** e selezionare **Inserisci nell'area di disegno**.
 
 5. Nell'editor di query visive selezionare l'icona **Apri in popup** per aprire l'editor di Power Query.
 
     ![](../media/Lab-3/image41.png)
 
-6. Con la query **InvoiceLineItems** selezionata, nella barra multifunzione selezionare **Home (2) -\> Combina (3) -\> Elenco a discesa Esegui merge di query (4) -\> Esegui merge di query come nuova (5).** Si apre la finestra di dialogo Esegui merge di query.
+6. Con la query **InvoiceLineItems** selezionata, nella barra multifunzione selezionare **Home (2) -> Combina (3) -> Elenco a discesa Esegui merge di query (4) -> Esegui merge di query come nuova (5).** Si apre la finestra di dialogo Esegui merge di query.
 
     ![](../media/Lab-3/image42.png)
 
@@ -477,17 +470,17 @@ Ora creeremo la vista Sales, unendo le tabelle InvoiceLineItems e Invoices e la 
 
 12. Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** nella cartella **Reports** sul desktop dell'ambiente lab.
 
-13. Nella barra multifunzione selezionare **Home -\> Trasforma dati**. Si apre la finestra Power Query. Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
+13. Nella barra multifunzione selezionare **Home -> Trasforma dati**. Si apre la finestra Power Query. Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
 
     ![](../media/Lab-3/image44.png)
 
 14. Nel pannello di sinistra **Query**, nella cartella **ADLSData** **(1)** selezionare la query **Sales (2).**
 
-15. Nella barra multifunzione selezionare **Home - \> Editor avanzato (3)**. Si apre la finestra di dialogo dell'Editor avanzato.
+15. Nella barra multifunzione selezionare **Home - > Editor avanzato (3)**. Si apre la finestra di dialogo dell'Editor avanzato.
 
     ![](../media/Lab-3/image45.png)
 
-    >**Nota:** se non si riesce a trovare l'Editor avanzato, è possibile accedervi in **Home -\> Query -\> Editor avanzato**.
+    >**Nota:** se non si riesce a trovare l'Editor avanzato, è possibile accedervi in **Home -> Query -> Editor avanzato**.
 
 16. **Selezionare li codice dalla riga 3**  fino all'ultima riga di codice.
 
@@ -501,7 +494,7 @@ Ora creeremo la vista Sales, unendo le tabelle InvoiceLineItems e Invoices e la 
 
 20. Accertarsi di aver selezionato la query **Merge**.
 
-21. Nella barra multifunzione selezionare **Home -\> Editor avanzato**. Viene visualizzata
+21. Nella barra multifunzione selezionare **Home -> Editor avanzato**. Viene visualizzata
     la finestra di dialogo dell'editor avanzato.
 
     ![](../media/Lab-3/image47.png)
@@ -584,7 +577,7 @@ Ora creeremo la vista Product unendo le tabelle **ProductItem**, **ProductItemGr
 
     ![](../media/Lab-3/image56.png)
 
-5. Con la query **ProductItem** selezionata **(1),** nella barra multifunzione selezionare **Home (2) -\> Combina (3) -\> Elenco a discesa Esegui merge di query (4)** **-\> Esegui merge di query come nuova (5)**. Si apre la finestra di dialogo Unione.
+5. Con la query **ProductItem** selezionata **(1),** nella barra multifunzione selezionare **Home (2) -> Combina (3) -> Elenco a discesa Esegui merge di query (4)** **-> Esegui merge di query come nuova (5)**. Si apre la finestra di dialogo Unione.
 
     ![](../media/Lab-3/image57.png)
 
@@ -601,11 +594,11 @@ Ora creeremo la vista Product unendo le tabelle **ProductItem**, **ProductItemGr
 
     ![](../media/Lab-3/image58.png)
 
-11. Con la query Merge selezionata, nella barra multifunzione selezionare **Home -\> Editor avanzato**. Si apre la finestra di dialogo dell'Editor avanzato.
+11. Con la query Merge selezionata, nella barra multifunzione selezionare **Home -> Editor avanzato**. Si apre la finestra di dialogo dell'Editor avanzato.
 
     ![](../media/Lab-3/image59.png)
 
-    >**Nota:** se non si riesce a trovare l'Editor avanzato, è possibile accedervi in **Home -\> Query -\> Editor avanzato**.
+    >**Nota:** se non si riesce a trovare l'Editor avanzato, è possibile accedervi in **Home -> Query -> Editor avanzato**.
 
 12. **Selezionare tutto il codice** nell'Editor avanzato ed **eliminarlo**.
 
