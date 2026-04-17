@@ -1,42 +1,28 @@
-# ![](../media/Lab-1/image4.png)
+# Microsoft Fabric - Fabric Analyst in a Day - Lab 1
+
+# ![](../media/Lab-1/H1.png)
 
 # Sommario
 
-Struttura del documento
+- Struttura del documento
 
-Scenario/Esposizione del problema
+- Scenario/Esposizione del problema
 
-Panoramica del report di Power BI Desktop
+- Panoramica del report di Power BI Desktop
 
-Attività 1 - Impostazione di Power BI Desktop nell'ambiente lab
+    - Attività 1 - Impostazione di Power BI Desktop nell'ambiente lab
 
-Attività 2 - Analisi del report di Power BI Desktop
+    - Attività 2 - Analisi del report di Power BI Desktop
 
-Attività 3 - Analisi delle query in Power Query
+    - Attività 3 - Analisi delle query in Power Query
 
-Riferimenti
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
+- Riferimenti
 
 # Struttura del documento
 
 Il lab include i passaggi che l'utente deve seguire con gli screenshot associati che forniscono un aiuto visivo. In ogni screenshot vi sono sezioni evidenziate con riquadri arancioni che indicano le aree su cui l'utente deve concentrarsi.
 
-**Nota:** alcuni screenshot potrebbero non essere aggiornati a causa dei continui aggiornamenti del prodotto.
+>**Nota:** alcuni screenshot potrebbero non essere aggiornati a causa dei continui aggiornamenti del prodotto.
 
 # Scenario/Esposizione del problema
 
@@ -76,118 +62,95 @@ Hai sentito parlare di Microsoft Fabric e hai deciso di provarlo per verificare 
 
 Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop per comprendere le trasformazioni e il modello.
 
-### Attività 1 - Impostazione di Power BI Desktop nell'ambiente lab
+## Attività 1 - Impostazione di Power BI Desktop nell'ambiente lab
 
-
-1.  Aprire il file **FAIAD.pbix** contenuto nella cartella **Reports** sul **Desktop** dell'ambiente lab. Il file si aprirà in Power BI Desktop.
+1. Aprire il file **FAIAD.pbix** contenuto nella cartella **Reports** sul **Desktop** dell'ambiente lab. Il file si aprirà in Power BI Desktop.
 
     ![](../media/Lab-1/image7.png)
 
+2. Quando si apre la finestra di dialogo "Immettere l'indirizzo di posta elettronica", copiare il **Nome utente** e incollarlo nel campo **Posta elettronica** della finestra di dialogo, quindi selezionare **Continua**.
 
-2.  Quando si apre la finestra di dialogo "Immettere l'indirizzo di posta elettronica", copiare il **Nome utente** e incollarlo nel campo **Posta elettronica** della finestra di dialogo, quindi selezionare **Continua**.
+    - Posta elettronica/nome utente: <inject key="AzureAdUserEmail"></inject>
 
-    - Posta elettronica/nome utente:
+        ![](../media/Lab-1/image8.png)
 
-    ![](../media/Lab-1/image8.png)
+3. Immettere i dati Posta elettronica/nome utente seguenti nella schermata di accesso visualizzata nella scheda Accedi a Microsoft Azure, quindi fare clic su **Avanti**.
 
+    - Posta elettronica/nome utente: <inject key="AzureAdUserEmail"></inject>
 
-3.  Immettere i dati Posta elettronica/nome utente seguenti nella schermata di accesso visualizzata nella scheda Accedi a Microsoft Azure, quindi fare clic su **Avanti**.
+        ![](../media/Lab-1/image9.png)
 
-    - Posta elettronica/nome utente:
+4. Immettere il **Pass di accesso temporaneo** seguente e fare clic su **Accedi**.
 
-    ![](../media/Lab-1/image9.png)w
+    - Pass di accesso temporaneo: <inject key="AzureAdUserPassword"></inject>
 
+        ![](../media/Lab-1/image10.png)
 
-4.  Immettere il **Pass di accesso temporaneo** seguente e fare clic su **Accedi**.
-
-    - Pass di accesso temporaneo:
-
-    ![](../media/Lab-1/image10.png)
-
-
-5.  Si apre la finestra di dialogo **Rimani connesso a tutte le tue app**. Selezionare **OK**.
+5. Si apre la finestra di dialogo **Rimani connesso a tutte le tue app**. Selezionare **OK**.
 
     ![](../media/Lab-1/image11.png)
 
-
-6.  **È tutto pronto.** Si apre la finestra di dialogo. Seleziona **Fatto**.
+6. **È tutto pronto.** Si apre la finestra di dialogo. Seleziona **Fatto**.
 
     Si aprirà Power BI Desktop.
 
-### Attività 2 - Analisi del report di Power BI Desktop
+## Attività 2 - Analisi del report di Power BI Desktop
 
 Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto a sinistra nella pagina. Gli oggetti visivi rimanenti evidenziano le vendite nel tempo, per area, gruppo di prodotti e azienda rivenditrice.
 
 ![](../media/Lab-1/image12.jpeg)
 
-**Nota:** in questo corso di formazione ci concentreremo sull'acquisizione, la trasformazione e la modellazione dei dati mediante gli strumenti disponibili in Fabric. Non ci concentreremo sullo sviluppo di report né sullo spostamento al loro interno. Dedichiamo qualche minuto alla comprensione del report prima di procedere ai passaggi successivi.
+>**Nota:** in questo corso di formazione ci concentreremo sull'acquisizione, la trasformazione e la modellazione dei dati mediante gli strumenti disponibili in Fabric. Non ci concentreremo sullo sviluppo di report né sullo spostamento al loro interno. Dedichiamo qualche minuto alla comprensione del report prima di procedere ai passaggi successivi.
 
-
-1.  Analizziamo i dati per area di vendita. Selezionare **New England nel grafico a dispersione Sales Territory**. In Sales over time notare che il rivenditore Tailspin Toys presenta più vendite di Wingtip Toys in New England. Se si considera l'istogramma % vendite rispetto all'anno precedente, si noterà che la crescita delle vendite di Wingtip Toys è stata bassa ed è calata di trimestre nello scorso anno. Dopo un leggero rialzo nel terzo trimestre è nuovamente calata nel quarto.
+1. Analizziamo i dati per area di vendita. Selezionare **New England nel grafico a dispersione Sales Territory**. In Sales over time notare che il rivenditore Tailspin Toys presenta più vendite di Wingtip Toys in New England. Se si considera l'istogramma % vendite rispetto all'anno precedente, si noterà che la crescita delle vendite di Wingtip Toys è stata bassa ed è calata di trimestre nello scorso anno. Dopo un leggero rialzo nel terzo trimestre è nuovamente calata nel quarto.
 
     ![](../media/Lab-1/image13.jpeg)
 
-
-2.  Confrontiamo questi dati con l'area delle Montagne Rocciose. Selezionare **Rocky Mountain nel grafico a dispersione Sales Territory**. Dall'istogramma % vendite rispetto all'anno precedente risulta che le vendite per Wingtip Toys sono aumentate notevolmente nel quarto trimestre del 2023 dopo essere state basse nei due trimestri precedenti.
+2. Confrontiamo questi dati con l'area delle Montagne Rocciose. Selezionare **Rocky Mountain nel grafico a dispersione Sales Territory**. Dall'istogramma % vendite rispetto all'anno precedente risulta che le vendite per Wingtip Toys sono aumentate notevolmente nel quarto trimestre del 2023 dopo essere state basse nei due trimestri precedenti.
 
     ![](../media/Lab-1/image14.jpeg)
 
+3. Selezionare **Rocky Mountain in Sales Territory** per rimuovere il filtro.
 
-3.  Selezionare **Rocky Mountain in Sales Territory** per rimuovere il filtro.
-
-
-4.  Nel grafico a dispersione in basso al centro della schermata (ordini cliente rispetto alle vendite) selezionare l'outlier in alto a destra (4° quadrante). La percentuale di margine è pari al 52%, superiore alla media del 50%. Inoltre, la percentuale di vendite rispetto all'anno precedente è aumentata negli ultimi due trimestri del 2023.
+4. Nel grafico a dispersione in basso al centro della schermata (ordini cliente rispetto alle vendite) selezionare l'outlier in alto a destra (4° quadrante). La percentuale di margine è pari al 52%, superiore alla media del 50%. Inoltre, la percentuale di vendite rispetto all'anno precedente è aumentata negli ultimi due trimestri del 2023.
 
     ![](../media/Lab-1/image15.jpeg)
 
+5. Selezionare il Reseller outlier nel grafico a dispersione per **rimuovere il filtro**.
 
-5.  Selezionare il Reseller outlier nel grafico a dispersione per **rimuovere il filtro**.
-
-
-6.  Otteniamo i dettagli del prodotto per gruppo di prodotti e rivenditore. Nel grafico a barre Vendite per gruppo di prodotti e azienda rivenditrice **fare clic con il pulsante destro del mouse sulla barra Packaging Materials per Tailspin Toys** e nella finestra di dialogo selezionare **Drill-through -\> Product Detail**.
+6. Otteniamo i dettagli del prodotto per gruppo di prodotti e rivenditore. Nel grafico a barre Vendite per gruppo di prodotti e azienda rivenditrice **fare clic con il pulsante destro del mouse sulla barra Packaging Materials per Tailspin Toys** e nella finestra di dialogo selezionare **Drill-through -\> Product Detail**.
 
     ![](../media/Lab-1/image16.png)
 
+7. Si passerà alla pagina che fornisce i dettagli del prodotto. Notare che sono anche presenti alcuni ordini futuri.
 
-7.  Si passerà alla pagina che fornisce i dettagli del prodotto. Notare che sono anche presenti alcuni ordini futuri.
-
-
-8.  Dopo aver esaminato questa pagina, selezionare **CTRL + freccia indietro** in alto a sinistra nella pagina per tornare al report vendite.
+8. Dopo aver esaminato questa pagina, selezionare **CTRL + freccia indietro** in alto a sinistra nella pagina per tornare al report vendite.
 
     ![](../media/Lab-1/image17.png)
 
-
-9.  Se lo si desidera, analizzare ulteriormente il report, dopodiché esamineremo la vista modello. Nel pannello a sinistra selezionare **l'icona della vista modello**.
+9. Se lo si desidera, analizzare ulteriormente il report, dopodiché esamineremo la vista modello. Nel pannello a sinistra selezionare **l'icona della vista modello**.
 
     ![](../media/Lab-1/image18.png)
 
-
 10. Ci sono due tabelle dei fatti Sales e PO.
 
+    1. La granularità dei dati di Sales è per Date, Reseller, Product e People. Date, Reseller, Product e People si collegano a Sales.
 
-1.  La granularità dei dati di Sales è per Date, Reseller, Product e People. Date, Reseller, Product e People si collegano a Sales.
+    2. La granularità dei dati di PO è per Date, Product e People. Date, Product e People si collegano a PO.
 
+    3. Sono presenti dati di Supplier per Product. Supplier si collega a Product.
 
-2.  La granularità dei dati di PO è per Date, Product e People. Date, Product e People si collegano a PO.
+    4. Sono presenti dati località di Reseller per Geo. Geo si collega a Reseller.
 
+    5. Sono presenti informazioni di Customer per Reseller. Customer si collega a Reseller.
 
-3.  Sono presenti dati di Supplier per Product. Supplier si collega a Product.
+## Attività 3 - Analisi delle query in Power Query
 
-
-4.  Sono presenti dati località di Reseller per Geo. Geo si collega a Reseller.
-
-
-5.  Sono presenti informazioni di Customer per Reseller. Customer si collega a Reseller.
-
-### Attività 3 - Analisi delle query in Power Query
-
-
-1.  Osserviamo Power Query per comprendere le origini dati. Nella barra multifunzione selezionare **Home -\> Trasforma dati**.
+1. Osserviamo Power Query per comprendere le origini dati. Nella barra multifunzione selezionare **Home -\> Trasforma dati**.
 
     ![](../media/Lab-1/image19.png)
 
-
-2.  Si apre la finestra Power Query. Nella barra multifunzione selezionare **Home -\> Impostazioni origine dati**. Si apre la finestra di dialogo Impostazioni origine dati. Scorrendo l'elenco si noterà che vi sono quattro origini dati, come indicato nell'esposizione del problema:
+2. Si apre la finestra Power Query. Nella barra multifunzione selezionare **Home -\> Impostazioni origine dati**. Si apre la finestra di dialogo Impostazioni origine dati. Scorrendo l'elenco si noterà che vi sono quattro origini dati, come indicato nell'esposizione del problema:
 
     - Snowflake
 
@@ -197,46 +160,37 @@ Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto
 
     - Dataverse
 
-
-3.  Selezionare **Chiudi** per chiudere la finestra di dialogo Impostazioni origine dati.
+3. Selezionare **Chiudi** per chiudere la finestra di dialogo Impostazioni origine dati.
 
     ![](../media/Lab-1/image20.png)
 
+4. Nel pannello Query a sinistra, le query sono raggruppate per origine dati.
 
-4.  Nel pannello Query a sinistra, le query sono raggruppate per origine dati.
+5. Notare che la cartella **DataverseData** contiene dati di Customer disponibili in quattro query diverse, ovvero BabyBoomer, GenX, GenY e GenZ. Queste quattro query vengono accodate per creare la query Customer.
 
-
-5.  Notare che la cartella **DataverseData** contiene dati di Customer disponibili in quattro query diverse, ovvero BabyBoomer, GenX, GenY e GenZ. Queste quattro query vengono accodate per creare la query Customer.
-
-
-6.  Fare clic sulla query **Customer** nella finestra Query. Se si seleziona questa query, è necessario reinserire le proprie credenziali Dataverse. Fare clic su **Modifica credenziali**.
+6. Fare clic sulla query **Customer** nella finestra Query. Se si seleziona questa query, è necessario reinserire le proprie credenziali Dataverse. Fare clic su **Modifica credenziali**.
 
     ![](../media/Lab-1/image21.png)
 
-
-7.  Fare clic su **Accedi** per accedere al proprio account.
+7. Fare clic su **Accedi** per accedere al proprio account.
 
     ![](../media/Lab-1/image22.png)
 
+8. È possibile immettere le credenziali per l'origine dati Dataverse immettendo **Nome utente** e **Password**. Le credenziali vengono fornite di seguito. Al termine, selezionare **Connetti**.
 
-8.  È possibile immettere le credenziali per l'origine dati Dataverse immettendo **Nome utente** e **Password**. Le credenziali vengono fornite di seguito. Al termine, selezionare **Connetti**.
+    - E-mail/Nome utente: <inject key="AzureAdUserEmail"></inject>
 
-    - E-mail/Nome utente: disponibili nella scheda Ambiente
+    - Password: <inject key="AzureAdUserPassword"></inject>
 
-    - Password: disponibile nella scheda Ambiente
-
-
-9.  Fare clic sulla query **ADLS Base Folder** nella finestra Query. Alla selezione di questa query verranno richieste le credenziali. Fare clic su **Modifica credenziali**.
+9. Fare clic sulla query **ADLS Base Folder** nella finestra Query. Alla selezione di questa query verranno richieste le credenziali. Fare clic su **Modifica credenziali**.
 
     ![](../media/Lab-1/image23.png)
 
-
 10. Per l'origine dati ADLS, scegliere l'opzione **Firma di accesso** **condiviso (SAS)** e immettere il **token SAS** fornito in precedenza. Selezionare **Connetti**.
 
-    - **Token SAS:** disponibile nella scheda Ambiente
+    - **Token SAS:** <inject key="Sas token"></inject>
 
-    ![](../media/Lab-1/image24.png)
-
+        ![](../media/Lab-1/image24.png)
 
 11. La cartella **ADLSData** include più dimensioni: Geo, Product, Reseller e Date. Include anche i fatti Sales.
 
@@ -248,24 +202,21 @@ Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto
 
     - Si crea il **fatto Sales** unendo le query InvoiceLineItems e Invoice.
 
-
 12. Per l'origine dati Snowflake, selezionare la query **SupplierCategories** nella finestra Query. Alla selezione di questa query verranno richieste le credenziali. Fare clic su **Modifica credenziali**.
 
     ![](../media/Lab-1/image25.png)
 
-
 13. Immettere il **Nome utente Snowflake** e la **Password Snowflake** forniti di seguito. Usare queste credenziali per connettere tutte le tabelle in Snowflake a Snowflake, quindi selezionare **Connetti**.
 
-    - **Nome utente Snowflake:** TE_SNOWFLAKE1
+    - **Nome utente Snowflake:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Password Snowflake:** 8UpfRpExVDXv2AC1
+    - **Password Snowflake:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    *Nota: se si verificano problemi di connessione a Snowflake con le credenziali descritte sopra, usare le credenziali di backup fornite di seguito.*
+        >**Nota:** se si verificano problemi di connessione a Snowflake con le credenziali descritte sopra, usare le credenziali di backup fornite di seguito.*
 
     - **Nome utente Snowflake:** SNOWFLAKE_BACKUP
 
     - **Password Snowflake:** 8UpfRpExVDXv2AC1
-
 
 14. Notare che la cartella SnowflakeData include la dimensione Supplier e il fatto PO (ordine/spesa).
 
@@ -273,20 +224,17 @@ Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto
 
     - Si crea il **fatto PO** unendo le query PO e PO Line Items.
 
-
 15. Per l'origine dati SharePoint, selezionare la query **People** nella finestra Query. Alla selezione di questa query verranno richieste le credenziali. Fare clic su **Modifica credenziali**.
 
     ![](../media/Lab-1/image26.png)
 
-
 16. Selezionare l'opzione **Account Microsoft**, quindi fare clic su **Accedi**. Immettere il nome utente e la password forniti di seguito, quindi selezionare Connetti.
 
-    - **E-mail/Nome utente:** disponibili nella scheda Ambiente
+    - **E-mail/Nome utente:** <inject key="AzureAdUserEmail"></inject>
 
-    - **Password:** disponibile nella scheda Ambiente
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
     ![](../media/Lab-1/image27.png)
-
 
 17. La cartella **SharepointData** include la dimensione People.
 
@@ -340,7 +288,7 @@ Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
 
 - [Blog sull'integrazione di Dataverse e Microsoft Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+© 2026 Microsoft Corporation. Tutti i diritti sono riservati.
 
 L'uso della demo/del lab implica l'accettazione delle seguenti condizioni:
 
