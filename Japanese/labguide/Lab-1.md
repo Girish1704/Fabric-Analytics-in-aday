@@ -95,7 +95,7 @@ Fabric の説明を始める前に、変換とモデルについて理解する�
 
     ![](../media/Lab-1/image11.png)
 
-6. **準備が完了しました。**ダイアログが開きます。**完了**を選択します。
+6. **準備が完了しました。** ダイアログが開きます。**完了**を選択します。
 
     これで Power BI Desktop が開きます。
 
@@ -244,7 +244,7 @@ Fabric の説明を始める前に、変換とモデルについて理解する�
 
     - **パスワード:** <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/Lab-1/image27.png)
+      ![](../media/Lab-1/image27.png)
 
 17. **SharepointData** フォルダーには People ディメンションが含まれていることがわかります。
 
