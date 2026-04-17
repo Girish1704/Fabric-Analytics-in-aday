@@ -62,7 +62,7 @@ Você ouviu falar do Microsoft Fabric e decidiu tentar ver se ele resolverá seu
 
 Antes de começarmos com o Fabric, vamos dar uma olhada no Relatório atual no Power BI Desktop para entender as transformações e o modelo.
 
-### Tarefa 1: Configurar o Power BI Desktop no ambiente de laboratório
+## Tarefa 1: Configurar o Power BI Desktop no ambiente de laboratório
 
 1. Abra o arquivo **FAIAD.pbix** que está na pasta **Reports** na **área de trabalho** do seu ambiente de laboratório. O arquivo será aberto no Power BI Desktop.
 
@@ -99,7 +99,7 @@ Antes de começarmos com o Fabric, vamos dar uma olhada no Relatório atual no P
 
     O Power BI Desktop será aberto.
 
-### Tarefa 2: Analisar relatório do Power BI Desktop
+## Tarefa 2: Analisar relatório do Power BI Desktop
 
 O relatório abaixo analisa as Sales da Fabrikam. Os KPIs estão listados no canto superior esquerdo da página. Os visuais restantes destacam as Sales over time, por Territory, Product Group e Reseller Company.
 
@@ -123,7 +123,7 @@ O relatório abaixo analisa as Sales da Fabrikam. Os KPIs estão listados no can
 
 5. Selecione a exceção Reseller no visual Gráfico de dispersão para **remover o filtro**.
 
-6. Vamos obter os detalhes de Product por Product Group e Reseller. No visual do gráfico de barras Sales por Product Group e Reseller Company, **clique com o botão direito na barra Packaging Materials para Tailspin Toys** e, na caixa de diálogo, selecione **Drill through -\> Product Detail**.
+6. Vamos obter os detalhes de Product por Product Group e Reseller. No visual do gráfico de barras Sales por Product Group e Reseller Company, **clique com o botão direito na barra Packaging Materials para Tailspin Toys** e, na caixa de diálogo, selecione **Drill through -> Product Detail**.
 
     ![](../media/Lab-1/image16.png)
 
@@ -139,23 +139,23 @@ O relatório abaixo analisa as Sales da Fabrikam. Os KPIs estão listados no can
 
 10. Observe que existem duas tabelas de fatos, Sales e PO.
 
-    a\. A granularidade dos dados de Sales é por Date, Reseller, Product e People. Date, Reseller, Product e People conectam-se a Sales.
+    a. A granularidade dos dados de Sales é por Date, Reseller, Product e People. Date, Reseller, Product e People conectam-se a Sales.
 
-    b\. A granularidade dos dados de PO é por Date, Product e People. Date, Product e People conectam-se a PO.
+    b. A granularidade dos dados de PO é por Date, Product e People. Date, Product e People conectam-se a PO.
 
-    c\. Temos dados de Supplier por Product. Supplier conecta-se a Product.
+    c. Temos dados de Supplier por Product. Supplier conecta-se a Product.
 
-    d\. Temos os dados de localização de Reseller por Geo. Geo conecta-se a Reseller.
+    d. Temos os dados de localização de Reseller por Geo. Geo conecta-se a Reseller.
 
-    e\. Temos informações de Customer por Reseller. Customer conecta-se a Reseller.
+    e. Temos informações de Customer por Reseller. Customer conecta-se a Reseller.
 
-### Tarefa 3: Revisar Power Queries
+## Tarefa 3: Revisar Power Queries
 
-1. Vamos analisar o Power Query para entender as fontes de dados. Na faixa de opções, selecione **Página Inicial -\> Transformar dados**.
+1. Vamos analisar o Power Query para entender as fontes de dados. Na faixa de opções, selecione **Página Inicial -> Transformar dados**.
 
     ![](../media/Lab-1/image19.png)
 
-2. A janela do Power Query é aberta. Na faixa de opções, selecione **Página Inicial -\> Configurações da fonte de dados**. A caixa de diálogo Configurações da fonte de dados é aberta. Ao percorrer a lista, você notará que existem quatro fontes de dados, conforme mencionado na declaração do problema:
+2. A janela do Power Query é aberta. Na faixa de opções, selecione **Página Inicial -> Configurações da fonte de dados**. A caixa de diálogo Configurações da fonte de dados é aberta. Ao percorrer a lista, você notará que existem quatro fontes de dados, conforme mencionado na declaração do problema:
 
     - Snowflake
 

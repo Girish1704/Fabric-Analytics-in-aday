@@ -46,7 +46,7 @@ Ao final deste laboratório, você terá aprendido a:
 
 # Atalho para o ADLS Gen2
 
-### Tarefa 1: Criar um atalho
+## Tarefa 1: Criar um atalho
 
 Os atalhos são usados para criar um link com o local de destino. Os atalhos fornecem acesso aos dados sem a necessidade de mover fisicamente os dados para o lakehouse. É como criar atalhos na área de trabalho do Windows.
 
@@ -154,7 +154,7 @@ Os atalhos são usados para criar um link com o local de destino. Os atalhos for
 
 # Transformar dados usando uma consulta Visual
 
-### Tarefa 2: Criar exibição Geo usando uma consulta Visual
+## Tarefa 2: Criar exibição Geo usando uma consulta Visual
 
 1. Nós podemos acessar o Lakehouse usando um ponto de extremidade SQL. Isso possibilita consultar os dados e criar exibições. No **canto superior direito** da tela, selecione **Lakehouse (1) -> Ponto de extremidade de análise de SQL (2)**.
 
@@ -320,7 +320,7 @@ Os atalhos são usados para criar um link com o local de destino. Os atalhos for
 
     ![](../media/Lab-3/image28.png)
 
-### Tarefa 3: Criar exibição Reseller usando uma consulta Visual
+## Tarefa 3: Criar exibição Reseller usando uma consulta Visual
 
 Vamos criar a exibição Reseller, mesclando a tabela Customers com a tabela BuyingGroups. Desta vez, criaremos a exibição usando a consulta Visual sem abrir a opção Power Query.
 
@@ -332,7 +332,7 @@ Vamos criar a exibição Reseller, mesclando a tabela Customers com a tabela Buy
 
 3. Repita as mesmas etapas para a tabela **Customers**.
 
-4. **Selecione a consulta Customers**. Quando selecionada, Customers terá um sinal de “**+**” depois da Tabela (isso indica que estamos adicionando uma etapa depois da Tabela. Se você não vir o sinal de “**+**” depois da tabela, talvez tenha selecionado uma etapa diferente. Selecione Table e pronto.)
+4. **Selecione a consulta Customers**. Quando selecionada, Customers terá um sinal de **“+”** depois da Tabela (isso indica que estamos adicionando uma etapa depois da Tabela. Se você não vir o sinal de **“+”** depois da tabela, talvez tenha selecionado uma etapa diferente. Selecione Table e pronto.)
 
 5. No menu Consulta de Visual, selecione **Combinar -> Mesclar consultas**.
 
@@ -430,7 +430,7 @@ Vamos criar a exibição Reseller, mesclando a tabela Customers com a tabela Buy
 
     ![](../media/Lab-3/image39.png)
 
-### Tarefa 4: Criar a exibição Sales usando uma consulta Visual
+## Tarefa 4: Criar a exibição Sales usando uma consulta Visual
 
 Vamos criar a exibição Sales, mesclando as tabelas InvoiceLineItems e Invoices com a exibição Reseller. Temos essa consulta no Power BI Desktop. Vamos copiar o código do Editor Avançado. Mas antes de copiar o código, precisamos criar uma tabela de mesclagem usando a consulta Visual, pois a criação de uma consulta em branco não é possível na consulta Visual. Vamos testar esse método.
 
@@ -554,7 +554,7 @@ Vamos criar a exibição Sales, mesclando as tabelas InvoiceLineItems e Invoices
 
     ![](../media/Lab-3/image53.png)
 
-### Tarefa 5: Criar exibição Product usando uma consulta Visual
+## Tarefa 5: Criar exibição Product usando uma consulta Visual
 
 Vamos criar a exibição Product, mesclando as tabelas **ProductItem**, **ProductItemGroup** e **ProductGroups**. Para continuar, vamos copiar o código no Editor Avançado.
 
@@ -600,13 +600,13 @@ Vamos criar a exibição Product, mesclando as tabelas **ProductItem**, **Produc
 
     ```sql
     let
-    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
-    #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
-    #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
-    #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
-    #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+       Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+       #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+       #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+       #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+       #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
     in
-    #"Choose columns"
+       #"Choose columns"
     ```
 
 14. Selecione **OK** para fechar o Editor Avançado. Você voltará para o Editor do Power Query.

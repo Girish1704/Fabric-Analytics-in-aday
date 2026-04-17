@@ -60,7 +60,7 @@ Ao final deste laboratório, você terá aprendido:
 
 # Fluxo de dados Gen2
 
-### Tarefa 1: Configurar atualização agendada para o Fluxo de dados Supplier
+## Tarefa 1: Configurar atualização agendada para o Fluxo de dados Supplier
 
 Vamos começar configurando uma atualização agendada do Fluxo de dados Supplier.
 
@@ -141,7 +141,7 @@ Vamos começar configurando uma atualização agendada do Fluxo de dados Supplie
 
 # Pipeline
 
-### Tarefa 2: Criar Pipeline
+## Tarefa 2: Criar Pipeline
 
 1. Voltamos ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_PT** selecionando-o no painel esquerdo.
 
@@ -173,7 +173,7 @@ Vamos começar configurando uma atualização agendada do Fluxo de dados Supplie
 
     ![](../media/Lab-5/image21.png)
 
-### Tarefa 3: Criar Pipeline simples
+## Tarefa 3: Criar Pipeline simples
 
 Vamos começar a criar o pipeline. Precisamos de uma atividade para atualizar o Fluxo de dados. Vamos encontrar uma atividade que possamos usar.
 
@@ -221,7 +221,7 @@ Vamos começar a criar o pipeline. Precisamos de uma atividade para atualizar o 
 
     - O pipeline fornece a capacidade de executar outras tarefas, além de atualizar o fluxo de dados.
 
-### Tarefa 4: Criar Pipeline
+## Tarefa 4: Criar Pipeline
 
 Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que, se os dados não estiverem disponíveis às 9h, normalmente estarão disponíveis em cinco minutos. Se a janela de tempo for perdida, levará 15 minutos para que o arquivo fique disponível. Queremos agendar as novas tentativas para 5 e 15 minutos. Vamos ver como isso pode ser alcançado criando um Pipeline.
 
@@ -235,7 +235,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
     ![](../media/Lab-5/image26.png)
 
-### Tarefa 5: Criar atividade Until
+## Tarefa 5: Criar atividade Until
 
 1. Você navegará de volta à tela Pipeline. No menu, selecione **Atividades**.
 
@@ -249,7 +249,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
     ![](../media/Lab-5/image27.png)
 
-### Tarefa 6: Criar variáveis
+## Tarefa 6: Criar variáveis
 
 1. Precisamos criar variáveis que serão usadas para iterar e definir status. Selecione a **área em branco** no painel de design do pipeline.
 
@@ -287,7 +287,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
     ![](../media/Lab-5/image29.png)
 
-### Tarefa 7: Configurar atividade Until
+## Tarefa 7: Configurar atividade Until
 
 1. Selecione a atividade **Until**.
 
@@ -371,7 +371,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
     ![](../media/Lab-5/image38.png)
 
-### Tarefa 8: Configurar atividade Dataflow
+## Tarefa 8: Configurar atividade Dataflow
 
 1. Você será direcionado de volta à tela de design. Com a **atividade Until** selecionada, no **painel inferior**, selecione **Atividades**. Agora adicionaremos as atividades que precisam ser executadas.
 
@@ -397,7 +397,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
     ![](../media/Lab-5/image41.png)
 
-### Tarefa 9: Configurar 1ª atividade Set variable
+## Tarefa 9: Configurar 1ª atividade Set variable
 
 Configuramos a atividade Fluxo de dados como fizemos anteriormente no laboratório. Agora, adicionaremos uma nova lógica. Se a atualização do fluxo de dados for bem-sucedida, precisaremos sair do iterador Until. Lembre-se de que uma das condições para a existência do iterador é definir o valor da variável varIsSuccess como Sim.
 
@@ -443,7 +443,7 @@ Configuramos a atividade Fluxo de dados como fizemos anteriormente no laboratór
 
     Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. Em um Pipeline, não podemos ter autorreferência de uma variável. O que significa que não podemos incrementar a variável do contador varCounter adicionando um ao seu valor (varCounter = varCounter + 1). Então, usamos a variável varTempCounter.
 
-### Tarefa 10: Configurar 2ª atividade Set variable
+## Tarefa 10: Configurar 2ª atividade Set variable
 
 1. No menu superior, selecione **Atividades -> Definir variável**. A atividade Definir variável é adicionada à tela de design.
 
@@ -473,7 +473,7 @@ Configuramos a atividade Fluxo de dados como fizemos anteriormente no laboratór
 
     Agora, precisamos definir o valor da variável varCounter como o valor de varTempCounter.
 
-### Tarefa 11: Configurar 3ª atividade Set variable
+## Tarefa 11: Configurar 3ª atividade Set variable
 
 1. No menu superior, selecione **Atividades -> Definir variável**. A atividade Definir variável é adicionada à tela de design.
 
@@ -503,7 +503,7 @@ Configuramos a atividade Fluxo de dados como fizemos anteriormente no laboratór
 
     > **Observação:** Esta função define o valor da variável varCounter como o valor da variável varTempCounter (varCounter = varTempCounter). No final de cada iteração, varCounter e varTempCounter têm o mesmo valor.
 
-### Tarefa 12: Configurar atividade Wait
+## Tarefa 12: Configurar atividade Wait
 
 Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do fluxo de dados falhar na primeira vez antes de tentar novamente. SE a atualização do fluxo de dados falhar pela segunda vez, precisaremos esperar 15 minutos/900 segundos e tentar novamente. Usaremos a atividade Wait e a variável varWaitTime para definir o tempo de espera.
 
@@ -564,7 +564,7 @@ Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do flux
 
     ![](../media/Lab-5/image53.png)
 
-### Tarefa 13: Configurar atualização de agenda para o Pipeline
+## Tarefa 13: Configurar atualização de agenda para o Pipeline
 
 1. Podemos testar o pipeline selecionando **Página Inicial -> Executar.**
 

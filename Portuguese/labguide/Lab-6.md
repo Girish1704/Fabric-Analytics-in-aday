@@ -38,7 +38,7 @@ Ao final deste laboratório, você terá aprendido:
 
 # Lakehouse - Analisar dados
 
-### Tarefa 1: Consultar dados usando SQL
+## Tarefa 1: Consultar dados usando SQL
 
 1. Vamos voltar ao workspace do Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_PT,** que você criou no Laboratório 2, Tarefa 8.
 
@@ -78,7 +78,7 @@ Ao final deste laboratório, você terá aprendido:
 
     ![](../media/Lab-6/image8.png)
 
-###  Tarefa 2: Visualizar resultado de T-SQL
+##  Tarefa 2: Visualizar resultado de T-SQL
 
 1. Também podemos visualizar o resultado desta consulta. **Realce a consulta** no painel de consultas
 
@@ -114,7 +114,7 @@ Ao final deste laboratório, você terá aprendido:
 
 # Lakehouse – Modelagem semântica
 
-### Tarefa 3: Criar um modelo semântico
+## Tarefa 3: Criar um modelo semântico
 
 1. No menu de ponto de extremidade de análise do SQL, selecione **Novo modelo semântico.**
 
@@ -128,33 +128,33 @@ Ao final deste laboratório, você terá aprendido:
 
 4. **Selecione** as seguintes tabelas/exibições:
 
-    1. **Customer**
+    a. **Customer**
 
-    2. **Date**
+    b. **Date**
 
-    3. **People**
+    c. **People**
 
-    4. **PO**
+    d. **PO**
 
-    5. **Supplier**
+    e. **Supplier**
 
-    6. **Geo**
+    f. **Geo**
 
-    7. **Product**
+    g. **Product**
 
-    8. **Reseller**
+    h. **Reseller**
 
-    9. **Sales**
+    i. **Sales**
 
 5. Selecione **Confirmar.**
 
-    ![](../media/Lab-6/image15.png)**  **
+    ![](../media/Lab-6/image15.png)
 
     Você será direcionado até o novo modelo semântico com as tabelas selecionadas. Você pode **reorganizar** as tabelas conforme necessário. Observe que algumas tabelas (Geo, Reseller, Sales e Product) têm um sinal de aviso no canto superior direito da tabela. Isso porque são exibições. Todos os elementos visuais criados com campos dessas exibições estarão no modo Direct Query e não no modo Direct Lake.
 
     > **Observação:** o modo Direct Lake é mais rápido do que o modo Direct Query.
 
-### Tarefa 4: Criar relacionamentos
+## Tarefa 4: Criar relacionamentos
 
 Se você não está atualmente dentro do modelo semântico recém-criado, vamos ao lugar certo
 
@@ -215,7 +215,7 @@ Se você não está atualmente dentro do modelo semântico recém-criado, vamos 
 
     Por uma questão de tempo, não criaremos todos os relacionamentos. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar os relacionamentos restantes.
 
-### Tarefa 5: Criar medidas
+## Tarefa 5: Criar medidas
 
 Vamos adicionar algumas medidas necessárias para criar o dashboard Sales.
 
@@ -277,7 +277,7 @@ Vamos adicionar algumas medidas necessárias para criar o dashboard Sales.
 
     Criamos um modelo semântico. A próxima etapa é criar um relatório. Faremos isso no próximo laboratório.
 
-### Tarefa 6: Seção Opcional – Criar relacionamentos
+## Tarefa 6: Seção Opcional – Criar relacionamentos
 
 Vamos adicionar os relacionamentos restantes.
 
@@ -355,7 +355,7 @@ Vamos adicionar os relacionamentos restantes.
 
     ![](../media/Lab-6/image33.png)
 
-### Tarefa 7: Seção Opcional – Criar medidas
+## Tarefa 7: Seção Opcional – Criar medidas
 
 Vamos adicionar as medidas restantes.
 
@@ -377,11 +377,11 @@ Vamos adicionar as medidas restantes.
 
 8. Siga as etapas semelhantes para adicionar as seguintes medidas:
 
-    1. Na tabela **Sales, GM = SUM(‘Sales’[LineProfit])** está formatada como **Moeda com 0 casas decimais**.
+    a. Na tabela **Sales, GM = SUM(‘Sales’[LineProfit])** está formatada como **Moeda com 0 casas decimais**.
 
-    2. Na tabela **Sales** , **GM% = DIVIDE([GM], [Sales])** está formatada como **Porcentagem com 0 casas decimais.**
+    b. Na tabela **Sales** , **GM% = DIVIDE([GM], [Sales])** está formatada como **Porcentagem com 0 casas decimais.**
 
-    3. Na tabela **Customer , No of Customers = COUNTROWS(Customer)** formatado como **Número Inteiro com separador de milhares habilitado.**
+    c. Na tabela **Customer , No of Customers = COUNTROWS(Customer)** formatado como **Número Inteiro com separador de milhares habilitado.**
 
 # Referências
 

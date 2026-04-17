@@ -46,7 +46,7 @@ Ao final deste laboratório, você terá aprendido a:
 
 # Licença do Fabric
 
-### Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric
+## Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric
 
 1. Selecione **PowerBI Portal** na Área de Trabalho da Máquina Virtual. A sua entrada pode ser solicitada.
 
@@ -102,7 +102,7 @@ Ao final deste laboratório, você terá aprendido a:
 
 # Workspace do Fabric
 
-### Tarefa 2: Criar um workspace do Fabric
+## Tarefa 2: Criar um workspace do Fabric
 
 1. Agora vamos criar um workspace com uma licença do Fabric. Selecione **Workspaces (1)** na barra de navegação esquerda. Uma caixa de diálogo é aberta.
 
@@ -130,7 +130,7 @@ Ao final deste laboratório, você terá aprendido a:
 
     Você será navegado para seu espaço de trabalho recém-criado. Traremos dados de diferentes fontes de dados para um Lakehouse e usaremos os dados do Lakehouse para criar nosso modelo e relatá-lo. A primeira etapa é criar um Lakehouse. Faremos isso em seguida.
 
-### Tarefa 3: Criar um Lakehouse
+## Tarefa 3: Criar um Lakehouse
 
 1. No workspace recém-criado **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_PT**, localize o botão **+ Novo item (1)** no painel de navegação esquerdo. É aqui que você pode começar a criar novos itens em seu workspace.
 
@@ -157,7 +157,7 @@ Ao final deste laboratório, você terá aprendido a:
 
 # Visão geral das experiências do Fabric
 
-### Tarefa 4: Experiência do Data Factory
+## Tarefa 4: Experiência do Data Factory
 
 1. Selecione o ícone Cargas de trabalho no lado esquerdo da tela. Uma caixa de diálogo com a lista de experiências do Fabric será aberta. A lista de experiências inclui o Power BI, o Data Factory, o Industry Solutions, o Real-Time Intelligence, o Data Engineering, o Data Science e o Data Warehouse. Vamos explorar.
 
@@ -221,7 +221,7 @@ Ao final deste laboratório, você terá aprendido a:
 
     ![](../media/Lab-2/image23.png)
 
-### Tarefa 5: Experiência do Industry Solutions
+## Tarefa 5: Experiência do Industry Solutions
 
 1. Na **página de cargas de trabalho**, clique em **Industry Solutions** para prosseguir.
 
@@ -263,7 +263,7 @@ Ao final deste laboratório, você terá aprendido a:
 
     ![](../media/Lab-2/image23.png)
 
-### Tarefa 6: Experiência do Real-Time Intelligence
+## Tarefa 6: Experiência do Real-Time Intelligence
 
 1. Na página de cargas **de trabalho**, clique em **Real-Time Intelligence** para prosseguir.
 
@@ -323,8 +323,7 @@ Ao final deste laboratório, você terá aprendido a:
 
     ![](../media/Lab-2/image23.png)
 
-### Tarefa 7: Experiência do Data Engineering
-
+## Tarefa 7: Experiência do Data Engineering
 
 1. Na página de cargas **de trabalho**, clique em Data Engineering para prosseguir.
 
@@ -382,7 +381,7 @@ Ao final deste laboratório, você terá aprendido a:
 
     ![](../media/Lab-2/image23.png)
 
-### Tarefa 8: Experiência do Data Science
+## Tarefa 8: Experiência do Data Science
 
 1. Na página de cargas **de trabalho**, clique em **Data Science** para prosseguir.
 
@@ -428,7 +427,7 @@ Ao final deste laboratório, você terá aprendido a:
 
     ![](../media/Lab-2/image23.png)
 
-### Tarefa 9: Experiência do Data Warehouse
+## Tarefa 9: Experiência do Data Warehouse
 
 1. Na página de cargas **de trabalho**, clique em **Data Warehouse** para prosseguir.
 
@@ -460,7 +459,7 @@ Ao final deste laboratório, você terá aprendido a:
 
     i. **Azure Cosmos DB espelhado:** usado para espelhar o Azure Cosmos DB.
 
-    j. **SQL Server espelhado:** usado para espelhar o SQL Server**.**
+    j. **SQL Server espelhado:** usado para espelhar o SQL Server
 
     k. **Banco de Dados do Azure para PostgreSQL:** espelhado: usado para espelhar o Banco de Dados do Azure para PostgreSQL existente
 
@@ -478,7 +477,7 @@ Ao final deste laboratório, você terá aprendido a:
 
     ![](../media/Lab-2/image33.png)
 
-### Tarefa 10: Experiência de Bancos de Dados
+## Tarefa 10: Experiência de Bancos de Dados
 
 1. Na página de cargas **de trabalho**, clique em **Databases** para prosseguir.
 
