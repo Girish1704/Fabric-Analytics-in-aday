@@ -672,23 +672,23 @@ Em um cenário real, os dados são atualizados na fonte. Como estamos em um ambi
 
     - **Você precisa atualizar seu conjunto de dados pelo menos três vezes por dia para acomodar os diferentes horários de atualização para as diferentes fontes de dados.**
 
-    Resolvemos isso usando Direct Lake. Cada Fluxo de Dados individual é atualizado em sua agenda. Os conjuntos de dados e os relatórios não precisam ser atualizados.
+        Resolvemos isso usando Direct Lake. Cada Fluxo de Dados individual é atualizado em sua agenda. Os conjuntos de dados e os relatórios não precisam ser atualizados.
 
     - **As operações de atualização podem demorar, pois é sempre necessário fazer uma atualização completa para capturar tudo o que foi atualizado nos sistemas de origem.**
 
-    Novamente, resolvemos isso usando Direct Lake. Cada Fluxo de Dados individual é atualizado em sua agenda. Os conjuntos de dados e os relatórios não precisam ser atualizados, portanto não precisamos nos preocupar com a atualização completa.
+        Novamente, resolvemos isso usando Direct Lake. Cada Fluxo de Dados individual é atualizado em sua agenda. Os conjuntos de dados e os relatórios não precisam ser atualizados, portanto não precisamos nos preocupar com a atualização completa.
 
     - **Os erros detectados em qualquer uma das fontes das quais você está extraindo dados resultarão na interrupção da atualização do conjunto de dados. Muitas vezes o arquivo do funcionário não é carregado no prazo, resultando na interrupção da atualização do conjunto de dados.**
 
-    Os Pipelines ajudam a resolver esse problema, oferecendo o recurso de tentar novamente a atualização em caso de falha e em intervalos diferentes.
+        Os Pipelines ajudam a resolver esse problema, oferecendo o recurso de tentar novamente a atualização em caso de falha e em intervalos diferentes.
 
     - **As alterações no modelo de dados demoram muito tempo, pois o Power Query leva tempo para atualizar as versões preliminares devido aos tamanhos de dados grandes e às transformações complexas.**
 
-    Percebemos que os Fluxos de Dados e o Lakehouses são eficientes e fáceis de alterar. Geralmente, a pré-visualização em Fluxos de Dados e Lakehouses não demora muito para carregar.
+        Percebemos que os Fluxos de Dados e o Lakehouses são eficientes e fáceis de alterar. Geralmente, a pré-visualização em Fluxos de Dados e Lakehouses não demora muito para carregar.
 
     - **Você precisa de um computador com Windows para usar o Power BI Desktop mesmo que o padrão corporativo seja Mac.**
 
-    O Microsoft Fabric é uma oferta de SaaS. Tudo o que precisamos é de um navegador para acessar o serviço. Não precisamos instalar nenhum software em nossos desktops.
+        O Microsoft Fabric é uma oferta de SaaS. Tudo o que precisamos é de um navegador para acessar o serviço. Não precisamos instalar nenhum software em nossos desktops.
 
 # Limpar o ambiente do laboratório
 
