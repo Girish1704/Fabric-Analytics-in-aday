@@ -216,7 +216,7 @@ Fabric の説明を始める前に、変換とモデルについて理解する�
 
     ![](../media/Lab-1/image25.png)
 
-13. 下記の **Snowflake ユーザー名**と **Snowflake パスワード**を入力します。これらの資格情報を使用して Snowflake にあるすべてのテーブルを Snowflake に接続し、**[接続]** を選択します。
+13. 下記の **Snowflake ユーザー名**と **Snowflake パスワード**を入力します。これらの資格情報を使用して Snowflake にあるすべてのテーブルを Snowflake に接続し、 **[接続]** を選択します。
 
     - **Snowflake ユーザー名:** <inject key="SnowFlake Username" enableCopy="false" />
 
