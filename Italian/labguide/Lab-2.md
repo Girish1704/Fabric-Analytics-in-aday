@@ -52,26 +52,27 @@ In questo lab si apprenderà quanto segue:
 
     ![](../media/Lab-2/image6.png)
 
-    >***Nota:** se si usa l'ambiente lab, si può effettuare l'accesso automaticamente.*
+    >**Nota:** se si usa l'ambiente lab, si può effettuare l'accesso automaticamente.
 
-    >***Nota:** se Fabric non si apre, accedere a http://app.fabric.microsoft.com/ nel browser.*
+    >**Nota:** se Fabric non si apre, accedere a http://app.fabric.microsoft.com/ nel browser.
 
 2. Copiare il nome utente e incollarlo nel campo Posta elettronica della finestra di dialogo, quindi selezionare Invia.
 
     - **E-mail/Nome utente:** <inject key="AzureAdUserEmail"></inject>
 
-    ![](../media/Lab-2/image7.png)
+        ![](../media/Lab-2/image7.png)
 
 3. Immettere i dati **EmailUsername** seguenti nella schermata di accesso visualizzata nella scheda **Accedi a Microsoft Azure**, quindi fare clic su **Avanti**.
 
     - **E-mail/Nome utente:** <inject key="AzureAdUserEmail"></inject>
-    ![](../media/Lab-2/image8.png)
+        
+        ![](../media/Lab-2/image8.png)
 
 4. Immettere il **Pass di accesso temporaneo** seguente e fare clic su **Accedi**.
 
     - **Pass di accesso temporaneo:** <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/Lab-2/image9.png)
+        ![](../media/Lab-2/image9.png)
 
 5. Si aprirà la **home page del servizio Power BI** abituale.
 
@@ -87,7 +88,7 @@ In questo lab si apprenderà quanto segue:
 
 9. Si apre la finestra di dialogo Attiva la capacità della versione di valutazione gratuita di 60 giorni di Microsoft Fabric. Selezionare **Attiva**.
 
-    >***Nota:** non modificare l'area predefinita. Mantienila così com'è.*
+    >**Nota:** non modificare l'area predefinita. Mantienila così com'è.
 
     ![](../media/Lab-2/image11.png)
 
@@ -113,11 +114,13 @@ In questo lab si apprenderà quanto segue:
 
 4. Nel campo **Nome** immettere **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
-    >***Nota:** il nome dell'area di lavoro deve essere univoco. Assicurarsi che sotto il campo Nome sia presente un segno di spunta verde e che sia indicato "Questo nome è disponibile".*
+    >**Nota:** il nome dell'area di lavoro deve essere univoco. Assicurarsi che sotto il campo Nome sia presente un segno di spunta verde e che sia indicato "Questo nome è disponibile".
 
 5. Se si desidera, è possibile immettere una descrizione per l'area di lavoro. Questo campo è facoltativo.
 
-6. Fare clic su **Avanzate** per espandere la sezione.![](../media/Lab-2/image15.png)
+6. Fare clic su **Avanzate** per espandere la sezione.
+
+    ![](../media/Lab-2/image15.png)
 
 7. In **Modalità licenza** assicurarsi che si sia selezionato **Versione di prova** (deve essere selezionato per impostazione predefinita).
 
@@ -129,7 +132,7 @@ In questo lab si apprenderà quanto segue:
 
 ## Attività 3 - Creazione di un lakehouse
 
-1. Nella nuova area di lavoro **FAIAD_Username** individuare il pulsante **+ Nuovo elemento (1)** nel riquadro di spostamento a sinistra. Qui è possibile iniziare a creare nuovi elementi nell'area di lavoro.
+1. Nella nuova area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** individuare il pulsante **+ Nuovo elemento (1)** nel riquadro di spostamento a sinistra. Qui è possibile iniziare a creare nuovi elementi nell'area di lavoro.
 
 2. Nella casella di ricerca digitare **Lakehouse (2)** e, dai risultati della ricerca, selezionare l'opzione **Lakehouse (3)**. Si creerà un nuovo lakehouse per le attività di archiviazione, query e gestione dei Big Data.
 
@@ -137,9 +140,9 @@ In questo lab si apprenderà quanto segue:
 
 3. Si apre una finestra di dialogo Nuovo lakehouse. Immettere **lh_FAIAD** nella casella di testo Nome.
 
-    >***Nota:** lh qui si riferisce a lakehouse. Aggiungiamo il prefisso lh per agevolarne l'identificazione e la ricerca.*
+    >**Nota:** lh qui si riferisce a lakehouse. Aggiungiamo il prefisso lh per agevolarne l'identificazione e la ricerca.*
 
-    ***Nota:** questa funzionalità non è più in anteprima, **ma non è ancora necessario abilitarla.*
+    >**Nota:** questa funzionalità non è più in anteprima, **ma non è ancora necessario abilitarla**.
 
 4. Selezionare **Crea**
 
@@ -237,7 +240,7 @@ In questo lab si apprenderà quanto segue:
 
     c. **Soluzioni per il settore sanitario:** sono progettate strategicamente per accelerare il time-to-value per i clienti rispondendo all'esigenza critica di trasformare in modo efficiente i dati sanitari in un formato adatto per l'analisi.
 
-    >***Nota:** alcune soluzioni potrebbero non essere visualizzate*
+    >**Nota:** alcune soluzioni potrebbero non essere visualizzate
 
     **Per iniziare** Per iniziare a usare Industry Solutions, vedere le sezioni seguenti.
 
@@ -273,47 +276,47 @@ In questo lab si apprenderà quanto segue:
 
     **Tipi di elemento**
 
-a. **Casa eventi:** permette di creare un'area di lavoro di uno o più database KQL, che è possibile condividere tra progetti.
+    a. **Casa eventi:** permette di creare un'area di lavoro di uno o più database KQL, che è possibile condividere tra progetti.
 
-b. **Set di query KQL:** permette di eseguire query sui dati per generare tabelle e oggetti visivi condivisibili.
+    b. **Set di query KQL:** permette di eseguire query sui dati per generare tabelle e oggetti visivi condivisibili.
 
-c. **Dashboard in tempo reale:** permette visualizzare dashboard in tempo reale entro pochi secondi dall'inserimento dei dati.
+    c. **Dashboard in tempo reale:** permette visualizzare dashboard in tempo reale entro pochi secondi dall'inserimento dei dati.
 
-d. **Eventstream:** permette di acquisire, trasformare e instradare il flusso di eventi in tempo reale.
+    d. **Eventstream:** permette di acquisire, trasformare e instradare il flusso di eventi in tempo reale.
 
-e. **Attivatore:** consente di monitorare set di dati, query e flussi di eventi per i modelli.
+    e. **Attivatore:** consente di monitorare set di dati, query e flussi di eventi per i modelli.
 
-f. **Set di schemi degli eventi (anteprima):** consente di organizzare e standardizzare le strutture di dati (schemi) per i flussi di lavoro di analisi in tempo reale, semplificando l'elaborazione e l'analisi coerente dei dati in streaming.
+    f. **Set di schemi degli eventi (anteprima):** consente di organizzare e standardizzare le strutture di dati (schemi) per i flussi di lavoro di analisi in tempo reale, semplificando l'elaborazione e l'analisi coerente dei dati in streaming.
 
-g. **Connettore di flusso personalizzato (anteprima):** consente di inviare eventi in tempo reale a un flusso di eventi da endpoint e app personalizzati.
+    g. **Connettore di flusso personalizzato (anteprima):** consente di inviare eventi in tempo reale a un flusso di eventi da endpoint e app personalizzati.
 
-h. **Rilevamento anomalie (anteprima):** il rilevamento delle anomalie identifica automaticamente modelli insoliti e anomalie nelle tabelle dello spazio eventi.
+    h. **Rilevamento anomalie (anteprima):** il rilevamento delle anomalie identifica automaticamente modelli insoliti e anomalie nelle tabelle dello spazio eventi.
 
-i  **Agente per le operazioni (anteprima):** gli agenti per le operazioni automatizzano il ciclo di osservazione \> analisi \> decisione \> azione. Tengono continuamente traccia delle metriche chiave, presentano informazioni dettagliate e consigliano azioni mirate.
+    i  **Agente per le operazioni (anteprima):** gli agenti per le operazioni automatizzano il ciclo di osservazione \> analisi \> decisione \> azione. Tengono continuamente traccia delle metriche chiave, presentano informazioni dettagliate e consigliano azioni mirate.
 
-j. **Mappa (anteprima):** trasferisci informazioni dettagliate geospaziali in Real-Time Intelligence, consentendo a chiunque di visualizzare dove si verificano gli eventi, integrare i dati spaziali con altre funzionalità di Fabric e prendere decisioni più intelligenti e basate sulla posizione.
+    j. **Mappa (anteprima):** trasferisci informazioni dettagliate geospaziali in Real-Time Intelligence, consentendo a chiunque di visualizzare dove si verificano gli eventi, integrare i dati spaziali con altre funzionalità di Fabric e prendere decisioni più intelligenti e basate sulla posizione.
 
-k. **Generatore di gemelli digitali (anteprima):** il generatore di gemelli digitali fornisce agli utenti esperienze senza codice o con poco codice per creare e modellare i concetti aziendali, come risorse e processi, attraverso un'ontologia.
+    k. **Generatore di gemelli digitali (anteprima):** il generatore di gemelli digitali fornisce agli utenti esperienze senza codice o con poco codice per creare e modellare i concetti aziendali, come risorse e processi, attraverso un'ontologia.
 
     **Per iniziare**
 
     Per iniziare a utilizzare Real-Time Intelligence, vedere le sezioni seguenti.
 
-a. **Esperienze end-to-end in tempo reale:** fai clic sul pulsante "Attività iniziali" per esplorare un'analisi di dati in tempo reale con set di dati di esempio.
+    a. **Esperienze end-to-end in tempo reale:** fai clic sul pulsante "Attività iniziali" per esplorare un'analisi di dati in tempo reale con set di dati di esempio.
 
-b. **Esplorazione di un esempio di Real-Time Intelligence:** fare clic sul pulsante "Apri" per esplorare l'analisi dei dati in tempo reale con un esempio.
+    b. **Esplorazione di un esempio di Real-Time Intelligence:** fare clic sul pulsante "Apri" per esplorare l'analisi dei dati in tempo reale con un esempio.
 
-c. **Esplorazione di un esempio di spazio eventi:** fare clic sul pulsante "Seleziona" per imparare a usare Real-Time Intelligence tramite un esempio.
+    c. **Esplorazione di un esempio di spazio eventi:** fare clic sul pulsante "Seleziona" per imparare a usare Real-Time Intelligence tramite un esempio.
 
-d. **Introduzione a Real-Time Intelligence:** fare clic sul pulsante "Apri" per ottenere una panoramica di Real-Time Intelligence e iniziare a usare questo strumento in modo efficace.
+    d. **Introduzione a Real-Time Intelligence:** fare clic sul pulsante "Apri" per ottenere una panoramica di Real-Time Intelligence e iniziare a usare questo strumento in modo efficace.
 
-e. **Informazioni su KQL con dati di esempio:** fare clic sul pulsante "Apri" per imparare a usare KQL tramite dati di esempio.
+    e. **Informazioni su KQL con dati di esempio:** fare clic sul pulsante "Apri" per imparare a usare KQL tramite dati di esempio.
 
-f. **Cos'è l'hub in tempo reale:** fare clic sul pulsante "Apri" per informazioni sull'hub in tempo reale e sul modo in cui usarlo.
+    f. **Cos'è l'hub in tempo reale:** fare clic sul pulsante "Apri" per informazioni sull'hub in tempo reale e sul modo in cui usarlo.
 
-g. **Esplorazione di un esempio di Attivatore:** fare clic sul pulsante "Apri" per usare un esempio di Attivatore e comprendere caratteristiche e funzionalità di Real-Time Intelligence.
+    g. **Esplorazione di un esempio di Attivatore:** fare clic sul pulsante "Apri" per usare un esempio di Attivatore e comprendere caratteristiche e funzionalità di Real-Time Intelligence.
 
-h. **Introduzione ad Attivatore:** fare clic sul pulsante "Apri" per informazioni iniziali su Attivatore e iniziare a usare questo strumento in modo efficace.
+    h. **Introduzione ad Attivatore:** fare clic sul pulsante "Apri" per informazioni iniziali su Attivatore e iniziare a usare questo strumento in modo efficace.
 
     ![](../media/Lab-2/image27.png)
 
@@ -335,43 +338,43 @@ h. **Introduzione ad Attivatore:** fare clic sul pulsante "Apri" per informazion
 
     **Tipi di elemento**
 
-1. **Lakehouse:** permette di archiviare Big Data per operazioni di pulizia, query, reporting e condivisione.
+    a. **Lakehouse:** permette di archiviare Big Data per operazioni di pulizia, query, reporting e condivisione.
 
-2. **Blocco appunti:** usato per l'inserimento, la preparazione, l'analisi e altre attività correlate ai dati usando linguaggi vari come Python, R e Scala.
+    b. **Blocco appunti:** usato per l'inserimento, la preparazione, l'analisi e altre attività correlate ai dati usando linguaggi vari come Python, R e Scala.
 
-3. **Ambiente:** permette di configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.
+    c. **Ambiente:** permette di configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.
 
-4. **Definizione del processo Spark:** permette di definire, pianificare e gestire i processi Apache.
+    d. **Definizione del processo Spark:** permette di definire, pianificare e gestire i processi Apache.
 
-5. **Funzioni per i dati utente:** piattaforma che consente di ospitare ed eseguire applicazioni in Fabric.
+    e. **Funzioni per i dati utente:** piattaforma che consente di ospitare ed eseguire applicazioni in Fabric.
 
-6. **API per GraphQL:** API per l'esecuzione di query su più origini dati.
+    f. **API per GraphQL:** API per l'esecuzione di query su più origini dati.
 
-7. **Database Snowflake:** consente agli utenti di eseguire il mirroring del database Snowflake all'interno di Fabric.
+    g. **Database Snowflake:** consente agli utenti di eseguire il mirroring del database Snowflake all'interno di Fabric.
 
     **Per iniziare**
 
     Per iniziare a usare Data Engineering, vedere le sezioni seguenti.
 
-1. **Esplorazione di un esempio:** fare clic sul pulsante "Seleziona" per imparare a usare Data Engineering tramite un esempio.
+    a. **Esplorazione di un esempio:** fare clic sul pulsante "Seleziona" per imparare a usare Data Engineering tramite un esempio.
 
-2. **Cos'è un lakehouse?:** fare clic sul pulsante "Apri" per informazioni sui lakehouse e su come usarli.
+    b. **Cos'è un lakehouse?:** fare clic sul pulsante "Apri" per informazioni sui lakehouse e su come usarli.
 
-3. **Esperienza sui dati in un lakehouse:** fare clic sul pulsante "Apri" per informazioni iniziali sull'ingegneria dei dati tramite lakehouse.
+    c. **Esperienza sui dati in un lakehouse:** fare clic sul pulsante "Apri" per informazioni iniziali sull'ingegneria dei dati tramite lakehouse.
 
-4. **Attività iniziali con le definizioni dei processi Spark:** fare clic sul pulsante "Apri" per informazioni su come usare le definizioni dei processi Spark per l'elaborazione dati.
+    d. **Attività iniziali con le definizioni dei processi Spark:** fare clic sul pulsante "Apri" per informazioni su come usare le definizioni dei processi Spark per l'elaborazione dati.
 
-5. **Sviluppo ed esecuzione di notebook:** fare clic sul pulsante "Apri" per informazioni su come sviluppare ed eseguire notebook per l'analisi dei dati.
+    e. **Sviluppo ed esecuzione di notebook:** fare clic sul pulsante "Apri" per informazioni su come sviluppare ed eseguire notebook per l'analisi dei dati.
 
-6. **Come usare NotebookUtils:** fare clic sul pulsante "Apri" per informazioni su come usare NotebookUtils per l'analisi avanzata dei dati.
+    f. **Come usare NotebookUtils:** fare clic sul pulsante "Apri" per informazioni su come usare NotebookUtils per l'analisi avanzata dei dati.
 
-7. **Uso dei notebook per il lakehouse:** fare clic sul pulsante "Apri" per informazioni su come sfruttare i notebook per il proprio lakehouse.
+    g. **Uso dei notebook per il lakehouse:** fare clic sul pulsante "Apri" per informazioni su come sfruttare i notebook per il proprio lakehouse.
 
-8. **Uso dei set di dati per il lakehouse:** fare clic su "Apri" per informazioni su come sfruttare i set di dati per il proprio lakehouse.
+    h. **Uso dei set di dati per il lakehouse:** fare clic su "Apri" per informazioni su come sfruttare i set di dati per il proprio lakehouse.
 
-9. **Creazione delle prime funzioni per i dati utente:** fare clic sul pulsante "Apri" per informazioni su come creare funzioni per i dati utente.
+    i. **Creazione delle prime funzioni per i dati utente:** fare clic sul pulsante "Apri" per informazioni su come creare funzioni per i dati utente.
 
-10. **Creazione della prima API per GraphQL:** fare clic sul pulsante "Apri" per informazioni su come creare un'API per GraphQL.
+    j. **Creazione della prima API per GraphQL:** fare clic sul pulsante "Apri" per informazioni su come creare un'API per GraphQL.
 
     ![](../media/Lab-2/image29.png)
 
@@ -393,32 +396,31 @@ h. **Introduzione ad Attivatore:** fare clic sul pulsante "Apri" per informazion
 
     **Tipi di elemento**
 
-1. **Modello di Machine Learning:** permette di creare modelli di Machine Learning.
+    a. **Modello di Machine Learning:** permette di creare modelli di Machine Learning.
 
-2. **Esperimento:** permette di creare, eseguire e monitorare lo sviluppo di più modelli.
+    b. **Esperimento:** permette di creare, eseguire e monitorare lo sviluppo di più modelli.
 
-3. **Blocco appunti:** permette di esplorare dati e creare soluzioni di Machine Learning.
+    c. **Blocco appunti:** permette di esplorare dati e creare soluzioni di Machine Learning.
 
-4. **Ambiente:** consente di configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.
+    d. **Ambiente:** consente di configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.
 
-5. **Agente dati (anteprima):** consente di creare esperienze di IA conversazionale che rispondono a domande sui dati archiviati in lakehouse, warehouse, modelli semantici di Power BI
-    e database KQL.
+    e. **Agente dati (anteprima):** consente di creare esperienze di IA conversazionale che rispondono a domande sui dati archiviati in lakehouse, warehouse, modelli semantici di Power BI e database KQL.
 
-6. **Notebook Phyton:** permette di importare notebook Python da un computer locale.
+    f. **Notebook Phyton:** permette di importare notebook Python da un computer locale.
 
     **Attività iniziali**
 
     Per iniziare a usare Data Science, effettuare i passaggi seguenti:
 
-1. **Esplorare un esempio:** fare clic sul pulsante "Seleziona" per usare un esempio e ottenere informazioni su Data Science.
+    a. **Esplorare un esempio:** fare clic sul pulsante "Seleziona" per usare un esempio e ottenere informazioni su Data Science.
 
-2. **Attività iniziali con modelli di Machine Learning:** fare clic sul pulsante "Apri" per informazioni sulle attività iniziali con i modelli di Machine Learning.
+    b. **Attività iniziali con modelli di Machine Learning:** fare clic sul pulsante "Apri" per informazioni sulle attività iniziali con i modelli di Machine Learning.
 
-3. **Attività iniziali con Esperimenti di Machine Learning:** fare clic sul pulsante "Apri" per informazioni su come condurre esperimenti di Machine Learning.
+    c. **Attività iniziali con Esperimenti di Machine Learning:** fare clic sul pulsante "Apri" per informazioni su come condurre esperimenti di Machine Learning.
 
-4. **Attività iniziati con Notebooks:** fare clic sul pulsante "Apri" per informazioni sulle attività iniziali con i notebook.
+    d. **Attività iniziati con Notebooks:** fare clic sul pulsante "Apri" per informazioni sulle attività iniziali con i notebook.
 
-5. **Sviluppo ed esecuzione di notebook:** fare clic sul pulsante "Apri" per informazioni su come sviluppare ed eseguire notebook per l'analisi dei dati.
+    e. **Sviluppo ed esecuzione di notebook:** fare clic sul pulsante "Apri" per informazioni su come sviluppare ed eseguire notebook per l'analisi dei dati.
 
     ![](../media/Lab-2/image31.png)
 
@@ -440,39 +442,39 @@ h. **Introduzione ad Attivatore:** fare clic sul pulsante "Apri" per informazion
 
     **Tipi di elemento**
 
-1. **Data warehouse:** permette di creare un data warehouse.
+    a. **Data warehouse:** permette di creare un data warehouse.
 
-2. **Warehouse di esempio:** permette di esplorare e testare le funzionalità di data warehousing con set di dati e modelli preconfigurati.
+    b. **Warehouse di esempio:** permette di esplorare e testare le funzionalità di data warehousing con set di dati e modelli preconfigurati.
 
-3. **Blocco appunti:** permette di creare e condividere attività di analisi e visualizzazione di dati interattivi.
+    c. **Blocco appunti:** permette di creare e condividere attività di analisi e visualizzazione di dati interattivi.
 
-4. **Database SQL di Azure con mirroring:** permette di eseguire il mirroring del database SQL di Azure.
+    d. **Database SQL di Azure con mirroring:** permette di eseguire il mirroring del database SQL di Azure.
 
-5. **Catalogo riflesso di Azure Databricks:** permette di eseguire il mirroring dei dati da Azure Databricks per migliorare l'integrazione e l'analisi.
+    e. **Catalogo riflesso di Azure Databricks:** permette di eseguire il mirroring dei dati da Azure Databricks per migliorare l'integrazione e l'analisi.
 
-6. **Snowflake con mirroring:** permette di eseguire il mirroring del database Snowflake.
+    f. **Snowflake con mirroring:** permette di eseguire il mirroring del database Snowflake.
 
-7. **Oracle con mirroring (anteprima):** consente di eseguire il mirroring di Oracle.
+    g. **Oracle con mirroring (anteprima):** consente di eseguire il mirroring di Oracle.
 
-8. **Google Big Query con mirroring (anteprima):** consente di eseguire il mirroring di Google Big Query.
+    h. **Google Big Query con mirroring (anteprima):** consente di eseguire il mirroring di Google Big Query.
 
-9. **Azure Cosmos DB con mirroring:** consente di eseguire il mirroring di Azure Cosmos DB.
+    i. **Azure Cosmos DB con mirroring:** consente di eseguire il mirroring di Azure Cosmos DB.
 
-10. **Server SQL con mirroring (anteprima):** consente di eseguire il mirroring di SQL Server.
+    j. **Server SQL con mirroring (anteprima):** consente di eseguire il mirroring di SQL Server.
 
-11. **Database di Azure per PostgreSQL con mirroring:** usato per eseguire il mirroring del database di Azure per PostgreSQL esistente
+    k. **Database di Azure per PostgreSQL con mirroring:** usato per eseguire il mirroring del database di Azure per PostgreSQL esistente
 
-12. **Istanza gestita di SQL di Azure con mirroring:** utilizzata per eseguire il mirroring dei database gestiti Azure SQL per disponibilità elevata e ripristino di emergenza.
+    l. **Istanza gestita di SQL di Azure con mirroring:** utilizzata per eseguire il mirroring dei database gestiti Azure SQL per disponibilità elevata e ripristino di emergenza.
 
-13. **Database con mirroring:** usato per replicare i database per disponibilità elevata e ripristino di emergenza.
+    m. **Database con mirroring:** usato per replicare i database per disponibilità elevata e ripristino di emergenza.
 
     **Per iniziare**
 
     Per iniziare a usare Data Warehouse, vedere le sezioni seguenti.
 
-1. **Esplorazione di un warehouse di esempio:** avviare un nuovo warehouse con dati di esempio già caricati.
+    a. **Esplorazione di un warehouse di esempio:** avviare un nuovo warehouse con dati di esempio già caricati.
 
-2. **Introduzione al warehouse:** fare clic sul pulsante "Apri" per informazioni su come usare un warehouse per analizzare i dati.
+    b. **Introduzione al warehouse:** fare clic sul pulsante "Apri" per informazioni su come usare un warehouse per analizzare i dati.
 
     ![](../media/Lab-2/image33.png)
 
@@ -490,20 +492,19 @@ h. **Introduzione ad Attivatore:** fare clic sul pulsante "Apri" per informazion
 
     **Tipi di elemento**
 
-1. **Database SQL:** il database SQL in Fabric fa parte del carico di lavoro del database e i dati sono accessibili da altri elementi in Fabric. I dati del database SQL vengono anche mantenuti aggiornati in un formato che consente di eseguire query in OneLake, in modo che sia possibile usare tutti i diversi servizi in Fabric, come l'esecuzione di analisi con Spark, l'esecuzione di notebook
-    e di ingegneria dei dati, la visualizzazione tramite report Power BI e altro ancora.
+    a. **Database SQL:** il database SQL in Fabric fa parte del carico di lavoro del database e i dati sono accessibili da altri elementi in Fabric. I dati del database SQL vengono anche mantenuti aggiornati in un formato che consente di eseguire query in OneLake, in modo che sia possibile usare tutti i diversi servizi in Fabric, come l'esecuzione di analisi con Spark, l'esecuzione di notebook e di ingegneria dei dati, la visualizzazione tramite report Power BI e altro ancora.
 
-2. **Cosmos DB (Anteprima):** Cosmos DB in Microsoft Fabric è un database NoSQL ottimizzato per l'IA con un'esperienza di gestione semplificata. Gli sviluppatori possono utilizzare Cosmos DB Fabric per creare applicazioni IA con meno problemi e senza dover eseguire le tipiche attività di gestione dei database.
+    b. **Cosmos DB (Anteprima):** Cosmos DB in Microsoft Fabric è un database NoSQL ottimizzato per l'IA con un'esperienza di gestione semplificata. Gli sviluppatori possono utilizzare Cosmos DB Fabric per creare applicazioni IA con meno problemi e senza dover eseguire le tipiche attività di gestione dei database.
 
     **Per iniziare**
 
     Per iniziare a usare Databases, vedere le sezioni seguenti.
 
-1. **Esplorazione:** fare clic sul pulsante "Apri" per aprire un database di esempio
+    a. **Esplorazione:** fare clic sul pulsante "Apri" per aprire un database di esempio
 
-2. **Concetti sui database:** illustra i termini e i concetti comuni relativi al database transazionale, in modo da acquisire familiarità con l'uso dei database SQL
+    b. **Concetti sui database:** illustra i termini e i concetti comuni relativi al database transazionale, in modo da acquisire familiarità con l'uso dei database SQL
 
-3. **Modelli di database:** esamina una libreria di modelli preconfigurati di progetti di database comuni
+    c. **Modelli di database:** esamina una libreria di modelli preconfigurati di progetti di database comuni
 
     ![](../media/Lab-2/image35.png)
 

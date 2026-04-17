@@ -98,7 +98,7 @@ L’équipe informatique a déjà établi un lien vers Dataverse et appliqué le
 
 4. Cliquez sur **Connexion**.
 
-    **Remarque :** vous êtes connecté à l’aide de vos informations d’identification. Elles sont différentes de celles figurant dans la capture d’écran ci-dessous.
+    >**Remarque :** vous êtes connecté à l’aide de vos informations d’identification. Elles sont différentes de celles figurant dans la capture d’écran ci-dessous.
 
     ![](../media/Lab-4/image12.png)
 
@@ -184,7 +184,7 @@ La connexion est établie et vous pouvez afficher les données dans le volet d�
 
 4. Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Reports** sur le bureau de votre environnement de labo.
 
-5. Dans le ruban, cliquez sur **Accueil -\> Transformer les données**. Une fenêtre Power Query s’ouvre alors. Comme vous l’avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
+5. Dans le ruban, cliquez sur **Accueil -> Transformer les données**. Une fenêtre Power Query s’ouvre alors. Comme vous l’avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
 
 6. Dans le volet gauche, sous le dossier **SnowflakeData**, appuyez sur la touche **Ctrl** ou Maj et sélectionnez les requêtes suivantes :
 
@@ -206,7 +206,7 @@ La connexion est établie et vous pouvez afficher les données dans le volet d�
 
 9. Dans le **volet Dataflow**, cliquez sur le **volet central** et utilisez le raccourci clavier **Ctrl + V**. (À l’heure actuelle, le clic droit sur Coller n’est pas pris en charge.) Si vous utilisez un appareil MAC, collez à l’aide du raccourci clavier Cmd + V.
 
-    **Remarque :** si vous travaillez dans l’environnement de labo, cliquez sur les **points de suspension (...)** en haut de l’écran à droite. Utilisez le curseur pour **activer** **le Presse-papiers natif de VM**. Cliquez sur D’ACCORD dans la boîte de dialogue. Après avoir collé les requêtes, vous pouvez désactiver cette option.
+    >**Remarque :** si vous travaillez dans l’environnement de labo, cliquez sur les **points de suspension (...)** en haut de l’écran à droite. Utilisez le curseur pour **activer** **le Presse-papiers natif de VM**. Cliquez sur D’ACCORD dans la boîte de dialogue. Après avoir collé les requêtes, vous pouvez désactiver cette option.
 
     ![](../media/Lab-4/image23.png)
 
@@ -228,7 +228,7 @@ Notez que les cinq requêtes sont collées et que vous disposez désormais du vo
 
     - Mot de passe Snowflake : <inject key="SnowFlake Password" enableCopy="false" />
 
-    **Remarque :** si vous avez des difficultés à vous connecter à Snowflake avec les informations d’identification des détails de l’environnement, veuillez utiliser les informations d’identification fournies ci-après.
+        >**Remarque :** si vous avez des difficultés à vous connecter à Snowflake avec les informations d’identification des détails de l’environnement, veuillez utiliser les informations d’identification fournies ci-après.
 
     - **Nom d’utilisateur Snowflake :** SNOWFLAKE_BACKUP
 
@@ -242,7 +242,7 @@ Notez que les cinq requêtes sont collées et que vous disposez désormais du vo
 
 ## Tâche 7 : configurer la destination des données pour les requêtes Supplier et PO
 
-1. Sélectionnez la requête **Supplier (1).**
+1. Sélectionnez la requête **Supplier (1)**.
 
 2. Dans le ruban, cliquez sur **Accueil (2) -> Ajouter une destination de données (3) -> Lakehouse (4).**
 
@@ -318,7 +318,7 @@ Vous devriez être dans le lakehouse **lh_FAIAD**. Vérifiez que vous vous trouv
 
 3. La boîte de dialogue Nouveau raccourci s’ouvre alors. Sous **Sources externes**, sélectionnez **Dataverse**.
 
-    **Remarque** **:** dans le labo précédent, nous avons procédé de même pour créer un raccourci vers Azure Data Lake Storage Gen2.
+    >**Remarque** **:** dans le labo précédent, nous avons procédé de même pour créer un raccourci vers Azure Data Lake Storage Gen2.
 
     ![](../media/Lab-4/image36.png)
 
@@ -444,6 +444,6 @@ CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE PRODUIT/T
 
 MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU’ELLES SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D’ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET D’ABSENCE DE CONTREFAÇON. MICROSOFT N’OFFRE AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L’UTILISATION DE CETTE DÉMONSTRATION/CE LABO, OU L’ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
 
-**CLAUSE D’EXCLUSION DE RESPONSABILITÉ**
+**CLAUSE D’EXCLUSION DE RESPONSABILITÉ** 
 
 Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.

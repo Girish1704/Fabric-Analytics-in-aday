@@ -295,8 +295,7 @@ Aujourd’hui, vous allez découvrir diverses fonctionnalités clés de Microsof
 
     h. **Détecteur d’anomalies (version préliminaire) :** la détection d’anomalies identifie automatiquement les schémas inhabituels et les valeurs aberrantes dans vos tables Eventhouse.
 
-    i. **Agent Opérations (version préliminaire) :** les agents Opération automatisent le cycle observer - > analyser - > décider - > agir. Ils suivent en continu les indicateurs clés,
-        mettent en évidence des analyses pertinentes et recommandent des actions ciblées.
+    i. **Agent Opérations (version préliminaire) :** les agents Opération automatisent le cycle observer - > analyser - > décider - > agir. Ils suivent en continu les indicateurs clés, mettent en évidence des analyses pertinentes et recommandent des actions ciblées.
 
     j. **Carte (version préliminaire) :** apportez des informations géospatiales à Real-Time Intelligence, permettant à chacun de visualiser où les événements se produisent, d’intégrer des données spatiales avec les autres fonctionnalités de Fabric et de prendre des décisions plus intelligentes et contextualisées selon la localisation.
 
@@ -460,8 +459,7 @@ Aujourd’hui, vous allez découvrir diverses fonctionnalités clés de Microsof
 
     g. **Mise en miroir Oracle (version préliminaire) :** permet la mise en miroir d’Oracle.
 
-    h. **Mise en miroir de Google Big Query (version préliminaire) :** permet la mise en miroir
-        de Google Big Query.
+    h. **Mise en miroir de Google Big Query (version préliminaire) :** permet la mise en miroir de Google Big Query.
 
     i. **Mise en miroir Azure Cosmos DB :** permet la mise en miroir d’Azure Cosmos DB.
 
@@ -504,8 +502,8 @@ Aujourd’hui, vous allez découvrir diverses fonctionnalités clés de Microsof
     **Démarrer :**
 
     Pour commencer à utiliser Databases, procédez comme suit :
-
-    nous avons exploré a. **Explorer** **:** cliquez sur « Ouvrir » pour explorer un exemple de base de données.
+    
+    a. **Explorer** **:** cliquez sur « Ouvrir » pour explorer un exemple de base de données.
 
     b. **Concepts de base de données** **:** explique les termes et concepts courants autour de la base de données transactionnelle afin que vous puissiez vous familiariser avec l’utilisation de SQL Database.
 
@@ -575,8 +573,10 @@ LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CE LABO (OU DE TOUTE PARTIE 
 
 CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D’ÉVENTUELS NOUVEAUX CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS INSTALLATION OU CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS. LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CE LABO PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D’UTILISATION DE CES FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE DIFFÉRENTE.
    
- **COMMENTAIRES.** Si vous envoyez des commentaires sur les fonctionnalités, technologies et/ou concepts décrits dans cette démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans frais, le droit d’utiliser, de partager et de commercialiser vos commentaires de quelque manière et à quelque fin que ce soit. Vous accordez également à des tiers, sans frais, les droits de brevet nécessaires pour leurs produits, technologies et services en vue de l’utilisation ou de l’interface avec des parties spécifiques d’un logiciel ou d’un service Microsoft incluant les commentaires. Vous n’enverrez pas de commentaires soumis à une licence exigeant que Microsoft accorde une licence pour son logiciel ou sa documentation à des tiers du fait que nous y incluons vos commentaires. Ces droits survivent à ce contrat. 
+**COMMENTAIRES.** Si vous envoyez des commentaires sur les fonctionnalités, technologies et/ou concepts décrits dans cette démonstration/ce labo à Microsoft, vous accordez à Microsoft, sans frais, le droit d’utiliser, de partager et de commercialiser vos commentaires de quelque manière et à quelque fin que ce soit. Vous accordez également à des tiers, sans frais, les droits de brevet nécessaires pour leurs produits, technologies et services en vue de l’utilisation ou de l’interface avec des parties spécifiques d’un logiciel ou d’un service Microsoft incluant les commentaires. Vous n’enverrez pas de commentaires soumis à une licence exigeant que Microsoft accorde une licence pour son logiciel ou sa documentation à des tiers du fait que nous y incluons vos commentaires. Ces droits survivent à ce contrat. 
  
  MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU’ELLES SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D’ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET D’ABSENCE DE CONTREFAÇON. MICROSOFT N’OFFRE AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L’UTILISATION DE CETTE DÉMONSTRATION/CE LABO, OU L’ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT. 
  
-**CLAUSE D’EXCLUSION DE RESPONSABILITÉ** Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.
+**CLAUSE D’EXCLUSION DE RESPONSABILITÉ** 
+
+Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.

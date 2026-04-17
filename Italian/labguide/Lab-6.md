@@ -40,11 +40,11 @@ In questo lab si apprenderà quanto segue:
 
 ## Attività 1: Query sui dati mediante SQL
 
-1. Torniamo all'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/> ** creata nel Lab 2, Attività 8.
+1. Torniamo all'area di lavoro di Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** creata nel Lab 2, Attività 8.
 
 2. Se si preferisce, è possibile **ridurre a icona il flusso di attività** per visualizzare l'elenco completo degli elementi.
 
-3. Saranno visibili tre elementi associati a lh_FAIAD, ovvero il lakehouse, il modello semantico e l'endpoint SQL. In un lab precedente abbiamo esaminato il lakehouse e creato query visive usando l'endpoint di Analisi SQL. Seleziona l'icona **FAIAD_<inject key="Deployment ID" enableCopy="false"/> ** nel riquadro di spostamento a sinistra e scegli l'opzione **Endpoint di analisi SQL lh_FAIAD** per continuare a esplorare questa opzione. Si aprirà la **vista SQL** di Explorer.
+3. Saranno visibili tre elementi associati a lh_FAIAD, ovvero il lakehouse, il modello semantico e l'endpoint SQL. In un lab precedente abbiamo esaminato il lakehouse e creato query visive usando l'endpoint di Analisi SQL. Seleziona l'icona **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** nel riquadro di spostamento a sinistra e scegli l'opzione **Endpoint di analisi SQL lh_FAIAD** per continuare a esplorare questa opzione. Si aprirà la **vista SQL** di Explorer.
 
     ![](../media/Lab-6/image6.png)
 
@@ -60,7 +60,7 @@ In questo lab si apprenderà quanto segue:
 
 5. Incollare la **query SQL seguente** nella **finestra della query**. Questa query restituirà le unità in base al nome del fornitore. Per ottenere questo risultato è necessario unire la tabella Sales alle tabelle Product e Supplier.
 
-    ```
+    ```sql
    SELECT su.SupplierName, SUM(Quantity) as Units
    FROM dbo.Sales s
    JOIN dbo.Product p on p.StockItemID = s.StockItemID
@@ -82,7 +82,7 @@ In questo lab si apprenderà quanto segue:
 
 1. Possiamo anche visualizzare il risultato di questa query. **Evidenziare la query** nel riquadro delle query
 
-2. Nel menu del riquadro Risultati, seleziona l'icona del menu a discesa -\> **Visualizza risultati**.
+2. Nel menu del riquadro Risultati, seleziona l'icona del menu a discesa -> **Visualizza risultati**.
 
     ![](../media/Lab-6/image9.png)
 
@@ -104,7 +104,7 @@ In questo lab si apprenderà quanto segue:
 
 8. Si apre la finestra di dialogo Salva il report. Digitare **Units per fornitore** nella casella di testo **Immettere un nome per il report**.
 
-9. Assicurarsi che l'area di lavoro di destinazione sia l'area di lavoro di Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> **
+9. Assicurarsi che l'area di lavoro di destinazione sia l'area di lavoro di Fabric, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 10. Selezionare **Salva**.
 
@@ -120,11 +120,9 @@ In questo lab si apprenderà quanto segue:
 
     ![](../media/Lab-6/image13.png)
 
-
 2. Viene visualizzata la finestra di dialogo **Nuovo modello semantico**. Immettere **sm_FAIAD** come nome del modello semantico Direct Lake.
 
-3. Per impostazione predefinita abbiamo la possibilità di selezionare un sottoinsieme delle tabelle. tenere presente che nel lab precedente avevamo creato delle viste. Ora vogliamo includere queste viste nel modello. Espandere lo schema **dbo** in cui è possibile vedere tutte le tabelle
-    e le viste del lakehouse.
+3. Per impostazione predefinita abbiamo la possibilità di selezionare un sottoinsieme delle tabelle. tenere presente che nel lab precedente avevamo creato delle viste. Ora vogliamo includere queste viste nel modello. Espandere lo schema **dbo** in cui è possibile vedere tutte le tabelle e le viste del lakehouse.
 
     ![](../media/Lab-6/image14.png)
 
@@ -184,7 +182,7 @@ Se non ti trovi attualmente all’interno del nuovo modello semantico creato, an
 
 7. Assicurarsi che **Nella tabella** sia **Reseller** e che la **Colonna** sia **ResellerID.**
 
-8. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (\*:1)**.
+8. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
 
 9. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
 
@@ -198,7 +196,7 @@ Se non ti trovi attualmente all’interno del nuovo modello semantico creato, an
 
 13. Assicurarsi che **Nella tabella** sia **Date** e che la **Colonna** sia **Date.**
 
-14. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (\*:1)**.
+14. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
 
 15. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
 
@@ -210,7 +208,7 @@ Se non ti trovi attualmente all’interno del nuovo modello semantico creato, an
 
     >**Nota:** tutti i nostri aggiornamenti vengono salvati automaticamente.
 
-    **Checkpoint:** il modello dovrebbe avere le tre relazioni tra le tabelle Sales e Reseller e le tabelle Sales e Date e Sales e Product come mostrato nello screenshot seguente:
+    >**Checkpoint:** il modello dovrebbe avere le tre relazioni tra le tabelle Sales e Reseller e le tabelle Sales e Date e Sales e Product come mostrato nello screenshot seguente:
 
     ![](../media/Lab-6/image23.png)
 
@@ -222,10 +220,10 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
 1. Selezionare la **tabella Sales** dalla vista del modello. Vogliamo aggiungere le misure alla tabella Sales.
 
-2. Nel menu in alto selezionare **Home -\> Nuova misura**. Notare che viene visualizzata
+2. Nel menu in alto selezionare **Home -> Nuova misura**. Notare che viene visualizzata
     la barra della formula.
 
-3. Immettere **Sales = SUM(‘Sales’\[Sales Amount\])** nella **barra della formula**.
+3. Immettere **Sales = SUM(‘Sales’[Sales Amount])** nella **barra della formula**.
 
 4. Fare clic sul **segno di spunta** a sinistra della barra della formula o premere il tasto **INVIO**.
 
@@ -239,9 +237,9 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
     ![](../media/Lab-6/image24.png)
 
-9. Con la **tabella** **Sales** selezionata nel menu in alto, selezionare **Home -\> Nuova misura**. Notare che viene visualizzata la barra della formula.
+9. Con la **tabella** **Sales** selezionata nel menu in alto, selezionare **Home -> Nuova misura**. Notare che viene visualizzata la barra della formula.
 
-10. Immettere **Units = SUM (‘Sales’\[Quantity\])** nella **barra della formula**.
+10. Immettere **Units = SUM (‘Sales’[Quantity])** nella **barra della formula**.
 
 11. Fare clic sul **segno di spunta** a sinistra della barra della formula o premere il tasto **INVIO**.
 
@@ -253,9 +251,9 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
     ![](../media/Lab-6/image25.png)
 
-15. Con la tabella **Sales** selezionata nel menu in alto, selezionare **Home -\> Nuova misura**. Notare che viene visualizzata la barra della formula.
+15. Con la tabella **Sales** selezionata nel menu in alto, selezionare **Home -> Nuova misura**. Notare che viene visualizzata la barra della formula.
 
-16. Immettere **Sales Orders = DISTINCTCOUNT(‘Sales’\[InvoiceID\])** nella **barra della formula**.
+16. Immettere **Sales Orders = DISTINCTCOUNT(‘Sales’[InvoiceID])** nella **barra della formula**.
 
 17. Fare clic sul **segno di spunta** a sinistra della barra della formula o premere il tasto **INVIO**.
 
@@ -269,7 +267,7 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
 21. Nel **pannello dati** (a destra) selezionare **Modello**. Notare che questa operazione fornisce una vista che semplificherà l'organizzazione di tutti gli elementi nel modello semantico.
 
-22. Espandere **Modello semantico -\> Misure** per visualizzare tutte le misure appena create.
+22. Espandere **Modello semantico -> Misure** per visualizzare tutte le misure appena create.
 
 23. È anche possibile **espandere le singole tabelle** per visualizzare le colonne, le gerarchie e le misure in ciascuna di esse.
 
@@ -283,7 +281,7 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
 Aggiungiamo le relazioni rimanenti.
 
-1. Nel menu in alto selezionare **Home -\> Gestisci relazioni**.
+1. Nel menu in alto selezionare **Home -> Gestisci relazioni**.
 
 2. Si apre la finestra di dialogo Gestisci relazioni. Selezionare **+ Nuova relazione**.
 
@@ -293,7 +291,7 @@ Aggiungiamo le relazioni rimanenti.
 
 4. Assicurarsi che **Nella tabella** sia **People** e che la **Colonna** sia **PersonID.**
 
-5. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (\*:1)**.
+5. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
 
 6. Assicurarsi che la **direzione filtro incrociato** sia **Singola**.
 
@@ -307,7 +305,7 @@ Aggiungiamo le relazioni rimanenti.
 
 10. Assicurarsi che **Nella tabella** sia **Supplier** e che la **Colonna** sia **SupplierID.**
 
-11. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (\*:1)**.
+11. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
 
 12. Assicurarsi che la **direzione filtro incrociato** sia **Entrambe**.
 
@@ -321,7 +319,7 @@ Aggiungiamo le relazioni rimanenti.
 
 16. Assicurarsi che **Nella tabella** sia **Geo** e che la **Colonna** sia **CityID.**
 
-17. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (\*:1)**.
+17. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
 
 18. Assicurarsi che la **direzione filtro incrociato** sia **Entrambe**.
 
@@ -335,13 +333,13 @@ Aggiungiamo le relazioni rimanenti.
 
 22. Assicurarsi che **Nella tabella** sia **Reseller** e che la **Colonna** sia **ResellerID.**
 
-23. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (\*:1)**.
+23. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
 
 24. Assicurarsi che la **direzione filtro incrociato** sia **Singola**.
 
 25. Selezionare **Salva**.
 
-    **Checkpoint:** le relazioni del modello dovrebbero presentarsi come illustrato nello screenshot seguente.
+    >**Checkpoint:** le relazioni del modello dovrebbero presentarsi come illustrato nello screenshot seguente.
 
     ![](../media/Lab-6/image32.png)
 
@@ -353,7 +351,7 @@ Aggiungiamo le relazioni rimanenti.
 
 29. Selezionare **Chiudi** per chiudere la finestra di dialogo Gestisci relazioni. Abbiamo creato tutte le relazioni.
 
-    **Checkpoint:** il modello dovrebbe presentarsi come illustrato nello screenshot seguente.
+    >**Checkpoint:** il modello dovrebbe presentarsi come illustrato nello screenshot seguente.
 
     ![](../media/Lab-6/image33.png)
 
@@ -361,9 +359,9 @@ Aggiungiamo le relazioni rimanenti.
 
 Aggiungiamo le misure rimanenti.
 
-1. Selezionare la tabella **Sales** e nel menu in alto selezionare **Home -\> Nuova misura**.
+1. Selezionare la tabella **Sales** e nel menu in alto selezionare **Home -> Nuova misura**.
 
-2. Immettere **Avg Order** = **DIVIDE(\[Sales\], \[Sales Orders\])** nella barra della formula.
+2. Immettere **Avg Order** = **DIVIDE([Sales], [Sales Orders])** nella barra della formula.
 
 3. Fare clic sul **segno di spunta** nella barra della formula o premere il tasto INVIO.
 

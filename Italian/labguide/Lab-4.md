@@ -64,7 +64,7 @@ In questo lab si apprenderà quanto segue:
 
 4. Se non è già stato fatto, aprire il file **FAIAD.pbix** che si trova nella cartella **Reports** sul desktop dell'ambiente lab.
 
-5. Nella barra multifunzione selezionare **Home -\> Trasforma dati**. Si apre la finestra Power Query. Come abbiamo visto nei lab precedenti, le query nel pannello di sinistra sono organizzate per origine dati.
+5. Nella barra multifunzione selezionare **Home -> Trasforma dati**. Si apre la finestra Power Query. Come abbiamo visto nei lab precedenti, le query nel pannello di sinistra sono organizzate per origine dati.
 
 6. Nel pannello di sinistra, nella cartella SharepointData, **selezionare la query People**.
 
@@ -185,7 +185,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 4. Se non è già stato fatto, aprire il file **FAIAD.pbix** che si trova nella cartella **Reports** sul desktop dell'ambiente lab.
 
-5. Nella barra multifunzione selezionare **Home -\> Trasforma dati**. Si apre la finestra Power Query. Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
+5. Nella barra multifunzione selezionare **Home -> Trasforma dati**. Si apre la finestra Power Query. Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
 
 6. Nel pannello di sinistra selezionare le seguenti query nella cartella **SnowflakeData** tenendo premuto il tasto **CTRL o MAIUSC**:
 
@@ -229,7 +229,7 @@ Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il
 
     - Password Snowflake: <inject key="SnowFlake Password" enableCopy="false" />
 
-    >**Nota:** se si verificano problemi di connessione a Snowflake usando le credenziali dei dettagli dell'ambiente, usare le credenziali fornite di seguito.
+        >**Nota:** se si verificano problemi di connessione a Snowflake usando le credenziali dei dettagli dell'ambiente, usare le credenziali fornite di seguito.
 
     - **Nome utente Snowflake:** SNOWFLAKE_BACKUP
 
@@ -245,7 +245,7 @@ Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il
 
 1. Selezionare la query **Supplier (1)**.
 
-2. Nella barra multifunzione selezionare **Home (2) -\> Aggiungi destinazione dati (3) -\> Lakehouse (4).**
+2. Nella barra multifunzione selezionare **Home (2) -> Aggiungi destinazione dati (3) -> Lakehouse (4).**
 
     ![](../media/Lab-4/image26.png)
 
@@ -331,7 +331,9 @@ Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere nella vi
 
     ![](../media/Lab-4/image37.png)
 
-7. Nella finestra di dialogo per l'accesso selezionare l'**account utente** usato per i lab. >**Nota:** l'account sarà diverso rispetto allo screenshot di seguito.
+7. Nella finestra di dialogo per l'accesso selezionare l'**account utente** usato per i lab. 
+
+    >**Nota:** l'account sarà diverso rispetto allo screenshot di seguito.
 
     ![](../media/Lab-4/image38.png)
 
@@ -363,7 +365,7 @@ Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere nella vi
 
     ![](../media/Lab-4/image41.png)
 
-6. Nel pannello di sinistra espandere **lh_dataverse -\> Tables**. Notare che l'amministratore IT ha concesso l'accesso alla tabella Customer.
+6. Nel pannello di sinistra espandere **lh_dataverse -> Tables**. Notare che l'amministratore IT ha concesso l'accesso alla tabella Customer.
 
 7. Selezionare **Customer**.
 

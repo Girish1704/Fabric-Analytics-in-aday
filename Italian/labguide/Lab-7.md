@@ -54,7 +54,7 @@ In questo lab si imparerà a:
 
 Iniziamo usando l'opzione di creazione automatica del report. Più avanti nel lab, creeremo nuovamente il report presente in Power BI.
 
-1. Torniamo **all'area di lavoro di Fabric** creata nel Lab 2, di nome **FAIAD_<inject key="Deployment ID" enableCopy="false"/> **.
+1. Torniamo **all'area di lavoro di Fabric** creata nel Lab 2, di nome **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 2. Nella parte inferiore del pannello di sinistra selezionare l'icona **selettore esperienza in Fabric**.
 
@@ -88,16 +88,17 @@ Iniziamo usando l'opzione di creazione automatica del report. Più avanti nel la
 
     ![](../media/Lab-7/image11.png)
 
-    **Checkpoint:** il report sarà simile a quello illustrato nello screenshot seguente. Sono presenti alcuni KPI e alcuni oggetti visivi sulle tendenze. Questo è buon inizio se si sta analizzando un nuovo modello ed è necessario un iniziare rapidamente.
+    >**Checkpoint:** il report sarà simile a quello illustrato nello screenshot seguente. Sono presenti alcuni KPI e alcuni oggetti visivi sulle tendenze. Questo è buon inizio se si sta analizzando un nuovo modello ed è necessario un iniziare rapidamente.
 
     >**Nota:** nel menu in alto è presente l'opzione per modificare il report o visualizzare i dati sotto forma di tabelle. Esplorare liberamente queste opzioni.
 
 9. Salviamo il report. Nel menu in alto selezionare **Salva**.
 
 10. Si apre la finestra di dialogo Salva report. Assegnare al report il nome **rpt_Sales_Auto_Report**
+    
     >**Nota:** all'inizio del nome del report aggiungiamo il prefisso rpt, ovvero l'abbreviazione di report.
 
-11. Assicurarsi che il report sia salvato nell'area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/> **
+11. Assicurarsi che il report sia salvato nell'area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 12. Selezionare **Salva.**
 
@@ -115,9 +116,9 @@ Iniziamo usando l'opzione di creazione automatica del report. Più avanti nel la
 
 Creiamo un nuovo report usando un'area di disegno vuota.
 
-1. Nel **pannello di sinistra** selezionare il nome dell'area di lavoro, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> **, per tornare a essa.
+1. Nel **pannello di sinistra** selezionare il nome dell'area di lavoro, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, per tornare a essa.
 
-2. Nel menu in alto selezionare **Nuovo elemento** -\> **Report**. Si aprirà la pagina per creare il primo report.
+2. Nel menu in alto selezionare **Nuovo elemento** -> **Report**. Si aprirà la pagina per creare il primo report.
 
     ![](../media/Lab-7/image14.png)
 
@@ -136,7 +137,6 @@ Creiamo un nuovo report usando un'area di disegno vuota.
     Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo del canvas. Creeremo l'intestazione del report, aggiungeremo un paio di KPI e creeremo il grafico a linee Sales over time. Per risparmiare tempo, presupponendo che si abbia esperienza nella creazione di oggetti visivi in Power BI Desktop, non creeremo tutti gli oggetti visivi.
 
     ![](../media/Lab-7/image17.png)
-
 
 7. Tornare al **Power BI canvas** nel browser.
 
@@ -259,7 +259,7 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 2. Si apre la finestra di dialogo Salva report. Assegnare al report il nome **rpt_Sales_Report**
     >**Nota:** all'inizio del nome del report aggiungiamo il prefisso rpt, ovvero l'abbreviazione di report.
 
-3. Assicurarsi che il report sia salvato nell'area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/> **
+3. Assicurarsi che il report sia salvato nell'area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 4. Selezionare **Salva.** Notare che il report è stato salvato ed è attiva la modalità di visualizzazione.
 
@@ -307,11 +307,11 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 
 2. Selezionare i **puntini di sospensione (…)** nell'angolo superiore destro dell'oggetto visivo.
 
-3. Selezionare **Ordina asse -\> Year Short_Month_Name**.
+3. Selezionare **Ordina asse -> Year Short_Month_Name**.
 
 4. Selezionare i **puntini di sospensione (…)** nell'angolo superiore destro dell'oggetto visivo.
 
-5. Selezionare **Ordina asse -\> Ordinamento crescente**.
+5. Selezionare **Ordina asse -> Ordinamento crescente**.
 
     ![](../media/Lab-7/image32.png)
 
@@ -341,11 +341,11 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 
 1. Con l'**oggetto visivo grafico a linee selezionato**, nella sezione **Dati** espandere la tabella **Reseller**.
 
-2. Trascinare il campo **Reseller -\> Reseller Company** nella sezione **Legenda**.
+2. Trascinare il campo **Reseller -> Reseller Company** nella sezione **Legenda**.
 
     ![](../media/Lab-7/image36.png)
 
-3. Con l'**oggetto visivo grafico a linee selezionato**, nella sezione **Visualizzazioni** selezionare l'icona **Formatta oggetto visivo -\> Generale**.
+3. Con l'**oggetto visivo grafico a linee selezionato**, nella sezione **Visualizzazioni** selezionare l'icona **Formatta oggetto visivo -> Generale**.
 
 4. Espandere la sezione **Titolo**.
 
@@ -357,19 +357,19 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 
     ![](../media/Lab-7/image37.png)
 
-8. Nella sezione **Visualizzazione** selezionare l'icona **Formatta oggetto visivo -\> Oggetto visivo**.
+8. Nella sezione **Visualizzazione** selezionare l'icona **Formatta oggetto visivo -> Oggetto visivo**.
 
 9. Espandere la sezione **Righe**.
 
-10. In **Applica impostazioni a -\> menu a discesa Serie** selezionare **Tailspin Toys**.
+10. In **Applica impostazioni a -> menu a discesa Serie** selezionare **Tailspin Toys**.
 
 11. Espandere la sezione **Colore**.
 
-12. Impostare il colore su **\#F17925**
+12. Impostare il colore su **#F17925**
 
-13. In **Applica impostazioni a -\> menu a discesa Serie** selezionare **Wingtip Toys**.
+13. In **Applica impostazioni a -> menu a discesa Serie** selezionare **Wingtip Toys**.
 
-14. Impostare il **colore** su **\#004753**
+14. Impostare il **colore** su **#004753**
 
 15. Ridimensionare l'**oggetto visivo** e spostarlo nella **casella in alto a destra come illustrato nello screenshot**.
 
@@ -377,7 +377,7 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 
     ![](../media/Lab-7/image38.png)
 
-17. Per salvare il report, nel menu selezionare **File -\> Salva**.
+17. Per salvare il report, nel menu selezionare **File -> Salva**.
 
     Come indicato in precedenza, non creeremo tutti gli oggetti visivi in questo lab. Se si desidera, aggiungere ulteriori oggetti visivi.
 
@@ -455,7 +455,7 @@ In uno scenario reale, i dati vengono aggiornati nell'origine. Poiché ci trovia
 
 2. Nell'angolo in basso a destra, fai clic sul **logo Fabric** e passa alla **visualizzazione Fabric**.
 
-3. Selezionare **FAIAD_<inject key="Deployment ID" enableCopy="false"/> ** nella barra dei menu di sinistra per andare alla home page dell'area di lavoro.
+3. Selezionare **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** nella barra dei menu di sinistra per andare alla home page dell'area di lavoro.
 
 4. Selezionare **lh_FAIAD** per spostarsi nel lakehouse.
 
@@ -475,7 +475,7 @@ In uno scenario reale, i dati vengono aggiornati nell'origine. Poiché ci trovia
 
 9. Se in precedenza non è stata creata alcuna connessione, fare clic su **Crea nuova connessione** e completare i passaggi seguenti:
 
-10. In Impostazioni **connessione -> URL** immettere il seguente collegamento <https://stvnextblobstorage.dfs.core.windows.net/>fabrikam-sales
+10. In Impostazioni **connessione -> URL** immettere il seguente collegamento <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales>
 
 11. Selezionare **Avanti**.
 
@@ -509,7 +509,7 @@ In uno scenario reale, i dati vengono aggiornati nell'origine. Poiché ci trovia
 
 21. **Copiare il** codice di seguito e **incollarlo** nel riquadro della query SQL.
 
-    ```
+    ```sql
     ALTER VIEW [dbo].[Sales] AS (
     select [$Outer].[InvoiceLineID] as [InvoiceLineID],
         [$Outer].[InvoiceID] as [InvoiceID],
@@ -658,7 +658,7 @@ In uno scenario reale, i dati vengono aggiornati nell'origine. Poiché ci trovia
 
     ![](../media/Lab-7/image54.png)
 
-23. Selezionare **rpt_Sales_Report** nella barra dei menu di sinistra per tornare al report**.**
+23. Selezionare **rpt_Sales_Report** nella barra dei menu di sinistra per tornare al report.
 
 24. Dal menu in alto selezionare l**'icona Aggiorna**. Notare che ora nel grafico a linee sono presenti dati per maggio 2024. Inoltre, notare che l'importo delle vendite è aumentato.
 
@@ -692,7 +692,7 @@ In uno scenario reale, i dati vengono aggiornati nell'origine. Poiché ci trovia
 
 Quando si è pronti a eseguire la pulizia dell'ambiente lab, effettuare i passaggi seguenti.
 
-1. Selezionare l'area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/> ** nel pannello di sinistra per andare alla home page dell'area di lavoro.
+1. Selezionare l'area di lavoro **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** nel pannello di sinistra per andare alla home page dell'area di lavoro.
 
 2. Dal menu in alto selezionare **Area di lavoro e impostazioni**.
 

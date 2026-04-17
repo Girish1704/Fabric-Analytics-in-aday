@@ -80,7 +80,7 @@ Commençons par configurer une actualisation planifiée du flux de données Four
 
     ![](../media/Lab-5/image8.png)
 
-    **Remarque :** une fenêtre (ou un panneau) apparaîtra sur le côté droit, affichant une liste des actualisations
+    >**Remarque :** une fenêtre (ou un panneau) apparaîtra sur le côté droit, affichant une liste des actualisations
 
 6. Vous remarquerez qu’une seule actualisation s’est exécutée lorsque nous avons sélectionné l’option **Enregistrer et exécuter** dans le labo précédent. Le **type** d’actualisation que nous voyons est répertorié comme étant **À la demande**, par conséquent nous savons qu’il s’agissait d’une actualisation exécutée manuellement.
 
@@ -88,7 +88,7 @@ Commençons par configurer une actualisation planifiée du flux de données Four
 
 7. Cliquez sur le lien **Heure de début**.
 
-    **Remarque :** l’heure de début est différente pour vous.
+    >**Remarque :** l’heure de début est différente pour vous.
 
     ![](../media/Lab-5/image10.png)
 
@@ -144,7 +144,7 @@ Commençons par configurer une actualisation planifiée du flux de données Four
 
 1. Revenons à l’espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** en cliquant sur l’espace de travail dans le volet gauche.
 
-2. Dans le menu supérieur, cliquez sur **+ Nouvel élément (1) -\> Pipeline (2)**.
+2. Dans le menu supérieur, cliquez sur **+ Nouvel élément (1) -> Pipeline (2)**.
 
     ![](../media/Lab-5/image17.png)
 
@@ -176,7 +176,7 @@ Commençons par configurer une actualisation planifiée du flux de données Four
 
 Commençons à créer le pipeline. Nous avons besoin d’une activité pour actualiser le flux de données. Trouvons une activité que nous pouvons utiliser.
 
-1. Dans le menu supérieur, cliquez sur **Activités -\> Flux de données**. L’activité Flux de données est alors ajoutée au volet de conception central. Notez que le volet inférieur comporte désormais des options de configuration de l’activité Flux de données.
+1. Dans le menu supérieur, cliquez sur **Activités -> Flux de données**. L’activité Flux de données est alors ajoutée au volet de conception central. Notez que le volet inférieur comporte désormais des options de configuration de l’activité Flux de données.
 
 2. Nous allons configurer l’activité pour se connecter au flux de données df_People_SharePoint. Dans le **volet inférieur**, cliquez sur **Paramètres**.
 
@@ -242,7 +242,7 @@ Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que
 
 3. Dans la liste des activités, cliquez sur **Until**.
 
-    **Until** : activité permettant d’itérer jusqu’à ce qu’une condition soit remplie.
+    >**Until** : activité permettant d’itérer jusqu’à ce qu’une condition soit remplie.
 
     Dans notre scénario, nous allons itérer et actualiser le flux de données jusqu’à ce qu’il réussisse ou nous effectuons trois tentatives.
 
@@ -262,7 +262,7 @@ Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que
 
 6. Définissez le champ **Valeur par défaut** sur **0**.
 
-    **Remarque :** nous ajoutons le préfixe var aux noms des variables, afin qu’il soit facile de les trouver, ce qui est une bonne pratique.
+    >**Remarque :** nous ajoutons le préfixe var aux noms des variables, afin qu’il soit facile de les trouver, ce qui est une bonne pratique.
 
     ![](../media/Lab-5/image28.png)
 
@@ -324,19 +324,17 @@ Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que
 
         ![](../media/Lab-5/image32.png)
 
-
 9. Cliquez sur **Fonctions** dans le menu.
 
 10. Dans la section **Logical Fonctions**, sélectionnez la fonction **or**. Notez que la mention **@or()** est ajoutée à la zone de texte de l’expression dynamique. La fonction or utilise deux paramètres et nous travaillons sur le premier.
 
     ![](../media/Lab-5/image33.png)
 
-
 11. Placez le curseur **entre les parenthèses** de la fonction **@or**.
 
 12. Dans la section **Logical Fonctions**, sélectionnez la fonction **equals**. Notez que cette mention est ajoutée à la zone de texte de l’expression dynamique.
 
-    **Remarque :** Votre fonction devrait ressembler à **@or(equals())**. La fonction equals utilise également deux paramètres. Nous allons vérifier si la variable varCounter est égale à 3.
+    >**Remarque :** Votre fonction devrait ressembler à **@or(equals())**. La fonction equals utilise également deux paramètres. Nous allons vérifier si la variable varCounter est égale à 3.
 
     ![](../media/Lab-5/image34.png)
 
@@ -382,7 +380,7 @@ Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que
 
     ![](../media/Lab-5/image39.png)
 
-3. Dans le menu supérieur, cliquez sur **Activités -\> Flux de données**. L’activité Flux de données est alors ajoutée au volet de conception.
+3. Dans le menu supérieur, cliquez sur **Activités -> Flux de données**. L’activité Flux de données est alors ajoutée au volet de conception.
 
 4. Une fois l’activité **Flux de données** sélectionnée, cliquez sur **Général** dans le volet inférieur. Donnons un nom et une description à l’activité.
 
@@ -404,7 +402,7 @@ Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que
 
 Nous avons configuré l’activité Flux de données comme nous l’avons fait plus tôt dans le labo. Nous allons maintenant ajouter une nouvelle logique. Si l’actualisation du flux de données réussit, nous devons quitter l’itérateur Until. N’oubliez pas que l’une des conditions pour quitter l’itérateur consiste à définir la valeur de la variable varIsSuccess sur Oui.
 
-1. Dans le menu supérieur, cliquez sur **Activités -\> Définir une variable**. L’activité Définir une variable est alors ajoutée au canevas de conception.
+1. Dans le menu supérieur, cliquez sur **Activités -> Définir une variable**. L’activité Définir une variable est alors ajoutée au canevas de conception.
 
 2. Une fois l’activité **Définir une variable** sélectionnée, cliquez sur **Général** dans le volet inférieur. Donnons un nom et une description à l’activité.
 
@@ -438,7 +436,7 @@ Nous avons configuré l’activité Flux de données comme nous l’avons fait p
 
 10. La boîte de dialogue Générateur d’expressions de pipeline s’ouvre alors. Cliquez sur la zone de texte **Ajoutez du contenu dynamique ci-dessous en utilisant n’importe quelle combinaison d’expressions, de fonctions et de variables système (1)**.
 
-11. Dans le menu inférieur, cliquez sur les **points de suspension (...) (2)** et sélectionnez **Variables (3) -\> varSuccess (4)**. Veuillez noter que la mention **@variables(‘varSuccess’)** est saisie dans la zone de texte Ajoutez du contenu dynamique ci-dessous. N’oubliez pas que lorsque nous avons créé des variables, nous avions prédéfini la valeur de la variable varSuccess sur Oui. Nous attribuons donc la valeur Oui à la variable varIsSuccess.
+11. Dans le menu inférieur, cliquez sur les **points de suspension (...) (2)** et sélectionnez **Variables (3) -> varSuccess (4)**. Veuillez noter que la mention **@variables(‘varSuccess’)** est saisie dans la zone de texte Ajoutez du contenu dynamique ci-dessous. N’oubliez pas que lorsque nous avons créé des variables, nous avions prédéfini la valeur de la variable varSuccess sur Oui. Nous attribuons donc la valeur Oui à la variable varIsSuccess.
 
 12. Cliquez sur **OK**. Vous êtes alors redirigé vers le **volet de conception de l’itérateur**.
 
@@ -448,7 +446,7 @@ Nous avons configuré l’activité Flux de données comme nous l’avons fait p
 
 ## Tâche 10 : configurer une 2<sup>e</sup> activité Définir une variable
 
-1. Dans le menu supérieur, cliquez sur **Activités -\> Définir une variable**. L’activité Définir une variable est alors ajoutée au canevas de conception.
+1. Dans le menu supérieur, cliquez sur **Activités -> Définir une variable**. L’activité Définir une variable est alors ajoutée au canevas de conception.
 
 2. Une fois l’activité **Définir une variable** sélectionnée, cliquez sur **Général** dans le volet inférieur. Donnons un nom et une description à l’activité.
 
@@ -469,7 +467,8 @@ Nous avons configuré l’activité Flux de données comme nous l’avons fait p
 9. Dans le champ **Valeur**, cliquez sur la **zone de texte**. Cliquez sur le lien **Ajouter du contenu dynamique**.
 
 10. La boîte de dialogue Générateur d’expressions de pipeline s’ouvre alors. Saisissez **@add(variables('varCounter'),1)**
-    **Remarque :** n’hésitez pas à saisir cette expression, à sélectionner les fonctions à l’aide du menu ou à la copier-coller. cette fonction définit la valeur de la variable varTempCounter sur la valeur de la variable varCounter plus un (varTempCounter = varCounter + 1).
+
+    >**Remarque :** n’hésitez pas à saisir cette expression, à sélectionner les fonctions à l’aide du menu ou à la copier-coller. cette fonction définit la valeur de la variable varTempCounter sur la valeur de la variable varCounter plus un (varTempCounter = varCounter + 1).
 
     ![](../media/Lab-5/image46.png)
 
@@ -477,7 +476,7 @@ Nous avons configuré l’activité Flux de données comme nous l’avons fait p
 
 ## Tâche 11 : configurer une 3<sup>e</sup> activité Définir une variable
 
-1. Dans le menu supérieur, cliquez sur **Activités -\> Définir une variable**. L’activité Définir une variable est alors ajoutée au canevas de conception.
+1. Dans le menu supérieur, cliquez sur **Activités -> Définir une variable**. L’activité Définir une variable est alors ajoutée au canevas de conception.
 
 2. Une fois l’activité **Définir une variable** sélectionnée, cliquez sur **Général** dans le volet inférieur. Donnons un nom et une description à l’activité.
 
@@ -503,13 +502,13 @@ Nous avons configuré l’activité Flux de données comme nous l’avons fait p
 
     ![](../media/Lab-5/image48.png)
 
-    **Remarque :** cette fonction définit la valeur de la variable varCounter sur la valeur de la variable varTempCounter (varCounter = varTempCounter). À la fin de chaque itération, varCounter et varTempCounter ont la même valeur.
+    >**Remarque :** cette fonction définit la valeur de la variable varCounter sur la valeur de la variable varTempCounter (varCounter = varTempCounter). À la fin de chaque itération, varCounter et varTempCounter ont la même valeur.
 
 ## Tâche 12 : configurer l’activité Attente
 
 Ensuite, nous devons attendre 5 minutes/300 secondes si l’actualisation du flux de données échoue la première fois avant de réessayer. Si l’actualisation du flux de données échoue la seconde fois, nous devons attendre 15 minutes/900 secondes et réessayer. Nous allons définir le temps d’attente à l’aide de l’activité Attente et de la variable varWaitTime.
 
-1. Dans le menu supérieur, cliquez sur **Activités -\> points de suspension (…) -\> Attente**. L’activité Attente est alors ajoutée au canevas de conception.
+1. Dans le menu supérieur, cliquez sur **Activités -> points de suspension (…) -> Attente**. L’activité Attente est alors ajoutée au canevas de conception.
 
 2. Une fois l’activité **Attente** sélectionnée, cliquez sur **Général** dans le volet inférieur. Donnons un nom et une description à l’activité.
 
@@ -527,7 +526,7 @@ Ensuite, nous devons attendre 5 minutes/300 secondes si l’actualisation du f
 
 8. La boîte de dialogue Générateur d’expressions de pipeline s’ouvre alors. Saisissez
 
-    ```
+    ```sql
    @if(
        greater(variables('varCounter'), 1),
        if(equals(variables('varCounter'), 2),
@@ -537,7 +536,6 @@ Ensuite, nous devons attendre 5 minutes/300 secondes si l’actualisation du f
        mul(variables('varWaitTime'),5 )
    )
    ```
-
 
     N’hésitez pas à saisir cette expression, à sélectionner les fonctions à l’aide du menu ou à la copier-coller.
 
@@ -555,7 +553,7 @@ Ensuite, nous devons attendre 5 minutes/300 secondes si l’actualisation du f
 
 9. Cliquez sur **OK**.
 
-    **Point de contrôle :** votre itérateur **Until** devrait ressembler à la capture d’écran ci-dessous.
+    >**Point de contrôle :** votre itérateur **Until** devrait ressembler à la capture d’écran ci-dessous.
 
     ![](../media/Lab-5/image51.png)
 
@@ -563,17 +561,17 @@ Ensuite, nous devons attendre 5 minutes/300 secondes si l’actualisation du f
 
     ![](../media/Lab-5/image52.png)
 
-11. Nous avons fini de créer le pipeline. Dans le menu supérieur, cliquez sur **Accueil -\> icône Enregistrer** pour enregistrer le pipeline.
+11. Nous avons fini de créer le pipeline. Dans le menu supérieur, cliquez sur **Accueil -> icône Enregistrer** pour enregistrer le pipeline.
 
     ![](../media/Lab-5/image53.png)
 
 ## Tâche 13 : configurer l’actualisation planifiée pour le pipeline
 
-1. Nous pouvons tester le pipeline en cliquant sur **Accueil -\> Exécuter**.
+1. Nous pouvons tester le pipeline en cliquant sur **Accueil -> Exécuter**.
 
     >**Remarque :** l’actualisation du pipeline peut prendre quelques minutes. Il s’agit d’un environnement de formation, donc le fichier est toujours disponible dans SharePoint. Par conséquent, votre pipeline n’échoue jamais.
 
-2. Nous pouvons définir le pipeline afin qu’il s’exécute selon une planification. Dans le menu supérieur, cliquez sur **Accueil -\> Planifier**. La boîte de dialogue Planifier s’ouvre alors.
+2. Nous pouvons définir le pipeline afin qu’il s’exécute selon une planification. Dans le menu supérieur, cliquez sur **Accueil -> Planifier**. La boîte de dialogue Planifier s’ouvre alors.
 
 3. Cliquez sur **Ajouter une planification** sous **Exécution planifiée**.
 
@@ -663,6 +661,6 @@ CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE PRODUIT/T
 
 MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU’ELLES SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D’ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET D’ABSENCE DE CONTREFAÇON. MICROSOFT N’OFFRE AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L’UTILISATION DE CETTE DÉMONSTRATION/CE LABO, OU L’ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
 
-**CLAUSE D’EXCLUSION DE RESPONSABILITÉ**
+**CLAUSE D’EXCLUSION DE RESPONSABILITÉ** 
 
 Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.

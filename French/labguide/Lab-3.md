@@ -50,30 +50,30 @@ Nous allons commencer par créer un raccourci pour ingérer des données dans un
 
 Des raccourcis permettent de créer un lien vers l’emplacement cible. Les raccourcis permettent d’accéder aux données sans avoir besoin de les déplacer physiquement dans le lakehouse. Cela s’apparente à la création de raccourcis sur le bureau Windows.
 
-1.  En haut de votre écran, sélectionnez l’onglet **lh_FAIAD** pour accéder au lakehouse.
+1. En haut de votre écran, sélectionnez l’onglet **lh_FAIAD** pour accéder au lakehouse.
 
-1.  Si vous n’avez pas d’onglet ouvert, vous pouvez revenir à votre espace de travail et ouvrir le lakehouse à partir de là.
+1. Si vous n’avez pas d’onglet ouvert, vous pouvez revenir à votre espace de travail et ouvrir le lakehouse à partir de là.
 
-2.  Dans le volet **Explorateur**, cliquez sur les **points de suspension** en regard de **Tables**.
+2. Dans le volet **Explorateur**, cliquez sur les **points de suspension** en regard de **Tables**.
 
-3.  Cliquez sur **Nouveau raccourci**.
+3. Cliquez sur **Nouveau raccourci**.
 
     ![](../media/Lab-3/image6.png)
 
-4.  La boîte de dialogue **Nouveau raccourci** s’ouvre alors. Sous **Sources externes**, sélectionnez **Azure Data Lake Storage Gen2**.
+4. La boîte de dialogue **Nouveau raccourci** s’ouvre alors. Sous **Sources externes**, sélectionnez **Azure Data Lake Storage Gen2**.
 
     ![](../media/Lab-3/image7.png)
 
-5.  Cliquez sur **Nouvelle connexion (1)**.
+5. Cliquez sur **Nouvelle connexion (1)**.
 
-6.  Entrez le lien suivant pour la propriété **URL** :
+6. Entrez le lien suivant pour la propriété **URL** :
     <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales> **(2) :**
 
-7.  Cliquez sur **Créer une connexion** (3) dans la section Connexion
+7. Cliquez sur **Créer une connexion** **(3)** dans la section Connexion
 
-8.  Sélectionnez **Signature d’accès partagé (SAS) (4)** dans la liste déroulante Type d’authentification.
+8. Sélectionnez **Signature d’accès partagé (SAS) (4)** dans la liste déroulante Type d’authentification.
 
-9.  Copiez le jeton SAS et collez-le dans le champ Jeton SAS (5).
+9. Copiez le jeton SAS et collez-le dans le champ Jeton SAS **(5)**.
 
     - **Jeton SAS :** <inject key="Sas token"></inject>
 
@@ -85,23 +85,23 @@ Des raccourcis permettent de créer un lien vers l’emplacement cible. Les racc
 
 12. **Sélectionnez** les répertoires suivants **(2),** puis cliquez sur **Suivant (3) :**
 
-    1.  Application.Cities
+    1. Application.Cities
 
-    2.  Application.Countries
+    2. Application.Countries
 
-    3.  Application.StateProvinces
+    3. Application.StateProvinces
 
-    4.  DateDim
+    4. DateDim
 
-    5.  Sales.BuyingGroups
+    5. Sales.BuyingGroups
 
-    6.  Sales.Customers
+    6. Sales.Customers
 
-    7.  Sales.InvoiceLines
+    7. Sales.InvoiceLines
 
-    8.  Sales.Invoices
+    8. Sales.Invoices
 
-    9.  Warehouse.StockGroups
+    9. Warehouse.StockGroups
 
     10. Warehouse.StockItemStockGroups
 
@@ -121,23 +121,23 @@ Des raccourcis permettent de créer un lien vers l’emplacement cible. Les racc
 
 16. De même, redéfinissez le nom des raccourcis comme ci-dessous :
 
-    1.  Application.Countries sur **Countries**
+    1. Application.Countries sur **Countries**
 
-    2.  Application.StateProvinces sur **States**
+    2. Application.StateProvinces sur **States**
 
-    3.  DateDim sur **Date**
+    3. DateDim sur **Date**
 
-    4.  Sales.BuyingGroups sur **BuyingGroups**
+    4. Sales.BuyingGroups sur **BuyingGroups**
 
-    5.  Sales.Customers sur **Customers**
+    5. Sales.Customers sur **Customers**
 
-    6.  Sales.InvoiceLines sur **InvoiceLineItems**
+    6. Sales.InvoiceLines sur **InvoiceLineItems**
 
-    7.  Sales.Invoices sur **Invoices**
+    7. Sales.Invoices sur **Invoices**
 
-    8.  Warehouse.StockGroups sur **ProductGroups**
+    8. Warehouse.StockGroups sur **ProductGroups**
 
-    9.  Warehouse.StockItemStockGroups sur **ProductItemGroup**
+    9. Warehouse.StockItemStockGroups sur **ProductItemGroup**
 
     10. Warehouse.StockItems sur **ProductItem**
 
@@ -157,7 +157,7 @@ Des raccourcis permettent de créer un lien vers l’emplacement cible. Les racc
 
 ## Tâche 2 : créer une vue Geo à l’aide d’une requête visuelle
 
-1.  Nous pouvons accéder au **lakehouse** à l’aide d’un point de terminaison SQL. Ainsi, nous pouvons interroger les données et créer des vues. En **haut à droite** de l'écran, cliquez sur **Lakehouse (1) -\> Point de terminaison Analytique SQL (2)**.
+1. Nous pouvons accéder au **lakehouse** à l’aide d’un point de terminaison SQL. Ainsi, nous pouvons interroger les données et créer des vues. En **haut à droite** de l'écran, cliquez sur **Lakehouse (1) -> Point de terminaison Analytique SQL (2)**.
 
     ![](../media/Lab-3/image13.png)
 
@@ -165,33 +165,33 @@ Des raccourcis permettent de créer un lien vers l’emplacement cible. Les racc
 
     Nous allons commencer par créer une vue Geo. Nous devons fusionner les données des requêtes Cities, States et Countries pour créer la vue Geo.
 
-2.  Dans le menu supérieur, cliquez sur le menu déroulant en regard de **Nouvelle requête SQL (1)**, puis sélectionnez **Nouvelle requête visuelle (2)**.
+2. Dans le menu supérieur, cliquez sur le menu déroulant en regard de **Nouvelle requête SQL (1)**, puis sélectionnez **Nouvelle requête visuelle (2)**.
 
     ![](../media/Lab-3/image14.png)
 
-3.  Pour construire une requête, nous devons ajouter des tables au volet Visual Query. Cliquez sur les points de suspension à côté de la table **Cities (1)** et sélectionnez **Insérer dans canevas (2)**.
+3. Pour construire une requête, nous devons ajouter des tables au volet Visual Query. Cliquez sur les points de suspension à côté de la table **Cities (1)** et sélectionnez **Insérer dans canevas (2)**.
 
     ![](../media/Lab-3/image15.png)
 
-4.  Procédez de la même manière pour les tables **States** et **Countries**.
+4. Procédez de la même manière pour les tables **States** et **Countries**.
 
     Nous devons ensuite fusionner ces requêtes. L’éditeur de requête visuelle permet d’utiliser l’éditeur Power Query. Utilisons cette option, puisque nous la connaissons déjà grâce à Power BI.
 
-5.  **Dans le menu de l’éditeur de requête visuelle**, cliquez sur l’icône **Ouvrir dans une fenêtre contextuelle** (vers la droite). Vous êtes alors redirigé(e) vers l’éditeur Power Query.
+5. **Dans le menu de l’éditeur de requête visuelle**, cliquez sur l’icône **Ouvrir dans une fenêtre contextuelle** (vers la droite). Vous êtes alors redirigé(e) vers l’éditeur Power Query.
 
-    ***Remarque :** vous devrez peut-être faire défiler vers la droite ou rouvrir votre onglet de requête visuelle si vous ne voyez pas immédiatement cette icône*
+    >**Remarque :** vous devrez peut-être faire défiler vers la droite ou rouvrir votre onglet de requête visuelle si vous ne voyez pas immédiatement cette icône
 
     ![](../media/Lab-3/image16.png)
 
-6.  Avec la requête **Cities (1)** sélectionnée, cliquez sur **Accueil (2) -\> Combiner (3) -\> Menu déroulant Fusionner les requêtes (4) -\> Fusionner les requêtes comme nouvelles (5)** dans le ruban de l’éditeur Power Query. La boîte de dialogue Fusionner des requêtes s’ouvre alors.
+6. Avec la requête **Cities (1)** sélectionnée, cliquez sur **Accueil (2) -> Combiner (3) -> Menu déroulant Fusionner les requêtes (4) -> Fusionner les requêtes comme nouvelles (5)** dans le ruban de l’éditeur Power Query. La boîte de dialogue Fusionner des requêtes s’ouvre alors.
 
     ![](../media/Lab-3/image17.png)
 
-7.  Dans le champ **Table de gauche pour la fusion**, sélectionnez **Cities**.
+7. Dans le champ **Table de gauche pour la fusion**, sélectionnez **Cities**.
 
-8.  Dans le champ **Table de droite pour la fusion**, sélectionnez **States**.
+8. Dans le champ **Table de droite pour la fusion**, sélectionnez **States**.
 
-9.  Sélectionnez la colonne **StateProvinceID** dans les deux tables. Nous allons les joindre à l’aide de cette colonne.
+9. Sélectionnez la colonne **StateProvinceID** dans les deux tables. Nous allons les joindre à l’aide de cette colonne.
 
 10. Sélectionnez **Interne** comme **Type de jointure**.
 
@@ -205,13 +205,13 @@ Des raccourcis permettent de créer un lien vers l’emplacement cible. Les racc
 
 13. Un volet s’ouvre alors. Assurez-vous que seules les colonnes suivantes sont sélectionnées :
 
-    1.  StateProvinceCode
+    1. StateProvinceCode
 
-    2.  StateProvinceName
+    2. StateProvinceName
 
-    3.  CountryID
+    3. CountryID
 
-    4.  SalesTerritory
+    4. SalesTerritory
 
 14. Cliquez sur **OK**.
 
@@ -219,7 +219,7 @@ Des raccourcis permettent de créer un lien vers l’emplacement cible. Les racc
 
     Nous devons maintenant fusionner la requête Countries.
 
-15. Avec la requête Merge sélectionnée **(1)**, cliquez sur **Accueil (2) -\> Combiner (3) -\> Menu déroulant Fusionner les requêtes (4) -\> Fusionner les requêtes (5)**.
+15. Avec la requête Merge sélectionnée **(1)**, cliquez sur **Accueil (2) -> Combiner (3) -> Menu déroulant Fusionner les requêtes (4) -> Fusionner les requêtes (5)**.
 
     ![](../media/Lab-3/image20.png)
 
@@ -239,31 +239,31 @@ Des raccourcis permettent de créer un lien vers l’emplacement cible. Les racc
 
 21. Un volet s’ouvre alors. Assurez-vous que seules les colonnes suivantes sont sélectionnées :
 
-    1.  CountryName
+    1. CountryName
 
-    2.  FormalName
+    2. FormalName
 
-    3.  IsoAlpha3Code
+    3. IsoAlpha3Code
 
-    4.  IsoNumericCode
+    4. IsoNumericCode
 
-    5.  CountryType
+    5. CountryType
 
-    6.  Continent
+    6. Continent
 
-    7.  Region
+    7. Region
 
-    8.  Subregion
+    8. Subregion
 
 22. Cliquez sur **OK**.
 
-    **Important :** veillez à faire défiler la page vers le bas et à sélectionner les huit colonnes listées à l’étape 21. La capture d’écran ci-dessous n’affiche que les cinq premières colonnes en raison d’une limitation de l’interface utilisateur.
+    >**Important :** veillez à faire défiler la page vers le bas et à sélectionner les huit colonnes listées à l’étape 21. La capture d’écran ci-dessous n’affiche que les cinq premières colonnes en raison d’une limitation de l’interface utilisateur.
 
     ![](../media/Lab-3/image22.png)
 
     Nous n’avons pas besoin de toutes les colonnes dans la table **Merge**. Veillez à sélectionner uniquement celles dont nous avons besoin.
 
-23. Avec la requête **Merge** sélectionnée (1), cliquez sur **Accueil (2) - \> Choisir des colonnes (3) -\> Choisir des colonnes (4)** dans le ruban.
+23. Avec la requête **Merge** sélectionnée (1), cliquez sur **Accueil (2) - > Choisir des colonnes (3) -> Choisir des colonnes (4)** dans le ruban.
 
     >**Remarque :** si l’option Choisir des colonnes n’est pas visible, vous pouvez la trouver sous Gérer les colonnes.
 
@@ -271,17 +271,17 @@ Des raccourcis permettent de créer un lien vers l’emplacement cible. Les racc
 
 24. La boîte de dialogue Choisir des colonnes s’ouvre alors. **Décochez** les colonnes suivantes :
 
-    1.  StateProvinceID
+    1. StateProvinceID
 
-    2.  Location
+    2. Location
 
-    3.  LastEditedBy
+    3. LastEditedBy
 
-    4.  ValidFrom
+    4. ValidFrom
 
-    5.  ValidTo
+    5. ValidTo
 
-    6.  CountryID
+    6. CountryID
 
 25. Cliquez sur **OK**.
 
@@ -325,29 +325,29 @@ Des raccourcis permettent de créer un lien vers l’emplacement cible. Les racc
 
 Créons une vue Reseller en fusionnant la table Customers avec la table BuyingGroups. Cette fois-ci, nous allons créer la vue à l’aide d’une requête visuelle sans ouvrir l’option Power Query.
 
-1.  Dans le menu supérieur, cliquez sur le menu déroulant en regard de **Nouvelle requête SQL (1)**, puis sélectionnez **Nouvelle requête visuelle (2)**.
+1. Dans le menu supérieur, cliquez sur le menu déroulant en regard de **Nouvelle requête SQL (1)**, puis sélectionnez **Nouvelle requête visuelle (2)**.
 
-2.  Pour construire une requête, nous devons ajouter des tables au volet Visual Query. Cliquez sur les points de suspension à côté de la table **BuyingGroups (1)** et sélectionnez **Insérer dans canevas (2)**.
+2. Pour construire une requête, nous devons ajouter des tables au volet Visual Query. Cliquez sur les points de suspension à côté de la table **BuyingGroups (1)** et sélectionnez **Insérer dans canevas (2)**.
 
     ![](../media/Lab-3/image29.png)
 
-3.  Procédez de la même manière pour la table **Customers**.
+3. Procédez de la même manière pour la table **Customers**.
 
-4.  **Sélectionnez la requête** Customers. Une fois sélectionnée, la requête Customers a un signe « **+** » après Table. (Ce signe indique que nous ajoutons une étape après Table. (Ce signe indique que nous ajoutons une étape après Table. Si vous ne voyez pas le signe « **+** » après Table, vous avez peut-être sélectionné une autre étape. Sélectionnez Table et vous serez prêt.)
+4. **Sélectionnez la requête** Customers. Une fois sélectionnée, la requête Customers a un signe « **+** » après Table. (Ce signe indique que nous ajoutons une étape après Table. (Ce signe indique que nous ajoutons une étape après Table. Si vous ne voyez pas le signe « **+** » après Table, vous avez peut-être sélectionné une autre étape. Sélectionnez Table et vous serez prêt.)
 
-5.  Dans le menu Requête visuelle, cliquez sur **Combiner -\> Fusionner des requêtes**.
+5. Dans le menu Requête visuelle, cliquez sur **Combiner -> Fusionner des requêtes**.
 
     ![](../media/Lab-3/image30.png)
 
     La boîte de dialogue Fusionner s’ouvre alors avec Customers sélectionnée comme table supérieure.
 
-6.  Dans le champ **Table de droite pour la fusion**, sélectionnez **BuyingGroups**.
+6. Dans le champ **Table de droite pour la fusion**, sélectionnez **BuyingGroups**.
 
-7.  Sélectionnez la colonne **BuyingGroupID** dans les deux tables. Nous allons les joindre à l’aide de cette colonne.
+7. Sélectionnez la colonne **BuyingGroupID** dans les deux tables. Nous allons les joindre à l’aide de cette colonne.
 
-8.  Sélectionnez **Interne** comme **Type de jointure**.
+8. Sélectionnez **Interne** comme **Type de jointure**.
 
-9.  Cliquez sur **OK**.
+9. Cliquez sur **OK**.
 
     ![](../media/Lab-3/image31.png)
 
@@ -361,29 +361,29 @@ Créons une vue Reseller en fusionnant la table Customers avec la table BuyingGr
 
     Nous n’avons pas besoin de toutes les colonnes dans notre table Customer. Nous allons sélectionner uniquement celles dont nous avons besoin.
 
-13. Dans le menu Requête visuelle, cliquez sur **Gérer les colonnes -\> Choisir des colonnes**.
+13. Dans le menu Requête visuelle, cliquez sur **Gérer les colonnes -> Choisir des colonnes**.
 
     ![](../media/Lab-3/image33.png)
 
 14. La boîte de dialogue Choisir des colonnes s’ouvre alors. **Sélectionnez** les colonnes suivantes :
 
-    1.  ResellerID
+    1. ResellerID
 
-    2.  ResellerName
+    2. ResellerName
 
-    3.  PostalCityID
+    3. PostalCityID
 
-    4.  PhoneNumber
+    4. PhoneNumber
 
-    5.  FaxNumber
+    5. FaxNumber
 
-    6.  WebsiteURL
+    6. WebsiteURL
 
-    7.  DeliveryAddressLine1
+    7. DeliveryAddressLine1
 
-    8.  DeliveryAddressLine2
+    8. DeliveryAddressLine2
 
-    9.  DeliveryPostalCode
+    9. DeliveryPostalCode
 
     10. PostalAddressLine1
 
@@ -411,7 +411,7 @@ Créons une vue Reseller en fusionnant la table Customers avec la table BuyingGr
 
     ![](../media/Lab-3/image36.png)
 
-    > **Remarque** : si l’option Activer le chargement est activée, une bordure bleue apparaît autour de la zone **Customer**.
+    > **Remarque:** si l’option Activer le chargement est activée, une bordure bleue apparaît autour de la zone **Customer**.
 
 20. Dans le menu Requête visuelle, sélectionnez **Enregistrer en tant que vue**.
 
@@ -435,29 +435,29 @@ Créons une vue Reseller en fusionnant la table Customers avec la table BuyingGr
 
 Créons la vue Sales en fusionnant les tables InvoiceLineItems et Invoices avec la vue Reseller. Nous disposons de cette requête dans Power BI Desktop. Nous allons copier le code depuis l’Éditeur avancé. Mais avant de copier le code, nous devons créer une table de fusion à l’aide d’une requête visuelle, car la création d’une requête vide n’est pas possible dans la requête visuelle. Essayons cette méthode.
 
-1.  Dans le menu supérieur, cliquez sur le menu déroulant en regard de **Nouvelle requête SQL**, puis sélectionnez **Nouvelle requête visuelle**.
+1. Dans le menu supérieur, cliquez sur le menu déroulant en regard de **Nouvelle requête SQL**, puis sélectionnez **Nouvelle requête visuelle**.
 
     ![](../media/Lab-3/image40.png)
 
-2.  Dans la section **Explorateur -\> Table**, nous devons ajouter les tables au volet Requête visuelle. Cliquez sur les points de suspension à côté de la table **InvoiceLineItems** et sélectionnez **Insérer dans canevas**.
+2. Dans la section **Explorateur -> Table**, nous devons ajouter les tables au volet Requête visuelle. Cliquez sur les points de suspension à côté de la table **InvoiceLineItems** et sélectionnez **Insérer dans canevas**.
 
-3.  Procédez de la même manière pour la table **Invoices**.
+3. Procédez de la même manière pour la table **Invoices**.
 
-4.  Dans la section **Explorateur -\> Vues**, nous devons ajouter les tables au volet Requête visuelle. Cliquez sur les points de suspension à côté de la table **Reseller** et sélectionnez **Insérer dans canevas**.
+4. Dans la section **Explorateur -> Vues**, nous devons ajouter les tables au volet Requête visuelle. Cliquez sur les points de suspension à côté de la table **Reseller** et sélectionnez **Insérer dans canevas**.
 
-5.  Dans l’éditeur de requête visuelle, cliquez sur l’icône **Ouvrir dans une fenêtre contextuelle** pour ouvrir l’Éditeur Power Query.
+5. Dans l’éditeur de requête visuelle, cliquez sur l’icône **Ouvrir dans une fenêtre contextuelle** pour ouvrir l’Éditeur Power Query.
 
     ![](../media/Lab-3/image41.png)
 
-6.  Avec la requête **InvoiceLineItems** sélectionnée, cliquez sur **Accueil (2) -\> Combiner (3) -\> Menu déroulant Fusionner les requêtes (4) -\> Fusionner les requêtes comme nouvelles (5) sur le ruban.** La boîte de dialogue Fusionner des requêtes s’ouvre alors.
+6. Avec la requête **InvoiceLineItems** sélectionnée, cliquez sur **Accueil (2) -> Combiner (3) -> Menu déroulant Fusionner les requêtes (4) -> Fusionner les requêtes comme nouvelles (5) sur le ruban.** La boîte de dialogue Fusionner des requêtes s’ouvre alors.
 
     ![](../media/Lab-3/image42.png)
 
-7.  Dans le champ **Table de gauche pour la fusion**, sélectionnez **InvoiceLineItems**.
+7. Dans le champ **Table de gauche pour la fusion**, sélectionnez **InvoiceLineItems**.
 
-8.  Dans le champ **Table de droite pour la fusion**, sélectionnez **Invoices**.
+8. Dans le champ **Table de droite pour la fusion**, sélectionnez **Invoices**.
 
-9.  Sélectionnez la colonne **InvoiceID** dans les deux tables. Nous allons les joindre à l’aide de cette colonne.
+9. Sélectionnez la colonne **InvoiceID** dans les deux tables. Nous allons les joindre à l’aide de cette colonne.
 
 10. Sélectionnez **Interne** comme **Type de jointure**.
 
@@ -473,13 +473,13 @@ Créons la vue Sales en fusionnant les tables InvoiceLineItems et Invoices avec 
 
     ![](../media/Lab-3/image44.png)
 
-14. Dans le volet gauche **Requêtes** sous **ADLSData** **(1)**, sélectionnez la requête **Sales (2).**
+14. Dans le volet gauche **Requêtes** sous **ADLSData** **(1)**, sélectionnez la requête **Sales (2)**.
 
 15. Dans le ruban, cliquez sur **Accueil - > Éditeur avancé (3)**. La boîte de dialogue Éditeur avancé s’ouvre alors.
 
     ![](../media/Lab-3/image45.png)
 
-    **Remarque :** si vous ne trouvez pas l’Éditeur avancé, vous pouvez y accéder sous **Accueil -\> Requête -\> Éditeur avancé**.
+    >**Remarque :** si vous ne trouvez pas l’Éditeur avancé, vous pouvez y accéder sous **Accueil -> Requête -> Éditeur avancé**.
 
 16. **Sélectionnez le code de la ligne 3**  jusqu’à la dernière ligne de code.
 
@@ -493,7 +493,7 @@ Créons la vue Sales en fusionnant les tables InvoiceLineItems et Invoices avec 
 
 20. Assurez-vous que la requête **Merge** est sélectionnée.
 
-21. Dans le ruban, cliquez sur **Accueil -\> Éditeur avancé**. La boîte de dialogue Éditeur avancé s’ouvre alors.
+21. Dans le ruban, cliquez sur **Accueil -> Éditeur avancé**. La boîte de dialogue Éditeur avancé s’ouvre alors.
 
     ![](../media/Lab-3/image47.png)
 
@@ -559,41 +559,41 @@ Créons la vue Sales en fusionnant les tables InvoiceLineItems et Invoices avec 
 
 Créons la vue Product en fusionnant les tables **ProductItem**, **ProductItemGroup** et **ProductGroups**. Pour faire avancer les choses, nous allons copier le code dans l’Éditeur avancé.
 
-1.  Dans le menu supérieur, cliquez sur le menu déroulant en regard de **Nouvelle requête SQL (1)**, puis sélectionnez **Nouvelle requête visuelle (2)**.
+1. Dans le menu supérieur, cliquez sur le menu déroulant en regard de **Nouvelle requête SQL (1)**, puis sélectionnez **Nouvelle requête visuelle (2)**.
 
     ![](../media/Lab-3/image54.png)
 
-2.  Dans la section Explorateur, nous devons ajouter les tables au volet Requête visuelle. Cliquez sur les points de suspension à côté de la table **ProductItem (1)** et sélectionnez **Insérer dans canevas (2)**.
+2. Dans la section Explorateur, nous devons ajouter les tables au volet Requête visuelle. Cliquez sur les points de suspension à côté de la table **ProductItem (1)** et sélectionnez **Insérer dans canevas (2)**.
 
     ![](../media/Lab-3/image55.png)
 
-3.  Procédez de la même manière pour les tables **ProductItemGroup** et **ProductGroups**.
+3. Procédez de la même manière pour les tables **ProductItemGroup** et **ProductGroups**.
 
-4.  Dans l’éditeur de requête visuelle, cliquez sur l’icône **Ouvrir dans une fenêtre contextuelle** pour ouvrir l’Éditeur Power Query.
+4. Dans l’éditeur de requête visuelle, cliquez sur l’icône **Ouvrir dans une fenêtre contextuelle** pour ouvrir l’Éditeur Power Query.
 
     ![](../media/Lab-3/image56.png)
 
-5.  Avec la requête **ProductItem** sélectionnée **(1)**, cliquez sur **Accueil (2) -> Combiner (3) -> Menu déroulant Fusionner les requêtes (4) -> Fusionner les requêtes comme nouvelles (5) dans le ruban**. La boîte de dialogue Fusionner s’ouvre alors.
+5. Avec la requête **ProductItem** sélectionnée **(1)**, cliquez sur **Accueil (2) -> Combiner (3) -> Menu déroulant Fusionner les requêtes (4) -> Fusionner les requêtes comme nouvelles (5) dans le ruban**. La boîte de dialogue Fusionner s’ouvre alors.
 
     ![](../media/Lab-3/image57.png)
 
-6.  Dans le champ **Table de gauche pour la fusion**, sélectionnez **ProductItem**.
+6. Dans le champ **Table de gauche pour la fusion**, sélectionnez **ProductItem**.
 
-7.  Dans le champ **Table de droite pour la fusion**, sélectionnez **ProductItemGroup**.
+7. Dans le champ **Table de droite pour la fusion**, sélectionnez **ProductItemGroup**.
 
-8.  Sélectionnez la colonne **StockItemID** dans les deux tables. Nous allons les joindre à l’aide de cette colonne.
+8. Sélectionnez la colonne **StockItemID** dans les deux tables. Nous allons les joindre à l’aide de cette colonne.
 
-9.  Sélectionnez **Externe gauche** dans le champ **Type de jointure**.
+9. Sélectionnez **Externe gauche** dans le champ **Type de jointure**.
 
 10. Cliquez sur **OK.** Une requête Merge est alors créée.
 
     ![](../media/Lab-3/image58.png)
 
-11. Avec la requête Merge sélectionnée, cliquez sur **Accueil -\> Éditeur avancé** dans le ruban. La boîte de dialogue Éditeur avancé s’ouvre alors.
+11. Avec la requête Merge sélectionnée, cliquez sur **Accueil -> Éditeur avancé** dans le ruban. La boîte de dialogue Éditeur avancé s’ouvre alors.
 
     ![](../media/Lab-3/image59.png)
 
-    **Remarque :** si vous ne trouvez pas l’Éditeur avancé, vous pouvez y accéder sous **Accueil -\> Requête -\> Éditeur avancé**.
+    >**Remarque :** si vous ne trouvez pas l’Éditeur avancé, vous pouvez y accéder sous **Accueil -> Requête -> Éditeur avancé**.
 
 12. **Sélectionnez tout le code** dans l’Éditeur avancé et **supprimez**-le.
 
@@ -702,6 +702,6 @@ CETTE DÉMONSTRATION/CE LABO FOURNISSENT CERTAINES FONCTIONNALITÉS DE PRODUIT/T
 
 MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE QUI CONCERNE CETTE DÉMONSTRATION/CE LABO, Y COMPRIS TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU’ELLES SOIENT EXPLICITES, IMPLICITES OU LÉGALES, D’ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET D’ABSENCE DE CONTREFAÇON. MICROSOFT N’OFFRE AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L’UTILISATION DE CETTE DÉMONSTRATION/CE LABO, OU L’ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CE LABO À QUELQUE FIN QUE CE SOIT.
 
-**CLAUSE D’EXCLUSION DE RESPONSABILITÉ**
+**CLAUSE D’EXCLUSION DE RESPONSABILITÉ** 
 
 Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.
