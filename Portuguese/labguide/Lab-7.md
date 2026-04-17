@@ -50,7 +50,7 @@ Ao final deste laboratório, você terá aprendido:
 
 # Power BI
 
-### Tarefa 1: Criar relatório automaticamente
+## Tarefa 1: Criar relatório automaticamente
 
 Vamos começar usando a opção de criação automática de relatório. E, mais adiante no laboratório, recriaremos o relatório que temos no Power BI.
 
@@ -74,11 +74,11 @@ Vamos começar usando a opção de criação automática de relatório. E, mais 
 
 6. Escolha um conjunto de dados para usar no relatório quando a página for aberta. Observe que temos várias opções. Selecione **sm_FAIAD**.
 
-    1. **sm_FAIAD:** é o modelo semântico que criamos e queremos usar para criar o relatório.
+    a. **sm_FAIAD:** é o modelo semântico que criamos e queremos usar para criar o relatório.
 
-    2. **lh_FAIAD:** é o lakehouse em que ingerimos todos os dados.
+    b. **lh_FAIAD:** é o lakehouse em que ingerimos todos os dados.
 
-    3. **Units by Supplier:** é o conjunto de dados que criamos usando T-SQL.
+    c. **Units by Supplier:** é o conjunto de dados que criamos usando T-SQL.
 
 7. Clique na **seta ao lado do botão Relatório de criação automática**. Existem duas opções: Criar relatório automaticamente e Criar um relatório em branco. Vamos tentar criar automaticamente. Selecione **Relatório de criação automática**.
 
@@ -112,7 +112,7 @@ Vamos começar usando a opção de criação automática de relatório. E, mais 
 
     ![](../media/Lab-7/image13.png)
 
-### Tarefa 2: Configurar plano de fundo para um Novo relatório
+## Tarefa 2: Configurar plano de fundo para um Novo relatório
 
 Vamos criar um novo relatório usando uma tela em branco.
 
@@ -156,7 +156,7 @@ Vamos criar um novo relatório usando uma tela em branco.
 
     ![](../media/Lab-7/image17.png)
 
-### Tarefa 3: Adicionar cabeçalho ao relatório
+## Tarefa 3: Adicionar cabeçalho ao relatório
 
 1. Vamos adicionar o cabeçalho na margem superior. No **menu**, selecione **Caixa de texto**.
 
@@ -176,7 +176,7 @@ Vamos criar um novo relatório usando uma tela em branco.
 
     ![](../media/Lab-7/image18.png)
 
-### Tarefa 4: Adicionar KPIs ao relatório
+## Tarefa 4: Adicionar KPIs ao relatório
 
 1. Vamos adicionar KPI de vendas. Selecione o **espaço em branco** na tela para tirar o foco da caixa de texto.
 
@@ -236,7 +236,7 @@ Vamos criar um novo relatório usando uma tela em branco.
 
     ![](../media/Lab-7/image24.png)
 
-### Tarefa 5: Adicionar gráfico de linhas ao relatório
+## Tarefa 5: Adicionar gráfico de linhas ao relatório
 
 Vamos criar um gráfico de linhas para visualizar Vendas ao longo do tempo por Reseller Company.
 
@@ -250,7 +250,7 @@ Vamos criar um gráfico de linhas para visualizar Vendas ao longo do tempo por R
 
     ![](../media/Lab-7/image25.png)
 
-### Tarefa 6: Salvar o relatóri
+## Tarefa 6: Salvar o relatóri
 
 Para fazer as alterações no modelo, salve o relatório antes de sair.
 
@@ -266,7 +266,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
 
     ![](../media/Lab-7/image26.png)
 
-### Tarefa 7: Configurar a coluna Year na tabela Date
+## Tarefa 7: Configurar a coluna Year na tabela Date
 
 1. No menu **superior**, selecione **Editar** para voltar ao modo de edição.
 
@@ -302,7 +302,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
 
     ![](../media/Lab-7/image30.png)
 
-### Tarefa 8: Configurar a coluna Month Name na tabela Date
+## Tarefa 8: Configurar a coluna Month Name na tabela Date
 
 1. Vamos adicionar Month a este gráfico. Na tabela Date, arraste o campo **MonthNameShort** abaixo de **Year** no **Eixo X**. Observe que o visual é classificado por Sales. Vamos classificá-lo por **MonthNameShort**.
 
@@ -336,7 +336,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
 
     ![](../media/Lab-7/image34.png)
 
-### Tarefa 9: Formatar gráfico de linhas
+## Tarefa 9: Formatar gráfico de linhas
 
 Observe como é fácil atualizar o modelo semântico durante a criação dos relatórios. Isso proporciona uma interação perfeita, como Power BI Desktop.
 
@@ -383,7 +383,7 @@ Observe como é fácil atualizar o modelo semântico durante a criação dos rel
 
     Conforme mencionado anteriormente, não criaremos todos os visuais neste laboratório. Quando quiser, fique à vontade para criar mais visuais.
 
-### Tarefa 10: Conectar o Power BI Desktop ao modelo semântico
+## Tarefa 10: Conectar o Power BI Desktop ao modelo semântico
 
 Agora vamos ver como é fácil conectar o Power BI Desktop ao modelo semântico e criar visuais.
 
@@ -445,7 +445,7 @@ Agora vamos ver como é fácil conectar o Power BI Desktop ao modelo semântico 
 
 20. Vamos salvar o relatório. Na faixa de opções, selecione **Arquivo -> Salvar**.
 
-### Tarefa 11: Adicionar novos dados para simular o modo Direct Lake
+## Tarefa 11: Adicionar novos dados para simular o modo Direct Lake
 
 Geralmente, no modo Import, depois que os dados são atualizados na fonte, precisamos atualizar o modelo do Power BI após o qual os dados no relatório são atualizados. Com o modo Direct Query, depois que os dados são atualizados na fonte, eles ficam disponíveis no relatório do Power BI. No entanto, o modo direct query geralmente é lento. Para resolver esse problema, o Microsoft Fabric introduziu o modo Direct Lake. Direct Lake é um caminho rápido para carregar os dados do lake diretamente para o mecanismo do Power BI, pronto para análise.
 
@@ -660,7 +660,7 @@ Em um cenário real, os dados são atualizados na fonte. Como estamos em um ambi
 
     ![](../media/Lab-7/image53.png)
 
-23. Selecione **rpt_Sales_Report** na barra de menus à esquerda para voltar para o relatório**.**
+23. Selecione **rpt_Sales_Report** na barra de menus à esquerda para voltar para o relatório
 
 24. No menu superior, selecione o **Ícone Atualizar**. Observe agora no gráfico de linhas que há dados para maio de 2024. Observe também que o valor de Sales aumentou.
 
