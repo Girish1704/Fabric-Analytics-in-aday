@@ -447,39 +447,27 @@ Al final de este laboratorio, habrá aprendido:
 
     a. **Almacén**: se usa para crear un Data Warehouse.
 
-
     b. **Almacén de muestra**: se utiliza para explorar y probar las capacidades de almacenamiento de datos con conjuntos de datos y modelos preconfigurados.
-
 
     c. **Cuaderno**: se utiliza para crear y compartir tareas interactivas de análisis y visualización de datos.
 
-
     d. **Azure SQL Database reflejada**: se utiliza para reflejar Azure SQL Database.
-
 
     e. **Catálogo de Azure Databricks reflejado**: se utiliza para reflejar datos de Azure Databricks para mejorar la integración y el análisis.
 
-
     f. **Snowflake reflejado**: se utiliza para reflejar la base de datos de Snowflake.
-
 
     g. **Oracle reflejado (versión preliminar):** se utiliza para reflejar Oracle.
 
-
     h. **Google BigQuery reflejada (versión preliminar):** se utiliza para reflejar Google BigQuery.
-
 
     i. **Azure Cosmos DB reflejado:** se utiliza para reflejar Azure Cosmos DB.
 
-
     j. **SQL Server reflejado:** se utiliza para reflejar SQL Server.
-
 
     k. **Mirrored Azure Database for PostgreSQL:** se usa para reflejar la Azure Database for PostgreSQL existente.
 
-
     l. **Base de datos administrada de Azure SQL reflejada**: se utiliza para reflejar bases de datos administradas de Azure SQL para alta disponibilidad y recuperación ante desastres.
-
 
     m. **Base de datos reflejada:** se utiliza para replicar bases de datos para alta disponibilidad y recuperación ante desastres.
 

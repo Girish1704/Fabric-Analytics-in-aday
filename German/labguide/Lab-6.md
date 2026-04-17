@@ -130,27 +130,19 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     1. **Customer**
 
-
     2. **Date**
-
 
     3. **People**
 
-
     4. **PO**
-
 
     5. **Supplier**
 
-
     6. **Geo**
-
 
     7. **Product**
 
-
     8. **Reseller**
-
 
     9. **Sales**
 

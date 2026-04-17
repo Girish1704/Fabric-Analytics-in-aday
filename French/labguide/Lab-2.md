@@ -295,8 +295,7 @@ Aujourd’hui, vous allez découvrir diverses fonctionnalités clés de Microsof
 
     h. **Détecteur d’anomalies (version préliminaire) :** la détection d’anomalies identifie automatiquement les schémas inhabituels et les valeurs aberrantes dans vos tables Eventhouse.
 
-    i. **Agent Opérations (version préliminaire) :** les agents Opération automatisent le cycle observer - > analyser - > décider - > agir. Ils suivent en continu les indicateurs clés,
-        mettent en évidence des analyses pertinentes et recommandent des actions ciblées.
+    i. **Agent Opérations (version préliminaire) :** les agents Opération automatisent le cycle observer - > analyser - > décider - > agir. Ils suivent en continu les indicateurs clés, mettent en évidence des analyses pertinentes et recommandent des actions ciblées.
 
     j. **Carte (version préliminaire) :** apportez des informations géospatiales à Real-Time Intelligence, permettant à chacun de visualiser où les événements se produisent, d’intégrer des données spatiales avec les autres fonctionnalités de Fabric et de prendre des décisions plus intelligentes et contextualisées selon la localisation.
 
@@ -460,8 +459,7 @@ Aujourd’hui, vous allez découvrir diverses fonctionnalités clés de Microsof
 
     g. **Mise en miroir Oracle (version préliminaire) :** permet la mise en miroir d’Oracle.
 
-    h. **Mise en miroir de Google Big Query (version préliminaire) :** permet la mise en miroir
-        de Google Big Query.
+    h. **Mise en miroir de Google Big Query (version préliminaire) :** permet la mise en miroir de Google Big Query.
 
     i. **Mise en miroir Azure Cosmos DB :** permet la mise en miroir d’Azure Cosmos DB.
 

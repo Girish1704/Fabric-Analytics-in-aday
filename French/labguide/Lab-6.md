@@ -104,7 +104,7 @@ Nous avons des données provenant de différentes sources ingérées dans la lak
 
 8. La boîte de dialogue Enregistrer votre rapport s’ouvre alors. Tapez **Units by Supplier** dans la zone de texte **Entrez un nom pour votre rapport**.
 
-9. Assurez-vous que l’espace de travail de destination est votre espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false>**.
+9. Assurez-vous que l’espace de travail de destination est votre espace de travail Fabric **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 10. Cliquez sur **Enregistrer**.
 

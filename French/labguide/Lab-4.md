@@ -98,7 +98,7 @@ L’équipe informatique a déjà établi un lien vers Dataverse et appliqué le
 
 4. Cliquez sur **Connexion**.
 
-    **Remarque :** vous êtes connecté à l’aide de vos informations d’identification. Elles sont différentes de celles figurant dans la capture d’écran ci-dessous.
+    >**Remarque :** vous êtes connecté à l’aide de vos informations d’identification. Elles sont différentes de celles figurant dans la capture d’écran ci-dessous.
 
     ![](../media/Lab-4/image12.png)
 

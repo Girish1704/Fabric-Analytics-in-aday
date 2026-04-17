@@ -36,7 +36,7 @@
 
     - Tarea 13: Configurar la actualización programada para la canalización
 
-Referencias
+- Referencias
 
 # Presentación
 
@@ -313,18 +313,13 @@ Agreguemos un poco más de complejidad a nuestro escenario. Hemos observado que 
 
     1. **Parámetros**: valores que se pasan a la canalización. Por ejemplo, el valor de una canalización pasada a otra canalización. Estos valores se pueden usar en cualquier expresión, pero no se pueden cambiar durante la ejecución de la canalización.
 
-
     2. **Variables del sistema:** estas variables se pueden usar en expresiones al definir entidades dentro de cualquiera de los servicios. Por ejemplo, id. de la canalización, nombre de la canalización, nombre del desencadenador, etc.
-
 
     3. **Parámetros de desencadenador:** parámetros que desencadenaron la canalización. Por ejemplo, el nombre del archivo o la ruta de acceso de la carpeta.
 
-
     4. **Funciones:** puede llamar funciones dentro de expresiones. Las funciones se clasifican en funciones de colección, conversión, fecha, lógica, matemáticas y cadena. Por ejemplo, concat es una función de cadena, add es una función matemática, etc.
 
-
     5. **Variables:** las variables de canalización son valores que se pueden establecer y modificar durante la ejecución de una canalización. A diferencia de los parámetros de canalización, que se definen en el nivel de canalización y no se pueden cambiar durante la ejecución de la misma, las variables de canalización se pueden configurar y modificar dentro de una canalización mediante una actividad Establecer variable. En breve utilizaremos la actividad Establecer variable.
-
 
     6. **Variables de biblioteca:** las variables de biblioteca utilizan variables que se definen en el **elemento de Fabric de biblioteca de variables.** Estas variables proporcionan una manera centralizada de administrar las configuraciones en los espacios de trabajo para admitir los flujos de trabajo de CI/CD. Se pueden usar junto con canalizaciones, blocs de notas y accesos directos almacén de Lakehouse, entre otros.
 

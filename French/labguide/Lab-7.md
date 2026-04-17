@@ -313,11 +313,11 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 
 4. Cliquez sur les **points de suspension (…)** dans le coin supérieur droit du visuel.
 
-5. Sélectionnez **Trier axe -\> Tri croissant**.
+5. Sélectionnez **Trier axe -> Tri croissant**.
 
     ![](../media/Lab-7/image32.png)
 
-    **Remarque :** les mois sont triés par ordre alphabétique. Résolvons ce problème.
+    >**Remarque :** les mois sont triés par ordre alphabétique. Résolvons ce problème.
 
     ![](../media/Lab-7/image33.png)
 

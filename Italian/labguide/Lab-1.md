@@ -40,7 +40,7 @@ Per ottenere informazioni utili, si estraggono, puliscono e organizzano insieme 
 
 - **Dati dipendenti:** provengono dal sistema HR e sono archiviati in un file di esportazione in una cartella di SharePoint. Vengono aggiornati ogni mattina alle 9.00.
 
-![](../media/Lab-1/image6.jpeg)
+    ![](../media/Lab-1/image6.jpeg)
 
 Attualmente è in fase di creazione un modello semantico in Power BI Premium che estrae i dati dai precedenti sistemi di origine per soddisfare le esigenze di creazione report e fornire agli utenti finali la funzionalità self-service. Si usa Power Query per aggiornare il modello.
 

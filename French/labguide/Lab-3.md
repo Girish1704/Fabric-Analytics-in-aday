@@ -593,7 +593,7 @@ Créons la vue Product en fusionnant les tables **ProductItem**, **ProductItemGr
 
     ![](../media/Lab-3/image59.png)
 
-    **Remarque :** si vous ne trouvez pas l’Éditeur avancé, vous pouvez y accéder sous **Accueil -> Requête -> Éditeur avancé**.
+    >**Remarque :** si vous ne trouvez pas l’Éditeur avancé, vous pouvez y accéder sous **Accueil -> Requête -> Éditeur avancé**.
 
 12. **Sélectionnez tout le code** dans l’Éditeur avancé et **supprimez**-le.
 

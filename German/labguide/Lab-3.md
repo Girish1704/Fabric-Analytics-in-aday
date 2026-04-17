@@ -182,8 +182,7 @@ Verknüpfungen werden verwendet, um eine Verknüpfung zum Zielort zu erstellen. 
 
     ![](../media/Lab-3/image16.png)
 
-6. Wählen Sie bei ausgewählter Abfrage **Cities (1)** im Menüband des Power Query-Editors
-**Start (2)-> Kombinieren (3) -> Abfragen zusammenführen (4) -> Abfragen als neue Abfrage zusammenführen (5)** aus. Das Dialogfeld „Abfragen zusammenführen“ wird geöffnet.
+6. Wählen Sie bei ausgewählter Abfrage **Cities (1)** im Menüband des Power Query-Editors **Start (2)-> Kombinieren (3) -> Abfragen zusammenführen (4) -> Abfragen als neue Abfrage zusammenführen (5)** aus. Das Dialogfeld „Abfragen zusammenführen“ wird geöffnet.
 
     ![](../media/Lab-3/image17.png)
 
@@ -521,15 +520,15 @@ Lassen Sie uns die Ansicht „Sales“ erstellen, die durch das Zusammenführen 
     ```sql
     let
     Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
-    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
-    #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice", {"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
-    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns", {{"CustomerID", "ResellerID"}}),
-    #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
-    #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
-    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom", {{"Sales Amount", type number}}),
-    #"Removed Columns" = Table.RemoveColumns(#"Changed Type", {"Customer"})
+        #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+        #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+        #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner),
+        #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+        #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+        #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
     in
-    #"Removed Columns"
+        #"Removed Columns"
     ```
 
 27. Sie werden zum Power Query-Editor weitergeleitet. Im linken Bereich „Abfragen“ müssen Sie **auf die „Merge“-Abfrage doppelklicken**, um sie umzubenennen.
@@ -602,13 +601,13 @@ Wir erstellen die Ansicht „Product“, die durch das Zusammenführen der Tabel
 
     ```sql
     let
-    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
-    #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
-    #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
-    #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
-    #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+       Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+       #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
+       #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+       #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+       #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
     in
-    #"Choose columns"
+       #"Choose columns"
     ```
 
 14. Wählen Sie **OK** aus, um „Erweiterter Editor“ zu schließen. Sie werden zum Power Query-Editor weitergeleitet.
