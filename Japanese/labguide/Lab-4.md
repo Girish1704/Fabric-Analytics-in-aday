@@ -153,7 +153,7 @@ IT チームは、既に Dataverse へのリンクを確立しており、必要
 
 5. **説明**テキスト ボックスに、**Dataflow to ingest People data from SharePoint to Lakehouse** と入力します (2)。
 
-6. 完了したら、設定ウィンドウを閉じます **(3)**。
+6. 完了したら、設定ウィンドウを閉じます **(3)** 。
 
     ![](../media/Lab-4/image18.png)
 
