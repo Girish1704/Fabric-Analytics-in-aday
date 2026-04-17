@@ -72,7 +72,7 @@ Os atalhos são usados para criar um link com o local de destino. Os atalhos for
 
 8. Selecione **Assinatura de Acesso Compartilhado (SAS) (4)** no menu suspenso Tipo de autenticação.
 
-9. Copie o token SAS e cole-o no campo Token SAS (5).
+9. Copie o token SAS e cole-o no campo Token SAS **(5)**.
 
     - **Token SAS:** <inject key="Sas token"></inject>
 

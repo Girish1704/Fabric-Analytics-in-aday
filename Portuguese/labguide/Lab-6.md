@@ -12,7 +12,7 @@
 
     - Tarefa 2: Visualizar resultado de T-SQL
 
-- Lakehouse – Modelagem semântica
+- Lakehouse - Modelagem semântica
 
     - Tarefa 3: Criar um modelo semântico
 

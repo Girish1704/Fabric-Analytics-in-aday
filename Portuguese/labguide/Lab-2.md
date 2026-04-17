@@ -52,7 +52,7 @@ Ao final deste laboratório, você terá aprendido a:
 
     ![](../media/Lab-2/image6.png)
 
-    > ***Observação:** se você estiver usando o ambiente de laboratório, ele poderá conectar você automaticamente. 
+    > **Observação:** se você estiver usando o ambiente de laboratório, ele poderá conectar você automaticamente. 
 
     > **Observação**: se o Fabric não abrir, navegue até http://app.fabric.microsoft.com/ no navegador. 
 
@@ -104,9 +104,9 @@ Ao final deste laboratório, você terá aprendido a:
 
 ### Tarefa 2: Criar um workspace do Fabric
 
-1. Agora vamos criar um workspace com uma licença do Fabric. Selecione **Workspaces** (1) na barra de navegação esquerda. Uma caixa de diálogo é aberta.
+1. Agora vamos criar um workspace com uma licença do Fabric. Selecione **Workspaces (1)** na barra de navegação esquerda. Uma caixa de diálogo é aberta.
 
-2. Clique em **+ Novo workspace** (2) encontrado na parte inferior do menu pop-out.
+2. Clique em **+ Novo workspace (2)** encontrado na parte inferior do menu pop-out.
 
     ![](../media/Lab-2/image14.png)
 
@@ -118,7 +118,9 @@ Ao final deste laboratório, você terá aprendido a:
 
 5. Se preferir, você poderá inserir uma Descrição para o workspace. Esse campo é opcional.
 
-6. Clique em **Avançado** para expandir a seção.![](../media/Lab-2/image15.png)
+6. Clique em **Avançado** para expandir a seção.
+
+    ![](../media/Lab-2/image15.png)
 
 7. Em **Modo de licença**, verifique se **Avaliação** está selecionada. (Essa opção deve estar selecionada por padrão.)
 

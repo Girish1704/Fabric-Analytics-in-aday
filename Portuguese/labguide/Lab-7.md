@@ -509,7 +509,7 @@ Em um cenário real, os dados são atualizados na fonte. Como estamos em um ambi
 
 20. No menu superior, selecione **Página Inicial -> Nova consulta SQL**. Um painel de nova consulta SQL é aberto.
 
-21. **Copie** o código abaixo e **cole-o** no painel da consulta SQL**.**
+21. **Copie** o código abaixo e **cole-o** no painel da consulta **SQL**.
 
     ```sql
     ALTER VIEW [dbo].[Sales] AS (

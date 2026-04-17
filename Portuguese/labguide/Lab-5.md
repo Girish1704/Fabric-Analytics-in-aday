@@ -365,9 +365,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
     ![](../media/Lab-5/image37.png)
 
-23. Sua expressão deve ser:
-
-    **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
+23. Sua expressão deve ser: **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
 
 24. Selecione **OK**.
 
