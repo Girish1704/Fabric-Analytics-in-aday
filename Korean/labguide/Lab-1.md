@@ -4,41 +4,25 @@
 
 # 목차
 
-문서 구조
+- 문서 구조
 
-시나리오/문제 설명
+- 시나리오/문제 설명
 
-Power BI Desktop 보고 개요
+- Power BI Desktop 보고 개요
 
-작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
+    - 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
 
-작업 2: Power BI Desktop 보고서 분석
+    - 작업 2: Power BI Desktop 보고서 분석
 
-작업 3: Power Query 검토
+    - 작업 3: Power Query 검토
 
-참조
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
+- 참조
 
 # 문서 구조
 
 이 랩에서는 사용자가 수행해야 하는 단계를 보조 시각 자료의 관련 스크린샷과 함께 확인할 수 있습니다. 스크린샷에서 주황색 상자로 강조 표시된 섹션은 사용자가 특히 주목해야 하는 영역입니다.
 
-**참고**: 진행 중인 제품 업데이트로 인해 일부 스크린샷이 오래되었을 수 있습니다.
+> **참고:** 진행 중인 제품 업데이트로 인해 일부 스크린샷이 오래되었을 수 있습니다.
 
 # 시나리오/문제 설명
 
@@ -56,7 +40,7 @@ Fabrikam, Inc.는 신제품 도매 유통업체입니다. 도매업체로서 Fab
 
 - **직원 데이터:** 이 데이터는 HR 시스템에서 제공되며, SharePoint 폴더에 내보내기 파일로 저장됩니다. 이는 매일 오전 9시에 업데이트됩니다.
 
-![](../media/Lab-1/image3.jpeg)
+    ![](../media/Lab-1/image3.jpeg)
 
 현재 보고 요구 사항을 충족하고 최종 사용자에게 셀프 서비스 기능을 제공하기 위해 위의 소스 시스템에서 데이터를 가져오는 Power BI Premium에서 의미 체계 모델을 구축하고 있습니다. Power Query를 사용해서 모델을 업데이트합니다.
 
@@ -74,45 +58,44 @@ Fabrikam, Inc.는 신제품 도매 유통업체입니다. 도매업체로서 Fab
 
 Microsoft Fabric에 대해 들어봤기 때문에 그것이 문제를 해결할 수 있는지 알아보기로 결정하였습니다.
 
-### **Power BI Desktop 보고 개요**
+### Power BI Desktop 보고 개요
 
 Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보고 변환과 모델을 이해해 보겠습니다.
 
-### 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
+## 작업 1: 랩 환경에서 Power BI Desktop을 설정하는 방법
 
 
-1.  랩 환경에서 바탕 화면의 **Reports** 폴더에 있는 **FAIAD.pbix**를 엽니다. 파일이 Power BI Desktop에 열립니다.
+1. 랩 환경에서 바탕 화면의 **Reports** 폴더에 있는 **FAIAD.pbix**를 엽니다. 파일이 Power BI Desktop에 열립니다.
 
     ![](../media/Lab-1/image4.png)
 
+    > ### **참고:** Power BI Desktop이 **“Enter your email address”** 화면에서 응답하지 않아 입력할 수 없는 경우, 작업 표시줄에 있는 Power BI 아이콘 위로 마우스를 이동하세요 **(1)**. 그런 다음 추가로 열린 빈(흰색) 창을 **X** 버튼 **(2)**을 클릭하여 닫으세요. 그러면 Power BI의 기본 창이 다시 정상적으로 응답합니다.
 
-2.  "전자 메일 주소 입력" 대화 상자가 나타나면 **사용자 이름**을 복사하여 대화 상자의 **전자 메일** 필드에 붙여넣고 **계속**을 선택합니다.
+    ![](../media/Lab-1/powerbidesktop-note.png)
 
-    - 이메일/사용자 이름:
-
-    ![](../media/Lab-1/image5.png)
-
-
-3.  Microsoft Azure 로그인 탭에 로그인 화면이 표시되면 다음 이메일/사용자 이름을 입력한 후 다음을 클릭합니다.
+2. "전자 메일 주소 입력" 대화 상자가 나타나면 **사용자 이름**을 복사하여 대화 상자의 **전자 메일** 필드에 붙여넣고 **계속**을 선택합니다.
 
     - 이메일/사용자 이름:
 
-    ![](../media/Lab-1/image6.png)
+        ![](../media/Lab-1/image5.png)
 
+3. Microsoft Azure 로그인 탭에 로그인 화면이 표시되면 다음 이메일/사용자 이름을 입력한 후 다음을 클릭합니다.
 
-4.  이제 다음 **임시 액세스 패스**를 입력하고 **로그인**을 클릭합니다.
+    - 이메일/사용자 이름:
+
+        ![](../media/Lab-1/image6.png)
+
+4. 이제 다음 **임시 액세스 패스**를 입력하고 **로그인**을 클릭합니다.
 
     - 임시 액세스 패스:
 
-    ![](../media/Lab-1/image7.png)
+        ![](../media/Lab-1/image7.png)
 
-
-5.  **모든 앱에 로그인 상태 유지** 대화 상자가 열립니다. **확인**을 선택합니다.
+5. **모든 앱에 로그인 상태 유지** 대화 상자가 열립니다. **확인**을 선택합니다.
 
     ![](../media/Lab-1/image8.png)
 
-
-6.  **모두 설정되었습니다!** 대화 상자가 열립니다. **완료**를 선택합니다.
+6. **모두 설정되었습니다!** 대화 상자가 열립니다. **완료**를 선택합니다.
 
     이제 Power BI Desktop이 열립니다.
 
@@ -122,69 +105,57 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 ![](../media/Lab-1/image9.jpeg)
 
-**참고:** 이 교육에서는 Fabric에서 사용할 수 있는 도구를 사용한 데이터 수집, 변환 및 모델링에 중점을 둡니다. 보고서 개발이나 탐색은 중점 사항이 아닙니다. 몇 분 동안 보고서를 살펴보고 다음 단계로 넘어가겠습니다.
+>**참고:** 이 교육에서는 Fabric에서 사용할 수 있는 도구를 사용한 데이터 수집, 변환 및 모델링에 중점을 둡니다. 보고서 개발이나 탐색은 중점 사항이 아닙니다. 몇 분 동안 보고서를 살펴보고 다음 단계로 넘어가겠습니다.
 
-
-1.  판매 지역(Sales Territory)별로 데이터를 분석해 보겠습니다. **Sales Territory에서 New England** (산점도) 시각적 개체를 선택합니다. 시간 경과에 따른 매출(Sales over time)에 따르면, Reseller Tailspin Toys는 뉴잉글랜드의 Wingtip Toys에 비해 매출이 더 많다는 점에 유의합니다. 전년 대비 매출 증감율(Sales YoY%)를 보면 지난 1년 동안 Wingtip Toys 매출 성장이 낮았고 분기별로 감소했음을 알 수 있습니다. 3분기에 소폭 반등한 후 4분기에 다시 하락세를 보였습니다.
+1. 판매 지역(Sales Territory)별로 데이터를 분석해 보겠습니다. **Sales Territory에서 New England** (산점도) 시각적 개체를 선택합니다. 시간 경과에 따른 매출(Sales over time)에 따르면, Reseller Tailspin Toys는 뉴잉글랜드의 Wingtip Toys에 비해 매출이 더 많다는 점에 유의합니다. 전년 대비 매출 증감율(Sales YoY%)를 보면 지난 1년 동안 Wingtip Toys 매출 성장이 낮았고 분기별로 감소했음을 알 수 있습니다. 3분기에 소폭 반등한 후 4분기에 다시 하락세를 보였습니다.
 
     ![](../media/Lab-1/image10.jpeg)
 
-
-2.  이것을 **Rocky Mountain** 지역과 비교해 보겠습니다. **Sales Territory에서 Rocky Mountain**(산점도) 시각적 개체를 선택합니다. 전년 동기 대비 매출 증감율 막대 그래프를 보면, Wingtip Toys의 매출은 지난 2분기 동안 저조했으나 2023년 4분기에 급격하게 증가했습니다.
+2. 이것을 **Rocky Mountain** 지역과 비교해 보겠습니다. **Sales Territory에서 Rocky Mountain**(산점도) 시각적 개체를 선택합니다. 전년 동기 대비 매출 증감율 막대 그래프를 보면, Wingtip Toys의 매출은 지난 2분기 동안 저조했으나 2023년 4분기에 급격하게 증가했습니다.
 
     ![](../media/Lab-1/image11.jpeg)
 
+3. **Sales Territory에서 Rocky Mountain** 지역을 선택하여 필터를 제거합니다.
 
-3.  **Sales Territory에서 Rocky Mountain** 지역을 선택하여 필터를 제거합니다.
-
-
-4.  화면 하단 중앙에 있는 산점도 시각적 개체(매출별 판매 주문)에서 오른쪽 상단(4사분면)에 있는 이상값을 선택합니다. 마진(%)이 평균 50%보다 높은 52%입니다. 또한 2023년 마지막 2분기 매출 전년 동기 대비 증가율도 상승했습니다.
+4. 화면 하단 중앙에 있는 산점도 시각적 개체(매출별 판매 주문)에서 오른쪽 상단(4사분면)에 있는 이상값을 선택합니다. 마진(%)이 평균 50%보다 높은 52%입니다. 또한 2023년 마지막 2분기 매출 전년 동기 대비 증가율도 상승했습니다.
 
     ![](../media/Lab-1/image12.jpeg)
 
+5. **필터를 제거**하려면 산점도 시각적 개체에서 이상값 Reseller를 선택합니다.
 
-5.  **필터를 제거**하려면 산점도 시각적 개체에서 이상값 Reseller를 선택합니다.
-
-
-6.  Product Group 및 Reseller별 제품 상세 정보를 살펴보겠습니다. Product Group 및 Reseller별 매출 막대 그래프에서 **Tailspin Toys의 Packaging Materials 막대를 마우스 우클릭하고** 대화 상자에서 **드릴스루 -\> Product Detail을** 선택합니다.
+6. Product Group 및 Reseller별 제품 상세 정보를 살펴보겠습니다. Product Group 및 Reseller별 매출 막대 그래프에서 **Tailspin Toys의 Packaging Materials 막대를 마우스 우클릭하고** 대화 상자에서 **드릴스루 -\> Product Detail을** 선택합니다.
 
     ![](../media/Lab-1/image13.png)
 
+7. 제품 상세 정보를 제공하는 페이지로 이동하게 됩니다. 향후 주문도 일부 있음을 확인합니다.
 
-7.  제품 상세 정보를 제공하는 페이지로 이동하게 됩니다. 향후 주문도 일부 있음을 확인합니다.
-
-
-8.  이 페이지를 검토한 후 페이지 왼쪽 상단에 있는 **Ctrl+뒤로 화살표**를 선택하여 판매 보고서로 다시 이동합니다.
+8. 이 페이지를 검토한 후 페이지 왼쪽 상단에 있는 **Ctrl+뒤로 화살표**를 선택하여 판매 보고서로 다시 이동합니다.
 
     ![](../media/Lab-1/image14.png)
 
-
-9.  보고서를 자유롭게 더 분석합니다. 준비가 되었으면 모델 보기를 살펴보겠습니다. 왼쪽 패널에서 모델 보기 아이콘을 선택합니다.
+9. 보고서를 자유롭게 더 분석합니다. 준비가 되었으면 모델 보기를 살펴보겠습니다. 왼쪽 패널에서 모델 보기 아이콘을 선택합니다.
 
     ![](../media/Lab-1/image15.png)
 
-
 10. **Sales**와 **PO**라는 두 개의 팩트 테이블이 있습니다.
 
-    a\. Sales 데이터의 세분화는 Date, Reseller, Product 및 People별로 이루어집니다. Date, Reseller, Product, People이 Sales에 연결됩니다.
+    a. Sales 데이터의 세분화는 Date, Reseller, Product 및 People별로 이루어집니다. Date, Reseller, Product, People이 Sales에 연결됩니다.
 
-    b\. PO 데이터의 세분화는 Date, Product 및 People별로 이루어집니다. Date, Product, People이 PO에 연결됩니다.
+    b. PO 데이터의 세분화는 Date, Product 및 People별로 이루어집니다. Date, Product, People이 PO에 연결됩니다.
 
-    c\. Product별 Supplier 데이터가 있습니다. Supplier는 Product에 연결됩니다.
+    c. Product별 Supplier 데이터가 있습니다. Supplier는 Product에 연결됩니다.
 
-    d\. Geo별 Reseller 위치 데이터가 있습니다. Geo가 Reseller에 연결됩니다.
+    d. Geo별 Reseller 위치 데이터가 있습니다. Geo가 Reseller에 연결됩니다.
 
-    e\. Reseller별 Customer 정보가 있습니다. Customer가 Reseller에 연결됩니다.
+    e. Reseller별 Customer 정보가 있습니다. Customer가 Reseller에 연결됩니다.
 
 ### 작업 3: Power Query 검토
 
-
-1.  Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서 **홈 -\> 데이터 변환**을 선택합니다.
+1. Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서 **홈 -> 데이터 변환**을 선택합니다.
 
     ![](../media/Lab-1/image16.png)
 
-
-2.  Power Query 창이 열립니다. 리본 메뉴에서 **홈 -\> 데이터 원본 설정**을 선택합니다. 데이터 원본 설정 대화 상자가 열립니다. 목록을 스크롤하면 문제 설명에 언급된 대로 네 가지 데이터 원본이 있음을 알 수 있습니다.
+2. Power Query 창이 열립니다. 리본 메뉴에서 **홈 -> 데이터 원본 설정**을 선택합니다. 데이터 원본 설정 대화 상자가 열립니다. 목록을 스크롤하면 문제 설명에 언급된 대로 네 가지 데이터 원본이 있음을 알 수 있습니다.
 
     - Snowflake
 
@@ -194,47 +165,38 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     - Dataverse
 
-
-3.  **닫기**를 선택하여 데이터 원본 설정 대화 상자를 닫습니다.
+3. **닫기**를 선택하여 데이터 원본 설정 대화 상자를 닫습니다.
 
     ![](../media/Lab-1/image17.png)
 
+4. 왼쪽 쿼리 패널에서 쿼리가 데이터 원본별로 그룹화되어 있는지 확인합니다.
 
-4.  왼쪽 쿼리 패널에서 쿼리가 데이터 원본별로 그룹화되어 있는지 확인합니다.
+5. **DataverseData** 폴더에는 BabyBoomer, GenX, GenY, 및 GenZ의 네 가지 쿼리에서 사용할 수 있는 Customer 데이터가 있습니다. 이 네 가지 쿼리는 Customer 쿼리를 생성하기 위해 추가됩니다.
 
-
-5.  **DataverseData** 폴더에는 BabyBoomer, GenX, GenY, 및 GenZ의 네 가지 쿼리에서 사용할 수 있는 Customer 데이터가 있습니다. 이 네 가지 쿼리는 Customer 쿼리를 생성하기 위해 추가됩니다.
-
-
-6.  **Customer** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 Dataverse 자격 증명을 다시 입력해야 합니다. **자격 증명 편집**을 클릭합니다.
+6. **Customer** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 Dataverse 자격 증명을 다시 입력해야 합니다. **자격 증명 편집**을 클릭합니다.
 
     ![](../media/Lab-1/image18.png)
 
-
-7.  **로그인**을 클릭하여 계정에 로그인합니다.
+7. **로그인**을 클릭하여 계정에 로그인합니다.
 
     ![](../media/Lab-1/image19.png)
 
-
-8.  **사용자 이름**과 **암호**를 입력하여 Dataverse 데이터 원본에 대한 자격 증명 정보를 입력할 수 있습니다. 아래에 제공된 자격 증명 정보를 입력합니다. 입력하고 나면 **연결을** 선택합니다.
+8. **사용자 이름**과 **암호**를 입력하여 Dataverse 데이터 원본에 대한 자격 증명 정보를 입력할 수 있습니다. 아래에 제공된 자격 증명 정보를 입력합니다. 입력하고 나면 **연결을** 선택합니다.
 
     - 이메일/사용자 이름: 환경 탭에서 찾을 수 있습니다.
 
     - 암호: 환경 탭에서 찾을 수 있습니다.
 
-
-9.  **ADLS Base Folder** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 자격 증명을 입력해야 합니다. **자격 증명 편집**을 클릭합니다.
+9. **ADLS Base Folder** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 자격 증명을 입력해야 합니다. **자격 증명 편집**을 클릭합니다.
 
     ![](../media/Lab-1/image20.png)
-
 
 10. ADLS 데이터 원본의 경우 **SAS(공유 액세스 서명)** 옵션을 선택하고 아래에 제공된 **
     SAS** 토큰을 입력합니다. 그런 다음 **연결**을 선택합니다.
 
     - **SAS 토큰:** 환경 탭에서 찾을 수 있습니다.
 
-    ![](../media/Lab-1/image21.png)
-
+        ![](../media/Lab-1/image21.png)
 
 11. **ADLSData** 폴더에는 Geo, Product, Reseller, Date 등 다양한 차원(dimension)이 있습니다. Sales 팩트도 있습니다.
 
@@ -246,11 +208,9 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     - **Sales 팩트**는 InvoiceLineItems를 Invoice 쿼리와 병합하여 생성됩니다.
 
-
 12. Snowflake 데이터 원본의 경우, 쿼리 창에서 **SupplierCategories** 쿼리를 선택합니다. 이 쿼리를 선택하면 자격 증명을 입력하라는 메시지가 표시됩니다. **자격 증명 편집**을 클릭합니다.
 
     ![](../media/Lab-1/image22.png)
-
 
 13. 아래에 있는 **Snowflake 사용자 이름**과 **Snowflake 암호**를 입력합니다. 이 자격 증명을 사용하여 Snowflake 아래의 모든 테이블을 Snowflake에 연결한 다음 연결을 선택합니다.
 
@@ -258,12 +218,11 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     - **Snowflake 암호:** 8UpfRpExVDXv2AC1
 
-    *참고: 위 자격 증명으로 Snowflake에 연결하는 데 문제가 발생할 경우, 아래에 제공된 백업 자격 증명을 사용합니다.*
+        >**참고:** 위 자격 증명으로 Snowflake에 연결하는 데 문제가 발생할 경우, 아래에 제공된 백업 자격 증명을 사용합니다.
 
     - **Snowflake 사용자 이름:** SNOWFLAKE_BACKUP
 
     - **Snowflake 암호:** 8UpfRpExVDXv2AC1
-
 
 14. **SnowflakeData** 폴더에는 Supplier 차원과 PO(주문/지출) 팩트가 있습니다.
 
@@ -271,11 +230,9 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     - **PO 팩트**는 PO와 PO Line Items 쿼리를 병합하여 생성됩니다.
 
-
 15. SharePoint 데이터 원본의 경우, 쿼리 창에서 **People** 쿼리를 선택합니다. 이 쿼리를 선택하면 자격 증명을 입력하라는 메시지가 표시됩니다. **자격 증명 편집**을 클릭합니다.
 
     ![](../media/Lab-1/image23.png)
-
 
 16. **Microsoft 계정** 옵션을 선택한 다음 **로그인**을 클릭합니다. 아래에 입력한 사용자 이름과 암호를 입력한 다음 연결을 선택합니다.
 
@@ -284,7 +241,6 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
     - **암호:** 환경 탭에서 찾을 수 있습니다.
 
     ![](../media/Lab-1/image24.png)
-
 
 17. **SharepointData** 폴더에는 People 차원이 있습니다.
 
@@ -339,7 +295,7 @@ Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 �
 
 - [Dataverse 및 Microsoft Fabric 통합 블로그](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation. All rights reserved.
+© 2026 Microsoft Corporation. All rights reserved.
 
 이 데모/랩을 사용하면 다음 조건에 동의하게 됩니다.
 
