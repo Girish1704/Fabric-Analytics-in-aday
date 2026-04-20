@@ -1,6 +1,6 @@
-![](../media/Lab-1/image1.png)![](../media/Lab-1/image1.png)작
+# Microsoft Fabric - Fabric Analyst in a Day - 랩 1
 
-![](../media/Lab-1/image2.png)
+![](../media/Lab-1/title1.png)
 
 # 목차
 
@@ -75,19 +75,19 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 2. "전자 메일 주소 입력" 대화 상자가 나타나면 **사용자 이름**을 복사하여 대화 상자의 **전자 메일** 필드에 붙여넣고 **계속**을 선택합니다.
 
-    - 이메일/사용자 이름:
+    - 이메일/사용자 이름: <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/Lab-1/image5.png)
 
 3. Microsoft Azure 로그인 탭에 로그인 화면이 표시되면 다음 이메일/사용자 이름을 입력한 후 다음을 클릭합니다.
 
-    - 이메일/사용자 이름:
+    - 이메일/사용자 이름: <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/Lab-1/image6.png)
 
 4. 이제 다음 **임시 액세스 패스**를 입력하고 **로그인**을 클릭합니다.
 
-    - 임시 액세스 패스:
+    - 임시 액세스 패스: <inject key="AzureAdUserPassword"></inject>
 
         ![](../media/Lab-1/image7.png)
 
@@ -99,7 +99,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     이제 Power BI Desktop이 열립니다.
 
-### 작업 2: Power BI Desktop 보고서 분석
+## 작업 2: Power BI Desktop 보고서 분석
 
 아래 보고서는 Fabrikam의 매출을 분석합니다. KPI는 페이지 왼쪽 상단에 나열됩니다. 나머지 시각적 개체는 지역, 제품 그룹, 재판매사별 시간 경과에 따른 매출을 부각합니다.
 
@@ -149,7 +149,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     e. Reseller별 Customer 정보가 있습니다. Customer가 Reseller에 연결됩니다.
 
-### 작업 3: Power Query 검토
+## 작업 3: Power Query 검토
 
 1. Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서 **홈 -> 데이터 변환**을 선택합니다.
 
@@ -183,9 +183,9 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 8. **사용자 이름**과 **암호**를 입력하여 Dataverse 데이터 원본에 대한 자격 증명 정보를 입력할 수 있습니다. 아래에 제공된 자격 증명 정보를 입력합니다. 입력하고 나면 **연결을** 선택합니다.
 
-    - 이메일/사용자 이름: 환경 탭에서 찾을 수 있습니다.
+    - 이메일/사용자 이름: <inject key="AzureAdUserEmail"></inject>
 
-    - 암호: 환경 탭에서 찾을 수 있습니다.
+    - 암호: <inject key="AzureAdUserPassword"></inject>
 
 9. **ADLS Base Folder** 쿼리 창에서 고객 쿼리를 클릭합니다. 이 쿼리를 선택하면 자격 증명을 입력해야 합니다. **자격 증명 편집**을 클릭합니다.
 
@@ -194,7 +194,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 10. ADLS 데이터 원본의 경우 **SAS(공유 액세스 서명)** 옵션을 선택하고 아래에 제공된 **
     SAS** 토큰을 입력합니다. 그런 다음 **연결**을 선택합니다.
 
-    - **SAS 토큰:** 환경 탭에서 찾을 수 있습니다.
+    - **SAS 토큰:** <inject key="Sas token"></inject>
 
         ![](../media/Lab-1/image21.png)
 
@@ -214,9 +214,9 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 13. 아래에 있는 **Snowflake 사용자 이름**과 **Snowflake 암호**를 입력합니다. 이 자격 증명을 사용하여 Snowflake 아래의 모든 테이블을 Snowflake에 연결한 다음 연결을 선택합니다.
 
-    - **Snowflake 사용자 이름:** TE_SNOWFLAKE1
+    - **Snowflake 사용자 이름:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Snowflake 암호:** 8UpfRpExVDXv2AC1
+    - **Snowflake 암호:** <inject key="SnowFlake Username" enableCopy="false" />
 
         >**참고:** 위 자격 증명으로 Snowflake에 연결하는 데 문제가 발생할 경우, 아래에 제공된 백업 자격 증명을 사용합니다.
 
@@ -236,9 +236,9 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
 16. **Microsoft 계정** 옵션을 선택한 다음 **로그인**을 클릭합니다. 아래에 입력한 사용자 이름과 암호를 입력한 다음 연결을 선택합니다.
 
-    - **이메일/사용자 이름:** 환경 탭에서 찾을 수 있습니다.
+    - **이메일/사용자 이름:** <inject key="AzureAdUserEmail"></inject>
 
-    - **암호:** 환경 탭에서 찾을 수 있습니다.
+    - **암호:** <inject key="AzureAdUserPassword"></inject>
 
     ![](../media/Lab-1/image24.png)
 

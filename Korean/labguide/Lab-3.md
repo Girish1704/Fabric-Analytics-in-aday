@@ -1,4 +1,6 @@
-![](../media/Lab-3/image1.png)![](../media/Lab-3/image1.png)작
+# Microsoft Fabric - Fabric Analyst in a Day - 랩 3
+
+![](../media/Lab-1/title3.png)
 
 # 목차
 
@@ -70,9 +72,9 @@
 
 8. 인증 종류 드롭다운에서 **SAS(공유 액세스 서명)(4)**를 선택합니다.
 
-9. SAS 토큰을 복사하여 SAS 토큰 (5) 필드에 붙여넣습니다.
+9. SAS 토큰을 복사하여 SAS 토큰 **(5)** 필드에 붙여넣습니다.
 
-    - **SAS 토큰:**
+    - **SAS 토큰:** <inject key="Sas token"></inject>
 
 10. 화면 오른쪽 하단에서 **다음 (6)**을 선택합니다.
 
