@@ -214,7 +214,7 @@ L’état ci-dessous analyse les ventes de Fabrikam. Les KPI sont répertoriés 
 
     - **Nom d’utilisateur Snowflake** : <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Mot de passe Snowflake** : <inject key="SnowFlake Username" enableCopy="false" />
+    - **Mot de passe Snowflake** : <inject key="SnowFlake Password" enableCopy="false" />
 
         >**Remarque** : si vous avez des difficultés à vous connecter à Snowflake avec les informations d’identification susmentionnées, veuillez utiliser les informations d’identification de secours fournies ci-après.
 

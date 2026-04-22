@@ -218,9 +218,9 @@ O relatório abaixo analisa as Sales da Fabrikam. Os KPIs estão listados no can
 
     - **Nome de usuário do Snowflake:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Senha do Snowflake:** <inject key="SnowFlake Username" enableCopy="false" />
+    - **Senha do Snowflake:** <inject key="SnowFlake Password" enableCopy="false" />
 
-    > **Observação:** se você tiver problemas para se conectar ao Snowflake com as credenciais acima, use as credenciais de backup fornecidas abaixo.
+        > **Observação:** se você tiver problemas para se conectar ao Snowflake com as credenciais acima, use as credenciais de backup fornecidas abaixo.
 
     - **Nome de usuário do Snowflake:** SNOWFLAKE_BACKUP
 

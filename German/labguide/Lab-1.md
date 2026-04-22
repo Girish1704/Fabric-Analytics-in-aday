@@ -216,7 +216,7 @@ Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert. Die KPIs 
 
     - **Snowflake-Benutzername:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Snowflake-Kennwort:** <inject key="SnowFlake Username" enableCopy="false" />
+    - **Snowflake-Kennwort:** <inject key="SnowFlake Password" enableCopy="false" />
 
         >**Hinweis:** Wenn Sie Probleme beim Herstellen einer Verbindung zu Snowflake mit obigen Anmeldeinformationen haben, verwenden Sie bitte die die nachfolgenden Backup-Anmeldeinformationen.
 

@@ -220,9 +220,9 @@ Fabric の説明を始める前に、変換とモデルについて理解する�
 
     - **Snowflake ユーザー名:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Snowflake パスワード:** <inject key="SnowFlake Username" enableCopy="false" />
+    - **Snowflake パスワード:** <inject key="SnowFlake Password" enableCopy="false" />
 
-    > **注:** 上で示した資格情報を使用した Snowflake への接続で問題が発生する場合は、以下で示すバックアップ資格情報を使用してください。
+        > **注:** 上で示した資格情報を使用した Snowflake への接続で問題が発生する場合は、以下で示すバックアップ資格情報を使用してください。
 
     - **Snowflake ユーザー名:** SNOWFLAKE_BACKUP
 

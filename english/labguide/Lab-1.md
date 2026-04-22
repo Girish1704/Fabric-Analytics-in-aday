@@ -235,7 +235,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
     * **Snowflake Username:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    * **Snowflake Password:** <inject key="SnowFlake Username" enableCopy="false" />
+    * **Snowflake Password:** <inject key="SnowFlake Password" enableCopy="false" />
 
       >**Note:** If you experience any issues connecting to Snowflake with the credentials above, please use the backup credentials provided below.
 

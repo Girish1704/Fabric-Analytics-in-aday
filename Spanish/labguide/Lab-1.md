@@ -214,7 +214,7 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 
     - **Nombre de usuario de Snowflake:** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Contraseña de Snowflake:** <inject key="SnowFlake Username" enableCopy="false" />
+    - **Contraseña de Snowflake:** <inject key="SnowFlake Password" enableCopy="false" />
 
         >**Nota:** Si tiene algún problema para conectarse a Snowflake con las credenciales anteriores, utilice las credenciales de copia de seguridad que se proporcionan a continuación.
 
