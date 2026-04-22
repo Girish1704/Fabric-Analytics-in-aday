@@ -240,7 +240,7 @@ Fabric을 시작하기 전에 Power BI Desktop의 현재 보고서를 살펴보�
 
     - **암호:** <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/Lab-1/image24.png)
+        ![](../media/Lab-1/image24.png)
 
 17. **SharepointData** 폴더에는 People 차원이 있습니다.
 
