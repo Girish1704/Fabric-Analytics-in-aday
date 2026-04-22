@@ -64,7 +64,7 @@ Verwenden wir zunächst die Option „Bericht automatisch erstellen“. Und spä
 
     ![](../media/Lab-7/image7.png)
 
-4. Wählen Sie **Neuer Bericht** aus dem oberen Menü aus.
+4. Wählen Sie **+ Neuer Bericht** aus dem oberen Menü aus.
 
     ![](../media/Lab-7/image8.png)
 
@@ -118,7 +118,7 @@ Lassen Sie uns einen neuen Bericht mit einer leeren Canvas erstellen.
 
 1. Wählen Sie im **linken Bereich** den Namen Ihres Arbeitsbereichs, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, aus, um zum Arbeitsbereich zu gelangen.
 
-2. Wählen Sie im oberen Menü **Neues Element -> Bericht** aus. Sie werden zur Seite „Erstellen Sie Ihren ersten Bericht“ weitergeleitet.
+2. Wählen Sie im oberen Menü **+ Neues Element -> Bericht** aus. Sie werden zur Seite „Erstellen Sie Ihren ersten Bericht“ weitergeleitet.
 
     ![](../media/Lab-7/image14.png)
 

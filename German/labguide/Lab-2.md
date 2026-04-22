@@ -113,7 +113,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 3. Rechts im Browser wird das Dialogfeld **Arbeitsbereich erstellen** geöffnet.
 
-4. Geben Sie im Feld **Name** **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** ein (Sie finden dieseauf der Registerkarte „Umgebung“).
+4. Geben Sie im Feld Name **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** ein (Sie finden dieseauf der Registerkarte „Umgebung“).
 
     > **Hinweis:** Der Name des Arbeitsbereichs muss eindeutig sein. Achten Sie darauf, dass unter dem Feld für den Namen ein grünes Häkchen mit dem Text „Dieser Name ist verfügbar“ zu sehen ist.
 
@@ -123,7 +123,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     ![](../media/Lab-2/image15.png)
 
-7. Überprüfen Sie unter **Lizenzmodus**, dass die Option **Testversion** ausgewählt ist. (Standardmäßig ist dies der Fall.)
+7. Überprüfen Sie unter **Lizenzmodus**, dass die Option **Fabric-Testversion** ausgewählt ist. (Standardmäßig ist dies der Fall.)
 
 8. Erstellen Sie den neuen Arbeitsbereich durch Klicken auf **Übernehmen**.
 
@@ -241,7 +241,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
     c. **Datenlösungen für das Gesundheitswesen** sind strategisch darauf ausgelegt, die Zeit bis zur Wertschöpfung für die Kunden zu verkürzen, indem die kritische Notwendigkeit der effizienten Umwandlung von Daten aus dem Gesundheitswesen in ein geeignetes Format für die Analyse erfüllt wird.
 
-    >**Hinweis:** Einige Lösungen werden Ihnen möglicherweise nicht angezeigt.
+    **Hinweis:** Einige Lösungen werden Ihnen möglicherweise nicht angezeigt.
     
     **Erste Schritte**
     
@@ -481,6 +481,10 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
     b. **Erste Schritte mit Warehouse:** Klicken Sie auf die Schaltfläche „Öffnen“, um zu erfahren, wie Sie ein Warehouse zum Analysieren von Daten verwenden können.
 
     ![](../media/Lab-2/image33.png)
+
+3. Klicken Sie in der oberen linken Ecke des Bildschirms auf **Zurück zu Workloads**. Auf diese Weise gelangen Sie zur Workloads-Hauptseite, auf der Sie andere Tools oder Abschnitte erkunden können.
+
+    ![](../media/Lab-2/image23.png)
 
 ## Aufgabe 10: Datenbanken-Funktionsbereich
 

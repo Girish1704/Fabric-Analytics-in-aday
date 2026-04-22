@@ -38,7 +38,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 # Lakehouse – Analysieren von Daten
 
-### Aufgabe 1: Daten mithilfe von SQL abfragen
+## Aufgabe 1: Daten mithilfe von SQL abfragen
 
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, den Sie in Übung 2, Aufgabe 8, erstellt haben.
 
@@ -114,7 +114,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 # Lakehouse – Semantische Modellierung
 
-### Aufgabe 3: Semantisches Modell erstellen
+## Aufgabe 3: Semantisches Modell erstellen
 
 1. Wählen Sie im Menü „SQL-Analyseendpunkt“ die Option **Neues semantisches Modell** aus.
 
@@ -282,7 +282,7 @@ Ergänzen wir die restlichen Beziehungen.
 
 1. Wählen Sie im **Menü Start > Beziehungen verwalten** aus.
 
-2. Das Dialogfeld „Beziehungen verwalten“ wird geöffnet. Wählen Sie + **Neue Beziehung** aus.
+2. Das Dialogfeld „Beziehungen verwalten“ wird geöffnet. Wählen Sie **+ Neue Beziehung** aus.
 
     ![](../media/Lab-6/image27.png)
 
@@ -298,7 +298,7 @@ Ergänzen wir die restlichen Beziehungen.
 
     ![](../media/Lab-6/image28.png)
 
-8. Erstellen wir jetzt eine Beziehung zwischen den Tabellen „Product“ und „Supplier“. Wählen Sie + **Neue Beziehung** aus.
+8. Erstellen wir jetzt eine Beziehung zwischen den Tabellen „Product“ und „Supplier“. Wählen Sie **+ Neue Beziehung** aus.
 
 9. Vergewissern Sie sich, dass unter **Von Tabelle** **Product** und bei **Spalte** **SupplierID** angegeben ist.
 

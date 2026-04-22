@@ -218,7 +218,7 @@ Verknüpfungen werden verwendet, um eine Verknüpfung zum Zielort zu erstellen. 
 
     Wir müssen jetzt die Abfrage „Countries“ zusammenführen.
 
-15. Wählen Sie bei ausgewählter Zusammenführen-Abfrage **(1) Start (2) -> Kombinieren (3) -> Dropdown: Abfragen zusammenführen (4) -> Abfragen zusammenführen (5)** aus.
+15. Wählen Sie bei ausgewählter **Zusammenführen-Abfrage (1)** -> **Start (2) -> Kombinieren (3) -> Dropdown: Abfragen zusammenführen (4) -> Abfragen zusammenführen (5)** aus.
 
     ![](../media/Lab-3/image20.png)
 
@@ -393,7 +393,7 @@ Wir erstellen die Ansicht „Reseller“, indem wir die Tabelle „Customers“ 
 
     13. BuyingGroupName
 
-    15. Wählen Sie **OK** aus.
+    14. Wählen Sie **OK** aus.
 
         ![](../media/Lab-3/image34.png)
 

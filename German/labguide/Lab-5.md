@@ -227,7 +227,7 @@ Fügen wir unserem Szenario etwas mehr Komplexität hinzu. Wir haben festgestell
 
 1. Wählen Sie im linken Bereich **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** aus, um zur Startseite des Arbeitsbereichs zu gelangen.
 
-2. Klicken Sie im oberen Menü auf **+Neues Element (1)** und im Popout-Fenster auf **Pipeline (2)**.
+2. Klicken Sie im oberen Menü auf **+ Neues Element (1)** und im Popout-Fenster auf **Pipeline (2)**.
 
     ![](../media/Lab-5/image25.png)
 

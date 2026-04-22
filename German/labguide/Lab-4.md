@@ -117,7 +117,7 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaubereich an
 
 4. Das Dialogfeld „Zielort auswählen“ wird geöffnet. Stellen Sie sicher, dass das **Optionsfeld** „Neue Tabelle“ ausgewählt ist, da wir eine neue Tabelle erstellen.
 
-5. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>.**
+5. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 6. Wählen Sie **lh_FAIAD** aus.
 
@@ -173,7 +173,7 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaubereich an
 
 1. Wir navigieren zurück zum Fabric-Arbeitsbereich **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**.
 
-2. Wählen Sie die Option + **Neues Element (2)** in der oberen linken Ecke.
+2. Wählen Sie die Option **+ Neues Element (2)** in der oberen linken Ecke.
 
 3. Wählen Sie unter „Empfohlene Elemente“ die Option **Dataflow Gen2 (3)** aus.
 
