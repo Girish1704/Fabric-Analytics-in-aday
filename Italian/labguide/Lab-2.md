@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 2
 
-# ![](../media/Lab-2/H2.png)
+![](../media/Lab-2/H2.png)
 
 # Sommario
 
@@ -477,6 +477,10 @@ In questo lab si apprenderà quanto segue:
     b. **Introduzione al warehouse:** fare clic sul pulsante "Apri" per informazioni su come usare un warehouse per analizzare i dati.
 
     ![](../media/Lab-2/image33.png)
+
+1. Fare clic su **Torna ai carichi di lavoro** nell'angolo in alto a sinistra della schermata. Si apre la pagina principale dei carichi di lavoro, in cui è possibile esplorare altri strumenti o sezioni.
+
+    ![](../media/Lab-2/image23.png)
 
 ## Attività 10 - Esperienza Databases
 

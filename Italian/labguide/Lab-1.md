@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 1
 
-# ![](../media/Lab-1/H1.png)
+![](../media/Lab-1/H1.png)
 
 # Sommario
 
@@ -68,7 +68,7 @@ Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop pe
 
     ![](../media/Lab-1/image7.png)
 
-    > ### **Nota:** Se Power BI Desktop non risponde nella schermata **“Inserisci il tuo indirizzo email”** e non è possibile digitare, sposta il cursore sull’icona di Power BI nella barra delle applicazioni (1). Quindi chiudi la finestra aggiuntiva vuota (bianca) facendo clic su **X** (2). Questo renderà nuovamente reattiva la finestra principale di Power BI.
+    > ### **Nota:** Se Power BI Desktop non risponde nella schermata **“Inserisci il tuo indirizzo email”** e non è possibile digitare, sposta il cursore sull’icona di Power BI nella barra delle applicazioni **(1)**. Quindi chiudi la finestra aggiuntiva vuota (bianca) facendo clic su **X** **(2)**. Questo renderà nuovamente reattiva la finestra principale di Power BI.
 
     ![](../../english/media/Lab-1/powerbidesktop-note.png)
 

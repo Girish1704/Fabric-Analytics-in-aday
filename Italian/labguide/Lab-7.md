@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 7
 
-# ![](../media/Lab-7/H7.png)
+![](../media/Lab-7/H7.png)
 
 # Sommario
 
@@ -64,7 +64,7 @@ Iniziamo usando l'opzione di creazione automatica del report. Più avanti nel la
 
     ![](../media/Lab-7/image7.png)
 
-4. Selezionare **Nuovo report** dal menu in alto.
+4. Selezionare **+ Nuovo report** dal menu in alto.
 
     ![](../media/Lab-7/image8.png)
 
@@ -118,7 +118,7 @@ Creiamo un nuovo report usando un'area di disegno vuota.
 
 1. Nel **pannello di sinistra** selezionare il nome dell'area di lavoro, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, per tornare a essa.
 
-2. Nel menu in alto selezionare **Nuovo elemento** -> **Report**. Si aprirà la pagina per creare il primo report.
+2. Nel menu in alto selezionare **+ Nuovo elemento** -> **Report**. Si aprirà la pagina per creare il primo report.
 
     ![](../media/Lab-7/image14.png)
 
