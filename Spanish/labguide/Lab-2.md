@@ -432,7 +432,6 @@ Al final de este laboratorio, habrá aprendido:
 
 ## Tarea 9: Experiencia de Data Warehouse
 
-
 1. En la página **Cargas de trabajo**, haga clic en **Data Warehouse** para continuar.
 
     ![](../media/Lab-2/image32.png)
@@ -480,6 +479,10 @@ Al final de este laboratorio, habrá aprendido:
     b. **Introducción al almacén**: haga clic en el botón “Abrir” para aprender a utilizar un almacén para analizar datos.
 
     ![](../media/Lab-2/image33.png)
+
+3. Haga clic en Volver a las cargas de trabajo en la esquina superior izquierda de la pantalla. Esta acción le llevará a la página principal de cargas de trabajo, donde puede explorar otras herramientas o secciones.
+
+    ![](../media/Lab-2/image23.png)
 
 ## Tarea 10: Experiencia de bases de datos
 

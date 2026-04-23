@@ -64,7 +64,7 @@ Inhalt dieser Übung:
 
 Beginnen wir damit, eine geplante Aktualisierung des Lieferanten-Dataflows zu konfigurieren.
 
-1. Wir navigieren zurück zum Fabric-Arbeitsbereich,**FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, indem wir den Arbeitsbereich im linken Bereich auswählen.
+1. Wir navigieren zurück zum Fabric-Arbeitsbereich, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, indem wir den Arbeitsbereich im linken Bereich auswählen.
 
 2. Zum Maximieren des Bereichs mit der Liste der Artefakte wählen Sie den Doppelpfeil oben rechts im Bereich aus.
 

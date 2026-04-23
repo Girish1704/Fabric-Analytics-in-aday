@@ -64,7 +64,7 @@ Comencemos con la opción de creación automática de informes. Y, más adelante
 
     ![](../media/Lab-7/image7.png)
 
-4. Seleccione **Nuevo informe** en el menú superior.
+4. Seleccione **+ Nuevo informe** en el menú superior.
 
     ![](../media/Lab-7/image8.png)
 
