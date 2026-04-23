@@ -64,7 +64,7 @@
 
     ![](../media/Lab-7/image3.png)
 
-4. 상단 메뉴에서 **새 보고서**를 선택합니다.
+4. 상단 메뉴에서 **+ 새 보고서**를 선택합니다.
 
     ![](../media/Lab-7/image4.png)
 
@@ -98,7 +98,7 @@
     
     >**참고:** 보고서 이름 앞에는 보고서의 약자인 rpt가 붙습니다.
 
-11. 보고서가 작업 영역, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 에 저장되어 있는지 확인합니다.
+11. 보고서가 작업 영역, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_KO** 에 저장되어 있는지 확인합니다.
 
 12. **저장**을 선택합니다.
 
@@ -116,7 +116,7 @@
 
 빈 캔버스를 사용하여 새 보고서를 생성해 보겠습니다.
 
-1. **왼쪽 패널**에서 작업 영역 이름 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 을 선택하여 작업 영역으로 다시 이동합니다.
+1. **왼쪽 패널**에서 작업 영역 이름 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_KO** 을 선택하여 작업 영역으로 다시 이동합니다.
 
 2. 상단 메뉴에서 **홈 - > 보고서**를 선택합니다. 첫 번째 보고서 페이지 만들기로 이동됩니다.
 
@@ -260,7 +260,7 @@
     
     >**참고:** 보고서 이름 앞에는 보고서의 약자인 rpt가 붙습니다.
 
-3. 보고서가 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 작업 영역에 저장되어 있는지 확인합니다.
+3. 보고서가 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_KO** 작업 영역에 저장되어 있는지 확인합니다.
 
 4. **저장**을 선택합니다. 보고서가 저장되고 보기 모드가 된 것을 확인할 수 있습니다.
 
@@ -456,7 +456,7 @@ ADLS Gen2에서 데이터가 업데이트되고 새로 고침을 실행하지 �
 
 2. 오른쪽 하단 모서리에서 **Fabric** **로고**를 클릭하고 **Fabric 뷰**로 전환합니다.
 
-3. 왼쪽 메뉴 모음에서 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 을 선택하여 작업 영역 홈으로 이동합니다.
+3. 왼쪽 메뉴 모음에서 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_KO** 을 선택하여 작업 영역 홈으로 이동합니다.
 
 4. **lh_FAIAD**를 선택하여 레이크하우스로 이동합니다.
 
@@ -693,7 +693,7 @@ ADLS Gen2에서 데이터가 업데이트되고 새로 고침을 실행하지 �
 
 랩 환경을 정리할 준비가 되면 아래 단계를 따릅니다.
 
-1. 왼쪽 패널에서 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 작업 영역을 선택하여 작업 영역 홈으로 이동합니다.
+1. 왼쪽 패널에서 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_KO** 작업 영역을 선택하여 작업 영역 홈으로 이동합니다.
 
 2. 메뉴에서 **작업 영역 설정**을 선택합니다.
 

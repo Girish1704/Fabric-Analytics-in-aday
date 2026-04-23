@@ -64,7 +64,7 @@
 
 먼저 공급자 데이터 흐름의 예약된 새로 고침을 구성해 보겠습니다.
 
-1. 왼쪽 패널에서 작업 영역을 선택하여 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 이라는 Fabric 작업 영역으로 다시 이동해 보겠습니다.
+1. 왼쪽 패널에서 작업 영역을 선택하여 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_KO** 이라는 Fabric 작업 영역으로 다시 이동해 보겠습니다.
 
 2. 아티팩트 목록이 있는 패널을 최대화하려면 패널 오른쪽 상단에 있는 이중 화살표를 선택합니다.
 
@@ -142,7 +142,7 @@
 
 ## 작업 2: 파이프라인 만들기
 
-1. 왼쪽 패널에서 작업 영역을 선택하여 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 이라는 Fabric 작업 영역으로 다시 이동해 보겠습니다.
+1. 왼쪽 패널에서 작업 영역을 선택하여 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_KO** 이라는 Fabric 작업 영역으로 다시 이동해 보겠습니다.
 
 2. 상단 메뉴에서 **+ 새 항목 (1) -> 파이프라인 (2)** 을 선택합니다.
 
@@ -184,7 +184,7 @@
 
     ![](../media/Lab-5/image19.png)
 
-3. **작업 영역**이 Fabric 작업 영역 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**(으)로 설정되어 있는지 확인합니다.
+3. **작업 영역**이 Fabric 작업 영역 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_KO**(으)로 설정되어 있는지 확인합니다.
 
 4. **데이터 흐름 드롭다운**에서 **df_People_SharePoint**를 선택합니다. 이 데이터 흐름 활동이 실행되면 **df_People_SharePoint**가 새로 고침됩니다. 참 쉽죠?
 
@@ -224,7 +224,7 @@
 
 시나리오에 좀 더 복잡함을 추가해 보겠습니다. 오전 9시에 데이터를 사용할 수 없는 경우 일반적으로 5분 이내에 데이터를 사용할 수 있다는 것을 확인했습니다. 해당 기간을 놓친 경우 파일을 사용할 수 있을 때까지 15분이 소요됩니다. 재시도를 5분과 15분으로 예약하려고 합니다. 새로운 파이프라인을 생성하여 이를 어떻게 달성할 수 있는지 살펴보겠습니다.
 
-1. 왼쪽 패널에서 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 을(를) 클릭하여 작업 영역 홈으로 이동합니다.
+1. 왼쪽 패널에서 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_KO** 을(를) 클릭하여 작업 영역 홈으로 이동합니다.
 
 2. 상단 메뉴에서 **+ 새 항목 (1)을 클릭하고** 팝업 창에서 **파이프라인 (2)** 을 클릭합니다.
 
@@ -392,7 +392,7 @@
 
 7. 하단 창에서 **설정**을 선택합니다.
 
-8. **작업 영역**이 현재 작업 영역 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** (으)로 설정되어 있는지 확인합니다.
+8. **작업 영역**이 현재 작업 영역 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_KO** (으)로 설정되어 있는지 확인합니다.
 
 9. **데이터 흐름 드롭다운**에서 **df_People_SharePoint**를 선택합니다.
 
@@ -596,7 +596,7 @@
 
     ![](../media/Lab-5/image52.png)
 
-11. 왼쪽 패널에서 Fabric 작업 영역 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 을(를) 선택하여 작업 영역으로 이동합니다.
+11. 왼쪽 패널에서 Fabric 작업 영역 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_KO** 을(를) 선택하여 작업 영역으로 이동합니다.
 
     >**참고:** 일정 화면에는 성공 또는 실패를 알리는 옵션(예: 데이터 흐름 일정)이 없습니다. 파이프라인에 활동을 추가하여 알림을 수행할 수 있습니다. 현재 우리는 랩 환경을 진행하고 있으므로 이 랩에서는 해당 작업을 수행하지 않습니다.
 
