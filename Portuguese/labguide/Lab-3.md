@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Laboratório 3
 
-# ![](../media/Lab-3/lab3-04-pt.png)
+![](../media/Lab-3/lab3-04-pt.png)
 
 # Sumário
 
@@ -10,7 +10,7 @@
 
     - Tarefa 1: Criar um atalho
 
-    - Transformar dados usando uma consulta Visual
+- Transformar dados usando uma consulta Visual
 
     - Tarefa 2: Criar exibição Geo usando uma consulta Visual
 

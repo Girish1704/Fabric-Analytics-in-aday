@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Laboratório 4
 
-# ![](../media/Lab-4/lab4-04-pt.png)
+![](../media/Lab-4/lab4-04-pt.png)
 
 # Sumário
 
@@ -28,7 +28,7 @@
 
     - Tarefa 9: Como criar um atalho para Dataverse
 
-    - Task 10: Create a Shortcut to a Lakehouse
+    - Tarefa 10: Crie um atalho para uma casa no lago
 
 - Referências
 
@@ -344,7 +344,7 @@ Você deve estar no Lakehouse **lh_FAIAD**. Verifique se você está na exibiç�
 
     ![](../media/Lab-4/image39.png)
 
-### Task 10: Create a Shortcut to a Lakehouse
+## Tarefa 10: Crie um atalho para uma casa no lago.
 
 1. No painel **Explorer**, selecione as **reticências** ao lado de **Tabelas**.
 

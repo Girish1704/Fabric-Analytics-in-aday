@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Laboratório 2
 
-# ![](../media/Lab-2/lab2-04-pt.png)
+![](../media/Lab-2/lab2-04-pt.png)
 
 # Sumário
 
@@ -16,7 +16,7 @@
 
     - Tarefa 3: Criar um Lakehouse
 
-    - Visão geral das experiências do Fabric
+- Visão geral das experiências do Fabric
 
     - Tarefa 4: Experiência do Data Factory
 
@@ -477,6 +477,10 @@ Ao final deste laboratório, você terá aprendido a:
 
     ![](../media/Lab-2/image33.png)
 
+3. Clique em **Retornar às cargas de trabalho** no canto superior esquerdo da tela. Essa ação levará você para a página principal de cargas de trabalho, na qual você poderá explorar outras ferramentas ou seções.
+
+    ![](../media/Lab-2/image23.png)
+
 ## Tarefa 10: Experiência de Bancos de Dados
 
 1. Na página de cargas **de trabalho**, clique em **Databases** para prosseguir.
@@ -497,11 +501,11 @@ Ao final deste laboratório, você terá aprendido a:
 
     Para começar a usar Bancos de Dados, siga as etapas abaixo:
 
-1. **Explorar:** clique em "Abrir" para explorar um banco de dados de exemplo.
+    a. **Explorar:** clique em "Abrir" para explorar um banco de dados de exemplo.
 
-2. **Database concepts:** explica termos e conceitos comuns em torno do banco de dados transacional para que você possa se familiarizar com como trabalhar com o Banco de Dados SQL.
+    b. **Database concepts:** explica termos e conceitos comuns em torno do banco de dados transacional para que você possa se familiarizar com como trabalhar com o Banco de Dados SQL.
 
-3. **Database templates:** examine uma biblioteca de modelos pré-criados de designs de banco de dados comuns.
+    c. **Database templates:** examine uma biblioteca de modelos pré-criados de designs de banco de dados comuns.
 
     ![](../media/Lab-2/image35.png)
 

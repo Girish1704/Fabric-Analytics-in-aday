@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Laboratório 5
 
-# ![](../media/Lab-5/lab5-04-pt.png)
+![](../media/Lab-5/lab5-04-pt.png)
 
 # Sumário
 
@@ -26,11 +26,11 @@
 
     - Tarefa 8: Configurar atividade Dataflow
 
-    - Tarefa 9: Configurar 1ª atividade Set variable
+    - Tarefa 9: Configurar 1st atividade Set variable
 
-    - Tarefa 10: Configurar 2ª atividade Set variable
+    - Tarefa 10: Configurar 2nd atividade Set variable
 
-    - Tarefa 11: Configurar 3ª atividade Set variable
+    - Tarefa 11: Configurar 3rd atividade Set variable
 
     - Tarefa 12: Configurar atividade Wait
 
@@ -107,13 +107,13 @@ Vamos começar configurando uma atualização agendada do Fluxo de dados Supplie
 
 11. Você verá no painel **Configurações** que apareceu que temos três opções:
 
-    **Sobre –** aqui, podemos alterar o nome do Fluxo de Dados e adicionar uma descrição. Além disso, nós podemos ver quem é o proprietário do fluxo de dados e a última vez em que ele foi modificado.   
+    - **Sobre –** aqui, podemos alterar o nome do Fluxo de Dados e adicionar uma descrição. Além disso, nós podemos ver quem é o proprietário do fluxo de dados e a última vez em que ele foi modificado.   
     
-    **Endosso –** isso nos permite especificar se o fluxo de dados carregará a marca **Promovido** ou **Certificado** para que outras pessoas vejam.    
+    - **Endosso –** isso nos permite especificar se o fluxo de dados carregará a marca **Promovido** ou **Certificado** para que outras pessoas vejam.    
     
-    **Agendamento** – é aqui que podemos agendar os fluxos de dados
+    - **Agendamento** – é aqui que podemos agendar os fluxos de dados
 
-    ![](../media/Lab-5/image13.png)
+      ![](../media/Lab-5/image13.png)
 
 12. Selecione a opção **Agendamento**
 
@@ -397,7 +397,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
     ![](../media/Lab-5/image41.png)
 
-## Tarefa 9: Configurar 1ª atividade Set variable
+## Tarefa 9: Configurar 1st atividade Set variable
 
 Configuramos a atividade Fluxo de dados como fizemos anteriormente no laboratório. Agora, adicionaremos uma nova lógica. Se a atualização do fluxo de dados for bem-sucedida, precisaremos sair do iterador Until. Lembre-se de que uma das condições para a existência do iterador é definir o valor da variável varIsSuccess como Sim.
 
@@ -443,7 +443,7 @@ Configuramos a atividade Fluxo de dados como fizemos anteriormente no laboratór
 
     Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. Em um Pipeline, não podemos ter autorreferência de uma variável. O que significa que não podemos incrementar a variável do contador varCounter adicionando um ao seu valor (varCounter = varCounter + 1). Então, usamos a variável varTempCounter.
 
-## Tarefa 10: Configurar 2ª atividade Set variable
+## Tarefa 10: Configurar 2nd atividade Set variable
 
 1. No menu superior, selecione **Atividades -> Definir variável**. A atividade Definir variável é adicionada à tela de design.
 
@@ -473,7 +473,7 @@ Configuramos a atividade Fluxo de dados como fizemos anteriormente no laboratór
 
     Agora, precisamos definir o valor da variável varCounter como o valor de varTempCounter.
 
-## Tarefa 11: Configurar 3ª atividade Set variable
+## Tarefa 11: Configurar 3rd atividade Set variable
 
 1. No menu superior, selecione **Atividades -> Definir variável**. A atividade Definir variável é adicionada à tela de design.
 
@@ -497,7 +497,7 @@ Configuramos a atividade Fluxo de dados como fizemos anteriormente no laboratór
 
 10. A caixa de diálogo Construtor de expressões de pipeline é aberta. Insira **@variables('varTempCounter')**. Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá-la e colá-la.
 
-11. Clique em OK.
+11. Clique em **OK**.
 
     ![](../media/Lab-5/image48.png)
 

@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Laboratório 1
 
-# ![](../media/Lab-1/lab1-04-pt.png)
+![](../media/Lab-1/lab1-04-pt.png)
 
 # Sumário
 
@@ -68,7 +68,7 @@ Antes de começarmos com o Fabric, vamos dar uma olhada no Relatório atual no P
 
     ![](../media/Lab-1/image7.png)
 
-    > ### **Observação:** Se o Power BI Desktop parar de responder na tela **“Digite seu endereço de e-mail”** e você não conseguir digitar, mova o cursor sobre o ícone do Power BI na barra de tarefas (1). Em seguida, feche a janela em branco extra clicando no **X** (2). Isso fará com que a janela principal do Power BI volte a responder.
+    > ### **Observação:** Se o Power BI Desktop parar de responder na tela **“Digite seu endereço de e-mail”** e você não conseguir digitar, mova o cursor sobre o ícone do Power BI na barra de tarefas **(1)**. Em seguida, feche a janela em branco extra clicando no **X** **(2)**. Isso fará com que a janela principal do Power BI volte a responder.
 
     ![](../media/Lab-1/lab1-04-pt2.png)
 

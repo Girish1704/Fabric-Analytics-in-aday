@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Laboratório 7
 
-# ![](../media/Lab-7/lab7-04-pt.png)
+![](../media/Lab-7/lab7-04-pt.png)
 
 # Sumário
 
@@ -64,7 +64,7 @@ Vamos começar usando a opção de criação automática de relatório. E, mais 
 
     ![](../media/Lab-7/image7.png)
 
-4. No menu superior, selecione **Novo relatório**.
+4. No menu superior, selecione **+ Novo relatório**.
 
     ![](../media/Lab-7/image8.png)
 
