@@ -1,7 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Labo 2
 
-
-# ![](../media/Lab-2/T2.png)
+![](../media/Lab-2/T2.png)
 
 # Sommaire
 
@@ -480,6 +479,10 @@ Aujourd’hui, vous allez découvrir diverses fonctionnalités clés de Microsof
     b. **Démarrer avec l'entrepôt** **:** cliquez sur le bouton « Ouvrir » pour découvrir comment analyser des données à l’aide d’un entrepôt.
 
     ![](../media/Lab-2/image33.png)
+
+4. Cliquez sur **Revenir aux charges de travail** dans le coin supérieur gauche de l’écran. Vous êtes alors redirigé(e) vers la page principale des charges de travail, où vous pouvez explorer d’autres outils ou sections.
+
+    ![](../media/Lab-2/image23.png)
 
 ## Tâche 10 : expérience Databases
 

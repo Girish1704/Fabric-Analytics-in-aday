@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Labo 3
 
-# ![](../media/Lab-3/T3.png)
+![](../media/Lab-3/T3.png)
 
 # Sommaire
 
