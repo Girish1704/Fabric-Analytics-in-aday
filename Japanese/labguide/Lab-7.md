@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - ラボ 7
 
-# ![](../media/Lab-7/lab7-04-jp.png)
+![](../media/Lab-7/lab7-04-jp.png)
 
 # 目次
 

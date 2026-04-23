@@ -1,18 +1,18 @@
 # Microsoft Fabric - Fabric Analyst in a Day - ラボ 6
 
-# ![](../media/Lab-6/lab6-04-jp.png)
+![](../media/Lab-6/lab6-04-jp.png)
 
 # 目次
 
-- **概要**
+- 概要
 
-- **レイクハウス – データの分析**
+- レイクハウス – データの分析
 
     - タスク 1: SQL を使用してデータをクエリする
 
     - タスク 2: T-SQL 結果を視覚化する
 
-- **レイクハウス – セマンティック モデリング**
+- レイクハウス – セマンティック モデリング
 
     - タスク 3: セマンティック モデルを作成する
 
@@ -24,7 +24,7 @@
 
     - タスク 7: オプション セクション – メジャーを作成する
 
-- **参考資料**
+- 参考資料
 
 # **概要**
 
@@ -60,7 +60,7 @@
 
 5. **以下の SQL クエリ**を**クエリ ウィンドウ**に貼り付けます。このクエリは、サプライヤー名ごとに単位数を返します。Sales テーブルを Product テーブルおよび Supplier テーブルと結合して、これを実現します。
 
-     ```sql
+    ```sql
     SELECT su.SupplierName, SUM(Quantity) as Units
     FROM dbo.Sales s
     JOIN dbo.Product p on p.StockItemID = s.StockItemID
