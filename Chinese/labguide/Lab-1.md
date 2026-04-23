@@ -1,34 +1,22 @@
-# ![](../media/Lab-1/image1.png)![](../media/Lab-1/image2.png)![](../media/Lab-1/image1.png)zzzz![](../media/Lab-1/image3.emf)
+# Microsoft Fabric - Fabric Analyst in a Day - 实验室 1
+
+![](../media/Lab-1/H1.png)
 
 # 目录
 
-文档结构
+- 文档结构
 
-应用场景/问题陈述
+- 应用场景/问题陈述
 
-Power BI Desktop 报表概览
+- Power BI Desktop 报表概览
 
-任务 1：在实验室环境中设置 Power BI Desktop
+    - 任务 1：在实验室环境中设置 Power BI Desktop
 
-任务 2：分析 Power BI Desktop 报表
+    - 任务 2：分析 Power BI Desktop 报表
 
-任务 3：查看 Power Queries
+    - 任务 3：查看 Power Queries
 
-参考
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
-
-#
+- 参考
 
 # 文档结构
 
@@ -77,40 +65,34 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
 ### 任务 1：在实验室环境中设置 Power BI Desktop
 
-
-1.  打开 **FAIAD.pbix，**它位于您的实验室环境的**桌面**上的 **Reports** 文件夹中。该文件将在
+1. 打开 **FAIAD.pbix，**它位于您的实验室环境的**桌面**上的 **Reports** 文件夹中。该文件将在
     Power BI Desktop 中打开。
 
     ![](../media/Lab-1/image5.png)
 
+2. “输入你的电子邮件地址”对话框出现后，复制**用户名**并将其粘贴到对话框的**电子邮件**字段中，然后选择**继续**。
 
-2.  “输入你的电子邮件地址”对话框出现后，复制**用户名**并将其粘贴到对话框的**电子邮件**字段中，然后选择**继续**。
+    - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
 
-    - 电子邮件/用户名：
+        ![](../media/Lab-1/image6.png)
 
-    ![](../media/Lab-1/image6.png)
+3. 在“登录到 Microsoft Azure”选项卡上，您将看到登录屏幕，输入以下电子邮件/用户名，然后单击**下一步**。
 
+    - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
 
-3.  在“登录到 Microsoft Azure”选项卡上，您将看到登录屏幕，输入以下电子邮件/用户名，然后单击**下一步**。
+        ![](../media/Lab-1/image7.png)
 
-    - 电子邮件/用户名：
+4. 现在，输入以下**临时登入密码**，然后单击**登录**。
 
-    ![](../media/Lab-1/image7.png)
+    - 临时登入密码：<inject key="AzureAdUserPassword"></inject>
 
+        ![](../media/Lab-1/image8.png)
 
-4.  现在，输入以下**临时登入密码**，然后单击**登录**。
-
-    - 临时登入密码：
-
-    ![](../media/Lab-1/image8.png)
-
-
-5.  **保持登录到您的所有应用**对话框随即打开。选择**确定**。
+5. **保持登录到您的所有应用**对话框随即打开。选择**确定**。
 
     ![](../media/Lab-1/image9.png)
 
-
-6.  **您已完成所有设置！**对话框随即打开。选择完成。
+6. **您已完成所有设置！**对话框随即打开。选择完成。
 
     Power BI Desktop 现在将打开。
 
@@ -122,67 +104,55 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
 **注意：**在本次培训中，我们重点关注使用 Fabric 中提供的工具进行数据采集、转换和建模。我们不会专注于报表开发或导航。让我们花几分钟时间来理解该报表，然后继续执行后续步骤。
 
-
-1.  我们按销售区域分析数据。选择**销售区域中的新英格兰**（散点图）视觉对象。从一段时间内的销售情况来看，经销商 Tailspin Toys 在新英格兰的销售额高于 Wingtip Toys。如果您查看销售额同比百分比柱形图，就会发现 Wingtip Toys 的销售额增长率一直很低，并且在去年逐季下降。在第三季度小幅反弹后，第四季度再次下跌。
+1. 我们按销售区域分析数据。选择**销售区域中的新英格兰**（散点图）视觉对象。从一段时间内的销售情况来看，经销商 Tailspin Toys 在新英格兰的销售额高于 Wingtip Toys。如果您查看销售额同比百分比柱形图，就会发现 Wingtip Toys 的销售额增长率一直很低，并且在去年逐季下降。在第三季度小幅反弹后，第四季度再次下跌。
 
     ![](../media/Lab-1/image11.jpeg)
 
-
-2.  我们将其与落基山脉地区的情况进行比较。选择**销售区域中的落基山脉**（散点图）视觉对象。请注意，在销售额同比百分比柱形图中，Wingtip Toys 前两个季度的销售额一直很低，但在 2023 年第四季度大幅增长。
+2. 我们将其与落基山脉地区的情况进行比较。选择**销售区域中的落基山脉**（散点图）视觉对象。请注意，在销售额同比百分比柱形图中，Wingtip Toys 前两个季度的销售额一直很低，但在 2023 年第四季度大幅增长。
 
     ![](../media/Lab-1/image12.jpeg)
 
+3. 选择**销售区域中的落基山脉**以删除筛选器。
 
-3.  选择**销售区域中的落基山脉**以删除筛选器。
-
-
-4.  从屏幕底部中间的散点图视觉对象（按销售额划分的销售订单）中，选择右上角的离群值（第四象限）。请注意，利润率为 52%，高于 50% 的平均值。此外，2023 年最后两个季度的销售额同比增长。
+4. 从屏幕底部中间的散点图视觉对象（按销售额划分的销售订单）中，选择右上角的离群值（第四象限）。请注意，利润率为 52%，高于 50% 的平均值。此外，2023 年最后两个季度的销售额同比增长。
 
     ![](../media/Lab-1/image13.jpeg)
 
+5. 在散点图视觉对象中选择离群值 Reseller 以**删除筛选器**。
 
-5.  在散点图视觉对象中选择离群值 Reseller 以**删除筛选器**。
-
-
-6.  我们按产品组和经销商获取产品详细信息。从按产品组和经销商公司划分的销售条形图视觉对象中，**右键单击 Tailspin Toys 的 Packaging Materials 栏**，并从对话框中选择**钻取 -\> Product Detail**。
+6. 我们按产品组和经销商获取产品详细信息。从按产品组和经销商公司划分的销售条形图视觉对象中，**右键单击 Tailspin Toys 的 Packaging Materials 栏**，并从对话框中选择**钻取 -\> Product Detail**。
 
     ![](../media/Lab-1/image14.png)
 
+7. 您将导航到提供产品详细信息的页面。请注意，还有一些未来的订单。
 
-7.  您将导航到提供产品详细信息的页面。请注意，还有一些未来的订单。
-
-
-8.  查看完此页面后，选择页面左上角的 **Ctrl + 后退箭头**可导航回销售报表。
+8. 查看完此页面后，选择页面左上角的 **Ctrl + 后退箭头**可导航回销售报表。
 
     ![](../media/Lab-1/image15.png)
 
-
-9.  您可以自行进一步分析该报表。准备好后，我们来看看模型视图。在左侧面板中，选择**模型视图图标**。
+9. 您可以自行进一步分析该报表。准备好后，我们来看看模型视图。在左侧面板中，选择**模型视图图标**。
 
     ![](../media/Lab-1/image16.png)
 
-
 10. 请注意，有两个事实表：Sales 和 PO。
 
-    a\. Sales 数据的粒度是按 Date、Reseller、Product 和 People。Date、Reseller、Product 和 People 连接到 Sales。
+    1. Sales 数据的粒度是按 Date、Reseller、Product 和 People。Date、Reseller、Product 和 People 连接到 Sales。
 
-    b\. PO 数据的粒度是按 Date、Product 和 People。Date、Product 和 People 连接到 PO。
+    2. PO 数据的粒度是按 Date、Product 和 People。Date、Product 和 People 连接到 PO。
 
-    c\. 我们有按 Product 分类的 Supplier 数据。Supplier 连接到 Product。
+    3. 我们有按 Product 分类的 Supplier 数据。Supplier 连接到 Product。
 
-    d\. 我们有 Reseller 的按 Geo 划分的位置数据。Geo 连接到 Reseller。
+    4. 我们有 Reseller 的按 Geo 划分的位置数据。Geo 连接到 Reseller。
 
-    e\. 我们有按 Reseller 划分的 Customer 信息。Customer 连接到 Reseller。
+    5. 我们有按 Reseller 划分的 Customer 信息。Customer 连接到 Reseller。
 
 ### 任务 3：查看 Power Queries
 
-
-1.  让我们查看 Power Query 来了解数据源。从功能区中选择**主页 -\> 转换数据**。
+1. 让我们查看 Power Query 来了解数据源。从功能区中选择**主页 -> 转换数据**。
 
     ![](../media/Lab-1/image17.png)
 
-
-2.  Power Query 窗口随即打开。从功能区中选择**主页 -\> 数据源设置**。“数据源设置”对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
+2. Power Query 窗口随即打开。从功能区中选择**主页 -> 数据源设置**。“数据源设置”对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
 
     - Snowflake
 
@@ -192,48 +162,39 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
     - Dataverse
 
-
-3.  选择**关闭**以关闭“数据源设置”对话框。
+3. 选择**关闭**以关闭“数据源设置”对话框。
 
     ![](../media/Lab-1/image18.png)
 
+4. 在左侧的“查询”面板中，请注意查询是按数据源分组的。
 
-4.  在左侧的“查询”面板中，请注意查询是按数据源分组的。
-
-
-5.  请注意，**DataverseData** 文件夹包含四个不同查询中可用的 Customer 数据：
+5. 请注意，**DataverseData** 文件夹包含四个不同查询中可用的 Customer 数据：
     BabyBoomer、GenX、GenY 和 GenZ。追加这四个查询以创建 Customer 查询。
 
-
-6.  单击“查询”窗口中的 Customer 查询。选择本查询后，您将需要重新输入 Dataverse 凭据。单击**编辑凭据**。
+6. 单击“查询”窗口中的 Customer 查询。选择本查询后，您将需要重新输入 Dataverse 凭据。单击**编辑凭据**。
 
     ![](../media/Lab-1/image19.png)
 
-
-7.  单击**登录**以登录到您的帐户。
+7. 单击**登录**以登录到您的帐户。
 
     ![](../media/Lab-1/image20.png)
 
+8. 您可以通过输入**用户名**和**密码**来输入 Dataverse 数据源的凭据。下面提供了凭据。完成后，选择**连接**。
 
-8.  您可以通过输入**用户名**和**密码**来输入 Dataverse 数据源的凭据。下面提供了凭据。完成后，选择**连接**。
+    - 电子邮件/用户名：<inject key="AzureAdUserEmail"></inject>
 
-    - 电子邮件/用户名：在“环境”选项卡中找到
+    - 密码：<inject key="AzureAdUserPassword"></inject>
 
-    - 密码：在“环境”选项卡中找到
-
-
-9.  单击“查询”窗口中的 **ADLS Base Folder** 查询。选择本查询后，您将需要输入凭据。
+9. 单击“查询”窗口中的 **ADLS Base Folder** 查询。选择本查询后，您将需要输入凭据。
     单击**编辑凭据**。
 
     ![](../media/Lab-1/image21.png)
 
-
 10. 对于 ADLS 数据源，选择**共享访问签名 (SAS)** 选项，然后输入下面提供的 **SAS 令牌**。然后，选择**连接**。
 
-    - **SAS 令牌：**在“环境”选项卡中找到
+    - **SAS 令牌：** <inject key="Sas token"></inject>
 
-    ![](../media/Lab-1/image22.png)
-
+        ![](../media/Lab-1/image22.png)
 
 11. 请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和 Date。还具有
     Sales 事实。
@@ -246,46 +207,40 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
     - **Sales 事实**是通过合并 InvoiceLineItems 与 Invoice 查询而创建的。
 
-
 12. 对于 Snowflake 数据源，选择“查询”窗口中的 **SupplierCategories** 查询。选择本查询后，系统将提示您输入凭据。单击**编辑凭据**。
 
     ![](../media/Lab-1/image23.png)
 
-
 13. 输入下面提供的 **Snowflake 用户名**和 **Snowflake 密码**。使用这些凭据将 Snowflake 下的所有表连接到 Snowflake，然后选择“连接”。
 
-    - **Snowflake 用户名：**TE_SNOWFLAKE1
+    - **Snowflake 用户名** <inject key="SnowFlake Username" enableCopy="false" />
 
-    - **Snowflake 密码：**8UpfRpExVDXv2AC1
+    - **Snowflake 密码：** <inject key="SnowFlake Password" enableCopy="false" />
 
     *注意：如果您在使用上述凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的备份凭据。*
 
-    - **Snowflake 用户名：**SNOWFLAKE_BACKUP
+    - **Snowflake 用户名：** SNOWFLAKE_BACKUP
 
-    - **Snowflake 密码：**8UpfRpExVDXv2AC1
-
+    - **Snowflake 密码：** 8UpfRpExVDXv2AC1
 
 14. 请注意，**SnowflakeData** 文件夹包含 Supplier 维度和 PO（订单/支出）事实。
 
-    - **Supplier 维度**是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
+    - **Supplier 维度** 是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
 
-    - **PO 事实**是通过合并 PO 与 PO Line Items 查询而创建的。
-
+    - **PO 事实** 是通过合并 PO 与 PO Line Items 查询而创建的。
 
 15. 对于 SharePoint 数据源，选择“查询”窗口中的 **People** 查询。选择本查询后，系统将提示您输入凭据。单击**编辑凭据**。
 
     ![](../media/Lab-1/image24.png)
 
-
 16. 选择 **Microsoft 帐户**选项，然后单击**登录**。输入下面提供的用户名和密码，然后选择
     **连接**。
 
-    - **电子邮件/用户名：**在“环境”选项卡中找到
+    - **电子邮件/用户名：** <inject key="AzureAdUserEmail"></inject>
 
-    - **密码：**在“环境”选项卡中找到：
+    - **密码：** <inject key="AzureAdUserPassword"></inject>
 
-    ![](../media/Lab-1/image25.png)
-
+        ![](../media/Lab-1/image25.png)
 
 17. 请注意，**SharepointData** 文件夹具有 People 维度。
 
@@ -339,7 +294,7 @@ Fabric Analyst in a Day (FAIAD) 介绍了 Microsoft Fabric 中提供的一些主
 
 - [Dataverse 和 Microsoft Fabric 集成博客](https://aka.ms/Dataverse-Fabric-Blog)
 
-© 2023 Microsoft Corporation。保留所有权利。
+© 2026 Microsoft Corporation。保留所有权利。
 
 使用此演示/实验即表示您已同意以下条款：
 
