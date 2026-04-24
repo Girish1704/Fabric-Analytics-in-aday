@@ -120,7 +120,7 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
 5. 在散点图视觉对象中选择离群值 Reseller 以**删除筛选器**。
 
-6. 我们按产品组和经销商获取产品详细信息。从按产品组和经销商公司划分的销售条形图视觉对象中，**右键单击 Tailspin Toys 的 Packaging Materials 栏**，并从对话框中选择**钻取 -\> Product Detail**。
+6. 我们按产品组和经销商获取产品详细信息。从按产品组和经销商公司划分的销售条形图视觉对象中，**右键单击 Tailspin Toys 的 Packaging Materials 栏**，并从对话框中选择**钻取 -> Product Detail**。
 
     ![](../media/Lab-1/image14.png)
 
