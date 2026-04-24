@@ -243,11 +243,11 @@
 
     c. **医疗保健解决方案：** 经过战略设计，旨在通过满足将医疗保健数据有效转换为适合格式以供分析的关键需求，加快客户实现价值的时间。
 
-     >**注意：** 您可能看不到某些解决方案 
+    >**注意：** 您可能看不到某些解决方案 
      
-      **入门：** 
+    **入门：** 
       
-     若要开始使用 Industry Solutions，请按照以下步骤操作：
+    若要开始使用 Industry Solutions，请按照以下步骤操作：
 
     a. **了解医疗保健数据解决方案：** 单击“了解详细信息”按钮以了解医疗保健数据解决方案，并了解如何在您的项目中使用它们。
 
@@ -450,41 +450,45 @@
 
     **项目类型：**
 
-a. **仓库：** 用于创建 Data Warehouse。
+    a. **仓库：** 用于创建 Data Warehouse。
 
-b. **示例仓库：** 用于通过预先配置的数据集和模型探索和测试数据仓库功能。
+    b. **示例仓库：** 用于通过预先配置的数据集和模型探索和测试数据仓库功能。
 
-c. **笔记本：** 用于创建和共享交互式数据分析和可视化任务。
+    c. **笔记本：** 用于创建和共享交互式数据分析和可视化任务。
 
-d. **镜像的 Azure SQL 数据库：** 用于镜像 Azure SQL 数据库。
+    d. **镜像的 Azure SQL 数据库：** 用于镜像 Azure SQL 数据库。
 
-e. **镜像的 Azure Databricks 目录：** 用于镜像来自 Azure Databricks 的数据以增强集成和分析。
+    e. **镜像的 Azure Databricks 目录：** 用于镜像来自 Azure Databricks 的数据以增强集成和分析。
 
-f. **镜像的 Snowflake：** 用于镜像 Snowflake 数据库。
+    f. **镜像的 Snowflake：** 用于镜像 Snowflake 数据库。
 
-g. **镜像的 Oracle（预览版）：** 用于镜像 Oracle。
+    g. **镜像的 Oracle（预览版）：** 用于镜像 Oracle。
 
-h. **镜像的 Google Big Query（预览版）：** 用于镜像 Google Big Query。
+    h. **镜像的 Google Big Query（预览版）：** 用于镜像 Google Big Query。
 
-i. **镜像的 Azure Cosmos DB：** 用于镜像 Azure Cosmos DB。
+    i. **镜像的 Azure Cosmos DB：** 用于镜像 Azure Cosmos DB。
 
-j. **像的 SQL Server**：用于镜像 SQL Server。
+    j. **像的 SQL Server**：用于镜像 SQL Server。
 
-k. **镜像的 Azure Database for PostgreSQL：** 用于镜像现有的 Azure Database for PostgreSQL.
+    k. **镜像的 Azure Database for PostgreSQL：** 用于镜像现有的 Azure Database for PostgreSQL.
 
-l. **镜像的 Azure SQL 托管数据库：** 用于镜像 Azure SQL 托管数据库以实现高可用性和灾难恢复。
+    l. **镜像的 Azure SQL 托管数据库：** 用于镜像 Azure SQL 托管数据库以实现高可用性和灾难恢复。
 
-m. **镜像的数据库：** 用于复制数据库以实现高可用性和灾难恢复。
+    m. **镜像的数据库：** 用于复制数据库以实现高可用性和灾难恢复。
 
-**入门：**
+    **入门：**
 
- 若要开始使用 Data Warehouse，请按照以下步骤操作：
+    若要开始使用 Data Warehouse，请按照以下步骤操作：
 
-a. **探索示例仓库：** 使用已加载的示例数据开始新仓库
+    a. **探索示例仓库：** 使用已加载的示例数据开始新仓库
 
-b. **开始使用仓库：** 单击“打开”按钮以了解如何使用仓库分析数据。
+    b. **开始使用仓库：** 单击“打开”按钮以了解如何使用仓库分析数据。
 
-![](../media/Lab-2/image33.png)
+    ![](../media/Lab-2/image33.png)
+
+3. 单击屏幕左上角的**返回到工作负载**。此操作会将您转到主工作负荷页面，您可以在该页面中探索其他工具或部分。
+
+    ![](../media/Lab-2/image23.png)
 
 ## 任务 10：数据库体验
 
