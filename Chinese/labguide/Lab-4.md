@@ -36,7 +36,7 @@
 
 在我们的应用场景中，供应商数据位于 Snowflake 中，客户数据位于 Dataverse 中，员工数据位于 SharePoint 中。为了最大限度地减少数据流的数据刷新次数，我们将为 Snowflake 和 SharePoint 数据源创建单独的数据流。
 
-**注意：**单个数据流中支持多个数据源。
+**注意：** 单个数据流中支持多个数据源。
 
 IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在 Power BI Desktop 文件中镜像这些数据转换。他们已在管理员工作区中将此数据引入到湖屋中，并向我们提供了对表的访问权限。我们将针对 IT 团队创建的湖屋创建表的快捷方式。
 
@@ -50,9 +50,9 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
 # 数据流 Gen2
 
-### 任务 1：将 SharePoint 查询复制到数据流
+## 任务 1：将 SharePoint 查询复制到数据流
 
-1.  让我们导航回您在实验室 2 任务 8 中创建的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**。
+1.  让我们导航回您在实验室 2 任务 8 中创建的 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN (1)**。
 
 2.  选择左上角提供的 + **新建项目 (2)** 选项。
 
@@ -84,7 +84,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     请注意，查询已粘贴并在左侧面板中可用。由于我们没有为 SharePoint 创建连接，因此您将看到一条警告消息，要求您配置连接。
 
-### 任务 2：创建 SharePoint 连接
+## 任务 2：创建 SharePoint 连接
 
 1.  选择**配置连接**。
 
@@ -96,11 +96,11 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
 4.  选择**连接**。
 
-    **注意：**您将使用您的凭据登录。它们将与以下屏幕截图不同。
+    **注意：** 您将使用您的凭据登录。它们将与以下屏幕截图不同。
 
     ![](../media/Lab-4/image11.png)
 
-### 任务 3：为 People 查询配置数据目标
+## 任务 3：为 People 查询配置数据目标
 
 连接已建立，您可以在预览面板中查看数据。请随意浏览查询的“应用的步骤”。现在，我们需要将 People 数据引入到湖屋中。
 
@@ -116,7 +116,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
 4.  “选择目标”对话框随即打开。确保选中**新建表单选按钮**，因为我们要创建一个新表。
 
-5.  我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>。**
+5.  我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN。**
 
 6.  选择 **lh_FAIAD**
 
@@ -136,7 +136,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
 ###
 
-### 任务 4：发布并重命名 SharePoint 数据流
+## 任务 4：发布并重命名 SharePoint 数据流
 
 1.  系统会将您导航回 **Power Query** 窗口。请注意，右下角的数据目标设置为湖屋 **(1)**。
 
@@ -144,7 +144,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     ![](../media/Lab-4/image16.png)
 
-    **注意：**系统会将您导航回 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 工作区。数据流可能需要一些**时间才能完成运行**。
+    **注意：**系统会将您导航回 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN** 工作区。数据流可能需要一些**时间才能完成运行**。
 
 3.  **Dataflow 1** 是我们正在处理的数据流。让我们先将其重命名，然后再继续。单击“Dataflow 1” 旁边的**省略号 (…)**。选择**设置**（在数据流运行时，您无法访问设置）。
 
@@ -158,7 +158,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     ![](../media/Lab-4/image18.png)
 
-    系统会将您导航回 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> 工作区**。
+    系统会将您导航回 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN 工作区**。
 
 7.  选择 **lh_FAIAD** 以导航到湖屋。
 
@@ -168,11 +168,11 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     ![](../media/Lab-4/image19.png)
 
-    **注意：**如果您没有看到新创建的表，请选择“表”旁边的省略号，然后选择刷新 以刷新“表”。
+    **注意：** 如果您没有看到新创建的表，请选择“表”旁边的省略号，然后选择刷新 以刷新“表”。
 
-### 任务 5：将 Snowflake 查询复制到数据流
+## 任务 5：将 Snowflake 查询复制到数据流
 
-1.  让我们导航回 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1)**。
+1.  让我们导航回 Fabric 工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN (1)**。
 
 2.  选择左上角提供的 **+ 新建项目 (2)** 选项。
 
@@ -211,7 +211,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     ![](../media/Lab-4/image22.png)
 
-### 任务 6：创建与 Snowflake 的连接
+## 任务 6：创建与 Snowflake 的连接
 
 请注意，五个查询已粘贴，现在左侧显示“查询”面板。由于我们没有为 Snowflake 创建连接，因此您将看到一条警告消息，要求您配置连接。
 
@@ -230,7 +230,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     - Snowflake 密码：<inject key="SnowFlake Password" enableCopy="false" />
 
-    **注意：**如果您在使用环境详细信息中的凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的凭据。
+    **注意：** 如果您在使用环境详细信息中的凭据连接到 Snowflake 时遇到任何问题，请使用下面提供的凭据。
 
     - **Snowflake 用户名：** SNOWFLAKE_BACKUP
 
@@ -242,7 +242,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     连接已建立，您可以在预览面板中查看数据。请随意浏览查询的“应用的步骤”。Suppliers 查询基本上包含供应商的详细信息，SupplierCategories 顾名思义包含所有供应商类别。Suppliers 查询基本上包含供应商的详细信息，SupplierCategories 表顾名思义包含所有供应商类别。 同样，我们将 PO Line Items 与 PO 合并，以创建 PO 事实。现在，我们需要将 Supplier 和 PO 数据引入到湖屋中。
 
-### 任务 7：为 Supplier 和 PO 查询配置数据目标
+## 任务 7：为 Supplier 和 PO 查询配置数据目标
 
 1.  选择 **Supplier (1)** 查询。
 
@@ -258,7 +258,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
 5.  “选择目标”对话框随即打开。务必**选中新建表**单选按钮，因为我们要创建一个新表。
 
-6.  我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>。**
+6.  我们想要在之前创建的湖屋中创建表。在左侧面板中，导航到**湖屋 -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN。**
 
 7.  选择 **lh_FAIAD**
 
@@ -277,7 +277,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     ![](../media/Lab-4/image29.png)
 
-### 任务 8：重命名并发布 Snowflake 数据流
+## 任务 8：重命名并发布 Snowflake 数据流
 
 1.  从屏幕顶部，选择**数据流 2 (名称可能不同)旁边的箭头**以重命名。
 
@@ -291,7 +291,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     ![](../media/Lab-4/image31.png)
 
-    系统会将您导航回 **FAIAD_<inject key="Deployment ID" enableCopy="false"/> 工作区**。发布数据流可能需要一些时间。
+    系统会将您导航回 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN 工作区**。发布数据流可能需要一些时间。
 
 5.  选择 **lh_FAIAD** 以导航到湖屋。
 
@@ -301,13 +301,13 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     ![](../media/Lab-4/image32.png)
 
-    > **注意：**如果您没有看到新创建的表，请选择“表”旁边的省略号，然后选择刷新 > 以刷新“表”。
+    > **注意：** 如果您没有看到新创建的表，请选择“表”旁边的省略号，然后选择刷新 > 以刷新“表”。
 
     现在，让我们创建一个快捷方式以从 Dataverse 引入数据。
 
 # 内部湖屋的快捷方式
 
-### 任务 9：如何创建 Dataverse 的快捷方式
+## 任务 9：如何创建 Dataverse 的快捷方式
 
 您应该在湖屋 **lh_FAIAD** 中。确保您处于湖屋视图（而不是 SQL 分析终结点）中。
 
@@ -321,7 +321,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
 3.  “新建快捷方式”对话框随即打开。在**外部源**下，选择 **Dataverse**。
 
-    **注意：**在上一个实验室中，我们已按照类似的步骤创建 Azure Data Lake Storage Gen2 的快捷方式。
+    **注意：** 在上一个实验室中，我们已按照类似的步骤创建 Azure Data Lake Storage Gen2 的快捷方式。
 
     ![](../media/Lab-4/image35.png)
 
@@ -334,7 +334,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     ![](../media/Lab-4/image36.png)
 
-7.  从登录对话框中，选择您在这些实验室中使用的**用户帐户**。“登录到您的帐户”对话框随即打开。**选取您的帐户**以登录。**注意：**您的帐户将与以下屏幕截图不同。
+7.  从登录对话框中，选择您在这些实验室中使用的**用户帐户**。“登录到您的帐户”对话框随即打开。**选取您的帐户**以登录。**注意：** 您的帐户将与以下屏幕截图不同。
 
     ![](../media/Lab-4/image37.png)
 
@@ -348,7 +348,7 @@ IT 团队已建立与 Dataverse 的链接并已应用必要的数据转换，在
 
     ![](../media/Lab-4/image38.png)
 
-### 任务 10：创建湖屋的快捷方式
+## 任务 10：创建湖屋的快捷方式
 
 1.  在**资源管理器**面板中，选择**表**旁边的**省略号**。
 

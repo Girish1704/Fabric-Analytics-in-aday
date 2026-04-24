@@ -50,7 +50,7 @@
 
 # Power BI
 
-### 任务 1：自动创建报表
+## 任务 1：自动创建报表
 
 我们先使用自动创建报表选项。稍后在实验中，我们将重新创建 Power BI 中的报表。
 
@@ -99,7 +99,7 @@
 10. “保存报表”对话框随即打开。将报表命名为 **rpt_Sales_Auto_Report**
     **注意：** 我们在报表名称前加上 rpt（报表的缩写）作为前缀。
 
-11. 确保将报表保存在您的工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>。**
+11. 确保将报表保存在您的工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN。**
 
 12. 选择**保存。**
 
@@ -113,11 +113,11 @@
 
     ![](../media/Lab-7/image13.png)
 
-### 任务 2：为新报表配置背景
+## 任务 2：为新报表配置背景
 
 我们使用空白画布创建新报表。
 
-1. 在**左侧面板**中，选择您的工作区名称 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 以导航到该工作区。
+1. 在**左侧面板**中，选择您的工作区名称 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN** 以导航到该工作区。
 
 2. 从顶部菜单中，选择**新建项目 -> 报表**。您将导航到“生成您的第一个报表”页面。
 
@@ -157,7 +157,7 @@
 
     ![](../media/Lab-7/image18.png)
 
-### 任务 3：向报表中添加标头
+## 任务 3：向报表中添加标头
 
 1. 我们在上边距中添加标头。从**菜单**中选择**文本框**。
 
@@ -177,7 +177,7 @@
 
     ![](../media/Lab-7/image19.png)
 
-### 任务 4：向报表中添加 KPI
+## 任务 4：向报表中添加 KPI
 
 1. 我们添加销售 KPI。选择画布中的**空白区域**，以将焦点从文本框上移开。
 
@@ -237,7 +237,7 @@
 
     ![](../media/Lab-7/image25.png)
 
-### 任务 5：向报表中添加折线图
+## 任务 5：向报表中添加折线图
 
 我们创建一个折线图来可视化经销商公司随时间变化的销售额。
 
@@ -251,7 +251,7 @@
 
     ![](../media/Lab-7/image26.png)
 
-### 任务 6：保存报表
+## 任务 6：保存报表
 
 在我们导航离开报表并对模型进行更改之前，我们先保存该报表。
 
@@ -261,13 +261,13 @@
 
     >**注意：**我们在报表名称前加上 rpt（报表的缩写）作为前缀。
 
-3. 确保将报表保存在 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 工作区.
+3. 确保将报表保存在 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN** 工作区.
 
 4. 选择**保存。**请**注意**，报表已保存，并且您处于视图模式。
 
     ![](../media/Lab-7/image27.png)
 
-### 任务 7：配置 Date 表中的 Year 列
+## 任务 7：配置 Date 表中的 Year 列
 
 1. 从**顶部菜单**中，选择**编辑**以返回到编辑模式。
 
@@ -303,7 +303,7 @@
 
     ![](../media/Lab-7/image31.png)
 
-### 任务 8：在“Date”表中配置“Month Name”列
+## 任务 8：在“Date”表中配置“Month Name”列
 
 1. 从“Date”表中，将 **MonthNameShort** 字段拖动到 **X** **轴**中的 **Year** 下方。我们将按 **MonthNameShort** 对其进行排序。
 
@@ -337,7 +337,7 @@
 
     ![](../media/Lab-7/image35.png)
 
-### 任务 9：设置折线图的格式
+## 任务 9：设置折线图的格式
 
 请注意，在生成报表时，更新语义模型很容易。这实现了像 Power BI Desktop 一样的无缝交互。
 
@@ -383,7 +383,7 @@
 
     如前所述，我们不会在本实验中生成所有视觉对象。如果您有时间，可以自行生成更多视觉 对象。
 
-### 任务 10：将 Power BI Desktop 连接到语义模型
+## 任务 10：将 Power BI Desktop 连接到语义模型
 
 现在，让我们看一下将 Power BI Desktop 连接到语义模型并生成视觉对象有多容易。
 
@@ -445,7 +445,7 @@
 
 20. 让我们保存报表，从功能区中选择**文件 -> 保存**。
 
-### 任务 11：添加新数据以模拟 Direct Lake 模式
+## 任务 11：添加新数据以模拟 Direct Lake 模式
 
 在 Import 模式下，刷新源中的数据后，我们通常需要刷新 Power BI 模型，以更新报表中的数据。通过使用 Direct Query 模式，刷新源中的数据后，这些数据就可以在 Power BI 报表中使用。然而，direct query 模式通常很慢。为了解决这个问题，Microsoft Fabric 引入了 Direct Lake 模式。Direct Lake 是一种将数据从湖中直接加载到 Power BI 引擎中以供分析的快速路径。
 
@@ -458,7 +458,7 @@
 2. 在右下角，单击 **Fabric 徽标**并切换到 **Fabric 视图**。
 
 
-3. 在左侧菜单栏中，选择 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 以导航到工作区主页。
+3. 在左侧菜单栏中，选择 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN** 以导航到工作区主页。
 
 4. 选择 **lh_FAIAD** 以导航到湖屋。
 
@@ -697,7 +697,7 @@
 
 准备好清理实验环境后，请按照以下步骤操作。
 
-1. 从左侧面板中选择 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 工作区，以导航到工作区主页。
+1. 从左侧面板中选择 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN** 工作区，以导航到工作区主页。
 
 2. 从顶部菜单中，选择**工作区设置**。
 

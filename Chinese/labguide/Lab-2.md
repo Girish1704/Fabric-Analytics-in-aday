@@ -44,7 +44,7 @@
 
 # Fabric 许可证
 
-### 任务 1：启用 Microsoft Fabric 试用许可证
+## 任务 1：启用 Microsoft Fabric 试用许可证
 
 
 1. 在虚拟机的桌面中选择 **PowerBI Portal**。系统可能会提示您登录。
@@ -88,7 +88,7 @@
 
 9. “升级到 Microsoft Fabric 免费试用版”对话框随即打开。选择**激活**。
 
-    ***注意：**将区域保留为默认值。讲师将在回顾本实验室时提供与此相关的更多详细信息*
+    ***注意：** 将区域保留为默认值。讲师将在回顾本实验室时提供与此相关的更多详细信息*
 
     ![](../media/Lab-2/image11.png)
 
@@ -103,7 +103,7 @@
 
 # Fabric 工作区
 
-### 任务 2：创建 Fabric 工作区
+## 任务 2：创建 Fabric 工作区
 
 1. 现在，让我们创建一个具有 Fabric 许可证的工作区。从左侧导航栏中选择**工作区** (1)。
     对话框随即打开。
@@ -114,9 +114,9 @@
 
 3. 浏览器右侧将打开**创建工作区**对话框。
 
-4. 在**名称**字段中，输入 **FAIAD_UserID_<inject key="Deployment ID" enableCopy="false"/>**
+4. 在**名称**字段中，输入 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN**
 
-    ***注意：**工作区名称必须唯一。确保“名称”字段下方显示带有“此名称可用” 的绿色复选标记。*
+    ***注意：** 工作区名称必须唯一。确保“名称”字段下方显示带有“此名称可用” 的绿色复选标记。*
 
 5. 您可以选择输入工作区的描述。这是选填字段。
 
@@ -132,9 +132,9 @@
 
     系统会将您导航到新创建的工作区。我们将来自不同数据源的数据引入湖屋中，并使用湖屋中的数据来生成模型并生成报表。第一步是创建湖屋。我们接下来将执行此操作。
 
-### 任务 3：创建湖屋
+## 任务 3：创建湖屋
 
-1. 在新创建的工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** 中，在左侧导航窗格中找到 **+ 新建项 (1)** 按钮。
+1. 在新创建的工作区 **FAIAD_<inject key="Deployment ID" enableCopy="false"/>_CN** 中，在左侧导航窗格中找到 **+ 新建项 (1)** 按钮。
     在此处，您可以开始在工作区中创建新项目。
 
 2. 在搜索框中，键入**湖屋 (2)**，然后从搜索结果中，选择**湖屋 (3)** 选项。这将使您能够创建一个新湖屋来存储、查询和管理您的大数据。
@@ -143,9 +143,9 @@
 
 3. “新建湖屋”对话框随即显示。在“名称”文本框中输入 **lh_FAIAD**。
 
-    ***注意：**这里的 lh 是指湖屋。我们添加 lh 前缀是为了便于识别和搜索。*
+    ***注意：** 这里的 lh 是指湖屋。我们添加 lh 前缀是为了便于识别和搜索。*
 
-    ***注意：**此功能不再处于预览版阶段，**但我们仍然不需要启用它。***
+    ***注意：** 此功能不再处于预览版阶段，**但我们仍然不需要启用它。***
 
 4. 选择**创建**
 
@@ -159,7 +159,7 @@
 
 # Fabric 体验概述
 
-### 任务 4：Data Factory 体验
+## 任务 4：Data Factory 体验
 
 1. 选择屏幕左侧的"工作负载"图标。将打开一个包含 Fabric 体验列表的对话框。体验列表包括 Power BI、Data Factory、Industry Solutions、Real-Time Intelligence、
     Data Engineering、Data Science 和 Data Warehouse。让我们来探索吧。
@@ -224,7 +224,7 @@
 
     ![](../media/Lab-2/image23.png)
 
-### 任务 5：Industry Solutions 体验
+## 任务 5：Industry Solutions 体验
 
 1. 从**工作负荷页面**中，单击 **Industry Solutions** 以继续。
 
@@ -269,7 +269,7 @@
 
     ![](../media/Lab-2/image23.png)
 
-### 任务 6：Real-Time Intelligence 体验
+## 任务 6：Real-Time Intelligence 体验
 
 1. 从**工作负荷**页面中，单击 **Real-Time Intelligence** 以继续。
 
@@ -331,7 +331,7 @@
 
     ![](../media/Lab-2/image23.png)
 
-### 任务 7：Data Engineering 体验
+## 任务 7：Data Engineering 体验
 
 1. 从**工作负荷**页面中，单击 Data Engineering 以继续。
 
@@ -390,7 +390,7 @@
 
     ![](../media/Lab-2/image23.png)
 
-### 任务 8：Data Science 体验
+## 任务 8：Data Science 体验
 
 1. 从**工作负荷**页面中，单击 **Data Science** 以继续。
 
@@ -437,7 +437,7 @@
 
     ![](../media/Lab-2/image23.png)
 
-### 任务 9：Data Warehouse 体验
+## 任务 9：Data Warehouse 体验
 
 1. 从**工作负荷**页面中，单击 **Data Warehouse** 以继续。
 
@@ -487,7 +487,7 @@ b. **开始使用仓库：** 单击“打开”按钮以了解如何使用仓库
 
 ![](../media/Lab-2/image33.png)
 
-### 任务 10：数据库体验
+## 任务 10：数据库体验
 
 1. 从**作负载**页面中，单击**数据库**以继续。
 
