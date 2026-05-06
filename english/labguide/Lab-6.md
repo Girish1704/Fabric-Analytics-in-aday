@@ -48,17 +48,17 @@ By the end of this lab, you will have learned:
 
     ![](../media/Lab-6/image6.png)
 
-    If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer-friendly option. Let’s explore this.
+    If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing T-SQL code. This is a developer-friendly option. Let’s explore this.
 
     Let’s assume you want to quickly find out the Units sold by Supplier using SQL.
 
-    In the Lakehouse, SQL analytics endpoint, notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
+    In the Lakehouse SQL analytics endpoint, notice on the left panel you can view the tables. If you expand the tables, you can view the columns that make up the table. Also, there are options to create SQL views, functions, and stored procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
 4. From the **top menu** select **New SQL query** or from the center of the screen click **New SQL query**. You will be navigated to SQL query view.
 
     ![](../media/Lab-6/image7.png)
 
-5. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
+5. Paste the **below SQL query** into the **query window**. This query will return the units by supplier name. It joins the Sales table with the Product and Supplier tables to achieve this.
 
    ```
    SELECT su.SupplierName, SUM(Quantity) as Units
@@ -86,13 +86,13 @@ By the end of this lab, you will have learned:
 
     ![](../media/Lab-6/image9.png)
 
-3. **Visualize results** dialog opens. Select **Continue**.
+3. The **Visualize results** dialog opens. Select **Continue**.
 
-    **Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
+    The Visualize results dialog looks like the Power BI Desktop report view. It has all the features available in Power BI Desktop report view. You can format the page, select different visuals, format visuals, add filters, etc. We will not explore these options in this course.
 
 4. Expand **Data** pane and expand **SQL query 1**.
 
-5. Select **Supplier_Name** and **Units** **fields**. Table visual is created.
+5. Select the **Supplier_Name** and **Units** fields. A table visual is created.
 
     ![](../media/Lab-6/image10.png)
 
@@ -104,13 +104,13 @@ By the end of this lab, you will have learned:
 
 8. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report** textbox.
 
-9. Make sure the destination workspace is your Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
+9. Make sure the destination workspace is your Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 10. Select **Save**.
 
     ![](../media/Lab-6/image12.png)
 
-    You will be navigated to back to the SQL query screen.
+    You will be navigated back to the SQL query screen.
 
 # Lakehouse – Semantic Modeling
 

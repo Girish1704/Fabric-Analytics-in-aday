@@ -44,7 +44,7 @@ We have ingested data from different data sources into the Lakehouse. In this la
 
 - **Supplier Data:** Snowflake is updated at midnight / 12 AM every day.
 
-- **Employee Data:** in SharePoint is updated at 9 AM every day. However, we have noticed that sometimes there is a 5 – 15 minute delay. We need to create a refresh schedule to accommodate this.
+- **Employee Data:** in SharePoint is updated at 9 AM every day. However, we have noticed that sometimes there is a 5–15 minute delay. We need to create a refresh schedule to accommodate this.
 
 - **Customer Data:** in Dataverse is always up to date. Previously we refreshed this four times a day, at midnight / 12 AM, 6 AM, noon / 12 PM, and 6 PM. Now, the IT team has created a link to Dataverse to ingest this data to an Admin Lakehouse. They have also transformed this data. We do not need to set up refresh as we are linking to the Lakehouse provided by the IT team.
 
@@ -87,7 +87,7 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
     >**Note:** A window/panel will appear on the right side showing a list of refreshes
 
 
-6. You will notice that there is a singular refresh that executed when we selected the **Save and run** option in the previous lab. The **Type** of refresh we can see is listed as **On Demand** which lets us know this was a manually executed refresh.
+6. You will notice that there is a single refresh that executed when we selected the **Save and run** option in the previous lab. The **Type** of refresh we can see is listed as **On Demand**, which lets us know this was a manually executed refresh.
 
     ![](../media/Lab-5/image9.png)
 
@@ -116,7 +116,7 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 
     - **Endorsement –** This allows us to specify if the dataflow will carry the **Promoted** or the **Certified** tag for others to see.
 
-    - **Schedule -** This is where we can schedule out dataflows.
+    - **Schedule -** This is where we can schedule our dataflows.
 
         ![](../media/Lab-5/image13.png)
 
@@ -138,7 +138,7 @@ Let’s start by configuring a scheduled refresh of Supplier Dataflow.
 16. We can also specify a **Start date and time (3)** as well as an **End date and time (4)**. For this scenario simply choose whatever the current day is for the start date and the end date.
 
 
-17. You can specify which **Time Zone (5)** you would like the times to represent. Lastly select **Save**
+17. You can specify which **Time Zone (5)** you would like the times to represent. Lastly, select **Save**.
 
     ![](../media/Lab-5/image15.png)
 
@@ -204,7 +204,7 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 
 3. Make sure **Workspace** is set to your Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
-4. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint**. That was easy, right?
+4. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it will refresh **df_People_SharePoint**. That was easy, right?
 
     In our scenario, Employee Data is not updated on a schedule. Sometimes there is a delay. Let’s see if we can accommodate this.
 
@@ -216,7 +216,7 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 6. In the **Name** field, enter **dfactivity_People_SharePoint**
 
 
-7. In the **Description** field, enter **Dataflow activity to refresh df_People_Sharepoint dataflow**.
+7. In the **Description** field, enter **Dataflow activity to refresh df_People_SharePoint dataflow**.
 
 
 8. Notice there is an option to Deactivate an activity. This feature is useful during testing or debugging. Leave it as **Activated**.
@@ -381,7 +381,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
     ![](../media/Lab-5/image35.png)
 
 
-17. We need to add the second parameter to the **or** function. **Add a comma** in between the ending two parentheses. This time we will try typing in the function name. Start typing **equ** and you will get a drop down of available functions (this is called IntelliSense). Select the **equals** function.
+17. We need to add the second parameter to the **or** function. **Add a comma** in between the ending two parentheses. This time we will try typing in the function name. Start typing **equ** and you will get a dropdown of available functions (this is called IntelliSense). Select the **equals** function.
 
     ![](../media/Lab-5/image36.png)
 
@@ -432,7 +432,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 5. In the **Name** field, enter **dfactivity_People_SharePoint**
 
 
-6. In the **Description** field, enter “**Dataflow activity to refresh df_People_Sharepoint dataflow”**.
+6. In the **Description** field, enter “**Dataflow activity to refresh df_People_SharePoint dataflow**”.
 
     ![](../media/Lab-5/image40.png)
 
@@ -485,7 +485,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
 10. Pipeline expression builder dialog opens. Select the **Add dynamic content below using any combination of expressions, functions, and system variables** text area **(1)**.
 
-11. From the bottom menu, click on the **elipses(...) (2)** select **Variables (3) -> varSuccess (4)**. Notice **@variables(‘varSuccess’)** is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So, we are assigning the value of Yes to the varIsSuccess variable.
+11. From the bottom menu, click on the **ellipses (...) (2)**, then select **Variables (3) -> varSuccess (4)**. Notice **@variables(‘varSuccess’)** is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So, we are assigning the value of Yes to the varIsSuccess variable.
 
 12. Select **OK**. You will be navigated back to the **iterator design pane**.
 
@@ -608,7 +608,7 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
     The expression is a nested if statement. It is checking if the value of varCounter variable is greater than 1.
 
-    If it is true, it checks if the value of varCounter variable is 2. If it is true, it set the wait time to varWaitTime times 15. Remember, we had defaulted varWaitTime value to 60. That would be 60*15 = 900 seconds. If the value of varCounter variable is not 2 (it is greater than 2, which means dataflow refresh has failed 3 times we are done iterating. We don’t have to wait anymore), wait time is set to varWaitTime * 0. So, to 0. If the value of varCounter variable is 1, then we multiply the varWaitTime * 5. That would be 60*5 = 300 seconds.
+    If it is true, it checks if the value of varCounter variable is 2. If it is true, it sets the wait time to varWaitTime times 15. Remember, we had defaulted varWaitTime value to 60. That would be 60*15 = 900 seconds. If the value of varCounter variable is not 2 (it is greater than 2, which means the dataflow refresh has failed 3 times), we are done iterating. We don’t have to wait anymore, so the wait time is set to varWaitTime * 0. So, to 0. If the value of varCounter variable is 1, then we multiply varWaitTime * 5. That would be 60*5 = 300 seconds.
 
 9. Select **OK**.
 
@@ -627,9 +627,9 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
 ## Task 13: Configure Schedule Refresh for Pipeline
 
-1. We can test the pipeline, by selecting **Home -> Run**.
+1. We can test the pipeline by selecting **Home -> Run**.
          
-    >**Note:** It may take a few minutes for the pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your pipeline will never fail.
+    >**Note:** It may take a few minutes for the pipeline to complete a refresh. This is a training environment, so the file in SharePoint is always available. Hence, your pipeline will never fail.
 
 2. We can set the pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. Schedule dialog opens.
 
@@ -645,9 +645,9 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
 7. Set **End date and time** to a **future date**.
 
-8. Set your **Time zone**.
+8. Set your **time zone**.
 
-    >**Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
+    >**Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your data source location.
 
 9. Select **Save**.
 
