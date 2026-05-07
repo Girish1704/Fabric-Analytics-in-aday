@@ -168,7 +168,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
     
     ![](../media/Lab-3/image14.png)
 
-3. To build a query, we need to add tables to the Visual Query panel. Click on the ellipsis next to the **Cities (1)** table and select **Insert into canvas (2)**.
+3. To build a query, we need to add tables to the Visual Query panel. In the Explorer pane, click **Schemas (1)**, expand **dbo (2)**, open **Tables (3)**, click the ellipsis next to **Cities (4)**, and select **Insert into canvas (5)**.
 
     ![](../media/Lab-3/image15.png)
 

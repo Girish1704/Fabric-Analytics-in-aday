@@ -38,7 +38,7 @@ In our scenario, Supplier Data is in Snowflake, Customer Data is in Dataverse, a
 
 >**Note:** Multiple data sources are supported in a single Dataflow.
 
-The IT team has already established a link to Dataverse and applied the necessary data transformations, mirroring those in the Power BI Desktop file. They have ingested this data into the Lakehouse in the Admin workspace and have given us access to the table(s). We are going to create a Shortcut to table(s) the Lakehouse IT team has created.
+The IT team has already established a link to Dataverse and applied the necessary data transformations, mirroring those in the Power BI Desktop file. They have ingested this data into the Lakehouse in the Admin workspace and have given us access to the tables. We are going to create a shortcut to the tables the Lakehouse IT team has created.
 
 By the end of this lab, you will have learned:
 
@@ -66,15 +66,15 @@ By the end of this lab, you will have learned:
 
 5. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier labs, queries in the left panel are organized by data source.
 
-6. From the left panel, under the SharepointData folder **select** **the** **People** query.
+6. From the left panel, under the SharePointData folder, select the **People** query.
 
-7. **Right click** and select **Copy**.
+7. **Right-click** and select **Copy**.
 
     ![](../media/Lab-4/image7.png)
 
 8. Navigate back to the **Dataflow screen** in the browser.
 
-9. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
+9. In the **Dataflow pane**, enter **Ctrl+V** (currently, right-click paste is not supported). If you are using a Mac device, please use Cmd+V to paste.
 
     ![](../media/Lab-4/image8.png)
 
@@ -92,10 +92,10 @@ By the end of this lab, you will have learned:
     ![](../media/Lab-4/image11.png)
 
 
-2. Connect to data source dialog opens. In the **Connection** dropdown make sure **Create new connection** is selected.
+2. Connect to data source dialog opens. In the **Connection** dropdown, make sure **Create new connection** is selected.
 
 
-3. **Authentication kind** should be **Organizational Account**.
+3. **Authentication kind** should be **Organizational account**.
 
 
 4. Select **Connect**.
@@ -192,7 +192,7 @@ The connection is established, and you can view the data in the preview panel. F
 
     ![](../media/Lab-4/image21.png)
 
-    Leave the default name and ensure “Enable Git integration” is checked. Then select **create**. If you receive a message stating “A dataflow with this name already exists” then change the name to **Dataflow 2**. You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
+    Leave the default name and ensure “Enable Git integration” is checked. Then select **Create**. If you receive a message stating “A dataflow with this name already exists,” then change the name to **Dataflow 2**. You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
 4. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the desktop of your lab environment.
 
@@ -210,13 +210,13 @@ The connection is established, and you can view the data in the preview panel. F
 
     5. PO Line Items
 
-7. **Right click** and select **Copy**.
+7. **Right-click** and select **Copy**.
 
     ![](../media/Lab-4/image22.png)
 
 8. Navigate back to the **browser**.
 
-9. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
+9. In the **Dataflow pane**, select the **center pane**, and enter **Ctrl+V** (currently, right-click paste is not supported). If you are using a Mac device, please use Cmd+V to paste.
 
     >**Note:** If you are working in the lab environment, please select the **ellipsis (…)** on the top right of the screen. Use the slider to **enable** **VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
@@ -230,7 +230,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     ![](../media/Lab-4/image24.png)
 
-2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
+2. Connect to data source dialog opens. In the **Connection** dropdown, make sure **Create new connection** is selected.
 
 3. **Authentication kind** should be **Snowflake**.
 
@@ -250,7 +250,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     ![](../media/Lab-4/image25.png)
 
-    Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Basically, the Suppliers query has the details of suppliers and SupplierCategories, as the name implies this table has all the supplier categories. These two tables are joined to create the Supplier dimension, with the columns we need. Similarly, we have PO Line Items merged with PO to create the PO fact. Now we need to ingest the Supplier and PO data into the Lakehouse.
+    The connection is established, and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Basically, the Suppliers query has the details of suppliers, and SupplierCategories, as the name implies, has all the supplier categories. These two tables are joined to create the Supplier dimension, with the columns we need. Similarly, we have PO Line Items merged with PO to create the PO fact. Now we need to ingest the Supplier and PO data into the Lakehouse.
 
 ## Task 7: Configure Data Destination for Supplier and PO queries
 
@@ -261,7 +261,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     ![](../media/Lab-4/image26.png)
 
-3. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse odl_user_<inject key="Deployment ID" enableCopy="false"/> (none)**.
+3. Connect to data destination dialog opens. From the **Connection dropdown**, select **Lakehouse odl_user_<inject key="Deployment ID" enableCopy="false"/> (none)**.
 
 
 4. Select **Next**.
@@ -290,7 +290,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
     ![](../media/Lab-4/image29.png)
 
 
-11. You will be navigated back to the **Power Query window**. Notice on the bottom **right corner, Data destination** is set to **Lakehouse**. Similarly, **set up the Data Destination for PO query**. Once it is done, your **PO** query should have **Data Destination** set to **Lakehouse** as shown in the screenshot below.
+11. You will be navigated back to the **Power Query window**. Notice on the bottom **right corner**, **Data destination** is set to **Lakehouse**. Similarly, **set up the data destination for the PO query**. Once it is done, your **PO** query should have **Data destination** set to **Lakehouse** as shown in the screenshot below.
 
     ![](../media/Lab-4/image30.png)
 
@@ -312,7 +312,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     ![](../media/Lab-4/image32.png)
 
-    You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to Publish.
+    You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the dataflow to publish.
 
 
 5. Select **lh_FAIAD** to navigate to the lakehouse.
@@ -353,7 +353,7 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view
     ![](../media/Lab-4/image36.png)
 
 
-4. **Select New connection (1)**, Connection settings dialog opens. Enter **org6c18814a.crm.dynamics.com (2**) as **Environment domain**.
+4. **Select New connection (1)**, Connection settings dialog opens. Enter **org6c18814a.crm.dynamics.com (2)** as the **Environment domain**.
 
 
 5. Leave **Authentication kind** as **Organizational account (3)**.
@@ -374,7 +374,7 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view
 
     In our scenario, the IT team has already established a link to Dataverse and applied the necessary data transformations, mirroring those in the Power BI Desktop file. They have ingested this data into the Lakehouse in the Admin workspace and given us access to the table(s). Since our IT team has done all the hard work, we can create a shortcut to this Lakehouse in Admin workspace.
 
-9. Select **Cancel** in the New shortcut dialog to be navigated back to the Lakehouse.
+9. Select **Cancel** in the New shortcut dialog to navigate back to the Lakehouse.
 
     ![](../media/Lab-4/image39.png)
 
@@ -399,7 +399,7 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view
 
     ![](../media/Lab-4/image41.png)
 
-6. In the left panel, expand **lh_dataverse -> Tables**. Notice the IT admin has provided access to Customer table.
+6. In the left panel, expand **lh_dataverse -> Tables**. Notice the IT admin has provided access to the Customer table.
 
 
 7. Select **Customer**.

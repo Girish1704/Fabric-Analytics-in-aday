@@ -54,7 +54,7 @@ By the end of this lab, you will have learned:
 
 Let’s start by using the auto-create report option. And later in the lab, we will re-create the report we have in Power BI.
 
-1. Let’s navigate back to the **Fabric workspace** you created in lab 2, named **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
+1. Let’s navigate back to the **Fabric workspace** you created in Lab 2, named **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 2. From the bottom of the left panel select **Fabric experience selector** icon.
 
@@ -68,7 +68,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
     ![](../media/Lab-7/image8.png)
 
-5. You will be navigated to **Build your first report screen**. There will be options to build a report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs so let’s use that. Select **Pick a published semantic model** option.
+5. You will be navigated to **Build your first report** screen. There will be options to build a report using Excel, CSV, enter data manually, or pick a published semantic model. We have created a semantic model in the previous labs, so let’s use that. Select **Pick a published semantic model**.
 
     ![](../media/Lab-7/image9.png)
 
@@ -94,7 +94,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 9. Let’s save this report. From the top menu, select **Save**.
 
-10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report**
+10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report**.
 
     >**Note:** we are prefixing report name with rpt which is short for report.
 
@@ -128,7 +128,7 @@ Let’s create a new report using a blank canvas.
     ![](../media/Lab-7/image9.png)
 
 
-4. Pick a semantic model to use in your report dialog opens. Select **sm_FAIAD**.
+4. When the "Pick a semantic model to use in your report" dialog opens, select **sm_FAIAD**.
 
 
 5. Click the **arrow next to Auto-create report button**. Select **Create a blank report**. You will be navigated to a report page which looks like the Power BI Desktop report page.
@@ -136,7 +136,7 @@ Let’s create a new report using a blank canvas.
     ![](../media/Lab-7/image15.png)
 
 
-6. If you have not already opened it, open the **FAIAD.pbix** located in **Reports** folder on the **desktop** of your lab environment.
+6. If you have not already opened it, open the **FAIAD.pbix** located in the **Reports** folder on the **desktop** of your lab environment.
 
     We are going to use this report as a reference. We will start by adding the canvas background. We will create the report header, add a couple of KPIs, and create the Sales over time line chart. In the interest of time and with the understanding that you have experience with building visuals in Power BI Desktop, we will not be creating all the visuals.
 
@@ -305,7 +305,7 @@ Let’s save the report before we navigate away from the report to make changes 
 1. From the menu select **File -> Save**.
 
 
-2. Save your report dialog opens. Name the report as **rpt_Sales_Report**
+2. Save your report dialog opens. Name the report as **rpt_Sales_Report**.
 
     >**Note:** We are prefixing report name with rpt which is short for report.
 
@@ -461,7 +461,7 @@ Notice how easy it is to update the semantic model while building the reports. T
 Now let’s see how easy it is to connect Power BI Desktop to the semantic model and build visuals.
 
 
-1. Open the **FAIADTemplate.pbix** located **Reports** folder on the **desktop** of your lab environment.
+1. Open the **FAIADTemplate.pbix** located in the **Reports** folder on the **desktop** of your lab environment.
 
 
 2. From the ribbon select **Home -> OneLake Catalog -> Power BI semantic models**.
@@ -485,7 +485,7 @@ Now let’s see how easy it is to connect Power BI Desktop to the semantic model
 6. From the **left panel**, select **Report view** to navigate back to the Report view.
 
 
-7. If you have not already done so, open the **FAIAD.pbix** located **Reports** folder on the **desktop** of your lab environment.
+7. If you have not already done so, open the **FAIAD.pbix** located in the **Reports** folder on the **desktop** of your lab environment.
 
 
 8. Select the **report title visual**.

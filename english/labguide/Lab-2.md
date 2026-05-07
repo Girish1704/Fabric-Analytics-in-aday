@@ -11,8 +11,9 @@
     - Task 1: Enable a Microsoft Fabric trial license
 
 - Fabric Workspace
-
+## Task 1: Enable a Microsoft Fabric trial license
     - Task 2: Create a Fabric Workspace
+1. Select **Power BI Portal** on the desktop of the virtual machine. You may be prompted to sign in.
 
     - Task 3: Create a Lakehouse
 
@@ -48,13 +49,13 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Enable a Microsoft Fabric trial license
 
-1. Select **PowerBI Portal** in the Desktop of the Virtual Machine. You may be prompted to sign in.
+1. Select **Power BI Portal** on the desktop of the virtual machine. You may be prompted to sign in.
 
     ![](../media/Lab-2/image6.png)
 
-    >***Note: If you're using the lab environment, it may sign you in automatically**.*
+    >**Note:** If you're using the lab environment, it may sign you in automatically.
 
-    >***Note:** If Fabric does not open navigate to http://app.fabric.microsoft.com/ in the browser.*
+    >**Note:** If Fabric does not open, navigate to http://app.fabric.microsoft.com/ in the browser.
 
 2. Copy the Username and paste it into the Email field of the dialog and select Submit.
 
@@ -62,7 +63,7 @@ By the end of this lab, you will have learned:
 
         ![](../media/Lab-2/image7.png)
 
-3. On the **Sign into Microsoft Azure** tab you will see the login screen, in that, enter the following **Email/Username** and then click on **Next**.
+3. On the **Sign into Microsoft Azure** tab, you will see the login screen; then enter the following **Email/Username** and click **Next**.
 
     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
@@ -168,7 +169,7 @@ By the end of this lab, you will have learned:
 
 ## Task 4: Data Factory Experience
 
-1. Select Workloads icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let's explore.
+1. Select the **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science, and Data Warehouse. Let's explore.
 
     ![](../media/Lab-2/image20.png)
 
@@ -184,7 +185,7 @@ By the end of this lab, you will have learned:
 
     **Item types:**
 
-    a. **Dataflow Gen2:** Dataflows are like recipes for transforming data. They offer over 300 different transformations that you can apply to your data. This means you can clean, combine, and change your data in many ways to suit your needs.
+    a. **Dataflow Gen2:** Dataflows are like recipes for transforming data. They offer over 300+ different transformations that you can apply to your data. This means you can clean, combine, and change your data in many ways to suit your needs.
 
     b. **Pipeline:** Pipelines are workflows that help you automate data processes. They allow you to create flexible data workflows that can be tailored to your specific requirements. This makes it easier to manage and process data in a structured way.
 
@@ -264,7 +265,7 @@ By the end of this lab, you will have learned:
 
     d. **Get started with Sustainability solutions:** Start deploying sustainability solutions and implement them in your projects.
 
-    e. **Learn About Retail Solution**s: Click on the "Learn more" button to read about retail solutions and understand how they can be used in your projects.
+    e. **Learn About Retail Solutions:** Click on the "Learn more" button to read about retail solutions and understand how they can be used in your projects.
 
     f. **Get started with Retail solutions:** Start deploying retail solutions and implement them in your projects.
 
@@ -300,9 +301,9 @@ By the end of this lab, you will have learned:
     
     f. **Event Schema Set (preview):** Help you organize and standardize data structures (schemas) for your real-time analytics workflows, making it easier to process and analyze streaming data consistently.
     
-    g. **Custom Stream Connector (preview):** Allows you send real-time events to an eventstream from your own custom endpoints and custom apps.
+    g. **Custom Stream Connector (preview):** Allows you to send real-time events to an eventstream from your own custom endpoints and custom apps.
     
-    h. **Anomaly detector (Preview):** Anomaly detection automatically identifies unusual patterns and outliers in your Event house tables.
+    h. **Anomaly detector (Preview):** Anomaly detection automatically identifies unusual patterns and outliers in your Eventhouse tables.
     
     i. **Operations agent (Preview):** Operation agents automate the observe -> analyze -> decide -> act cycle. They continuously track key metrics, surface insights, and recommend targeted actions.
     
@@ -346,13 +347,13 @@ By the end of this lab, you will have learned:
 
     **What is Data Engineering?**
 
-    Data Engineering is a tool that helps you design, build, and maintain infrastructures and systems for collecting, storing, processing, and analyzing large volumes of data. It allows you to create a lakehouses and operationalize your workflow to build, transform, and share your data estate. 
+    Data Engineering is a tool that helps you design, build, and maintain infrastructures and systems for collecting, storing, processing, and analyzing large volumes of data. It allows you to create a lakehouse and operationalize your workflow to build, transform, and share your data estate. 
     
     **Item types:** 
     
     a. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
 
-    b. **Notebook:** Used for data ingestion, preparation, analysis and other data-related tasks using various languages like Python, and Scala.
+    b. **Notebook:** Used for data ingestion, preparation, analysis, and other data-related tasks using various languages like Python and Scala.
 
     c. **Environment:** Used to set up shared libraries, spark compute settings and resources for notebooks and spark job definitions.
 
@@ -516,11 +517,11 @@ By the end of this lab, you will have learned:
     
     To start using Databases, follow the below steps:
     
-    a. **Explore:** Click on the “Open” to explore a sample database 
+    a. **Explore:** Click on the “Open” button to explore a sample database.
     
-    b. **Database concepts:** Explains common terms and concepts around transactional database so that you can become familiar with how to work with SQL Database
+    b. **Database concepts:** Explains common terms and concepts around transactional databases so that you can become familiar with how to work with SQL Database.
 
-    c. **Database templates:** look through a library of pre-created templates of common database designs 
+    c. **Database templates:** Look through a library of pre-created templates of common database designs.
 
     ![](../media/Lab-2/image35.png)
 
