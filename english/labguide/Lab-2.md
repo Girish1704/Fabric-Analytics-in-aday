@@ -185,7 +185,7 @@ By the end of this lab, you will have learned:
 
     **Item types:**
 
-    a. **Dataflow Gen2:** Dataflows are like recipes for transforming data. They offer over 300 different transformations that you can apply to your data. This means you can clean, combine, and change your data in many ways to suit your needs.
+    a. **Dataflow Gen2:** Dataflows are like recipes for transforming data. They offer over 300+ different transformations that you can apply to your data. This means you can clean, combine, and change your data in many ways to suit your needs.
 
     b. **Pipeline:** Pipelines are workflows that help you automate data processes. They allow you to create flexible data workflows that can be tailored to your specific requirements. This makes it easier to manage and process data in a structured way.
 
