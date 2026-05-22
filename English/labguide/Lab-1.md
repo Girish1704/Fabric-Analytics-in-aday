@@ -90,7 +90,7 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 
         ![](../media/Lab-1/image10.png)
 
-5. **Stay Signed in to all your apps** dialog opens. Select **OK**.
+5. **Stay Signed in to all your apps** dialog opens. Select **Yes**.
 
     ![](../media/Lab-1/image11.png)
 
