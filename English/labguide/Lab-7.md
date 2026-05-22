@@ -102,7 +102,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 12. Select **Save**.
 
-    ![](../media/Lab-7/image12.png)**
+    ![](../media/Lab-7/image12.png)
     
     >**Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6).
 
