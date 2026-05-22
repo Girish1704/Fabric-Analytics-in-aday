@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 3
 
-![](../media/Lab-3/image4.png)
+![](../media/Lab-1/lab3-title.png)
 
 # Contents
 
@@ -52,7 +52,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 2. In the **Explorer** panel, select the **ellipsis** next to **Tables**.
 
-3. Select **New Shortcut.**
+3. Select **New Shortcut**.
 
     ![](../media/Lab-3/image6.png)
 
@@ -62,7 +62,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 5. Select **New connection (1)**.
 
-6. Enter the following link for the **URL** property: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2):**
+6. Enter the following link for the **URL** property: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales **(2)**
 
 7. Click on **Create New Connection (3)** under the Connection section
 
@@ -70,7 +70,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
 
 9. Copy the SAS token and paste it into the SAS token (5) field.
 
-    - **SAS token:**
+    - **SAS token:** <inject key="Sas token"></inject>
 
 10. Select **Next (6)** on the bottom right of the screen.
 
@@ -492,7 +492,7 @@ Shortcuts are used to create a link to the target location. Shortcuts provide ac
     ) as [$Inner] on ([$Outer].[StockGroupID] = [$Inner].[StockGroupID2] or [$Outer].[StockGroupID] is null and [$Inner].[StockGroupID2] is null)
     GO
     ```
-    
+
 4. After you have it pasted, select **Run**.
 
     ![](../media/Lab-3/image30.png)

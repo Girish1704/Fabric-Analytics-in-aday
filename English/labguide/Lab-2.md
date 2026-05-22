@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 2
 
-![](../media/Lab-2/image4.png)
+![](../media/Lab-1/lab2-title.png)
 
 # Contents
 
@@ -59,19 +59,19 @@ By the end of this lab, you will have learned:
 
 2. Copy the Username and paste it into the Email field of the dialog and select Submit.
 
-    - **Email/Username:** Found in the Environment Tab
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/Lab-2/image7.png)
 
 3. On the **Sign into Microsoft Azure** tab you will see the login screen, in that, enter the following **EmailUsername** and then click on **Next**.
 
-    - **Email/Username:** Found in Environment Tab
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
         ![](../media/Lab-2/image8.png)
 
 4. Now enter the following **Temporary Access Pass** and click on **Sign in.**
 
-    - **Temporary Access Pass:** Found in Environment Tab
+    - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
         ![](../media/Lab-2/image9.png)
 
@@ -114,7 +114,7 @@ By the end of this lab, you will have learned:
 
 3. **Create a workspace** dialog opens on the right side of the browser.
 
-4. In the **Name** field enter FAIAD_UserID (Found in Environment Tab)
+4. In the **Name** field enter **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
     >**Note:** The workspace name must be unique. Make sure a green check mark with "This name is available" is displayed below the Name field. 
 
@@ -134,7 +134,7 @@ By the end of this lab, you will have learned:
 
 ## Task 3: Create a Lakehouse
 
-1. In the newly created workspace **FAIAD_Username**, locate the **+ New item (1)** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
+1. In the newly created workspace **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**, locate the **+ New item (1)** button on the left-hand navigation pane. This is where you can begin creating new items in your workspace.
 
 2. In the search box, type **Lakehouse (2)** and, from the search results, select the **Lakehouse (3)** option. This will enable you to create a new Lakehouse to store, query, and manage your big data.
 

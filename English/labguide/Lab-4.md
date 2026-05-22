@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 4
 
-![](../media/Lab-4/image4.png)
+![](../media/Lab-1/lab4-title.png)
 
 # Contents
 
@@ -52,7 +52,7 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Copy SharePoint queries to Dataflow
 
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username>** **(1)** you created in Lab 2, Task 8.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** **(1)** you created in Lab 2, Task 8.
 
 2. Select  **+ New item (2)** option available in the upper left corner.
 
@@ -118,7 +118,7 @@ The connection is established, and you can view the data in the preview panel. F
 
 4. Choose destination target dialog opens. Make sure the **New table** radio button is selected, since we are creating a new table.
 
-5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username>**.
+5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 6. Select **lh_FAIAD**.
 
@@ -144,7 +144,7 @@ The connection is established, and you can view the data in the preview panel. F
 
     ![](../media/Lab-4/image17.png)
 
-    >**Note:** You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to finish running.
+    >**Note:** You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to finish running.
 
 3. **Dataflow 1** is the dataflow we were working on. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Settings** (While the Dataflow is running you cannot access the settings).
 
@@ -158,7 +158,7 @@ The connection is established, and you can view the data in the preview panel. F
 
     ![](../media/Lab-4/image19.png)
 
-    You will be navigated back to **FAIAD_<username> workspace** .
+    You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace** .
 
 7. Select **lh_FAIAD** to navigate to the lakehouse.
 
@@ -172,7 +172,7 @@ The connection is established, and you can view the data in the preview panel. F
 
 ## Task 5: Copy Snowflake queries to Dataflow
 
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username> (1).**
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/> (1).**
 
 2. Select **+ New item (2)** option available in the upper left corner.
 
@@ -224,9 +224,9 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 4. Enter the **Snowflake Username** and **Snowflake Password** provided below. Use these credentials to connect all the tables under **Snowflake** to Snowflake and then select **Connect**.
 
-    - Snowflake Username: TE_SNOWFLAKE1
+    - Snowflake Username: <inject key="SnowFlake Username" enableCopy="false" />
 
-    - Snowflake Password: 8UpfRpExVDXv2AC1
+    - Snowflake Password: <inject key="SnowFlake Password" enableCopy="false" />
 
         >**Note:** If you encounter any issues connecting to Snowflake using the credentials from the environment details, please use the credentials provided below.
 
@@ -248,7 +248,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     ![](../media/Lab-4/image26.png)
 
-3. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse odl_user_<username> (none)**.
+3. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse odl_user_<inject key="Deployment ID" enableCopy="false"/> (none)**.
 
 4. Select **Next**.
 
@@ -256,7 +256,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 5. Choose destination target dialog opens. Make sure the **New table** radio button is selected, since we are creating a new table.
 
-6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username>**.
+6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<inject key="Deployment ID" enableCopy="false"/>**.
 
 7. Select **lh_FAIAD**.
 
@@ -288,7 +288,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     ![](../media/Lab-4/image32.png)
 
-    You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish.
+    You will be navigated back to **FAIAD_<inject key="Deployment ID" enableCopy="false"/> workspace**. It may take a few moments for the Dataflow to Publish.
 
 5. Select **lh_FAIAD** to navigate to the lakehouse.
 

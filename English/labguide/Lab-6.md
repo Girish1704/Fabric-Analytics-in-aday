@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 6
 
- ![](../media/Lab-6/image4.png)c
+ ![](../media/Lab-1/lab6-title.png)
 
 # Contents
 
@@ -40,11 +40,11 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Query data using SQL
 
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username>** you created in Lab 2, Task 8.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** you created in Lab 2, Task 8.
 
 2. If you choose to, **Minimize the task flow** to view the entire list of items.
 
-3. You will see three elements associated with the lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored the Lakehouse and created a visual query and SQL query using SQL analytics endpoint in an earlier lab. Select the **FAIAD_<username>** in the left navigation and choose the **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
+3. You will see three elements associated with the lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored the Lakehouse and created a visual query and SQL query using SQL analytics endpoint in an earlier lab. Select the **FAIAD_<inject key="Deployment ID" enableCopy="false"/>** in the left navigation and choose the **lh_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
     ![](../media/Lab-6/image6.png)
 
@@ -60,7 +60,7 @@ By the end of this lab, you will have learned:
 
 5. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
-    ```
+    ```sql
     SELECT su.SupplierName, SUM(Quantity) as Units
     FROM dbo.Sales s
     JOIN dbo.Product p on p.StockItemID = s.StockItemID
@@ -104,7 +104,7 @@ By the end of this lab, you will have learned:
 
 8. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report** textbox.
 
-9. Make sure the destination workspace is your Fabric workspace, **FAIAD_<username>**
+9. Make sure the destination workspace is your Fabric workspace, **FAIAD_<inject key="Deployment ID" enableCopy="false"/>**
 
 10. Select **Save**.
 
