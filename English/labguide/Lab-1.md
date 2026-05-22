@@ -177,6 +177,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
     ![](../media/Lab-1/image21.png)
 
 7. Click on **Sign in** to log into your account.
+    
     ![](../media/Lab-1/image22.png)
 
 8. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password**. The credentials are provided below. When done, select **Connect**.
